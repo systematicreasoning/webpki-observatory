@@ -1195,46 +1195,46 @@
     },
     {
       "date": "2026-03-09",
-      "generated_at": "2026-03-09T16:39:21.836379+00:00",
+      "generated_at": "2026-03-09T17:49:06.160122+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1286223600,
+      "total_unexpired": 1286342956,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.3468
+          "pct": 40.3433
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.5659
+          "pct": 16.5638
         },
         {
           "ca": "DigiCert",
-          "pct": 13.6435
+          "pct": 13.6445
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9318
+          "pct": 12.9312
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3314
+          "pct": 10.3366
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6334
+          "pct": 4.6333
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 0.9903
+          "pct": 0.9904
         },
         {
           "ca": "SSL.com",
-          "pct": 0.1315
+          "pct": 0.1314
         },
         {
           "ca": "GlobalSign nv-sa",
-          "pct": 0.1221
+          "pct": 0.1222
         },
         {
           "ca": "Actalis",
@@ -1244,97 +1244,97 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518950399,
+          "v": 518953430,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 213074857,
+          "v": 213067220,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 175485560,
+          "v": 175514799,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166331854,
+          "v": 166340054,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 132884968,
+          "v": 132964721,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59596172,
+          "v": 59600031,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12737044,
+          "v": 12739466,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1690830,
+          "v": 1689936,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1570848,
+          "v": 1571643,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500200,
+          "v": 1500219,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 667296,
+          "v": 667416,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 511646,
+          "v": 511689,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 259995,
+          "v": 260154,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 218373,
+          "v": 218475,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 81630,
+          "v": 81682,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62474,
+          "v": 62475,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 49237,
+          "v": 49234,
           "at": 0
         },
         {
           "id": "swisssign-ag",
-          "v": 45352,
+          "v": 45358,
           "at": 0
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43905,
+          "v": 43904,
           "at": 0
         },
         {
@@ -1344,7 +1344,7 @@
         },
         {
           "id": "telia-company",
-          "v": 35382,
+          "v": 35381,
           "at": 0
         },
         {
@@ -1384,7 +1384,7 @@
         },
         {
           "id": "certigna",
-          "v": 4304,
+          "v": 4305,
           "at": 0
         },
         {
@@ -1419,7 +1419,7 @@
         },
         {
           "id": "government-of-spain,-autoritat",
-          "v": 2666,
+          "v": 2665,
           "at": 0
         },
         {
@@ -1434,7 +1434,7 @@
         },
         {
           "id": "open-access-technology-interna",
-          "v": 2323,
+          "v": 2319,
           "at": 0
         },
         {
@@ -1449,7 +1449,7 @@
         },
         {
           "id": "eviden",
-          "v": 1481,
+          "v": 1482,
           "at": 0
         },
         {
@@ -1464,7 +1464,7 @@
         },
         {
           "id": "government-of-brazil,-institut",
-          "v": 479,
+          "v": 480,
           "at": 0
         },
         {
