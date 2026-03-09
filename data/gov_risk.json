@@ -6,7 +6,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Operated by Greek academic/research network, government-funded institution",
       "jurisdiction": "Greece",
-      "issued": 510142,
+      "issued": 510192,
       "pct": 0.0397,
       "trust_store_count": 4,
       "trusted_by": {
@@ -22,7 +22,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
       "jurisdiction": "Sweden",
-      "issued": 35358,
+      "issued": 35362,
       "pct": 0.0028,
       "trust_store_count": 4,
       "trusted_by": {
@@ -38,7 +38,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "State-affiliated entity, Shanghai municipality",
       "jurisdiction": "China",
-      "issued": 32018,
+      "issued": 32026,
       "pct": 0.0025,
       "trust_store_count": 3,
       "trusted_by": {
@@ -54,7 +54,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "German federal government holds ~30% of Deutsche Telekom via KfW",
       "jurisdiction": "Germany",
-      "issued": 20678,
+      "issued": 20679,
       "pct": 0.0016,
       "trust_store_count": 4,
       "trusted_by": {
@@ -86,7 +86,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Established by People's Bank of China",
       "jurisdiction": "China",
-      "issued": 5610,
+      "issued": 5616,
       "pct": 0.0004,
       "trust_store_count": 4,
       "trusted_by": {
@@ -102,7 +102,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Hong Kong Post, SAR government agency",
       "jurisdiction": "Hong Kong",
-      "issued": 2922,
+      "issued": 2923,
       "pct": 0.0002,
       "trust_store_count": 4,
       "trusted_by": {
@@ -134,7 +134,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Valencian regional government agency",
       "jurisdiction": "Spain",
-      "issued": 2627,
+      "issued": 2628,
       "pct": 0.0002,
       "trust_store_count": 4,
       "trusted_by": {
@@ -389,13 +389,13 @@
     "state_enterprise": {
       "label": "State-Owned Enterprise",
       "count": 7,
-      "issued": 613956,
+      "issued": 614025,
       "pct": 0.0478
     },
     "government": {
       "label": "Government-Operated",
       "count": 17,
-      "issued": 14066,
+      "issued": 14068,
       "pct": 0.0009
     }
   },
@@ -403,7 +403,7 @@
     {
       "jurisdiction": "Greece",
       "count": 1,
-      "issued": 510142,
+      "issued": 510192,
       "types": [
         "state_enterprise"
       ]
@@ -411,7 +411,7 @@
     {
       "jurisdiction": "China",
       "count": 2,
-      "issued": 37628,
+      "issued": 37642,
       "types": [
         "state_enterprise"
       ]
@@ -419,7 +419,7 @@
     {
       "jurisdiction": "Sweden",
       "count": 2,
-      "issued": 35358,
+      "issued": 35362,
       "types": [
         "government",
         "state_enterprise"
@@ -428,7 +428,7 @@
     {
       "jurisdiction": "Germany",
       "count": 1,
-      "issued": 20678,
+      "issued": 20679,
       "types": [
         "state_enterprise"
       ]
@@ -444,7 +444,7 @@
     {
       "jurisdiction": "Spain",
       "count": 4,
-      "issued": 7367,
+      "issued": 7368,
       "types": [
         "government"
       ]
@@ -452,7 +452,7 @@
     {
       "jurisdiction": "Hong Kong",
       "count": 1,
-      "issued": 2922,
+      "issued": 2923,
       "types": [
         "government"
       ]
