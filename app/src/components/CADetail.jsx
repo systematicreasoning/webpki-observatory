@@ -383,7 +383,7 @@ const CADetail = ({ d }) => {
                           cursor: 'pointer',
                           background: isOpen ? COLORS.s1 : 'transparent',
                         }}
-                        onClick={() => setViewCert(isOpen ? null : r.sha256)}
+                        onClick={() => setViewCert(isOpen ? null : r.h)}
                       >
                         <td
                           style={{ padding: '4px 5px', fontSize: 9, color: isOpen ? COLORS.ac : COLORS.t3, width: 16 }}
@@ -391,7 +391,7 @@ const CADetail = ({ d }) => {
                           {isOpen ? '▼' : '▶'}
                         </td>
                         <td
-                          title={r.name}
+                          title={r.nameame}
                           style={{
                             padding: '4px 5px',
                             color: COLORS.tx,
