@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import { dn, f, fl, getIncidentRate, getWebCoverage } from '../helpers';
-import { Card, CardTitle, TrustDots, Badge, RateDot, ChartWrap, GeoMap, buildPins } from './shared';
+import { Card, CardTitle, TrustDots, Badge, RateDot, ChartWrap, GeoMap, buildPins, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { expandedCellStyle, scrollXStyle, tableStyle } from '../styles';
@@ -73,6 +73,10 @@ const MarketView = () => {
 
   return (
     <div>
+      <TabIntro quote="You can't manage what you can't measure.">
+        The complete roster of currently trusted CAs ranked by unexpired certificate volume from Certificate Transparency logs. Every CA's trust store inclusion, home jurisdiction, compliance incident rate, and effective web coverage in a single sortable view. This is the starting point for understanding who issues the certificates the internet depends on, how much of the ecosystem each CA controls, and where the concentration, geographic, and operational risks begin to compound.
+      </TabIntro>
+
       {/* Page size selector (top) */}
       <div
         style={{

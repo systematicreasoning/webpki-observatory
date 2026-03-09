@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import { dn, f } from '../helpers';
-import { Card, CardTitle, StatCard, ChartWrap, GeoMap, buildPins } from './shared';
+import { Card, CardTitle, StatCard, ChartWrap, GeoMap, buildPins, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { tinyTableStyle } from '../styles';
@@ -51,6 +51,10 @@ const GeoView = () => {
   }, [trustedCAs]);
   return (
     <div>
+      <TabIntro quote="Geography is destiny — especially in PKI.">
+        Where the world's trusted CAs are headquartered, and how certificate issuance volume distributes across regions and countries. Geographic concentration matters because CA operations are subject to the laws, political pressures, and regulatory regimes of their home jurisdiction. A region that hosts a disproportionate share of issuance becomes a single point of geopolitical risk — sanctions, conflict, or regulatory shifts in one country can ripple across the global WebPKI. This view helps relying parties assess their sovereign exposure and gives CAs context for how their home jurisdiction shapes their risk profile.
+      </TabIntro>
+
       <div
         style={{
           display: 'grid',

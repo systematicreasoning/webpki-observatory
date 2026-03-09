@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS } from '../constants';
 import { dn, f, getWebCoverage } from '../helpers';
-import { Card, CardTitle, StatCard, GeoMap, Paginator } from './shared';
+import { Card, CardTitle, StatCard, GeoMap, Paginator, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle } from '../styles';
@@ -227,6 +227,10 @@ const JurisdictionView = () => {
 
   return (
     <div>
+      <TabIntro quote="Trust is global. Law and risk are local.">
+        Every trusted CA operates under the legal framework of its home jurisdiction — and those frameworks vary enormously in how they handle lawful intercept, data sovereignty, government compulsion, and judicial oversight. This tab maps certificate issuance volume against the compulsion risk level of each CA's home country, revealing how much of the WebPKI is anchored in jurisdictions with strong legal protections versus those where government authorities can compel certificate issuance with limited transparency. CAs can anticipate location-based regulatory pressure, and relying parties can make informed decisions about sovereign exposure in their certificate supply chain.
+      </TabIntro>
+
       {/* ── Stat cards ── */}
       <div
         style={{

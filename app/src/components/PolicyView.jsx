@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import { dn, f } from '../helpers';
-import { Card, CardTitle, StatCard, ChartWrap } from './shared';
+import { Card, CardTitle, StatCard, ChartWrap, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle, expandedCellStyle } from '../styles';
@@ -54,6 +54,10 @@ const PolicyView = () => {
   const pagedCAs = filteredCAs.slice(0, policyPage);
   return (
     <div>
+      <TabIntro quote="Policy shapes the Web PKI.">
+        Minimum practices evolve with threats and technology: some CAs lead, others follow, some lag. The CA/Browser Forum's Baseline Requirements are tightening maximum certificate validity from 398 days down to 200 days (March 2026), 100 days (March 2027), and eventually 47 days (March 2029). This tab measures each CA's actual certificate usage period — how frequently their subscribers replace certificates — against those incoming thresholds. CAs operating well above the next deadline face the largest subscriber disruption. CAs already below the 47-day target have proven their automation story. Relying parties can assess which CAs are prepared for the policy changes ahead and which are likely to struggle.
+      </TabIntro>
+
       <div
         style={{
           display: 'grid',

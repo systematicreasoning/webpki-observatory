@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import { dn, f, fl, parseDate, yearsDiff, getIncidentRate } from '../helpers';
-import { Card, CardTitle, StatCard, TrustDots, RateDot, GeoMap, Paginator, buildPins } from './shared';
+import { Card, CardTitle, StatCard, TrustDots, RateDot, GeoMap, Paginator, buildPins, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle, expandedCellStyle, scrollXStyle, tableStyle } from '../styles';
@@ -247,6 +247,10 @@ const TrustView = () => {
   const so = ['Mozilla', 'Chrome', 'Apple', 'Microsoft'];
   return (
     <div>
+      <TabIntro quote="A certificate is only as trusted as the root program that includes it.">
+        The four major root programs — Chrome, Mozilla, Apple, and Microsoft — each make independent inclusion decisions. When they disagree, some CAs end up trusted by certain browsers but not others, creating coverage gaps and inconsistent security postures across the ecosystem. This tab maps every root certificate intersection, tracks inclusion timelines, and highlights the CAs caught in the gaps. Relying parties can assess whether their CA choice delivers consistent cross-browser trust, and CAs can see exactly where their store coverage falls short.
+      </TabIntro>
+
       <div
         style={{
           display: 'grid',

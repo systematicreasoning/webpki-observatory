@@ -28,6 +28,7 @@ import {
   GeoMap,
   DataPending,
   Paginator,
+  TabIntro,
 } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
@@ -251,6 +252,10 @@ const OpsView = () => {
   const opsShown = opsCnt === 0 ? opsFiltered : opsFiltered.slice(0, opsCnt);
   return (
     <div>
+      <TabIntro quote="By their incidents you shall know them.">
+        Public compliance failures from Mozilla's Bugzilla CA Certificate Compliance tracker, normalized per million certificates issued to enable fair comparison across CAs of vastly different scale. Raw incident counts reward small CAs and penalize large ones; normalization reveals actual operational maturity independent of volume. Self-reported versus externally-discovered incident ratios show which CAs have mature internal detection. CAs see where they stand relative to peers and where to invest in process improvement. Relying parties get an objective, data-driven reliability signal that marketing materials will never provide.
+      </TabIntro>
+
       <div
         style={{
           display: 'grid',

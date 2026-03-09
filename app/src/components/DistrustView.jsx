@@ -12,7 +12,7 @@ import {
 } from 'recharts';
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import {
-  Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap, DataMeta, DataPending, Paginator,
+  Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap, DataMeta, DataPending, Paginator, TabIntro,
 } from './shared';
 import { usePipeline } from '../PipelineContext';
 import {
@@ -528,6 +528,10 @@ export default function DistrustView() {
 
   return (
     <div>
+      <TabIntro quote={`"Those who cannot remember the past are condemned to repeat it." — George Santayana`}>
+        Every CA distrust event in browser history — the root cause, the compliance posture, the response timeline, and the final outcome. Distrust is the ultimate enforcement mechanism in the WebPKI, and these cases define the precedent that root programs, CAs, and relying parties all operate under. CAs can study the failure patterns that led to removal and the behavioral signals that escalated scrutiny. Relying parties see the real cost of sudden forced certificate replacements and how much runway — or how little — root programs provide before pulling trust. The data shows how fast root programs excise bad actors, and how cooperative versus adversarial behavior shapes the timeline.
+      </TabIntro>
+
       <CardTitle sub="Every CA removed from browser trust stores. Classification from Bugzilla evidence and root program announcements.">
         Distrust History
       </CardTitle>

@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Treemap } from 'recharts';
 import { COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import { dn } from '../helpers';
-import { Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap } from './shared';
+import { Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 
@@ -112,6 +112,10 @@ const ConcView = () => {
 
   return (
     <div>
+      <TabIntro quote="Concentration creates single points of catastrophic failure.">
+        Real-time market share derived from CT logs shows just how top-heavy the WebPKI has become. The top 3 CAs control roughly 71% of all unexpired certificates; Let's Encrypt alone accounts for about 40%. A single distrust event or operational failure at that scale would force millions of sites through emergency certificate replacement. CAs use this view to benchmark their position and the scrutiny that comes with it. Relying parties see why CA diversification and automated certificate lifecycle management are no longer optional — they are structural requirements for resilience.
+      </TabIntro>
+
       {/* ── Summary stats ── */}
       <div
         style={{

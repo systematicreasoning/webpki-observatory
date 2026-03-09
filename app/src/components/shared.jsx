@@ -28,6 +28,40 @@ export const CardTitle = ({ children, sub }) => (
   </div>
 );
 
+/**
+ * TabIntro — epigraph + explanatory paragraph shown at the top of each tab.
+ * `quote` is the italic lead-in (aphorism or framing line).
+ * `children` is the explanatory body text.
+ */
+export const TabIntro = ({ quote, children }) => (
+  <div
+    style={{
+      marginBottom: 20,
+      padding: '14px 16px',
+      background: COLORS.s1,
+      borderRadius: 10,
+      border: `1px solid ${COLORS.bd}`,
+      lineHeight: 1.65,
+    }}
+  >
+    {quote && (
+      <div
+        style={{
+          fontSize: 12,
+          fontStyle: 'italic',
+          color: COLORS.t2,
+          marginBottom: 8,
+          borderLeft: `2px solid ${COLORS.ac}`,
+          paddingLeft: 10,
+        }}
+      >
+        {quote}
+      </div>
+    )}
+    <div style={{ fontSize: 11, color: COLORS.t3 }}>{children}</div>
+  </div>
+);
+
 export const StatCard = ({ l, v, s, c }) => (
   <div style={{ textAlign: 'center' }}>
     <div

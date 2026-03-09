@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS } from '../constants';
 import { dn, f, fl, getIncidentRate } from '../helpers';
-import { Card, CardTitle, StatCard, RateDot, GeoMap } from './shared';
+import { Card, CardTitle, StatCard, RateDot, GeoMap, TabIntro } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle, expandedCellStyle } from '../styles';
@@ -143,6 +143,10 @@ const GovView = () => {
   const govIn4 = govRisk.cas.filter((c) => c.storeCount >= 4).length;
   return (
     <div>
+      <TabIntro quote="When the state is the CA, the threat model changes.">
+        Government-operated and state-owned CAs carry risks that commercial operators do not: legal compulsion to issue certificates for surveillance, political incentives that override technical governance, and accountability structures that answer to sovereigns rather than subscribers. This tab identifies every government and state-owned enterprise with trusted root certificates, tracks their trust store inclusion across all four root programs, and quantifies their share of the WebPKI. Classifications are based on structural ownership ties only — not customer relationships. Relying parties can assess how much of their certificate dependency chain runs through state actors.
+      </TabIntro>
+
       <div
         style={{
           display: 'grid',
