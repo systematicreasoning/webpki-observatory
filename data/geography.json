@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "total": 1286342956,
   "regions": [
     {
@@ -10,12 +11,26 @@
           "country": "United States",
           "issued": 1148235585,
           "pct": 89.2636,
+=======
+  "total": 1286345418,
+  "regions": [
+    {
+      "region": "United States",
+      "issued": 1148236479,
+      "pct": 89.2635,
+      "countries": [
+        {
+          "country": "United States",
+          "issued": 1148236479,
+          "pct": 89.2635,
+>>>>>>> Stashed changes
           "ca_count": 29
         }
       ]
     },
     {
       "region": "Europe",
+<<<<<<< Updated upstream
       "issued": 137414741,
       "pct": 10.6826,
       "countries": [
@@ -23,23 +38,44 @@
           "country": "United Kingdom",
           "issued": 132964721,
           "pct": 10.3366,
+=======
+      "issued": 137416306,
+      "pct": 10.6827,
+      "countries": [
+        {
+          "country": "United Kingdom",
+          "issued": 132966290,
+          "pct": 10.3367,
+>>>>>>> Stashed changes
           "ca_count": 3
         },
         {
           "country": "Belgium",
+<<<<<<< Updated upstream
           "issued": 1571643,
+=======
+          "issued": 1571642,
+>>>>>>> Stashed changes
           "pct": 0.1222,
           "ca_count": 4
         },
         {
           "country": "Italy",
+<<<<<<< Updated upstream
           "issued": 1500219,
+=======
+          "issued": 1500218,
+>>>>>>> Stashed changes
           "pct": 0.1166,
           "ca_count": 2
         },
         {
           "country": "Poland",
+<<<<<<< Updated upstream
           "issued": 667853,
+=======
+          "issued": 667851,
+>>>>>>> Stashed changes
           "pct": 0.0519,
           "ca_count": 3
         },
@@ -197,12 +233,20 @@
     },
     {
       "region": "Asia-Pacific",
+<<<<<<< Updated upstream
       "issued": 507703,
+=======
+      "issued": 507705,
+>>>>>>> Stashed changes
       "pct": 0.0395,
       "countries": [
         {
           "country": "China",
+<<<<<<< Updated upstream
           "issued": 301288,
+=======
+          "issued": 301290,
+>>>>>>> Stashed changes
           "pct": 0.0234,
           "ca_count": 12
         },
@@ -276,12 +320,20 @@
     },
     {
       "region": "Other",
+<<<<<<< Updated upstream
       "issued": 90390,
+=======
+      "issued": 90391,
+>>>>>>> Stashed changes
       "pct": 0.007,
       "countries": [
         {
           "country": "Taiwan",
+<<<<<<< Updated upstream
           "issued": 71923,
+=======
+          "issued": 71924,
+>>>>>>> Stashed changes
           "pct": 0.0056,
           "ca_count": 4
         },

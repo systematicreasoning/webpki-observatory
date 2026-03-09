@@ -1195,14 +1195,24 @@
     },
     {
       "date": "2026-03-09",
+<<<<<<< Updated upstream
       "generated_at": "2026-03-09T17:49:06.160122+00:00",
       "crtsh_available": true,
       "total_unexpired": 1286342956,
+=======
+      "generated_at": "2026-03-09T17:51:01.674479+00:00",
+      "crtsh_available": true,
+      "total_unexpired": 1286345418,
+>>>>>>> Stashed changes
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
+<<<<<<< Updated upstream
           "pct": 40.3433
+=======
+          "pct": 40.3432
+>>>>>>> Stashed changes
         },
         {
           "ca": "Google Trust Services LLC",
@@ -1218,7 +1228,11 @@
         },
         {
           "ca": "Sectigo",
+<<<<<<< Updated upstream
           "pct": 10.3366
+=======
+          "pct": 10.3367
+>>>>>>> Stashed changes
         },
         {
           "ca": "Microsoft Corporation",
@@ -1244,57 +1258,101 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
+<<<<<<< Updated upstream
           "v": 518953430,
+=======
+          "v": 518953428,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
+<<<<<<< Updated upstream
           "v": 213067220,
+=======
+          "v": 213067296,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "digicert",
+<<<<<<< Updated upstream
           "v": 175514799,
+=======
+          "v": 175515664,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "godaddy",
+<<<<<<< Updated upstream
           "v": 166340054,
+=======
+          "v": 166340137,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "sectigo",
+<<<<<<< Updated upstream
           "v": 132964721,
+=======
+          "v": 132966290,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "microsoft-corporation",
+<<<<<<< Updated upstream
           "v": 59600031,
+=======
+          "v": 59599879,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
+<<<<<<< Updated upstream
           "v": 12739466,
+=======
+          "v": 12739531,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "ssl.com",
+<<<<<<< Updated upstream
           "v": 1689936,
+=======
+          "v": 1689889,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
+<<<<<<< Updated upstream
           "v": 1571643,
+=======
+          "v": 1571642,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "actalis",
+<<<<<<< Updated upstream
           "v": 1500219,
+=======
+          "v": 1500218,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
+<<<<<<< Updated upstream
           "v": 667416,
+=======
+          "v": 667414,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
@@ -1304,12 +1362,20 @@
         },
         {
           "id": "trustasia-technologies,-inc.",
+<<<<<<< Updated upstream
           "v": 260154,
+=======
+          "v": 260156,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
           "id": "amazon-trust-services",
+<<<<<<< Updated upstream
           "v": 218475,
+=======
+          "v": 218481,
+>>>>>>> Stashed changes
           "at": 0
         },
         {
@@ -1319,7 +1385,11 @@
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
+<<<<<<< Updated upstream
           "v": 62475,
+=======
+          "v": 62476,
+>>>>>>> Stashed changes
           "at": 0
         },
         {

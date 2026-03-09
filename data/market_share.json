@@ -1,11 +1,19 @@
 [
   {
     "ca_owner": "Internet Security Research Group",
+<<<<<<< Updated upstream
     "all_certs": 8858871723,
     "unexpired_certs": 518128687,
     "all_precerts": 8615356429,
     "unexpired_precerts": 518953430,
     "market_share_pct": 40.3433,
+=======
+    "all_certs": 8858877752,
+    "unexpired_certs": 518126954,
+    "all_precerts": 8615364189,
+    "unexpired_precerts": 518953428,
+    "market_share_pct": 40.3432,
+>>>>>>> Stashed changes
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -22,17 +30,28 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
+<<<<<<< Updated upstream
     "cumulative_pct": 40.3433,
+=======
+    "cumulative_pct": 40.3432,
+>>>>>>> Stashed changes
     "rank": 1,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Internet Security Research Group may be attributed to: IdenTrust Services, LLC."
   },
   {
     "ca_owner": "Google Trust Services LLC",
+<<<<<<< Updated upstream
     "all_certs": 545751810,
     "unexpired_certs": 101159216,
     "all_precerts": 1709637456,
     "unexpired_precerts": 213067220,
+=======
+    "all_certs": 545754509,
+    "unexpired_certs": 101160420,
+    "all_precerts": 1709640802,
+    "unexpired_precerts": 213067296,
+>>>>>>> Stashed changes
     "market_share_pct": 16.5638,
     "matched": true,
     "country": "United States of America",
@@ -50,17 +69,28 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
+<<<<<<< Updated upstream
     "cumulative_pct": 56.9071,
+=======
+    "cumulative_pct": 56.907,
+>>>>>>> Stashed changes
     "rank": 2,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Google Trust Services LLC may be attributed to: GlobalSign nv-sa."
   },
   {
     "ca_owner": "DigiCert",
+<<<<<<< Updated upstream
     "all_certs": 260449220,
     "unexpired_certs": 67491851,
     "all_precerts": 1106175270,
     "unexpired_precerts": 175514799,
+=======
+    "all_certs": 260449477,
+    "unexpired_certs": 67492108,
+    "all_precerts": 1106176135,
+    "unexpired_precerts": 175515664,
+>>>>>>> Stashed changes
     "market_share_pct": 13.6445,
     "matched": true,
     "country": "United States of America",
@@ -78,17 +108,28 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
+<<<<<<< Updated upstream
     "cumulative_pct": 70.5516,
+=======
+    "cumulative_pct": 70.5515,
+>>>>>>> Stashed changes
     "rank": 3,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under DigiCert may be attributed to: Sectigo."
   },
   {
     "ca_owner": "GoDaddy",
+<<<<<<< Updated upstream
     "all_certs": 223217601,
     "unexpired_certs": 134789158,
     "all_precerts": 414989753,
     "unexpired_precerts": 166340054,
+=======
+    "all_certs": 223218303,
+    "unexpired_certs": 134789602,
+    "all_precerts": 414990444,
+    "unexpired_precerts": 166340137,
+>>>>>>> Stashed changes
     "market_share_pct": 12.9312,
     "matched": true,
     "country": "United States of America",
@@ -106,7 +147,11 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
+<<<<<<< Updated upstream
     "cumulative_pct": 83.4828,
+=======
+    "cumulative_pct": 83.4827,
+>>>>>>> Stashed changes
     "rank": 4,
     "overcounted_from": [
       "Amazon Trust Services"
@@ -114,11 +159,19 @@
   },
   {
     "ca_owner": "Sectigo",
+<<<<<<< Updated upstream
     "all_certs": 1271585603,
     "unexpired_certs": 133035712,
     "all_precerts": 1210471763,
     "unexpired_precerts": 132964721,
     "market_share_pct": 10.3366,
+=======
+    "all_certs": 1271587349,
+    "unexpired_certs": 133037366,
+    "all_precerts": 1210473424,
+    "unexpired_precerts": 132966290,
+    "market_share_pct": 10.3367,
+>>>>>>> Stashed changes
     "matched": true,
     "country": "United Kingdom",
     "trusted_by": {
@@ -147,10 +200,17 @@
   },
   {
     "ca_owner": "Microsoft Corporation",
+<<<<<<< Updated upstream
     "all_certs": 6251935,
     "unexpired_certs": 2106864,
     "all_precerts": 310083246,
     "unexpired_precerts": 59600031,
+=======
+    "all_certs": 6251950,
+    "unexpired_certs": 2106856,
+    "all_precerts": 310083714,
+    "unexpired_precerts": 59599879,
+>>>>>>> Stashed changes
     "market_share_pct": 4.6333,
     "matched": true,
     "country": "United States of America",
@@ -177,8 +237,13 @@
     "ca_owner": "IdenTrust Services, LLC",
     "all_certs": 1741771,
     "unexpired_certs": 1542,
+<<<<<<< Updated upstream
     "all_precerts": 36641501,
     "unexpired_precerts": 12739466,
+=======
+    "all_precerts": 36641596,
+    "unexpired_precerts": 12739531,
+>>>>>>> Stashed changes
     "market_share_pct": 0.9904,
     "matched": true,
     "country": "United States of America",
@@ -204,10 +269,17 @@
   },
   {
     "ca_owner": "SSL.com",
+<<<<<<< Updated upstream
     "all_certs": 6618955,
     "unexpired_certs": 1689661,
     "all_precerts": 93029012,
     "unexpired_precerts": 1689936,
+=======
+    "all_certs": 6618965,
+    "unexpired_certs": 1689617,
+    "all_precerts": 93029020,
+    "unexpired_precerts": 1689889,
+>>>>>>> Stashed changes
     "market_share_pct": 0.1314,
     "matched": true,
     "country": "United States of America",
@@ -232,10 +304,17 @@
   },
   {
     "ca_owner": "GlobalSign nv-sa",
+<<<<<<< Updated upstream
     "all_certs": 8019664,
     "unexpired_certs": 366472,
     "all_precerts": 49412947,
     "unexpired_precerts": 1571643,
+=======
+    "all_certs": 8019665,
+    "unexpired_certs": 366473,
+    "all_precerts": 49412959,
+    "unexpired_precerts": 1571642,
+>>>>>>> Stashed changes
     "market_share_pct": 0.1222,
     "matched": true,
     "country": "Belgium",
@@ -263,7 +342,11 @@
     "all_certs": 3062575,
     "unexpired_certs": 808532,
     "all_precerts": 6519335,
+<<<<<<< Updated upstream
     "unexpired_precerts": 1500219,
+=======
+    "unexpired_precerts": 1500218,
+>>>>>>> Stashed changes
     "market_share_pct": 0.1166,
     "matched": true,
     "country": "Italy",
@@ -286,10 +369,17 @@
   },
   {
     "ca_owner": "Asseco Data Systems S.A.",
+<<<<<<< Updated upstream
     "all_certs": 1605554,
     "unexpired_certs": 67627,
     "all_precerts": 5882398,
     "unexpired_precerts": 667416,
+=======
+    "all_certs": 1605555,
+    "unexpired_certs": 67627,
+    "all_precerts": 5882399,
+    "unexpired_precerts": 667414,
+>>>>>>> Stashed changes
     "market_share_pct": 0.0519,
     "matched": true,
     "country": "Polska",
@@ -344,10 +434,17 @@
   },
   {
     "ca_owner": "TrustAsia Technologies, Inc.",
+<<<<<<< Updated upstream
     "all_certs": 297048,
     "unexpired_certs": 255632,
     "all_precerts": 332390,
     "unexpired_precerts": 260154,
+=======
+    "all_certs": 297099,
+    "unexpired_certs": 255683,
+    "all_precerts": 332392,
+    "unexpired_precerts": 260156,
+>>>>>>> Stashed changes
     "market_share_pct": 0.0202,
     "matched": true,
     "country": "China",
@@ -374,8 +471,13 @@
     "ca_owner": "Amazon Trust Services",
     "all_certs": 3345,
     "unexpired_certs": 3278,
+<<<<<<< Updated upstream
     "all_precerts": 703286,
     "unexpired_precerts": 218475,
+=======
+    "all_precerts": 703297,
+    "unexpired_precerts": 218481,
+>>>>>>> Stashed changes
     "market_share_pct": 0.017,
     "matched": true,
     "country": "United States of America",
@@ -484,10 +586,17 @@
   },
   {
     "ca_owner": "Taiwan-CA Inc. (TWCA)",
+<<<<<<< Updated upstream
     "all_certs": 157336,
     "unexpired_certs": 62142,
     "all_precerts": 344884,
     "unexpired_precerts": 62475,
+=======
+    "all_certs": 157337,
+    "unexpired_certs": 62143,
+    "all_precerts": 344885,
+    "unexpired_precerts": 62476,
+>>>>>>> Stashed changes
     "market_share_pct": 0.0049,
     "matched": true,
     "country": "Taiwan (Republic of China)",
