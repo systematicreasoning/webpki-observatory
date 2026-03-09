@@ -1,0 +1,49 @@
+{
+  "ca_owner": "Trustis",
+  "country": "United Kingdom of Great Britain and Northern Ireland",
+  "root_count": 2,
+  "intermediates_count": 4,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Trustis EVS Root CA",
+      "sha256": "3F9DA4744EC9676CD38B530E500A463FBCB18165977FF0DA6D5993C3FE5FAB7C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.01.09",
+      "valid_to": "2027.01.09",
+      "tls_capable": false,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIQJAZiXxG2TMzanpxs6gQCaDANBgkqhkiG9w0BAQUFADBF\nMQswCQYDVQQGEwJHQjEYMBYGA1UEChMPVHJ1c3RpcyBMaW1pdGVkMRwwGgYDVQQL\nExNUcnVzdGlzIEVWUyBSb290IENBMB4XDTA3MDEwOTEyMDAwMVoXDTI3MDEwOTEx\nNTYwMFowRTELMAkGA1UEBhMCR0IxGDAWBgNVBAoTD1RydXN0aXMgTGltaXRlZDEc\nMBoGA1UECxMTVHJ1c3RpcyBFVlMgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBANJclMPP3EkLfN8EXAvqebvg0DdbjA7XzTkY3oyXuLQ0EG1n\nrcSzDu031KW/+kPl2nAnhkef4umygbm+LVu5sSiAMEHfuJSpIKZ+qqzKcEyjEgzP\nYGKBUnpJgwvIIiBzoJ01PJZv7c49JsJPSMqigqeVBqn2JjL+8sH9I1hfcTv4x9fd\nTDMfoNbBz3M3q5X+nZ3s7IXD4gm7iVf5lFYqVGKJzARobmSKT7GFe2zUpL0mCvUn\n/BM+XWozCmc5Yoz+FP2qJNpP3rK18neQoZHvKXcdcZVZtsDjgbj0/4nueqf7Wf7J\n1I1u39apn/wLNbXcbqSZefOIMGv6SqlrOMhhS0MCAwEAAaNjMGEwDwYDVR0TAQH/\nBAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFHktc5bOsn1acw6HVikx\nxSjy7aVfMB8GA1UdIwQYMBaAFHktc5bOsn1acw6HVikxxSjy7aVfMA0GCSqGSIb3\nDQEBBQUAA4IBAQBDyG/fm8wJr9w4Jh1I+9aWc6Bm3xriwOad0i+JHOg08iI0kfQV\nny69tHKq1+08n61Rn38ehWYlakJpgGA3Vka6PFaraoCAmLXKeljbBQjH9geBv6A1\nNck3kr8R8hdBTz9B7RPTrxk9cYp+sGTIO+f6kxNk/lbD3ivZ61fNgtCMnVJSvGET\nNT9vn2j2afduGs8LOEpDtUAFM9KmKxo2D9OPsfd7Ph3SoG3YQ6orP2kLAH4a5E5v\nym0xkf90gfz74kiTdlyLjMPcoQggC1tlNvx2+yM/0dqXwdNakKO/RZvXW4EIpFL8\neH4YLi1x/drvDYFGifBS8gxQaffO1QF8sn8o\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Trustis FPS Root CA",
+      "sha256": "C1B48299ABA5208FE9630ACE55CA68A03EDA5A519C8802A0D3A673BE8F8E557D",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2003.12.23",
+      "valid_to": "2024.01.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDZzCCAk+gAwIBAgIQGx+ttiD5JNM2a/fH8YygWTANBgkqhkiG9w0BAQUFADBF\nMQswCQYDVQQGEwJHQjEYMBYGA1UEChMPVHJ1c3RpcyBMaW1pdGVkMRwwGgYDVQQL\nExNUcnVzdGlzIEZQUyBSb290IENBMB4XDTAzMTIyMzEyMTQwNloXDTI0MDEyMTEx\nMzY1NFowRTELMAkGA1UEBhMCR0IxGDAWBgNVBAoTD1RydXN0aXMgTGltaXRlZDEc\nMBoGA1UECxMTVHJ1c3RpcyBGUFMgUm9vdCBDQTCCASIwDQYJKoZIhvcNAQEBBQAD\nggEPADCCAQoCggEBAMVQe547NdDfxIzNjpvto8A2mfRC6qc+gIMPpqdZh8mQRUN+\nAOqGeSoDvT03mYlmt+WKVoaTnGhLaASMk5MCPjDSNzoiYYkchU59j9WvezX2fihH\niTHcDnlkH5nSW7r+f2C/revnPDgpai/lkQtV/+xvWNUtyd5MZnGPDNcE2gfmHhjj\nvSkCqPoc4Vu5g6hBSLwacY3nYuUtsuvffM/bq1rKMfFMIvMFE/eC+XN5DL7XSxzA\n0RU8k0Fk0ea+IxciAIleH2ulrG6nS4zto3Lmr2NNL4XSFDWaLk6M6jKYKIahkQlB\nOrTh4/L68MkKokHdqeMDx4gVOxzUGpTXn2RZEm0CAwEAAaNTMFEwDwYDVR0TAQH/\nBAUwAwEB/zAfBgNVHSMEGDAWgBS6+nEleYtXQSUhhgtx67JkDoshZzAdBgNVHQ4E\nFgQUuvpxJXmLV0ElIYYLceuyZA6LIWcwDQYJKoZIhvcNAQEFBQADggEBAH5Y//01\nGX2cGE+esCu8jowU/yyg2kdbw++BLa8F6nRIW/M+TgfHbcWzk88iNVy2P3UnXwmW\nzaD+vkAMXBJV+JOCyinpXj9WV4s4NvdFGkwozZ5BuO1WTISkQMi4sKUraXAEasP4\n1BIy+Q7DsdwyhEQsb8tGD+pmQQ9P8Vilpg0ND2HepZ5dfWWhPBfnqFVO76DH7cZE\nf1T1o+CP8HxVIo8ptoGj4W1OLBuAZ+ytIJ8MYmHVl/9D7S3B2l0pKoU/rGXuhg8F\njZBf3+6f9L/uHfuY5H+QK4R4EA5sSVPvFVtlRkpdr7r7OnIdzfYliB6XzCGcKQEN\nZetX2fNXlrtIzYE=\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "trustis"
+}

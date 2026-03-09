@@ -1,0 +1,84 @@
+{
+  "ca_owner": "Notarius",
+  "country": "Canada",
+  "root_count": 2,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Notarius Root Certificate Authority",
+      "sha256": "AAA15BDDB1C924AD7A7F22F89E5CD3E2C61407A064E011B7CF4CB618716449A4",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.05.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Notarius Root Certificate Authority",
+      "sha256": "C7B8948FECCAACE5B509A343F38D0301D07901885604B3F267270E1EBBEF0FE7",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.12.17",
+      "valid_to": "2034.12.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Notarius Certificate Authority",
+      "sha256": "24FD55D9751C59FE472E4B11E007681665231AAFF12A3A17A3A93EEC8F8BD590",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Notarius Certificate Authority 2",
+      "sha256": "41FBA2AAE761459CC8395E9668F02F35F6795FD3D8539F5AC9DDB4EB8FD77398",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Notarius Certificate Authority 3",
+      "sha256": "0940AB07AC04B881C385763F9A247AF5A187FA4F1C7B385A09CA9C33B9DD32BA",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "notarius"
+}

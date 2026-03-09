@@ -1,0 +1,89 @@
+{
+  "ca_owner": "Notarius",
+  "country": "Canada",
+  "root_count": 2,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Notarius Root Certificate Authority",
+      "sha256": "AAA15BDDB1C924AD7A7F22F89E5CD3E2C61407A064E011B7CF4CB618716449A4",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.05.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFtjCCA56gAwIBAgIMXkDoOwAAAABUkcpSMA0GCSqGSIb3DQEBCwUAMFIxCzAJ\nBgNVBAYTAkNBMRUwEwYDVQQKEwxOb3Rhcml1cyBJbmMxLDAqBgNVBAMTI05vdGFy\naXVzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIxMDUxNzE3NDcwNloX\nDTM2MDUxNzE4MTcwNlowUjELMAkGA1UEBhMCQ0ExFTATBgNVBAoTDE5vdGFyaXVz\nIEluYzEsMCoGA1UEAxMjTm90YXJpdXMgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3Jp\ndHkwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDzS+i62ZGguH6ehkx0\neVor2OhwlIdDv/tdNTedqfNOa7eRThN0GMcR1fFzAHTt0V8fKJh7mq2sT1IJyBRi\n9qU7wYjCpsWjWoVE55MfOj8XhjMrmeHnvaYkvcV91y/xGjsX/2PO1ZzDIF5FRDYZ\nkg75AHYnI5IYiZPBBHnLqVdzDLW6RnntUtiI1CEVBRVtLC2a9nO5mYd1RzxcJNFW\n+PEnLUdGrn69nLAaR5CqInb7s/3w8eSkJB02BRM/DFayRjupbMwYzksw3XYOz0/W\neCzORlplDbdDr4hl0x14/RPh4te8ME3+AQSGJGpedpa1VssF6UBLoKKhSWRUBDfw\nwcXZBw91u+CFN7loq3ONceEv/GWVBfnCrwosNPvg/CmOvbq9EAheBT88aBgS6rwy\nRIC9nj7tMqQzlUDIQCprpfwCYpyqBebjyl9Iepnz6UPb72d/Sqv0VI35h04svEuV\nezO/hxeVoOF40Un9qhZc/eq7BSae7yTwpC7LaKHs4G0HoehaeW54evoVDxIdfdDK\n8PPEDzbyuABGm/VjPGjKuxOEXVBHmoMPv8XlfcGCoyYj4af1iNhLT0S/YQKO1kmg\nDXl8o8e+Xl//RByvjv3hI0eTrHMzjxwz2ZKTiSaYRYQHqqJsM/smWWQYgvvJoVL/\nM3bESni03uXJ7SW/0wI5S10OywIDAQABo4GLMIGIMCsGA1UdEAQkMCKADzIwMjEw\nNTE3MTc0NzA2WoEPMjAzNjA1MTcxODE3MDZaMAsGA1UdDwQEAwIBBjAfBgNVHSME\nGDAWgBRfzShf2+WR+AoTp6hobMUYHMdYrzAdBgNVHQ4EFgQUX80oX9vlkfgKE6eo\naGzFGBzHWK8wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAgEANvCfug5G\nG31PyBQqL5cc5rcEhw5skkbsiSu6uaV7VzBzO+U78vdSSc/AKfKj35U4g+Fr/Ul8\nF9hLfdN+aTK7V0h11Vv3y58JCICs2m2WWD2omY17gZvR6o6VMgT8UFYJ7S1QhtVL\njLpwHY3UZtan1KLqCEQa2Fo3hJGrRGmpeofbqb3ZXoUKsdYM13OQp/sWdBFfNBbc\nonnqa0B1IuJRMWSNB415sKZdVq1DSF3rZP5OX2XSvRkD4F1hSS8hY5vg2zTo9Qnw\nQFaolr1B2TL/qySHEnPsVX7EXl19mwL3IC4lwGrBoPwVDe5E9+eLse0kB+eczlkZ\nyKVx6kPvd4NTFiIVCW86VLnoqdn8fKQg4iL+danRbUecKBdBcOKvntEpxTEENnu6\nqqDTpiLHqXTaOf7/8ZdOonIDjeIiUJDMoqfNhODCgf1XBcEAxVuobLBar/hmlFKU\nmU+Gdn5Qlg/+MSDyW/xiBij092bUnHBr+ThM7X5n5QcIvcl7zwFaVcyhfKITpC4d\nKjXyVmekuaLS2a/Y4lupS9aDn45Wr9kvizh0LkQO2ZXN/3SSwQd2kv1ep/LCAz/c\nzWIEm5dte7Q3toaZwmAK/G0ZBkI3ZLwXum1LzddoRhN51ltgmc6NzfDIG97qKL7M\nz4leKEMaJ8dId29zULSpxVPgc8dUrdyac1E=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Notarius Root Certificate Authority",
+      "sha256": "C7B8948FECCAACE5B509A343F38D0301D07901885604B3F267270E1EBBEF0FE7",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.12.17",
+      "valid_to": "2034.12.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFrjCCA5agAwIBAgIEVJGosDANBgkqhkiG9w0BAQsFADBSMQswCQYDVQQGEwJD\nQTEVMBMGA1UEChMMTm90YXJpdXMgSW5jMSwwKgYDVQQDEyNOb3Rhcml1cyBSb290\nIENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0xNDEyMTcxNTMwNTFaFw0zNDEyMTcx\nNjAwNTFaMFIxCzAJBgNVBAYTAkNBMRUwEwYDVQQKEwxOb3Rhcml1cyBJbmMxLDAq\nBgNVBAMTI05vdGFyaXVzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIICIjAN\nBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArVK5kig4XFE/X2tRUy/8uc3z573P\naPUWc28qWqN+IsxfJjK/0x/HXuexkOvGIvXpXhkSohLzvCL5iNX3O2HFGcjiY2uM\n8ds/IqD73Fn6ZvB+dMZKsQ3JUh2Lt05M3ZbLmOYOQPu9Oh6kLJBe3oTWYednACoz\nDjOD8jeivk6oqkZtGEhGdyY0v2aBbyCT/PEy8WDyFi2fTkQdnes4LW2lWE0B++Jd\nxB6K/9VC3AwFp/bkhONn7NGpT5nen8YLlB/lMLcHqHnwYOqzoZzCZTea6LnBPFms\nYAvmBu04B1gBTKV+15zzbDNPIDZrVcpOVm/4OO7PlGXlSC9NPlDMqU45tv6KCBF1\nxv17Srqj95O0nXjkoYuo7HeCKPebkSQe8fzPkUR76AZeKm/Kd4mAXRBgubZxolux\nZifq92R8d+gKCi+PSFPitC+oNB/y5Mn1S74bcxH2HJlbsRHRRd6uGuGxxUN4Ob3J\n6sDcg/sL4sLVyT9KQcWdPuHwJgKaU223hg9yTwxDC67EVGA2SoNOyVCmbQf68A/E\n9AXz1WYd6+S/HKX9uOcYNzq7BBobhw3Sknt0joirijo+14CjSFeQKM/UQ1yUNy6L\nrxISTqo4pg21iRz5eWRtZfcRlD6h3D4ix4MpqWbEmY/NGk35xyWszPer86vmuP3j\n6e3PKzkoir8wFJMCAwEAAaOBizCBiDArBgNVHRAEJDAigA8yMDE0MTIxNzE1MzA1\nMVqBDzIwMzQxMjE3MTYwMDUxWjALBgNVHQ8EBAMCAQYwHwYDVR0jBBgwFoAUmckQ\nSn14uolWMU717DVzPaQb7W4wHQYDVR0OBBYEFJnJEEp9eLqJVjFO9ew1cz2kG+1u\nMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggIBAII/6ndKCHTpbRuOrXnd\n2bEQ8Z13TBfrLRjoL5TGU2ZeoKWRUrKs/MhQlA7FeaoNJs0VRr2bs7y1eIDfUM1b\n3lk/+6a6APlysUPloJvbZJGpvgXXYvrbEr06hvB6YzX82lA0POZvtEIGKoErUh0e\nT/e1srxsYJrUpyjOpG4Ef+/eRStyMl3mzw1Sjy9AuNPfyYbMCQ5TYAfATzrK9iYG\nXkacvw2+HVphJzp9YZO1p1QT3rGgm0lmm7M3vaC6SmXIIuDE7/CVzuifACmk+TIS\nnHA8ENfrpjx/VVDVQjH7uwnqhErNa3PWjKWUb4Q1mmVaeAgDAvxHs3q+jD4zZy3U\nAKpqnzgb9U540IvFby8qPYI+W1CAcEG1qGDA/vtYabnYwgwXoBhOBhr/P3KxN+6J\nb3rcpy+cyVfIgwtLgfHXNi8e7Pe4IGT6iwrmUbgFrFR77DIK484SHVFy+N59201K\nf5qEsAq4EHHYc3oWrvzF1G3kx58KF2tz4wExbfg6/BySZKXA2KSQwOP5jhkxrTZ2\n7Lf7ZTz04PiUm+cYlB8qAnhxnkJdCm29O3vKcEr2xOedos5LmOKW87HWrcAhOKJ5\nRkDH30jAB64volYYepq5wxhQFh+j40zDnmAuYC/pDOFZoRszKSuREjx9hTaieBIR\n4sBFY8WLdJMuwrRbEWjHccjm\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Notarius Certificate Authority",
+      "sha256": "24FD55D9751C59FE472E4B11E007681665231AAFF12A3A17A3A93EEC8F8BD590",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGPzCCBCegAwIBAgIMKDxBTgAAAABUkcpVMA0GCSqGSIb3DQEBCwUAMFIxCzAJ\nBgNVBAYTAkNBMRUwEwYDVQQKEwxOb3Rhcml1cyBJbmMxLDAqBgNVBAMTI05vdGFy\naXVzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MB4XDTIxMDUxNzE5MDg0MloX\nDTM2MDQxNzE5Mzg0MlowTTELMAkGA1UEBhMCQ0ExFTATBgNVBAoTDE5vdGFyaXVz\nIEluYzEnMCUGA1UEAxMeTm90YXJpdXMgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MIIC\nIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA1s2/ak7OoO+vlVYr73ffpuds\n2aimP7O3yKMJWNUDWPNWkREGlj35E0L8nAtdpseGxqGnhaOpKF9KHUndzmsLUYE1\nHnOrWWBnUt1zfjpkx2U0ra4UxOdlZ/aVx4pM6t5NZzM8pgscmmi3plhfqayzXcJx\noS9nqIOtzLpmldrUERN4CR9z4J/ha/pNYHso6n2p1w0Q5y22lkRrzEmclVJmMqik\npjwWND6MNZjNB7fyCZDqDBXC/vhLIB3OdOsSN6R8DiNHirCmkpytXqztSOo9dmR/\nn/rOu20CtUrVznRIGQIYOG7odCAmwI1fs/9yDjmy/z1e76sRlOYoSRt2Fg1AIMSA\nM2yprzKZBFGsJ6zwZh/Kwi9YikAdxWOWBIbYHtFYW50xFAX6DFIfsB/obiOYjEHg\npek63uDSZF/IQhULGww0D6/ahwMxpLVprlRXRTGw5+/hZ6ty+Q4dSHsQppDhAf1x\nDROpz8ukhPoqLxLoAx0NmmnZrc+X5XyLwBqKVkjfxZJI/jCj3Cdux2BtLX9XGrTY\nZPOn7PjwJeV1ZH8Lug9OUAxh3QnVW0e8hIDt9GjpoEoLQZ9RXPmQfLlYTiJw2Zw6\n5EqIHhPgJMXJ+0WJg5yIy5JyDg/PK6omNhak6avuP7pd9LgSSsUjYV6MB8Qoh5b1\n7K3WYW6WOW38kHzChG8CAwEAAaOCARgwggEUMIG2BgNVHR8Ega4wgaswgaiggaWg\ngaKGO2h0dHA6Ly9jcmwubm90YXJpdXMuY29tL25vdGFyaXVzX3Jvb3RfY2EvY3Js\nL2NybF9yb290YTIuY3JspGMwYTELMAkGA1UEBhMCQ0ExFTATBgNVBAoTDE5vdGFy\naXVzIEluYzEsMCoGA1UEAxMjTm90YXJpdXMgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRo\nb3JpdHkxDTALBgNVBAMTBENSTDIwCwYDVR0PBAQDAgEGMB8GA1UdIwQYMBaAFF/N\nKF/b5ZH4ChOnqGhsxRgcx1ivMB0GA1UdDgQWBBRxC+ClERgU/2elwU+i3MPUj77X\nxjAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQDUpVsdcvkHmUqcXX6R\nv2uIzMWe736GdtUvRdhT4Lce6+/S3uMLkrgmYfP2ChlCu0LlpCq1iAglpcTz9arT\n5irR54ilB7pPMyHsvnkqona89dwbqgHCpaDJZWiwywudEXAKRUKg/ZNzXokSIH3I\n92lvExoTCNRdPXgnyTp6084GK5jyfX7phMvXguhK40xmixUJI8U4f0n2U6BwEpvJ\n41mbyBfEuJR9yw4PXPPHD0JQTht7R7Wa75JMrygfe36c/KeT7LQJCj2FMyK55oQY\nxRetme/rvUmlm9dx/cZm/jVct49xGeY/Netzz6QWV1LFfS9NRVLYBI+qIzzFT8J9\nTdanptsXSFbQdmcubzYh6YZbD97Dx1EFA8Epw04VNYCUnRDw5u+ISYO3zBfTFtbH\nhi0cWtBIP+42vk0lc1n2nnuOyFKchhadPyZsziEn0tpWDpgExUafj/sc4rSHetjy\nSvI3Ha7+MTZIYMEFVNv1no8YTER6u5hPAXNlILdG6U+nlOLg4Y6yJrIB9uQVyAIC\nepdKjHXk22/HZhBgJsVcfYSG51rEjUXJAHgDu2XG/JwS6YOAvbzgdYLQSioRMVbj\nDFXc10415uqoQ4eGq5FzOaf/yltfu25s/omoRF5FeNrU6Pw3CGzhbLbPhnODTAdm\ngjj6JaLHlDLCtRunzbrX1RDBsA==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Notarius Certificate Authority 2",
+      "sha256": "41FBA2AAE761459CC8395E9668F02F35F6795FD3D8539F5AC9DDB4EB8FD77398",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGQjCCBCqgAwIBAgINAMUHjxkAAAAAVJHKVjANBgkqhkiG9w0BAQsFADBSMQsw\nCQYDVQQGEwJDQTEVMBMGA1UEChMMTm90YXJpdXMgSW5jMSwwKgYDVQQDEyNOb3Rh\ncml1cyBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMTA1MTcxOTMxNDha\nFw0zNjA0MTcyMDAxNDhaME8xCzAJBgNVBAYTAkNBMRUwEwYDVQQKEwxOb3Rhcml1\ncyBJbmMxKTAnBgNVBAMTIE5vdGFyaXVzIENlcnRpZmljYXRlIEF1dGhvcml0eSAy\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAsfMk2IFkr3jXcKxBxS6Z\nILNJhuVAzjBCUzbAtJGPFhdzf9hohEYFpHsjUuKDVmnw+E2PGlDNTjwSJbgFi/nR\njsPQWOiitLfwK7tBdqwo0+XPObqaGKleSPOLWeDg0oV1UBY/txvUrxwS/ddx/1b7\n9JDrt9Vu3cMJQBxeHGNE/VixdesEGdfADxxNCa/riuGvLrANBVQInkis88QLjlDf\n54sRsgLc1tf7sIcNca6cgfu1yUUcuIk1dwBsAF6JJOcsqj5pMk3t6tEX64owr91Q\nHGnqY8K/lbWAapNdP4BoNaH12DUUkM4i/wKK1bMi7gpLKFWKtiFhcCvVNgLDvJCG\nZT1vksiND3ATByMvZlEbsA//Db2u4MahPXlrThS0NdhOhU+lkUkGBLgIFY2lFBBO\njizr9IWVAnEuJhMVQzbr3MqIi6puIXxPCfvrt3M7fjAgwhkDkcMdhkPmNPu3W7PS\nWFU0NXYbeTax1sI5SybvkxBFZXgtrLJK+n2UcO26ozhiujR7LHIB5LbeyVEZ9d8b\nAHxjoNlHhcJ6XC1ZuV2C25G8gOERHaiBEuNd5ftkgPoUCsDrICxLmnmHJIiSxTh3\n3FDvG+GdF82Aeevy+SlJ8FbOzGaRUTncNQJtDp7qFqi0257GBs5WLpeIUMUw1sBM\nAGnmsgNC6VDGPIz0xZS/MJ0CAwEAAaOCARgwggEUMIG2BgNVHR8Ega4wgaswgaig\ngaWggaKGO2h0dHA6Ly9jcmwubm90YXJpdXMuY29tL25vdGFyaXVzX3Jvb3RfY2Ev\nY3JsL2NybF9yb290YTIuY3JspGMwYTELMAkGA1UEBhMCQ0ExFTATBgNVBAoTDE5v\ndGFyaXVzIEluYzEsMCoGA1UEAxMjTm90YXJpdXMgUm9vdCBDZXJ0aWZpY2F0ZSBB\ndXRob3JpdHkxDTALBgNVBAMTBENSTDIwCwYDVR0PBAQDAgEGMB8GA1UdIwQYMBaA\nFF/NKF/b5ZH4ChOnqGhsxRgcx1ivMB0GA1UdDgQWBBS8PXImNOFNBIWlby6Y4Mtf\nsLTX4TAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQDSUeHsyTABY4OK\nCmZJbJPLZiYOisrLhW/2EjeV1GfIkpqHqMaoswc433yDVOmghsEnUcSAJorsrz6e\nudPr/wCCcLDxuNotz2c4NN2d5CZvxnZ71SqIci9VGWBeHYSuroPVGeC0FrmsOaEW\ncTV+W7PmfCqe3qfTZfgZi7DMFh7/FvOpCUkbWzCcwMwrBVIbufgmyed+hfaVd+3m\nIGew1hbIaPk8z8CxGdNfVFWNupJ+5AAnKp6LNGdosbP3KFRm7MexAIvR4EQeqh7G\nx8Cd9gxEBFwV0l0xxK+1+Nb+M8xjO2v3GVpxcA23X8Lu+kPqfqB/h7pw1wp3EL2I\nemv7foybEGhH4b4CTiAAgms6gVhWhXbGv/DvoObwTMFhAbQtnPb0s6mRE9YBAEdn\nkVj5EVNLEL5J0aa5uSiCaq8LKZMeJuvTiKEdb5XIxCNdFO0YFikSB3UOqWlm73we\nDpoODgXje6TgwqJtave6+E+yC1T/oijg9cdyih+BdvLnYonTNa+P6Wld4Korme8n\nDvM1k+XyiwkNeSbj1isrHJP21X2yziH75JH2hkcN2yHMPkxdS4TyWzo4H0Hxg8Po\nNfyBSrzk+WhQcTrAtApC7wH5IW4CjLFR/PhbiIFKVYO/ouWVgGnx13W3wUoxUwKd\nQmoTHnNrSshv457q39Osh0p2rp6w+w==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Notarius Certificate Authority 3",
+      "sha256": "0940AB07AC04B881C385763F9A247AF5A187FA4F1C7B385A09CA9C33B9DD32BA",
+      "parent_name": "Notarius Root Certificate Authority",
+      "valid_from": "2021.05.17",
+      "valid_to": "2036.04.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIEdzCCAl+gAwIBAgINALQVfc8AAAAAVJHKVzANBgkqhkiG9w0BAQsFADBSMQsw\nCQYDVQQGEwJDQTEVMBMGA1UEChMMTm90YXJpdXMgSW5jMSwwKgYDVQQDEyNOb3Rh\ncml1cyBSb290IENlcnRpZmljYXRlIEF1dGhvcml0eTAeFw0yMTA1MTcxOTU1NTda\nFw0zNjA0MTcyMDI1NTdaME8xCzAJBgNVBAYTAkNBMRUwEwYDVQQKEwxOb3Rhcml1\ncyBJbmMxKTAnBgNVBAMTIE5vdGFyaXVzIENlcnRpZmljYXRlIEF1dGhvcml0eSAz\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEhvipG5W7a0/TlHLavCn88Bi0cQ23\n1l6cS5++G8k8e8P1g8TeD3jPCoy3QRQKZ0Ypzduz8/DOi/59rcIhAqXgGKOCARgw\nggEUMIG2BgNVHR8Ega4wgaswgaiggaWggaKGO2h0dHA6Ly9jcmwubm90YXJpdXMu\nY29tL25vdGFyaXVzX3Jvb3RfY2EvY3JsL2NybF9yb290YTIuY3JspGMwYTELMAkG\nA1UEBhMCQ0ExFTATBgNVBAoTDE5vdGFyaXVzIEluYzEsMCoGA1UEAxMjTm90YXJp\ndXMgUm9vdCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxDTALBgNVBAMTBENSTDIwCwYD\nVR0PBAQDAgEGMB8GA1UdIwQYMBaAFF/NKF/b5ZH4ChOnqGhsxRgcx1ivMB0GA1Ud\nDgQWBBTNb6XT23GvfJkHH8bMLQg881JYpTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3\nDQEBCwUAA4ICAQC0n2Zj87EoZNWvgivM7TWUd4YBXfDiaFxaYIkcJWEBLI7pKsPF\ny7mScXz1ftHVeiLGnok1QqMWqz4lgaqRYMo5LTo8arBIKnqOXZPRe6ZE8ZDSvktD\nrw0fETS9kcE+8q3MKTDJ7bx/efFr02UOFblGVGMi3CD5geSPtUETnUm3zHcubpd5\nfNQWog/C79zVNBnXMyoRAP/fKV58Nwj/wXuMrkCF8LD6jMMRWdC+CVyhjxypGF8n\n0+I+BJWpGiSVVmao2Mz9TiSAseSVGINj7xas4CPibVkm5nlRSPyITR/ddaUMpBB+\nK/7iY0TuML0t/We2NMDF/lnIleR4YmDKHMIXAE7ltv2mmLlAdrBv/bdxA4NpQRtE\nC31oqqDv0yRhjdbNSFxlHLh0lohYBAbQYFJduxppdJbhYIp30ivYsadbyAl/3GnL\ngVvvDwuyrffEizumMUTFxk9t72I6u3PiaEBptOUfmAQcNA0WpYXJNc96bKgXk+im\nscz91wBHilreXmqUMNZ/TOzpblq2lTOUDOtK+zWaaEDc+8KH2YUtAmRuCn+qvYOh\n/IK5gDETIAK8/T9GqDS5G53qSs4kJI2UneeLs2aWKTrXF2w3tYrOSZHKIlRHyLvv\n2gLwqPx3DygT59fWGdEbWcR47couUngiqSnzKCtDe8DNf6TCBCTrcqAhvw==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "notarius"
+}

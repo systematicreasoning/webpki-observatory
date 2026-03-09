@@ -1,0 +1,110 @@
+name: Update Data & Deploy
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'pipeline/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 cryptography
+
+      - name: Run root algorithm pipeline (generates PEM cache)
+        run: python pipeline/fetch_root_algo.py
+
+      - name: Run market/trust pipeline (reads PEM cache for cert viewer)
+        run: python pipeline/fetch_and_join.py
+
+      - name: Run browser share pipeline
+        run: python pipeline/fetch_browser_share.py
+
+      - name: Run incident pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_incidents.py
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ pipeline/ops_cache/ pipeline/algo_cache.json pipeline/pem_cache.json
+          if git diff --staged --quiet; then
+            echo "No data changes"
+          else
+            git stash --include-untracked
+            git pull origin main --rebase || git rebase --abort
+            git stash pop || true
+            git add data/ pipeline/ops_cache/ pipeline/algo_cache.json pipeline/pem_cache.json
+            git commit -m "Update WebPKI data $(date -u +%Y-%m-%d)"
+            git push origin main
+          fi
+
+  build:
+    needs: update-data
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: app
+        run: npm install
+
+      - name: Build
+        working-directory: app
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          PIPELINE_DIR: ${{ github.workspace }}/pipeline
+        run: |
+          npm run build
+          mkdir -p dist/data
+          cp -r ${{ github.workspace }}/data/ca dist/data/ca
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,87 @@
+{
+  "ca_owner": "Agence Nationale de Certification Electronique",
+  "country": "Tunisia",
+  "root_count": 3,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": false
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "TnTrust Root CA - G1",
+      "sha256": "54E84A8E9DA7F3BB14F35C7F9C314B6EAB2739EB8086C8000F00C0993C3E694C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2022.09.21",
+      "valid_to": "2047.09.21",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Tunisian Root Certificate Authority - TunRootCA2",
+      "sha256": "C795FF8FF20C966688F064A1E091421D3110A3456C17EC2404B998738741F622",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.05.05",
+      "valid_to": "2027.05.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "TunTrust Root CA",
+      "sha256": "2E44102AB58CB85419451C8E19D9ACF3662CAFBC614B6A53960A30F7D0E2EB41",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2019.04.26",
+      "valid_to": "2044.04.26",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "TunTrust Root CA",
+      "sha256": "BABBCA986946352CF9BF382E880652F4E94DBC4FEDD0F1CC21FA9973C96D65AB",
+      "parent_name": "TunTrust Root CA",
+      "valid_from": "2019.04.18",
+      "valid_to": "2044.04.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "TunTrust Services CA",
+      "sha256": "063627355C941A1C93FC515CBAEF2F173D4A646DDEB139CB8C75C1022222994F",
+      "parent_name": "TunTrust Root CA",
+      "valid_from": "2019.04.26",
+      "valid_to": "2039.04.26",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    }
+  ],
+  "slug": "agence-nationale-de-certification-electronique"
+}

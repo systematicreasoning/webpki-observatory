@@ -1,0 +1,111 @@
+{
+  "ca_owner": "Government of Korea, KLID",
+  "country": "Republic of Korea (South Korea)",
+  "root_count": 5,
+  "intermediates_count": 1,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "GPKIRootCA",
+      "sha256": "606223D9DB80DF3939601E74B7E828E2800CCE4273F76F276AA62DB0A8E3B6C1",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.03.15",
+      "valid_to": "2017.03.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDijCCAnKgAwIBAgIQRfjg5AHFPnHmvXFtl5xBIzANBgkqhkiG9w0BAQUFADBP\nMQswCQYDVQQGEwJLUjEcMBoGA1UEChMTR292ZXJubWVudCBvZiBLb3JlYTENMAsG\nA1UECxMER1BLSTETMBEGA1UEAxMKR1BLSVJvb3RDQTAeFw0wNzAzMTUwNjAwMDRa\nFw0xNzAzMTUwNjAwMDRaME8xCzAJBgNVBAYTAktSMRwwGgYDVQQKExNHb3Zlcm5t\nZW50IG9mIEtvcmVhMQ0wCwYDVQQLEwRHUEtJMRMwEQYDVQQDEwpHUEtJUm9vdENB\nMIIBITANBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBaK0EVm9t2JgHwVHILhxMf\noNA/lqoNszSB3khan/NwWsLxOp4E8E6UeZfh9LUUTNdvxIsYt9wSKx0Km+4gDFuP\n//mvgp6YRtA9XSjzlxbBXOVWv0SkAKF6y5t6W9zU7fvyoAJnAB5E5YoB3KWjTv7W\nDGfKSbnw0KD5TR8D04bvDYV1TfPt+81qZgRX9FebrGaKT8KoT3GJCd1MAN+Wu9WQ\nCrS2am3Gv9OZKf9i8BDaRawJcguCEOgVqItf4qJaeR7CZ/3pRFcLA9AhFVGwAPOP\nbeIj8Ekh2W3PYj3s6/0okgE/eqNyfOvzruf4CuxurXqbVckwS5y2YUZrWBr+n0gd\nAgMBAAGjYzBhMB8GA1UdIwQYMBaAFBZnMvRoXmgxR9vt7M5hLpokRsR9MB0GA1Ud\nDgQWBBQWZzL0aF5oMUfb7ezOYS6aJEbEfTAOBgNVHQ8BAf8EBAMCAa4wDwYDVR0T\nAQH/BAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEANWNSxmAYHLfCwVpYAuwH1aGQ\nk/yAR9BSeKuF+HbTuLAYMqC2kGgTZj1vr47c9qPEzjlfr+0KZuB8EcgMy54fOCmK\ni97IYy7HtNLONpGU4E+EkraqIqj9MaczSMlb9hPYFhbrHz+lTgaTOtkGZTCW+o0G\n26Ea9Cv6D2jwwSt8nQXXCUI70i+RkPwOazhbsnWpV5xXZPWYIKT/1DAE5M4fkMkv\nwd9aVrjLqqq0v+u49yJKTcE19GW9eLxveBtWOoHoDfXCpRcw041Xd8ulwUyxMN00\nuKuSCiICNov2bPdhuQjuMK0aqETxLjLsg6JISDpnX+lvGxczCCrBycNnmg6FZw==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "GPKIRootCA1",
+      "sha256": "407C276BEAD2E4AF0661EF6697341DEC0A1F9434E4EAFB2D3D32A90549D9DE4A",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "NotBefore",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2011.08.03",
+      "valid_to": "2031.08.03",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDXTCCAkWgAwIBAgIBATANBgkqhkiG9w0BAQsFADBQMQswCQYDVQQGEwJLUjEc\nMBoGA1UECgwTR292ZXJubWVudCBvZiBLb3JlYTENMAsGA1UECwwER1BLSTEUMBIG\nA1UEAwwLR1BLSVJvb3RDQTEwHhcNMTEwODAzMDY1MjMwWhcNMzEwODAzMDY1MjMw\nWjBQMQswCQYDVQQGEwJLUjEcMBoGA1UECgwTR292ZXJubWVudCBvZiBLb3JlYTEN\nMAsGA1UECwwER1BLSTEUMBIGA1UEAwwLR1BLSVJvb3RDQTEwggEiMA0GCSqGSIb3\nDQEBAQUAA4IBDwAwggEKAoIBAQCh/m8EBbDJhGQyN2+g5dTlsgjtaRKqhgj3gkYK\nBgtuXsXkaTVxbf99AvbN3QE8+WCIaPJUd0091UGmLzaBVyW4ct+iUNrX/FXyzjaf\nbNbbl1nfHhaZhkiOTVQhmY5zuj96evEtJMevnxe6iRADOPWnqp+CxT2IzcSFkQCq\n7L2qn8hU2/LpXUvnAYglJZi8t6Ef+r03P1r8dA5OzZ8yV3qhD1R1wsNQtCzMgwcE\nrFRZhFZYuxpfmS5y0fZW0seeTjcdxHiR3whYI5U6AI7DjdWIrT9Cd9ByV4aevkBh\nqkePPIYGmUPXnnqCkdHdnzkMH0WP9TBhD2jTXZKdcFtTyEJrAgMBAAGjQjBAMB0G\nA1UdDgQWBBR4A+sMjKbTVXWkh7Tr0ZpmD0xzizAOBgNVHQ8BAf8EBAMCAQYwDwYD\nVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEARGJWATwo81x7UEQugNbi\ncL8IWXoV51SZVH3kz49fNUjVoq1n2yzfaMddlblbflDNObp/68DxTlSXCeqFHkgi\n/WvyVHERRECXnF0WeeelI+Q8XdF3IJZLT3u5Ss0VAB2loCuC+4hBWSRQu2WZu2Yk\ns9eBN0x6NmtopRmnf2d6VrcFA+WOgUeTjXiDkG52IaPw0w1uTfmRw5epky5idyY2\nbfJ1JeVUINMJnOWpgLkOH3xxakoD8F1Fbi6C3t7MmKupojUq/toUDms6zTk3DIkc\nwd7PALNWL5U8TxNLoroTHSf/lzaOv3o9KDRa0FQo58bPI7MdbRWE4F3mS/ZIrnv7\njQ==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "MOIS SSL Root CA",
+      "sha256": "1CF341AE35341AC3AE1DC68D5B10DC0C9DC1307656F75FD92CA2C68489D52E9A",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.02.22",
+      "valid_to": "2043.02.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFfDCCA2SgAwIBAgIUBEnvw+saJCNaCMHdO3BiwRZ0iPIwDQYJKoZIhvcNAQEL\nBQAwVjELMAkGA1UEBhMCS1IxLDAqBgNVBAoMI01pbmlzdHJ5IG9mIHRoZSBJbnRl\ncmlvciBhbmQgU2FmZXR5MRkwFwYDVQQDDBBNT0lTIFNTTCBSb290IENBMB4XDTIz\nMDIyMjA2MzgyN1oXDTQzMDIyMjAxMDAwMFowVjELMAkGA1UEBhMCS1IxLDAqBgNV\nBAoMI01pbmlzdHJ5IG9mIHRoZSBJbnRlcmlvciBhbmQgU2FmZXR5MRkwFwYDVQQD\nDBBNT0lTIFNTTCBSb290IENBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKC\nAgEAvw7zZpfUhl4Hf+vF5pULvDlzXBR9ONKfVjgYp/qo4A+JIcQssQP5TYCvhGGw\nTmWgvCbaSeuliWukieRKA8AhOiZSODwZsgG1kDuX2CVxfUAjkUg0xINTzDnnLQ6J\nIH36/dkUWX4s+09/oIvR4cmi4UrtgCrWj+dkG9C8RgfnRFK7kdXdQnU6DOZzp4nt\nq4ChFsVwWKao6sA20c2ysNmif971OmzqkdKqt8TJH1+EomXVMCBdJz9MWqYeSKFX\nrWBq4b45wbBNAaKApTuQwel0FmZExsx0F1y2VsP0hWfGrXZOsElxcdcwjYGuvir7\nHITiDvR+hCek3qcZl1G+DYKhHbGnBJq+nTjkQ2sLdmESGPaUpqkNgBEgJqym1jRR\nWt7LxEz6bpILu1PSUFtXUnThS5ALWpRhhU5FtD/8rfKiBiEgqxIzBAPNXF1/Cd/p\n1WvduiNaJU+Dixgg+B2DB0isE3ooLTwwO9Gzaw3RP0j1Y+hpy7xttjhSHvdctanT\n5/gMX99urCrx57rADP1+WIH+LmtYmBaZviq5hd4ynfbfULEIlw0osMXn5wWQkbS9\nG4ZfQS/D54YxzcMpAxJXj4QIpRGlZhcR5hABo91qeCeqFXLCKuKyBqtHQaYUXmjn\ny11mptP42dqn8/6GdDgAMG7KXwV29hNAtO8Y4MiToegbBFcCAwEAAaNCMEAwHQYD\nVR0OBBYEFDdaCfvOJOHnZ8e+B2jM3CgfhDENMA4GA1UdDwEB/wQEAwIBBjAPBgNV\nHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4ICAQB4Nn8yCcRzfmvJlUPchRWD\nv68tbkWNPQL7acXYQB554bhrVSvVwFAXFY6Jrwz5gRacxAcdhvU3eqk1H6diIOLB\nmJf4mvqZLVfrft/02S9P+3AERGASYGgeHbPNc8Sq2Je5q0KNHwzgOoGCxSNmvvhc\n+m6VG/y8n2f3riyTMWCtMwkhVIOlQl4Z6z2xn/isDfR0X3LTCAa3Kxd7YHwstzZh\nH0CNZG+O8bmz5XLWdr0N8iZcZqtrhJOV0rXMT46xajKT6S6jSxb+aBPQs5nbriyN\nVNnCFBBeZUAMqvfF98MRso4MXa1S6uC6ylCnz3xBXa3yI5sXv7EsA/eOYaM2p9OX\ncVha9V3eVC4zsvMJQI/Z1q82hNLGOtnvdSWg7M9KgdN9Ahr279Fhx4hiBwD86MUr\ncwxgPi+ZQt0UkjK50UkRK5XOSEqPjyxyrx8fGx6T9TDMJGnFZPAtrthQvfhmIZpu\nbLG2GswFOYwU3Ne9odorAku5wCgt0pCAlXmUoKchXfvNGA8u0zMPOCp3LM2UA3bb\nJKcpNVPwVG0PYlEyOq6Vf8yRbbZS1vVGhhiQdhnspfa2YepMOix5xiMRGSvq0GQQ\nfE5LbB4iUDbwcU0eYf9KStnvg3KVdr4dpMn6w3RWtXg+iui3q516vB+Jg+HpWgWr\nOEv8p1O+EtEMkB8Ag3EI5Q==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Root CA",
+      "sha256": "E5C01CB4093279FAA19FCFA24EA43EB1B26D07A615ADF7240184A1E716B761C9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2009.12.23",
+      "valid_to": "2014.12.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDmTCCAoGgAwIBAgIQPMKBSwDnUk2bqke34WH1DjANBgkqhkiG9w0BAQUFADBM\nMQswCQYDVQQGEwJLUjEcMBoGA1UEChMTR292ZXJubWVudCBvZiBLb3JlYTENMAsG\nA1UECxMER1BLSTEQMA4GA1UEAxMHUm9vdCBDQTAeFw0wOTEyMjMxMTEzMjRaFw0x\nNDEyMjMxMTEzMjRaMEwxCzAJBgNVBAYTAktSMRwwGgYDVQQKExNHb3Zlcm5tZW50\nIG9mIEtvcmVhMQ0wCwYDVQQLEwRHUEtJMRAwDgYDVQQDEwdSb290IENBMIIBITAN\nBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBA1qFCFyxVQN+aesOR9OO9kSv121xm\nL4lc/XjUCUw9p8ScLvrwWba9tNKNKAirrxNBroBC9OtcLV9+Q3o1ta8/3MQ9NkWS\nsrh+Dbysx8Fk2N5tzrOkjlB+SPStjtmGGTUDincodS2CW0rspctxAvREMYNKeezO\nZf8coTNmr1syZf7mrYcnTP1PGAmYZH4/zjdW88LgxpmbAEs3mO8cYyqVrq0Dzzpc\nIg492fVwcXb7RM8rACEmcDrhquvNSfs7Yrh0Wlal8iySPrUAvIS/YONCbo2j4GS2\nraVDmPdh38Xo4PDVpr2gaW9ybo6ND8v2+Ov2zFtzndUt8c4X294If9yNAgMBAAGj\neDB2MB8GA1UdIwQYMBaAFAIT7q4cIDgsqfBv6l+fBzqT70d0MB0GA1UdDgQWBBQC\nE+6uHCA4LKnwb+pfnwc6k+9HdDAOBgNVHQ8BAf8EBAMCAQYwEwYDVR0gBAwwCjAI\nBgRVHSAAMAAwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAQMU2\nBxjwtm1nicq3lrnWpgZY103dSWKcsGyg6N69iPHIJpVMEZO7S7x2bey9QzT712KQ\nvOOtGbw4j5wGc9hLABCZp88IPqAzU19v6m20rulOmc5OKpLVkgt3JbxVlXiuhF2y\nEu1ND2qpU9lJ11K7CYQd0u5URt2giB6pKOG+F/98yvMz8uVBr3dwFX2gxIF10Rmo\nnxpvpNJ2ch8OQxujtva1c17Sl/0v81YEqRPMEqcW0W2yIgzxBjVjRZPKifr9HglP\nJ7VUdxEEcxTc6Z67D5vhwiVTxPM34c0tJhMguIy27XF2X0/B/xgbs4fDL40LUtrE\nvbNGBaKokSfM+AGmMg==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Root CA",
+      "sha256": "0378B202CCABBA99A12E569A11A077DB1EDB39482061C75D0073059D9AB5B513",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2002.04.21",
+      "valid_to": "2012.04.21",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDmTCCAoGgAwIBAgIQPMKBSwDnUk2bqke34WH1DjANBgkqhkiG9w0BAQUFADBM\nMQswCQYDVQQGEwJLUjEcMBoGA1UEChMTR292ZXJubWVudCBvZiBLb3JlYTENMAsG\nA1UECxMER1BLSTEQMA4GA1UEAxMHUm9vdCBDQTAeFw0wMjA0MjEwOTA3MjNaFw0x\nMjA0MjEwOTA3MjNaMEwxCzAJBgNVBAYTAktSMRwwGgYDVQQKExNHb3Zlcm5tZW50\nIG9mIEtvcmVhMQ0wCwYDVQQLEwRHUEtJMRAwDgYDVQQDEwdSb290IENBMIIBITAN\nBgkqhkiG9w0BAQEFAAOCAQ4AMIIBCQKCAQBA1qFCFyxVQN+aesOR9OO9kSv121xm\nL4lc/XjUCUw9p8ScLvrwWba9tNKNKAirrxNBroBC9OtcLV9+Q3o1ta8/3MQ9NkWS\nsrh+Dbysx8Fk2N5tzrOkjlB+SPStjtmGGTUDincodS2CW0rspctxAvREMYNKeezO\nZf8coTNmr1syZf7mrYcnTP1PGAmYZH4/zjdW88LgxpmbAEs3mO8cYyqVrq0Dzzpc\nIg492fVwcXb7RM8rACEmcDrhquvNSfs7Yrh0Wlal8iySPrUAvIS/YONCbo2j4GS2\nraVDmPdh38Xo4PDVpr2gaW9ybo6ND8v2+Ov2zFtzndUt8c4X294If9yNAgMBAAGj\neDB2MB8GA1UdIwQYMBaAFAIT7q4cIDgsqfBv6l+fBzqT70d0MB0GA1UdDgQWBBQC\nE+6uHCA4LKnwb+pfnwc6k+9HdDAOBgNVHQ8BAf8EBAMCAQYwEwYDVR0gBAwwCjAI\nBgRVHSAAMAAwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQUFAAOCAQEAAaip\nyCZ8rD6097aSwX7zqJBtfRfMaAxEwuUMUvixAk/KOTtXWObfv2QKjUa01Nmy54MH\nrUv9Eb/v55nAid24xKfoLYSSzR/XGMd7hk/ruV5eydWw4PT69qTBkOZt3PYOS+Hv\n3TU5/vHGbJBBpGGJI+akP2NnuvGed+MO7Sp743olc0g3f3nlKlMG2YyyCG80BFuJ\ndgerLKMoAf8TUnSgE1ORZjjCiaUZSEowuMS+ZNzsnzBZmmbFlh99EzDqfQrf1r2C\nMCjoTY3acMqAmxxoFXxDs4r1L2kEhhcPMKKP0TbXjRlKams4F2QruwnSq9YRrvan\nuSuQZ4oqBNo2kxt8Pg==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "MOIS SSL Server CA",
+      "sha256": "C435BF6129E9773DECAECA19CA8AC9C372E72BB0D280983C9D45D5602710A556",
+      "parent_name": "MOIS SSL Root CA",
+      "valid_from": "2023.02.23",
+      "valid_to": "2033.02.23",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGNjCCBB6gAwIBAgIUB6a80T9aAKlAE0OGlMKJWFYW2zswDQYJKoZIhvcNAQEL\nBQAwVjELMAkGA1UEBhMCS1IxLDAqBgNVBAoMI01pbmlzdHJ5IG9mIHRoZSBJbnRl\ncmlvciBhbmQgU2FmZXR5MRkwFwYDVQQDDBBNT0lTIFNTTCBSb290IENBMB4XDTIz\nMDIyMzA5MzI0OFoXDTMzMDIyMzAxMDAwMFowWDELMAkGA1UEBhMCS1IxLDAqBgNV\nBAoMI01pbmlzdHJ5IG9mIHRoZSBJbnRlcmlvciBhbmQgU2FmZXR5MRswGQYDVQQD\nDBJNT0lTIFNTTCBTZXJ2ZXIgQ0EwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGK\nAoIBgQDSM7PNl+ugUgDAvZFOlV+a24wSUs+mfkbbiUk/350xscYmcX+r5hiyWxRY\nz+CtUJcsLbfXZ+94szpXLC3P/SCsPJPNiq+SKtsR6IvfcKwHI2RT45BFc9DzQV5N\nAc7T+3Gvn1R7AsDVGEh1zr/Qvsl+i2h5eKUQ9nS40ofWO4rKduJeVdFnqG8l9wOP\nrnTBq0+smCedABXJxbXhGCWqBLV52OtS9VOUT9CkNeK+OSjFKbk7nR7PIUqxqPDF\nuiZrJbh39rWO5zcOOLQbhzyGABuZqrH3F6z/yOl87jW1w1zLyEB1jY7HYXLgKCWb\nA5Mug9DuUvBr69bUDTVTOwMAFYfs6WAtHjT03JEfqnxou8LbGyr9gOl+NVpwQBSl\nkgXhzhWBjbEdzjAlpBxO1ZaCcsrnizjINdubKQzXXb0mE+RfCQtmCVW58H86N+qH\nyvGNOFMwLSi6i18AxUfwBfj253yuQ87m+XX9pRRFePUtPWJvo0P2qA0HLRd+7vuh\nT37lDC8CAwEAAaOCAXgwggF0MB8GA1UdIwQYMBaAFDdaCfvOJOHnZ8e+B2jM3Cgf\nhDENMB0GA1UdDgQWBBRbL5MIO8ixPREfX0EZ9KdUwMaHxTAOBgNVHQ8BAf8EBAMC\nAYYwQAYDVR0gBDkwNzA1BgRVHSAAMC0wKwYIKwYBBQUHAgEWH2h0dHA6Ly9zc2wu\nZ3BraS5nby5rci9sZWdhbC9jcHMwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUE\nFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwOQYDVR0fBDIwMDAuoCygKoYoaHR0cDov\nL3NzbC5ncGtpLmdvLmtyL2FybC9TU0wtUm9vdENBLmNybDByBggrBgEFBQcBAQRm\nMGQwNgYIKwYBBQUHMAKGKmh0dHA6Ly9zc2wuZ3BraS5nby5rci9jZXJ0cy9zc2wt\ncm9vdGNhLmNlcjAqBggrBgEFBQcwAYYeaHR0cDovL29jc3AtcmNhLXNzbC5ncGtp\nLmdvLmtyMA0GCSqGSIb3DQEBCwUAA4ICAQAx9rPUzlJMZQ+F4SYExl+losU/qjFx\n/nXHZnoFgJiX/c86E5LMEjLwGSviVY0QM0dW4bV1a9IVgBQyKIqg5Nl9qUcFj3YH\nANjk03PlnZAeqvrq13pNG1p4Zhp4tgnHIfYmzOwHkyMY1szCJ8HM7sBUok2Kx3YR\nuULH5ZMgRzLYVzG/2bdDXHrQsb0w+z0xEg3eR7lJJLAENn2UPRpOMWnUYQTtLZEr\n6mRSES2IlUpCr046zUDwTH6oeR4/w3sr97dw0F8WR2QEIDCc8TasL9Ak5+mwFIJb\nloFKUUnc4lRNwccmX3v+9zKs9jerJWvtoOp16/6wv8dBi3QZkBulT1PJYHfntTSP\n0E3tliMQMabXSdks/tYHcuRUv20hylZA/txvkdxachxF4prNqacOo0YcgFfAeh8e\n5j6K3l8+KYFWTuLwbeQMyjZialvzVRYJs3zrXZmqJ7NRK2Re1OM2q/dIB6pmJva9\nNn7BTYJrQRTiV6SGQdYaWhLVK+yNytOYw/izJCC7qL8zbt5fJBsP9AlH9vk/j4bl\neuaxPslF6H22K30xMnBursWrDe067zeQdQ5SjruIVBoNxMstJl+hvMCJ4ojBlq3L\ner91Xkq86Wj4qMvMF3CLJfvCguN0NZUWhqL/NjD1RAc4CxotBvYaMfujOIym6S17\n9hzKjL+5qkpxlw==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "government-of-korea-klid"
+}

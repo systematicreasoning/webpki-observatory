@@ -1,0 +1,49 @@
+{
+  "ca_owner": "Department of Defence Australia",
+  "country": "Australia",
+  "root_count": 2,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ADOCA02",
+      "sha256": "6CCFD302FC44BF4599329B9750878EA44E7E8566564BCBD586169762DD10C74E",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2011.09.01",
+      "valid_to": "2019.01.27",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIID2TCCAsGgAwIBAgICBxUwDQYJKoZIhvcNAQEFBQAwVzELMAkGA1UEBhMCQVUx\nDDAKBgNVBAoTA0dPVjEMMAoGA1UECxMDRG9EMQwwCgYDVQQLEwNQS0kxDDAKBgNV\nBAsTA0NBczEQMA4GA1UEAxMHQURPQ0EwMjAeFw0xMTA5MDEwNDI2MDdaFw0xOTAx\nMjcwMjMxMjRaMFcxCzAJBgNVBAYTAkFVMQwwCgYDVQQKEwNHT1YxDDAKBgNVBAsT\nA0RvRDEMMAoGA1UECxMDUEtJMQwwCgYDVQQLEwNDQXMxEDAOBgNVBAMTB0FET0NB\nMDIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDkUIVId4++/0nRu3Wu\nhyAKlkElK7xGB93LBIaVLEkuvUYMDvdYoGAWhdpdO+N1XkJ9ZGyPwV0pZEGyhbcb\nRr2F2tc6HbK08Uo9/h7ayO6GnaNqUQvkRZiv2BtIvDwUIu0rnzt/bzM81n2s4HlP\nv2WTyxcqb7x6D+lbX+EMKvtAUjZKXWU4y1nBSLOkkYUWXXh9ws8tM+5ZSsjmYbOG\nH4TIuBpsntFgtII1670jqC+TVFDOJF4xrtNqNCxhhzdGHkOJxoDLIgPTyYUuH5ux\nrDlLTWDyimEb/4OxLHOPiELALbHKnsCVZ3R7luRqeo5BRaA088645+KP81BVZG+5\nICuTAgMBAAGjga4wgaswDAYDVR0TBAUwAwEB/zBLBgNVHSAERDBCMDgGCSokAYJO\nAQEBATArMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3LmRlZmVuY2UuZ292LmF1L3Br\naTAGBgRVHSAAMA4GA1UdDwEB/wQEAwIBxjAfBgNVHSMEGDAWgBTp553rNb24sitJ\nWPS8kn2LcYoRWjAdBgNVHQ4EFgQU6eed6zW9uLIrSVj0vJJ9i3GKEVowDQYJKoZI\nhvcNAQEFBQADggEBAFbQqMhsybSs8TuBdSsRxPZWtFeuwpIZXJZzCu0uQ5xkKll4\nE7VQjE5qkFTzGT4WGM9DE8kyc/hV4MrQkhk+ZaPegBIcUaUYLMBp3beGMq/wrc/g\nwyPE5fy2PwsF15Y6ZF53jITO8dzNBArcl/EhHMd9MCVd1yA1lcOHHbY/21PiKqT4\nGRc6DBXuswU4Me5Fcd2X+3hxhgL0nzQZc0kQK6B/8cn6oPJYIzEW+BBQgrtd0urv\nad1ndlU4x6gOA4A4TwAga98rZZPbCK9gbDQgqK1IPxB+psOUAZXhgSyg7YyuVE46\nS8PSws9+AnzvKiy77NrexQGvlEntD8K/DpBpLWs=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Australian Defence Public Root CA",
+      "sha256": "209E956AF04DF3996507C887D356230D6EB49FDBDD2D8A058FF50B8F80F690AA",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.11.28",
+      "valid_to": "2036.11.28",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIEIjCCAwqgAwIBAgIUKeuSM0ZPMkH/gxkAqa3E2fjj4n8wDQYJKoZIhvcNAQEL\nBQAwcTELMAkGA1UEBhMCQVUxDDAKBgNVBAoTA0dPVjEMMAoGA1UECxMDRG9EMQww\nCgYDVQQLEwNQS0kxDDAKBgNVBAsTA0NBczEqMCgGA1UEAxMhQXVzdHJhbGlhbiBE\nZWZlbmNlIFB1YmxpYyBSb290IENBMB4XDTE2MTEyODIyMjUyOFoXDTM2MTEyODIy\nMTM0OFowcTELMAkGA1UEBhMCQVUxDDAKBgNVBAoTA0dPVjEMMAoGA1UECxMDRG9E\nMQwwCgYDVQQLEwNQS0kxDDAKBgNVBAsTA0NBczEqMCgGA1UEAxMhQXVzdHJhbGlh\nbiBEZWZlbmNlIFB1YmxpYyBSb290IENBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A\nMIIBCgKCAQEA005UBBvQ9JuduCOH4CDHnpixcXoGkC7irUj+kwVs7Ia/KECFs0x5\n70dTmBAeVO59eLgYEwxEUv3QgaqTCCM5vl8Pa90ll/MBQt/UgQDEUL56iS0Zr3NK\nP8w6wL+iqMUV9z58QXSCay53ZuJqpZGIbgYxp68L5lrgrn1ary9H0PL7hHOcRqEe\nhERRxF8u2pACX4HfEQ7S+7s6F3Oj8o1jqk//cnplYoNaKjzyzSwjjc/rIR+/1ANX\n9TcWDF7lVxHCqPr/bDnyPVLmtXnAW+Ky6mMgDA6lKl4S4eavX4t8oK05NTWYX/Gv\nONAm0029Ynd1Pa9rFIZ7WvYhj9bq4qcOrQIDAQABo4GxMIGuMA8GA1UdEwEB/wQF\nMAMBAf8wSwYDVR0gBEQwQjAGBgRVHSAAMDgGCSokAYJOAQEBBzArMCkGCCsGAQUF\nBwIBFh1odHRwOi8vY3JsLmRlZmVuY2UuZ292LmF1L3BraTAOBgNVHQ8BAf8EBAMC\nAcYwHwYDVR0jBBgwFoAUrJnhAi/oXEtBtzS4HumbgzYNlLQwHQYDVR0OBBYEFKyZ\n4QIv6FxLQbc0uB7pm4M2DZS0MA0GCSqGSIb3DQEBCwUAA4IBAQB4vIFK2DpXu70m\nv+oqKPCIivJQTJBn2kv1uBQIutt/cqiaWbzxHImo9DoDEFQTel3G2ro+D4jVatMb\nly1iYTpv+QCvcgZz7BDAYR7MXE8ZMkY4wd0/0jcapY6GoPAJzDXWGQJ8zTn89/kf\n55R5Tj23+JdOO0RqzZSwufd+4uP5mX/F06ZQtEn7Fn5OQSzPPsd5QLqBGCYI+cWd\n49jxbxxoP2pbdxdSowbeGcJLbqKV/NUIvyy1aTVR4+PfTxopbYN4PTgkygI/VBDh\ns2Th1Zre8zf2MxC1drOr18kfUzqtVUEcSMk2nof/ddxp0K/ZelfGyrFD/DmB/Nx6\no5qlmFBU\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "department-of-defence-australia"
+}

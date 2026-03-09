@@ -1,0 +1,141 @@
+{
+  "ca_owner": "Buypass",
+  "country": "Norway",
+  "root_count": 5,
+  "intermediates_count": 18,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "Buypass Class 2 CA 1",
+      "sha256": "0F4E9CDD264B025550D170806340214FE94434C9B02F697EC710FC5FEAFB5E38",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2006.10.13",
+      "valid_to": "2016.10.13",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Buypass Class 2 Root CA",
+      "sha256": "9A114025197C5BB95D94E63D55CD43790847B646B23CDF11ADA4A00EFF15FB48",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2010.10.26",
+      "valid_to": "2040.10.26",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Buypass Class 3 CA 1",
+      "sha256": "B7B12B171F821DAA990CD0FE5087B128448BA8E5184F84C51E02B5C8FB962B24",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2005.05.09",
+      "valid_to": "2015.05.09",
+      "tls_capable": false,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Buypass Class 3 Root CA",
+      "sha256": "EDF7EBBCA27A2A384D387B7D4010C666E2EDB4843E4C29B4AE1D5B9332E6B24D",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2010.10.26",
+      "valid_to": "2040.10.26",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Buypass Class 3 Root CA G2 HT",
+      "sha256": "AB936DFD7F171D3A3CBD08F9BEBDC3F3BAAABAA79DF6A908F8A7B0128627F187",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2020.11.10",
+      "valid_to": "2045.11.10",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Buypass Class 2 CA 2",
+      "sha256": "54A89ECB989A1DCCF4013639F38974A0BC0742C2993DFB6BD0CBF1F462964501",
+      "parent_name": "Buypass Class 2 Root CA",
+      "valid_from": "2019.03.25",
+      "valid_to": "2030.10.26",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Buypass Class 2 CA 5",
+      "sha256": "3062918D9DD617925271BC7F8080B8A6A5D2185BBD880F7862FD4C043B194191",
+      "parent_name": "Buypass Class 2 Root CA",
+      "valid_from": "2017.05.23",
+      "valid_to": "2027.05.23",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Buypass Class 3 CA 2",
+      "sha256": "DAA0435407FA44C28AB939E6823813605779093873A96649AD6E03B05D28626C",
+      "parent_name": "Buypass Class 3 Root CA",
+      "valid_from": "2019.03.25",
+      "valid_to": "2030.10.26",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Buypass Class 3 CA 3",
+      "sha256": "C49C350E5A8205E063E74C554A994335B8435C996527D4EF1A2B0C7B51584B2D",
+      "parent_name": "Buypass Class 3 Root CA",
+      "valid_from": "2012.09.25",
+      "valid_to": "2032.09.25",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "buypass"
+}

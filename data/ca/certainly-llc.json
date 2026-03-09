@@ -1,0 +1,76 @@
+{
+  "ca_owner": "Certainly LLC",
+  "country": "USA",
+  "root_count": 2,
+  "intermediates_count": 2,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": false,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "Certainly Root E1",
+      "sha256": "B4585F22E4AC756A4E8612A1361C5D9D031A93FD84FEBB778FA3068B0FC42DC2",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2021.04.01",
+      "valid_to": "2046.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIB9zCCAX2gAwIBAgIQBiUzsUcDMydc+Y2aub/M+DAKBggqhkjOPQQDAzA9MQsw\nCQYDVQQGEwJVUzESMBAGA1UEChMJQ2VydGFpbmx5MRowGAYDVQQDExFDZXJ0YWlu\nbHkgUm9vdCBFMTAeFw0yMTA0MDEwMDAwMDBaFw00NjA0MDEwMDAwMDBaMD0xCzAJ\nBgNVBAYTAlVTMRIwEAYDVQQKEwlDZXJ0YWlubHkxGjAYBgNVBAMTEUNlcnRhaW5s\neSBSb290IEUxMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAE3m/4fxzf7flHh4axpMCK\n+IKXgOqPyEpeKn2IaKcBYhSRJHpcnqMXfYqGITQYUBsQ3tA3SybHGWCA6TS9YBk2\nQNYphwk8kXr2vBMj3VlOBF7PyAIcGFPBMdjaIOlEjeR2o0IwQDAOBgNVHQ8BAf8E\nBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQU8ygYy2R17ikq6+2uI1g4\nhevIIgcwCgYIKoZIzj0EAwMDaAAwZQIxALGOWiDDshliTd6wT99u0nCK8Z9+aozm\nut6Dacpps6kFtZaSF4fC0urQe87YQVt8rgIwRt7qy12a7DLCZRawTDBcMPPaTnOG\nBtjOiQRINzf43TNRnXCve1XYAS59BWQOhriR\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Certainly Root R1",
+      "sha256": "77B82CD8644C4305F7ACC5CB156B45675004033D51C60C6202A8E0C33467D3A0",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2021.04.01",
+      "valid_to": "2046.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFRzCCAy+gAwIBAgIRAI4P+UuQcWhlM1T01EQ5t+AwDQYJKoZIhvcNAQELBQAw\nPTELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUNlcnRhaW5seTEaMBgGA1UEAxMRQ2Vy\ndGFpbmx5IFJvb3QgUjEwHhcNMjEwNDAxMDAwMDAwWhcNNDYwNDAxMDAwMDAwWjA9\nMQswCQYDVQQGEwJVUzESMBAGA1UEChMJQ2VydGFpbmx5MRowGAYDVQQDExFDZXJ0\nYWlubHkgUm9vdCBSMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBANA2\n1B/q3avk0bbm+yLA3RMNansiExyXPGhjZjKcA7WNpIGD2ngwEc/csiu+kr+O5MQT\nvqRoTNoCaBZ0vrLdBORrKt03H2As2/X3oXyVtwxwhi7xOu9S98zTm/mLvg7fMbed\naFySpvXl8wo0tf97ouSHocavFwDvA5HtqRxOcT3Si2yJ9HiG5mpJoM610rCrm/b0\n1C7jcvk2xusVtyWMOvwlDbMicyF0yEqWYZL1LwsYpfSt4u5BvQF5+paMjRcCMLT5\nr3gajLQ2EBAHBXDQ9DGQilHFhiZ5shGIXsXwClTNSaa/ApzSRKft43jvRl5tcdF5\ncBxGX1HpyTfcX35pe0HfNEXgO4T0oYoKNp43zGJS4YkNKPl6I7ENPT2a/Z2B7yyQ\nwHtETrtJ4A5KVpK8y7XdeReJkd5hiXSSqOMyhb5OhaRLWcsrxXiOcVTQAjeZjOVJ\n6uBUcqQRBi8LjMFbvrWhsFNunLhgkR9Za/kt9JQKl7XsxXYDVBtlUrpMklZRNaBA\n2CnbrlJ2Oy0wQJuK0EJWtLeIAaSHO1OWzaMWj/Nmqhexx2DgwUMFDO6bW2BvBlyH\nWyf5QBGenDPBt+U1VwV/J84XIIwc/PH72jEpSe31C4SnT8H2TsIonPru4K8H+zMR\neiFPCyEQtkA6qyI6BJyLm4SGcprSp6XEtHWRqSsjAgMBAAGjQjBAMA4GA1UdDwEB\n/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBTgqj8ljZ9EXME66C6u\nd0yEPmcM9DANBgkqhkiG9w0BAQsFAAOCAgEAuVevuBLaV4OPaAszHQNTVfSVcOQr\nPbA56/qJYv331hgELyE03fFo8NWWWt7CgKPBjcZq91l3rhVkz1t5BXdm6ozTaw3d\n8VkswTOlMIAVRQdFGjEitpIAq5lNOo93r6kiyi9jyhXWx8bwPWz8HA2YEGGeEaIi\n1wrykXprOQ4vMMM2SZ/g6Q8CRFA3lFV96p/2O7qUpUzpvD5RtOjKkjZUbVwlKNrd\nrRT90+7iIgXr0PK3aBLXWopBGsaSpVo7Y0VPv+E6dyIvXL9G+VoDhRNCX8reU9di\ntaY1BMJH/5n9hN9czulegChB8n3nHpDYT3Y+gjwN/KUD+nsa2UUeYNrEjvn8K8l7\nlcUq/6qJ34IxD3L/DCfXCh5WAFAeDJDBlrXYFIW7pw0WwfgHJBu6haEaBQmAupVj\nyTrsJZ9/nbqkRxWbRHDxakvWOF5D8xh+UG7pWijmZeZ3Gzr9Hb4DJqPb1OG7fpYn\nKx3upPvaJVQTA945xsMfTZDsjxtK0hzthZU4UHlG1sGQUDGpXJpuHfUzVounmdLy\nyCwzk5Iwx06MZTMQZBf9JBeW0Y3COmor6xOLRPIh80oat3df1+2IpHLlOR+Vnb5n\nwXARPbv0+Em34yaXOp/SX3z7wJl8OSngex2/DaeP0ik0biQVy96QXr8axGbqwua6\nOV+KmalBWQewLK8=\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Certainly Intermediate E1",
+      "sha256": "98DD2A75F65748F2667BC4B079177813647C17EDCC6DEE92F1F06668BE0F1A3D",
+      "parent_name": "Certainly Root E1",
+      "valid_from": "2021.04.01",
+      "valid_to": "2031.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIC2TCCAl+gAwIBAgIRAJYHppJ2acna+Y48FdIY4P0wCgYIKoZIzj0EAwMwPTEL\nMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUNlcnRhaW5seTEaMBgGA1UEAxMRQ2VydGFp\nbmx5IFJvb3QgRTEwHhcNMjEwNDAxMDAwMDAwWhcNMzEwNDAxMDAwMDAwWjBFMQsw\nCQYDVQQGEwJVUzESMBAGA1UEChMJQ2VydGFpbmx5MSIwIAYDVQQDExlDZXJ0YWlu\nbHkgSW50ZXJtZWRpYXRlIEUxMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEIytwCy+d\nJMrSsrBQV/BHqHcm8DElWAncRwx93X/EzltIWYS0yPWohGvkgabOxoYQEL25khqU\nLTyUtdEo3fhpgxilon8K6PYRPAn+T+pHt6O14WDig1eg2jRw4ojvYVKLo4IBGTCC\nARUwDgYDVR0PAQH/BAQDAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcD\nATASBgNVHRMBAf8ECDAGAQH/AgEAMB0GA1UdDgQWBBQKmJiuTzrX3WeG55clWpsj\nT1tYHTAfBgNVHSMEGDAWgBTzKBjLZHXuKSrr7a4jWDiF68giBzA5BggrBgEFBQcB\nAQQtMCswKQYIKwYBBQUHMAKGHWh0dHA6Ly9yb290LWUxLmNlcnRhaW5seS5jb20v\nMDIGA1UdHwQrMCkwJ6AloCOGIWh0dHA6Ly9jcmwucm9vdC1lMS5jZXJ0YWlubHku\nY29tLzAhBgNVHSAEGjAYMAgGBmeBDAECATAMBgorBgEEAYOGGQEBMAoGCCqGSM49\nBAMDA2gAMGUCMQCMTsYZ58bD1gHwU+ENg8QOsQcX6eqZtkX0B3XW2sBgw95cqTHX\nPKU5PxDc1mG2sXMCMDytOehXbAYtAokk5ll5M96ze3Q2gcaGn90Fl1+yx9ftHEZw\nGk6pRauHtuPAPfxPEA==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Certainly Intermediate R1",
+      "sha256": "575C09B07A001CA0EF6B3B1C5730BFAFEBC7AD9F56A009F1966C32F08E659713",
+      "parent_name": "Certainly Root R1",
+      "valid_from": "2021.04.01",
+      "valid_to": "2031.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFKDCCAxCgAwIBAgIRAOtFJ4ojquR1HTetA0VJyX4wDQYJKoZIhvcNAQELBQAw\nPTELMAkGA1UEBhMCVVMxEjAQBgNVBAoTCUNlcnRhaW5seTEaMBgGA1UEAxMRQ2Vy\ndGFpbmx5IFJvb3QgUjEwHhcNMjEwNDAxMDAwMDAwWhcNMzEwNDAxMDAwMDAwWjBF\nMQswCQYDVQQGEwJVUzESMBAGA1UEChMJQ2VydGFpbmx5MSIwIAYDVQQDExlDZXJ0\nYWlubHkgSW50ZXJtZWRpYXRlIFIxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB\nCgKCAQEAltJIZrGtZADK8OkOpD7Imei31l0HKXA57tfkJe/hWGMgSk98xUrI8fmU\nyNskRtrBTsGwTHIbUH+TBlKEHzc50QDZalDV3VpTK5LKPdyW7q86gRKDRsvLrStE\nzZ3qTG29cnOGLl5P5zEWWgTwNi4fLrcFBt7zLzUB7JYlePAkPuAibrTN+K7yPQHy\nXiNgpHMQVJQsmGrRnANdp7wq+3RnchCnhuRuF8gWpOPOe9RbUKjapEpAkJapr/dy\n1aDh6sxECnCVsPMz8WXNHZzkWVZoC5d1rP0JbQrCH+jk8kDnxh4vNXoa+j+I9SkO\nejH4FnKganXiADcVXG9GVVW90ohIUwIDAQABo4IBGTCCARUwDgYDVR0PAQH/BAQD\nAgGGMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDATASBgNVHRMBAf8ECDAG\nAQH/AgEAMB0GA1UdDgQWBBS9l53fodgbJZnjDAQGiWQS12UkxzAfBgNVHSMEGDAW\ngBTgqj8ljZ9EXME66C6ud0yEPmcM9DA5BggrBgEFBQcBAQQtMCswKQYIKwYBBQUH\nMAKGHWh0dHA6Ly9yb290LXIxLmNlcnRhaW5seS5jb20vMDIGA1UdHwQrMCkwJ6Al\noCOGIWh0dHA6Ly9jcmwucm9vdC1yMS5jZXJ0YWlubHkuY29tLzAhBgNVHSAEGjAY\nMAgGBmeBDAECATAMBgorBgEEAYOGGQEBMA0GCSqGSIb3DQEBCwUAA4ICAQBDMEjX\n2VcZq+4o3509O8FkJVPnSmH6SXw2/sa7VWxYttbqEqpSF9s9FBXPkD8pAclyTvTx\nE8OkWkzSvU+e3i79sNEE+QXoEFsweFcRhD/4WAn42sVhuNIOjAwp1J1mPUSdrosj\nguhlg0f+rGp0Ta4tWllpz7mG+IfDIUMzFfx/p5y7yh1RjZ/Fvu5HTgNS+VoOU1V2\nKI8tLk8bvuA9KR5GPI0nbEAwqiS+UuQvMeIK3syMW3+ZdkH7EqS+WgNJIubBzfnm\nCBkvsSanxnic2paU1zdWyUcNvLK7x1JCLk6ERrsbJuDhk24kzmCTwCsGjBJjgEOo\nn85ezEKhwmgTLW7kX0W+yvH11HBdm5J2eFw7EipWwIMW2cAVdTfFIAF3FThINc1o\n1ogiyYMXdqSiuD2PGWFSW/lKQ7oufj4Vx43dMXYH/6qgqXk/pLTGQjA4ymgXckwX\nGG55RbnQsgLCUqn2I0D9jOk5DS10PXd7llxD7ZuOX67C18zmhQtEMa3KFzQAZ4P3\nQ/bX9WRjUxu4KjQ08wFEvYns8A3FBYm+CvGeDGCR6qFt0tgIdvqy1BRMvDEo6eoN\nuulYEgmZtqs6vlNQogVd8JjZcLE8t3LNdR4Xonu85U9TkDLAONrLCqJ4+FoTpfRY\nqZUwYRmBMiNPuAqWjRDeDx6qzki2lS9FLExT9A==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "certainly-llc"
+}

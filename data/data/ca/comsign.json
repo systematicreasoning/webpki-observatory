@@ -1,0 +1,150 @@
+{
+  "ca_owner": "ComSign",
+  "country": "Israel",
+  "root_count": 4,
+  "intermediates_count": 17,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ComSign Advanced Security CA",
+      "sha256": "3CCC3CCFE45496D07B620DBF1328E8A1490018F48633C8A28A995CA60408B0BE",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2004.03.24",
+      "valid_to": "2029.03.24",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ComSign CA",
+      "sha256": "AE4457B40D9EDA96677B0D3C92D57B5177ABD7AC1037958356D1E094518BE5F2",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2004.03.24",
+      "valid_to": "2029.03.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ComSign Global Root CA",
+      "sha256": "2605875AFCC176B2D66DD66A995D7F8D5EBB86CE120D0E7E9E7C6EF294A27D4C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Blocked",
+      "valid_from": "2011.07.18",
+      "valid_to": "2036.07.16",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ComSign Secured CA",
+      "sha256": "507941C74460A0B47086220D4E9932572AB5D1B5BBCB8980AB1CB17651A844D2",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2004.03.24",
+      "valid_to": "2029.03.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "ComSign Corporations CA",
+      "sha256": "7A9B84BCB0FE50A966CB9D77C877DD6C6B2CBC12088A6E127210465A4F273306",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2023.05.08",
+      "valid_to": "2034.05.08",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Comsign eIDAS CA",
+      "sha256": "07DD4ED6DE14EB1B168C8883A579AF8D0DB7F3C2E2A9690E8B2679D0FD8D678A",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2020.07.12",
+      "valid_to": "2031.07.12",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ComSign IDF CA",
+      "sha256": "0150B74BC31E4BDC0C885092999755EA9D170E235807C8B2F0A077396F4572D6",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2023.05.08",
+      "valid_to": "2034.05.08",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ComSign ISA Global CA",
+      "sha256": "0AF6A3420743DB058B24140328018CC6B3E226C7696E47D0C14066D51CA725EF",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2017.11.07",
+      "valid_to": "2028.11.07",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ComSign Organizational CA",
+      "sha256": "7C50EAAF7E06D11499907CDCB47E8E256C81D388CD0E1D93B92B558E0B971E50",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2017.11.07",
+      "valid_to": "2028.11.07",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ComSign Professionals CA",
+      "sha256": "D61CD2C0287303FC2AADB4B23D4B52B5DFB45FE01B3F5E7A3D206E43A991B417",
+      "parent_name": "ComSign Global Root CA",
+      "valid_from": "2023.05.08",
+      "valid_to": "2034.05.08",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "comsign"
+}

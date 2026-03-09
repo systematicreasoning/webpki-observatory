@@ -1,0 +1,49 @@
+{
+  "ca_owner": "Carillon Information Security Inc.",
+  "country": "Canada",
+  "root_count": 2,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Carillon PKI Services G2 Root CA 1",
+      "sha256": "EE0EC4A0B5E6ECB865F49689B50E3DE38D4FD924A4041C0C2A62636DB0B6B31D",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2020.01.20",
+      "valid_to": "2040.01.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIF2jCCA8KgAwIBAgIGRCnTs8Z9MA0GCSqGSIb3DQEBCwUAMIGLMQswCQYDVQQG\nEwJDQTErMCkGA1UEChMiQ2FyaWxsb24gSW5mb3JtYXRpb24gU2VjdXJpdHkgSW5j\nLjEiMCAGA1UECxMZQ2VydGlmaWNhdGlvbiBBdXRob3JpdGllczErMCkGA1UEAxMi\nQ2FyaWxsb24gUEtJIFNlcnZpY2VzIEcyIFJvb3QgQ0EgMTAeFw0yMDAxMjAxOTQy\nNDVaFw00MDAxMjAxOTQyNDVaMIGLMQswCQYDVQQGEwJDQTErMCkGA1UEChMiQ2Fy\naWxsb24gSW5mb3JtYXRpb24gU2VjdXJpdHkgSW5jLjEiMCAGA1UECxMZQ2VydGlm\naWNhdGlvbiBBdXRob3JpdGllczErMCkGA1UEAxMiQ2FyaWxsb24gUEtJIFNlcnZp\nY2VzIEcyIFJvb3QgQ0EgMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIB\nAMO5XBmVDlHyw4pIktk28Uy7Tdecwcxf2ogVKDW332xN1UmsGMXryGl2xr/ZN3JI\n0lBx6WibzlF7rZk2b3PjYInZe0/Q6AYOVYybGNZc7ywdKyBKjw2YPRZNgxgbadEE\nbpl8ClR2cTy/PrZSOSGF+6QBPuBSuNhmhg2gu2AUXhTyGcWHFRjpXC4G67eWLVK4\nCE1+t9KdgnvHXMTotK+9CGee/S8xszVwIl2bxdEoh7xW5LcEEp6bueL2JnSzG9OY\nABrtkqIgzl6IRtasVPtLZWXc3QD0EZftiosUaC3nYLdylHfn27qyoL5A6BpitahO\nQv0LqnCD6dkmAlKXMT0knuSaDnO9GQwGmlETyqegDh8bQ5XT+mylki8UQi4RLk+b\nMA/jY7cRLDep8Zn/F0KT/bhnjZ0gK3i5G+OzV8ht1i+SJ05zps7ILGt4rcJnIP9T\nxkbh3seyf5QCnStn5J+PwnHvesWBSxQ8i6mMh2Gkv8SsUxqlz0yT7ULwbydPHHdq\n0QbzoB/fiJy4drIO0tfn2vlDXhEU5BlGgb1d04jv3ynH9lW/ziTy0gH4Opjp+r2Y\n9oDv/dS6xVIe+VuBuy/xC3LoulsC2FGWgZPrfELhC89BWTSRqo32LmrhB199DtQe\ncPPivHXG4iL0mSbVy+04l6RFNtbK/YuNqtdlAWDETWKDAgMBAAGjQjBAMB0GA1Ud\nDgQWBBQ9YZY5F/sQgP8aaFhl/OkDGVYe+TAPBgNVHRMBAf8EBTADAQH/MA4GA1Ud\nDwEB/wQEAwIBxjANBgkqhkiG9w0BAQsFAAOCAgEAftnQq/XkiRe7lRfAK5p1y+O1\n3XxbJCLrhr6R6y9aF7dsFzKiw2c+98978ihULzmi7UueTHINSBGcnF6p+2Mn/37D\n25MD7LjzJg5sZ99yQtQL89WS9w1fL72NnzIGasrNZ/Bcn8tujbgVE+ppyO05WME9\nNuoJr0sqVEgnyB0tv+1saYq9WqGMf2I9kN+UUClZyzZhXfvpqLcik6KVnjEX9p0d\nDdARB9pFL+HLqc7ppkwzzJ9RVDMG8Ak7tNJvXTlkslcDnrtNXfk16VDTqLfDHA2b\nR8QAg8nk7gbLtXU53OhXCQsZlY3RFaZVpj2SF2tzd8jDxid1tAhaEr5AukcxNfMn\nUUx9pdQOJqIWXKWSL7rabwvilc4QHjuLhopVkrxbtO+ocbki3DE039syuJtRchPa\nwr1FNdeFJgQMnpOu8r9nU7NKpyndE3tJBq0Zt3Ic/+049lcS9hp2lnYFd0BmAayD\nfOVgduDlbHaPo4Z3wmfH5rrxCjH4ANwtejD5ehQDIaCTnlJXNZwxX34IxTh7W/3p\n5Ce8cmXXLS3lD5BauFsSJ5ZDBQFdUgk4c4XbInLUVKKAutKccNeDwIDtnfrJB7rj\n0xU4BLl+FAyNNvHcuEW6yn3sAvaOxwLxtk3mpqrxx+Nt+blrhIW8kRG0NDKgVyHA\nPnqXWpa1VrLSGwWKBLU=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "CISRCA1",
+      "sha256": "12FF248372BD87E44ECE432198BE9B04525F33DEE00356FD646F8ACC01412F86",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2012.10.16",
+      "valid_to": "2032.10.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFojCCA4qgAwIBAgIGC4LclDN2MA0GCSqGSIb3DQEBCwUAMHAxCzAJBgNVBAYT\nAkNBMSswKQYDVQQKEyJDYXJpbGxvbiBJbmZvcm1hdGlvbiBTZWN1cml0eSBJbmMu\nMSIwIAYDVQQLExlDZXJ0aWZpY2F0aW9uIEF1dGhvcml0aWVzMRAwDgYDVQQDEwdD\nSVNSQ0ExMB4XDTEyMTAxNjE4MjgzM1oXDTMyMTAxNjE4MjgzM1owcDELMAkGA1UE\nBhMCQ0ExKzApBgNVBAoTIkNhcmlsbG9uIEluZm9ybWF0aW9uIFNlY3VyaXR5IElu\nYy4xIjAgBgNVBAsTGUNlcnRpZmljYXRpb24gQXV0aG9yaXRpZXMxEDAOBgNVBAMT\nB0NJU1JDQTEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDEdvFial/N\nKc0ENn9uYX5z9J1m3yJamoNEgWb9ThGwPqzoiLJTOf/jur7U/9OF2L1br2hPM6y4\nFH0SW3qVa8c2/iuP9IhgiTqqWThMwV1VgaXf2B8xetOjTvBRy8Mxh64L3speG6F0\nOPCSd3E8yxN+oMEKmL3YuPhUNJhOZxaaV0smhl8bZnKqwfJogp1YQXxxIuLPATH+\n4uBWqWjgrTOvNTkunG4GTPMjdi9pJugFOWm39Uga99/ZOTcyVREnBIEfnTyLjINS\nd8GuLM0rKkrlLfEZabqHXoud4HHIdNLN7m44N2pdGQDSdt2i6247qh31NgZPX15s\nwhDz3W+12nla/tVGRDRIr4YANHwkhN1FkPkWgqyokdTpRjNvfrpHH+Hvr+VQ1sb5\np+1sl6orKU5dxfge9nTJqyT4DVPHaBW+/FyrPXIL0nAEtxbjaanxZ7rGAEx7gDQ1\nLl7tH6Al96WCahB/v49Zb8NGpspCTkIjhQY5NYy18dfBI0JF/S8lcfjzB9MHaL7b\nmGwq9qVH97BlYK2ufOYRHSdUCGWw2ILAYWvpfo8i1nEda0EgZdhXmh98DlpU4JSw\nbXXvKDI1PFXDbWf4JL37QPNanTbZNUy74mvZsTYP5G8gGsVvesOROa+vzPP2vSCG\nutMkITwfNynmn/wav5jfPLogIRKpwjoqkwIDAQABo0IwQDAdBgNVHQ4EFgQU6pUV\n2lw5AOKa28S6LWf6ofd1NO0wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC\nAcYwDQYJKoZIhvcNAQELBQADggIBADXQ2Lie8gn48J+ybkiy1+qhmyiJOc3+Fmod\n6ZyCX1FHOvWe0byuH5/iXErI7O1GQvF8QwcV326X9u2G/J/FCF6CDqMuqAouvI4b\nMRIo9nkowSK20ZVpQOhZCSeikWR26tATjXD8ZcNvEZ8qSMqnYvWDFOUaFseRi7QJ\nxc574+QdbZei6csmHmu03D6Ddi9eTahoiVT9TtJGqED22Mp4zzYaPVlljJv1Kx9M\ngt94eE0mSkdprW8zHwMeIk7ZBlmeRvxQNV/GhRvkG/gAyeDTOqsmQ81H+lr4hQvH\nMtq1DS0wKTp5sxTppQ9wJdGNCVCU7U2SnjA3QNtaeEmPDzkvvS7XqwiUySmK992M\nvYJ8MFti6DVGVjhdkfYOb4zulZ/9dJ3t7RCrzouPt61/TWlJ8McRVZuagvei+jPy\nRBH6FUtGqZtrl0LWtLcJERR5U6bnfy0nOgo0JETOVYx6gHVzAkvi+kaUfTMUDUJW\nuaDmL4VIkZ9EuqEoqbEfiXomClNchbl8hJiMKGCltnqNPaAAPdx/qkjpqC6sX96H\nLVykaxbqveiVtc54CfhxNuWQaNIHlrq8AIsOmG1NcFPAw8wbE5xImpk9EsAnjmGS\nTGhSb40DHIn104bA/3FJTyBr/dFvkST18UcjTVnf0L1JQv1AOD7i8QVcJegQ5FoC\nA+O7fCUq\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "carillon-information-security-inc"
+}

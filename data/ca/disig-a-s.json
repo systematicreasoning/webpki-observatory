@@ -1,0 +1,105 @@
+{
+  "ca_owner": "Disig, a.s.",
+  "country": "Slovakia",
+  "root_count": 3,
+  "intermediates_count": 7,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "CA Disig",
+      "sha256": "92BF5119ABECCAD0B1332DC4E1D05FBA75B5679044EE0CA26E931F744F2F33CF",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2006.03.22",
+      "valid_to": "2016.03.22",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIEDzCCAvegAwIBAgIBATANBgkqhkiG9w0BAQUFADBKMQswCQYDVQQGEwJTSzET\nMBEGA1UEBxMKQnJhdGlzbGF2YTETMBEGA1UEChMKRGlzaWcgYS5zLjERMA8GA1UE\nAxMIQ0EgRGlzaWcwHhcNMDYwMzIyMDEzOTM0WhcNMTYwMzIyMDEzOTM0WjBKMQsw\nCQYDVQQGEwJTSzETMBEGA1UEBxMKQnJhdGlzbGF2YTETMBEGA1UEChMKRGlzaWcg\nYS5zLjERMA8GA1UEAxMIQ0EgRGlzaWcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw\nggEKAoIBAQCS9jHBfYj9mQGp2HvycXXxMcbzdWb6UShGhJd4NLxs/LxFWYgmGErE\nNx+hSkS943EE9UQX4j/8SFhvXJ56CbpRNyIjZkMhsDxkovhqFQ4/61HhVKndBpnX\nmjxUizkDPw/Fzsbrg3ICqB9x8y34dQjbYkzo+s7552oftms1grrijxaSfQUMbEYD\nXcDtab86wYqg6I7ZuUUohwjstMoVvoLdtUSLLa2GDGhibYVW8qwUYzrG0ZmsNHhW\nS8+2rT+MitcE5eN4TPWGqvWP+j1scaMtymfraHtuM6kMgiioTGohQBUgDCZbg8Kp\nFhXAJIJdKxatymP2dACw30PEEGBWZ2NFAgMBAAGjgf8wgfwwDwYDVR0TAQH/BAUw\nAwEB/zAdBgNVHQ4EFgQUjbJJaJ1yCCW5wCf1UJNWSEZx+Y8wDgYDVR0PAQH/BAQD\nAgEGMDYGA1UdEQQvMC2BE2Nhb3BlcmF0b3JAZGlzaWcuc2uGFmh0dHA6Ly93d3cu\nZGlzaWcuc2svY2EwZgYDVR0fBF8wXTAtoCugKYYnaHR0cDovL3d3dy5kaXNpZy5z\nay9jYS9jcmwvY2FfZGlzaWcuY3JsMCygKqAohiZodHRwOi8vY2EuZGlzaWcuc2sv\nY2EvY3JsL2NhX2Rpc2lnLmNybDAaBgNVHSAEEzARMA8GDSuBHpGT5goAAAABAQEw\nDQYJKoZIhvcNAQEFBQADggEBAF00dGFMrzvY/59tWDYcPQuBDRIrRhCA/ec8J9B6\nyKm2fnQwM6M6int0wHl5QpNt/7EpFIKrIYwvF/k/Ji/1WcbvgAa3mkkp7M5+cTxq\nEEHA9tOasnxakZzArFvITV734VP/Q3f8nktnbNfzg9Gg4H8l37iYC5oyOGwwoPP/\nCBUz91BKez6jPiCp3C9WgArtQVCwyfTssuMmRAAOb54GvCKWU3BlxFAKRmukLyeB\nEicTXxChds6KezfqwzlhA5WYOudsiCUI/HloDYd9Yvi0X/vF2Ey9WLw/Q1vUHgFN\nPGO+I++MzVpQuGhU+QqZMxEA4Z7CRneC9VkGjCFMhwnN5ag=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "CA Disig Root R1",
+      "sha256": "F96F23F4C3E79C077A46988D5AF5900676A0F039CB645DD17549B216C82440CE",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2012.07.19",
+      "valid_to": "2042.07.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFaTCCA1GgAwIBAgIJAMMDmu5QkG4oMA0GCSqGSIb3DQEBBQUAMFIxCzAJBgNV\nBAYTAlNLMRMwEQYDVQQHEwpCcmF0aXNsYXZhMRMwEQYDVQQKEwpEaXNpZyBhLnMu\nMRkwFwYDVQQDExBDQSBEaXNpZyBSb290IFIxMB4XDTEyMDcxOTA5MDY1NloXDTQy\nMDcxOTA5MDY1NlowUjELMAkGA1UEBhMCU0sxEzARBgNVBAcTCkJyYXRpc2xhdmEx\nEzARBgNVBAoTCkRpc2lnIGEucy4xGTAXBgNVBAMTEENBIERpc2lnIFJvb3QgUjEw\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCqw3j33Jijp1pedxiy3QRk\nD2P9m5YJgNXoqqXinCaUOuiZc4yd39ffg/N4T0Dhf9Kn0uXKE5Pn7cZ3Xza1lK/o\nOI7bm+V8u8yN63Vz4STN5qctGS7Y1oprFOsIYgrY3LMATcMjfF9DCCMyEtztDK3A\nfQ+lekLZWnDZv6fXARz2m6uOt0qGeKAeVjGu74IKgEH3G8muqzIm1Cxr7X1r5OJe\nIgpFy4QxTaz+29FHuvlglzmxZcfe+5nkCiKxLU3lSCZpq+Kq8/v8kiky6bM+TR8n\noc2OuRf7JT7JbvN32g0S9l3HuzYQ1VTW8+DiR0jm3hTaYVKvJrT1cU/J19IG32PK\n/yHoWQbgCNWEFVP3Q+V8xaCJmGtzxmjOZd69fwX3se72V6FglcXM6pM6vpmumwKj\nrckWtc7dXpl4fho5frLABaTAgqWjR56M6ly2vGfb5ipN0gTco65F97yLnByn1tUD\n3AjLLhbKXEAz6GfDLuemROoRRRw1ZS0eRWEkG4IupZ0zXWX4Qfkuy5Q/H6MMMSRE\n7cderVC6xkGbrPAXZcD4XW9boAo0PO7X6oifmPmvTiT6l7Jkdtqr9O3jw2Dv1fkC\nyC2fg69naQanMVXVz0tv/wQFx1isXxYb5dKj6zHbHzMVTdDypVP1y+E9Tmgt2BLd\nqvLmTZtJ5cUoobqwWsagtQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1Ud\nDwEB/wQEAwIBBjAdBgNVHQ4EFgQUiQq0OJMa5qvum5EY+fU8PjXQ04IwDQYJKoZI\nhvcNAQEFBQADggIBADKL9p1Kyb4U5YysOMo6CdQbzoaz3evUuii+Eq5FLAR0rBNR\nxVgYZk2C2tXck8An4b58n1KeElb21Zyp9HWc+jcSjxyT7Ff+Bw+r1RL3D65hXlaA\nSfX8MPWbTx9BLxyE04nH4toCdu0Jz2zBuByDHBb6lM19oMgY0sidbvW9adRtPTXo\nHqJPYNcHKfyyo6SdbhWSVhlMCrDpfNIZTUJG7L399ldb3Zh+pE3McgODWF3vkzpB\nemOqfDqo9ayk0d2iLbYq/J8BjuIQscTK5GfbVSUZP/3oNn6z4eGBrxEWi1CXYBmC\nAMBrTXO40RMHPuq2MU/wQppt4hF05ZSsjYSVPCGvxdpHyN85YmLLW1AL14FABZyb\n7bq2ix4Eb5YgOe2kfSnbSM6C3NQCjR0EMVrHS/BsYVLXtFHCgWzN4funodKSds+x\nDzdYpPJScWc/DIh4gInByLUfkmO+p3qKViwaqKactV2zY9ATIKHrkWzQjX2v3wvk\nF7mGnjixlAxYjOBVqjtjbZqJYLhkKpLGN/R+Q0O3c+gB53+XD9fyexn9GtePyfqF\na3qdnom2piiZk4hA9z7NUaPK6u95RyG1/jLix8NRb76AdPCkwzryT+lf3xkK8jsT\nQ6wxpLPn6/wY1gGp8yqPNg7rtLG8t0zJa7+h89n07eLw4+1knj0vllJPgFOL\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "CA Disig Root R2",
+      "sha256": "E23D4A036D7B70E9F595B1422079D2B91EDFBB1FB651A0633EAA8A9DC5F80703",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2012.07.19",
+      "valid_to": "2042.07.19",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFaTCCA1GgAwIBAgIJAJK4iNuwisFjMA0GCSqGSIb3DQEBCwUAMFIxCzAJBgNV\nBAYTAlNLMRMwEQYDVQQHEwpCcmF0aXNsYXZhMRMwEQYDVQQKEwpEaXNpZyBhLnMu\nMRkwFwYDVQQDExBDQSBEaXNpZyBSb290IFIyMB4XDTEyMDcxOTA5MTUzMFoXDTQy\nMDcxOTA5MTUzMFowUjELMAkGA1UEBhMCU0sxEzARBgNVBAcTCkJyYXRpc2xhdmEx\nEzARBgNVBAoTCkRpc2lnIGEucy4xGTAXBgNVBAMTEENBIERpc2lnIFJvb3QgUjIw\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQCio8QACdaFXS1tFPbCw3Oe\nNcJxVX6B+6tGUODBfEl45qt5WDza/3wcn9iXAng+a0EE6UG9vgMsRfYvZNSrXaNH\nPWSb6WiaxswbP7q+sos0Ai6YVRn8jG+qX9pMzk0DIaPY0jSTVpbLTAwAFjxfGs3I\nx2ymrdMxp7zo5eFm1tL7A7RBZckQrg4FY8aAamkw/dLukO8NJ9+flXP04SXabBbe\nQTg06ov80egEFGEtQX6sx3dOy1FU+16SGBsEWmjGycT6txOgmLcRK7fWV8x8nhfR\nyyX+hk4kLlYMeE2eARKmK6cBZW58Yh2EhN/qwGu1pSqVg8NTEQxzHQuyRpDRQjrO\nQG6Vrf/GlK1ul4SOfW+eioANSW1z4nuSHsPzwfPrLgVv2RvPN3YEyLRa5Beny912\nH9AZdugsBbPWnDTYltxhh5EF5EQIM8HauQhl1K6yNg3ruji6DOWbnuuNZt2Zz9aJ\nQfYEkoopKW1rOhzndX0CcQ7zwOe9yxndnWCywmZgtrEE7snmhrmaZkCo5xHtgUUD\ni/ZnWejBBhG93c+AAk9lQHhcR1DIm+YfgXvkRKhbhZri3lrVx/k6RGZL5DJUfORs\nnLMOPReisjQS1n6yqEm70XooQL6iFh/f5DcfEXP7kAplQ6INfPgGAVUzfbANuPT1\nrqVCV3w2EYx7XsQDnYx5nQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1Ud\nDwEB/wQEAwIBBjAdBgNVHQ4EFgQUtZn4r7CU9eMg1gqtzk5WpC5uQu0wDQYJKoZI\nhvcNAQELBQADggIBACYGXnDnZTPIgm7ZnBc6G3pmsgH2eDtpXi/q/075KMOYKmFM\ntCQSin1tERT3nLXK5ryeJ45MGcipvXrA1zYObYVybqjGom32+nNjf7xueQgcnYqf\nGopTpti72TVVsRHFqQOzVju5hJMiXn7B9hJSi+osZ7z+Nkz1uM/Rs0mSO9MpDpkb\nlvdhuDvEK7Z4bLQjb/D907JedR+Zlais9trhxTF7+9FGs9K8Z7RiVLoJ92Owk6Ka\n+elSLotgEqv89WBW7xBci8QaQtyDW2QOy7W81k/BfDxujRNt+3vrMNDcTa/F1bal\nTFtxyegxvug4BkihGuLq0t4SOVga/4AOgnXmt8kHbA7v/zjxmHHEt38OFdAlab0i\nnSvtBfZGR6ztwPDUO+Ls7pZbkBNOHlY667DvlruWIxG68kOGdGSVyCh13x01utI3\ngzhTODY7z2zp+WsO0PsE6E9312UBeIYMej4hYvF/Y3EMyZ9E26gnonW+boE+18Dr\nG5gPcFw0sorMwIUY6256s/daoQe/qUKS82Ail+QUoQebTnbAjn39pCXHR+3/H3Os\nzMOl6W8KjptlwlCFtaOgUxLMVYdh84GuEEZhvUQhuMI9dM9+JDX6HAcOmz0iyu8x\nL4ysEr3vQCj8KWefshNPZiTEUxnpHikV7+ZtsH8tZ/3zbBt1RqPlShfppNcL\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "CA Disig R2I2 Certification Service",
+      "sha256": "C96F24C45113FD91AE2F9E40E106653BFA0FFBCFA07E209524C844E7C8DA4148",
+      "parent_name": "CA Disig Root R2",
+      "valid_from": "2014.10.02",
+      "valid_to": "2029.09.28",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGAjCCA+qgAwIBAgIRCBeSUjZo9chQAAAAAAAAAAMwDQYJKoZIhvcNAQELBQAw\nUjELMAkGA1UEBhMCU0sxEzARBgNVBAcTCkJyYXRpc2xhdmExEzARBgNVBAoTCkRp\nc2lnIGEucy4xGTAXBgNVBAMTEENBIERpc2lnIFJvb3QgUjIwHhcNMTQxMDAyMTIx\nOTA2WhcNMjkwOTI4MTIxOTA2WjBlMQswCQYDVQQGEwJTSzETMBEGA1UEBwwKQnJh\ndGlzbGF2YTETMBEGA1UECgwKRGlzaWcgYS5zLjEsMCoGA1UEAwwjQ0EgRGlzaWcg\nUjJJMiBDZXJ0aWZpY2F0aW9uIFNlcnZpY2UwggEiMA0GCSqGSIb3DQEBAQUAA4IB\nDwAwggEKAoIBAQCyUskVGBrkooW8zWUYsR8WKNA5baWkD6PKuMXL3mi9lt/u0W1J\n5b2FIjtWJt6PBZlMGcnzCQSEC8Ao/9HZQQwwAttLgmcdBSwyIenDMuxiM1WbnZ+5\nkmUnKjHs+LaROq3vBCIzdGDQGoJACEFsJuFpDGQXrVDtlzhhRlmM0bsyJRJwp6iL\n31OCnGBz/sj5/rugnWFB9XNwUSFcafzTLwlo8OI/gIhhXQSdk8WjrFvQdG1TiqkI\nojm9Mz5a6pzfN9NncZbGV4Xa1cV/oMG4fZAqu7+X7tlVPPDF3/7UKzSRGydrShWc\n4tPOORPevcT6/XQnpqGrB89sxvtkm2lCsvrDAgMBAAGjggG+MIIBujCBgwYIKwYB\nBQUHAQEEdzB1MDcGCCsGAQUFBzABhitodHRwOi8vcm9vdGNhcjItb2NzcC5kaXNp\nZy5zay9vY3NwL3Jvb3RjYXIyMDoGCCsGAQUFBzAChi5odHRwOi8vd3d3LmRpc2ln\nLnNrL3Jvb3RjYXIyL2NlcnQvcm9vdGNhcjIuZGVyMB0GA1UdDgQWBBQkpbw6KGIV\nQjL5MFrJ8T7koQmosTAfBgNVHSMEGDAWgBS1mfivsJT14yDWCq3OTlakLm5C7TAS\nBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBBjB1BgNVHR8EbjBsMDSg\nMqAwhi5odHRwOi8vY2RwMS5kaXNpZy5zay9yb290Y2FyMi9jcmwvcm9vdGNhcjIu\nY3JsMDSgMqAwhi5odHRwOi8vY2RwMi5kaXNpZy5zay9yb290Y2FyMi9jcmwvcm9v\ndGNhcjIuY3JsMDkGA1UdIAQyMDAwLgYEVR0gADAmMCQGCCsGAQUFBwIBFhhodHRw\nOi8vd3d3LmRpc2lnLnNrL2Nwcy8wHAYDVR0RBBUwE4ERc3ByYXZhY2FAZGlzaWcu\nc2swDQYJKoZIhvcNAQELBQADggIBAEoFQYsKbtRjEdbWeqZHhJF8cRcg66HUY0zD\nOksWZpGzTOL7K7PGaJVRrMxIiIiG3hFU/CYWQlVk3NjiUo1T3m02TgkWfcXsyEZ2\nMVXpImSl5fgsDfI/5/INCGh39YkN5Y91yE0bDrJUa/uTadpS3fd4vKzmhy5qRsl2\nQFt29QDu7p/NUi5rojns1fCqzPserZyvciAG/hYS8t4C3GIOK2rwn09nZK+du5Gq\nuSX89KaVKM6UySqT+jIXzyhTwnXbEabFGSMVlmW/fKlGGLhET6jYPUnGje/b0qPv\nGmuvYpNC7ztCHcnNdfGLpB4L6Puxtn5xcYTswh1D8raQvArDFoqPwOQr2XggqU+t\n0ktu6IKIfInhB4WjGgAMr3aGyoNqKSv9Qzbh8vkdIe7+lwIBievK/+04q+Fsi5JB\nzTAUumLQZhS9eXd+065GF/0O90D5fS0Y5Wc7naMQ7/o9T+9hIxC4BIm+2g0KtL43\nSPF+jdqrLjUfe7/mWyZIvEKqlk6X6CUjRx9fVc01uO5gUyLHMSoWAtIyGBtmDUVC\n7exu4q8BHUDMQdrZyhJOJ9TbN2Xi+z8BhpqosGPe7UTtRB3/UmMsbEgbfIIb5mMw\nnx6TtnF5r+FLiew8BeQcD7+7768rw0+LaddwiKlmGBjYvNy+e1cSlJl1ZBXtHzlj\n57JOD9u0\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "CA Disig R2I3 Certification Service",
+      "sha256": "239FFA86D71033BA255914782057D87E8421AEDD5910B786928B6A1248C3E341",
+      "parent_name": "CA Disig Root R2",
+      "valid_from": "2014.10.02",
+      "valid_to": "2029.09.28",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGAjCCA+qgAwIBAgIRCKI5W6cDr/2sAAAAAAAAAAQwDQYJKoZIhvcNAQELBQAw\nUjELMAkGA1UEBhMCU0sxEzARBgNVBAcTCkJyYXRpc2xhdmExEzARBgNVBAoTCkRp\nc2lnIGEucy4xGTAXBgNVBAMTEENBIERpc2lnIFJvb3QgUjIwHhcNMTQxMDAyMTIy\nNTE5WhcNMjkwOTI4MTIyNTE5WjBlMQswCQYDVQQGEwJTSzETMBEGA1UEBwwKQnJh\ndGlzbGF2YTETMBEGA1UECgwKRGlzaWcgYS5zLjEsMCoGA1UEAwwjQ0EgRGlzaWcg\nUjJJMyBDZXJ0aWZpY2F0aW9uIFNlcnZpY2UwggEiMA0GCSqGSIb3DQEBAQUAA4IB\nDwAwggEKAoIBAQC2c8BJaaP1Qhlr6ohEe73Ji8HuJwuHFNZUESykJhsbUeZF6fMB\n8V8Q/3YOo/fLpSt1NlYf2o4F8XhZ5bTDEwmk4d+uoskZBSEqf3O57fOuLXXu/DY2\nbTM9cGSDhlFdVHdvfoN7b7H/aGtmc/EgyChZdBAmYIPGN2WOSOlasKF2R+SKjH7E\nb9iX7MdXgXYUKc/peFoz+4Ba+Z/34w9ks1yqTMqsaUee6NATS4rjlGRrAVP06iat\n1fgd06ebmdZUbRQ6WdVGyN5muypx+nmpzqHcAnY3efR+1nmWW4mvgu8m7f6YPGek\nSvh6qHbMQcSOWlgxJAjJZWA02OYh7pPDCKLrAgMBAAGjggG+MIIBujCBgwYIKwYB\nBQUHAQEEdzB1MDcGCCsGAQUFBzABhitodHRwOi8vcm9vdGNhcjItb2NzcC5kaXNp\nZy5zay9vY3NwL3Jvb3RjYXIyMDoGCCsGAQUFBzAChi5odHRwOi8vd3d3LmRpc2ln\nLnNrL3Jvb3RjYXIyL2NlcnQvcm9vdGNhcjIuZGVyMB0GA1UdDgQWBBSMURytxo/S\n7d4sVEDpSslyA8/otjAfBgNVHSMEGDAWgBS1mfivsJT14yDWCq3OTlakLm5C7TAS\nBgNVHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBBjB1BgNVHR8EbjBsMDSg\nMqAwhi5odHRwOi8vY2RwMS5kaXNpZy5zay9yb290Y2FyMi9jcmwvcm9vdGNhcjIu\nY3JsMDSgMqAwhi5odHRwOi8vY2RwMi5kaXNpZy5zay9yb290Y2FyMi9jcmwvcm9v\ndGNhcjIuY3JsMDkGA1UdIAQyMDAwLgYEVR0gADAmMCQGCCsGAQUFBwIBFhhodHRw\nOi8vd3d3LmRpc2lnLnNrL2Nwcy8wHAYDVR0RBBUwE4ERc3ByYXZhY2FAZGlzaWcu\nc2swDQYJKoZIhvcNAQELBQADggIBAIisFys6Vr64MtyHl4o70cS41eOEPdZa/6vo\nZCn3K2zdMX9ccBw5be9DswNVbL5aTrZOfVYEyA24QTrauM10E2MhjHuceeqXU8Sm\nGFesgmzbqFGLXkysvru3g4tK+DomogKSiGYbl2dEJRQCenNJ1zrT2artrsCp9JjQ\nNdzY5FV0RltVqHxdOkL4J290m1qxMatKM3jLkMEzrWFgvNq46lifc5Jzw9eAIMvG\nv6NhH0lPlhOw+C+rnUK93F9V5wtVyfHv1BSYjE2ZU9zUdcdQDQWDf1b4cJ3r79AH\n27BUSsfJhaUuuGnYFWS5o05bbchMfGTw5fGyFsES8Jrl6YWm3jbLqd8WeC4QHu5e\nzg+10r/C+wxopZe7QBLh/m8t70wbQqSGn/afju1pGxfNEaME+jod7f597ghZPixm\n99FoRXWkKejz1XwxfkN6fC7lnpYzH37YHD20eLctBMYe9+7n0VehzfSVO29IfC1J\nfJll3g4Q79b1igb0s4R8Z8WC/qnO3zdWFR6pMw4aCvlo4M0aGUtculLqa2KCSRGc\n+2kr3b4CAQKtDc1C2t4L8UZNRAp0WQmgluAvDxd1b0umHYqaLRgmumr1WlGtO+yR\n9SQkcFow0MU6vHVw4HmcyCn67NdBqPRUwGs9/u3U2OYYOL4XvBl9ly9ynp+5SIev\n93IJtVKu\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "CA Disig R2I5 Certification Service",
+      "sha256": "90BA720B376FB9FDCF8A1037A5316FB493B5ACF656AD79C6839008BD43343FDD",
+      "parent_name": "CA Disig Root R2",
+      "valid_from": "2023.04.20",
+      "valid_to": "2033.04.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIG1jCCBL6gAwIBAgIRCBsG30x5ZVCdAAAAAAAAAA4wDQYJKoZIhvcNAQELBQAw\nUjELMAkGA1UEBhMCU0sxEzARBgNVBAcTCkJyYXRpc2xhdmExEzARBgNVBAoTCkRp\nc2lnIGEucy4xGTAXBgNVBAMTEENBIERpc2lnIFJvb3QgUjIwHhcNMjMwNDIwMDgy\nODIyWhcNMzMwNDIwMDgyODIyWjBlMQswCQYDVQQGEwJTSzETMBEGA1UEBwwKQnJh\ndGlzbGF2YTETMBEGA1UECgwKRGlzaWcgYS5zLjEsMCoGA1UEAwwjQ0EgRGlzaWcg\nUjJJNSBDZXJ0aWZpY2F0aW9uIFNlcnZpY2UwggIiMA0GCSqGSIb3DQEBAQUAA4IC\nDwAwggIKAoICAQCl3fm84ifR5uAtxrxGwUFeRYwxX0UaDNHc0JFt3fkNbXBP1iou\nM+Dea7osQdjrXOxE7NZEeTbl692lv5XVbp+3cclBL//Q3rAPEBRZkh8rnrAtQUWy\ngPQDAAAlJWjCdsvcvJ3VSdERtjGNU9eQiKqaUHOuAGtMKEweiU+7WdZ0eB1r0Wm5\ngJU1sEqB/byRvd2H2rgWWqilaBkutEGncd6IYNyhtDwh9xP0aJwfses8XwZKamre\n1XBJUq/mEMfePJdYx+T7+K1xwj51AHHpGuhhOLi+noB4gGeqW0xy+j+cU/Ettec+\nYM0Ej1DKd1w9Xzst9m93xK77EZpnUL+xsERYYn6ZSzPn0LxzOS76w9jv4+1Fwt6P\n/kJxj7BFZMeDQq/O1PsW4ROKRHsrQKusDi5652jVZ3Ib82QFF9qGSoX4Y3UGB49I\nSD742w+oyEYbTnwV7KY7lL7mCgtAflT7PQAxCUMEF/Lpv1ICg+kVEQut1qXOmLR2\nQkEtbdM6nfCYnvfvlQGMZyB26mJ++Idb1Y7KFcoJd9f3PMYQqdKHW9msbYkVlTyE\nxVIkFsCt6sOm/HUAheZ+ELAojasbphzcvO9/Eh96ou8hiWyHNcpPQ58t+iAl1SDI\nZ7OTQiu1sgz90IShZk3irnakDhmU5uB1g3AqZb7AQrhTdvTKOdM2AADrCQIDAQAB\no4IBkjCCAY4wgYMGCCsGAQUFBwEBBHcwdTA3BggrBgEFBQcwAYYraHR0cDovL3Jv\nb3RjYXIyLW9jc3AuZGlzaWcuc2svb2NzcC9yb290Y2FyMjA6BggrBgEFBQcwAoYu\naHR0cDovL2NkcC5kaXNpZy5zay9yb290Y2FyMi9jZXJ0L3Jvb3RjYXIyLmRlcjAd\nBgNVHQ4EFgQU3Ew+R86SonfIbehl30teKvpnLY0wHwYDVR0jBBgwFoAUtZn4r7CU\n9eMg1gqtzk5WpC5uQu0wEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMC\nAQYwPgYDVR0fBDcwNTAzoDGgL4YtaHR0cDovL2NkcC5kaXNpZy5zay9yb290Y2Fy\nMi9jcmwvcm9vdGNhcjIuY3JsMDkGA1UdIAQyMDAwLgYEVR0gADAmMCQGCCsGAQUF\nBwIBFhhodHRwOi8vd3d3LmRpc2lnLnNrL2Nwcy8wJwYDVR0lBCAwHgYIKwYBBQUH\nAwIGCCsGAQUFBwMJBggrBgEFBQcDBDANBgkqhkiG9w0BAQsFAAOCAgEAYH6AI9qU\nVckloZyVXWHTDwuhov6aWlnmsNTLRT09HPlAr33WYJJc1RfIfHHTN+ZRZACmCcsz\nK9Gz9+/SO7XbFY1HGn8aN7Hl6G9LLI6Ywmbd1paLRm/DhvFbVhqZOixb3Mvcl/vH\nfJvqQzNCdf87+PnmTGGZDbpZ3w49o/HWUOHlzc5iNoxmsVwIIcz8sMRPFvD/+x+H\ncGecwrV0Cw9jGkHUwTnFlQBVMJQXyhE6EGk33VrpZqwRyoZENn3CbFNoHIJmRpYq\nAUuR2gF9MJQmtnpQNtKj1HbnYB3ek1IpBFCKpm6ndXHm6jKZkwFChU0cng41ueUM\nsGpWL10Hdnv4INtG5yky/svlkZnJZi5OdycphLuzIgzwBZgpIfWjE72QU5WIH/cn\nbtqpuSak3DCZtBirZ/28P7G/odDww3zbsSBNuq2TmnBcXSLJFr1NuGb2+8J+jH/1\nE+8tVugncnXxc6qHVJsSZtNFER4d920j/AzAgXR7qGqu0hSUrrNf+m+XwdqEgFrY\nseRfQ2aUEGYBVwcb5iQ0QYikmni8WPJhEem/vKbuYgm/nHWQpp/eO4GZ9/SnFPzH\nQtm+OuzhthdwUGPmQE9HvLowe1A4UyYyjKpWFjdcFvxcdWh0r6G5MCKW2O+aeoFd\nw/FG6JnQOvtyvRbz3liJWLbTEfOmyx0oIJs=\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "disig-a-s"
+}

@@ -1,0 +1,130 @@
+{
+  "_comment": "Classifies CA operators by their structural relationship to government. Classifications: 'government' (directly operated by a government agency or ministry), 'state_enterprise' (operated by an entity with direct state ownership or control). Customer relationships alone do not constitute a structural tie. The 'state_influence' field describes the specific structural relationship.",
+  "classifications": {
+    "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)": {
+      "type": "government",
+      "state_influence": "Spanish Royal Mint, government agency",
+      "jurisdiction": "Spain"
+    },
+    "Government of Hong Kong (SAR), Hongkong Post, Certizen": {
+      "type": "government",
+      "state_influence": "Hong Kong Post, SAR government agency",
+      "jurisdiction": "Hong Kong"
+    },
+    "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)": {
+      "type": "government",
+      "state_influence": "Valencian regional government agency",
+      "jurisdiction": "Spain"
+    },
+    "Government of Finland, Population Register Centre\u2019s (Väestörekisterikeskus, VRK)": {
+      "type": "government",
+      "state_influence": "Finnish population register, government agency",
+      "jurisdiction": "Finland"
+    },
+    "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)": {
+      "type": "government",
+      "state_influence": "Turkish government certification center",
+      "jurisdiction": "Turkey"
+    },
+    "Government of Brazil, Instituto Nacional de Tecnologia da Informação (ITI)": {
+      "type": "government",
+      "state_influence": "Brazilian federal IT institute, operates ICP-Brasil",
+      "jurisdiction": "Brazil"
+    },
+    "Government of Korea, KLID": {
+      "type": "government",
+      "state_influence": "Korean government agency",
+      "jurisdiction": "South Korea"
+    },
+    "Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)": {
+      "type": "government",
+      "state_influence": "Indian federal ministry",
+      "jurisdiction": "India"
+    },
+    "Government of The Netherlands, PKIoverheid (Logius)": {
+      "type": "government",
+      "state_influence": "Dutch government PKI operated by Logius",
+      "jurisdiction": "Netherlands"
+    },
+    "Government of Japan, Digital Agency": {
+      "type": "government",
+      "state_influence": "Japanese Digital Agency, cabinet-level",
+      "jurisdiction": "Japan"
+    },
+    "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication": {
+      "type": "government",
+      "state_influence": "Swiss federal IT office",
+      "jurisdiction": "Switzerland"
+    },
+    "Government of Sweden (Försäkringskassan)": {
+      "type": "government",
+      "state_influence": "Swedish Social Insurance Agency",
+      "jurisdiction": "Sweden"
+    },
+    "Government of Saudi Arabia, NIC (SDAIA)": {
+      "type": "government",
+      "state_influence": "Saudi Data and AI Authority",
+      "jurisdiction": "Saudi Arabia"
+    },
+    "Thailand National Root Certificate Authority (Electronic Transactions Development Agency)": {
+      "type": "government",
+      "state_influence": "Thai Electronic Transactions Development Agency",
+      "jurisdiction": "Thailand"
+    },
+    "Autoridad de Certificacion Firmaprofesional": {
+      "type": "government",
+      "state_influence": "Spanish notarial professional body, quasi-governmental",
+      "jurisdiction": "Spain"
+    },
+    "Financijska agencija (Fina)": {
+      "type": "state_enterprise",
+      "state_influence": "Croatian state-owned financial agency",
+      "jurisdiction": "Croatia"
+    },
+    "Agence Nationale de Certification Electronique": {
+      "type": "government",
+      "state_influence": "Tunisian national certification agency",
+      "jurisdiction": "Tunisia"
+    },
+    "Autoridad de Certificación (ANF AC)": {
+      "type": "government",
+      "state_influence": "Spanish certification authority",
+      "jurisdiction": "Spain"
+    },
+    "U.S. Federal Public Key Infrastructure (US FPKI)": {
+      "type": "government",
+      "state_influence": "US federal government PKI",
+      "jurisdiction": "United States"
+    },
+    "Chunghwa Telecom": {
+      "type": "state_enterprise",
+      "state_influence": "Majority state-owned telecom (Taiwan Ministry of Transportation)",
+      "jurisdiction": "Taiwan"
+    },
+    "Telia Company": {
+      "type": "state_enterprise",
+      "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
+      "jurisdiction": "Sweden"
+    },
+    "Deutsche Telekom Security GmbH": {
+      "type": "state_enterprise",
+      "state_influence": "German federal government holds ~30% of Deutsche Telekom via KfW",
+      "jurisdiction": "Germany"
+    },
+    "Shanghai Electronic Certification Authority Co., Ltd.": {
+      "type": "state_enterprise",
+      "state_influence": "State-affiliated entity, Shanghai municipality",
+      "jurisdiction": "China"
+    },
+    "China Financial Certification Authority (CFCA)": {
+      "type": "state_enterprise",
+      "state_influence": "Established by People's Bank of China",
+      "jurisdiction": "China"
+    },
+    "HARICA": {
+      "type": "state_enterprise",
+      "state_influence": "Operated by Greek academic/research network, government-funded institution",
+      "jurisdiction": "Greece"
+    }
+  }
+}

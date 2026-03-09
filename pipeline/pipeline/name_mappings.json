@@ -1,0 +1,41 @@
+{
+  "_comment": "Maps crt.sh CA owner names to CCADB CA owner names where they diverge. Keys are crt.sh names, values are CCADB names. When a crt.sh name maps to a CCADB name that is another CA's parent (e.g. QuoVadis -> DigiCert via acquisition), set 'parent' to the CCADB owner and 'note' to explain.",
+  "mappings": {
+    "Cybertrust Japan Co., Ltd.": {
+      "ccadb_name": "Cybertrust Japan / JCSI",
+      "note": "Different name format in CCADB"
+    },
+    "WISeKey": {
+      "ccadb_name": "OISTE",
+      "note": "WISeKey operates under OISTE Foundation roots"
+    },
+    "QuoVadis Trustlink B.V.": {
+      "ccadb_name": "DigiCert",
+      "note": "QuoVadis acquired by DigiCert in 2019, roots now under DigiCert in CCADB"
+    },
+    "Quo Vadis Trustlink B.V.": {
+      "ccadb_name": "DigiCert",
+      "note": "Alternate spelling, same as QuoVadis Trustlink B.V."
+    },
+    "Verizon Terremark NV": {
+      "ccadb_name": "DigiCert",
+      "note": "Verizon/GTE CyberTrust roots transferred to DigiCert"
+    },
+    "Verizon": {
+      "ccadb_name": "DigiCert",
+      "note": "Legacy Verizon roots transferred to DigiCert"
+    },
+    "T-Systems International GmbH": {
+      "ccadb_name": "Deutsche Telekom Security GmbH",
+      "note": "T-Systems is subsidiary of Deutsche Telekom"
+    },
+    "Siemens AG": {
+      "ccadb_name": "Eviden",
+      "note": "Siemens PKI operations moved to Atos/Eviden"
+    },
+    "Siemens": {
+      "ccadb_name": "Eviden",
+      "note": "Siemens PKI operations moved to Atos/Eviden"
+    }
+  }
+}

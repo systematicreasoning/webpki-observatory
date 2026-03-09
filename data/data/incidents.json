@@ -1,0 +1,641 @@
+{
+  "meta": {
+    "last_updated": "2026-03-07T06:37:00.469794+00:00",
+    "last_checked": "2026-03-07T07:54:41.321226+00:00",
+    "bug_count": 1688,
+    "active_incidents": 1423,
+    "active_cas": 54,
+    "classified_count": 1423,
+    "unclassified_count": 0,
+    "distrusted_excluded": 186,
+    "unmapped_bugs": 68,
+    "unmapped_names": 64,
+    "pipeline_error": null,
+    "pipeline_error_time": null
+  },
+  "total": 1423,
+  "ca_count": 54,
+  "years": [
+    {
+      "y": 2014,
+      "n": 2
+    },
+    {
+      "y": 2015,
+      "n": 1
+    },
+    {
+      "y": 2016,
+      "n": 5
+    },
+    {
+      "y": 2017,
+      "n": 80
+    },
+    {
+      "y": 2018,
+      "n": 78
+    },
+    {
+      "y": 2019,
+      "n": 196
+    },
+    {
+      "y": 2020,
+      "n": 203
+    },
+    {
+      "y": 2021,
+      "n": 161
+    },
+    {
+      "y": 2022,
+      "n": 96
+    },
+    {
+      "y": 2023,
+      "n": 126
+    },
+    {
+      "y": 2024,
+      "n": 200
+    },
+    {
+      "y": 2025,
+      "n": 214
+    },
+    {
+      "y": 2026,
+      "n": 61
+    }
+  ],
+  "categories": [
+    {
+      "cat": "Misissuance",
+      "n": 565
+    },
+    {
+      "cat": "Governance",
+      "n": 417
+    },
+    {
+      "cat": "Revocation",
+      "n": 322
+    },
+    {
+      "cat": "Validation",
+      "n": 119
+    }
+  ],
+  "yearsByClass": [
+    {
+      "y": 2014,
+      "mi": 2,
+      "rv": 0,
+      "gv": 0,
+      "vl": 0
+    },
+    {
+      "y": 2015,
+      "mi": 1,
+      "rv": 0,
+      "gv": 0,
+      "vl": 0
+    },
+    {
+      "y": 2016,
+      "mi": 4,
+      "rv": 0,
+      "gv": 0,
+      "vl": 1
+    },
+    {
+      "y": 2017,
+      "mi": 43,
+      "rv": 14,
+      "gv": 10,
+      "vl": 13
+    },
+    {
+      "y": 2018,
+      "mi": 38,
+      "rv": 6,
+      "gv": 26,
+      "vl": 8
+    },
+    {
+      "y": 2019,
+      "mi": 115,
+      "rv": 28,
+      "gv": 42,
+      "vl": 11
+    },
+    {
+      "y": 2020,
+      "mi": 80,
+      "rv": 64,
+      "gv": 48,
+      "vl": 11
+    },
+    {
+      "y": 2021,
+      "mi": 72,
+      "rv": 32,
+      "gv": 41,
+      "vl": 16
+    },
+    {
+      "y": 2022,
+      "mi": 34,
+      "rv": 35,
+      "gv": 16,
+      "vl": 11
+    },
+    {
+      "y": 2023,
+      "mi": 47,
+      "rv": 38,
+      "gv": 27,
+      "vl": 14
+    },
+    {
+      "y": 2024,
+      "mi": 80,
+      "rv": 54,
+      "gv": 48,
+      "vl": 18
+    },
+    {
+      "y": 2025,
+      "mi": 34,
+      "rv": 40,
+      "gv": 129,
+      "vl": 11
+    },
+    {
+      "y": 2026,
+      "mi": 15,
+      "rv": 11,
+      "gv": 30,
+      "vl": 5
+    }
+  ],
+  "fingerprints": [
+    {
+      "ca": "DigiCert",
+      "mi": 79,
+      "rv": 33,
+      "gv": 37,
+      "vl": 22
+    },
+    {
+      "ca": "Sectigo",
+      "mi": 46,
+      "rv": 19,
+      "gv": 22,
+      "vl": 22
+    },
+    {
+      "ca": "IdenTrust Services, LLC",
+      "mi": 27,
+      "rv": 23,
+      "gv": 16,
+      "vl": 2
+    },
+    {
+      "ca": "SwissSign AG",
+      "mi": 32,
+      "rv": 8,
+      "gv": 23,
+      "vl": 0
+    },
+    {
+      "ca": "GlobalSign nv-sa",
+      "mi": 33,
+      "rv": 14,
+      "gv": 3,
+      "vl": 5
+    },
+    {
+      "ca": "Microsoft Corporation",
+      "mi": 12,
+      "rv": 13,
+      "gv": 22,
+      "vl": 0
+    },
+    {
+      "ca": "GoDaddy",
+      "mi": 13,
+      "rv": 17,
+      "gv": 8,
+      "vl": 8
+    },
+    {
+      "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+      "mi": 7,
+      "rv": 3,
+      "gv": 35,
+      "vl": 0
+    },
+    {
+      "ca": "Asseco Data Systems S.A.",
+      "mi": 21,
+      "rv": 9,
+      "gv": 12,
+      "vl": 3
+    },
+    {
+      "ca": "Internet Security Research Group",
+      "mi": 8,
+      "rv": 17,
+      "gv": 5,
+      "vl": 8
+    },
+    {
+      "ca": "Netlock",
+      "mi": 9,
+      "rv": 10,
+      "gv": 17,
+      "vl": 1
+    },
+    {
+      "ca": "Telia Company",
+      "mi": 20,
+      "rv": 3,
+      "gv": 12,
+      "vl": 2
+    },
+    {
+      "ca": "Google Trust Services LLC",
+      "mi": 5,
+      "rv": 14,
+      "gv": 11,
+      "vl": 7
+    },
+    {
+      "ca": "Autoridad de Certificacion Firmaprofesional",
+      "mi": 8,
+      "rv": 4,
+      "gv": 23,
+      "vl": 0
+    },
+    {
+      "ca": "SECOM Trust Systems CO., LTD.",
+      "mi": 18,
+      "rv": 7,
+      "gv": 10,
+      "vl": 0
+    },
+    {
+      "ca": "SSL.com",
+      "mi": 6,
+      "rv": 9,
+      "gv": 4,
+      "vl": 11
+    },
+    {
+      "ca": "D-TRUST",
+      "mi": 15,
+      "rv": 8,
+      "gv": 6,
+      "vl": 0
+    },
+    {
+      "ca": "Deutsche Telekom Security GmbH",
+      "mi": 19,
+      "rv": 5,
+      "gv": 4,
+      "vl": 1
+    },
+    {
+      "ca": "China Financial Certification Authority (CFCA)",
+      "mi": 14,
+      "rv": 4,
+      "gv": 11,
+      "vl": 0
+    },
+    {
+      "ca": "Certigna",
+      "mi": 10,
+      "rv": 5,
+      "gv": 11,
+      "vl": 1
+    }
+  ],
+  "cas": [
+    {
+      "ca": "DigiCert",
+      "n": 171,
+      "self": 87,
+      "ext": 84,
+      "selfPct": 51
+    },
+    {
+      "ca": "Sectigo",
+      "n": 109,
+      "self": 68,
+      "ext": 41,
+      "selfPct": 62
+    },
+    {
+      "ca": "IdenTrust Services, LLC",
+      "n": 68,
+      "self": 61,
+      "ext": 7,
+      "selfPct": 90
+    },
+    {
+      "ca": "SwissSign AG",
+      "n": 63,
+      "self": 48,
+      "ext": 15,
+      "selfPct": 76
+    },
+    {
+      "ca": "GlobalSign nv-sa",
+      "n": 55,
+      "self": 35,
+      "ext": 20,
+      "selfPct": 64
+    },
+    {
+      "ca": "Microsoft Corporation",
+      "n": 47,
+      "self": 26,
+      "ext": 21,
+      "selfPct": 55
+    },
+    {
+      "ca": "GoDaddy",
+      "n": 46,
+      "self": 27,
+      "ext": 19,
+      "selfPct": 59
+    },
+    {
+      "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+      "n": 45,
+      "self": 0,
+      "ext": 45,
+      "selfPct": 0
+    },
+    {
+      "ca": "Asseco Data Systems S.A.",
+      "n": 45,
+      "self": 25,
+      "ext": 20,
+      "selfPct": 56
+    },
+    {
+      "ca": "Internet Security Research Group",
+      "n": 38,
+      "self": 19,
+      "ext": 19,
+      "selfPct": 50
+    },
+    {
+      "ca": "Netlock",
+      "n": 37,
+      "self": 28,
+      "ext": 9,
+      "selfPct": 76
+    },
+    {
+      "ca": "Telia Company",
+      "n": 37,
+      "self": 1,
+      "ext": 36,
+      "selfPct": 3
+    },
+    {
+      "ca": "Google Trust Services LLC",
+      "n": 37,
+      "self": 20,
+      "ext": 17,
+      "selfPct": 54
+    },
+    {
+      "ca": "Autoridad de Certificacion Firmaprofesional",
+      "n": 35,
+      "self": 15,
+      "ext": 20,
+      "selfPct": 43
+    },
+    {
+      "ca": "SECOM Trust Systems CO., LTD.",
+      "n": 35,
+      "self": 8,
+      "ext": 27,
+      "selfPct": 23
+    },
+    {
+      "ca": "SSL.com",
+      "n": 30,
+      "self": 20,
+      "ext": 10,
+      "selfPct": 67
+    },
+    {
+      "ca": "D-TRUST",
+      "n": 29,
+      "self": 6,
+      "ext": 23,
+      "selfPct": 21
+    },
+    {
+      "ca": "Deutsche Telekom Security GmbH",
+      "n": 29,
+      "self": 0,
+      "ext": 29,
+      "selfPct": 0
+    },
+    {
+      "ca": "China Financial Certification Authority (CFCA)",
+      "n": 29,
+      "self": 11,
+      "ext": 18,
+      "selfPct": 38
+    },
+    {
+      "ca": "Certigna",
+      "n": 27,
+      "self": 1,
+      "ext": 26,
+      "selfPct": 4
+    },
+    {
+      "ca": "Chunghwa Telecom",
+      "n": 27,
+      "self": 0,
+      "ext": 27,
+      "selfPct": 0
+    },
+    {
+      "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
+      "n": 24,
+      "self": 2,
+      "ext": 22,
+      "selfPct": 8
+    },
+    {
+      "ca": "Izenpe S.A.",
+      "n": 23,
+      "self": 1,
+      "ext": 22,
+      "selfPct": 4
+    },
+    {
+      "ca": "Actalis",
+      "n": 23,
+      "self": 0,
+      "ext": 23,
+      "selfPct": 0
+    },
+    {
+      "ca": "certSIGN",
+      "n": 20,
+      "self": 0,
+      "ext": 20,
+      "selfPct": 0
+    },
+    {
+      "ca": "Viking Cloud, Inc.",
+      "n": 20,
+      "self": 0,
+      "ext": 20,
+      "selfPct": 0
+    },
+    {
+      "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+      "n": 19,
+      "self": 0,
+      "ext": 19,
+      "selfPct": 0
+    },
+    {
+      "ca": "eMudhra Technologies Limited",
+      "n": 19,
+      "self": 17,
+      "ext": 2,
+      "selfPct": 89
+    },
+    {
+      "ca": "Microsec Ltd.",
+      "n": 17,
+      "self": 0,
+      "ext": 17,
+      "selfPct": 0
+    },
+    {
+      "ca": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+      "n": 17,
+      "self": 0,
+      "ext": 17,
+      "selfPct": 0
+    },
+    {
+      "ca": "WISeKey",
+      "n": 16,
+      "self": 0,
+      "ext": 16,
+      "selfPct": 0
+    },
+    {
+      "ca": "Amazon Trust Services",
+      "n": 16,
+      "self": 9,
+      "ext": 7,
+      "selfPct": 56
+    },
+    {
+      "ca": "HARICA",
+      "n": 16,
+      "self": 15,
+      "ext": 1,
+      "selfPct": 94
+    },
+    {
+      "ca": "Buypass",
+      "n": 16,
+      "self": 0,
+      "ext": 16,
+      "selfPct": 0
+    },
+    {
+      "ca": "Taiwan-CA Inc. (TWCA)",
+      "n": 15,
+      "self": 0,
+      "ext": 15,
+      "selfPct": 0
+    },
+    {
+      "ca": "Apple Inc.",
+      "n": 14,
+      "self": 14,
+      "ext": 0,
+      "selfPct": 100
+    },
+    {
+      "ca": "Disig, a.s.",
+      "n": 11,
+      "self": 0,
+      "ext": 11,
+      "selfPct": 0
+    },
+    {
+      "ca": "NAVER Cloud Trust Services",
+      "n": 10,
+      "self": 0,
+      "ext": 10,
+      "selfPct": 0
+    },
+    {
+      "ca": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+      "n": 9,
+      "self": 1,
+      "ext": 8,
+      "selfPct": 11
+    },
+    {
+      "ca": "Certainly LLC",
+      "n": 9,
+      "self": 0,
+      "ext": 9,
+      "selfPct": 0
+    }
+  ],
+  "distrusted_excluded": [
+    {
+      "ca": "AC Camerfirma",
+      "n": 0
+    },
+    {
+      "ca": "CNNIC",
+      "n": 0
+    },
+    {
+      "ca": "Camerfirma",
+      "n": 0
+    },
+    {
+      "ca": "Camerfirma / AC Camerfirma",
+      "n": 0
+    },
+    {
+      "ca": "Certicamara",
+      "n": 0
+    },
+    {
+      "ca": "Certinomis",
+      "n": 0
+    },
+    {
+      "ca": "Certinomis / Docapost",
+      "n": 0
+    },
+    {
+      "ca": "DarkMatter",
+      "n": 0
+    }
+  ]
+}

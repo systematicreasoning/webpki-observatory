@@ -1,0 +1,105 @@
+{
+  "ca_owner": "Government of Korea, KLID",
+  "country": "Republic of Korea (South Korea)",
+  "root_count": 5,
+  "intermediates_count": 1,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "GPKIRootCA",
+      "sha256": "606223D9DB80DF3939601E74B7E828E2800CCE4273F76F276AA62DB0A8E3B6C1",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.03.15",
+      "valid_to": "2017.03.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "GPKIRootCA1",
+      "sha256": "407C276BEAD2E4AF0661EF6697341DEC0A1F9434E4EAFB2D3D32A90549D9DE4A",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "NotBefore",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2011.08.03",
+      "valid_to": "2031.08.03",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "MOIS SSL Root CA",
+      "sha256": "1CF341AE35341AC3AE1DC68D5B10DC0C9DC1307656F75FD92CA2C68489D52E9A",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.02.22",
+      "valid_to": "2043.02.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Root CA",
+      "sha256": "E5C01CB4093279FAA19FCFA24EA43EB1B26D07A615ADF7240184A1E716B761C9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2009.12.23",
+      "valid_to": "2014.12.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Root CA",
+      "sha256": "0378B202CCABBA99A12E569A11A077DB1EDB39482061C75D0073059D9AB5B513",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2002.04.21",
+      "valid_to": "2012.04.21",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "MOIS SSL Server CA",
+      "sha256": "C435BF6129E9773DECAECA19CA8AC9C372E72BB0D280983C9D45D5602710A556",
+      "parent_name": "MOIS SSL Root CA",
+      "valid_from": "2023.02.23",
+      "valid_to": "2033.02.23",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-korea-klid"
+}

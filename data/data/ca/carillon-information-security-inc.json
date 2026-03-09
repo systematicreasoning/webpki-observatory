@@ -1,0 +1,47 @@
+{
+  "ca_owner": "Carillon Information Security Inc.",
+  "country": "Canada",
+  "root_count": 2,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Carillon PKI Services G2 Root CA 1",
+      "sha256": "EE0EC4A0B5E6ECB865F49689B50E3DE38D4FD924A4041C0C2A62636DB0B6B31D",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2020.01.20",
+      "valid_to": "2040.01.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "CISRCA1",
+      "sha256": "12FF248372BD87E44ECE432198BE9B04525F33DEE00356FD646F8ACC01412F86",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2012.10.16",
+      "valid_to": "2032.10.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "carillon-information-security-inc"
+}

@@ -1,0 +1,54 @@
+---
+title: Build Transform & App Components
+---
+graph TB
+    subgraph Build["Vite Build (compile time)"]
+        RAW["data/*.json<br/>248 CAs, all CCADB records"]
+        VITE["vite.config.js<br/>pipelineDataPlugin()"]
+        TRUST["Trust-Scope Filter<br/>storeCount > 0 || parent"]
+        NORM["Country Normalizer<br/>USA → United States"]
+        GEOREBUILD["GEO Rebuild<br/>Recount from trusted set"]
+        GOVFILTER["GOV Filter<br/>Remove stores=0"]
+        VM["virtual:pipeline-data<br/>Embedded in JS bundle"]
+
+        RAW --> VITE
+        VITE --> TRUST
+        VITE --> NORM
+        VITE --> GEOREBUILD
+        VITE --> GOVFILTER
+        TRUST --> VM
+        NORM --> VM
+        GEOREBUILD --> VM
+        GOVFILTER --> VM
+    end
+
+    subgraph App["React Dashboard"]
+        CTX["PipelineContext<br/>usePipeline()"]
+        VM --> CTX
+
+        subgraph Tabs["11 Analytical Views"]
+            T1["Market Share<br/>Donut, map, table"]
+            T2["Trust Surface<br/>Intersections, heatmap"]
+            T3["Concentration<br/>HHI, treemap, S-curve"]
+            T4["Long Tail<br/>Dynamic 99.99% threshold"]
+            T5["Geographic<br/>Regional distribution"]
+            T6["Government<br/>Structural ties"]
+            T7["Jurisdiction<br/>Key seizure laws"]
+            T8["Operational<br/>Incidents, self-report"]
+            T9["Policy Impact<br/>BR validity projections"]
+            T10["Crypto Posture<br/>Root algorithms"]
+            T11["Distrust History<br/>15 events, timelines, evidence"]
+        end
+
+        subgraph Shared["Shared Components"]
+            CARD["Card, StatCard"]
+            MAP["GeoMap (d3)"]
+            CHART["ChartWrap (recharts)"]
+            DETAIL["CADetail (expandable)"]
+            DOTS["TrustDots, Badge, RateDot"]
+            EB["ErrorBoundary"]
+        end
+
+        CTX --> Tabs
+        Shared --> Tabs
+    end

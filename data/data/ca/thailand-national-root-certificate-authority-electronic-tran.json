@@ -1,0 +1,87 @@
+{
+  "ca_owner": "Thailand National Root Certificate Authority (Electronic Transactions Development Agency)",
+  "country": "Thailand",
+  "root_count": 3,
+  "intermediates_count": 5,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Thailand National Root Certification Authority - G1",
+      "sha256": "2A8DA2F8D23E0CD3B5871ECFB0F42276CA73230667F474EEDE71C5EE32CC3EC6",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.03.27",
+      "valid_to": "2036.03.27",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Thailand National Root Certification Authority - G2",
+      "sha256": "6E0C78011C5406D8A52E442C97E272E37722BEF47043C666CDA2F940F25744C1",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.08.17",
+      "valid_to": "2043.08.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Thailand National Root Certification Authority - G3",
+      "sha256": "3D2794A0539486A83E8032CF14FE886553E52239CBAEC1B9CFEF5595ADBBF444",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.08.17",
+      "valid_to": "2043.08.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "INET CA - G1",
+      "sha256": "DABF2E406C3DA1FE15166596E9029FADB1C3DFF59670D8AC5BFB6345198BC1AA",
+      "parent_name": "Thailand National Root Certification Authority - G1",
+      "valid_from": "2018.11.26",
+      "valid_to": "2034.11.25",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Thai Digital ID CA G3",
+      "sha256": "981D016EB85502B6DE8670598B2DD7A78525A391471F55542EEA2A27D812E4BF",
+      "parent_name": "Thailand National Root Certification Authority - G1",
+      "valid_from": "2016.08.19",
+      "valid_to": "2034.08.19",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "thailand-national-root-certificate-authority-electronic-tran"
+}

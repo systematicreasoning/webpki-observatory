@@ -1,0 +1,32 @@
+{
+  "ca_owner": "Byte Computer S.A.",
+  "country": "Greece",
+  "root_count": 1,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "BYTE Root Certification Authority 001",
+      "sha256": "39AE2E6F304A6236BDF9066718DDC69E51AF5ED05A63F2EE8D80CA1D1CC8FE4F",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.09.10",
+      "valid_to": "2039.09.10",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "byte-computer-s-a"
+}

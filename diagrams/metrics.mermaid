@@ -1,0 +1,48 @@
+---
+title: Metric Derivations — Source to Display
+---
+graph LR
+    subgraph Raw["Raw Data"]
+        UP["unexpired_precerts<br/>(crt.sh)"]
+        AP["all_precerts<br/>(crt.sh)"]
+        TB["trusted_by{}<br/>(CCADB)"]
+        SC["store_count<br/>(CCADB)"]
+        CO["country<br/>(CCADB)"]
+        BUG["bug_count<br/>(Bugzilla)"]
+        SELF["creator_email<br/>(Bugzilla)"]
+        BS["browser_share<br/>(StatCounter)"]
+        KF["key_family, key_bits<br/>(root PEM)"]
+    end
+
+    subgraph Derived["Derived Metrics"]
+        SHARE["Market Share %<br/>= UP / total_UP × 100"]
+        TURN["Turnover<br/>= AP / UP"]
+        USAGE["Usage Period<br/>= 365 / turnover"]
+        PPM["Incident PPM<br/>= bugs / AP × 1M"]
+        SRPCT["Self-Report %<br/>= self_filed / total"]
+        COV["Web Coverage<br/>= Σ browser_share<br/>for included stores"]
+        HHI["HHI<br/>= Σ share²"]
+        TAIL["Tail Boundary<br/>= rank where<br/>cumulative ≥ 99.99%"]
+    end
+
+    subgraph Display["Displayed As"]
+        D1["Donut chart, rank table<br/>(Market Share tab)"]
+        D2["Days badge, BR position<br/>(Market Share, Policy tabs)"]
+        D3["Colored dot (🟢🟡🔴)<br/>(all tabs with ops data)"]
+        D4["Horizontal bar chart<br/>(Ops tab)"]
+        D5["% badge per CA row<br/>(Market Share, Trust tabs)"]
+        D6["Single number + label<br/>(Concentration tab)"]
+        D7["Head/tail split bar<br/>(Long Tail tab)"]
+    end
+
+    UP --> SHARE --> D1
+    UP --> TURN
+    AP --> TURN --> USAGE --> D2
+    AP --> PPM --> D3
+    BUG --> PPM
+    BUG --> SRPCT --> D4
+    SELF --> SRPCT
+    TB --> COV --> D5
+    BS --> COV
+    SHARE --> HHI --> D6
+    SHARE --> TAIL --> D7

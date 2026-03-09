@@ -1,0 +1,87 @@
+{
+  "ca_owner": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+  "country": "Turkey",
+  "root_count": 3,
+  "intermediates_count": 6,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1",
+      "sha256": "46EDC3689046D53A453FB3104AB80DCAEC658B2660EA1629DD7E867990648716",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2013.11.25",
+      "valid_to": "2043.10.25",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 2",
+      "sha256": "EC6431BA9FC13E405DF80ADE58A048136F789A03FDCA4CF5DAA4336AC522225B",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2025.06.16",
+      "valid_to": "2040.06.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "T\u00dcB\u0130TAK UEKAE K\u00f6k Sertifika Hizmet Sa\u011flay\u0131c\u0131s\u0131 - S\u00fcr\u00fcm 3",
+      "sha256": "E4C73430D7A5B50925DF43370A0D216E9A79B9D6DB8373A0C69EB1CC31C7C52A",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.08.24",
+      "valid_to": "2017.08.21",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 2",
+      "sha256": "4E5E8C3685C115F01B363253445FDD231EAA598441D46AFA696ACDB88D49F35C",
+      "parent_name": "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1",
+      "valid_from": "2025.06.16",
+      "valid_to": "2040.06.12",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "TUBITAK Kamu SM SSL Sertifika Hizmet Saglayicisi - Surum 2",
+      "sha256": "7F57AE9CD2D574A10375E5DDD5E2216CAF8CF50B759CC62224A1840CB83B482C",
+      "parent_name": "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1",
+      "valid_from": "2024.04.25",
+      "valid_to": "2027.04.25",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-turkey-kamu-sertifikasyon-merkezi-kamu-sm"
+}

@@ -1,0 +1,504 @@
+{
+  "_comment": "Maps Bugzilla CA name strings (from bug summary prefix) to CCADB CA Owner names. 'ccadb_owner' is the canonical name from CCADB. 'status' is 'active' (currently in at least one trust store), 'distrusted' (removed from all stores), or 'rollup' (maps to another active owner). Built from cross-referencing Bugzilla bug summaries with CCADB AllCertificateRecords.",
+  "mappings": {
+    "DigiCert": {
+      "ccadb_owner": "DigiCert",
+      "status": "active"
+    },
+    "Sectigo": {
+      "ccadb_owner": "Sectigo",
+      "status": "active"
+    },
+    "IdenTrust": {
+      "ccadb_owner": "IdenTrust Services, LLC",
+      "status": "active"
+    },
+    "SwissSign": {
+      "ccadb_owner": "SwissSign AG",
+      "status": "active"
+    },
+    "GlobalSign": {
+      "ccadb_owner": "GlobalSign nv-sa",
+      "status": "active"
+    },
+    "GoDaddy": {
+      "ccadb_owner": "GoDaddy",
+      "status": "active"
+    },
+    "Asseco DS / Certum": {
+      "ccadb_owner": "Asseco Data Systems S.A.",
+      "status": "active"
+    },
+    "Microsoft PKI Services": {
+      "ccadb_owner": "Microsoft Corporation",
+      "status": "active"
+    },
+    "Microsoft": {
+      "ccadb_owner": "Microsoft Corporation",
+      "status": "active"
+    },
+    "PKIoverheid": {
+      "ccadb_owner": "Government of The Netherlands, PKIoverheid (Logius)",
+      "status": "active"
+    },
+    "Let's Encrypt": {
+      "ccadb_owner": "Internet Security Research Group",
+      "status": "active"
+    },
+    "ISRG": {
+      "ccadb_owner": "Internet Security Research Group",
+      "status": "active"
+    },
+    "Telia": {
+      "ccadb_owner": "Telia Company",
+      "status": "active"
+    },
+    "Google Trust Services": {
+      "ccadb_owner": "Google Trust Services LLC",
+      "status": "active"
+    },
+    "Google": {
+      "ccadb_owner": "Google Trust Services LLC",
+      "status": "active"
+    },
+    "Firmaprofesional": {
+      "ccadb_owner": "Autoridad de Certificacion Firmaprofesional",
+      "status": "active"
+    },
+    "SECOM": {
+      "ccadb_owner": "SECOM Trust Systems CO., LTD.",
+      "status": "active"
+    },
+    "QuoVadis": {
+      "ccadb_owner": "DigiCert",
+      "status": "rollup",
+      "note": "Acquired by DigiCert"
+    },
+    "SSL.com": {
+      "ccadb_owner": "SSL.com",
+      "status": "active"
+    },
+    "CFCA": {
+      "ccadb_owner": "China Financial Certification Authority (CFCA)",
+      "status": "active"
+    },
+    "Chunghwa Telecom": {
+      "ccadb_owner": "Chunghwa Telecom",
+      "status": "active"
+    },
+    "SHECA": {
+      "ccadb_owner": "Shanghai Electronic Certification Authority Co., Ltd.",
+      "status": "active"
+    },
+    "Actalis": {
+      "ccadb_owner": "Actalis",
+      "status": "active"
+    },
+    "certSIGN": {
+      "ccadb_owner": "certSIGN",
+      "status": "active"
+    },
+    "NETLOCK": {
+      "ccadb_owner": "Netlock",
+      "status": "active"
+    },
+    "Izenpe": {
+      "ccadb_owner": "Izenpe S.A.",
+      "status": "active"
+    },
+    "Microsec": {
+      "ccadb_owner": "Microsec Ltd.",
+      "status": "active"
+    },
+    "FNMT": {
+      "ccadb_owner": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+      "status": "active"
+    },
+    "D-Trust": {
+      "ccadb_owner": "D-TRUST",
+      "status": "active"
+    },
+    "D-TRUST": {
+      "ccadb_owner": "D-TRUST",
+      "status": "active"
+    },
+    "WISeKey": {
+      "ccadb_owner": "WISeKey",
+      "status": "active"
+    },
+    "OISTE": {
+      "ccadb_owner": "OISTE",
+      "status": "active"
+    },
+    "Amazon": {
+      "ccadb_owner": "Amazon Trust Services",
+      "status": "active"
+    },
+    "Amazon Trust Services": {
+      "ccadb_owner": "Amazon Trust Services",
+      "status": "active"
+    },
+    "Buypass": {
+      "ccadb_owner": "Buypass",
+      "status": "active"
+    },
+    "HARICA": {
+      "ccadb_owner": "HARICA",
+      "status": "active"
+    },
+    "eMudhra": {
+      "ccadb_owner": "eMudhra Technologies Limited",
+      "status": "active"
+    },
+    "TWCA": {
+      "ccadb_owner": "Taiwan-CA Inc. (TWCA)",
+      "status": "active"
+    },
+    "Certigna": {
+      "ccadb_owner": "Certigna",
+      "status": "active"
+    },
+    "ACCV": {
+      "ccadb_owner": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+      "status": "active"
+    },
+    "Siemens": {
+      "ccadb_owner": "Eviden",
+      "status": "rollup",
+      "note": "CA business transferred to Eviden"
+    },
+    "T-Systems": {
+      "ccadb_owner": "Deutsche Telekom Security GmbH",
+      "status": "rollup",
+      "note": "Part of Deutsche Telekom"
+    },
+    "Deutsche Telekom": {
+      "ccadb_owner": "Deutsche Telekom Security GmbH",
+      "status": "active"
+    },
+    "Comodo": {
+      "ccadb_owner": "Sectigo",
+      "status": "rollup",
+      "note": "Rebranded to Sectigo"
+    },
+    "Comodo CA": {
+      "ccadb_owner": "Sectigo",
+      "status": "rollup",
+      "note": "Rebranded to Sectigo"
+    },
+    "Entrust": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Camerfirma": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "AC Camerfirma": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Certinomis": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "E-Tugra": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "TrustCor": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "PROCERT": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Symantec": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "StartCom": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "TurkTrust": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "TÜRKTRUST": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "WoSign": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "CNNIC": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Apple": {
+      "ccadb_owner": "Apple Inc.",
+      "status": "active"
+    },
+    "Telekom Security": {
+      "ccadb_owner": "Deutsche Telekom Security GmbH",
+      "status": "rollup",
+      "note": "Part of Deutsche Telekom"
+    },
+    "SecureTrust": {
+      "ccadb_owner": "Viking Cloud, Inc.",
+      "status": "active",
+      "note": "Rebranded to VikingCloud"
+    },
+    "Disig": {
+      "ccadb_owner": "Disig, a.s.",
+      "status": "active"
+    },
+    "NetLock": {
+      "ccadb_owner": "Netlock",
+      "status": "active"
+    },
+    "KIR S.A.": {
+      "ccadb_owner": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+      "status": "active"
+    },
+    "KIR": {
+      "ccadb_owner": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+      "status": "active"
+    },
+    "NAVER Cloud Trust Services": {
+      "ccadb_owner": "NAVER Cloud Trust Services",
+      "status": "active"
+    },
+    "NAVER": {
+      "ccadb_owner": "NAVER Cloud Trust Services",
+      "status": "active"
+    },
+    "eMudhra emSign PKI Services": {
+      "ccadb_owner": "eMudhra Technologies Limited",
+      "status": "active"
+    },
+    "GDCA": {
+      "ccadb_owner": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+      "status": "active"
+    },
+    "Certainly": {
+      "ccadb_owner": "Certainly LLC",
+      "status": "active"
+    },
+    "Consorci AOC": {
+      "ccadb_owner": "Consorci AOC",
+      "status": "active"
+    },
+    "iTrusChina": {
+      "ccadb_owner": "iTrusChina",
+      "status": "active"
+    },
+    "VikingCloud": {
+      "ccadb_owner": "Viking Cloud, Inc.",
+      "status": "active"
+    },
+    "CommScope": {
+      "ccadb_owner": "CommScope",
+      "status": "active"
+    },
+    "Hongkong Post": {
+      "ccadb_owner": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+      "status": "active"
+    },
+    "TrustAsia": {
+      "ccadb_owner": "TrustAsia Technologies, Inc.",
+      "status": "active"
+    },
+    "Kamu SM": {
+      "ccadb_owner": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+      "status": "active"
+    },
+    "visa": {
+      "ccadb_owner": "Visa",
+      "status": "active"
+    },
+    "Visa": {
+      "ccadb_owner": "Visa",
+      "status": "active"
+    },
+    "DarkMatter": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "ANF": {
+      "ccadb_owner": "Autoridad de Certificación (ANF AC)",
+      "status": "active"
+    },
+    "e-commerce monitoring": {
+      "ccadb_owner": null,
+      "status": "distrusted",
+      "note": "Legacy"
+    },
+    "AC RAIZ FNMT-RCM": {
+      "ccadb_owner": "Government of Spain, Fábrica Nacional de Moneda y Timbre (FNMT)",
+      "status": "rollup"
+    },
+    "Cybertrust Japan": {
+      "ccadb_owner": "Cybertrust Japan Co., Ltd.",
+      "status": "active"
+    },
+    "PostSignum": {
+      "ccadb_owner": "PostSignum",
+      "status": "active"
+    },
+    "SECOM Trust": {
+      "ccadb_owner": "SECOM Trust Systems CO., LTD.",
+      "status": "rollup"
+    },
+    "Swisscom": {
+      "ccadb_owner": "SwissSign AG",
+      "status": "rollup",
+      "note": "Swisscom trust services"
+    },
+    "ANF AC": {
+      "ccadb_owner": "Autoridad de Certificación (ANF AC)",
+      "status": "active"
+    },
+    "DocuSign/Keynectis": {
+      "ccadb_owner": "Certigna",
+      "status": "rollup",
+      "note": "Now Certigna"
+    },
+    "Keynectis": {
+      "ccadb_owner": "Certigna",
+      "status": "rollup"
+    },
+    "Network Solutions": {
+      "ccadb_owner": "DigiCert",
+      "status": "rollup",
+      "note": "Acquired"
+    },
+    "Netlock": {
+      "ccadb_owner": "Netlock",
+      "status": "active"
+    },
+    "Digicert": {
+      "ccadb_owner": "DigiCert",
+      "status": "rollup",
+      "note": "Case variant"
+    },
+    "Dhimyotis / Certigna": {
+      "ccadb_owner": "Certigna",
+      "status": "active"
+    },
+    "Dhimyotis": {
+      "ccadb_owner": "Certigna",
+      "status": "rollup"
+    },
+    "e-commerce monitoring GmbH": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Taiwan-CA": {
+      "ccadb_owner": "Taiwan-CA Inc. (TWCA)",
+      "status": "rollup"
+    },
+    "GRCA": {
+      "ccadb_owner": null,
+      "status": "distrusted",
+      "note": "Government Root CA - legacy"
+    },
+    "TunTrust": {
+      "ccadb_owner": "Agence Nationale de Certification Electronique",
+      "status": "active"
+    },
+    "JPRS": {
+      "ccadb_owner": "JPRS",
+      "status": "active"
+    },
+    "Logius": {
+      "ccadb_owner": "Government of The Netherlands, PKIoverheid (Logius)",
+      "status": "rollup"
+    },
+    "Camerfirma / AC Camerfirma": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Viking Cloud": {
+      "ccadb_owner": "Viking Cloud, Inc.",
+      "status": "active"
+    },
+    "ACCVRAIZ1": {
+      "ccadb_owner": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+      "status": "rollup"
+    },
+    "e-commerce monitoring gmbh": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "IZENPE": {
+      "ccadb_owner": "Izenpe S.A.",
+      "status": "active"
+    },
+    "Trustis": {
+      "ccadb_owner": null,
+      "status": "distrusted",
+      "note": "Removed from trust stores"
+    },
+    "T-Systems / DFN-PKI": {
+      "ccadb_owner": "Deutsche Telekom Security GmbH",
+      "status": "rollup"
+    },
+    "Microsoft DSRE PKI": {
+      "ccadb_owner": "Microsoft Corporation",
+      "status": "rollup"
+    },
+    "Certicamara": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Atos": {
+      "ccadb_owner": "Eviden",
+      "status": "rollup",
+      "note": "Atos security became Eviden"
+    },
+    "Staat der Nederlandend / PKIoverheid": {
+      "ccadb_owner": "Government of The Netherlands, PKIoverheid (Logius)",
+      "status": "rollup"
+    },
+    "DigiCert / Verizon": {
+      "ccadb_owner": "DigiCert",
+      "status": "rollup"
+    },
+    "Certinomis / Docapost": {
+      "ccadb_owner": null,
+      "status": "distrusted"
+    },
+    "Zetes / COMODO": {
+      "ccadb_owner": "Sectigo",
+      "status": "rollup"
+    },
+    "HARICA/GRNET": {
+      "ccadb_owner": "HARICA",
+      "status": "rollup"
+    },
+    "Sonera": {
+      "ccadb_owner": "Telia Company",
+      "status": "rollup"
+    },
+    "DFN-Verein": {
+      "ccadb_owner": "Deutsche Telekom Security GmbH",
+      "status": "rollup"
+    },
+    "SK ID Solutions": {
+      "ccadb_owner": "SK ID Solutions AS",
+      "status": "active"
+    },
+    "Guang Dong CA": {
+      "ccadb_owner": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+      "status": "rollup"
+    },
+    "CommScope/ARRIS": {
+      "ccadb_owner": "CommScope",
+      "status": "rollup"
+    }
+  }
+}

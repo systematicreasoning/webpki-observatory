@@ -1,0 +1,147 @@
+{
+  "ca_owner": "Macao Post and Telecommunications Bureau",
+  "country": "China",
+  "root_count": 3,
+  "intermediates_count": 7,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "eSignTrust Root Certification Authority (G03)",
+      "sha256": "0E30D04A94DCC423E26FDC4C24AFCF4923BD80D83B661B06A2F5856361560407",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2017.01.01",
+      "valid_to": "2041.12.31",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Macao Post eSignTrust Root Certification Authority",
+      "sha256": "B8BBE523BFCA3B11D50F73F7F10B3EC8EC958AA1DC86F66D9541907FF1A110EF",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2003.01.30",
+      "valid_to": "2013.01.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Macao Post eSignTrust Root Certification Authority (G02)",
+      "sha256": "6EA1DB6719D6041A06FC0898E5B3CF349A8FA8ECEE85EDB005965628F617F7C8",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2010.01.06",
+      "valid_to": "2020.01.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "eSignTrust Corporate Certification Authority (G03)",
+      "sha256": "52F1D000D6EF82183BC1CF9E7F26060F1A4ABF9599B609B9909641F9411C2FE0",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Corporate Qualified Certificate CA (G03)",
+      "sha256": "E575340018AE1D05F829F8A42C92AE2AA96FA3F31F4B190D27DD5E28AE8DE67E",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Government Certification Authority (G03)",
+      "sha256": "0FB65D846688262A31057DB4D3B5D01F0269D97A85A187E04739CB85E010CE3D",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Government Qualified Certificate CA (G03)",
+      "sha256": "BA4AE660F6FD9BC92875C14B747616BFA0905B1BE7AFBC4AE961A8DE7C6C2931",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Personal Certification Authority (G03)",
+      "sha256": "27DBCCACCB607ECAD0335AA9F9756A0A419744A63110042DFB326F1D055B3E8D",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Personal Qualified Certificate CA (G03)",
+      "sha256": "250CD81107BBCD79C6138F472E5EEDA64C5A87808D2225CB05950E7B0445A8AF",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "eSignTrust Secure Email CA-Persona Not Validated(G03)",
+      "sha256": "817F99581313C1414DA579C8F71780C13AB587A189706CB70B9F59C74CF30851",
+      "parent_name": "eSignTrust Root Certification Authority (G03)",
+      "valid_from": "2017.01.01",
+      "valid_to": "2032.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "macao-post-and-telecommunications-bureau"
+}

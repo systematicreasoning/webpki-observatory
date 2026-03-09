@@ -1,0 +1,105 @@
+{
+  "ca_owner": "Consorci Administraci\u00f3 Oberta de Catalunya (Consorci AOC, CATCert)",
+  "country": "Spain",
+  "root_count": 1,
+  "intermediates_count": 19,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "EC-ACC",
+      "sha256": "88497F01602F3154246AE28C4D5AEF10F1D87EBB76626F4AE0B7F95BA7968799",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2003.01.07",
+      "valid_to": "2031.01.07",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "EC-ACC",
+      "sha256": "A5898E5BFB84295C043EC4034288AFB37E0D5A3866F17CB657B97F72DCB53BEC",
+      "parent_name": "EC-ACC",
+      "valid_from": "2012.04.17",
+      "valid_to": "2031.01.07",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "EC-Ciutadania",
+      "sha256": "0FD99AAE1FFCD5D9F0AD76EDDDCBEF6B884CC85C16BFCFA4B5246155D6597ED6",
+      "parent_name": "EC-ACC",
+      "valid_from": "2014.09.18",
+      "valid_to": "2030.09.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "EC-Ciutadania",
+      "sha256": "DB6CBB8733BEB493AF39C702A9DD0674314E2ED3260CD5250A491480757D8EA2",
+      "parent_name": "EC-ACC",
+      "valid_from": "2014.09.18",
+      "valid_to": "2030.09.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "EC-GENCAT",
+      "sha256": "AFCA33DAC544389E3D230DB12AD8BA3EE7C1A9E4CCF0CAFFD7E16C2A2F35CEE5",
+      "parent_name": "EC-ACC",
+      "valid_from": "2012.04.17",
+      "valid_to": "2027.01.07",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "EC-GENCAT",
+      "sha256": "60636BE2F294EC078F4C726964B4DD502B1C82E099CF775631E883FEEE45F951",
+      "parent_name": "EC-ACC",
+      "valid_from": "2003.01.08",
+      "valid_to": "2027.01.07",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "EC-SectorPublic",
+      "sha256": "356A5F4D994E9EFA7CAEFC491768911D65EC25977465B610E2F29AA4472631C3",
+      "parent_name": "EC-ACC",
+      "valid_from": "2014.09.18",
+      "valid_to": "2030.09.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "consorci-administraci-oberta-de-catalunya-consorci-aoc-catce"
+}

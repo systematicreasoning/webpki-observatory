@@ -1,0 +1,62 @@
+{
+  "_comment": "Manual enrichments for CAs that are missing from CCADB or have incomplete data. These supplement the pipeline when CCADB doesn't have the information we need. Fields here override or fill gaps in pipeline output. For externally-operated subordinate CAs, capabilities are inferred from the parent CA's trust bits and marked with 'inferred: true'. Actual capabilities may be further constrained by the intermediate certificate's EKU and name constraints.",
+  "enrichments": {
+    "JPRS": {
+      "full_name": "Japan Registry Services Co., Ltd.",
+      "country": "Japan",
+      "note": "Operates .jp TLD. Externally-operated subordinate CA under SECOM Trust Systems roots (approved by Mozilla March 2026). Issues TLS DV and OV certificates. Does not have its own roots in CCADB.",
+      "website": "https://jprs.jp",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "inferred": true,
+      "parent_ca": "SECOM Trust Systems CO., LTD."
+    },
+    "?": {
+      "full_name": "Unknown / Unmapped",
+      "country": "",
+      "note": "crt.sh bucket for certificates whose root owner could not be determined from the CT log data."
+    },
+    "Autoridade Certificadora do SERPRO SSLv1": {
+      "full_name": "Autoridade Certificadora do SERPRO SSLv1",
+      "country": "Brazil",
+      "note": "Brazilian government PKI (ICP-Brasil). SERPRO is a federal data processing service."
+    },
+    "DFN-Verein": {
+      "full_name": "DFN-Verein (German National Research and Education Network)",
+      "country": "Germany",
+      "note": "German research network CA. Previously operated under Deutsche Telekom roots, now transitioning to Sectigo-issued intermediates."
+    },
+    "KPN B.V.": {
+      "full_name": "KPN B.V.",
+      "country": "Netherlands",
+      "note": "Dutch telecom. Legacy CA roots, largely historical issuance."
+    },
+    "Belgium": {
+      "full_name": "Belgian Federal Government CA",
+      "country": "Belgium",
+      "note": "Belgian government eID PKI infrastructure."
+    },
+    "Ministry of Digital Affairs": {
+      "full_name": "Ministry of Digital Affairs (Taiwan)",
+      "country": "Taiwan",
+      "note": "Taiwan government CA for national PKI."
+    },
+    "Ministry of Interior Affairs": {
+      "full_name": "Ministry of Interior Affairs (Turkey)",
+      "country": "Turkey",
+      "note": "Turkish government CA."
+    },
+    "Ministry of Economic Affairs": {
+      "full_name": "Ministry of Economic Affairs (Taiwan)",
+      "country": "Taiwan",
+      "note": "Taiwan government CA for business/economic certificates."
+    },
+    "Intesa Sanpaolo S.p.A.": {
+      "full_name": "Intesa Sanpaolo S.p.A.",
+      "country": "Italy",
+      "note": "Italian banking group, operates a qualified trust service."
+    }
+  }
+}

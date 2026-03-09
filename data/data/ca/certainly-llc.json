@@ -1,0 +1,72 @@
+{
+  "ca_owner": "Certainly LLC",
+  "country": "USA",
+  "root_count": 2,
+  "intermediates_count": 2,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": false,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "Certainly Root E1",
+      "sha256": "B4585F22E4AC756A4E8612A1361C5D9D031A93FD84FEBB778FA3068B0FC42DC2",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2021.04.01",
+      "valid_to": "2046.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Certainly Root R1",
+      "sha256": "77B82CD8644C4305F7ACC5CB156B45675004033D51C60C6202A8E0C33467D3A0",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2021.04.01",
+      "valid_to": "2046.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Certainly Intermediate E1",
+      "sha256": "98DD2A75F65748F2667BC4B079177813647C17EDCC6DEE92F1F06668BE0F1A3D",
+      "parent_name": "Certainly Root E1",
+      "valid_from": "2021.04.01",
+      "valid_to": "2031.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certainly Intermediate R1",
+      "sha256": "575C09B07A001CA0EF6B3B1C5730BFAFEBC7AD9F56A009F1966C32F08E659713",
+      "parent_name": "Certainly Root R1",
+      "valid_from": "2021.04.01",
+      "valid_to": "2031.04.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "certainly-llc"
+}

@@ -1,0 +1,76 @@
+{
+  "ca_owner": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+  "country": "Poland",
+  "root_count": 2,
+  "intermediates_count": 6,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": false
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "SZAFIR ROOT CA",
+      "sha256": "FABCF5197CDD7F458AC33832D3284021DB2425FD6BEA7A2E69B7486E8F51F9CC",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2011.12.06",
+      "valid_to": "2031.12.06",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDcTCCAlmgAwIBAgIVAOYJ/nrqAGiM4CS07SAbH+9StETRMA0GCSqGSIb3DQEB\nBQUAMFAxCzAJBgNVBAYTAlBMMSgwJgYDVQQKDB9LcmFqb3dhIEl6YmEgUm96bGlj\nemVuaW93YSBTLkEuMRcwFQYDVQQDDA5TWkFGSVIgUk9PVCBDQTAeFw0xMTEyMDYx\nMTEwNTdaFw0zMTEyMDYxMTEwNTdaMFAxCzAJBgNVBAYTAlBMMSgwJgYDVQQKDB9L\ncmFqb3dhIEl6YmEgUm96bGljemVuaW93YSBTLkEuMRcwFQYDVQQDDA5TWkFGSVIg\nUk9PVCBDQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKxHL49ZMTml\n6g3wpYwrvQKkvc0Kc6oJ5sxfgmp1qZfluwbv88BdocHSiXlY8NzrVYzuWBp7J/9K\nULMAoWoTIzOQ6C9TNm4YbA9A1jdX1wYNL5Akylf8W5L/I4BXhT9KnlI6x+a7BVAm\nnr/Ttl+utT/Asms2fRfEsF2vZPMxH4UFqOAhFjxTkmJWf2Cu4nvRQJHcttB+cEAo\nag/hERt/+tzo4URz6x6r19toYmxx4FjjBkUhWQw1X21re//Hof2+0YgiwYT84zLb\neqDqCOMOXxvH480yGDkh/QoazWX3U75HQExT/iJlwnu7I1V6HXztKIwCBjsxffbH\n3jOshCJtywcCAwEAAaNCMEAwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMC\nAQYwHQYDVR0OBBYEFFOSo33/gnbwM9TrkmdHYTMbaDsqMA0GCSqGSIb3DQEBBQUA\nA4IBAQA5UFWd5EL/pBviIMm1zD2JLUCpp0mJG7JkwznIOzawhGmFFaxGoxAhQBEg\nhaP+E0KR66oAwVC6xe32QUVSHfWqWndzbODzLB8yj7WAR0cDM45ZngSBPBuFE3Wu\nGLJX9g100ETfIX+4YBR/4NR/uvTnpnd9ete7Whl0ZfY94yuu4xQqB5QFv+P7IXXV\nlTOjkjuGXEcyQAjQzbFaT9vIABSbeCXWBbjvOXukJy6WgAiclzGNSYprre8Ryydd\nfmjW9HIGwsIO03EldivvqEYL1Hv1w/Pur+6FUEOaL68PEIUovfgwIB2BAw+vZDuw\ncH0mX548PojGyg434cDjkSXa3mHF\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "SZAFIR ROOT CA2",
+      "sha256": "A1339D33281A0B56E557D3D32B1CE7F9367EB094BD5FA72A7E5004C8DED7CAFE",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.10.19",
+      "valid_to": "2035.10.19",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDcjCCAlqgAwIBAgIUPopdB+xV0jLVt+O2XwHrLdzk1uQwDQYJKoZIhvcNAQEL\nBQAwUTELMAkGA1UEBhMCUEwxKDAmBgNVBAoMH0tyYWpvd2EgSXpiYSBSb3psaWN6\nZW5pb3dhIFMuQS4xGDAWBgNVBAMMD1NaQUZJUiBST09UIENBMjAeFw0xNTEwMTkw\nNzQzMzBaFw0zNTEwMTkwNzQzMzBaMFExCzAJBgNVBAYTAlBMMSgwJgYDVQQKDB9L\ncmFqb3dhIEl6YmEgUm96bGljemVuaW93YSBTLkEuMRgwFgYDVQQDDA9TWkFGSVIg\nUk9PVCBDQTIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC3vD5QqEvN\nQLXOYeeWyrSh2gwisPq1e3YAd4wLz32ohswmUeQgPYUM1ljj5/QqGJ3a0a4m7utT\n3PSQ1hNKDJA8w/Ta0o4NkjrcsbH/ON7Dui1fgLkCvUqdGw+0w8LBZwPd3BucPbOw\n3gAeqDRHu5rr/gsUvTaE2g0gv/pby6kWIK05YO4vdbbnl5z5Pv1+TW9NL++IDWr6\n3fE9biCloBK0TXC5ztdyO4mTp4CEHCdJckm1/zuVnsHMyAHs6A6KCpbns6aH5db5\nBSsNl0BwPLqsdVqc1U2dAgrSS5tmS0YHF2Wtn2yIANwiieDhZNRnvDF5YTy7ykHN\nXGoAyDw4jlivAgMBAAGjQjBAMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQD\nAgEGMB0GA1UdDgQWBBQuFqlKGLXLzPVvUPMjX/hd56zwyDANBgkqhkiG9w0BAQsF\nAAOCAQEAtXP4A9xZWx126aMqe5Aosk3AM0+qmrHUuOQn/6mWmc5G4G18TKI4pAZw\n8PRBEew/R40/cof5O/2kbytTAOD/OblqBw7rHRz2onKQy4I9EYKL0rufKq8h5mOG\nnXkZ7/e7DDWQw4rtTw/1zBLZpD67oPwglV9PJi8RI4NOdQcPv5vRtB3pEAT+ymCP\noky4rc/hkA/NrgrHXXu3UNLUYfrVFdvXn4dRVOul4+vJhaAlIDf7js4MNIThPIGy\nd05DpYhfhmehPea0XGG2Ptv+tyjFogeutcrKjSoS75ftwjCkySp6+/NNIxuZMzSg\nLvWpCz/UXeHPhJ/iGcJfitYgHuNztw==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "SZAFIR Trusted CA5",
+      "sha256": "1EBFA14EBD05CB7CAA79F84F4992379F1497AADD9ED0C7784B320411038292EE",
+      "parent_name": "SZAFIR ROOT CA2",
+      "valid_from": "2024.10.08",
+      "valid_to": "2034.10.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIF8zCCBNugAwIBAgIUbmxguBD/UT21SECTIdoZsbWromwwDQYJKoZIhvcNAQEL\nBQAwUTELMAkGA1UEBhMCUEwxKDAmBgNVBAoMH0tyYWpvd2EgSXpiYSBSb3psaWN6\nZW5pb3dhIFMuQS4xGDAWBgNVBAMMD1NaQUZJUiBST09UIENBMjAeFw0yNDEwMDgw\nODE3NTFaFw0zNDEwMDgwODE3NTFaMFQxCzAJBgNVBAYTAlBMMSgwJgYDVQQKDB9L\ncmFqb3dhIEl6YmEgUm96bGljemVuaW93YSBTLkEuMRswGQYDVQQDDBJTWkFGSVIg\nVHJ1c3RlZCBDQTUwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDP1DHU\nw4TvhhRLn7whGVTx9420yjfAX5fITDN9UlDfM/nbWmpbvB1gngqFlKbIXlqcIi5I\nqZ9MYW5EZ9hnlp4Yx9RXMJbTKTp5+mTUx4sDsgqawDGcRGUrv3B2iZ/aLEfOGBq+\n2beD8U5vpmcOg4BzyV8749kgCBsLAPpfh95S5aWTMwZU6pUO0GPlvjborOyBcbqo\niycWQcBXFcXTtz6jtX34JGa+LsqWphWlz6jtXcziSQL+oLDjeE/wunH5FbUVTgYP\n83mJ+4m26ln62vFkmjEUzOJp3WKqi/elXqu3QtQvzVUpsdD95H4lwXxROjqJvpZj\nNomrxq+At2LMukPl7a4whBg7xC59UoJK0YpIPd0lfWdoeAoJHtGiRqMvIHX+GlW/\nYy8B2RwoSjLglaDyJLquCc5dN0aZGoJFlwOB2leOBPh9rOxlj5yAp1ZV7/IX/umM\nIbhbPfgcthuVvWZOb8FV1v0pyhP+n3Z5rfIQvPBj/7JRppJ+ZBeLFQfVqVc5LheC\nL4ye2K5Bll2wTCwXEeDjPICmYcolHReHKiiJjMvFPhY2OQ3Tr0Afdx4P5VDmbqpG\nRD9ppYjZrg+j4dwCRl9GvfNHk6HpAOAmsbXEncDWW9dVoCN3a87fEG+Ktj/YWQzY\nL8L6ZNQgrjKXGmeHs63HJPxvI3rMVnGQnGPYnwIDAQABo4IBvjCCAbowDwYDVR0T\nAQH/BAUwAwEB/zB6BggrBgEFBQcBAQRuMGwwLgYIKwYBBQUHMAGGImh0dHA6Ly9v\nY3NwLmVsZWt0cm9uaWN6bnlwb2RwaXMucGwwOgYIKwYBBQUHMAKGLmh0dHA6Ly9j\nZHAuZWxla3Ryb25pY3pueXBvZHBpcy5wbC9yb290X2NhMi5jcnQwewYDVR0gBHQw\ncjAJBgdngQwBBQECMAkGB2eBDAEFAgIwCQYHZ4EMAQUDAjAJBgdngQwBBQQCMAwG\nCiqEaAGG9yMBAgMwDAYKKoRoAYb3IwECBzAMBgoqhGgBhvcjAQIIMAwGCiqEaAGG\n9yMBAgkwDAYKKoRoAYb3IwECCjAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0lBBYwFAYI\nKwYBBQUHAwIGCCsGAQUFBwMEMB8GA1UdIwQYMBaAFC4WqUoYtcvM9W9Q8yNf+F3n\nrPDIMD8GA1UdHwQ4MDYwNKAyoDCGLmh0dHA6Ly9jZHAuZWxla3Ryb25pY3pueXBv\nZHBpcy5wbC9yb290X2NhMi5jcmwwHQYDVR0OBBYEFH/74lfiAmA+0/+4UU+ef6uV\noxb5MA0GCSqGSIb3DQEBCwUAA4IBAQAS/4ZA8LqQtSqtIwiCAsOjmnP0xAoNhs66\n2QRe3v8JTKKKtjdFW0gyqkpchJhaGo2Tx3t+G6qdOIpLfQk08l4YuyTGsGLRegW5\n7LjerEz1wCWIbpU22Ey5Alp/YyStvXTTNVCauVHXVwf7hhtjdVHSMeXogZ99fOef\nhNEUEyys2D9cbhzqgYZ+JIhKLU3T//E1h+Nf8MeR+ca+HDa67g/ByjI2s0QfXKK5\nnEDnzz58GcLmfFtbbWINKC8QFbmE4R/aY70L0FKbvcOlU1LguYrWu1ILrAV6OrR+\nMjKF9PiUWgRwWKM1NZO+w/HmnbUW9DOyxDzSMXX/7JfjTdBQE1ly\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "SZAFIR Trusted CA6",
+      "sha256": "8DBCEFD897D49653085E8914E71664943C2BC674405193B3AFAB3F66E92AD961",
+      "parent_name": "SZAFIR ROOT CA2",
+      "valid_from": "2024.10.21",
+      "valid_to": "2034.10.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFmTCCBIGgAwIBAgIUFobWbkmXQcNY82H+JTMWCRDxtXQwDQYJKoZIhvcNAQEL\nBQAwUTELMAkGA1UEBhMCUEwxKDAmBgNVBAoMH0tyYWpvd2EgSXpiYSBSb3psaWN6\nZW5pb3dhIFMuQS4xGDAWBgNVBAMMD1NaQUZJUiBST09UIENBMjAeFw0yNDEwMjEw\nODAwNTZaFw0zNDEwMjEwODAwNTZaMFQxCzAJBgNVBAYTAlBMMSgwJgYDVQQKDB9L\ncmFqb3dhIEl6YmEgUm96bGljemVuaW93YSBTLkEuMRswGQYDVQQDDBJTWkFGSVIg\nVHJ1c3RlZCBDQTYwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC4J0tw\n3SWSeKcGCcXOVZ2Vc3rcFo77SF7APLLWXtjcRkL8jq9SmZSYVoo9NdiytmHaQfOV\nI5jZBKt4ER5OS8+e+/BUZPz1TeGc7p5fhSAuXC3CizHQD93txK2raiuIwqZqLpAb\n22Je1MdFyQh1ICRgombZ7LRyVx/j6RfJkvQe3sJzMzBHRRyucD66MCi8oUH6w5j2\nk2y1X14ONpHtTFs9nCGiEY3UXjvlPfSt1b4PljfwZj5l7rDRl4SyMhsQhef+rxgt\nkqp3nyT4OLIfi+ynEiiMmFoZWveudEZQHZ+IK6UDASSCwq1zn4ISC2VT62yDGqMP\nBbCyJTfFs6VuJeUn28ydp80ZOlfSUp5/+pxKbrboDDJxQi3LuI0x/ocysSMucPwp\np7HSesYYmFnI0Jp9YBGM19keFCHYjjCic3J4grKX04Al/UDNit7IA41gDxmAjRiQ\nahSx3o6yItW241PyTGpeVHbJ0171BRcJqjnaUiAl6QgkQ8nnY8G8Q2aW4wwRahEP\nTIqlBOFMD+j2d5xIdWh2vpfX0+/4hivtJgHwUh2x4koCwcMZb3BIAT7aSem23d1n\nLwYNyu0Om6KD0ye0KX/YM9kidd+HRkU3rkrqrCgN0lMfiuD6FCpViq9ctVIrE2Kj\nAxvtLHhhuTRZP8VYGdNx88zahRtp73nFjca27QIDAQABo4IBZDCCAWAwDwYDVR0T\nAQH/BAUwAwEB/zB6BggrBgEFBQcBAQRuMGwwLgYIKwYBBQUHMAGGImh0dHA6Ly9v\nY3NwLmVsZWt0cm9uaWN6bnlwb2RwaXMucGwwOgYIKwYBBQUHMAKGLmh0dHA6Ly9j\nZHAuZWxla3Ryb25pY3pueXBvZHBpcy5wbC9yb290X2NhMi5jcnQwIQYDVR0gBBow\nGDAIBgZngQwBAgIwDAYKKoRoAYb3IwECBjAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0l\nBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMB8GA1UdIwQYMBaAFC4WqUoYtcvM9W9Q\n8yNf+F3nrPDIMD8GA1UdHwQ4MDYwNKAyoDCGLmh0dHA6Ly9jZHAuZWxla3Ryb25p\nY3pueXBvZHBpcy5wbC9yb290X2NhMi5jcmwwHQYDVR0OBBYEFAQC5AVJAffed7/r\n+4W/H0TMPvG0MA0GCSqGSIb3DQEBCwUAA4IBAQBPl2jU755j+FBvSsgTR5GyREO7\nWuRBflAqk7TURuGbjBkL6pB93QWVFTpW36+yu6C3J1ippS+fuDR7psHc618/W2mz\nnczu6TJkqgINI+6VYftJZU33Dm5SLFeFkPHp+V1hXAlntZPPT++h4IOexpCLfXmW\n3hRbZoVdXHIFHLB35liPW2942BHy94DpvMHaS3e8UneNpKsoCgMUsyMVoxG7O8TU\nPtoD3te1RS3CdTspIJGKQ2zNTcAcIJxKWQotT8DgQLIfIlRoguVQH2c9UhYrwKbP\nM2KV60wQvea2pxPT5vGMH3aBePk4W6gJOWigSPXsL0POAtsJlF4by9GjJQpQ\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "krajowa-izba-rozliczeniowa-s-a-kir"
+}

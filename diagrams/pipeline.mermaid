@@ -1,0 +1,60 @@
+---
+title: Pipeline Data Flow
+---
+graph LR
+    subgraph Sources["Public Data Sources"]
+        CRT["crt.sh<br/>CT Log Aggregator"]
+        CCADB["CCADB<br/>Root Store Metadata"]
+        BZ["Bugzilla<br/>CA Compliance Bugs"]
+        SC["StatCounter<br/>Browser Market Share"]
+        KL["keylength.com<br/>Crypto Standards"]
+    end
+
+    subgraph Pipeline["Pipeline (Python, daily CI)"]
+        FJ["fetch_and_join.py"]
+        FI["fetch_incidents.py"]
+        FR["fetch_root_algo.py"]
+        FB["fetch_browser_share.py"]
+        FD["fetch_distrusted.py<br/>4-stage: detect → enrich → classify → merge"]
+    end
+
+    subgraph Enrichments["Manual Curation"]
+        GOV["gov_classifications.json<br/>25 government CA ties"]
+        NM["name_mappings.json<br/>crt.sh ↔ CCADB names"]
+        JR["jurisdiction_risk.json<br/>15 countries' laws"]
+        DM["distrust_metadata.json<br/>Cached references, milestones, articles"]
+    end
+
+    subgraph Data["Pipeline Output (data/)"]
+        MS["market_share.json<br/>248 CAs ranked"]
+        IX["intersections.json<br/>Store overlap matrix"]
+        GEO["geography.json<br/>Regional distribution"]
+        GR["gov_risk.json<br/>Government classifications"]
+        INC["incidents.json<br/>1,424 incidents"]
+        RA["root_algorithms.json<br/>335 roots"]
+        BC["browser_coverage.json<br/>Browser → root program"]
+        CA["ca/*.json<br/>Per-CA detail files"]
+        DD["distrusted.json<br/>15 distrust events"]
+    end
+
+    CRT --> FJ
+    CCADB --> FJ
+    CCADB --> FR
+    CCADB --> FD
+    BZ --> FI
+    BZ --> FD
+    SC --> FB
+    KL --> FR
+    GOV --> FJ
+    NM --> FJ
+    DM --> FD
+
+    FJ --> MS
+    FJ --> IX
+    FJ --> GEO
+    FJ --> GR
+    FJ --> CA
+    FI --> INC
+    FR --> RA
+    FB --> BC
+    FD --> DD

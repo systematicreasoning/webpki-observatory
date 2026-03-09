@@ -1,0 +1,105 @@
+{
+  "ca_owner": "Autoridad de Certificaci\u00f3n (ANF AC)",
+  "country": "Espa\u00f1a",
+  "root_count": 5,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": false
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "ANF Global Root CA",
+      "sha256": "E3268F6106BA8B665A1A962DDEA1459D2A46972F1F2440329B390B895749AD45",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2013.06.10",
+      "valid_to": "2033.06.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ANF Global Root CA",
+      "sha256": "E0E17AEA06CF9CE12AAE8190345A2C59720130A7D8FF72F3745AD75DBAA365B6",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.06.10",
+      "valid_to": "2033.06.05",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ANF Global Root CA",
+      "sha256": "E0AFBD2C0EE95A68CD9A3C590B2D3FE07C0A6D0BE796AE5291E424D47792178E",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.05.20",
+      "valid_to": "2036.05.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ANF Secure Server Root CA",
+      "sha256": "FB8FEC759169B9106B1E511644C618C51304373F6C0643088D8BEFFD1B997599",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2019.09.04",
+      "valid_to": "2039.08.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ANF Server CA",
+      "sha256": "B644D955FFF29B74E3B5687E908EE7C3C9197BA3336CC6328531F6C057D677FD",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2009.11.30",
+      "valid_to": "2021.11.30",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "ANF Secure Server CA",
+      "sha256": "306BF8099636A44FFFB5EEDCE6E30C0F36C7D43F6CCA5A2CA3AB71668F353320",
+      "parent_name": "ANF Secure Server Root CA",
+      "valid_from": "2020.11.09",
+      "valid_to": "2030.11.07",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "autoridad-de-certificaci-n-anf-ac"
+}

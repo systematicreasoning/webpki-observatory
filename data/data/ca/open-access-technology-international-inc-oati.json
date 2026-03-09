@@ -1,0 +1,75 @@
+{
+  "ca_owner": "Open Access Technology International, Inc. (OATI)",
+  "country": "United States of America",
+  "root_count": 3,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "OATI WebCARES Root CA",
+      "sha256": "7A77C6C61EEEB9AA65C4EA410D65D895B26A81123283009DB104B48DE80B2479",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2008.06.03",
+      "valid_to": "2038.06.03",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "OATI webCARES Server Root CA",
+      "sha256": "30F4E5DD679FDE8FD11EB6E0C531615C438B06EDD9F59CBAB49680AA2B6990D9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2025.12.08",
+      "valid_to": "2045.12.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "webCARES Root CA 2018",
+      "sha256": "F0B6883DDEEDF22E674555F98F638738E0CCE44519FBC97FFA8C8C9F7E1DED5B",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2018.04.19",
+      "valid_to": "2038.04.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "webCARES Issuing CA 2021",
+      "sha256": "C4F20BAEC41F2357D25EC91FC62F41C642CA68281F7A21D333CE9522CFD9AD3A",
+      "parent_name": "OATI WebCARES Root CA",
+      "valid_from": "2021.03.25",
+      "valid_to": "2027.03.25",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "open-access-technology-international-inc-oati"
+}

@@ -1,0 +1,162 @@
+{
+  "ca_owner": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+  "country": "China",
+  "root_count": 4,
+  "intermediates_count": 15,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "Hongkong Post Root CA",
+      "sha256": "BCDD8DF4276366D7FF4B688DC81500D8E98252C049C8FF1E8C82F2BAEC9D5C16",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2000.01.16",
+      "valid_to": "2010.01.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Hongkong Post Root CA 1",
+      "sha256": "F9E67D336C51002AC054C632022D66DDA2E7E3FFF10AD061ED31D8BBB410CFB2",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Removed",
+      "apple_status": "Removed",
+      "valid_from": "2003.05.15",
+      "valid_to": "2023.05.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Hongkong Post Root CA 2",
+      "sha256": "3945E08A8D4A0554B7605A7B355B10188E3EF842C76A805C54E3657C4D041AAA",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.09.05",
+      "valid_to": "2040.09.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Hongkong Post Root CA 3",
+      "sha256": "5A2FC03F0C83B090BBFA40604B0988446C7636183DF9846E17101A447FB8EFD6",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2017.06.03",
+      "valid_to": "2042.06.03",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Hongkong Post e-Cert CA 2 - 15",
+      "sha256": "3271139D13EFEF47B348CD2436CE43A02E9B77E1D99318A3B9C751FC937F6230",
+      "parent_name": "Hongkong Post Root CA 2",
+      "valid_from": "2015.09.05",
+      "valid_to": "2030.09.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert CA 2 - 17",
+      "sha256": "CBB56EAEFD6FECDE2408F2F9CE8C324CDDBD3D967A5D76A9A22E81FF89B516AF",
+      "parent_name": "Hongkong Post Root CA 2",
+      "valid_from": "2017.08.12",
+      "valid_to": "2032.08.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert CA 2 - 19",
+      "sha256": "5BFF0E9BCE3B75D36EA46E0746174C034885606CBE46228ED0AE9E5782583FB2",
+      "parent_name": "Hongkong Post Root CA 2",
+      "valid_from": "2019.07.29",
+      "valid_to": "2034.07.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert EV SSL CA 3 - 17",
+      "sha256": "C18D53BF9864DD09BCBCACFD672E2566D4C81F6889E36DF5DD425C04211D0763",
+      "parent_name": "Hongkong Post Root CA 3",
+      "valid_from": "2017.06.03",
+      "valid_to": "2032.06.03",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert EV SSL CA 3 - 17",
+      "sha256": "7ADADC0DBA5B9A97BEB1580947B0738537C9239934E88C67512B5D22D9D47FF7",
+      "parent_name": "Hongkong Post Root CA 3",
+      "valid_from": "2025.03.20",
+      "valid_to": "2032.06.03",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert SSL CA 3 - 17",
+      "sha256": "69ECDBC3147F581DFDCB522D9DEFB260B26784AD4955C74E6A52522CCC4C4408",
+      "parent_name": "Hongkong Post Root CA 3",
+      "valid_from": "2017.06.03",
+      "valid_to": "2032.06.03",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Hongkong Post e-Cert SSL CA 3 - 17",
+      "sha256": "CB730C3A5FE958B8BDC5B363892C9F530B33F98A43CE3C2578FCE096B4AE233C",
+      "parent_name": "Hongkong Post Root CA 3",
+      "valid_from": "2025.03.20",
+      "valid_to": "2032.06.03",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-hong-kong-sar-hongkong-post-certizen"
+}

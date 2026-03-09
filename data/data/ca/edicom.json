@@ -1,0 +1,60 @@
+{
+  "ca_owner": "EDICOM",
+  "country": "Spain",
+  "root_count": 2,
+  "intermediates_count": 5,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ACEDICOM Root",
+      "sha256": "03950FB49A531F3E1991942398DFA9E0EA32D7BA1CDD9BC85DB57ED9400B434A",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2008.04.18",
+      "valid_to": "2028.04.13",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "CAEDICOM Root",
+      "sha256": "1501F89C5C4DCF36CF588A17C9FD7CFCEB9EE01E8729BE355E25DE80EB6284B4",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.05.21",
+      "valid_to": "2034.05.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "CAEDICOM04",
+      "sha256": "B211C48C2BD45066DDDC3C62658B135D85FE1305896FE32FAA2BE70BA4AA0773",
+      "parent_name": "CAEDICOM Root",
+      "valid_from": "2021.09.23",
+      "valid_to": "2034.05.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "edicom"
+}
