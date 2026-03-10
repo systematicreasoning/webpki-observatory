@@ -379,9 +379,9 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
     years = [{"y": int(y), "n": n} for y, n in sorted(by_year.items())]
     cas = sorted(by_ca.items(), key=lambda x: -x[1]["n"])
 
-    # Build CAs array (all CAs, not just top 20)
+    # Build CAs array — all CAs with incidents
     cas_list = []
-    for ca_name, stats in cas[:40]:
+    for ca_name, stats in cas:
         self_pct = round((stats["self"] / stats["n"]) * 100) if stats["n"] > 0 else 0
         cas_list.append({
             "ca": ca_name,
