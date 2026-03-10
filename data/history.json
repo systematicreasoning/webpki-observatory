@@ -1755,38 +1755,38 @@
     },
     {
       "date": "2026-03-10",
-      "generated_at": "2026-03-10T22:09:42.485415+00:00",
+      "generated_at": "2026-03-10T23:58:10.018572+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287550401,
+      "total_unexpired": 1287726839,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.2829
+          "pct": 40.2755
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.5252
+          "pct": 16.523
         },
         {
           "ca": "DigiCert",
-          "pct": 13.6896
+          "pct": 13.6932
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9226
+          "pct": 12.9219
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3943
+          "pct": 10.4015
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.633
+          "pct": 4.6322
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 0.9944
+          "pct": 0.9946
         },
         {
           "ca": "SSL.com",
@@ -1794,7 +1794,7 @@
         },
         {
           "ca": "GlobalSign nv-sa",
-          "pct": 0.1231
+          "pct": 0.1232
         },
         {
           "ca": "Actalis",
@@ -1804,97 +1804,97 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518662315,
+          "v": 518638546,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212769700,
+          "v": 212771187,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 176260747,
+          "v": 176330791,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166385157,
+          "v": 166398471,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133831933,
+          "v": 133943041,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59651581,
+          "v": 59650052,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12803747,
+          "v": 12807973,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686366,
+          "v": 1686754,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1584977,
+          "v": 1585896,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500846,
+          "v": 1500923,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668160,
+          "v": 668158,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 513184,
+          "v": 513311,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266237,
+          "v": 266341,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 220255,
+          "v": 220370,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 83096,
+          "v": 83128,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62483,
+          "v": 62490,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 49423,
+          "v": 49428,
           "at": 0
         },
         {
           "id": "swisssign-ag",
-          "v": 45515,
+          "v": 45549,
           "at": 0
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43844,
+          "v": 43850,
           "at": 0
         },
         {
@@ -1924,7 +1924,7 @@
         },
         {
           "id": "buypass",
-          "v": 15559,
+          "v": 15261,
           "at": 0
         },
         {
@@ -1954,7 +1954,7 @@
         },
         {
           "id": "viking-cloud,-inc.",
-          "v": 3114,
+          "v": 3103,
           "at": 0
         },
         {
@@ -2288,7 +2288,7 @@
           "at": 0
         }
       ],
-      "hhi": 2381,
+      "hhi": 2380,
       "roots_all4": 90,
       "owners_all4": 38,
       "total_roots": 335,
