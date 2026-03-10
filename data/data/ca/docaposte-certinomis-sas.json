@@ -1,0 +1,132 @@
+{
+  "ca_owner": "Docaposte Certinomis SAS",
+  "country": "France",
+  "root_count": 2,
+  "intermediates_count": 24,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Certinomis - Autorit\u00e9 Racine",
+      "sha256": "FCBFE2886206F72B27593C8B070297E12D769ED10ED7930705A8098EFFC14D17",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2008.09.17",
+      "valid_to": "2028.09.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Certinomis - Root CA",
+      "sha256": "2A99F5BC1174B73CBB1D620884E01C34E51CCB3978DA125F0E33268883BF4158",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2013.10.21",
+      "valid_to": "2033.10.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Certinomis - Easy CA G2",
+      "sha256": "ADF2D6193E97685B33CD306869A016594347AB260F160BDD8FD56FC273CEDE5E",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certinomis - Onetime CA 2016",
+      "sha256": "350F568D9EB610C6A12373E6A31BE9876FA784E289C890E7BA07F1C346820D93",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2016.10.13",
+      "valid_to": "2026.10.13",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certinomis - Prime CA G2",
+      "sha256": "25F2CFF2D8A3D8E903B4331D76F3B946756E693C9A589F7A5E121A2C6EC5A086",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certinomis - Safe CA",
+      "sha256": "03B5FFE7DB4D85717CB2ED07119DD63A8D592C2FD04F2988D1C074F0FFFAAA2E",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certinomis - Standard CA G2",
+      "sha256": "AC374ADD6F654ADB5F1F76A7FAC5EA8FBBA2045D5647193547985208092FC6F2",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Certinomis - Timestamp CA",
+      "sha256": "E51E998355F742822F6BC4F7AA6342041F031E10F730DB6F9A67722B03F36819",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    },
+    {
+      "name": "Certinomis - Web CA",
+      "sha256": "97ABD7593E9AE8DF22FF46C417C763DD69AC551E2A78B164B66B97E63B1F86A8",
+      "parent_name": "Certinomis - Root CA",
+      "valid_from": "2017.10.18",
+      "valid_to": "2033.10.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "docaposte-certinomis-sas"
+}

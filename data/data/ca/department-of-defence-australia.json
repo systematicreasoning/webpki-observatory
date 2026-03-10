@@ -1,0 +1,47 @@
+{
+  "ca_owner": "Department of Defence Australia",
+  "country": "Australia",
+  "root_count": 2,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ADOCA02",
+      "sha256": "6CCFD302FC44BF4599329B9750878EA44E7E8566564BCBD586169762DD10C74E",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2011.09.01",
+      "valid_to": "2019.01.27",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Australian Defence Public Root CA",
+      "sha256": "209E956AF04DF3996507C887D356230D6EB49FDBDD2D8A058FF50B8F80F690AA",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.11.28",
+      "valid_to": "2036.11.28",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "department-of-defence-australia"
+}

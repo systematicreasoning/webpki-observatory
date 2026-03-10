@@ -1,0 +1,138 @@
+{
+  "ca_owner": "Halcom D.D.",
+  "country": "Slovenia",
+  "root_count": 4,
+  "intermediates_count": 5,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Halcom CA FO",
+      "sha256": "5A1B5D6BC65523B40A6DEFFA45B48E4288AE8DD86DD70A5B858D4A5AFFC94F71",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2005.06.05",
+      "valid_to": "2020.06.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Halcom CA PO 2",
+      "sha256": "FE7114D07A147759891FF37B4F53EB43568296BC3BF89BC12CAFB186985EF28D",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2004.02.07",
+      "valid_to": "2019.02.07",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Halcom Root CA",
+      "sha256": "8B3FDB151AF759C566143E07C950EDE4F9E8C7CF808453D33BCB78E52A400AF9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2012.02.08",
+      "valid_to": "2032.02.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Halcom Root Certificate Authority",
+      "sha256": "D7BA3F4FF8AD05633451470DDA3378A3491B90005E5C687D2B68D53647CFDD66",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.06.10",
+      "valid_to": "2036.06.10",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Halcom CA FO e-signature 1",
+      "sha256": "24709797CD505CD70F27B2A6A013AF7455155CF7BA3E9AB6ACF03ABB12B8045B",
+      "parent_name": "Halcom Root Certificate Authority",
+      "valid_from": "2016.06.15",
+      "valid_to": "2026.06.15",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Halcom CA PO e-seal 1",
+      "sha256": "7B1D60647E7DAB721BCE21BD2EC8D2AF281207B01474B1A47BF5CF772A311D9D",
+      "parent_name": "Halcom Root Certificate Authority",
+      "valid_from": "2017.04.22",
+      "valid_to": "2027.04.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Halcom CA PO e-signature 1",
+      "sha256": "6616DA2DC8C81CD1D5ACB8664D8715E07925915B1130D0D2284604620FABFA98",
+      "parent_name": "Halcom Root Certificate Authority",
+      "valid_from": "2016.06.15",
+      "valid_to": "2026.06.15",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Halcom CA TSA 1",
+      "sha256": "A2FE481DBD77689629828DA50957B55B0D2CC4960601B3CB04E60C1DC3BC246C",
+      "parent_name": "Halcom Root Certificate Authority",
+      "valid_from": "2017.04.22",
+      "valid_to": "2027.04.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Halcom CA web 1",
+      "sha256": "D12DF63569F0F814514C2E29C93A9A133A4CBAA92D3046F8C6BC2D9D6F66F087",
+      "parent_name": "Halcom Root Certificate Authority",
+      "valid_from": "2017.04.22",
+      "valid_to": "2027.04.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "halcom-d-d"
+}

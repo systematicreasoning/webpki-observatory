@@ -1,0 +1,32 @@
+{
+  "ca_owner": "Financijska agencija (Fina)",
+  "country": "Croatia",
+  "root_count": 1,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Fina Root CA",
+      "sha256": "5AB4FCDB180B5B6AF0D262A2375A2C77D25602015D96648756611E2E78C53AD3",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.11.24",
+      "valid_to": "2035.11.24",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "financijska-agencija-fina"
+}

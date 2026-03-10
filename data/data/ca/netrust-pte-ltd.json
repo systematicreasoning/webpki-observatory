@@ -1,0 +1,72 @@
+{
+  "ca_owner": "Netrust Pte Ltd",
+  "country": "Singapore",
+  "root_count": 2,
+  "intermediates_count": 2,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Netrust CA1",
+      "sha256": "781D64DFA77B00F2C006700B1FDA86BF68B865A603C7A656F92E90C042CA2873",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2001.03.30",
+      "valid_to": "2021.03.30",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Netrust Root CA 2",
+      "sha256": "65353833CF234C79562164F90849C0D104DBABF8EE41064D83E8CBE03BA1C5A5",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.09.01",
+      "valid_to": "2041.09.01",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Netrust CA 2-1",
+      "sha256": "863B2D43886B1B807B07D7DFDA5986F1D78A54C437EEF554C23E4547A3A1F3E7",
+      "parent_name": "Netrust Root CA 2",
+      "valid_from": "2016.09.02",
+      "valid_to": "2036.09.02",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Netrust CA 2-2",
+      "sha256": "A478AD193683DD4138E3D1533D71800C1B1147643C885D3CB3DF283FFC05FB88",
+      "parent_name": "Netrust Root CA 2",
+      "valid_from": "2016.09.02",
+      "valid_to": "2036.09.02",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "netrust-pte-ltd"
+}

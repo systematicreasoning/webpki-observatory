@@ -1,0 +1,2138 @@
+{
+  "generated_at": "2026-03-09T01:44:45.673505+00:00",
+  "pipeline_version": "0.3.0",
+  "total_events": 16,
+  "stats": {
+    "total_events": 15,
+    "year_range": [
+      2011,
+      2024
+    ],
+    "avg_interval_years": 0.93,
+    "avg_runway_days": 1280,
+    "median_runway_days": 1185,
+    "max_runway_days": 2644,
+    "posture_distribution": {
+      "willful_circumvention": 3,
+      "accidental": 1,
+      "negligent_noncompliance": 6,
+      "demonstrated_incompetence": 3,
+      "argumentative_noncompliance": 2
+    },
+    "tag_frequency": {
+      "baseline_requirements_violations": 12,
+      "pattern_of_issues": 10,
+      "rogue_certificate_issuance": 6,
+      "inadequate_incident_response": 6,
+      "unauthorized_delegation": 5,
+      "lack_of_meaningful_improvement": 5,
+      "non_responsive_to_root_programs": 5,
+      "audit_deficiencies": 4,
+      "delayed_or_refused_revocation": 4,
+      "certificates_used_for_mitm": 3,
+      "validation_bypass": 3,
+      "demonstrated_lack_of_understanding": 3,
+      "limited_ecosystem_value": 3,
+      "active_deception": 2,
+      "hidden_corporate_changes": 2,
+      "minimized_severity": 2,
+      "infrastructure_compromise": 1,
+      "concealed_breach_or_incident": 1,
+      "ties_to_adversarial_entities": 1,
+      "operational_security_failures": 1,
+      "argued_rules_dont_apply": 1,
+      "recharacterized_incidents": 1
+    },
+    "response_driven_pct": 73,
+    "response_driven_note": "11/15 events have at least one response-quality behavioral tag"
+  },
+  "taxonomy": {
+    "compliance_posture": {
+      "_description": "The CA's fundamental posture toward compliance. This is the single most important predictor of distrust outcomes \u2014 it captures WHY the same type of incident leads to distrust for one CA but not another.",
+      "willful_circumvention": "CA knew the rules and built systems or processes to deliberately violate them. Includes backdating, systematic fraud, and active concealment of known violations.",
+      "argumentative_noncompliance": "CA understood the rules but argued they shouldn't apply, reinterpreted requirements to justify non-compliance, or positioned compliance obligations as suggestions rather than mandates.",
+      "negligent_noncompliance": "CA should have known about and fixed problems but failed to act despite awareness. Knew about deficiencies, had time to fix them, chose not to prioritize.",
+      "demonstrated_incompetence": "CA lacked the operational maturity or technical understanding to meet the requirements. Couldn't perform root cause analysis, couldn't maintain audits, didn't understand what was being asked of them.",
+      "accidental": "Genuine operational mistake without malice or negligence. The CA's controls failed but the failure wasn't foreseeable or the result of systemic neglect."
+    },
+    "reason_tags": {
+      "infrastructure_compromise": "CA infrastructure was breached or compromised, resulting in unauthorized certificate issuance from the CA's own systems.",
+      "operational_security_failures": "Fundamental security hygiene failures: default credentials, exposed admin interfaces, unpatched systems. The CA didn't know its own systems were vulnerable.",
+      "rogue_certificate_issuance": "Certificates issued for domains without the holder's authorization, used or usable for MITM interception or impersonation.",
+      "baseline_requirements_violations": "Systematic violations of CA/Browser Forum Baseline Requirements: profile errors, encoding issues, missing fields, validity violations.",
+      "validation_bypass": "Certificates issued without required domain or organization validation, or with insufficient evidence of control.",
+      "unauthorized_delegation": "Unconstrained subordinate CA certificates issued to third parties without adequate oversight, or those parties misused them.",
+      "delayed_or_refused_revocation": "Unreasonably delayed revoking misissued certificates, or argued revocation unnecessary \u2014 often citing subscriber impact as justification for inaction.",
+      "argued_rules_dont_apply": "Actively argued requirements should not apply to their situation, reinterpreted standards to justify non-compliance, used CPS language as a shield against BR obligations.",
+      "recharacterized_incidents": "Changed determination of whether an incident was an incident after filing the report. Retracted misissuance findings or reclassified failures to avoid revocation obligations.",
+      "minimized_severity": "Consistently downplayed incident significance. 'No security impact' as default posture. Framed systemic problems as isolated events.",
+      "lack_of_meaningful_improvement": "Despite incidents, warnings, and commitments, failed to demonstrate operational changes. Same patterns repeated. Remediation commitments unmet.",
+      "pattern_of_issues": "Multiple distinct incidents over months or years indicating systemic organizational problems. The accumulation drove the distrust decision.",
+      "active_deception": "Deliberately lied to root programs, auditors, or community. Falsified records, backdated certificates, concealed acquisitions, provided knowingly false incident reports.",
+      "concealed_breach_or_incident": "Discovered a breach or compliance failure and delayed or withheld disclosure rather than reporting promptly.",
+      "hidden_corporate_changes": "Concealed acquisitions, ownership transfers, or organizational changes that materially affected the CA's operations or independence.",
+      "ties_to_adversarial_entities": "Corporate or operational ties to organizations involved in surveillance, intelligence, or activities incompatible with public trust.",
+      "non_responsive_to_root_programs": "Failed to respond to root program inquiries, surveys, or action items. Complete failure to engage.",
+      "inadequate_incident_response": "Responded but with insufficient depth, transparency, or timeliness. Reports late, incomplete, or missing root cause analysis.",
+      "demonstrated_lack_of_understanding": "CA responses revealed they did not understand fundamental concepts expected of a trusted CA \u2014 e.g., confusing 'root cause' (incident analysis) with 'root certificate', or not understanding what a compliant incident report requires.",
+      "audit_deficiencies": "Incomplete, qualified, or missing audits required for trust store inclusion.",
+      "limited_ecosystem_value": "Minimal value to web ecosystem relative to risk of continued inclusion. Unfavorable risk/value ratio.",
+      "certificates_used_for_mitm": "Fraudulently or improperly issued certificates were confirmed used to intercept encrypted traffic (man-in-the-middle). Distinct from rogue issuance where certs were not confirmed used \u2014 this tag means real users' traffic was actually intercepted."
+    }
+  },
+  "events": [
+    {
+      "ca": "DigiNotar",
+      "ca_owner": "DigiNotar",
+      "year": 2011,
+      "country": "Netherlands",
+      "compliance_posture": "willful_circumvention",
+      "reason_tags": [
+        "infrastructure_compromise",
+        "rogue_certificate_issuance",
+        "concealed_breach_or_incident",
+        "certificates_used_for_mitm"
+      ],
+      "root_cause": "infrastructure_compromise",
+      "response_quality": "moot",
+      "distrust_pathway": "immediate",
+      "summary": "CA infrastructure was fully compromised. Attacker issued 531+ fraudulent certificates including *.google.com, used in MITM surveillance of Iranian users. CA concealed the breach for weeks. Declared bankruptcy after distrust.",
+      "distrust_dates": {
+        "chrome": "2011-08-29",
+        "mozilla": "2011-09-02",
+        "apple": "2011-09-09",
+        "microsoft": "2011-09-13"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://blog.mozilla.org/security/2011/09/02/diginotar-removal-follow-up/",
+          "https://threatpost.com/final-report-diginotar-hack-shows-total-compromise-ca-servers-091511/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/eFp_xmfNhAw"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://www.enisa.europa.eu/sites/default/files/all_files/Operation_Black_Tulip_v2.pdf",
+            "source": "ENISA",
+            "title": "Operation Black Tulip: Certificate authorities lose authority"
+          },
+          {
+            "url": "https://www.theregister.com/2011/09/06/diginotar_audit_damning_fail/",
+            "source": "The Register",
+            "title": "Inside Operation Black Tulip: DigiNotar hack analysed"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/DigiNotar",
+            "source": "Wikipedia",
+            "title": "DigiNotar"
+          },
+          {
+            "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1246&context=jss",
+            "source": "Journal of Strategic Security",
+            "title": "DigiNotar: Dissecting the First Dutch Digital Disaster"
+          }
+        ]
+      },
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Hand-curated from root program announcements.",
+      "bugzilla_bugs": 0,
+      "metadata_available": true,
+      "posture_evidence": "Concealed breach for weeks while fraudulent certs were actively used for surveillance.",
+      "tag_evidence": {
+        "infrastructure_compromise": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "concealed_breach_or_incident": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "first_bug_date": null,
+        "last_bug_date": null,
+        "distrust_date": "2011-08-29",
+        "distrust_dates_per_store": {
+          "chrome": "2011-08-29",
+          "mozilla": "2011-09-02",
+          "microsoft": "2011-09-13",
+          "apple": "2011-09-09"
+        },
+        "runway_days": null,
+        "bug_count": 0,
+        "monthly_bug_counts": {},
+        "quarterly_bug_counts": {},
+        "milestones": [
+          {
+            "date": "2011-07-19",
+            "type": "incident",
+            "detail": "CA infrastructure compromised (breach date from forensic report)"
+          },
+          {
+            "date": "2011-08-28",
+            "type": "public_discovery",
+            "detail": "Fraudulent *.google.com cert detected by Chrome pinning"
+          },
+          {
+            "date": "2011-08-29",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Google blocks DigiNotar in Chrome"
+          },
+          {
+            "date": "2011-09-02",
+            "type": "root_program_announcement",
+            "detail": "Mozilla removes DigiNotar from trust store"
+          },
+          {
+            "date": "2011-09-09",
+            "type": "distrust_effective",
+            "store": "apple"
+          },
+          {
+            "date": "2011-09-13",
+            "type": "distrust_effective",
+            "store": "microsoft"
+          },
+          {
+            "date": "2011-09-20",
+            "type": "business_outcome",
+            "detail": "DigiNotar declared bankrupt"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "ANSSI",
+      "ca_owner": "Government of France (ANSSI, DCSSI)",
+      "year": 2013,
+      "country": "France",
+      "compliance_posture": "accidental",
+      "reason_tags": [
+        "unauthorized_delegation",
+        "rogue_certificate_issuance",
+        "certificates_used_for_mitm"
+      ],
+      "root_cause": "misissuance",
+      "response_quality": "cooperative",
+      "distrust_pathway": "triggered",
+      "summary": "Government CA issued intermediate certificate to network appliance company for traffic inspection. Used to issue MITM certificate for Google domains. ANSSI cooperated, certificate was revoked. Distrust limited to specific intermediate, not full root removal.",
+      "distrust_dates": {
+        "chrome": "2013-12-09",
+        "mozilla": "2013-12-09",
+        "apple": "2013-12-09",
+        "microsoft": "2013-12-09"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://security.googleblog.com/2013/12/further-improving-digital-certificate.html",
+          "https://blog.mozilla.org/security/2013/12/09/revoking-trust-in-one-anssi-certificate/"
+        ],
+        "mdsp_threads": [],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2013/12/further-improving-digital-certificate.html",
+            "source": "Chrome Blog",
+            "title": "Further improving digital certificate security"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2013/12/09/revoking-trust-in-one-anssi-certificate/",
+            "source": "Mozilla Blog",
+            "title": "Revoking trust in one ANSSI certificate"
+          }
+        ]
+      },
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Hand-curated from root program announcements.",
+      "bugzilla_bugs": 0,
+      "metadata_available": true,
+      "posture_evidence": "Government CA delegated cert to network appliance company. Didn't understand WebPKI constraints on delegation.",
+      "tag_evidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "first_bug_date": null,
+        "last_bug_date": null,
+        "distrust_date": "2013-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": null,
+        "bug_count": 0,
+        "monthly_bug_counts": {},
+        "quarterly_bug_counts": {},
+        "milestones": [
+          {
+            "date": "2013-12-03",
+            "type": "public_discovery",
+            "detail": "Google detects unauthorized cert for Google domains from ANSSI intermediate"
+          },
+          {
+            "date": "2013-12-09",
+            "type": "root_program_announcement",
+            "detail": "Mozilla revokes trust in ANSSI intermediate certificate"
+          },
+          {
+            "date": "2013-12-09",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Intermediate only, not full root"
+          },
+          {
+            "date": "2013-12-10",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Google restricts ANSSI to specific domains"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "India CCA (NIC)",
+      "ca_owner": "India CCA",
+      "country": "IN",
+      "year": 2014,
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Added from root program announcements",
+      "compliance_posture": "negligent_noncompliance",
+      "distrust_pathway": "triggered",
+      "response_quality": "inadequate",
+      "root_cause": "Unauthorized certificate issuance for Google domains via NIC intermediate CA",
+      "summary": "Indian government CA (National Informatics Centre) issued unauthorized certificates for Google domains. Chrome, Mozilla, and Apple constrained or removed trust. Microsoft has not acted.",
+      "reason_tags": [
+        "unauthorized_certificate",
+        "government_ca",
+        "lack_of_controls"
+      ],
+      "bugzilla_bugs": [],
+      "references": [],
+      "posture_evidence": "NIC intermediate CA issued unauthorized Google certificates.",
+      "tag_evidence": {},
+      "metadata_available": false,
+      "distrust_dates": {
+        "chrome": "2014-07-12",
+        "mozilla": "2014-07-14",
+        "apple": "2014-07-14"
+      },
+      "timeline": {
+        "first_bug_date": null,
+        "last_bug_date": null,
+        "distrust_date": "2014-07-12",
+        "distrust_dates_per_store": {
+          "chrome": "2014-07-12",
+          "mozilla": "2014-07-14",
+          "apple": "2014-07-14"
+        },
+        "runway_days": null,
+        "bug_count": 0,
+        "milestones": [
+          {
+            "date": "2014-07-02",
+            "type": "public_discovery",
+            "detail": "Google detects unauthorized certificate for Google domains from NIC intermediate CA"
+          },
+          {
+            "date": "2014-07-12",
+            "type": "root_program_announcement",
+            "detail": "Chrome constrains India CCA certificates"
+          },
+          {
+            "date": "2014-07-14",
+            "type": "root_program_announcement",
+            "detail": "Mozilla and Apple constrain/remove India CCA"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "CNNIC",
+      "ca_owner": "China Internet Network Information Center (CNNIC)",
+      "year": 2015,
+      "country": "China",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "unauthorized_delegation",
+        "rogue_certificate_issuance",
+        "inadequate_incident_response",
+        "certificates_used_for_mitm"
+      ],
+      "root_cause": "misissuance",
+      "response_quality": "inadequate",
+      "distrust_pathway": "triggered",
+      "summary": "Issued unconstrained intermediate certificate to MCS Holdings, an Egyptian company that used it as a MITM proxy to issue unauthorized certificates for Google domains.",
+      "distrust_dates": {
+        "chrome": "2015-04-01",
+        "mozilla": "2015-04-02",
+        "apple": "2015-04-02",
+        "microsoft": "2015-04-02"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://blog.mozilla.org/security/2015/04/02/distrusting-new-cnnic-certificates/",
+          "https://security.googleblog.com/2015/03/maintaining-digital-certificate-security.html"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Z5701nXiDqA"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2015/03/maintaining-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Maintaining digital certificate security"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2015/04/02/distrusting-new-cnnic-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting new CNNIC certificates"
+          }
+        ]
+      },
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Hand-curated from root program announcements.",
+      "bugzilla_bugs": 0,
+      "metadata_available": true,
+      "posture_evidence": "Issued unconstrained intermediate to MCS Holdings without adequate oversight. MCS ran a MITM proxy.",
+      "tag_evidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "rogue_certificate_issuance": "Curated from root program announcements",
+        "inadequate_incident_response": "Curated from root program announcements",
+        "certificates_used_for_mitm": "Curated from root program announcements"
+      },
+      "timeline": {
+        "first_bug_date": null,
+        "last_bug_date": null,
+        "distrust_date": "2015-04-01",
+        "distrust_dates_per_store": {
+          "chrome": "2015-04-01",
+          "mozilla": "2015-04-02"
+        },
+        "runway_days": null,
+        "bug_count": 0,
+        "monthly_bug_counts": {},
+        "quarterly_bug_counts": {},
+        "milestones": [
+          {
+            "date": "2015-03-20",
+            "type": "public_discovery",
+            "detail": "Unauthorized certs for Google domains found via MCS Holdings intermediate"
+          },
+          {
+            "date": "2015-03-23",
+            "type": "root_program_announcement",
+            "detail": "Mozilla revokes trust in MCS Holdings intermediate"
+          },
+          {
+            "date": "2015-04-01",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Google announces distrust of CNNIC for new certs"
+          },
+          {
+            "date": "2015-04-02",
+            "type": "distrust_effective",
+            "store": "mozilla"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "WoSign",
+      "ca_owner": "WoSign CA Limited",
+      "year": 2016,
+      "country": "China",
+      "compliance_posture": "willful_circumvention",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "rogue_certificate_issuance",
+        "active_deception",
+        "hidden_corporate_changes",
+        "validation_bypass"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "moot",
+      "distrust_pathway": "immediate",
+      "summary": "WoSign was distrusted for systematic rule circumvention including backdating SHA-1 certificates, issuing unauthorized certificates, and concealing their acquisition of StartCom. They deliberately built systems to violate browser restrictions and actively deceived the community about their operations.",
+      "source": "metadata",
+      "classification_tier": "medium_high",
+      "classification_tier_note": "Classified primarily from metadata (sparse Bugzilla trail).",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "WoSign systematically backdated SHA-1 certificates to circumvent the January 2016 deprecation deadline, making them appear compliant when they weren't. They built systems to deliberately violate restrictions and actively misled browsers about their secret StartCom acquisition. This is deliberate rule violation with concealment, not mere argumentative non-compliance.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Systematic backdating of SHA-1 certificates after January 2016 deprecation deadline",
+          "rogue_certificate_issuance": "Issued certificates for GitHub domain without authorization",
+          "active_deception": "Actively attempted to mislead browser community about StartCom acquisition and relationship",
+          "hidden_corporate_changes": "Secretly acquired StartCom while both presented themselves as independent CAs",
+          "validation_bypass": "Issued certificates for domains without proper validation"
+        },
+        "evidence_sources": [
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1525412
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 0,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 1,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/k9PBmyLCi8I",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/1XI3Y7PJ1Uc",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/BV5XyFJLnQM",
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/VUj2glQYxLc"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html",
+            "source": "Chrome Blog",
+            "title": "Distrusting WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2016/10/24/distrusting-new-wosign-and-startcom-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting New WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/WoSign",
+            "source": "Wikipedia",
+            "title": "WoSign"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2019-02-05",
+        "last_bug_date": "2019-02-05",
+        "distrust_date": "2016-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": -979,
+        "bug_count": 1,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2019-02": 1
+        },
+        "quarterly_bug_counts": {
+          "2019-Q1": 1
+        },
+        "milestones": [
+          {
+            "date": "2016-08-17",
+            "type": "public_discovery",
+            "detail": "GitHub reports unauthorized cert. Community investigation begins"
+          },
+          {
+            "date": "2016-08-24",
+            "type": "mdsp_escalation",
+            "detail": "Incidents involving WoSign thread opened on mdsp"
+          },
+          {
+            "date": "2016-09-29",
+            "type": "mdsp_escalation",
+            "detail": "WoSign and StartCom: next steps \u2014 face-to-face meeting requested"
+          },
+          {
+            "date": "2016-10-13",
+            "type": "root_program_announcement",
+            "detail": "Kathleen Wilson posts remediation plan to mdsp"
+          },
+          {
+            "date": "2016-10-24",
+            "type": "root_program_announcement",
+            "detail": "Mozilla Security Blog: Distrusting New WoSign and StartCom Certificates"
+          },
+          {
+            "date": "2016-10-31",
+            "type": "distrust_effective",
+            "store": "chrome"
+          },
+          {
+            "date": "2016-11-30",
+            "type": "distrust_effective",
+            "store": "apple"
+          },
+          {
+            "date": "2017-08-08",
+            "type": "distrust_effective",
+            "store": "microsoft",
+            "detail": "NotBefore Sep 26 2017"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "StartCom",
+      "ca_owner": "Start Commercial (StartCom) Ltd.",
+      "year": 2016,
+      "country": "Israel",
+      "compliance_posture": "willful_circumvention",
+      "reason_tags": [
+        "active_deception",
+        "hidden_corporate_changes",
+        "rogue_certificate_issuance",
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "validation_bypass"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "moot",
+      "distrust_pathway": "immediate",
+      "summary": "StartCom was distrusted for concealing its acquisition by WoSign while maintaining false appearance of independence. Post-distrust bugs show continued attempts to circumvent restrictions through proxy issuance and certificate manipulation, demonstrating willful violation of trust boundaries.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "StartCom deliberately built systems to violate trust requirements by concealing its acquisition by WoSign and maintaining the appearance of independence while sharing infrastructure and management. Post-distrust, they systematically attempted to circumvent the distrust through proxy issuance (Bug 1350615) and 'un-revoking' intermediate certificates (Bug 1369342), demonstrating ongoing intentional violation of trust boundaries.",
+        "tag_evidence": {
+          "active_deception": "StartCom 'maintained the appearance of being an independent CA while sharing WoSign's infrastructure and management' - deliberately presented false independence",
+          "hidden_corporate_changes": "StartCom 'had replaced infrastructure, staff, policies, and issuance systems with WoSign's' following an undisclosed acquisition",
+          "rogue_certificate_issuance": "Bug 1369359: 'mis-issuance of certs with unvalidated domain names and bogus field values'",
+          "baseline_requirements_violations": "Bug 1386894: 'Non-BR-Compliant Certificate Issuance' and multiple CAA violations in Bugs 1409760, 1409859",
+          "pattern_of_issues": "8 distinct bugs from 2017-2019 showing systematic ongoing violations after distrust",
+          "validation_bypass": "Bug 1369359 indicates certificates issued 'with unvalidated domain names'"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1350615,
+          1369342,
+          1369359,
+          1386891,
+          1386894,
+          1409760,
+          1409859,
+          1525423
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 0,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 8,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/TbDYE69YP8E"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html",
+            "source": "Chrome Blog",
+            "title": "Distrusting WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://blog.mozilla.org/security/2016/10/24/distrusting-new-wosign-and-startcom-certificates/",
+            "source": "Mozilla Blog",
+            "title": "Distrusting New WoSign and StartCom Certificates"
+          },
+          {
+            "url": "https://en.wikipedia.org/wiki/StartCom",
+            "source": "Wikipedia",
+            "title": "StartCom"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-03-25",
+        "last_bug_date": "2019-02-05",
+        "distrust_date": "2016-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": -297,
+        "bug_count": 8,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2017-03": 1,
+          "2017-06": 2,
+          "2017-08": 2,
+          "2017-10": 2,
+          "2019-02": 1
+        },
+        "quarterly_bug_counts": {
+          "2017-Q1": 1,
+          "2017-Q2": 2,
+          "2017-Q3": 2,
+          "2017-Q4": 2,
+          "2019-Q1": 1
+        },
+        "milestones": [
+          {
+            "date": "2016-08-24",
+            "type": "mdsp_escalation",
+            "detail": "Linked to WoSign investigation, undisclosed acquisition revealed"
+          },
+          {
+            "date": "2016-10-24",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Distrusted jointly with WoSign"
+          },
+          {
+            "date": "2016-10-31",
+            "type": "distrust_effective",
+            "store": "chrome"
+          },
+          {
+            "date": "2017-03-25",
+            "type": "first_bug",
+            "detail": "First post-distrust Bugzilla bug (proxy issuance via Camerfirma)"
+          },
+          {
+            "date": "2017-11-16",
+            "type": "business_outcome",
+            "detail": "StartCom announces cessation of CA business"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Symantec",
+      "ca_owner": "Symantec",
+      "year": 2017,
+      "country": "United States",
+      "compliance_posture": "argumentative_noncompliance",
+      "reason_tags": [
+        "unauthorized_delegation",
+        "pattern_of_issues",
+        "validation_bypass",
+        "lack_of_meaningful_improvement",
+        "minimized_severity",
+        "baseline_requirements_violations",
+        "willful_misissuance"
+      ],
+      "root_cause": "compliance_failure",
+      "response_quality": "inadequate",
+      "distrust_pathway": "negotiated",
+      "summary": "Google documented years of misissuance incidents including test certificates, non-audited intermediates, and BR violations. DigiCert acquired Symantec's CA business and managed the transition. Gradual distrust over 12+ months with subscriber migration.",
+      "distrust_dates": {
+        "chrome": "2018-04-17",
+        "mozilla": "2018-10-01",
+        "apple": "2018-10-15",
+        "microsoft": "2018-10-15"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/g/mozilla.dev.security.policy/c/gLhzSzo-XFw"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4",
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2017/09/chromes-plan-to-distrust-symantec.html",
+            "source": "Chrome Blog",
+            "title": "Chrome's Plan to Distrust Symantec Certificates"
+          },
+          {
+            "url": "https://arstechnica.com/information-technology/2017/03/google-takes-symantec-to-the-woodshed-for-mis-issuing-30000-https-certs/",
+            "source": "Ars Technica",
+            "title": "Google takes Symantec to the woodshed for mis-issuing 30,000 HTTPS certs"
+          },
+          {
+            "url": "https://www.bleepingcomputer.com/news/security/google-outlines-ssl-apocalypse-for-symantec-certificates/",
+            "source": "Bleeping Computer",
+            "title": "Google Outlines SSL Apocalypse for Symantec Certificates"
+          }
+        ]
+      },
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Hand-curated from root program announcements.",
+      "bugzilla_bugs": 7,
+      "metadata_available": true,
+      "posture_evidence": "Third-party RA program was knowingly structured to bypass validation controls. Repeatedly minimized severity and argued rules should not apply as written. Willful misissuance in training infrastructure. Pattern of argumentative engagement with root programs eroded confidence.",
+      "tag_evidence": {
+        "unauthorized_delegation": "Curated from root program announcements",
+        "pattern_of_issues": "Curated from root program announcements",
+        "validation_bypass": "Curated from root program announcements",
+        "lack_of_meaningful_improvement": "Curated from root program announcements",
+        "minimized_severity": "Curated from root program announcements",
+        "baseline_requirements_violations": "Curated from root program announcements"
+      },
+      "timeline": {
+        "first_bug_date": "2017-01-27",
+        "last_bug_date": "2017-11-27",
+        "distrust_date": "2018-10-09",
+        "distrust_dates_per_store": {
+          "chrome": "2018-10-23",
+          "mozilla": "2018-10-23",
+          "apple": "2018-10-15",
+          "microsoft": "2018-10-09"
+        },
+        "runway_days": 620,
+        "bug_count": 7,
+        "monthly_bug_counts": {
+          "2017-01": 1,
+          "2017-05": 1,
+          "2017-08": 1,
+          "2017-10": 1,
+          "2017-11": 3
+        },
+        "quarterly_bug_counts": {
+          "2017-Q1": 1,
+          "2017-Q2": 1,
+          "2017-Q3": 1,
+          "2017-Q4": 4
+        },
+        "milestones": [
+          {
+            "date": "2017-01-19",
+            "type": "mdsp_escalation",
+            "detail": "Public posting to mdsp draws attention to Symantec misissuance"
+          },
+          {
+            "date": "2017-01-27",
+            "type": "first_bug",
+            "detail": "First Bugzilla CA Compliance bug"
+          },
+          {
+            "date": "2017-03-31",
+            "type": "root_program_announcement",
+            "detail": "Google announces proposal to distrust Symantec"
+          },
+          {
+            "date": "2017-09-11",
+            "type": "root_program_announcement",
+            "detail": "Chrome Security Blog: Chrome's Plan to Distrust Symantec"
+          },
+          {
+            "date": "2017-10-31",
+            "type": "business_outcome",
+            "detail": "DigiCert acquires Symantec CA business"
+          },
+          {
+            "date": "2018-04-17",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Chrome 66: distrust pre-June-2016 certs"
+          },
+          {
+            "date": "2018-10-23",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Chrome 70: full distrust"
+          },
+          {
+            "date": "2018-10-23",
+            "type": "distrust_effective",
+            "store": "mozilla"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "TurkTrust",
+      "ca_owner": "TurkTrust",
+      "year": 2018,
+      "country": "Turkey",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "unauthorized_delegation",
+        "non_responsive_to_root_programs",
+        "audit_deficiencies",
+        "pattern_of_issues",
+        "rogue_certificate_issuance"
+      ],
+      "root_cause": "compliance_failure",
+      "response_quality": "inadequate",
+      "distrust_pathway": "gradual",
+      "summary": "TurkTrust was distrusted following a pattern of compliance failures including issuing non-audited, non-constrained intermediate certificates and failing to respond to root program surveys. The distrust was triggered by the 2012 incident where their operational mistake led to a fraudulent Google certificate, followed by ongoing compliance deficiencies.",
+      "source": "metadata",
+      "classification_tier": "medium_high",
+      "classification_tier_note": "Classified primarily from metadata (sparse Bugzilla trail).",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "TurkTrust understood their obligations but failed to prioritize compliance despite having time to fix known deficiencies. Bug 1367842 shows they had non-audited, non-technically-constrained intermediates for years without addressing this, and Bug 1439127 shows they simply didn't respond to required surveys. Their 2018 response mentions 'strategic reorganization' as an excuse, indicating they knew about obligations but chose not to prioritize them.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Bug 1367842: 'Non-audited, non-technically-constrained intermediate certs' - systematic BR violations regarding intermediate certificate requirements",
+          "unauthorized_delegation": "Bug 1367842: issuing 'non-technically-constrained intermediate certs' without proper oversight or constraints",
+          "non_responsive_to_root_programs": "Bug 1439127: 'Failure to respond to January 2018 survey' - complete failure to engage with required root program communications",
+          "audit_deficiencies": "Bug 1367842: 'Non-audited' intermediate certificates - missing required audits for trust store inclusion",
+          "pattern_of_issues": "Two separate bugs spanning May 2017 to February 2018 showing ongoing compliance failures",
+          "rogue_certificate_issuance": "Reference context: intermediate certificate was 'subsequently used to issue a fraudulent certificate for *.google.com' - unauthorized certificate for major domain"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1367842,
+          1439127
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 1,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 2,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2018-06-01",
+        "mozilla": "2018-05-01",
+        "apple": "2018-06-01",
+        "microsoft": "2018-06-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://krebsonsecurity.com/2013/01/turkish-registrar-enabled-phishers-to-spoof-google/"
+        ],
+        "mdsp_threads": [],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://krebsonsecurity.com/2013/01/turkish-registrar-enabled-phishers-to-spoof-google/",
+            "source": "Krebs on Security",
+            "title": "Turkish CA enabled phishers to spoof Google"
+          },
+          {
+            "url": "https://security.googleblog.com/2013/01/enhancing-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Enhancing digital certificate security"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-05-25",
+        "last_bug_date": "2018-02-17",
+        "distrust_date": "2018-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 372,
+        "bug_count": 2,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2017-05": 1,
+          "2018-02": 1
+        },
+        "quarterly_bug_counts": {
+          "2017-Q2": 1,
+          "2018-Q1": 1
+        },
+        "milestones": [
+          {
+            "date": "2011-08-01",
+            "type": "incident",
+            "detail": "Two intermediate CA certs accidentally issued to customers"
+          },
+          {
+            "date": "2012-12-25",
+            "type": "public_discovery",
+            "detail": "Fraudulent *.google.com cert detected by Chrome pinning"
+          },
+          {
+            "date": "2013-01-03",
+            "type": "root_program_announcement",
+            "detail": "Google, Mozilla, Microsoft revoke trust in misissued intermediates"
+          },
+          {
+            "date": "2017-05-25",
+            "type": "first_bug",
+            "detail": "First Bugzilla CA Compliance bug (non-audited intermediates)"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Certinomis",
+      "ca_owner": "Docaposte Certinomis SAS",
+      "year": 2019,
+      "country": "France",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement",
+        "inadequate_incident_response",
+        "non_responsive_to_root_programs"
+      ],
+      "root_cause": "compliance_failure",
+      "response_quality": "inadequate",
+      "distrust_pathway": "gradual",
+      "summary": "Certinomis was distrusted in 2019 following a sustained pattern of 20 documented incidents over 2+ years showing systematic BR violations including invalid DNS names, improper certificate profiles, and OCSP failures. Despite being aware of these issues through bug reports, the CA failed to implement effective systemic remediation, with the same violation categories recurring throughout the period.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "Certinomis was aware of problems through repeated bug reports from 2017-2019 but failed to implement effective systemic fixes. They responded to individual incidents but the 20 bugs show the same patterns recurring (invalid DNS names, BR violations, OCSP failures), demonstrating they knew about deficiencies but didn't prioritize comprehensive remediation.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Multiple bugs show systematic BR violations: Bug 1390978 (Non-BR-Compliant Certificate Issuance), Bug 1524449 (validity period >825 days), Bug 1524451 (invalid CDP extension), Bug 1503128 (email address in DNS SAN)",
+          "pattern_of_issues": "20 distinct bugs over 2+ years (2017-2019) showing repeated categories of violations: invalid DNS names (Bugs 1524094, 1539531, 1551357), test certificates (Bugs 1496088, 1524112, 1524448), OCSP issues (Bugs 1425998, 1544933, 1551390)",
+          "lack_of_meaningful_improvement": "Same violation types recurring throughout the period - invalid DNS names appearing in bugs from 2019-01-30 (Bug 1524094) through 2019-05-13 (Bug 1551357), showing systemic problems weren't fixed",
+          "inadequate_incident_response": "Bug 1386891 shows incomplete response about cross-signing disclosure, with partial response cut off mid-sentence, and Bug 1390978 incident report appears incomplete based on cached context",
+          "non_responsive_to_root_programs": "Bug 1439126 explicitly documents 'Failure to respond to January 2018 survey'"
+        },
+        "evidence_sources": [
+          "bugzilla"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1386891,
+          1390978,
+          1425998,
+          1439126,
+          1495524,
+          1496088,
+          1503128,
+          1524094,
+          1524103,
+          1524112,
+          1524448,
+          1524449,
+          1524451,
+          1539531,
+          1542328,
+          1542793,
+          1544933,
+          1547072,
+          1551357,
+          1551390
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 2,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 20,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2019-07-01",
+        "mozilla": "2019-06-01",
+        "apple": "2019-07-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://venafi.com/blog/mozilla-distrusts-certinomis-issued-certificates/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/rmU311hOIIc"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://venafi.com/blog/mozilla-distrusts-certinomis-issued-certificates/",
+            "source": "Venafi",
+            "title": "Mozilla distrusts Certinomis issued certificates"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-08-02",
+        "last_bug_date": "2019-05-14",
+        "distrust_date": "2019-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 668,
+        "bug_count": 20,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2017-08": 2,
+          "2017-12": 1,
+          "2018-02": 1,
+          "2018-10": 3,
+          "2019-01": 3,
+          "2019-02": 3,
+          "2019-03": 1,
+          "2019-04": 4,
+          "2019-05": 2
+        },
+        "quarterly_bug_counts": {
+          "2017-Q3": 2,
+          "2017-Q4": 1,
+          "2018-Q1": 1,
+          "2018-Q4": 3,
+          "2019-Q1": 7,
+          "2019-Q2": 6
+        },
+        "milestones": [
+          {
+            "date": "2017-08-02",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (cross-signing StartCom intermediates)"
+          },
+          {
+            "date": "2019-06-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate \u2014 removed from Mozilla trust store"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "PROCERT",
+      "ca_owner": "PROCERT",
+      "year": 2020,
+      "country": "Venezuela",
+      "compliance_posture": "demonstrated_incompetence",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "non_responsive_to_root_programs",
+        "demonstrated_lack_of_understanding",
+        "limited_ecosystem_value"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "non_responsive",
+      "distrust_pathway": "gradual",
+      "summary": "PROCERT was a Venezuelan CA that demonstrated incompetence through non-BR-compliant issuance and complete non-responsiveness to Mozilla's action items. The sparse 2017 bug trail with no CA engagement suggests an organization that lacked the operational capacity to participate meaningfully in the WebPKI ecosystem.",
+      "source": "metadata",
+      "classification_tier": "medium_high",
+      "classification_tier_note": "Classified primarily from metadata (sparse Bugzilla trail).",
+      "classification_confidence": "medium",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "The sparse Bugzilla trail with only 2 bugs from 2017 and complete absence of CA responses indicates PROCERT lacked the operational maturity to engage with root program requirements. The progression from 'Non-BR-Compliant Certificate Issuance' to unresolved 'Action Items' with no CA engagement suggests they didn't understand what was being asked of them rather than choosing not to comply.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Bug 1391058 explicitly identifies 'Non-BR-Compliant Certificate Issuance'",
+          "non_responsive_to_root_programs": "Complete absence of CA responses in both Bug 1391058 and Bug 1405862 despite action items being raised",
+          "demonstrated_lack_of_understanding": "Failure to respond to Bug 1405862 'Action Items' suggests fundamental disconnect with root program expectations and processes",
+          "limited_ecosystem_value": "Venezuelan CA with minimal engagement and sparse bug history indicates limited value to global web ecosystem"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1391058,
+          1405862
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 0,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 2,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2020-07-01",
+        "mozilla": "2020-06-01",
+        "apple": "2020-07-01",
+        "microsoft": "2020-07-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://venafi.com/blog/mozilla-distrusts-procert-local-certificate-authorities-have-global-impact/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/lqZersN26VA"
+        ],
+        "ccadb_threads": [],
+        "articles": [
+          {
+            "url": "https://venafi.com/blog/mozilla-distrusts-procert-local-certificate-authorities-have-global-impact/",
+            "source": "Venafi",
+            "title": "Mozilla distrusts PROCERT: local CAs have global impact"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-08-16",
+        "last_bug_date": "2017-10-04",
+        "distrust_date": "2020-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1020,
+        "bug_count": 2,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2017-08": 1,
+          "2017-10": 1
+        },
+        "quarterly_bug_counts": {
+          "2017-Q3": 1,
+          "2017-Q4": 1
+        },
+        "milestones": [
+          {
+            "date": "2017-08-16",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (non-BR-compliant issuance)"
+          },
+          {
+            "date": "2020-06-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate \u2014 removed from Mozilla trust store"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Camerfirma",
+      "ca_owner": "AC Camerfirma, S.A.",
+      "year": 2021,
+      "country": "Spain",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement",
+        "unauthorized_delegation",
+        "audit_deficiencies",
+        "inadequate_incident_response"
+      ],
+      "root_cause": "compliance_failure",
+      "response_quality": "inadequate",
+      "distrust_pathway": "gradual",
+      "summary": "Camerfirma was distrusted after years of systematic Baseline Requirements violations, delayed revocations, and unauthorized subordinate CA issuance. Despite repeated incidents and Mozilla oversight, the CA failed to implement effective controls, with the same types of violations recurring over multiple years.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "Camerfirma repeatedly acknowledged compliance violations and made commitments to fix them, but failed to implement effective systemic controls. Bug 1609828 shows they understood Mozilla Policy requirements but made a 'decision not to revoke' non-compliant certificates. Bug 1647099 documents 'delayed revocations related to Invalid authorityKeyIdentifier - recurrent incident', showing they knew about the problem but failed to prevent recurrence. This distinguishes it from incompetence (they understood the requirements) and from willful circumvention (they weren't systematically building processes to violate rules).",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Multiple bugs document systematic BR violations: Bug 1586860 'Invalid authorityKeyIdentifier, violating Mozilla Policy and RFC 5280', Bug 1600114 'EV Certificates issued with wrong Business Category', Bug 1667430 'Invalid stateOrProvinceName field'",
+          "delayed_or_refused_revocation": "Bug 1609828 'Decision not to revoke certificates with authorityKeyIdentifier that violates Mozilla Policy', Bug 1647099 'Delayed revocations related to Invalid authorityKeyIdentifier', Bug 1652603 'Failure to revoke within 7 days: OCSP EKU issue'",
+          "pattern_of_issues": "46 bugs spanning 2017-2021 showing repeated compliance failures across multiple areas: certificate profiles, validation, revocation, subordinate CA management, and audit compliance",
+          "lack_of_meaningful_improvement": "Bug 1623384 and 1623389 both titled 'Invalid authorityKeyIdentifier - recurrent incident' showing same issues repeating despite previous incidents and commitments to fix",
+          "unauthorized_delegation": "Bug 1672029 'Failure to abide by Section 8 of Mozilla Policy: Unauthorized, improperly disclosed Subordinate CA', Bug 1672562 'Incorrect disclosure of Intesa Sanpaolo sub-CA', Bug 1688215 'CP/CPS of Intesa Sanpaolo Sub-CA is Non-Compliant'",
+          "audit_deficiencies": "Bug 1583470 'audit gap', Bug 1704140 'Govern d'Andorra Audit Delay' showing failure to maintain required audit coverage",
+          "inadequate_incident_response": "CA responses show defensive posture and insufficient depth - for example, Bug 1704140 response shows they only realized audit delay on April 7th despite being told March 30th, indicating poor incident management"
+        },
+        "evidence_sources": [
+          "bugzilla"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1583470,
+          1586860,
+          1600114,
+          1609828,
+          1623384,
+          1623389,
+          1624658,
+          1647099,
+          1649944,
+          1652603,
+          1667430,
+          1668331,
+          1672029,
+          1672409,
+          1672423,
+          1672562,
+          1680083,
+          1685557,
+          1686524,
+          1686966,
+          1688215,
+          1688382,
+          1692533,
+          1692535,
+          1704140
+        ],
+        "rp_comments_count": 4,
+        "ca_comments_count": 27,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 46,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2021-07-01",
+        "mozilla": "2021-06-01",
+        "apple": "2021-07-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://www.theregister.com/2021/02/02/chrome_camerfirma_certificates/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/Ni4tS6OBBbw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/dSeD3dgnpzk"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4"
+        ],
+        "articles": [
+          {
+            "url": "https://www.theregister.com/2021/02/02/chrome_camerfirma_certificates/",
+            "source": "The Register",
+            "title": "Chrome and Mozilla distrust Camerfirma certificates"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-03-25",
+        "last_bug_date": "2021-04-09",
+        "distrust_date": "2021-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1529,
+        "bug_count": 46,
+        "first_rp_comment_date": "2021-01-25",
+        "monthly_bug_counts": {
+          "2017-03": 1,
+          "2017-04": 1,
+          "2017-08": 1,
+          "2017-10": 1,
+          "2017-11": 1,
+          "2017-12": 1,
+          "2018-01": 1,
+          "2018-03": 1,
+          "2018-04": 1,
+          "2018-06": 1,
+          "2018-07": 1,
+          "2018-08": 1,
+          "2018-10": 1,
+          "2018-11": 1,
+          "2019-02": 1,
+          "2019-03": 2,
+          "2019-05": 1,
+          "2019-06": 2,
+          "2019-08": 1,
+          "2019-09": 1,
+          "2019-10": 1,
+          "2019-11": 1,
+          "2020-01": 1,
+          "2020-03": 3,
+          "2020-06": 1,
+          "2020-07": 2,
+          "2020-09": 2,
+          "2020-10": 4,
+          "2020-12": 1,
+          "2021-01": 5,
+          "2021-02": 2,
+          "2021-04": 1
+        },
+        "quarterly_bug_counts": {
+          "2017-Q1": 1,
+          "2017-Q2": 1,
+          "2017-Q3": 1,
+          "2017-Q4": 3,
+          "2018-Q1": 2,
+          "2018-Q2": 2,
+          "2018-Q3": 2,
+          "2018-Q4": 2,
+          "2019-Q1": 3,
+          "2019-Q2": 3,
+          "2019-Q3": 2,
+          "2019-Q4": 2,
+          "2020-Q1": 4,
+          "2020-Q2": 1,
+          "2020-Q3": 4,
+          "2020-Q4": 5,
+          "2021-Q1": 7,
+          "2021-Q2": 1
+        },
+        "milestones": [
+          {
+            "date": "2017-03-25",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (proxy issuance for StartCom)"
+          },
+          {
+            "date": "2021-02-01",
+            "type": "root_program_announcement",
+            "detail": "Chrome and Mozilla announce removal"
+          },
+          {
+            "date": "2021-04-01",
+            "type": "distrust_effective",
+            "store": "chrome",
+            "detail": "Approximate"
+          },
+          {
+            "date": "2021-04-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "TrustCor",
+      "ca_owner": "TrustCor Systems",
+      "year": 2022,
+      "country": "Canada",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "audit_deficiencies",
+        "ties_to_adversarial_entities",
+        "pattern_of_issues"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "cooperative",
+      "distrust_pathway": "immediate",
+      "summary": "TrustCor was distrusted in 2022 primarily due to discovered corporate ties to surveillance entities rather than the technical compliance issues shown in these 2019 Bugzilla reports. While they had routine compliance problems and delayed revocations, the fundamental issue was organizational trust incompatibility.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "TrustCor understood the requirements but consistently failed to prioritize fixing known compliance issues. Bug 1599571 shows they delayed revoking subordinate CA certificates beyond the required 7-day window, and their response shows they knew the requirements but chose to extend timelines for operational convenience. This distinguishes it from demonstrated incompetence because they understood what was required.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Bug 1532399 (insufficient serial number entropy), Bug 1568356 (incorrect CA-Issuers URI)",
+          "delayed_or_refused_revocation": "Bug 1599571 shows failure to revoke CA certificates within 7 days, with CA response indicating they needed 'additional time to assess'",
+          "audit_deficiencies": "Bug 1599503 shows TLS-capable intermediate CAs were not mentioned in WTBR audit reports, and Bug 1579284 indicates non-audited intermediate certificates",
+          "ties_to_adversarial_entities": "Reference context indicates corporate connections to companies linked to US intelligence surveillance operations (Packet Forensics)",
+          "pattern_of_issues": "5 distinct compliance bugs spanning from 2019-2019, showing systematic operational problems"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1532399,
+          1568356,
+          1579284,
+          1599503,
+          1599571
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 5,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 5,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2022-12-02",
+        "mozilla": "2022-12-01",
+        "apple": "2022-12-02",
+        "microsoft": "2023-02-28"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://www.ghacks.net/2022/12/02/mozilla-and-microsoft-distrust-trustcor-root-certificates-in-their-browsers/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/oxX69KFvsm4"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4",
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://www.ghacks.net/2022/12/02/mozilla-and-microsoft-distrust-trustcor-root-certificates-in-their-browsers/",
+            "source": "gHacks",
+            "title": "Mozilla and Microsoft distrust TrustCor root certificates"
+          },
+          {
+            "url": "https://www.washingtonpost.com/technology/2022/11/08/trustcor-internet-addresses-browser-mozilla/",
+            "source": "Washington Post",
+            "title": "TrustCor linked to intelligence operations"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2019-03-04",
+        "last_bug_date": "2019-11-26",
+        "distrust_date": "2022-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1185,
+        "bug_count": 5,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2019-03": 1,
+          "2019-07": 1,
+          "2019-09": 1,
+          "2019-11": 2
+        },
+        "quarterly_bug_counts": {
+          "2019-Q1": 1,
+          "2019-Q3": 2,
+          "2019-Q4": 2
+        },
+        "milestones": [
+          {
+            "date": "2019-03-04",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (serial number entropy)"
+          },
+          {
+            "date": "2022-11-03",
+            "type": "public_discovery",
+            "detail": "Washington Post reports on TrustCor intelligence ties"
+          },
+          {
+            "date": "2022-11-08",
+            "type": "mdsp_escalation",
+            "detail": "Concerns about TrustCor thread on mdsp"
+          },
+          {
+            "date": "2022-12-01",
+            "type": "distrust_effective",
+            "store": "mozilla"
+          },
+          {
+            "date": "2022-12-01",
+            "type": "distrust_effective",
+            "store": "microsoft"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Visa",
+      "ca_owner": "Visa",
+      "year": 2022,
+      "country": "United States of America",
+      "compliance_posture": "negligent_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "audit_deficiencies",
+        "non_responsive_to_root_programs",
+        "pattern_of_issues",
+        "limited_ecosystem_value"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "non_responsive",
+      "distrust_pathway": "gradual",
+      "summary": "Visa demonstrated a pattern of BR violations and audit deficiencies from 2017-2020 while completely failing to engage with root programs or respond to identified issues. The CA showed no meaningful participation in the WebPKI ecosystem it was supposed to serve.",
+      "source": "metadata",
+      "classification_tier": "medium_high",
+      "classification_tier_note": "Classified primarily from metadata (sparse Bugzilla trail).",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "Visa knew about identified compliance problems (Bug 1391087 non-BR-compliant issuance, Bug 1398261 OCSP issues, Bug 1485851 qualified audits) but completely failed to engage with root programs or demonstrate any remediation efforts over a 3+ year period. This goes beyond incompetence into willful neglect of known obligations.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Bug 1391087 'Non-BR-Compliant Certificate Issuance' and Bug 1398261 'Non-BR-Compliant OCSP Responders'",
+          "audit_deficiencies": "Bug 1485851 'Qualified Audit Statements' indicating incomplete or deficient security audits",
+          "non_responsive_to_root_programs": "Context notes 'Visa completely failed to participate in root program policy discussions or respond to identified issues'",
+          "pattern_of_issues": "Four distinct bugs spanning 2017-2020 showing ongoing compliance failures without resolution",
+          "limited_ecosystem_value": "Context describes 'no meaningful engagement with the ecosystem it was supposed to participate in'"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1391087,
+          1398261,
+          1485851,
+          1651132
+        ],
+        "rp_comments_count": 0,
+        "ca_comments_count": 0,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 4,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2022-07-01",
+        "mozilla": "2022-06-01",
+        "apple": "2022-07-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://www.feistyduck.com/newsletter/issue_45_visa_certificate_authority_in_trouble"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/yqALPG5PC4s",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/wOAsjdGla9g"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://www.feistyduck.com/newsletter/issue_45_visa_certificate_authority_in_trouble",
+            "source": "Feisty Duck",
+            "title": "Visa Certificate Authority in trouble"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-08-16",
+        "last_bug_date": "2020-07-07",
+        "distrust_date": "2022-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1750,
+        "bug_count": 4,
+        "first_rp_comment_date": null,
+        "monthly_bug_counts": {
+          "2017-08": 1,
+          "2017-09": 1,
+          "2018-08": 1,
+          "2020-07": 1
+        },
+        "quarterly_bug_counts": {
+          "2017-Q3": 2,
+          "2018-Q3": 1,
+          "2020-Q3": 1
+        },
+        "milestones": [
+          {
+            "date": "2017-08-16",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (non-BR-compliant issuance)"
+          },
+          {
+            "date": "2022-06-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "e-Tugra",
+      "ca_owner": "E-Tugra",
+      "year": 2023,
+      "country": "Turkey",
+      "compliance_posture": "demonstrated_incompetence",
+      "reason_tags": [
+        "operational_security_failures",
+        "baseline_requirements_violations",
+        "pattern_of_issues",
+        "inadequate_incident_response",
+        "demonstrated_lack_of_understanding",
+        "non_responsive_to_root_programs",
+        "limited_ecosystem_value"
+      ],
+      "root_cause": "operational_security",
+      "response_quality": "inadequate",
+      "distrust_pathway": "triggered",
+      "summary": "E-Tugra was distrusted after security researcher Ian Carroll discovered severe operational security failures including default passwords and exposed administrative interfaces. The CA had a 4-year pattern of baseline requirements violations but the security research findings triggered immediate distrust action.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "E-Tugra had default passwords on production systems, publicly accessible administrative interfaces, and exposed internal tools that they were unaware of until a security researcher discovered them. Their response revealed fundamental misunderstandings (bad English explanations, confusion about their own architecture), and they couldn't perform adequate incident analysis despite multiple attempts. This shows lack of operational maturity rather than willful violation.",
+        "tag_evidence": {
+          "operational_security_failures": "Security researcher Ian Carroll found default passwords on production systems, publicly accessible administrative interfaces, and exposed internal tools",
+          "baseline_requirements_violations": "Bug 1449371 (validity > 825 days), Bug 1462797 (invalid DER/RFC 5280), Bug 1542302 (insufficient serial entropy), Bug 1582601 (string length violations), Bug 1687139 (commonName not in SAN)",
+          "pattern_of_issues": "14 bugs spanning 2018-2022 showing systematic problems: survey non-response (Bugs 1439128, 1772414), encoding issues, revocation delays, audit problems",
+          "inadequate_incident_response": "Root programs repeatedly noted sparse penetration test reports lacking actionable detail (Comment by cclements@google.com and bwilson@mozilla.com requesting more substantive reports)",
+          "demonstrated_lack_of_understanding": "CA responses revealed confusion about their own architecture, admitted 'bad English' explanations, and needed multiple clarification rounds about basic operational questions",
+          "non_responsive_to_root_programs": "Bug 1439128 (failure to respond to January 2018 survey), Bug 1772414 (failure to respond to May 2022 survey)",
+          "limited_ecosystem_value": "Small regional CA with demonstrated security incompetence and persistent compliance issues over 4+ years"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1439128,
+          1449371,
+          1462797,
+          1542302,
+          1582601,
+          1659426,
+          1687139,
+          1687330,
+          1687513,
+          1687608,
+          1716843,
+          1716902,
+          1772414,
+          1801345
+        ],
+        "rp_comments_count": 18,
+        "ca_comments_count": 42,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 14,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2023-01-09",
+        "mozilla": "2023-01-16",
+        "apple": "2023-01-16",
+        "microsoft": "2023-03-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://ian.sh/etugra"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/C-HrP1SEq1A"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/SXAeHT04TFc"
+        ],
+        "articles": [
+          {
+            "url": "https://ian.sh/etugra",
+            "source": "Ian Carroll",
+            "title": "Security research findings on e-Tugra"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2018-02-17",
+        "last_bug_date": "2022-11-18",
+        "distrust_date": "2023-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1930,
+        "bug_count": 14,
+        "first_rp_comment_date": "2021-04-02",
+        "monthly_bug_counts": {
+          "2018-02": 1,
+          "2018-03": 1,
+          "2018-05": 1,
+          "2019-04": 1,
+          "2019-09": 1,
+          "2020-08": 1,
+          "2021-01": 4,
+          "2021-06": 2,
+          "2022-06": 1,
+          "2022-11": 1
+        },
+        "quarterly_bug_counts": {
+          "2018-Q1": 2,
+          "2018-Q2": 1,
+          "2019-Q2": 1,
+          "2019-Q3": 1,
+          "2020-Q3": 1,
+          "2021-Q1": 4,
+          "2021-Q2": 2,
+          "2022-Q2": 1,
+          "2022-Q4": 1
+        },
+        "milestones": [
+          {
+            "date": "2018-02-17",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug (failure to respond to survey)"
+          },
+          {
+            "date": "2022-09-01",
+            "type": "public_discovery",
+            "detail": "Ian Carroll publishes security research findings"
+          },
+          {
+            "date": "2022-11-01",
+            "type": "mdsp_escalation",
+            "detail": "Review of e-Tugra's inclusion discussed on mdsp"
+          },
+          {
+            "date": "2023-01-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Ecommerce Monitoring",
+      "ca_owner": "e-commerce monitoring GmbH",
+      "year": 2024,
+      "country": "Austria",
+      "compliance_posture": "demonstrated_incompetence",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "inadequate_incident_response",
+        "demonstrated_lack_of_understanding",
+        "pattern_of_issues",
+        "lack_of_meaningful_improvement"
+      ],
+      "root_cause": "organizational_trust",
+      "response_quality": "inadequate",
+      "distrust_pathway": "gradual",
+      "summary": "Ecommerce Monitoring demonstrated fundamental operational incompetence through a sustained pattern of baseline requirements violations and delayed revocations spanning 2021-2024. Most notably, when asked for root cause analysis of incidents, they confused the investigative concept with their root certificate, revealing they didn't understand basic CA operational requirements.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "The CA fundamentally misunderstood basic incident response concepts, confusing 'root cause analysis' (investigation methodology) with 'root certificate' when asked to analyze incidents. This demonstrates lack of operational maturity rather than willful violation or negligence - they literally didn't understand what was being asked of them.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Bug 1716123 (CN domain not in SAN), Bug 1883711 (precertificate validity mismatch), Bug 1888371 (CRLs with mismatched issuer)",
+          "delayed_or_refused_revocation": "Bug 1862004 specifically about delayed revocation, requiring separate incident report per Mozilla requirements",
+          "inadequate_incident_response": "Bug 1893546 (failure to follow incident report requirements) and root program comments noting responses 'fallen short of expectations'",
+          "demonstrated_lack_of_understanding": "Reference context notes CA confused 'root cause analysis' with 'root certificate' when asked for incident investigation",
+          "pattern_of_issues": "9 bugs spanning 2021-2024 showing systematic operational problems across multiple technical areas",
+          "lack_of_meaningful_improvement": "Sustained issues over 3+ years with root program comments noting 'sustained and willing non-compliance' despite multiple incidents"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1716123,
+          1716163,
+          1815534,
+          1830536,
+          1862004,
+          1883711,
+          1888371,
+          1893546,
+          1897457
+        ],
+        "rp_comments_count": 7,
+        "ca_comments_count": 0,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 9,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2024-07-01",
+        "mozilla": "2024-06-01",
+        "apple": "2024-07-01",
+        "microsoft": "2024-07-01"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/wRs-zec8w7k",
+          "https://groups.google.com/a/ccadb.org/g/public/c/GmGydKS2lMA",
+          "https://groups.google.com/a/ccadb.org/g/public/c/xoCKQLlU1F4"
+        ],
+        "articles": [
+          {
+            "url": "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/",
+            "source": "MDSP",
+            "title": "Ecommerce Monitoring removal discussion"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2021-06-12",
+        "last_bug_date": "2024-05-17",
+        "distrust_date": "2024-06-01",
+        "distrust_dates_per_store": null,
+        "runway_days": 1085,
+        "bug_count": 9,
+        "first_rp_comment_date": "2023-10-30",
+        "monthly_bug_counts": {
+          "2021-06": 2,
+          "2023-02": 1,
+          "2023-04": 1,
+          "2023-10": 1,
+          "2024-03": 2,
+          "2024-04": 1,
+          "2024-05": 1
+        },
+        "quarterly_bug_counts": {
+          "2021-Q2": 2,
+          "2023-Q1": 1,
+          "2023-Q2": 1,
+          "2023-Q4": 1,
+          "2024-Q1": 2,
+          "2024-Q2": 2
+        },
+        "milestones": [
+          {
+            "date": "2021-06-12",
+            "type": "first_bug",
+            "detail": "First Bugzilla bug"
+          },
+          {
+            "date": "2024-06-01",
+            "type": "distrust_effective",
+            "store": "mozilla",
+            "detail": "Approximate"
+          }
+        ]
+      }
+    },
+    {
+      "ca": "Entrust",
+      "ca_owner": "Entrust",
+      "year": 2024,
+      "country": "United States of America",
+      "compliance_posture": "argumentative_noncompliance",
+      "reason_tags": [
+        "baseline_requirements_violations",
+        "delayed_or_refused_revocation",
+        "argued_rules_dont_apply",
+        "recharacterized_incidents",
+        "minimized_severity",
+        "lack_of_meaningful_improvement",
+        "pattern_of_issues",
+        "inadequate_incident_response"
+      ],
+      "root_cause": "compliance_failure",
+      "response_quality": "inadequate",
+      "distrust_pathway": "gradual",
+      "summary": "Entrust demonstrated a multi-year pattern of baseline requirements violations, delayed revocations, and argumentative responses that prioritized justifying non-compliance over fixing issues. Chrome explicitly noted Entrust's pattern of arguing that established practices should not apply to their circumstances rather than taking responsibility for mistakes.",
+      "source": "metadata",
+      "classification_tier": "high",
+      "classification_tier_note": "Classified from Bugzilla evidence + cached metadata. Both sources available.",
+      "classification_confidence": "high",
+      "tag_completeness": "complete",
+      "evidence": {
+        "posture_evidence": "Entrust understood the requirements but consistently argued they shouldn't apply to their specific circumstances. Chrome Root Program explicitly noted Entrust 'continues to disregard the commitments made in its own policy documents...instead of taking responsibility for its mistakes and adhering to established practices, Entrust instead appears to continue a pattern that prioritizes arguing the agreed-upon practices should not apply.' This is argumentative noncompliance rather than willful circumvention because they didn't build systems to violate rules, but rather reinterpreted requirements to justify non-compliance.",
+        "tag_evidence": {
+          "baseline_requirements_violations": "Multiple bugs show systematic BR violations: Bug 1888714 (EV Certificate missing Issuer's EV Policy OID), Bug 1883843 (EV TLS Certificate cPSuri missing), Bug 1889217 (CRL non-conformance with TLS BRs)",
+          "delayed_or_refused_revocation": "Bug 1851710 (Delay beyond 5 days in revoking misissued certificates), Bug 1886532 (Delayed revocation of EV TLS certificates with missing cPSuri), Bug 1887705 (Delayed revocation of clientAuth TLS Certificates without serverAuth EKU)",
+          "argued_rules_dont_apply": "Chrome noted 'Entrust continues to disregard the commitments made in its own policy documents...instead of taking responsibility for its mistakes and adhering to established practices, Entrust instead appears to continue a pattern that prioritizes arguing the agreed-upon practices should not apply'",
+          "recharacterized_incidents": "Chrome's reference context indicates Entrust 'recharacterized misissuance as non-incidents after filing incident reports'",
+          "minimized_severity": "Chrome's reference context indicates Entrust 'used subscriber impact as justification for not revoking misissued certificates'",
+          "lack_of_meaningful_improvement": "Chrome stated 'Over the past several years, publicly disclosed incident reports highlighted a pattern of concerning behaviors by Entrust that fall short of the above expectations, and has eroded confidence in their competence, reliability, and integrity'",
+          "pattern_of_issues": "100+ bugs spanning 2022-2024 showing systematic organizational problems across multiple areas: OCSP, CRLs, certificate profiles, revocation delays, incident response",
+          "inadequate_incident_response": "Bug 1890123 (Failed to provide a preliminary incident report according to TLS BR 4.9.5), Bug 1885754 (CPR was not responded to in 24 hours)"
+        },
+        "evidence_sources": [
+          "bugzilla",
+          "metadata"
+        ],
+        "bugzilla_bugs_analyzed": [
+          1806728,
+          1818833,
+          1831004,
+          1838315,
+          1850807,
+          1851710,
+          1853447,
+          1853783,
+          1854465,
+          1861782,
+          1861783,
+          1867130,
+          1870402,
+          1876871,
+          1879602,
+          1883792,
+          1883843,
+          1885754,
+          1886467,
+          1886532,
+          1887705,
+          1887753,
+          1888714,
+          1889217,
+          1890123
+        ],
+        "rp_comments_count": 13,
+        "ca_comments_count": 55,
+        "metadata_context_used": true
+      },
+      "bugzilla_bugs": 100,
+      "metadata_available": true,
+      "distrust_dates": {
+        "chrome": "2024-11-12",
+        "apple": "2024-11-15",
+        "mozilla": "2025-03-01",
+        "microsoft": "2025-04-16"
+      },
+      "references": {
+        "root_program_announcements": [
+          "https://security.googleblog.com/2024/06/sustaining-digital-certificate-security.html"
+        ],
+        "mdsp_threads": [
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/LhTIUMFGHNw",
+          "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/jCvkhBjg9Yw"
+        ],
+        "ccadb_threads": [
+          "https://groups.google.com/a/ccadb.org/g/public/c/79fkkAXMLpY",
+          "https://groups.google.com/a/ccadb.org/g/public/c/YhpAYN5lRh0",
+          "https://groups.google.com/a/ccadb.org/g/public/c/tk2CV6Mc-xo"
+        ],
+        "articles": [
+          {
+            "url": "https://security.googleblog.com/2024/06/sustaining-digital-certificate-security.html",
+            "source": "Chrome Blog",
+            "title": "Sustaining Digital Certificate Security"
+          },
+          {
+            "url": "https://arstechnica.com/security/2025/06/chrome-boots-2-certificate-authorities-citing-a-lack-of-trust-and-confidence/",
+            "source": "Ars Technica",
+            "title": "Chrome boots certificate authorities citing lack of trust and confidence"
+          },
+          {
+            "url": "https://www.theregister.com/2024/08/01/mozilla_entrust/",
+            "source": "The Register",
+            "title": "Mozilla follows Google in distrusting Entrust's TLS certs"
+          },
+          {
+            "url": "https://blog.cloudflare.com/how-cloudflare-is-helping-domain-owners-with-the-upcoming-entrust-ca/",
+            "source": "Cloudflare Blog",
+            "title": "How Cloudflare is helping domain owners with the Entrust distrust"
+          }
+        ]
+      },
+      "timeline": {
+        "first_bug_date": "2017-08-16",
+        "last_bug_date": "2024-04-06",
+        "distrust_date": "2024-11-11",
+        "distrust_dates_per_store": {
+          "chrome": "2024-11-11",
+          "apple": "2024-11-15",
+          "mozilla": "2024-12-01",
+          "microsoft": "2025-04-16"
+        },
+        "runway_days": 2644,
+        "bug_count": 100,
+        "first_rp_comment_date": "2024-05-15",
+        "monthly_bug_counts": {
+          "2017-08": 2,
+          "2017-09": 1,
+          "2018-01": 1,
+          "2018-03": 2,
+          "2018-10": 1,
+          "2018-12": 1,
+          "2019-01": 2,
+          "2019-02": 2,
+          "2019-03": 2,
+          "2019-04": 1,
+          "2019-05": 2,
+          "2019-06": 2,
+          "2019-07": 1,
+          "2019-10": 1,
+          "2019-11": 2,
+          "2020-01": 1,
+          "2020-04": 1,
+          "2020-05": 4,
+          "2020-06": 1,
+          "2020-07": 2,
+          "2020-08": 2,
+          "2020-09": 3,
+          "2020-10": 3,
+          "2020-11": 3,
+          "2021-01": 1,
+          "2021-03": 1,
+          "2021-05": 2,
+          "2021-06": 1,
+          "2021-09": 2,
+          "2021-10": 4,
+          "2021-12": 2,
+          "2022-01": 2,
+          "2022-02": 5,
+          "2022-03": 2,
+          "2022-04": 1,
+          "2022-06": 2,
+          "2022-07": 1,
+          "2022-09": 2,
+          "2022-10": 2,
+          "2022-11": 1,
+          "2022-12": 2,
+          "2023-02": 1,
+          "2023-05": 1,
+          "2023-06": 1,
+          "2023-08": 1,
+          "2023-09": 4,
+          "2023-10": 2,
+          "2023-11": 1,
+          "2023-12": 1,
+          "2024-01": 1,
+          "2024-02": 1,
+          "2024-03": 8,
+          "2024-04": 2
+        },
+        "quarterly_bug_counts": {
+          "2017-Q3": 3,
+          "2018-Q1": 3,
+          "2018-Q4": 2,
+          "2019-Q1": 6,
+          "2019-Q2": 5,
+          "2019-Q3": 1,
+          "2019-Q4": 3,
+          "2020-Q1": 1,
+          "2020-Q2": 6,
+          "2020-Q3": 7,
+          "2020-Q4": 6,
+          "2021-Q1": 2,
+          "2021-Q2": 3,
+          "2021-Q3": 2,
+          "2021-Q4": 6,
+          "2022-Q1": 9,
+          "2022-Q2": 3,
+          "2022-Q3": 3,
+          "2022-Q4": 5,
+          "2023-Q1": 1,
+          "2023-Q2": 2,
+          "2023-Q3": 5,
+          "2023-Q4": 4,
+          "2024-Q1": 10,
+          "2024-Q2": 2
+        },
+        "milestones": [
+          {
+            "date": "2017-08-16",
+            "type": "first_bug",
+            "detail": "First Bugzilla CA Compliance bug"
+          },
+          {
+            "date": "2024-06-07",
+            "type": "mdsp_escalation",
+            "detail": "Mozilla requests June 2024 Report from Entrust"
+          },
+          {
+            "date": "2024-06-21",
+            "type": "mdsp_escalation",
+            "detail": "Entrust submits report to mdsp for community review"
+          },
+          {
+            "date": "2024-06-27",
+            "type": "root_program_announcement",
+            "detail": "Chrome Security Blog: Sustaining Digital Certificate Security"
+          },
+          {
+            "date": "2024-07-31",
+            "type": "root_program_announcement",
+            "detail": "Mozilla announces distrust on mdsp"
+          },
+          {
+            "date": "2024-11-11",
+            "type": "distrust_effective",
+            "store": "chrome"
+          },
+          {
+            "date": "2024-11-15",
+            "type": "distrust_effective",
+            "store": "apple"
+          },
+          {
+            "date": "2024-12-01",
+            "type": "distrust_effective",
+            "store": "mozilla"
+          },
+          {
+            "date": "2025-03-11",
+            "type": "business_outcome",
+            "detail": "Entrust stops issuing from own roots"
+          },
+          {
+            "date": "2025-04-16",
+            "type": "distrust_effective",
+            "store": "microsoft"
+          },
+          {
+            "date": "2025-09-18",
+            "type": "business_outcome",
+            "detail": "Public CA business sold to Sectigo"
+          }
+        ]
+      }
+    }
+  ]
+}

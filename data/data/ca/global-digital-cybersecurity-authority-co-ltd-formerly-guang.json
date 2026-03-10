@@ -1,0 +1,213 @@
+{
+  "ca_owner": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+  "country": "China",
+  "root_count": 1,
+  "intermediates_count": 19,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "GDCA TrustAUTH R5 ROOT",
+      "sha256": "BFFF8FD04433487D6A8AA60C1A29767A9FC2BBB05E420F713A13B992891D3893",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2014.11.26",
+      "valid_to": "2040.12.31",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "GDCA TrustAUTH R4 CodeSigning CA2",
+      "sha256": "463562D1F84267AA253EE1CB1FF6F1808C349CE38FF10E9DBB0794EFA7CAE401",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2025.02.20",
+      "valid_to": "2040.02.10",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": true,
+      "technically_constrained": true
+    },
+    {
+      "name": "GDCA TrustAUTH R4 DV SSL CA",
+      "sha256": "74468180CE564BAD7E812210AF743E85CA96CBA44CF5851FA00082341B2535F5",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.03.31",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 DV SSL CA2",
+      "sha256": "2F7D8EEAB71116CDBC574B2D943D22403D3B8B26E3C7ABDB68F2D8CB49C2D0DF",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2026.02.25",
+      "valid_to": "2036.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 EV SSL CA",
+      "sha256": "96A5A2CD39800CFB6A2A830EE52DCF47FBB00FF1B03204DB36915CEA31F13342",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.04.06",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 EV SSL CA2",
+      "sha256": "422952C2BC58A4671AF5E8ACB26EFFA55532F4051EE88F3F1AD019FC7F2B8722",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2026.02.25",
+      "valid_to": "2036.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 Extended Validation SSL CA",
+      "sha256": "55324A9832512FC6C99F15BF0E9ED3D6BEB4398CCEE194B7FF849D96D9130D44",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2014.11.26",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 Generic CA",
+      "sha256": "86C6707BBE27CDE1215E25D3F8146A522281E18C45DF2CB8C6FB7A03C1733510",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2014.11.26",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 Generic CA",
+      "sha256": "5DB60C2D6B6BECF314477589A3A4FB4CCF84649D69B0B21B3D6B2ABA78BD35FB",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.04.07",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 IV SSL CA",
+      "sha256": "99442C8F83A3C5090CA50C1C0B1DE4B32ED418FF0AA7C3240E91230159F3E7BF",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.03.31",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 OV SSL CA",
+      "sha256": "5600AFB6BAE2A83B66B9CBBE9CEEC8F53E26420A69939A48DCC6D56B99790A63",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.04.05",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 OV SSL CA2",
+      "sha256": "9B69C6ECDA5593C4551613073A1D56563EFA342BADF3E794BD03D5DCFF97057C",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2026.02.25",
+      "valid_to": "2036.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 Plus EV CodeSigning CA",
+      "sha256": "3B39A01EB6DD0C0E870359F01AFB66665E0D5C24080291A0769D7F0FB4BB0E4E",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2022.06.29",
+      "valid_to": "2035.12.31",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": true,
+      "technically_constrained": true
+    },
+    {
+      "name": "GDCA TrustAUTH R4 Primer CA",
+      "sha256": "3253412FDAD4523108C098BB0EE0EFEDD7FAFDD00FB30E47C6BBA9FE3E1CDB88",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2016.03.31",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 SSL CA",
+      "sha256": "1E96ABB2D6502B5DCE518EC00B5A1E543349EFD2E3F68BE9ABC1128B256FEDD7",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2014.11.26",
+      "valid_to": "2030.12.30",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": true,
+      "code_signing_capable": true,
+      "technically_constrained": false
+    },
+    {
+      "name": "GDCA TrustAUTH R4 TimeStamp CA",
+      "sha256": "4FBCDFC8184C41523CEBA58A4F3BAFD36ECADACC11ECA148AA24C774C8E4B47B",
+      "parent_name": "GDCA TrustAUTH R5 ROOT",
+      "valid_from": "2022.06.29",
+      "valid_to": "2035.12.31",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    }
+  ],
+  "slug": "global-digital-cybersecurity-authority-co-ltd-formerly-guang"
+}

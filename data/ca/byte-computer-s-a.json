@@ -1,0 +1,33 @@
+{
+  "ca_owner": "Byte Computer S.A.",
+  "country": "Greece",
+  "root_count": 1,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "BYTE Root Certification Authority 001",
+      "sha256": "39AE2E6F304A6236BDF9066718DDC69E51AF5ED05A63F2EE8D80CA1D1CC8FE4F",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.09.10",
+      "valid_to": "2039.09.10",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFmTCCA4GgAwIBAgIIcYwvOXxAdEAwDQYJKoZIhvcNAQELBQAwWjELMAkGA1UE\nBhMCR1IxGzAZBgNVBAoMEkJZVEUgQ29tcHV0ZXIgUy5BLjEuMCwGA1UEAwwlQllU\nRSBSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5IDAwMTAeFw0xNDA5MTAyMjAx\nNTRaFw0zOTA5MTAyMjAxNTRaMFoxCzAJBgNVBAYTAkdSMRswGQYDVQQKDBJCWVRF\nIENvbXB1dGVyIFMuQS4xLjAsBgNVBAMMJUJZVEUgUm9vdCBDZXJ0aWZpY2F0aW9u\nIEF1dGhvcml0eSAwMDEwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDt\nEi4Xc55v9POZ6J4IVwk0JBFAH4whfhuvOMPRx+YU5fobul5m9SVp9+3NboJwr7pC\n8LEZXCv8RYQYLHoXT2GFRhl8zsGNn1SedyVmD+D2+JLKKc4nVxUqbII4bSfmvk1z\nDnOv43E9vAlCD9UNoe19a673wfBszcKXoVj9NRWWF0yfv/XxOUtwt+dKbBw/wXBb\nz9aL6+9vMOhfyEZ3IWIWXsZURTn1dLpnJGilcVs+wfsJk+simfjS9XsCbI9Y4qvv\n3XQh5CRplEDWwQQYDthC8P3XigXAXxuK6y7ADQcGcwGFjh/BwIqhWKZRuViRQg9u\n4bwK6LsogxV15Q3+STApKULCwjb/pDx9Lvfa8qIvFrxhqJlYGKRJxmoHEusbfLTO\n5/shgCtwpsjOrVUeHx2E0P1UakxWY8jdfqD5OdvvfFr3jDWlbipW+v7jX5NUcg5o\n40krk001IpcUlWZPp3c6LiVM9gmLEhtxxXKnm7m86xygpclUg2HcV1WttebaeCt2\np/742/6MM6SKo0ZcrbIKEg6K5FCe8LjLmVNMZCFrijgq4IiGANQXrGay574tOynl\n+KeU24xY+NJLMJ/yxGJlUEdygM+kcEC2vUT+2b8oKy43x7NRDoIptbFvrX4sk8Cp\nf5H6xx818LuXyU9hKJCEQeh9IUDFyYY87ZqthZyiUwIDAQABo2MwYTAdBgNVHQ4E\nFgQUtE1mt9OzyJl8ATLQkTr31qgSMd4wDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSME\nGDAWgBS0TWa307PImXwBMtCROvfWqBIx3jAOBgNVHQ8BAf8EBAMCAQYwDQYJKoZI\nhvcNAQELBQADggIBABwa6wauVb07PzYsYZ7qx1P8cKoyb+RCquu9hewbilrylZYp\noQQGks4kV/9AI3hOyfgwTUJVRE43on1rjmj+Dv5/37CfY1Hz4cWllJ+KIyhI80GL\n0v547dnQCA9tfdWdlazV/hJmGuS+dVTz0U2cThPUnnA0bai6CjOIja0FN/5LeX99\nA0F5Ew2fPfc4nDVaRE8+PKLlgcV/X3ZPGztub5ptt+0PyzIfiLRFDJwR0vgEWhM3\nWZiBzkz05ZQoBMS1U8lUjXA/aAHbzBMK5CWjbJntELN6IKlJvAX0+Bto1rogHYJn\nZuCwn1zKNdJFrtWIGdt6BpuMoDeHUSO+Rdpcs39rz8aoHDOKex2R+p687H07RRVP\nG6c7NbR581uCUOCcp+0WddtjgGKh2hgCaoDegqpETUQ4KKpu+hhjOWD3QylJWrok\nwL+zCpcdZ0laIrJnBJxYqfgMNFxAlrSHtUVhGeWO7wbekRXAuIrKlMkKdX1xO1iB\nM8j3B0FVmClDtcuaQ+ly+s/wizG85++5auNBnSE+DRWohb0bToeOR7IQ/jcYaoTl\niRwUY+i5g6m1u+hjmnoZjMt09/gXCPGLGdi07B5uSXM/XCDdNSqWd+lGbxY7y6nv\nmwohEcjDpMkjRW0/YpWd0yjHnQ+z/jeNHUiyUOYluU4zYTbWFhzKMjcgdhws\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "byte-computer-s-a"
+}

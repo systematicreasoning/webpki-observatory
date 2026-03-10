@@ -1,0 +1,47 @@
+{
+  "ca_owner": "Trustis",
+  "country": "United Kingdom of Great Britain and Northern Ireland",
+  "root_count": 2,
+  "intermediates_count": 4,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Trustis EVS Root CA",
+      "sha256": "3F9DA4744EC9676CD38B530E500A463FBCB18165977FF0DA6D5993C3FE5FAB7C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.01.09",
+      "valid_to": "2027.01.09",
+      "tls_capable": false,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Trustis FPS Root CA",
+      "sha256": "C1B48299ABA5208FE9630ACE55CA68A03EDA5A519C8802A0D3A673BE8F8E557D",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2003.12.23",
+      "valid_to": "2024.01.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "trustis"
+}

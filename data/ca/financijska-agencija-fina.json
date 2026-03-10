@@ -1,0 +1,33 @@
+{
+  "ca_owner": "Financijska agencija (Fina)",
+  "country": "Croatia",
+  "root_count": 1,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Fina Root CA",
+      "sha256": "5AB4FCDB180B5B6AF0D262A2375A2C77D25602015D96648756611E2E78C53AD3",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.11.24",
+      "valid_to": "2035.11.24",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFcDCCA1igAwIBAgINAJgzyagAAAAAVlS8bjANBgkqhkiG9w0BAQsFADBDMQsw\nCQYDVQQGEwJIUjEdMBsGA1UEChMURmluYW5jaWpza2EgYWdlbmNpamExFTATBgNV\nBAMTDEZpbmEgUm9vdCBDQTAeFw0xNTExMjQxOTA3MzBaFw0zNTExMjQxOTM3MzBa\nMEMxCzAJBgNVBAYTAkhSMR0wGwYDVQQKExRGaW5hbmNpanNrYSBhZ2VuY2lqYTEV\nMBMGA1UEAxMMRmluYSBSb290IENBMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC\nCgKCAgEAtHPS1mXTAu9YOvSCgtOn4Ipgsjr1sWU4pyQOIWt96aCdM6J0za6RupS1\nzMaAtXHfSHHKdUunv/8m64T+uXIWyMJ+htS/r+5jNbnA5NoFT7hIniIo/1UFI2uB\nTrMXESwqJR/k4d9hyDzyVmnQVX2WELKoe1aQW6ZeU4tB48eHxzG9NDnsGSHZgMTo\nDdvaAwwA9Kq1ggYlDMXZGmKd/QpJBfwcvpNG/M6Jkf/NzF9IX9w40HVv0i2rzCIS\neIgSH+DVTne8LIlNdnqIm10H2rNnmNE5znpGq8/2fVclE/qExANwrwx2DNJAJHxZ\n33c3WVCxJUZOQh0IIglyVcRC6m9vZVnUTuA9o6twfOYJMFV2Yonzb9IKprNuGT2W\nhnpmlM3yzHrwBwizaa4b/xxxGKJE+dvWDYQQgXRJYWLXEPABpkXAtdBS9FGGPeL3\nFila+kqeJ0uORvFyPqf1pAzgCxeaIv/5fqs1jgGE1XWTf+Z1qHpk3mI6AkcaoCPE\nTD/Q3E4z52y7+vYYECs0MF/HM1CZAumxWUZVZaa6pIMYi83h8coY4tkg5reEhx8L\nVnxNMVQm8plWyKZZ1oUz8pDMKFrIbKTLpkdGxJpVOYRkjXfnCj3D0BL3dqjMHLMf\nWIU6xDaN7JrsDuccyZ9P+9B6BwzGBbCrjbpyXU4j2W8MXPimctECAwEAAaNjMGEw\nDgYDVR0PAQH/BAQDAgEGMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAU/hGi\nbBDu3uIDuFWCTiI8huQ+a1QwHQYDVR0OBBYEFP4RomwQ7t7iA7hVgk4iPIbkPmtU\nMA0GCSqGSIb3DQEBCwUAA4ICAQCkgIYu56adjf+CV2Ny5xpg36uyubIBEmc4QOZA\nfFi8zEhxWwGXnHkcHnHSO6PY6KLiGAGlRajj9O+ru4p4/MeIffIFYJrbcMN41av4\nLTOMa6L2yQPAijxm3Z3o7qdOJQ8U3/gPFi4eF6dYyNkF05iivGRCU/4kyXWqJu5u\nMjMIYaA2fcq7nbu1cV4GgWr/Z+6miD+2P9MXTM4EzrMLdTnRwOOcs5qiGVYoi5ak\ns58WSdyEICLt73JMXxCqHwkBO1XIxmyvp9Iunu2wzJFtZMPsGL46akuuAS4/ec00\nHDiuuQ1hBHP3nik7p7aQOrgsIzTDuAwGUcI+IZmfPBSQyqkm9UDjIul9zgMX7P+8\n0ZkuxGSPPyxZYCQ8sNvDlQiqAHWynQsgGbT3bqmjvWDwMw/iZr1H9giKkDV9RYZK\nyZ7Ez1/fcd7MyW45iE25Ss8DdAdZK+386+7V0tU5bXcN2NF/L353vmGYjSxScTCE\nvqDmsLAHCMW0dLeLsti62ADyGcf4oSIKZkSoFgh1XllESEU0NQhK8HslC6ZLUX93\nzQ0zOKsAkWZMiMFOKtQ6wLSG3oSAylBvgPlNZYAJFXUtIlbltZEjne4l2BgwKHLb\nf8MxTo7YvkP6246aBZn999yUiad42J1r6f71JMe60ulED4NLXZ//JBif0dWE6CFJ\nt9sg5w==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "financijska-agencija-fina"
+}

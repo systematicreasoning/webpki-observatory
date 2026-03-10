@@ -1,0 +1,84 @@
+{
+  "ca_owner": "Consejo General de la Abogac\u00eda Espa\u00f1ola",
+  "country": "Spain",
+  "root_count": 2,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ACA ROOT",
+      "sha256": "97F654859CBDE586FD90311E82EC7902C238CBA0D6E529564C9C88F44895EC50",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.05.27",
+      "valid_to": "2041.05.27",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Autoridad de Certificacion de la Abogacia",
+      "sha256": "5607E260163F49C8EA4175A1C0A53B13195CB7D07845611E943A2FF507036834",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2005.06.13",
+      "valid_to": "2030.06.13",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "ACA CA1",
+      "sha256": "705EB3A0B1F09DEDA3ED45766BBBC02197700ABB1E2D1D9E2862AC589DC9FD77",
+      "parent_name": "ACA ROOT",
+      "valid_from": "2016.06.23",
+      "valid_to": "2030.06.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ACA CA2",
+      "sha256": "7E9316A5CECFB90A53ADC3C7769450F42CDC3A9B85DF4C7577B053DCBB255812",
+      "parent_name": "ACA ROOT",
+      "valid_from": "2016.06.23",
+      "valid_to": "2030.06.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ACA CA3",
+      "sha256": "AF57FD805A0EF90E975765C0D5D55E3FD24CFC49B73AA1A49E1979018D54FC26",
+      "parent_name": "ACA ROOT",
+      "valid_from": "2016.06.23",
+      "valid_to": "2030.06.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "consejo-general-de-la-abogac-a-espa-ola"
+}

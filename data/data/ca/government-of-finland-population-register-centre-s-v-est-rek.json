@@ -1,0 +1,126 @@
+{
+  "ca_owner": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
+  "country": "Finland",
+  "root_count": 4,
+  "intermediates_count": 6,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "DVV Gov. Root CA - G3 ECC",
+      "sha256": "5546A52504FBA74F61FFD4890067529ADE3B9C9D07E502592831CCDA9B369FD3",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.05.06",
+      "valid_to": "2042.05.05",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "DVV Gov. Root CA - G3 RSA",
+      "sha256": "D3ED3FC40AD26B52E001E1E18F4B9449529DEB75A81D5EB680D7B62DB23BA96D",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.05.06",
+      "valid_to": "2042.05.05",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "VRK Gov. Root CA",
+      "sha256": "F008733EC500DC498763CC9264C6FCEA40EC22000E927D053CE9C90BFA046CB2",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2002.12.18",
+      "valid_to": "2023.12.18",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "VRK Gov. Root CA - G2",
+      "sha256": "34FF2A4409DC1383E9F8966E8ADFE5719EBA373FD0AD5E2F49F90EE07CF5D4C1",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2017.12.14",
+      "valid_to": "2038.12.13",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "DVV Service Certificates - G5E",
+      "sha256": "93C176167ECA02A1B262B16517AC5FB5FC25D3568D97ECDDD04E3A6126B6C7BA",
+      "parent_name": "DVV Gov. Root CA - G3 ECC",
+      "valid_from": "2021.05.25",
+      "valid_to": "2041.05.20",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DVV Service Certificates - G5R",
+      "sha256": "46319C69041DB9A0D93DAE802E3002CC615365931FE0976D392E8863E3F3BE31",
+      "parent_name": "DVV Gov. Root CA - G3 RSA",
+      "valid_from": "2021.05.25",
+      "valid_to": "2041.05.20",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DVV Social Welfare and Healthcare Service Certificates - G3E",
+      "sha256": "A5C53CF6843A395E6EC244E9B27D58413295428DED97586FD4F67AA4AB8D49A0",
+      "parent_name": "DVV Gov. Root CA - G3 ECC",
+      "valid_from": "2021.05.25",
+      "valid_to": "2041.05.20",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DVV Social Welfare and Healthcare Service Certificates - G3R",
+      "sha256": "9D433C237C3AEE7A676C9A2ED4ECCB9E40ED17914655571624F0A89969B634BF",
+      "parent_name": "DVV Gov. Root CA - G3 RSA",
+      "valid_from": "2021.05.25",
+      "valid_to": "2041.05.20",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-finland-population-register-centre-s-v-est-rek"
+}

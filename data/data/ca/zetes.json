@@ -1,0 +1,69 @@
+{
+  "ca_owner": "Zetes",
+  "country": "Belgium",
+  "root_count": 1,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ZETES TSP ROOT CA 001",
+      "sha256": "016E1DCD5F78841BBEBBAE9DDEA08C8D7EC54E698E95BB778ECDD1E10D8BF4F9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.05.20",
+      "valid_to": "2036.05.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "ZETES TSP CA FOR TSA 001",
+      "sha256": "024FD634002F59DBFA606E1615123E78E099B0020911B6CA786BA3ECE9AF35AF",
+      "parent_name": "ZETES TSP ROOT CA 001",
+      "valid_from": "2017.10.19",
+      "valid_to": "2035.10.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ZETES TSP QUALIFIED CA 001",
+      "sha256": "D628417A992140D3BD98B310D6DE33D04A91C49221841DBF0F52C81FD2FAFAB5",
+      "parent_name": "ZETES TSP ROOT CA 001",
+      "valid_from": "2016.05.20",
+      "valid_to": "2026.05.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "ZetesConfidens - Signature Creation Service - Issuing CA 001",
+      "sha256": "E1E418B0FE70196D83DC226AA87BB943F7A936940D21F088702E4475AB7CF488",
+      "parent_name": "ZETES TSP ROOT CA 001",
+      "valid_from": "2019.09.17",
+      "valid_to": "2029.09.17",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "zetes"
+}

@@ -1,0 +1,120 @@
+{
+  "ca_owner": "Skaitmeninio sertifikavimo centras (SSC)",
+  "country": "Lithuania",
+  "root_count": 6,
+  "intermediates_count": 4,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "SSC GDL CA Root A",
+      "sha256": "B0428B08C228C43F6F9AA0FC29E9D602ED1098FF6F153C6733383FEA17216528",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.06.04",
+      "valid_to": "2033.06.04",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SSC GDL CA Root B",
+      "sha256": "C31EEF5682ABB551EBC828DED84098518A6768526D152EE164CFB972A1425D53",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.06.04",
+      "valid_to": "2033.06.04",
+      "tls_capable": false,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SSC GDL CA VS Root",
+      "sha256": "BC2ABBC49A6814370D17E471141C22794311C4DDDF2567BE37283A894392E5D3",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.06.04",
+      "valid_to": "2033.06.04",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SSC Root CA A",
+      "sha256": "F1B13F5C9A326403B0F31BBE7699CD17C7D1C0B981586DD1A7B219C52508FE99",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2006.12.27",
+      "valid_to": "2026.12.28",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SSC Root CA B",
+      "sha256": "0B9F26DFCA684C2CFCE23E4E4DD567C886BA259E1DB267F9806F0C5A099711F2",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2006.12.27",
+      "valid_to": "2026.12.25",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SSC Root CA C",
+      "sha256": "E6E4A951ECBF7D8EDC01BC873F7B6FD35868BDB10ED786F3A1B1EE16D8CEC3E9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2006.12.27",
+      "valid_to": "2026.12.22",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "SSC GDL VS Class 2-4 QCA",
+      "sha256": "F0F53EAF80A7A87A18B16BDFC7A11B0D040AC1FBC5B40BA7FDF7150EED9DE4D7",
+      "parent_name": "SSC GDL CA VS Root",
+      "valid_from": "2013.06.04",
+      "valid_to": "2033.06.04",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "skaitmeninio-sertifikavimo-centras-ssc"
+}

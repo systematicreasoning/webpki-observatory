@@ -1,0 +1,65 @@
+{
+  "ca_owner": "Government of Sweden (F\u00f6rs\u00e4kringskassan)",
+  "country": "Sweden",
+  "root_count": 3,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Swedish Government Root Authority v1",
+      "sha256": "F657A633EEB9BC5D15A461751749EA4B316727DCF1A9F986B5458445F6485DDE",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2010.04.14",
+      "valid_to": "2030.04.14",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDrTCCApWgAwIBAgIQPr1DlqNlQqhJtpGoElEmzzANBgkqhkiG9w0BAQUFADBm\nMQswCQYDVQQGEwJTRTEoMCYGA1UEChMfU3dlZGlzaCBTb2NpYWwgSW5zdXJhbmNl\nIEFnZW5jeTEtMCsGA1UEAxMkU3dlZGlzaCBHb3Zlcm5tZW50IFJvb3QgQXV0aG9y\naXR5IHYxMB4XDTEwMDQxNDEzMzMyM1oXDTMwMDQxNDEzNDMxOVowZjELMAkGA1UE\nBhMCU0UxKDAmBgNVBAoTH1N3ZWRpc2ggU29jaWFsIEluc3VyYW5jZSBBZ2VuY3kx\nLTArBgNVBAMTJFN3ZWRpc2ggR292ZXJubWVudCBSb290IEF1dGhvcml0eSB2MTCC\nASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMocT3QV99VeycBYhDLn3PxR\nkZDOESLhJXCDQnD7cNwbC2/CLdCK211WKaq3XoW1d+fBWiBiyJdCYcJDcNtYbHXg\nC7YyiuCkLUW+51s7i3qx/QXMM3+f8Fvtco7NM9PJEovAk0Cjj4Zu342I8+ZqTG+l\nRvpoplsQloMuV6BPjxVZNqVuaIRFHhCHtuJV1bi/q7euZb9XR4zE4+QCjfPcM9vv\nJ0f47MvyPOcJ8/nl+YvH6VrgLZOrqik2L37GyPbw5oBFMRY0avDoSTlEYQDzm+a+\nCmUbMiN5YnesIn8bpF16sOes2OB2Ay9972v3N++jomQczNd92oKizrUBTfgJLDUC\nAwEAAaNXMFUwDgYDVR0PAQH/BAQDAgEGMBIGA1UdEwEB/wQIMAYBAf8CAQEwHQYD\nVR0OBBYEFF0HuveNXUnwXJWQCfNe6qzQ9kO2MBAGCSsGAQQBgjcVAQQDAgEAMA0G\nCSqGSIb3DQEBBQUAA4IBAQAw36Sc6JRzKWuuHwxwukz+ZH2sT69JD3KLpLIASGlO\n1fKEMwuNc9vOaQ63Yr+xkeRq4RJJfEZHm4TYmCksB4Mk8B7rcZ2RaHr3W0OtggQP\nQ98mvYJdtpG8Yr5DWqNUb35RMS35N5y2H6j75xGbFgvuYRJU1aWE2f+fkiedU/e2\nCzMXxuuy6oLy9kN2HLwxkzCd6UhiDj5DO6wpzJTgK2yavxfe8crw5h2F0g+rvYed\ngk2GMDW0CdNAqLu3Iv54qNvRUGmAM2AtfY+EueyH0pjpC8zbeRhxE1ig+WvWzuRG\nTAB3ii9cna6JBevqHOCaY/m7RqO5Sr2dGn3KhM3+kPG6\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Swedish Government Root Authority v2",
+      "sha256": "9CEFB0CB7B74E642932532831E0DC8F4D68AD414261FC3F474B795E72A164E57",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.05.05",
+      "valid_to": "2040.05.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGCzCCA/OgAwIBAgIQVBIVn6uKdZNElMp3QFYu7zANBgkqhkiG9w0BAQsFADBm\nMQswCQYDVQQGEwJTRTEoMCYGA1UEChMfU3dlZGlzaCBTb2NpYWwgSW5zdXJhbmNl\nIEFnZW5jeTEtMCsGA1UEAxMkU3dlZGlzaCBHb3Zlcm5tZW50IFJvb3QgQXV0aG9y\naXR5IHYyMB4XDTE1MDUwNTExMTUyM1oXDTQwMDUwNTExMjQxOVowZjELMAkGA1UE\nBhMCU0UxKDAmBgNVBAoTH1N3ZWRpc2ggU29jaWFsIEluc3VyYW5jZSBBZ2VuY3kx\nLTArBgNVBAMTJFN3ZWRpc2ggR292ZXJubWVudCBSb290IEF1dGhvcml0eSB2MjCC\nAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAMiutUO8QkVLNWM/AkvF/9s2\n1yfFwq5FZqNxhxZNiU9hlOBWRrjQRBPmc5DwYXhBiuAafjesAim+6P8CJsYafAqx\nj2QpotoHitUkhWgZkjLfnylgWG0qhYARNsm2wtOehAy6URHMVOmrBjASjyB3BcDG\njZqbWci2hehwBwKxHv/Xac8WRothL0LNUqbYDnovhy3GLzwiQ7GTfsMWdtnM14vs\nERvQyXEUwolJfvGkEKo1PKgbu//sMkDlvSrzpgETyIyXGZDOY/mwa333+YrObuCF\n59uU1XogJaA18Kn3r1ooWgzI83Q5izE7IsxJJclvuFx6LiyW4y+jPsp5d2mRWvjw\nxVM3TlNtSSdWYsrl+XNgqRc7W6Ilry17ybfbzxkROjNxOVlaA+nnLAz/bZxyY2OA\nBVhThtwodRbC5fATWaGB/wUMmai2PGwuxQ4AmIHpg3dmQztajoVFTLLPuT3knDaT\nQHpTFSnUEZC6oWCKnav0Skpq3Yeqwe0F2p5bVuGITyprlSiGZlCh79pKspAKNjdJ\nhZdCeAdn5psgoQxsyc/P/neVhFp6Oxew70z3LZGqzxlvxvkSKOceCqaWzSGwA2JQ\ngwYg5uje30MWFrmBoPCBNFvLwYn28+giuM64Uj5RHrEFuLcDKwusdHVTJOF2uE8l\ndl3v0Zrzbkq4fEv4isAZAgMBAAGjgbQwgbEwDgYDVR0PAQH/BAQDAgEGMBIGA1Ud\nEwEB/wQIMAYBAf8CAQEwHQYDVR0OBBYEFGNrQmBTVxG7yCSJJQJmRHShDSVuMBAG\nCSsGAQQBgjcVAQQDAgEAMBEGA1UdIAQKMAgwBgYEVR0gADBHBgNVHSUEQDA+Bggr\nBgEFBQcDAQYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3CgMMBggrBgEFBQcD\nAwYIKwYBBQUHAwgwDQYJKoZIhvcNAQELBQADggIBACMuqoWXS6RcEK/a+D29k1gv\nePsZdwM5FkdJclXMh+i9pH/SqySs59RQ7p3Yg8aZIPsWL4jGFzfKix6r0OJsB1i4\nZJGhEKFpN3Ve/tpzFOaKa77CYCEvwPmjBEg2Wze+2mz96ZaOnvFTfI9lRKdVfQuU\nTlT2/zK9L32cpV5CxEwp4xBkL+bPWjs0VShh0ScSu25Um4FYrNVenVcDoE3R/zd0\npo3z+ZX9Kol1enk3/SZ5Lydzf6kZIOXQX5jolgWPmHnpeRBBKQFD9Wk3zFAQaLXY\nRE4O8pnjJyxqjl+7fbtrcUsGit0q2Ao/W8hyLlhhCg+BaB5Hx+ktuu+N3A6jI8Oy\nLbVHsYu0PidI59wIYgxU/kPXlUq/By9KQH4GpVGHJokF3TzKT/4cJ+nbiB7Asv7j\n7x9+sehZlaBPqwqJAOBzsuccwRdQgIdM0kMZWZXSWxRbClvAfIlxerUKwIpFL+7E\nwP5ULeeVJHcFLu50xqCQsXPcQtagdclYWQWi3hG/WekNpybCbsBGisYe0/XqD309\ncs0ZlUy64GiXjVjAau9597JoarhyNsMkDOgy7b3xn8jv3nXS23aplCc49AFhv2Y4\nj2o93ABbs/xE3wNL+fF2JTX/Uh8IHdClFOmLBit4gyxxXE+Rh2PWDA4FiDyUoLFa\nVBbf3VHDqDYuLIJ8uZqw\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Swedish Government Root Authority v3",
+      "sha256": "8F9ADB6D895DAB5ADF5C3D3FAB83927BE0FB64EF82485C62280D584E8BD55D22",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.09.29",
+      "valid_to": "2040.09.29",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFqjCCA5KgAwIBAgIQMmmiv0BrjbRHg2Q8iw3JQzANBgkqhkiG9w0BAQsFADBm\nMQswCQYDVQQGEwJTRTEoMCYGA1UEChMfU3dlZGlzaCBTb2NpYWwgSW5zdXJhbmNl\nIEFnZW5jeTEtMCsGA1UEAxMkU3dlZGlzaCBHb3Zlcm5tZW50IFJvb3QgQXV0aG9y\naXR5IHYzMB4XDTE1MDkyOTExMzIzMloXDTQwMDkyOTExNDIwOVowZjELMAkGA1UE\nBhMCU0UxKDAmBgNVBAoTH1N3ZWRpc2ggU29jaWFsIEluc3VyYW5jZSBBZ2VuY3kx\nLTArBgNVBAMTJFN3ZWRpc2ggR292ZXJubWVudCBSb290IEF1dGhvcml0eSB2MzCC\nAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALoeomkbaE9cj7r0I8deZgV4\nhTZYo6J/Z++iDBaSpEqL4KCSh1U3C8TRxNBAQ5cyUE/slUe3P69DBeWElwnvVlTn\nQzNH/a3xOpuYpOHkUaO5rIwL7iUGCfLTujVnYYzCvSbL12PM14Mz2Uzi7/kbn6jL\nDXYBLXLJIrtokd6QDzs9tEK9GX2fhFw8fkI3hrFgwkiHUk5cV/7Okq7KPla3s56V\nmpT4L6HQoi7CVFpszMzWrUtH0C6HgjOoe1A5pyossVsnCp+t9RTr/I1TsnMrVCP0\njJeZl/s13My1+jMUJo11pySm6BQuLaaAKIOaP7jKO8f1GOD97I55+6pCbEpLFn7z\nggNuuucRBqWfhCvSYG3pRu5BWpa5FP0cP4YS8VQmJv1ngC/lqC0oLkO3ZMLv5Ld+\nltyEiyfZdj2YgVMU3EJFoVRn+doYZpAKtEeQPAHlK6Nm72/7MoPxM30yIWylRRU/\nL/NVkUiTnyXPLTw5O1INGq/H36tvgNiQy55xcmpCaZPqkgA9SQTZo1y6RfsCEP+t\naXRSpThjmmaIBLIRuhOqOdWDX+1lW1PInVyyhaB4cDVNXCQQpPYxKpJVQdnzF2yZ\nE1j63SjQbBO9W4eNk4OtWClWFbRYJ0qbEWygpmdFOs7Q2M7/kDPsWjFND1IS+632\nYV/kL28NZjDloE/Pz/1fAgMBAAGjVDBSMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMB\nAf8EBTADAQH/MB0GA1UdDgQWBBScvAHnq2Q19TGbjbX7F5mIAsub8jAQBgkrBgEE\nAYI3FQEEAwIBADANBgkqhkiG9w0BAQsFAAOCAgEAh6tq5OdrJFI99iKDT1MERTKc\nYVoWXJxEtaPRltBA/s9mFV5+QAAgFf2nqmTap2FmaMLdUnEloGq53cDNzoYI1Dw1\nES999G/S2gyXA2WXg7Q+OssJdI3rBcp66YCwt1EtIpPjmhnu7ZcIIYOtxwqRX8TK\n216vuOeMujpJ0lUDNRkZUErihqe7eD2V/bEfRvJPZvL7v4VktgojGJIJnklFMbbW\nFFee/IlFdH85zMBqaMjPR9DhHsfTLy35LCQ7/Gq6lBPezHLyoh3LH5/Vg3cmXn6b\noK9pn3jbpcFucVxIQk4r2Hi41Q+lP2zLj5DNR9iQGUmF1mz84quqQr/LE5e/aUR1\nYzUt2qDH/WH3ykE9VJz0NsDkbiFIn11xYoHT8iXmWYxZQSZIp+PrZ2rT7DS3mPfM\nyqM2BpXnyDBZ9//JodHkebzfEx8u2bN10QS3IwkhzB0hHCecDiv6wYcYyfr5SYOM\nEhb7xRLOOw9C+vAFZX6ox+tSSvmYXnGjrBLHKHEaWnXPh8ofNygcFJ2QUG/Gv0rM\nxyXPMd1bkU52qBHVdmbZv4BzYrDsw/5EvM1ZEwsMLdihzKpiTVRFXqRSo4xXPBQx\nk1TOpRZUXi1Cs+5lqbadP2zOYdlWy97qoFbebYYD+reBaozS2PPXtsCsKYRZIw6b\nl2rmoM7VKlQY71CYeSA=\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "government-of-sweden-f-rs-kringskassan"
+}

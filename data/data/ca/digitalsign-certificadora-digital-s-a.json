@@ -1,0 +1,144 @@
+{
+  "ca_owner": "DigitalSign - Certificadora Digital, S.A.",
+  "country": "Portugal",
+  "root_count": 2,
+  "intermediates_count": 8,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": false,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "DIGITALSIGN GLOBAL ROOT ECDSA CA",
+      "sha256": "261D7114AE5F8FF2D8C7209A9DE4289E6AFC9D717023D85450909199F1857CFE",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.01.21",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "DIGITALSIGN GLOBAL ROOT RSA CA",
+      "sha256": "82BD5D851ACF7F6E1BA7BFCBC53030D0E7BC3C21DF772D858CAB41D199BDF595",
+      "mozilla_status": "Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.01.21",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "DIGITALSIGN CA G1",
+      "sha256": "951B523C9B7FD59AF6FAE2E054D97F2B9371A41DF752D63295B3BB93F3C5059C",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT RSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2033.01.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DIGITALSIGN CA V1",
+      "sha256": "C18C8DE10A7B02AB2A700F3E95EE53501DC015012FAAC197B2D64BF2EE6DFE77",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT ECDSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2033.01.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DIGITALSIGN QUALIFIED CA G1",
+      "sha256": "27BB49D206B6DEC161EBB8EA739530E90AC68498D2EEA05A7ED9603D1DCE0FD5",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT RSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2033.01.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DIGITALSIGN QUALIFIED CA V1",
+      "sha256": "4A2B2B0F8429A77E23BCAB8FFA253F4C21368CB4AA2A78DBC5D417C6D1D0E105",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT ECDSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2033.01.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "DIGITALSIGN QUALIFIED TSA CA G1",
+      "sha256": "2BB402D903E1C15743E99806D1D046CFBF45E37DDD312607566F464996E20750",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT RSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    },
+    {
+      "name": "DIGITALSIGN QUALIFIED TSA CA V1",
+      "sha256": "BD2318F64DCC529238BCC71C94948F7B9479A36E30DDA65A520A356F9EFB5AD9",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT ECDSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    },
+    {
+      "name": "DIGITALSIGN TSA CA G1",
+      "sha256": "38BD3C34D9D93D71F8F331556756CB4BE152E1C99B50EB177F8A68E8D01F5CD6",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT RSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    },
+    {
+      "name": "DIGITALSIGN TSA CA V1",
+      "sha256": "C811BD06D09F43F003C496F7C28B9D5D6477EFEDFFE169B418A5B7B48B6BB9D6",
+      "parent_name": "DIGITALSIGN GLOBAL ROOT ECDSA CA",
+      "valid_from": "2021.01.22",
+      "valid_to": "2046.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    }
+  ],
+  "slug": "digitalsign-certificadora-digital-s-a"
+}

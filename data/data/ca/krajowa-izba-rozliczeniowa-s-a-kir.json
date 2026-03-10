@@ -1,0 +1,72 @@
+{
+  "ca_owner": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+  "country": "Poland",
+  "root_count": 2,
+  "intermediates_count": 6,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": false
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "SZAFIR ROOT CA",
+      "sha256": "FABCF5197CDD7F458AC33832D3284021DB2425FD6BEA7A2E69B7486E8F51F9CC",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2011.12.06",
+      "valid_to": "2031.12.06",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "SZAFIR ROOT CA2",
+      "sha256": "A1339D33281A0B56E557D3D32B1CE7F9367EB094BD5FA72A7E5004C8DED7CAFE",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.10.19",
+      "valid_to": "2035.10.19",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "SZAFIR Trusted CA5",
+      "sha256": "1EBFA14EBD05CB7CAA79F84F4992379F1497AADD9ED0C7784B320411038292EE",
+      "parent_name": "SZAFIR ROOT CA2",
+      "valid_from": "2024.10.08",
+      "valid_to": "2034.10.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "SZAFIR Trusted CA6",
+      "sha256": "8DBCEFD897D49653085E8914E71664943C2BC674405193B3AFAB3F66E92AD961",
+      "parent_name": "SZAFIR ROOT CA2",
+      "valid_from": "2024.10.21",
+      "valid_to": "2034.10.21",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "krajowa-izba-rozliczeniowa-s-a-kir"
+}

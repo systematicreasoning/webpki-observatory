@@ -1,0 +1,135 @@
+{
+  "ca_owner": "LAWtrust",
+  "country": "South Africa",
+  "root_count": 3,
+  "intermediates_count": 11,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 2,
+  "roots": [
+    {
+      "name": "LAWtrust Root CA2 (4096)",
+      "sha256": "1DF0A470EABEDBD3A8CD7C7814C9A6E6D0D3BFB421B2DBFA8783DFD9695246D6",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.03.31",
+      "valid_to": "2045.03.31",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "LAWtrust Root CA2 (4096)",
+      "sha256": "48E1CF9E43B688A51044160F46D773B8277FE45BEAAD0E4DF90D1974382FEA99",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.02.14",
+      "valid_to": "2053.02.14",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "LAWtrust Root Certification Authority 2048",
+      "sha256": "9B14E8F5F6EA167666E76DCD6BECC190861D5E8970B99A9470F0231236049704",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2012.05.16",
+      "valid_to": "2032.05.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "LAWtrust AATL CA01",
+      "sha256": "E37872E123729FAA9D8809C7FDE8C1F38C7FEEBF2E9AF1E5CC870C024DEB7837",
+      "parent_name": "LAWtrust Root Certification Authority 2048",
+      "valid_from": "2018.08.15",
+      "valid_to": "2028.08.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "LAWtrust AeSign CA02",
+      "sha256": "F6D0C1D2DD35C9B2A9944B24EAF47B4F5A061EE8E775E9E206B54A17432B5D02",
+      "parent_name": "LAWtrust Root Certification Authority 2048",
+      "valid_from": "2017.03.08",
+      "valid_to": "2027.03.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "LAWtrust AeSign Certification Authority 2048",
+      "sha256": "5112FE48175BF3027DDB8B8903AC449FDE6729E4E986119A74C2F63140B5A26B",
+      "parent_name": "LAWtrust Root Certification Authority 2048",
+      "valid_from": "2020.01.15",
+      "valid_to": "2030.01.15",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "LAWtrust AUTH CA01",
+      "sha256": "5693C8E01EC5442677A6C8BE5A0B6079B891D8C9E58E260C65037D5AB2088926",
+      "parent_name": "LAWtrust Root CA2 (4096)",
+      "valid_from": "2023.02.16",
+      "valid_to": "2033.02.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    },
+    {
+      "name": "LAWtrust Secure CA01",
+      "sha256": "0946BE0774BF32AC7B0E2E9ABE20D9F44152F4EF19611C5FB779ADC5A9A5E2F0",
+      "parent_name": "LAWtrust Root CA2 (4096)",
+      "valid_from": "2023.04.25",
+      "valid_to": "2033.04.25",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "LAWtrust SIGNING CA01",
+      "sha256": "167312E4FCA805270CEBC11B1710FB30871B860829753D20995F588DE9A5A90C",
+      "parent_name": "LAWtrust Root CA2 (4096)",
+      "valid_from": "2023.02.14",
+      "valid_to": "2033.02.14",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": true
+    }
+  ],
+  "slug": "lawtrust"
+}

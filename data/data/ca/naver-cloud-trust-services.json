@@ -1,0 +1,183 @@
+{
+  "ca_owner": "NAVER Cloud Trust Services",
+  "country": "Republic of Korea (South Korea)",
+  "root_count": 3,
+  "intermediates_count": 10,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": true
+  },
+  "trust_store_count": 4,
+  "roots": [
+    {
+      "name": "NAVER Cloud Trust Services ECC Root G1",
+      "sha256": "A7C8681042F3675AA8505D3BA313D80F8AC3250FDF874AD29B834689C087FB11",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.06.07",
+      "valid_to": "2043.06.06",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "NAVER Cloud Trust Services RSA Root G1",
+      "sha256": "49A2762987788D4834B32305D767760F244D507742E8C2539FD4CA3AD52C16EE",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.06.07",
+      "valid_to": "2043.06.06",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "NAVER Global Root Certification Authority",
+      "sha256": "88F438DCF8FFD1FA8F429115FFE5F82AE1E06E0C70C375FAAD717B34A49E7265",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
+      "valid_from": "2017.08.18",
+      "valid_to": "2037.08.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "NAVER Cloud Trust Services ECC Root G1",
+      "sha256": "355CD125F93CE5BF268F958C1D1F8AAD289FDBD41BAFAA856691DB7260F2ACAB",
+      "parent_name": "NAVER Global Root Certification Authority",
+      "valid_from": "2024.12.09",
+      "valid_to": "2038.12.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 ECC CA1",
+      "sha256": "882D9924FC69A00574D54C2BB4014825A1C1C71FA1D0238CAC865FE0AA4AD60B",
+      "parent_name": "NAVER Cloud Trust Services ECC Root G1",
+      "valid_from": "2023.06.07",
+      "valid_to": "2033.06.06",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 ECC CA2",
+      "sha256": "BBA98FFC6A2D5AD251B34BC6632D3DA88955CB46F4A1F4DF443980A4BF92845F",
+      "parent_name": "NAVER Cloud Trust Services ECC Root G1",
+      "valid_from": "2025.11.19",
+      "valid_to": "2035.11.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 ECC CA3",
+      "sha256": "41C587A6BAC0143297D0EDC5D522B57CD8B2D1A0D4913A1B534A9F9A86668536",
+      "parent_name": "NAVER Cloud Trust Services ECC Root G1",
+      "valid_from": "2025.11.19",
+      "valid_to": "2028.10.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 RSA CA1",
+      "sha256": "17832DBB48F609B722A27507F1D327DE062D7F7B85B71325D8DD99B19FB5BAD4",
+      "parent_name": "NAVER Cloud Trust Services RSA Root G1",
+      "valid_from": "2023.06.07",
+      "valid_to": "2033.06.06",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 RSA CA2",
+      "sha256": "45B3942959D74F8B546A6AB47404AFC4A583AD5FA6FFD89A827A2A78522F66FD",
+      "parent_name": "NAVER Cloud Trust Services RSA Root G1",
+      "valid_from": "2025.11.19",
+      "valid_to": "2035.11.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services G1 RSA CA3",
+      "sha256": "027B4EEC38B46BFD6B5C3E028F0922D268D367698BD15E01F7BD081EC36C8369",
+      "parent_name": "NAVER Cloud Trust Services RSA Root G1",
+      "valid_from": "2025.11.19",
+      "valid_to": "2028.10.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Cloud Trust Services RSA Root G1",
+      "sha256": "67F9DA159B4AEB3B55E2C37C402E91CEFE87D784D81CE949FA532184620C3CFD",
+      "parent_name": "NAVER Global Root Certification Authority",
+      "valid_from": "2024.12.09",
+      "valid_to": "2038.12.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Secure Certification Authority 1",
+      "sha256": "C5EB1A7639B9D8D70B4F82ADD80794175EE4B6A3DB1861B38717C96FC1914927",
+      "parent_name": "NAVER Global Root Certification Authority",
+      "valid_from": "2017.08.18",
+      "valid_to": "2027.08.18",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "NAVER Secure Certification Authority 2",
+      "sha256": "571E521E5E22810D33BB1A39991143E9E64CD8DAE97D65931B194E19AEE81E86",
+      "parent_name": "NAVER Global Root Certification Authority",
+      "valid_from": "2025.11.19",
+      "valid_to": "2035.11.19",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "naver-cloud-trust-services"
+}

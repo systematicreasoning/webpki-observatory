@@ -1,0 +1,1856 @@
+{
+  "SC": [
+    {
+      "title": "Ballot SC095v3: Clean-up 2025",
+      "url": "https://cabforum.org/2026/02/27/ballot-sc095v3-clean-up-2025/",
+      "id": "SC-095",
+      "proposer": "Karolina Ruszczy\u0144ska (Certum by Asseco) and Kateryna Aleksieieva (Certum by Asseco)",
+      "endorsers_raw": "Dimitris Zacharopoulos (HARICA) and Wayne Thayer (Fastly). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "eMudhra",
+        "Fastly",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC097: Sunset all remaining use of SHA-1 signatures in Certificates and CRLs",
+      "url": "https://cabforum.org/2026/01/24/ballot-sc097-sunset-all-remaining-use-of-sha-1-signatures-in-certificates-and-crls/",
+      "id": "SC-097",
+      "proposer": "Ryan Dickson and Chris Clements of Google (Chrome Root Program)",
+      "endorsers_raw": "Clint Wilson (Apple) and Dimitris Zacharopoulos (HARICA). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC094v2: DNSSEC exception in email DCV methods",
+      "url": "https://cabforum.org/2026/01/15/ballot-sc094v2-dnssec-exception-in-email-dcv-methods/",
+      "id": "SC-094",
+      "proposer": "Dimitris Zacharopoulos (HARICA)",
+      "endorsers_raw": "Roman Fischer (SwissSign) and Adriano Santoni (Actalis). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC096: Carve-out for DNSSEC verification logging requirements",
+      "url": "https://cabforum.org/2026/01/14/ballot-sc096-carve-out-for-dnssec-verification-logging-requirements/",
+      "id": "SC-096",
+      "proposer": "Martijn Katerbarg (Sectigo)",
+      "endorsers_raw": "Roman Fischer (SwissSign) and Ben Wilson (Mozilla).",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC-090: Gradually sunset all remaining email-based, phone-based, and \u2018crossover\u2019 validation methods from Sections 3.2.2.4 and 3.2.2.5",
+      "url": "https://cabforum.org/2025/11/20/ballot-sc-090-gradually-sunset-all-remaining-email-based-phone-based-and-crossover-validation-methods-from-sections-3.2.2.4-and-3.2.2.5/",
+      "id": "SC-090",
+      "proposer": "Ryan Dickson and Chris Clements of Google (Chrome Root Program)",
+      "endorsers_raw": "Ben Wilson (Mozilla) and Tim Callan (Sectigo). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA\n*"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC-091: Sunset 3.2.2.5.3 Reverse Address Lookup Validation, proposal of new DNS-based validation using Persistent DCV TXT Record for IP addresses",
+      "url": "https://cabforum.org/2025/11/12/ballot-sc-091-sunset-3.2.2.5.3-reverse-address-lookup-validation-proposal-of-new-dns-based-validation-using-persistent-dcv-txt-record-for-ip-addresses/",
+      "id": "SC-091",
+      "proposer": "SC-90)",
+      "endorsers_raw": "Michael Slaughter (Amazon Trust Services) and Dimitris Zacharopoulos (HARICA). \u2014",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "NAVER Cloud Trust Services",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "Visa\n*"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Google",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC-086v3: Sunset the Inclusion of IP Reverse Address Domain Names",
+      "url": "https://cabforum.org/2025/11/10/ballot-sc-086v3-sunset-the-inclusion-of-ip-reverse-address-domain-names/",
+      "id": "SC-086",
+      "proposer": "Corey Bonnell (DigiCert)",
+      "endorsers_raw": "Clint Wilson (Apple) and Tobias Josefowitz (Opera). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA\n*"
+      ],
+      "issuer_no": [
+        "*"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Mozilla\n*"
+      ],
+      "consumer_no": [
+        "*"
+      ]
+    },
+    {
+      "title": "Ballot SC-088v3: DNS TXT Record with Persistent Value DCV Method",
+      "url": "https://cabforum.org/2025/10/09/ballot-sc-088v3-dns-txt-record-with-persistent-value-dcv-method/",
+      "id": "SC-088",
+      "proposer": "Michael Slaughter (Amazon Trust Services)",
+      "endorsers_raw": "Chris Clements (Google Chrome), Ryan Dickson (Google Chrome), Tim Hollebeek (Digicert) and Martijn Katerbarg (Sectigo).",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Cisco Systems",
+        "Google",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC-092: Sunset use of Precertificate Signing CAs",
+      "url": "https://cabforum.org/2025/09/02/ballot-sc-092-sunset-use-of-precertificate-signing-cas/",
+      "id": "SC-092",
+      "proposer": "Ryan Dickson and Chris Clements of Google (Chrome Root Program)",
+      "endorsers_raw": "Aaron Gable (Internet Security Research Group) and Clint Wilson (Apple). \u2014",
+      "issuer_yes": [
+        "Actalis S.p.A.",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "Cybertrust Japan",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Izenpe",
+        "Japan Registry Services",
+        "Let\u2019s Encrypt",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud."
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC-089: Mass Revocation Planning",
+      "url": "https://cabforum.org/2025/07/22/ballot-sc-089-mass-revocation-planning/",
+      "id": "SC-089",
+      "proposer": "Ben Wilson (Mozilla)",
+      "endorsers_raw": "Enrico Entschew (D-Trust) and Pedro Fuentes (OISTE).",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Certigna (DHIMYOTIS)",
+        "Certinomis",
+        "Chunghwa Telecom",
+        "CommScope",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud"
+      ],
+      "issuer_abstain": [
+        "Entrust"
+      ],
+      "consumer_yes": [
+        "Cisco Systems",
+        "Microsoft",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC-085v2: Require Validation of DNSSEC (when present) for CAA and DCV Lookups",
+      "url": "https://cabforum.org/2025/06/18/ballot-sc-085v2-require-validation-of-dnssec-when-present-for-caa-and-dcv-lookups/",
+      "id": "SC-085",
+      "proposer": "Clint Wilson (Apple)",
+      "endorsers_raw": "Wayne Thayer (Fastly), Dimitris Zacharopoulos (HARICA), and Ryan Dickson (Chrome).",
+      "issuer_yes": [
+        "Asseco Data Systems SA (Certum)",
+        "Buypass AS",
+        "Certigna (DHIMYOTIS)",
+        "Chunghwa Telecom",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Japan Registry Services",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "SHECA",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud"
+      ],
+      "issuer_abstain": [
+        "Entrust"
+      ],
+      "consumer_yes": [
+        "Apple",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC081v3: Introduce Schedule of Reducing Validity and Data Reuse Periods",
+      "url": "https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/",
+      "id": "SC-081",
+      "proposer": "Clint Wilson (Apple)",
+      "endorsers_raw": "Nick France (Sectigo), Ryan Dickson (Google Chrome), and Ben Wilson (Mozilla)",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Buypass AS",
+        "Certigna (DHIMYOTIS)",
+        "Certinomis",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "iTrusChina",
+        "Izenpe",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "Sectigo",
+        "SHECA",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "VikingCloud",
+        "Visa"
+      ],
+      "issuer_abstain": [
+        "Entrust",
+        "IdenTrust",
+        "Japan Registry Services",
+        "SECOM Trust Systems",
+        "TWCA"
+      ],
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Microsoft",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC084: DNS Labeled with ACME Account ID Validation Method",
+      "url": "https://cabforum.org/2025/01/28/ballot-sc084-dns-labeled-with-acme-account-id-validation-method/",
+      "id": "SC-084",
+      "proposer": "Wayne Thayer (Fastly)",
+      "endorsers_raw": "Ben Wilson (Mozilla), Corey Bonnell (DigiCert), Dustin Hollenback (Microsoft), and Ryan Dickson (Chrome)",
+      "issuer_yes": [
+        "Amazon",
+        "Buypass AS",
+        "Certinomis",
+        "CommScope",
+        "DigiCert",
+        "D-TRUST",
+        "eMudhra",
+        "Entrust",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "Japan Registry Services",
+        "SECOM Trust Systems",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "VikingCloud"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Cisco Systems",
+        "Google",
+        "Microsoft",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC083v3: Winter 2024-2025 Cleanup Ballot",
+      "url": "https://cabforum.org/2025/01/23/ballot-sc083v3-winter-2024-2025-cleanup-ballot/",
+      "id": "SC-083",
+      "proposer": "Martijn Katerbarg (Sectigo)",
+      "endorsers_raw": "Corey Bonnell (DigiCert) and Ryan Dickson (Chrome Root Program)",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Buypass AS",
+        "Certinomis",
+        "CFCA",
+        "Chunghwa Telecom",
+        "CommScope",
+        "DigiCert",
+        "Disig",
+        "D-TRUST",
+        "eMudhra",
+        "Entrust",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "iTrusChina",
+        "Izenpe",
+        "Japan Registry Services",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "VikingCloud",
+        "Visa"
+      ],
+      "issuer_abstain": [],
+      "consumer_yes": [
+        "Apple",
+        "Cisco Systems",
+        "Google",
+        "Mozilla"
+      ]
+    },
+    {
+      "title": "Ballot SC082: Clarify CA Assisted DNS Validation under 3.2.2.4.7",
+      "url": "https://cabforum.org/2024/11/29/ballot-sc082-clarify-ca-assisted-dns-validation-under-3.2.2.4.7/",
+      "id": "SC-082",
+      "proposer": "Michael Slaughter (Amazon Trust Services)",
+      "endorsers_raw": "Martijn Katerbarg (Sectigo) and Wayne Thayer (Fastly). Purpose of Ballot SC-082 The purpose of this ballot is to clarify the practice of CA Assisted DNS Validation and add constraints under Method 7 (3.2.4.4.7 DNS Change). Modification of other domain validation methods and the introduction of new d",
+      "issuer_yes": [
+        "Amazon",
+        "Asseco Data Systems SA (Certum)",
+        "Chunghwa Telecom",
+        "DigiCert",
+        "eMudhra",
+        "Entrust",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "IdenTrust",
+        "OISTE Foundation",
+        "Sectigo",
+        "SwissSign",
+        "Telia Company",
+        "TWCA",
+        "VikingCloud",
+        "Visa\n0 Issuers voting NO"
+      ],
+      "issuer_abstain": [
+        "Buypass AS",
+        "HARICA",
+        "SECOM Trust Systems",
+        "SSL.com"
+      ],
+      "result": "failed"
+    },
+    {
+      "title": "Ballot SC080v3: Sunset the use of WHOIS to identify Domain Contacts and relying DCV Methods",
+      "url": "https://cabforum.org/2024/11/14/ballot-sc080v3-sunset-the-use-of-whois-to-identify-domain-contacts-and-relying-dcv-methods/",
+      "id": "SC-080",
+      "proposer": "Ryan Dickson and Chris Clements of Google (Chrome Root Program)",
+      "endorsers_raw": "Arvid Vermote (GlobalSign) and Pedro Fuentes (OISTE).",
+      "issuer_yes": [
+        "Amazon",
+        "Buypass AS",
+        "Certinomis",
+        "Chunghwa Telecom",
+        "CommScope",
+        "eMudhra",
+        "Entrust",
+        "Fastly",
+        "GlobalSign",
+        "GoDaddy",
+        "HARICA",
+        "IdenTrust",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea",
+        "NAVER Cloud Trust Services",
+        "OISTE Foundation",
+        "SECOM Trust Systems",
+        "Sectigo",
+        "SSL.com",
+        "SwissSign",
+        "Telia Company",
+        "TrustAsia",
+        "TWCA",
+        "Visa\n0 Issuers voting NO"
+      ],
+      "issuer_abstain": [
+        "Japan Registry Services"
+      ]
+    },
+    {
+      "title": "Ballot SC076v2: Clarify and improve OCSP requirements",
+      "url": "https://cabforum.org/2024/10/14/ballot-sc076v2-clarify-and-improve-ocsp-requirements/",
+      "id": "SC-076",
+      "proposer": "Aaron Gable (Let\u2019s Encrypt / ISRG), and is endorsed by Ben Wilson (Mozilla) and Antonis Eleftheriadis (HARICA)",
+      "endorsers_raw": "Ben Wilson (Mozilla) and Antonis Eleftheriadis (HARICA).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC079v2: Allow more than one Certificate Policy in a Cross-Certified Subordinate CA Certificate",
+      "url": "https://cabforum.org/2024/10/14/ballot-sc079v2-allow-more-than-one-certificate-policy-in-a-cross-certified-subordinate-ca-certificate/",
+      "id": "SC-079",
+      "proposer": "Paul van Brouwershaven (Entrust)",
+      "endorsers_raw": "Ben Wilson (Mozilla) and Thomas Zermeno (SSL.com).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC078: Subject organizationName alignment for DBA / Assumed Name",
+      "url": "https://cabforum.org/2024/10/02/ballot-sc078-subject-organizationname-alignment-for-dba-/-assumed-name/",
+      "id": "SC-078",
+      "proposer": "Martijn Katerbarg (Sectigo)",
+      "endorsers_raw": "Clint Wilson (Apple) and Enrico Entschew (D-Trust).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC077: Update WebTrust Audit name in Section 8.4 and References",
+      "url": "https://cabforum.org/2024/09/02/ballot-sc077-update-webtrust-audit-name-in-section-8.4-and-references/",
+      "id": "SC-077",
+      "proposer": "Clint Wilson (Apple)",
+      "endorsers_raw": "Dimitris Zacharopoulos (HARICA) and Trevoli Ponds-White (Amazon)",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC067v3: Require domain validation and CAA checks to be performed from multiple Network Perspectives Corroboration",
+      "url": "https://cabforum.org/2024/08/05/ballot-sc067v3-require-domain-validation-and-caa-checks-to-be-performed-from-multiple-network-perspectives-corroboration/",
+      "id": "SC-067",
+      "proposer": "Chris Clements and Ryan Dickson of Google (Chrome Root Program)",
+      "endorsers_raw": "Aaron Gable (ISRG / Let\u2019s Encrypt) and Wayne Thayer (Fastly).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC075: Pre-sign linting",
+      "url": "https://cabforum.org/2024/08/05/ballot-sc075-pre-sign-linting/",
+      "id": "SC-075",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Corey Bonnell of Digicert and Ben Wilson of Mozilla.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC073: Compromised and weak keys",
+      "url": "https://cabforum.org/2024/06/07/ballot-sc073-compromised-and-weak-keys/",
+      "id": "SC-073",
+      "proposer": "Wayne Thayer of Fastly,",
+      "endorsers_raw": "Brittany Randall of GoDaddy and Bruce Morton of Entrust.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC072: Delete except to policyQualifiers in EVGs; align with BRs by making them NOT RECOMMENDED",
+      "url": "https://cabforum.org/2024/03/25/ballot-sc072-delete-except-to-policyqualifiers-in-evgs-align-with-brs-by-making-them-not-recommended/",
+      "id": "SC-072",
+      "proposer": "Paul van Brouwershaven (Entrust)",
+      "endorsers_raw": "Dimitris Zacharopoulos (HARICA) and I\u00f1igo Barreira (Sectigo).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC065v2: Convert EVGs into RFC 3647 format",
+      "url": "https://cabforum.org/2024/03/15/ballot-sc065v2-convert-evgs-into-rfc-3647-format/",
+      "id": "SC-065",
+      "proposer": "I\u00f1igo Barreira (Sectigo)",
+      "endorsers_raw": "Pedro Fuentes (OISTE) and Ben Wilson (Mozilla).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC069: Clarify router and firewall logging requirements",
+      "url": "https://cabforum.org/2024/03/12/ballot-sc069-clarify-router-and-firewall-logging-requirements/",
+      "id": "SC-069",
+      "proposer": "Martijn Katerbarg (Sectigo)",
+      "endorsers_raw": "Daniel Jeffery (Fastly) and Ben Wilson (Mozilla).",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC070: Clarify the use of DTPs for Domain Control Validation",
+      "url": "https://cabforum.org/2024/02/23/ballot-sc070-clarify-the-use-of-dtps-for-domain-control-validation/",
+      "id": "SC-070",
+      "proposer": "Aaron Gable (ISRG / Let\u2019s Encrypt)",
+      "endorsers_raw": "Mads Henriksveen (Buypass) and Dimitris Zacharopoulos (HARICA).",
+      "issuer_abstain": [],
+      "result": "failed"
+    },
+    {
+      "title": "Ballot SC068: Allow VATEL and VATXI for organizationIdentifier",
+      "url": "https://cabforum.org/2024/02/01/ballot-sc068-allow-vatel-and-vatxi-for-organizationidentifier/",
+      "id": "SC-068",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Ben Wilson of Mozilla and Corey Bonnell of Digicert.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC066v4: Fall 2023 Clean up",
+      "url": "https://cabforum.org/2023/11/24/ballot-sc066v4-fall-2023-clean-up/",
+      "id": "SC-066",
+      "proposer": "I\u00f1igo Barreira of Sectigo",
+      "endorsers_raw": "Aaron Gable of Let\u00b4s Encrypt and Clint Wilson of Apple.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC063v4: Make OCSP Optional, Require CRLs, and Incentivize Automation",
+      "url": "https://cabforum.org/2023/07/14/ballot-sc063v4-make-ocsp-optional-require-crls-and-incentivize-automation/",
+      "id": "SC-063",
+      "proposer": "Ryan Dickson and Chris Clements of Google (Chrome Root Program)",
+      "endorsers_raw": "Kiran Tummala of Microsoft and Tim Callan of Sectigo.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC059v2: Weak key guidance",
+      "url": "https://cabforum.org/2023/07/14/ballot-sc059v2-weak-key-guidance/",
+      "id": "SC-059",
+      "proposer": "Thomas Zermeno of SSL",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Ben Wilson of Mozilla.",
+      "issuer_abstain": [
+        "OISTE"
+      ]
+    },
+    {
+      "title": "Ballot SC064: Temporary Moratorium on New Certificate Consumer Memberships",
+      "url": "https://cabforum.org/2023/06/15/ballot-sc064-temporary-moratorium-on-new-certificate-consumer-memberships/",
+      "id": "SC-064",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "Tobias Josefowitz of Opera and Thomas Zermeno of SSL.com.",
+      "issuer_abstain": [
+        "D-TRUST",
+        "DigiCert",
+        "GlobalSign",
+        "GoDaddy",
+        "Izenpe",
+        "Kamu SM",
+        "OISTE",
+        "Telia Company",
+        "Viking Cloud"
+      ]
+    },
+    {
+      "title": "Ballot SC062v2: Certificate profiles update",
+      "url": "https://cabforum.org/2023/03/17/ballot-sc062v2-certificate-profiles-update/",
+      "id": "SC-062",
+      "proposer": "Ryan Dickson of Google",
+      "endorsers_raw": "Clint Wilson of Apple and Dimitris Zacharopoulos of HARICA.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC061v4: New CRL Entries must have a Revocation Reason Code",
+      "url": "https://cabforum.org/2023/03/02/ballot-sc061v4-new-crl-entries-must-have-a-revocation-reason-code/",
+      "id": "SC-061",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "David Kluge of Google Trust Services and Kiran Tummala of Microsoft.",
+      "issuer_abstain": []
+    },
+    {
+      "title": "Ballot SC060: Membership of ZT Browser",
+      "url": "https://cabforum.org/2023/02/01/ballot-sc060-membership-of-zt-browser/",
+      "id": "SC-060",
+      "proposer": "Aaron Gable of ISRG / Let\u2019s Encrypt,",
+      "endorsers_raw": "Tobias Josefowitz of Opera and Tim Hollebeek of Digicert.",
+      "issuer_abstain": [
+        "Actalis",
+        "DigiCert",
+        "D-Trust",
+        "JPRS",
+        "OISTE",
+        "SECOM Trust Systems",
+        "SSL.com"
+      ]
+    },
+    {
+      "title": "Ballot SC058: Require distributionPoint in sharded CRLs",
+      "url": "https://cabforum.org/2022/11/11/ballot-sc058-require-distributionpoint-in-sharded-crls/",
+      "id": "SC-058",
+      "proposer": "Aaron Gable of ISRG / Let\u2019s Encrypt,",
+      "endorsers_raw": "Clint Wilson of Apple, Corey Bonnell of DigiCert, and Dmitris Zacharopoulos of HARICA.",
+      "issuer_abstain": [
+        "Certificate Consumers\n3 votes total",
+        "with no abstentions:\n3 Consumers voting YES:\nApple",
+        "Google",
+        "Mozilla\n0 Consumers voting NO\n0 Consumers ABSTAIN\nBylaws Requirements\nBylaw 2.3(f) requires:\nA \u201cyes\u201d vote by two-thirds of Certificate Issuer votes and by 50%-plus-one of Certificate Consumer votes. Votes to abstain are not counted for this purpose. This requirement was\nMET\nfor Certificate Issuers and\nMET\nfor"
+      ]
+    },
+    {
+      "title": "Ballot SC056: 2022 Cleanup",
+      "url": "https://cabforum.org/2022/10/25/ballot-sc056-2022-cleanup/",
+      "id": "SC-056",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Bruce Morton of Entrust and Aaron Gable of Let\u2019s Encrypt.",
+      "issuer_abstain": [
+        "Certificate Consumers\n2 votes total",
+        "with no abstentions:\n2 Consumers voting YES:\nGoogle",
+        "Mozilla\n0 Consumers voting NO\n0 Consumers ABSTAIN\nBylaws Requirements\nBylaw 2.3(f) requires:\nA \u201cyes\u201d vote by two-thirds of Certificate Issuer votes and by 50%-plus-one of Certificate Consumer votes. Votes to abstain are not counted for this purpose. This requirement was\nMET\nfor Certificate Issuers and**\u00a0MET**\u00a0for"
+      ]
+    },
+    {
+      "title": "Ballot SC054: Onion Cleanup",
+      "url": "https://cabforum.org/2022/03/24/ballot-sc054-onion-cleanup/",
+      "id": "SC-054",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Ben Wilson of Mozilla and Corey Bonnell of DigiCert."
+    },
+    {
+      "title": "Ballot SC051: Reduce and Clarify Audit Log and Records Archival Retention Requirements",
+      "url": "https://cabforum.org/2022/03/01/ballot-sc051-reduce-and-clarify-audit-log-and-records-archival-retention-requirements/",
+      "id": "SC-051",
+      "proposer": "Clint Wilson of Apple",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Dustin Hollenback of Microsoft. -\u2013"
+    },
+    {
+      "title": "Ballot SC053: Sunset for SHA-1 OCSP Signing",
+      "url": "https://cabforum.org/2022/01/26/ballot-sc053-sunset-for-sha-1-ocsp-signing/",
+      "id": "SC-053",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Ben Wilson of Mozilla and Bruce Morton of Entrust."
+    },
+    {
+      "title": "Ballot SC052v2: Specify CRL Validity Intervals in Seconds",
+      "url": "https://cabforum.org/2022/01/01/ballot-sc052v2-specify-crl-validity-intervals-in-seconds/",
+      "id": "SC-052",
+      "proposer": "Tim Hollebeek of DigiCert"
+    },
+    {
+      "title": "Ballot SC050: Remove the requirements of section 4.1.1",
+      "url": "https://cabforum.org/2021/11/22/ballot-sc050-remove-the-requirements-of-section-4.1.1/",
+      "id": "SC-050",
+      "proposer": "Clint Wilson of Apple",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Dustin Hollenback of Microsoft."
+    },
+    {
+      "title": "Ballot SC049: Special Election for Server Certificate Working Group Vice-Chair",
+      "url": "https://cabforum.org/2021/09/27/ballot-sc049-special-election-for-server-certificate-working-group-vice-chair/",
+      "id": "SC-049",
+      "proposer": "Server Certificate Working Group Chair Jos Purvis of Cisco"
+    },
+    {
+      "title": "Ballot SC048v2: Domain Name and IP Address Encoding",
+      "url": "https://cabforum.org/2021/07/22/ballot-sc048v2-domain-name-and-ip-address-encoding/",
+      "id": "SC-048",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Ryan Sleevi of Google and Dimitris Zacharopoulos of HARICA."
+    },
+    {
+      "title": "Ballot SC047v2: Sunset subject:organizationalUnitName",
+      "url": "https://cabforum.org/2021/06/30/ballot-sc047v2-sunset-subjectorganizationalunitname/",
+      "id": "SC-047",
+      "proposer": "Paul van Brouwershaven of Entrust",
+      "endorsers_raw": "Ben Wilson of Mozilla and Chema Lopez of Firmaprofesional. It can be viewed on GitHub as https://github.com/cabforum/servercert/pull/282 ====="
+    },
+    {
+      "title": "Ballot SC045: Wildcard Domain Validation",
+      "url": "https://cabforum.org/2021/06/03/ballot-sc045-wildcard-domain-validation/",
+      "id": "SC-045",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Jos Purvis of Cisco and Dimitris Zacharopoulos of HARICA. It can be viewed on GitHub as https://github.com/cabforum/servercert/pull/269"
+    },
+    {
+      "title": "Ballot SC046: Sunset the CAA exception for DNS Operator",
+      "url": "https://cabforum.org/2021/06/02/ballot-sc046-sunset-the-caa-exception-for-dns-operator/",
+      "id": "SC-046",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Ben Wilson of Mozilla and Jacob Hoffman-Andrews of ISRG/Let\u2019s Encrypt. It can be viewed on GitHub as https://github.com/cabforum/servercert/pull/271"
+    },
+    {
+      "title": "Ballot SC044: Clarify Acceptable Status Codes",
+      "url": "https://cabforum.org/2021/05/01/ballot-sc044-clarify-acceptable-status-codes/",
+      "id": "SC-044",
+      "proposer": "Niko Carpenter of SecureTrust",
+      "endorsers_raw": "Corey Bonnell of DigiCert and Ryan Sleevi of Google. \u2013"
+    },
+    {
+      "title": "Ballot SC042: 398-day Re-use Period",
+      "url": "https://cabforum.org/2021/04/22/ballot-sc042-398-day-re-use-period/",
+      "id": "SC-042",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "Dimitris Zacharopoulos of HARICA and Chema Lopez of Firmaprofesional. ##"
+    },
+    {
+      "title": "Ballot SC043: Clarify Acceptable Status Codes",
+      "url": "https://cabforum.org/2021/04/08/ballot-sc043-clarify-acceptable-status-codes/",
+      "id": "SC-043",
+      "proposer": "Niko Carpenter of SecureTrust",
+      "endorsers_raw": "Corey Bonnell of DigiCert and Ryan Sleevi of Google. \u2013"
+    },
+    {
+      "title": "Ballot SC041: Reformatting the BRs, EVGs, and NCSSRs",
+      "url": "https://cabforum.org/2021/02/26/ballot-sc041-reformatting-the-brs-evgs-and-ncssrs/",
+      "id": "SC-041",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Ben Wilson of Mozilla and Dimitris Zacharopoulos of HARICA. Version 2 of this Ballot introduces language to address potential conflicts with Ballot SC39v3, due to modifying the same section of the NCSSRs, as well as addresses one small Markdown lint pointed out by Aaron Gable of ISRG/Let\u2019s Encrypt w"
+    },
+    {
+      "title": "Ballot SC037: Election of Server Certificate Working Group Vice Chair",
+      "url": "https://cabforum.org/2021/02/10/ballot-sc037-election-of-server-certificate-working-group-vice-chair/",
+      "id": "SC-037",
+      "proposer": "the Server Certificate Working Group Chair Dimitris Zacharopoulos of HARICA"
+    },
+    {
+      "title": "Ballot SC309v3: Definition of Critical Vulnerability",
+      "url": "https://cabforum.org/2021/02/10/ballot-sc309v3-definition-of-critical-vulnerability/",
+      "id": "SC-309",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC040: Security Requirements for Air-Gapped CA Systems",
+      "url": "https://cabforum.org/2021/02/09/ballot-sc040-security-requirements-for-air-gapped-ca-systems/",
+      "id": "SC-040",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "David Kluge of Google Trust Services and Neil Dunbar of TrustCor."
+    },
+    {
+      "title": "Ballot SC038: Alignment of Record Archival",
+      "url": "https://cabforum.org/2020/12/16/ballot-sc038-alignment-of-record-archival/",
+      "id": "SC-038",
+      "proposer": "Neil Dunbar of TrustCor Systems",
+      "endorsers_raw": "David Kluge of Google Trust Services and Ben Wilson of Mozilla. Purpose of Ballot: After the updated language included in SC28 Sections 5.4.3 and 5.5.2 (of the BRs) could be in conflict. Section 5.5.2 requires all documentation relating to certificate requests and the verification thereof, and all C"
+    },
+    {
+      "title": "Special Ballot CSCWG-5: Election of Code Signing Certificate Working Group Vice Chair",
+      "url": "https://cabforum.org/2020/10/29/special-ballot-cscwg-5-election-of-code-signing-certificate-working-group-vice-chair/",
+      "proposer": "the Code Signing Certificate Working Group Chair Dean Coclin of DigiCert"
+    },
+    {
+      "title": "Ballot SC034: Account Management",
+      "url": "https://cabforum.org/2020/10/04/ballot-sc034-account-management/",
+      "id": "SC-034",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot CSCWG-3: Election of Code Signing Certificate Working Group Chair",
+      "url": "https://cabforum.org/2020/09/23/ballot-cscwg-3-election-of-code-signing-certificate-working-group-chair/",
+      "proposer": "the Code Signing Certificate Working Group Chair Dean Coclin of DigiCert"
+    },
+    {
+      "title": "Ballot SC036: Election of Server Certificate Working Group Chair",
+      "url": "https://cabforum.org/2020/09/21/ballot-sc036-election-of-server-certificate-working-group-chair/",
+      "id": "SC-036",
+      "proposer": "the Server Certificate Working Group Chair Dimitris Zacharopoulos of HARICA"
+    },
+    {
+      "title": "Ballot SC028: Logging and Log Retention",
+      "url": "https://cabforum.org/2020/09/10/ballot-sc028-logging-and-log-retention/",
+      "id": "SC-028",
+      "proposer": "Neil Dunbar of TrustCor Systems",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Dustin Hollenback of Microsoft. *-"
+    },
+    {
+      "title": "Ballot SC035: Cleanups and Clarifications",
+      "url": "https://cabforum.org/2020/09/09/ballot-sc035-cleanups-and-clarifications/",
+      "id": "SC-035",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Ben Wilson of Mozilla and Doug Beattie of GlobalSign. This ballot is available at GitHub at https://github.com/cabforum/documents/pull/208 with further discussion of the changes"
+    },
+    {
+      "title": "Ballot SC033: TLS Using ALPN Method",
+      "url": "https://cabforum.org/2020/08/14/ballot-sc033-tls-using-alpn-method/",
+      "id": "SC-033",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Roland Shoemaker of Let\u2019s Encrypt and Tim Hollebeek of DigiCert."
+    },
+    {
+      "title": "Ballot SC032: NCSSRs Zones",
+      "url": "https://cabforum.org/2020/07/23/ballot-sc032-ncssrs-zones/",
+      "id": "SC-032",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "Trev Ponds-White of Amazon and Neil Dunbar of TrustCor Systems."
+    },
+    {
+      "title": "Ballot CSCWG-2: Combine Baseline and EV Code Signing Documents",
+      "url": "https://cabforum.org/2020/07/21/ballot-cscwg-2-combine-baseline-and-ev-code-signing-documents/",
+      "proposer": "Bruce Morton of Entrust",
+      "endorsers_raw": "Mike Reilly of Microsoft and Dean Coclin of DigiCert."
+    },
+    {
+      "title": "Ballot SC030v2: Disclosure of Registration / Incorporating Agency",
+      "url": "https://cabforum.org/2020/07/16/ballot-sc030v2-disclosure-of-registration-/-incorporating-agency/",
+      "id": "SC-030",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Ben Wilson of Mozilla and Dimitris Zacharopoulos of HARICA."
+    },
+    {
+      "title": "Ballot SC031: Browser Alignment",
+      "url": "https://cabforum.org/2020/07/16/ballot-sc031-browser-alignment/",
+      "id": "SC-031",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Clint Wilson of Apple and Mike Reilly of Microsoft. The changes between SC31v1 and SC31v2 can be viewed at https://github.com/cabforum/documents/compare/90a7dfe95d32ae8c76a4fa55c7b038d4928872c6\u20261bb3be897213b21d15b837befa885b0ba34bfd3d . This corrects \u201cNot applicable\u201d to \u201cNo stipulation\u201d, updates the"
+    },
+    {
+      "title": "Ballot SC029v3: System Configuration Management",
+      "url": "https://cabforum.org/2020/05/07/ballot-sc029v3-system-configuration-management/",
+      "id": "SC-029",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC026v2: Pandoc-Friendly Markdown Formatting Changes",
+      "url": "https://cabforum.org/2020/03/30/ballot-sc026v2-pandoc-friendly-markdown-formatting-changes/",
+      "id": "SC-026",
+      "proposer": "Jos Purvis of Cisco Systems and has been endorsed by\u00a0Ryan Sleevi (Google) and Dimitris Zacharopoulos (HARICA)"
+    },
+    {
+      "title": "Ballot SC020: System Configuration Management",
+      "url": "https://cabforum.org/2020/03/23/ballot-sc020-system-configuration-management/",
+      "id": "SC-020",
+      "proposer": "Neil Dunbar of Google Trust Services",
+      "endorsers_raw": "Tobias Josefowitz of OPERA and Dustin Hollenback of Microsoft."
+    },
+    {
+      "title": "Ballot SC027v3: Version 3 Onion Certificates",
+      "url": "https://cabforum.org/2020/02/20/ballot-sc027v3-version-3-onion-certificates/",
+      "id": "SC-027",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Roland Shoemaker of Let\u2019s Encrypt and Dimitris Zacharopoulos of HARICA."
+    },
+    {
+      "title": "Ballot SC025: Define New HTTP Domain Validation Methods v2",
+      "url": "https://cabforum.org/2020/02/01/ballot-sc025-define-new-http-domain-validation-methods-v2/",
+      "id": "SC-025",
+      "proposer": "Doug Beattie of GlobalSign",
+      "endorsers_raw": "Jacob Hoffman-Andrews of Lets Encrypt and Bruce Morton of Entrust. -"
+    },
+    {
+      "title": "Ballot SC023v3: Precertificates",
+      "url": "https://cabforum.org/2019/11/14/ballot-sc023v3-precertificates/",
+      "id": "SC-023",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Jeremy Rowley of DigiCert and Rob Stradling of Sectigo."
+    },
+    {
+      "title": "Ballot SC024v2: Fall Cleanup",
+      "url": "https://cabforum.org/2019/11/12/ballot-sc024v2-fall-cleanup/",
+      "id": "SC-024",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Ryan Sleevi of Google and Jacob Hoffman-Andrews of Let\u2019s Encrypt. -"
+    },
+    {
+      "title": "Ballot SC021: The Network and Certificate Systems Security Requirements section 3 (Log Integrity Controls)",
+      "url": "https://cabforum.org/2019/10/04/ballot-sc021-the-network-and-certificate-systems-security-requirements-section-3-log-integrity-controls/",
+      "id": "SC-021",
+      "proposer": "Ben Wilson of DigiCert"
+    },
+    {
+      "title": "Ballot SC022v2: Reduce Certificate Lifetimes",
+      "url": "https://cabforum.org/2019/09/10/ballot-sc022v2-reduce-certificate-lifetimes/",
+      "id": "SC-022",
+      "proposer": "Ryan Sleevi of Google",
+      "endorsers_raw": "Curt Spann of Apple and Jacob Hoffman-Andrews of ISRG / Let\u2019s Encrypt. -\u2013"
+    },
+    {
+      "title": "Ballot SC019: Phone Contact with DNS CAA Phone Contact v2",
+      "url": "https://cabforum.org/2019/05/21/ballot-sc019-phone-contact-with-dns-caa-phone-contact-v2/",
+      "id": "SC-019",
+      "proposer": "Doug Beattie of GlobalSign"
+    },
+    {
+      "title": "Ballot SC017v7: Alternative registration numbers for EV certificates",
+      "url": "https://cabforum.org/2019/05/21/ballot-sc017v7-alternative-registration-numbers-for-ev-certificates/",
+      "id": "SC-017",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Dimitris Zacharopoulos of Harica and Enrico Entshew of D-Trust. Motivation Update to CAB Forum EV Guidelines to cater for alternative registration numbers caused by EU Legal Requirements: i. The EU Regulation No 910/2014 (eIDAS [ https://eur-lex.europa.eu/eli/reg/2014/910/oj ]) defines regulatory re"
+    },
+    {
+      "title": "Ballot SC018: Phone Contact with DNS CAA Phone Contact",
+      "url": "https://cabforum.org/2019/05/01/ballot-sc018-phone-contact-with-dns-caa-phone-contact/",
+      "id": "SC-018",
+      "proposer": "Doug Beattie of GlobalSign"
+    },
+    {
+      "title": "Ballot SC016: Other Subject Attributes",
+      "url": "https://cabforum.org/2019/03/16/ballot-sc016-other-subject-attributes/",
+      "id": "SC-016",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Doug Beattie of GlobalSign and Tim Hollebeek of DigiCert."
+    },
+    {
+      "title": "Ballot SC007: Update IP Address Validation Methods",
+      "url": "https://cabforum.org/2019/02/09/ballot-sc007-update-ip-address-validation-methods/",
+      "id": "SC-007",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Doug Beattie of GlobalSign and Tim Hollebeek of DigiCert."
+    },
+    {
+      "title": "Ballot SC015: Remove Validation Method Number 9",
+      "url": "https://cabforum.org/2019/02/01/ballot-sc015-remove-validation-method-number-9/",
+      "id": "SC-015",
+      "proposer": "Doug Beattie of GlobalSign",
+      "endorsers_raw": "Bruce Morton of Entrust Datacard and Ryan Sleevi of Google."
+    },
+    {
+      "title": "Ballot SC014: Updated Phone Validation Methods",
+      "url": "https://cabforum.org/2019/02/01/ballot-sc014-updated-phone-validation-methods/",
+      "id": "SC-014",
+      "proposer": "Doug Beattie of GlobalSign",
+      "endorsers_raw": "Bruce Morton of Entrust and Tim Hollebeek of DigiCert."
+    },
+    {
+      "title": "Ballot SC013: CAA Contact Property and Associated E-mail Validation Methods",
+      "url": "https://cabforum.org/2018/12/18/ballot-sc013-caa-contact-property-and-associated-e-mail-validation-methods/",
+      "id": "SC-013",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Bruce Morton of Entrust and Doug Beattie of GlobalSign."
+    },
+    {
+      "title": "Ballot SC012: Sunset of Underscores in dNSNames",
+      "url": "https://cabforum.org/2018/11/12/ballot-sc012-sunset-of-underscores-in-dnsnames/",
+      "id": "SC-012",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Dave Blunt of Amazon and Tim Shirley of Trustwave."
+    },
+    {
+      "title": "Ballot SC004: CAA Contact Property and Associated E-mail Validation Method",
+      "url": "https://cabforum.org/2018/11/06/ballot-sc004-caa-contact-property-and-associated-e-mail-validation-method/",
+      "id": "SC-004",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Bruce Morton of Entrust and Doug Beattie of GlobalSign."
+    },
+    {
+      "title": "Ballot Forum-7: Update ETSI requirements in SCWG Charter",
+      "url": "https://cabforum.org/2018/10/09/ballot-forum-7-update-etsi-requirements-in-scwg-charter/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Moudrick M. Dadashov of SSC and Mads Egil Henriksveen from Bypass. Background: Section 3 of the SCWG Charter describes the qualifying criteria for \u201cCertificate Issuers\u201d and \u201cRoot Certificate Issuers\u201d. This ballot attempts to remove references to the old ETSI TS documents."
+    },
+    {
+      "title": "Ballot SC010: Establishing the Network Security Subcommittee of the SCWG",
+      "url": "https://cabforum.org/2018/10/04/ballot-sc010-establishing-the-network-security-subcommittee-of-the-scwg/",
+      "id": "SC-010",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Wayne Thayer of Mozilla."
+    },
+    {
+      "title": "Ballot SC009: Establish the Validation Subcommittee of the SCWG",
+      "url": "https://cabforum.org/2018/10/03/ballot-sc009-establish-the-validation-subcommittee-of-the-scwg/",
+      "id": "SC-009",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Dimitris Zacharopoulos of HARICA."
+    },
+    {
+      "title": "Ballot SC005: Election of Wayne Thayer as SCWG Vice Chair",
+      "url": "https://cabforum.org/2018/09/26/ballot-sc005-election-of-wayne-thayer-as-scwg-vice-chair/",
+      "id": "SC-005",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC011: Update ETSI requirements in the SCWG Charter",
+      "url": "https://cabforum.org/2018/09/24/ballot-sc011-update-etsi-requirements-in-the-scwg-charter/",
+      "id": "SC-011",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC006: Revocation Timeline Extension",
+      "url": "https://cabforum.org/2018/09/14/ballot-sc006-revocation-timeline-extension/",
+      "id": "SC-006",
+      "proposer": "Wayne Thayer of Mozilla",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Dimitris Zacharopoulos of Harica."
+    },
+    {
+      "title": "Ballot SC008: Election of Dimitris Zacharopoulos as SCWG Chair",
+      "url": "https://cabforum.org/2018/09/06/ballot-sc008-election-of-dimitris-zacharopoulos-as-scwg-chair/",
+      "id": "SC-008",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC003: Two-Factor Authentication and Password Improvements",
+      "url": "https://cabforum.org/2018/08/16/ballot-sc003-two-factor-authentication-and-password-improvements/",
+      "id": "SC-003",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Dimitris Zacharopoulos of Harica and Neil Dunbar of TrustCor."
+    },
+    {
+      "title": "Ballot SC001: [Empty]",
+      "url": "https://cabforum.org/2018/08/01/ballot-sc001-empty/",
+      "id": "SC-001",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot SC002: Validating Certificates via CAA CONTACT",
+      "url": "https://cabforum.org/2018/07/27/ballot-sc002-validating-certificates-via-caa-contact/",
+      "id": "SC-002",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Bruce Morton of Entrust and Doug Beattie of GlobalSign."
+    },
+    {
+      "title": "Ballot 214 \u2013 CAA Discovery CNAME Errata",
+      "url": "https://cabforum.org/2017/09/27/ballot-214-caa-discovery-cname-errata/",
+      "proposer": "Phillip Hallam-Baker of Comodo Group Inc",
+      "endorsers_raw": "Gervase Markham of Mozilla and Mads Egil Henriksveen of Buypass."
+    },
+    {
+      "title": "Ballot 210 \u2013 Misc. Changes to the NCSSR",
+      "url": "https://cabforum.org/2017/08/31/ballot-210-misc.-changes-to-the-ncssr/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Ben Wilson of DigiCert and Neil Dunbar of TrustCor. \u2013"
+    },
+    {
+      "title": "Ballot 202 \u2013 Underscore and Wildcard Characters",
+      "url": "https://cabforum.org/2017/07/26/ballot-202-underscore-and-wildcard-characters/",
+      "proposer": "Ben Wilson of DigiCert",
+      "endorsers_raw": "Peter Bowen of Amazon and Ryan Sleevi of Google to introduce new Final Maintenance Guidelines for the \u201cBaseline Requirements Certificate Policy for the Issuance and Management of Publicly-Trusted Certificates\u201d (Baseline Requirements). \u2013"
+    },
+    {
+      "title": "Ballot 119 \u2013 Remove \u201cOfIncorporation\u201d from OID descriptions in EVG 9.2.5(passed)",
+      "url": "https://cabforum.org/2014/03/24/ballot-119-remove-ofincorporation-from-oid-descriptions-in-evg-9.2.5passed/",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot 108 \u2013 Defining the Scope of the Baseline Requirements",
+      "url": "https://cabforum.org/2013/08/06/ballot-108-defining-the-scope-of-the-baseline-requirements/",
+      "proposer": "Stephen Davidson (DigiCert)"
+    },
+    {
+      "title": "Ballot 49 \u2013 New Certificate for Existing Subscriber",
+      "url": "https://cabforum.org/2010/08/06/ballot-49-new-certificate-for-existing-subscriber/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Ben Wilson and Bruce Morton (note: for a \u201cred-line\u201d version, see email from Rich Smith on 12 July):"
+    }
+  ],
+  "CSC": [
+    {
+      "url": "https://cabforum.org/2025/11/17/ballot-csc-31-maximum-validity-reduction/",
+      "proposer": "Karina Sirota Goodley and Nate Santiago of Microsoft",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Scott Rea of eMudhra. \u2014",
+      "consumer_yes": [
+        "Microsoft"
+      ],
+      "title": "Ballot CSC-31: Maximum Validity Reduction",
+      "id": "CSC-031"
+    },
+    {
+      "url": "https://cabforum.org/2024/07/01/ballots-csc-25/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Corey Bonnell of Digicert.",
+      "title": "Ballots CSC-25",
+      "id": "CSC-025"
+    },
+    {
+      "url": "https://cabforum.org/2024/07/01/ballots-csc-26/",
+      "proposer": "Martijn Katerbarg of Sectigo",
+      "endorsers_raw": "Bruce Morton of Entrust and Ian McMillan of Microsoft.",
+      "title": "Ballots CSC-26",
+      "id": "CSC-026"
+    },
+    {
+      "url": "https://cabforum.org/2024/05/29/ballot-csc-24-timestamping-private-key-protection/",
+      "proposer": "Martijn Katerbarg of Sectigo",
+      "endorsers_raw": "Bruce Morton of Entrust and Ian McMillan of Microsoft.",
+      "title": "Ballot CSC-24 - Timestamping Private Key Protection",
+      "id": "CSC-024"
+    },
+    {
+      "url": "https://cabforum.org/2024/03/26/ballot-csc-23-marking-the-ev-code-signing-guidelines-superceded/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Scott Rea of eMudhra and Martijn Katerbarg of Sectigo.",
+      "title": "Ballot CSC-23 - Marking the EV Code Signing Guidelines SUPERCEDED",
+      "id": "CSC-023"
+    },
+    {
+      "url": "https://cabforum.org/2024/01/17/ballots-csc-21/",
+      "proposer": "Bruce Morton of Entrust",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Ian McMillan of Microsoft.",
+      "title": "Ballots CSC-21",
+      "id": "CSC-021"
+    },
+    {
+      "url": "https://cabforum.org/2024/01/17/ballots-csc-22/",
+      "proposer": "Bruce Morton of Entrust",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Ian McMillan of Microsoft.",
+      "title": "Ballots CSC-22",
+      "id": "CSC-022"
+    },
+    {
+      "url": "https://cabforum.org/2024/01/13/ballot-forum-20v2-amend-code-signing-certificate-working-group-charter/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot FORUM 20v2 \u2013 Amend Code Signing Certificate Working Group Charter"
+    },
+    {
+      "url": "https://cabforum.org/2023/10/30/ballot-csc-20-restore-version-reference-to-ev-guidelines/",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Bruce Morton of Entrust and Dimitris Zacharopoulos of HARICA.",
+      "title": "Ballot CSC-20: Restore Version Reference to EV Guidelines",
+      "id": "CSC-020"
+    },
+    {
+      "url": "https://cabforum.org/2023/08/01/ballot-csc-19-remove-tls-br-references/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Tim Hollebeek of Digicert.",
+      "title": "Ballot CSC-19: Remove TLS BR References",
+      "id": "CSC-019"
+    },
+    {
+      "url": "https://cabforum.org/2023/05/24/ballot-csc-18-update-revocation-requirements/",
+      "proposer": "Martijn Katerbarg of Sectigo",
+      "endorsers_raw": "Ian McMillan of Microsoft and Bruce Morton of Entrust.",
+      "title": "Ballot CSC-18: Update Revocation Requirements",
+      "id": "CSC-018"
+    },
+    {
+      "url": "https://cabforum.org/2022/09/27/ballot-csc-17-subscriber-private-key-extension/",
+      "proposer": "Ian McMillan of Microsoft",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Bruce Morton of Entrust.",
+      "title": "Ballot CSC-17: Subscriber Private Key Extension",
+      "id": "CSC-017"
+    },
+    {
+      "url": "https://cabforum.org/2022/08/18/ballot-csc-15-summer-2022-cleanup/",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Ian McMillan of Microsoft and Dimitris Zacharopoulos of HARICA.",
+      "title": "Ballot CSC-15 \u2013 Summer 2022 Cleanup",
+      "id": "CSC-015"
+    },
+    {
+      "url": "https://cabforum.org/2022/05/26/ballot-csc-14-convert-code-signing-baseline-requirements-to-rfc-3647-framework/",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Ian McMillan of Microsoft and Dimitris Zacharopoulos of HARICA.",
+      "title": "Ballot CSC-14 \u2013 Convert Code Signing Baseline Requirements to RFC 3647 Framework",
+      "id": "CSC-014"
+    },
+    {
+      "url": "https://cabforum.org/2022/04/06/ballot-csc-13-update-to-subscriber-key-protection-requirements/",
+      "proposer": "Ian McMillan of Microsoft",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Bruce Morton of Entrust.",
+      "title": "Ballot CSC-13 \u2013 Update to Subscriber Key Protection Requirements",
+      "id": "CSC-013"
+    },
+    {
+      "url": "https://cabforum.org/2022/03/02/ballot-csc-6-update-to-subscriber-private-key-protection-requirements/",
+      "proposer": "Ian McMillan of Microsoft,",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Bruce Morton of Entrust.",
+      "title": "Ballot CSC-6 \u2013 Update to Subscriber Private Key Protection Requirements",
+      "id": "CSC-006"
+    },
+    {
+      "url": "https://cabforum.org/2021/11/03/ballot-csc-12-crl-revocation-date-clarification/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot CSC-12 \u2013 CRL Revocation Date Clarification",
+      "id": "CSC-012"
+    },
+    {
+      "url": "https://cabforum.org/2021/10/04/ballot-csc-11-update-to-log-data-retention-requirements/",
+      "proposer": "Ian McMillan of Microsoft,",
+      "endorsers_raw": "Dimitris Zacharopoulos (HARICA) and Bruce Morton (Entrust).",
+      "title": "Ballot CSC-11 \u2013 Update to log data retention requirements",
+      "id": "CSC-011"
+    },
+    {
+      "url": "https://cabforum.org/2021/09/09/ballot-csc-9-spring-2021-cleanup-and-clarification/",
+      "proposer": "Bruce Morton,",
+      "endorsers_raw": "Ian McMillan of Microsoft and Corey Bonnell of DigiCert.",
+      "title": "Ballot CSC-9 \u2013 Spring 2021 Cleanup and Clarification",
+      "id": "CSC-009"
+    },
+    {
+      "url": "https://cabforum.org/2021/08/13/ballot-csc-10-webtrust-csbr-v2.0-audit-criteria/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot CSC-10 \u2013 WebTrust CSBR v2.0 Audit Criteria",
+      "id": "CSC-010"
+    },
+    {
+      "url": "https://cabforum.org/2021/04/02/ballot-csc-8-v3-update-to-revocation-response-mechanisms.-key-protection-for-ev-certificates-and-clean-up-of-11.2.1-appendix-b/",
+      "proposer": "Ian McMillan of Microsoft,",
+      "endorsers_raw": "Dimitris Zacharopoulos of HARICA and Bruce Morton of EnTrust.",
+      "title": "Ballot CSC-8 v3: Update to Revocation response mechanisms. key protection for EV certificates, and clean-up of 11.2.1 & Appendix B",
+      "id": "CSC-008"
+    },
+    {
+      "url": "https://cabforum.org/2021/02/02/ballot-csc-7v2-update-to-merge-ev-and-non-ev-clauses/",
+      "proposer": "Bruce Morton of Entrust,",
+      "endorsers_raw": "Dimitris Zacharopoulos of HARICA and Dean Coclin of DigiCert.",
+      "title": "Ballot CSC-7v2: Update to merge EV and Non-EV clauses",
+      "id": "CSC-007"
+    },
+    {
+      "url": "https://cabforum.org/2020/11/15/ballot-csc-6-reserved/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot CSC-6: Reserved",
+      "id": "CSC-006"
+    },
+    {
+      "url": "https://cabforum.org/2020/10/07/ballot-csc-4-v1-move-deadline-for-transition-to-rsa-3072-and-sha-2-timestamp-tokens/",
+      "proposer": "Tim Hollebeek of DigiCert,",
+      "endorsers_raw": "Ian McMillan of Microsoft and Hugh Mercer of GlobalSign.",
+      "title": "Ballot CSC-4 v1: Move deadline for transition to RSA-3072 and SHA-2 timestamp tokens",
+      "id": "CSC-004"
+    },
+    {
+      "url": "https://cabforum.org/2020/09/23/ballot-cscwg-3-election-of-code-signing-certificate-working-group-chair/",
+      "proposer": "the Code Signing Certificate Working Group Chair Dean Coclin of DigiCert",
+      "title": "Ballot CSCWG-3: Election of Code Signing Certificate Working Group Chair"
+    },
+    {
+      "url": "https://cabforum.org/2020/07/21/ballot-cscwg-2-combine-baseline-and-ev-code-signing-documents/",
+      "proposer": "Bruce Morton of Entrust",
+      "endorsers_raw": "Mike Reilly of Microsoft and Dean Coclin of DigiCert.",
+      "title": "Ballot CSCWG-2: Combine Baseline and EV Code Signing Documents"
+    },
+    {
+      "url": "https://cabforum.org/2019/06/11/ballot-csc-1-adopt-baseline-requirements-version-1.2/",
+      "proposer": "Ben Wilson of DigiCert",
+      "title": "Ballot CSC-1: Adopt Baseline Requirements version 1.2",
+      "id": "CSC-001"
+    },
+    {
+      "url": "https://cabforum.org/2019/03/09/ballot-forum-8-establishment-of-a-code-signing-working-group/",
+      "proposer": "Ben Wilson of DigiCert",
+      "endorsers_raw": "Mike Reilly of Microsoft and Bruce Morton of Entrust Datacard that the Forum charter a working group to operate in accordance with the Scope and other provisions that follow. This Charter will take effect upon approval of the CAB Forum by ballot conducted in accordance with Bylaw 5.3. - BALLOT BEGIN",
+      "title": "Ballot FORUM-8: Establishment of a Code Signing Working Group"
+    },
+    {
+      "url": "https://cabforum.org/2017/01/07/ballot-180-readopting-the-brs-evgl-ev-code-signing-and-ncssr-guidelines-with-amendments/",
+      "proposer": "Kirk Hall of Entrust",
+      "endorsers_raw": "Peter Bowen of Amazon and Virginia Fournier of Apple as a Final Guideline:",
+      "title": "Ballot 180 \u2013 Readopting the BRs, EVGL, EV Code Signing, and NCSSR Guidelines with Amendments"
+    },
+    {
+      "url": "https://cabforum.org/2016/07/05/ballot-172-removal-of-permanentidentifier-from-ev-code-signing-guidelines/",
+      "proposer": "Bruce Morton of Entrust",
+      "endorsers_raw": "Rick Andrews of Symantec and Jeremy Rowley of DigiCert: Background: The EV Code Signing Guidelines require a SAN which includes the permanentIdentifier. The permanentIdentifier is not used by any browser or operating system. Therefore, it is proposed that the permanentIdentifier requirement be remov",
+      "title": "Ballot 172 \u2013 Removal of permanentIdentifier from EV Code Signing Guidelines"
+    },
+    {
+      "url": "https://cabforum.org/2015/12/17/ballot-158-adoption-of-code-signing-baseline-requirements/",
+      "proposer": "the Code Signing Working Group and is endorsed by Microsoft, Trend Micro and OATI",
+      "endorsers_raw": "Microsoft, Trend Micro and OATI. Further information on the ballot is in the email message below. \u2013 \u2013 \u2013 \u2013",
+      "title": "Ballot 158 \u2013 Adoption of Code Signing Baseline Requirements"
+    },
+    {
+      "url": "https://cabforum.org/2014/09/16/ballot-132-ev-code-signing-timestamp-validity-period-passed/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot 132 \u2013 EV Code Signing Timestamp Validity Period (passed)"
+    },
+    {
+      "url": "https://cabforum.org/2014/03/24/ballot-117-ev-code-signing-guidelines-correctionspassed/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot 117 \u2013 EV Code Signing Guidelines Corrections(passed)"
+    },
+    {
+      "url": "https://cabforum.org/2012/05/08/ballot-70-ev-code-signing-identifier/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot 70 \u2013 EV Code Signing Identifier"
+    },
+    {
+      "url": "https://cabforum.org/working-groups/code-signing/ballots/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballots"
+    }
+  ],
+  "SMC": [
+    {
+      "url": "https://cabforum.org/2026/01/10/ballot-smc-015v2/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Ben Wilson (Mozilla) and Scott Rea (eMudhra). \u2014",
+      "consumer_yes": [
+        "Apple",
+        "Microsoft",
+        "Mozilla",
+        "rundQuadrat"
+      ],
+      "title": "Ballot SMC015v2: Allow mDL for authentication of individual identity",
+      "id": "SMC-015"
+    },
+    {
+      "url": "https://cabforum.org/2025/08/15/ballot-smc-014/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Client Wilson (Apple) and Ashish Dhiman (GlobalSign). \u2014",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat\u2003*"
+      ],
+      "title": "Ballot SMC014: DNSSEC for CAA",
+      "id": "SMC-014"
+    },
+    {
+      "url": "https://cabforum.org/2025/07/02/ballot-smc-013/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Andreas Henschel (D-Trust) and Martijn Katerbarg (Sectigo). \u2014",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat"
+      ],
+      "title": "Ballot SMC013: Enable PQC Algorithms for S/MIME",
+      "id": "SMC-013"
+    },
+    {
+      "url": "https://cabforum.org/2025/05/19/ballot-smc-012/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Stefan Selbitschka (rundQuadrat) and Guillaume Amringer (Carillon). \u2014",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat"
+      ],
+      "title": "Ballot SMC012: Introduce ACME for S/MIME",
+      "id": "SMC-012"
+    },
+    {
+      "url": "https://cabforum.org/2025/03/31/ballot-smc011-add-euid-as-registration-reference/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Adrian Mueller (SwissSign) and Adriano Santoni (Actalis). \u2014",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat"
+      ],
+      "title": "Ballot SMC011 - Add EUID as Registration Reference",
+      "id": "SMC-011"
+    },
+    {
+      "url": "https://cabforum.org/2024/11/07/ballot-smc010-introduction-of-multi-perspective-issuance-corroboration/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Ashish Dhiman (GlobalSign) and Nicolas Lidzborski (Google). \u2014",
+      "consumer_yes": [
+        "Apple",
+        "Google",
+        "Mozilla",
+        "rundQuadrat"
+      ],
+      "title": "Ballot SMC010 - Introduction of Multi-Perspective Issuance Corroboration",
+      "id": "SMC-010"
+    },
+    {
+      "url": "https://cabforum.org/2024/10/09/ballot-smc09-pre-linting-webtrust-for-netsec-and-minor-updates/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Clint Wilson (Apple) and Martijn Katerbarg (Sectigo). \u2014",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC09 Pre-Linting, WebTrust for NetSec, and Minor Updates",
+      "id": "SMC-009"
+    },
+    {
+      "url": "https://cabforum.org/2024/07/15/ballot-smc08-deprecate-legacy-generation-profiles-and-minor-updates/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "Clint Wilson (Apple) and Martijn Katerbarg (Sectigo). \u2014",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC08: Deprecate Legacy Generation Profiles and Minor Updates",
+      "id": "SMC-008"
+    },
+    {
+      "url": "https://cabforum.org/2024/05/24/ballot-smc07-align-logging-requirement-and-key-escrow-clarification/",
+      "proposer": "Martijn Katerbarg (Sectigo)",
+      "endorsers_raw": "Stephen Davidson (DigiCert) and Tom Zermeno (SSL.com). \u2014",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC07: Align Logging Requirement and Key Escrow clarification",
+      "id": "SMC-007"
+    },
+    {
+      "url": "https://cabforum.org/2024/03/26/ballot-smc06-post-implementation-clarification-and-corrections/",
+      "proposer": "Stephen Davidson of DigiCert",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Roman Fischer of SwissSign.",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC06: Post implementation clarification and corrections",
+      "id": "SMC-006"
+    },
+    {
+      "url": "https://cabforum.org/2024/01/08/ballot-smc05-adoption-of-caa-for-s-mime/",
+      "proposer": "Corey Bonnell of DigiCert",
+      "endorsers_raw": "Dimitris Zacharopoulos of HARICA and Ben Wilson of Mozilla.",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN100% of voting Certificate Consumers voted in favor"
+      ],
+      "title": "Ballot SMC05: Adoption of CAA for S/MIME",
+      "id": "SMC-005"
+    },
+    {
+      "url": "https://cabforum.org/2023/12/08/ballot-smc04-addition-of-etsi-ts-119-411-6-to-audit-standards/",
+      "proposer": "Stephen Davidson of DigiCert",
+      "endorsers_raw": "Dimitris Zacharopoulos of HARICA and Paul van Brouwershaven of Entrust.",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC04: Addition of ETSI TS 119 411-6 to audit standards",
+      "id": "SMC-004"
+    },
+    {
+      "url": "https://cabforum.org/2023/07/11/ballot-smc03-corrections-and-clarifications-for-s/mime-baseline-requirements/",
+      "proposer": "Stephen Davidson of DigiCert",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Christophe Bonjean of GlobalSign.",
+      "consumer_yes": [
+        "Mozilla",
+        "rundQuadrat0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC03: Corrections and clarifications for \u201cS/MIME Baseline Requirements\u201d",
+      "id": "SMC-003"
+    },
+    {
+      "url": "https://cabforum.org/2023/01/01/ballot-smc01-adopt-s/mime-baseline-requirements-v1.0.0/",
+      "proposer": "Stephen Davidson of DigiCert",
+      "endorsers_raw": "Martijn Katerbarg of Sectigo and Ben Wilson of Mozilla.",
+      "consumer_yes": [
+        "Apple",
+        "Mozilla",
+        "rundQuadrat",
+        "Zertificon0 Consumers voting NO0 Consumers ABSTAIN"
+      ],
+      "title": "Ballot SMC01 \u2013 Adopt S/MIME Baseline Requirements v1.0.0",
+      "id": "SMC-001"
+    },
+    {
+      "url": "https://cabforum.org/2022/10/22/ballot-smc02-confirmation-ballot-for-vice-chair/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot SMC02 - Confirmation Ballot for Vice Chair",
+      "id": "SMC-002"
+    },
+    {
+      "url": "https://cabforum.org/2020/06/15/ballot-forum-14-creation-of-s/mime-certificates-working-group-v2/",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Wayne Thayer of Mozilla and Clint Wilson of Apple. Ballot Forum-14: Creation of S/MIME Certificates Working Group Purpose of the Ballot The CA/Browser Forum underwent a two-year long governance reform exercise, modifying the Bylaws to allow the creation of working groups that covered topics other th",
+      "title": "Ballot Forum-14 \u2013 Creation of S/MIME Certificates Working Group v2"
+    },
+    {
+      "url": "https://cabforum.org/2020/02/12/ballot-forum-11-creation-of-s/mime-certificates-working-group/",
+      "proposer": "Tim Hollebeek of DigiCert",
+      "endorsers_raw": "Wayne Thayer of Mozilla and Adriano Santoni of Actalis. Ballot Forum-11: Creation of S/MIME Certificates Working Group Purpose of the Ballot The CA/Browser Forum recently underwent a two-year long governance reform exercise, modifying the Bylaws to allow the creation of working groups that covered t",
+      "title": "Ballot FORUM-11: Creation of S/MIME Certificates Working Group"
+    },
+    {
+      "url": "https://cabforum.org/working-groups/smime/ballots/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballots"
+    }
+  ],
+  "NS": [
+    {
+      "url": "https://cabforum.org/2025/06/03/ballot-ns-008/",
+      "proposer": "Clint Wilson (Apple)",
+      "endorsers_raw": "Ben Wilson (Mozilla), Cade Cairns (Google Trust Services), and Daniel Jeffery (Fastly). Overview Definition Changes Added Definitions Network Boundary Control: New definition for components that manage network traffic flow; replaces \u201cNetwork Equipment\u201d Principle of Separation of Duties: Added defini",
+      "title": "Ballot NS-008v3: Updates to CA Infrastructure Scope, Trusted Roles, Systems Applicability, and various other improvements",
+      "id": "NS-008"
+    },
+    {
+      "url": "https://cabforum.org/2025/03/11/ballot-ns-007/",
+      "proposer": "Daniel Jeffery of Fastly/Certainly",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Dustin Hollenback of Microsoft. Purpose of Ballot NS-007 extends the deadline to implement the changes since NSRv1.7. Relation to Ballot NS-003 through NS-006 Ballots NS-003 through NS-006 are a restructuring and refining of the NSR. Ballot NS-007 extends their impl",
+      "title": "Ballot NS-007: Extend deadline to implement NSRv2",
+      "id": "NS-007"
+    },
+    {
+      "url": "https://cabforum.org/2024/12/16/ballot-ns-006/",
+      "proposer": "Daniel Jeffery of Fastly/Certainly",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Clint Wilson of Apple. Purpose of Ballot NS-006 is intended to refine changes in NS-005 as identified during the 2024-10 face to face meeting regarding TLS connections to and within CA infrastructure. Reasons for Proposal Changes made in NS-003 clarified and altered",
+      "title": "Ballot NS-006: Fix 1.2.2 encrypted connections scoping",
+      "id": "NS-006"
+    },
+    {
+      "url": "https://cabforum.org/2024/11/11/ballot-ns-005/",
+      "proposer": "Daniel Jeffery of Fastly/Certainly",
+      "endorsers_raw": "Miguel Sanchez of Google Trust Services and Antti Backman of Telia. Purpose of Ballot NS-005 is intended to address unintended, unclear or problematic expectations that were introduced or highlighted by the changes in NS-003. Reasons for Proposal Changes made in NS-003 altered the application of cer",
+      "title": "Ballot NS-005 \"Clarifications to sections 1, 2 and a definition prior to NS-003 taking effect\"",
+      "id": "NS-005"
+    },
+    {
+      "url": "https://cabforum.org/2024/04/09/ballot-ns-003/",
+      "proposer": "Clint Wilson of Apple",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and David Kluge of Google Trust Services. Purpose of Ballot This ballot proposes a comprehensive restructuring of the Network and Certificate System Security Requirements (NCSSRs), excepting Section 4. The current structure of the document has proven to be challenging f",
+      "title": "Ballot NS-003: Restructure the NCSSRs",
+      "id": "NS-003"
+    },
+    {
+      "url": "https://cabforum.org/2024/04/09/ballot-ns-004/",
+      "proposer": "David Kluge of Google Trust Services",
+      "endorsers_raw": "Clint Wilson of Apple and Trevoli Ponds-White of Amazon. Purpose of Ballot Section 4 of the Network and Certificate System Security Requirements (NCSSRs) requires CAs to perform a number of vulnerability management practices focusing on patching, vulnerability scans and penetration tests. This Ballo",
+      "title": "Ballot NS-004: \"Updating Section 4 - Vulnerability Management - of the NCSSRs\"",
+      "id": "NS-004"
+    },
+    {
+      "url": "https://cabforum.org/2022/03/01/ballot-sc051-reduce-and-clarify-audit-log-and-records-archival-retention-requirements/",
+      "proposer": "Clint Wilson of Apple",
+      "endorsers_raw": "Trevoli Ponds-White of Amazon and Dustin Hollenback of Microsoft. -\u2013",
+      "title": "Ballot SC051: Reduce and Clarify Audit Log and Records Archival Retention Requirements"
+    },
+    {
+      "url": "https://cabforum.org/2022/02/08/ballot-ns-001-adopt-network-and-certificate-system-security-requirements/",
+      "proposer": "Clint Wilson of Apple",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Ben Wilson of Mozilla. -\u2013",
+      "title": "Ballot NS-001: Adopt Network and Certificate System Security Requirements",
+      "id": "NS-001"
+    },
+    {
+      "url": "https://cabforum.org/2021/12/28/ballot-forum-17-creation-of-network-security-working-group/",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and David Kluge of Google. The Voting Period for Ballot FORUM-17 begins today at 19:00 UTC and ends on 23-Dec-2021 at 19:00 UTC. Overview In January 2013 the CA/Browser Forum\u2019s \u201cNetwork and Certificate System Security Requirements\u201d (NCSSRs) became effective. In June 2017, t",
+      "title": "Ballot Forum-17 \u2013 Creation of Network Security Working Group"
+    },
+    {
+      "url": "https://cabforum.org/2021/02/09/ballot-sc040-security-requirements-for-air-gapped-ca-systems/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "endorsers_raw": "David Kluge of Google Trust Services and Neil Dunbar of TrustCor.",
+      "title": "Ballot SC040: Security Requirements for Air-Gapped CA Systems"
+    },
+    {
+      "url": "https://cabforum.org/2020/12/16/ballot-sc038-alignment-of-record-archival/",
+      "proposer": "Neil Dunbar of TrustCor Systems",
+      "endorsers_raw": "David Kluge of Google Trust Services and Ben Wilson of Mozilla. Purpose of Ballot: After the updated language included in SC28 Sections 5.4.3 and 5.5.2 (of the BRs) could be in conflict. Section 5.5.2 requires all documentation relating to certificate requests and the verification thereof, and all C",
+      "title": "Ballot SC038: Alignment of Record Archival"
+    },
+    {
+      "url": "https://cabforum.org/2020/10/04/ballot-sc034-account-management/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot SC034: Account Management"
+    },
+    {
+      "url": "https://cabforum.org/2020/07/23/ballot-sc032-ncssrs-zones/",
+      "proposer": "Ben Wilson of Mozilla",
+      "endorsers_raw": "Trev Ponds-White of Amazon and Neil Dunbar of TrustCor Systems.",
+      "title": "Ballot SC032: NCSSRs Zones"
+    },
+    {
+      "url": "https://cabforum.org/2020/03/23/ballot-sc020-system-configuration-management/",
+      "proposer": "Neil Dunbar of Google Trust Services",
+      "endorsers_raw": "Tobias Josefowitz of OPERA and Dustin Hollenback of Microsoft.",
+      "title": "Ballot SC020: System Configuration Management"
+    },
+    {
+      "url": "https://cabforum.org/2018/10/04/ballot-sc010-establishing-the-network-security-subcommittee-of-the-scwg/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Tim Hollebeek of DigiCert and Wayne Thayer of Mozilla.",
+      "title": "Ballot SC010: Establishing the Network Security Subcommittee of the SCWG"
+    },
+    {
+      "url": "https://cabforum.org/2017/08/31/ballot-210-misc.-changes-to-the-ncssr/",
+      "proposer": "Dimitris Zacharopoulos of HARICA",
+      "endorsers_raw": "Ben Wilson of DigiCert and Neil Dunbar of TrustCor. \u2013",
+      "title": "Ballot 210 \u2013 Misc. Changes to the NCSSR"
+    },
+    {
+      "url": "https://cabforum.org/2017/06/19/ballot-203-formation-of-network-security-working-group/",
+      "proposer": "Gervase Markham of Mozilla",
+      "endorsers_raw": "Jeremy Rowley of DigiCert and Moudrick Dadashov of SSC:",
+      "title": "Ballot 203 \u2013 Formation of Network Security Working Group"
+    },
+    {
+      "url": "https://cabforum.org/2015/11/15/ballot-155-convert-network-and-certificate-system-security-requirements-to-rfc-3647-framework-and-github/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot 155 \u2013 Convert Network and Certificate System Security Requirements to RFC 3647 Framework and GitHub"
+    },
+    {
+      "url": "https://cabforum.org/2012/06/12/ballot-76-public-review-of-network-security-controls/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballot 76 \u2013 Public Review of Network Security Controls"
+    },
+    {
+      "url": "https://cabforum.org/working-groups/netsec/ballots/",
+      "proposer": "Stephen Davidson (DigiCert)",
+      "title": "Ballots"
+    }
+  ]
+}

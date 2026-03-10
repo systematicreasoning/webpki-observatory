@@ -1,0 +1,99 @@
+{
+  "ca_owner": "SI-TRUST",
+  "country": "Slovenia",
+  "root_count": 3,
+  "intermediates_count": 5,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "SI-TRUST Root",
+      "sha256": "FAD540811AFAE0DC767CDF6572A088FA3CE8493DD82B3B869A67D10AAB4E8124",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2016.04.25",
+      "valid_to": "2037.12.25",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "sigen-ca",
+      "sha256": "12D480C1A3C664781B99D9DF0E9FAF3F1CACEE1B3C30C3123A337A4A454FFED2",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2001.06.29",
+      "valid_to": "2021.06.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "sigov-ca",
+      "sha256": "74CB3A4EA791AFB0A2D1A0B13301B3BEE0E50AD5C79A1A6F2C663E6F4EE7A484",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2001.01.10",
+      "valid_to": "2021.01.10",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "SI-PASS-CA",
+      "sha256": "B3943BD0C0FFB4B41CD9E1ADE986ABE3358312D6AA6C5DD245BB7B0D63A5F851",
+      "parent_name": "SI-TRUST Root",
+      "valid_from": "2016.06.10",
+      "valid_to": "2036.05.30",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "SIGEN-CA G2",
+      "sha256": "795015CAACA74715D341120D3F0EFD192A032F1C00391797F54EF9980804A175",
+      "parent_name": "SI-TRUST Root",
+      "valid_from": "2016.05.24",
+      "valid_to": "2036.04.23",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "SIGOV-CA",
+      "sha256": "986373DDA59FD09384B0A47C8E3155AB7424ECDA5DD82DB2E2A43FBD7591434E",
+      "parent_name": "SI-TRUST Root",
+      "valid_from": "2016.05.24",
+      "valid_to": "2035.12.22",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "si-trust"
+}

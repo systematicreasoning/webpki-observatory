@@ -1,0 +1,78 @@
+---
+title: Pipeline Data Flow
+---
+graph LR
+    subgraph Sources["Public Data Sources"]
+        CRT["crt.sh<br/>CT Log Aggregator"]
+        CCADB["CCADB<br/>Root Store Metadata"]
+        BZ["Bugzilla<br/>CA Compliance Bugs"]
+        SC["StatCounter<br/>Browser Market Share"]
+        KL["keylength.com<br/>Crypto Standards"]
+        CBF["cabforum.org<br/>Ballot Records"]
+        MSCTL["learn.microsoft.com<br/>CTL Deployment Notices"]
+        CRSRC["chromium.googlesource.com<br/>root_store.textproto"]
+        APPL["support.apple.com<br/>Trust Store Pages"]
+    end
+
+    subgraph Pipeline["Pipeline (Python, daily CI)"]
+        FJ["fetch_and_join.py"]
+        FI["fetch_incidents.py"]
+        FR["fetch_root_algo.py"]
+        FB["fetch_browser_share.py"]
+        FRPE["fetch_rpe.py<br/>7-phase: bugs → comments → enforcement →<br/>posture → policy → gaps → velocity"]
+        FMCTL["fetch_microsoft_ctl.py"]
+        FCRS["fetch_chrome_root_store.py"]
+        FSNAP["fetch_trust_snapshots.py"]
+    end
+
+    subgraph Enrichments["Manual Curation"]
+        GOV["gov_classifications.json<br/>25 government CA ties"]
+        NM["name_mappings.json<br/>crt.sh ↔ CCADB names"]
+        JR["jurisdiction_risk.json<br/>15 countries' laws"]
+        DD["distrusted.json<br/>16 distrust events<br/>(single source of truth)"]
+        BALLOT["cabforum_ballots.json<br/>Ballot cache (SC/CSC/SMC/NS)"]
+    end
+
+    subgraph Data["Pipeline Output (data/)"]
+        MS["market_share.json<br/>248 CAs ranked"]
+        IX["intersections.json<br/>Store overlap matrix"]
+        GEO["geography.json<br/>Regional distribution"]
+        GR["gov_risk.json<br/>Government classifications"]
+        INC["incidents.json<br/>1,424 incidents"]
+        RA["root_algorithms.json<br/>335 roots"]
+        BC["browser_coverage.json<br/>Browser → root program"]
+        CA["ca/*.json<br/>Per-CA detail files"]
+        RPE["root_program_effectiveness.json<br/>Governance risk (7-phase)"]
+        MCTLJ["microsoft_ctl_changelog.json<br/>698 trust store actions"]
+        CRSJ["chrome_root_store_changelog.json<br/>24 root store changes"]
+        SNAP["snapshots/YYYY-MM-DD.json<br/>Daily trust store state"]
+    end
+
+    CRT --> FJ
+    CCADB --> FJ
+    CCADB --> FR
+    CCADB --> FSNAP
+    BZ --> FI
+    BZ --> FRPE
+    SC --> FB
+    KL --> FR
+    CBF --> FRPE
+    MSCTL --> FMCTL
+    CRSRC --> FCRS
+    GOV --> FJ
+    NM --> FJ
+    DD --> FRPE
+    BALLOT --> FRPE
+
+    FJ --> MS
+    FJ --> IX
+    FJ --> GEO
+    FJ --> GR
+    FJ --> CA
+    FI --> INC
+    FR --> RA
+    FB --> BC
+    FRPE --> RPE
+    FMCTL --> MCTLJ
+    FCRS --> CRSJ
+    FSNAP --> SNAP

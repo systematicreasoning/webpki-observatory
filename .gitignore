@@ -1,0 +1,18 @@
+# Dependencies
+app/node_modules/
+
+# Build output
+app/dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+pipeline/pem_cache.json

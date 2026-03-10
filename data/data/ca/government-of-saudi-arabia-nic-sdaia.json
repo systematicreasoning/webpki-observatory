@@ -1,0 +1,81 @@
+{
+  "ca_owner": "Government of Saudi Arabia, NIC (SDAIA)",
+  "country": "Saudi Arabia",
+  "root_count": 1,
+  "intermediates_count": 12,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Saudi National Root CA",
+      "sha256": "34BB34E14FAED0D3392F2FC441C0ECD5FD88AD88118DF2D1BA76CDEC1EEA10B8",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2012.04.29",
+      "valid_to": "2029.11.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "BTC Licensed CA",
+      "sha256": "B0D83188C15A95BE4B825EA417B12CED6239F8BD53219047CE89081255F301CC",
+      "parent_name": "Saudi National Root CA",
+      "valid_from": "2019.12.16",
+      "valid_to": "2029.11.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Government CA 2",
+      "sha256": "30A4905B92A22AC43DDB92D35056C57E5B5279A12A327146C1C4BFA5C7D8502F",
+      "parent_name": "Saudi National Root CA",
+      "valid_from": "2022.04.14",
+      "valid_to": "2029.10.28",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "STCS Intermediary CA",
+      "sha256": "EB5C74FD2D93F6E51D928C763F2AF7BF55368BC185B7B9091A8B4185D48CD4C6",
+      "parent_name": "Saudi National Root CA",
+      "valid_from": "2020.01.07",
+      "valid_to": "2029.11.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Tamkeen Intermediate CA G1",
+      "sha256": "8326D3FD8FB1E6D2BC997A2CDC3229D98D81801645AB6A0B4B2134DF451FA09C",
+      "parent_name": "Saudi National Root CA",
+      "valid_from": "2026.01.13",
+      "valid_to": "2029.11.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-saudi-arabia-nic-sdaia"
+}

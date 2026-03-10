@@ -1,0 +1,62 @@
+{
+  "ca_owner": "Government of Sweden (F\u00f6rs\u00e4kringskassan)",
+  "country": "Sweden",
+  "root_count": 3,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Swedish Government Root Authority v1",
+      "sha256": "F657A633EEB9BC5D15A461751749EA4B316727DCF1A9F986B5458445F6485DDE",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2010.04.14",
+      "valid_to": "2030.04.14",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Swedish Government Root Authority v2",
+      "sha256": "9CEFB0CB7B74E642932532831E0DC8F4D68AD414261FC3F474B795E72A164E57",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.05.05",
+      "valid_to": "2040.05.05",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Swedish Government Root Authority v3",
+      "sha256": "8F9ADB6D895DAB5ADF5C3D3FAB83927BE0FB64EF82485C62280D584E8BD55D22",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2015.09.29",
+      "valid_to": "2040.09.29",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [],
+  "slug": "government-of-sweden-f-rs-kringskassan"
+}

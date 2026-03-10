@@ -1,0 +1,33 @@
+{
+  "ca_owner": "Image-X Enterprises Inc",
+  "country": "United States of America",
+  "root_count": 1,
+  "intermediates_count": 0,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "esignit.org",
+      "sha256": "C665175BD60ED70A5EEA3344CBE5D1A6936F79BC27A8384E4C734200417C279F",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.06.20",
+      "valid_to": "2030.06.20",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFLjCCAxagAwIBAgIQNgEiBHAkH6lLUWKp42Ob1DANBgkqhkiG9w0BAQ0FADAW\nMRQwEgYDVQQDEwtlc2lnbml0Lm9yZzAeFw0xNDA2MjAxODM3NTRaFw0zMDA2MjAx\nODQ3NDZaMBYxFDASBgNVBAMTC2VzaWduaXQub3JnMIICIjANBgkqhkiG9w0BAQEF\nAAOCAg8AMIICCgKCAgEAtylZx/zTLxRDsok14XO0Z3PvWMIY4HWro0YLgCF8dYv3\ntUaNkmN3ghlQvY8UcByH2LMOBGiQAcMHxgEJ53cnWRyc2DjoGhkDkiPdS2JttNEB\n0B/XTaGvaHwJh2CSgIBbpZpWTaqGywbe7AgJQ81L8h7tZ4E6W8ZM0vt4mnzqkPBT\n+BmyjTXG/McGhYTQAsmdsYZDBAdB2Y4X1/RAyL0e9MHdSboRofhg+8d5MeC0VEIg\nHXU/R4f4wz/pSw0FI9xxWJR3UUK/qOWqNsVYZfmCu6+ksDQtezxSTAuymoL094Dw\nn+hnXb8RS6dEbIQ+b0bIHxxpypcxH7rBMIpQcbZ8JSqNVDZPI9QahKNPQMQiuBE6\n6KlqbnLOj7lGBxsbpU2Dx8QL8W96op6dTGtniFyXqhuYN2UxDMNI+fb1j9G7ENpo\nqvTVfjxa4RUU6uZ9ZygOiiOZD4P54vEQFteiu4OM+mWOm5Vll9yPXqHPc5oiCfyv\nCNVzfapqPoGbaCM6oQtcHdAca9VpE2eDTo36zfdFo31YYBOEjWNsfXwp8frNduS/\nL6gmWYrd91HeEoOVX2ZQKqBLp5ydW72xDSeCIr5kugqdY6whW80ugjLlc9mDd8/L\nEGQQKnrxzeeWdjiQG/WwcOse9GRktOzH2gvmkJ+vY82z1jhrZP4REoA6T+aYGR8C\nAwEAAaN4MHYwCwYDVR0PBAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYE\nFPOGsFKraD+/FoPAUXSf77qYfZHRMBIGCSsGAQQBgjcVAQQFAgMBAAEwIwYJKwYB\nBAGCNxUCBBYEFEq/BT//OC3eNeJ4wEfNqJXdZRNpMA0GCSqGSIb3DQEBDQUAA4IC\nAQBEvh2kzI+1uoUx/emM654QvpM6WtgQSJMubKwKeBY5UNgwwNpwmtswiEKzdZwB\niGb1xEehPrAKz0d7aiIIEOonYEohIV6szl0+F56nN16813n1lPsCjdLSA8fjgf28\njvlTKcrLRqeyCn4APadh6g7/FRiGcmIxEFPf/VNTUBZ7l4e2zzb06PxCq8oDaOsb\nAVYXQz8A0KX50KURZrdC2knUg1HX0J/orVpdaQ9UZYVNp2WAbe9vYTCCF5FdtzNU\n+nJDojpDxF5guMe9bifL3YTvd87YQwsH7+o+UbtHX4lG8VsSfmvvJulNBY6RtzZE\npZvyRWIvQahM9qTrzFpsxl4wyPSBDPLDZ6YvVWsXvU4PqLOWTbPdq4BB24P9kFxe\nYjEe/rDQ8bd1/V/OFZTEM0rxdZDDN9vWnybzl8xL5VmNLDGl1u6JrOVvCzVAWP++\nL9l5UTusQI/BPSMebz6msd8vhTluD4jQIba1/6zOwfBraFgCIktCT3GEIiyt59x3\nrdSirLyjzmeQA9NkwoG/GqlFlSdWmQCK/sCL+z050rqjL0kEwIl/D6ncCXfBvhCp\nCmcrIlZFruyeOlsISZ410T1w/pLK8OXhbCr13Gb7A5jhv1nn811cQaR7XUXhcn6W\nq/VV/oQZLunBYvoYOs3dc8wpBabPrrRhkdNmN6Rib6TvMg==\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [],
+  "slug": "image-x-enterprises-inc"
+}

@@ -1,0 +1,87 @@
+{
+  "ca_owner": "Government of Japan, Digital Agency",
+  "country": "Japan",
+  "root_count": 3,
+  "intermediates_count": 3,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ApplicationCA",
+      "sha256": "2D47437DE17951215A12F3C58E51C729A58026EF1FCC0A5FB3D9DC012F600D19",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.12.12",
+      "valid_to": "2017.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "ApplicationCA2 Root",
+      "sha256": "126BF01C1094D2F0CA2E352380B3C724294546CCC65597BEF7F12D8A171F1984",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.03.12",
+      "valid_to": "2033.03.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Japanese Government Root CA",
+      "sha256": "D7A5514D93F7D53BD27DE2051F8E1FF71CA0AC78FACFE46A8BCCA4589984AE64",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.12.12",
+      "valid_to": "2048.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "OfficialStatus Sub CA",
+      "sha256": "FAD90EB633099ECF2BF227D0E4A71CD95773E68B21B6F436508D425B39901275",
+      "parent_name": "Japanese Government Root CA",
+      "valid_from": "2023.12.12",
+      "valid_to": "2038.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Organization Sub CA",
+      "sha256": "DABBB7DD7C1186D9CF677B559C29DE50FA3DDA252BFB6B134A95659444A01458",
+      "parent_name": "Japanese Government Root CA",
+      "valid_from": "2024.07.16",
+      "valid_to": "2039.07.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "government-of-japan-digital-agency"
+}

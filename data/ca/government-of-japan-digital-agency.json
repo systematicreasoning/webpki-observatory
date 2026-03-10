@@ -1,0 +1,92 @@
+{
+  "ca_owner": "Government of Japan, Digital Agency",
+  "country": "Japan",
+  "root_count": 3,
+  "intermediates_count": 2,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "ApplicationCA",
+      "sha256": "2D47437DE17951215A12F3C58E51C729A58026EF1FCC0A5FB3D9DC012F600D19",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.12.12",
+      "valid_to": "2017.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDoDCCAoigAwIBAgIBMTANBgkqhkiG9w0BAQUFADBDMQswCQYDVQQGEwJKUDEc\nMBoGA1UEChMTSmFwYW5lc2UgR292ZXJubWVudDEWMBQGA1UECxMNQXBwbGljYXRp\nb25DQTAeFw0wNzEyMTIxNTAwMDBaFw0xNzEyMTIxNTAwMDBaMEMxCzAJBgNVBAYT\nAkpQMRwwGgYDVQQKExNKYXBhbmVzZSBHb3Zlcm5tZW50MRYwFAYDVQQLEw1BcHBs\naWNhdGlvbkNBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp23gdE6H\nj6UG3mii24aZS2QNcfAKBZuOquHMLtJqO8F6tJdhjYq+xpqcBrSGUeQ3DnR4fl+K\nf5Sk10cI/VBaVuRorChzoHvpfxiSQE8tnfWuREhzNgaeZCw7NCPbXCbkcXmP1G55\nIrmTwcrNwVbtiGrXoDkhBFcsovW8R0FPXjQilbUfKW1eSvNNcr5BViCH/OlQR9cw\nFO5cjFW6WY2H/CPek9AEjP3vbb3QesmlOmpyM8ZKDQUXKi17safY1vC+9D/qDiht\nQWEjdnjDuGWk81quzMKq2edY3rZ+nYVunyoKb58DKTCXKB28t89UKU5RMfkntigm\n/qJj5kEW8DOYRwIDAQABo4GeMIGbMB0GA1UdDgQWBBRUWssmP3HMlEYNllPqa0jQ\nk/5CdTAOBgNVHQ8BAf8EBAMCAQYwWQYDVR0RBFIwUKROMEwxCzAJBgNVBAYTAkpQ\nMRgwFgYDVQQKDA/ml6XmnKzlm73mlL/lupwxIzAhBgNVBAsMGuOCouODl+ODquOC\nseODvOOCt+ODp+ODs0NBMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEFBQAD\nggEBADlqRHZ3ODrso2dGD/mLBqj7apAxzn7s2tGJfHrrLgy9mTLnsCTWw//1sogJ\nhyzjVOGjprIIC8CFqMjSnHH2HZ9g/DgzE+Ge3Atf2hZQKXsvcJEPmbo0NI2VdMV+\neKlmXb3KIXdCEKxmJj3ekav9FfBv7WxfEPjzFvYDio+nEhEMy/0/ecGc/WLuo89U\nDNErXxc+4z6/wCs+CZv+iKZ+tJIX/COUgb1up8WMwusRRdv4QcmWdupwX3kSa+Sj\nB1oF7ydJzyGfikwJcGapJsErEU4z0g781mzSDjJkaP+tBXhfAx2o45CsJOAPQKdL\nrosot4LKGAfmt1t06SAZf7IbiVQ=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "ApplicationCA2 Root",
+      "sha256": "126BF01C1094D2F0CA2E352380B3C724294546CCC65597BEF7F12D8A171F1984",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2013.03.12",
+      "valid_to": "2033.03.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIID9zCCAt+gAwIBAgILMTI1MzcyODI4MjgwDQYJKoZIhvcNAQELBQAwWDELMAkG\nA1UEBhMCSlAxHDAaBgNVBAoTE0phcGFuZXNlIEdvdmVybm1lbnQxDTALBgNVBAsT\nBEdQS0kxHDAaBgNVBAMTE0FwcGxpY2F0aW9uQ0EyIFJvb3QwHhcNMTMwMzEyMTUw\nMDAwWhcNMzMwMzEyMTUwMDAwWjBYMQswCQYDVQQGEwJKUDEcMBoGA1UEChMTSmFw\nYW5lc2UgR292ZXJubWVudDENMAsGA1UECxMER1BLSTEcMBoGA1UEAxMTQXBwbGlj\nYXRpb25DQTIgUm9vdDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKaq\nrSVl1gAR1uh6dqr05rRL88zDUrSNrKZPtZJxb0a11a2LEiIXJc5F6BR6hZrkIxCo\n+rFnUOVtR+BqiRPjrq418fRCxQX3TZd+PCj8sCaRHoweOBqW3FhEl2LjMsjRFUFN\ndZh4vqtoqV7tR76kuo6hApfek3SZbWe0BSXulMjtqqS6MmxCEeu+yxcGkOGThchk\nKM4fR8fAXWDudjbcMztR63vPctgPeKgZggiQPhqYjY60zxU2pm7dt+JNQCBT2XYq\n0HisifBPizJtROouurCp64ndt295D6uBbrjmiykLWa+2SQ1RLKn9nShjZrhwlXOa\n2Po7M7xCQhsyrLEy+z0CAwEAAaOBwTCBvjAdBgNVHQ4EFgQUVqesqgIdsqw9kA6g\nby5Bxnbne9owDgYDVR0PAQH/BAQDAgEGMHwGA1UdEQR1MHOkcTBvMQswCQYDVQQG\nEwJKUDEYMBYGA1UECgwP5pel5pys5Zu95pS/5bqcMRswGQYDVQQLDBLmlL/lupzo\nqo3oqLzln7rnm6QxKTAnBgNVBAMMIOOCouODl+ODquOCseODvOOCt+ODp+ODs0NB\nMiBSb290MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAH+aCXWs\nB9FydC53VzDCBJzUgKaD56WgG5/+q/OAvdVKo6GPtkxgEefK4WCB10jBIFmlYTKL\nnZ6X02aD2mUuWD7b5S+lzYxzplG+WCigeVxpL0PfY7KJR8q73rk0EWOgDiUX5Yf0\nHbCwpc9BqHTG6FPVQvSCLVMJEWgmcZR1E02qdog8dLHW40xPYsNJTE5t8XB+w3+m\nBcx4m+mB26jIx1ye/JKSLaaX8ji1bnOVDMA/zqaUMLX6BbfeniCq/BNkyYq6ZO/i\nY+TYmK5rtT6mVbgzPixy+ywRAPtbFi+E0hOe+gXFwctyTiLdhMpLvNIthhoEdlkf\nSUJiOxMfFui61/0=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Japanese Government Root CA",
+      "sha256": "D7A5514D93F7D53BD27DE2051F8E1FF71CA0AC78FACFE46A8BCCA4589984AE64",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.12.12",
+      "valid_to": "2048.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIC9jCCAnygAwIBAgILMR7gjLokWDthmaowCgYIKoZIzj0EAwMwbzELMAkGA1UE\nBhMCSlAxHDAaBgNVBAoME0phcGFuZXNlIEdvdmVybm1lbnQxHDAaBgNVBGEME05U\nUkpQLTgwMDAwMTIwMTAwMzgxJDAiBgNVBAMMG0phcGFuZXNlIEdvdmVybm1lbnQg\nUm9vdCBDQTAeFw0yMzEyMTIxNTAwMDBaFw00ODEyMTIxNDU5NTlaMG8xCzAJBgNV\nBAYTAkpQMRwwGgYDVQQKDBNKYXBhbmVzZSBHb3Zlcm5tZW50MRwwGgYDVQRhDBNO\nVFJKUC04MDAwMDEyMDEwMDM4MSQwIgYDVQQDDBtKYXBhbmVzZSBHb3Zlcm5tZW50\nIFJvb3QgQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAARKFwD8PWzs/OaKkMe0DI4I\nR/KdwAcaiS8q4PCecJWDGi7ua8uomkAQ+2SHjd6bp3JUkg3Eov5vt663xWDssZ+j\nK9Sr4LS6nZC+sf3RymnWXQnEEY0zdWVykywhZ7+n58mjgeEwgd4wHQYDVR0OBBYE\nFHavmy6wEW9PHkMOgcDzn+0m+r7BMA4GA1UdDwEB/wQEAwIBBjB7BgNVHREEdDBy\npHAwbjELMAkGA1UEBhMCSlAxGDAWBgNVBAoMD+aXpeacrOWbveaUv+W6nDEcMBoG\nA1UEYQwTTlRSSlAtODAwMDAxMjAxMDAzODEnMCUGA1UEAwwe5pel5pys5pS/5bqc\n44Or44O844OI6KqN6Ki85bGAMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAU\ndq+bLrARb08eQw6BwPOf7Sb6vsEwCgYIKoZIzj0EAwMDaAAwZQIwE2HZqeROG0vv\nN5d4eZzAsFA1RZ4lpttVIz1QkVNtf5sev+4T8iDPHOL7Cv1sdtxXAjEAyinC/qI2\nqDeLryl+IAQHpiXvJoTvilngbIG6bXpBOpWUgx/BIN4FZ9FqZrpH64A7\n-----END CERTIFICATE-----"
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "OfficialStatus Sub CA",
+      "sha256": "FAD90EB633099ECF2BF227D0E4A71CD95773E68B21B6F436508D425B39901275",
+      "parent_name": "Japanese Government Root CA",
+      "valid_from": "2023.12.12",
+      "valid_to": "2038.12.12",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIEsTCCBDagAwIBAgILOLPG/Q0cWM/kypwwCgYIKoZIzj0EAwMwbzELMAkGA1UE\nBhMCSlAxHDAaBgNVBAoME0phcGFuZXNlIEdvdmVybm1lbnQxHDAaBgNVBGEME05U\nUkpQLTgwMDAwMTIwMTAwMzgxJDAiBgNVBAMMG0phcGFuZXNlIEdvdmVybm1lbnQg\nUm9vdCBDQTAeFw0yMzEyMTIxNTAwMDBaFw0zODEyMTIxNDU5NTlaMGkxCzAJBgNV\nBAYTAkpQMRwwGgYDVQQKDBNKYXBhbmVzZSBHb3Zlcm5tZW50MRwwGgYDVQRhDBNO\nVFJKUC04MDAwMDEyMDEwMDM4MR4wHAYDVQQDDBVPZmZpY2lhbFN0YXR1cyBTdWIg\nQ0EwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAAT1PiB45vle4upKHa+369lzTKWWIDuD\nXpIcJy53QDVB08FJm7mZWTjU+q06Tf6FB3IcGXqagTsTHzW5P7zh+rMnOzAyW7zg\ngB1TVVtllvn5VtpFE28TpfotJyFmjkky/ZijggKgMIICnDAfBgNVHSMEGDAWgBR2\nr5susBFvTx5DDoHA85/tJvq+wTAdBgNVHQ4EFgQUjnqpwzsxtpZyeFW0EFZq2oQ9\neLcwDgYDVR0PAQH/BAQDAgEGMBQGA1UdJQQNMAsGCSqGSIb3LwEBBTBUBgNVHSAE\nTTBLMEkGCwKDOIaPQggGAWVvMDowOAYIKwYBBQUHAgEWLGh0dHBzOi8vd3d3Lmdw\na2kuZ28uanAvamdjYS9jcGNwcy9pbmRleC5odG1sMHIGA1UdEQRrMGmkZzBlMQsw\nCQYDVQQGEwJKUDEYMBYGA1UECgwP5pel5pys5Zu95pS/5bqcMRwwGgYDVQRhDBNO\nVFJKUC04MDAwMDEyMDEwMDM4MR4wHAYDVQQDDBXlrpjogbfjgrXjg5boqo3oqLzl\nsYAwgdoGA1UdHwSB0jCBzzCBzKCByaCBxoYjaHR0cDovL2RpcjIuZ3BraS5nby5q\ncC9KR1Jvb3RDQS5jcmyGLGh0dHA6Ly9kaXIyLmdwa2kuaHEuYWRtaXguZ28uanAv\nSkdSb290Q0EuY3JspHEwbzELMAkGA1UEBhMCSlAxHDAaBgNVBAoME0phcGFuZXNl\nIEdvdmVybm1lbnQxHDAaBgNVBGEME05UUkpQLTgwMDAwMTIwMTAwMzgxJDAiBgNV\nBAMMG0phcGFuZXNlIEdvdmVybm1lbnQgUm9vdCBDQTASBgNVHRMBAf8ECDAGAQH/\nAgEAMHkGCCsGAQUFBwEBBG0wazAvBggrBgEFBQcwAoYjaHR0cDovL2RpcjIuZ3Br\naS5nby5qcC9KR1Jvb3RDQS5jcnQwOAYIKwYBBQUHMAKGLGh0dHA6Ly9kaXIyLmdw\na2kuaHEuYWRtaXguZ28uanAvSkdSb290Q0EuY3J0MAoGCCqGSM49BAMDA2kAMGYC\nMQCEFmXI+kZ8qX4O0GbddkKcO4qOKQdWK75WhV9fP63/whoBw+Yi803dapvvmuDt\nnZYCMQC00X4Di+GzJuslV6ETfOVbdnNNtaqdRvAIcrIO/XSACu9U7ENBnRo0doyf\nANmVPow=\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Organization Sub CA",
+      "sha256": "DABBB7DD7C1186D9CF677B559C29DE50FA3DDA252BFB6B134A95659444A01458",
+      "parent_name": "Japanese Government Root CA",
+      "valid_from": "2024.07.16",
+      "valid_to": "2039.07.16",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false,
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIErzCCBDWgAwIBAgIMMTnMUL0YAU1mdQ+JMAoGCCqGSM49BAMDMG8xCzAJBgNV\nBAYTAkpQMRwwGgYDVQQKDBNKYXBhbmVzZSBHb3Zlcm5tZW50MRwwGgYDVQRhDBNO\nVFJKUC04MDAwMDEyMDEwMDM4MSQwIgYDVQQDDBtKYXBhbmVzZSBHb3Zlcm5tZW50\nIFJvb3QgQ0EwHhcNMjQwNzE2MTUwMDAwWhcNMzkwNzE2MTQ1OTU5WjBnMQswCQYD\nVQQGEwJKUDEcMBoGA1UECgwTSmFwYW5lc2UgR292ZXJubWVudDEcMBoGA1UEYQwT\nTlRSSlAtODAwMDAxMjAxMDAzODEcMBoGA1UEAwwTT3JnYW5pemF0aW9uIFN1YiBD\nQTB2MBAGByqGSM49AgEGBSuBBAAiA2IABA8QibhfufkIgP0c0pfuMM6kz8/4GEMr\nKyShIcKgW36xDNSxjgcKvet+FyWMupgxyIBjrvXMDxIKpXiOOX/W3dqsA0MGw9yh\nH1rqBBC6Kzq2j0V7M/PU6clmGolJ+mTFLqOCAqAwggKcMB8GA1UdIwQYMBaAFHav\nmy6wEW9PHkMOgcDzn+0m+r7BMB0GA1UdDgQWBBQwPJFa9K3SQh/fskXZeIGt38G0\nRjAOBgNVHQ8BAf8EBAMCAQYwFAYDVR0lBA0wCwYJKoZIhvcvAQEFMFQGA1UdIARN\nMEswSQYLAoM4ho9CCAYBZXAwOjA4BggrBgEFBQcCARYsaHR0cHM6Ly93d3cuZ3Br\naS5nby5qcC9qZ2NhL2NwY3BzL2luZGV4Lmh0bWwwcgYDVR0RBGswaaRnMGUxCzAJ\nBgNVBAYTAkpQMRgwFgYDVQQKDA/ml6XmnKzlm73mlL/lupwxHDAaBgNVBGEME05U\nUkpQLTgwMDAwMTIwMTAwMzgxHjAcBgNVBAMMFee1hOe5lOOCteODluiqjeiovOWx\ngDCB2gYDVR0fBIHSMIHPMIHMoIHJoIHGhiNodHRwOi8vZGlyMi5ncGtpLmdvLmpw\nL0pHUm9vdENBLmNybIYsaHR0cDovL2RpcjIuZ3BraS5ocS5hZG1peC5nby5qcC9K\nR1Jvb3RDQS5jcmykcTBvMQswCQYDVQQGEwJKUDEcMBoGA1UECgwTSmFwYW5lc2Ug\nR292ZXJubWVudDEcMBoGA1UEYQwTTlRSSlAtODAwMDAxMjAxMDAzODEkMCIGA1UE\nAwwbSmFwYW5lc2UgR292ZXJubWVudCBSb290IENBMBIGA1UdEwEB/wQIMAYBAf8C\nAQAweQYIKwYBBQUHAQEEbTBrMC8GCCsGAQUFBzAChiNodHRwOi8vZGlyMi5ncGtp\nLmdvLmpwL0pHUm9vdENBLmNydDA4BggrBgEFBQcwAoYsaHR0cDovL2RpcjIuZ3Br\naS5ocS5hZG1peC5nby5qcC9KR1Jvb3RDQS5jcnQwCgYIKoZIzj0EAwMDaAAwZQIw\nGL69alLMhWKCZ5zUWt2liwdCkRs+jast87wa6Ee5ga6sawd54Hssw6JaMp8AjXmo\nAjEA+MyaaELdiqRzeZ96kBrUkFwcftUT7/l52DKS4LbZt/Om/88/Oh2b5nojdS3q\nwyGs\n-----END CERTIFICATE-----"
+    }
+  ],
+  "slug": "government-of-japan-digital-agency"
+}

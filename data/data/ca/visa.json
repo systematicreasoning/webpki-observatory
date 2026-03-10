@@ -1,0 +1,129 @@
+{
+  "ca_owner": "Visa",
+  "country": "United States of America",
+  "root_count": 5,
+  "intermediates_count": 10,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "Visa eCommerce Root",
+      "sha256": "69FAC9BD55FB0AC78D53BBEE5CF1D597989FD0AAAB20A25151BDF1733EE7D122",
+      "mozilla_status": "Removed",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2002.06.26",
+      "valid_to": "2022.06.24",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Visa Information Delivery Root CA",
+      "sha256": "C57A3ACBE8C06BA1988A83485BF326F2448775379849DE01CA43571AF357E74B",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Removed",
+      "valid_from": "2005.06.27",
+      "valid_to": "2025.06.29",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Visa Public ECC Root CA",
+      "sha256": "E6BE68CE06FE0DA0C140F1AEB00B67B636C5EEA9422088929362375CE086DB39",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.03.16",
+      "valid_to": "2041.03.15",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Visa Public RSA Root CA",
+      "sha256": "07CD9AA9064A9B94C6AEF8FB784C1BBC1BEDA08ACBE86878D781A39167626CF8",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2021.03.16",
+      "valid_to": "2041.03.15",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "Visa TLS Root CA",
+      "sha256": "E6432FCE6B48F4E889B2FE183F8B480F72ECF80F57389B0E9C6E89CF04AD69D1",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2024.03.07",
+      "valid_to": "2034.03.06",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "Visa ECC 3DS Issuing CA - G2",
+      "sha256": "7FC2C2A789BB75E7B2ADF07687B8093B0A1C7B9E3421422C8547E1E82C537FCA",
+      "parent_name": "Visa Public ECC Root CA",
+      "valid_from": "2021.06.03",
+      "valid_to": "2041.03.11",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Visa eCommerce Issuing CA - G2",
+      "sha256": "873939DBB087F6E95D65D00305EE8B5124BA50697B4A06ACE22A58B51991F667",
+      "parent_name": "Visa Public RSA Root CA",
+      "valid_from": "2021.06.03",
+      "valid_to": "2041.03.11",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "Visa Services Issuing CA",
+      "sha256": "3031F0127C9ED7790588932F43AA125732476FDD033EE1196661A9F551392B03",
+      "parent_name": "Visa Public RSA Root CA",
+      "valid_from": "2024.03.06",
+      "valid_to": "2039.03.05",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "visa"
+}

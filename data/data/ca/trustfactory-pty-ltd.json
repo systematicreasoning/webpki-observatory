@@ -1,0 +1,60 @@
+{
+  "ca_owner": "TrustFactory(Pty)Ltd",
+  "country": "South Africa",
+  "root_count": 2,
+  "intermediates_count": 2,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "TrustFactory Client Root Certificate Authority",
+      "sha256": "92C4DB06C42A130D663574D7741B7F93C806FD6714DCE890E84B568FAE86E64C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2017.12.05",
+      "valid_to": "2047.11.28",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "TrustFactory SSL Root Certificate Authority",
+      "sha256": "608142DA5C675DD47C1AA3A26EE329E24E81D5FF3B94017BC1C1A0C37DB4C1A0",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2017.12.05",
+      "valid_to": "2047.11.28",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "TrustFactory Client Issuing Certificate Authority",
+      "sha256": "7D9FA2C0859081F78ABD735C497E795E540C5898D05EFAF15ABD465EA7D11293",
+      "parent_name": "TrustFactory Client Root Certificate Authority",
+      "valid_from": "2017.12.05",
+      "valid_to": "2032.12.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "trustfactory-pty-ltd"
+}

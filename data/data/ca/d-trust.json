@@ -1,0 +1,123 @@
+{
+  "ca_owner": "D-Trust",
+  "country": "Germany",
+  "root_count": 3,
+  "intermediates_count": 23,
+  "trusted_by": {
+    "mozilla": true,
+    "microsoft": true,
+    "chrome": true,
+    "apple": false
+  },
+  "trust_store_count": 3,
+  "roots": [
+    {
+      "name": "D-TRUST BR Root CA 2 2023",
+      "sha256": "0552E6F83FDF65E8FA9670E666DF28A4E21340B510CBE52566F97C4FB94B2BD1",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.05.09",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "D-TRUST EV Root CA 2 2023",
+      "sha256": "8E8221B2E7D4007836A1672F0DCC299C33BC07D316F132FA1A206D587150F1CE",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.05.09",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "D-TRUST Qualified Root CA 1 2007:PN",
+      "sha256": "E8C6AA6B5F58A8F2A6365CF98E65693563A38B7B2F32CF1BE06F2D2229D4BF59",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2007.06.08",
+      "valid_to": "2012.06.08",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "D-TRUST BR CA 2-23-1 2023",
+      "sha256": "D904A27FD2D271DCFE40A1F471033CE48A4B5E1484753DA66F7166D6EBDC06E6",
+      "parent_name": "D-TRUST BR Root CA 2 2023",
+      "valid_from": "2023.05.11",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "D-TRUST BR CA 2-23-2 2023",
+      "sha256": "6685871384605253C264F8D380A8D1DD50A6CA192788FF2D560CAFE541F807B8",
+      "parent_name": "D-TRUST BR Root CA 2 2023",
+      "valid_from": "2023.05.11",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "D-TRUST BR EV CA 2-23-3 2025",
+      "sha256": "CB2D2DB7CF95F0CA945EEB48570B763B2C7EED86532E2391E2E10A95C43F43AB",
+      "parent_name": "D-TRUST BR Root CA 2 2023",
+      "valid_from": "2025.10.02",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "D-TRUST EV CA 2-23-1 2023",
+      "sha256": "378CF8738654C8A8544812B1FF2632348225553DA80225692D0491C4A1EEAFB9",
+      "parent_name": "D-TRUST EV Root CA 2 2023",
+      "valid_from": "2023.05.11",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "D-TRUST EV CA 2-23-2 2023",
+      "sha256": "5FF9F5A1C0ED7401E1C529F6D50C4ABB00B17B593358BD2D61DC0DD887DDD92F",
+      "parent_name": "D-TRUST EV Root CA 2 2023",
+      "valid_from": "2023.05.11",
+      "valid_to": "2038.05.09",
+      "tls_capable": true,
+      "ev_capable": true,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "d-trust"
+}

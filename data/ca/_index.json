@@ -1,0 +1,625 @@
+[
+  {
+    "ca_owner": "A-Trust",
+    "slug": "a-trust",
+    "country": "Austria",
+    "trust_store_count": 1,
+    "root_count": 11
+  },
+  {
+    "ca_owner": "AC Camerfirma, S.A.",
+    "slug": "ac-camerfirma-s-a",
+    "country": "Spain",
+    "trust_store_count": 1,
+    "root_count": 7
+  },
+  {
+    "ca_owner": "Actalis",
+    "slug": "actalis",
+    "country": "Italy",
+    "trust_store_count": 4,
+    "root_count": 10
+  },
+  {
+    "ca_owner": "Agence Nationale de Certification Electronique",
+    "slug": "agence-nationale-de-certification-electronique",
+    "country": "Tunisia",
+    "trust_store_count": 3,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Agencia Notarial de Certificaci\u00f3n (ANCERT)",
+    "slug": "agencia-notarial-de-certificaci-n-ancert",
+    "country": "Spain",
+    "trust_store_count": 1,
+    "root_count": 7
+  },
+  {
+    "ca_owner": "Amazon Trust Services",
+    "slug": "amazon-trust-services",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 8
+  },
+  {
+    "ca_owner": "Asseco Data Systems S.A.",
+    "slug": "asseco-data-systems-s-a",
+    "country": "Polska",
+    "trust_store_count": 4,
+    "root_count": 14
+  },
+  {
+    "ca_owner": "Autoridad de Certificacion Firmaprofesional",
+    "slug": "autoridad-de-certificacion-firmaprofesional",
+    "country": "Spain",
+    "trust_store_count": 4,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "Autoridad de Certificaci\u00f3n (ANF AC)",
+    "slug": "autoridad-de-certificaci-n-anf-ac",
+    "country": "Espa\u00f1a",
+    "trust_store_count": 3,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "BEIJING CERTIFICATE AUTHORITY Co., Ltd.",
+    "slug": "beijing-certificate-authority-co-ltd",
+    "country": "China",
+    "trust_store_count": 1,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "Buypass",
+    "slug": "buypass",
+    "country": "Norway",
+    "trust_store_count": 4,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Byte Computer S.A.",
+    "slug": "byte-computer-s-a",
+    "country": "Greece",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "Carillon Information Security Inc.",
+    "slug": "carillon-information-security-inc",
+    "country": "Canada",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Certainly LLC",
+    "slug": "certainly-llc",
+    "country": "USA",
+    "trust_store_count": 3,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Certigna",
+    "slug": "certigna",
+    "country": "France",
+    "trust_store_count": 4,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "certSIGN",
+    "slug": "certsign",
+    "country": "Romania",
+    "trust_store_count": 4,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "China Financial Certification Authority (CFCA)",
+    "slug": "china-financial-certification-authority-cfca",
+    "country": "China",
+    "trust_store_count": 4,
+    "root_count": 9
+  },
+  {
+    "ca_owner": "Chunghwa Telecom",
+    "slug": "chunghwa-telecom",
+    "country": "Taiwan, Republic of China",
+    "trust_store_count": 4,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "ComSign",
+    "slug": "comsign",
+    "country": "Israel",
+    "trust_store_count": 1,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "Consejo General de la Abogac\u00eda Espa\u00f1ola",
+    "slug": "consejo-general-de-la-abogac-a-espa-ola",
+    "country": "Spain",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Consorci Administraci\u00f3 Oberta de Catalunya (Consorci AOC, CATCert)",
+    "slug": "consorci-administraci-oberta-de-catalunya-consorci-aoc-catce",
+    "country": "Spain",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "Cybertrust Japan / JCSI",
+    "slug": "cybertrust-japan-jcsi",
+    "country": "Japan",
+    "trust_store_count": 2,
+    "root_count": 13
+  },
+  {
+    "ca_owner": "D-TRUST",
+    "slug": "d-trust",
+    "country": "Germany",
+    "trust_store_count": 4,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "Department of Defence Australia",
+    "slug": "department-of-defence-australia",
+    "country": "Australia",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Deutsche Telekom Security GmbH",
+    "slug": "deutsche-telekom",
+    "country": "Germany",
+    "trust_store_count": 4,
+    "root_count": 7
+  },
+  {
+    "ca_owner": "DigiCert",
+    "slug": "digicert",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 110
+  },
+  {
+    "ca_owner": "DigitalSign - Certificadora Digital, S.A.",
+    "slug": "digitalsign-certificadora-digital-s-a",
+    "country": "Portugal",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Disig, a.s.",
+    "slug": "disig-a-s",
+    "country": "Slovakia",
+    "trust_store_count": 4,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Docaposte Certinomis SAS",
+    "slug": "docaposte-certinomis-sas",
+    "country": "France",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "e-commerce monitoring GmbH",
+    "slug": "e-commerce-monitoring-gmbh",
+    "country": "Austria",
+    "trust_store_count": 2,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "EDICOM",
+    "slug": "edicom",
+    "country": "Spain",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "eMudhra Technologies Limited",
+    "slug": "emudhra-technologies-limited",
+    "country": "India",
+    "trust_store_count": 4,
+    "root_count": 16
+  },
+  {
+    "ca_owner": "Entrust",
+    "slug": "entrust",
+    "country": "United States of America",
+    "trust_store_count": 3,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "Eviden",
+    "slug": "eviden",
+    "country": "Germany",
+    "trust_store_count": 4,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Financijska agencija (Fina)",
+    "slug": "financijska-agencija-fina",
+    "country": "Croatia",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+    "slug": "global-digital-cybersecurity-authority-co-ltd-formerly-guang",
+    "country": "China",
+    "trust_store_count": 4,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "GlobalSign nv-sa",
+    "slug": "globalsign",
+    "country": "Belgium",
+    "trust_store_count": 4,
+    "root_count": 16
+  },
+  {
+    "ca_owner": "GoDaddy",
+    "slug": "godaddy",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 13
+  },
+  {
+    "ca_owner": "Google Trust Services LLC",
+    "slug": "google-trust",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+    "slug": "government-of-brazil-instituto-nacional-de-tecnologia-da-inf",
+    "country": "Brazil",
+    "trust_store_count": 1,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
+    "slug": "government-of-finland-population-register-centre-s-v-est-rek",
+    "country": "Finland",
+    "trust_store_count": 1,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+    "slug": "government-of-hong-kong-sar-hongkong-post-certizen",
+    "country": "China",
+    "trust_store_count": 4,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)",
+    "slug": "government-of-india-ministry-of-communications-information-t",
+    "country": "India",
+    "trust_store_count": 1,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "Government of Japan, Digital Agency",
+    "slug": "government-of-japan-digital-agency",
+    "country": "Japan",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Government of Korea, KLID",
+    "slug": "government-of-korea-klid",
+    "country": "Republic of Korea (South Korea)",
+    "trust_store_count": 1,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Government of Saudi Arabia, NIC (SDAIA)",
+    "slug": "government-of-saudi-arabia-nic-sdaia",
+    "country": "Saudi Arabia",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "Government of Spain, Autoritat de Certificaci\u00f3 de la Comunitat Valenciana (ACCV)",
+    "slug": "government-of-spain-autoritat-de-certificaci-de-la-comunitat",
+    "country": "Spain",
+    "trust_store_count": 4,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "Government of Spain, F\u00e1brica Nacional de Moneda y Timbre (FNMT)",
+    "slug": "government-of-spain-f-brica-nacional-de-moneda-y-timbre-fnmt",
+    "country": "Spain",
+    "trust_store_count": 4,
+    "root_count": 7
+  },
+  {
+    "ca_owner": "Government of Sweden (F\u00f6rs\u00e4kringskassan)",
+    "slug": "government-of-sweden-f-rs-kringskassan",
+    "country": "Sweden",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Government of The Netherlands, PKIoverheid (Logius)",
+    "slug": "government-of-the-netherlands-pkioverheid-logius",
+    "country": "Netherlands",
+    "trust_store_count": 2,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+    "slug": "government-of-turkey-kamu-sertifikasyon-merkezi-kamu-sm",
+    "country": "Turkey",
+    "trust_store_count": 4,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Halcom D.D.",
+    "slug": "halcom-d-d",
+    "country": "Slovenia",
+    "trust_store_count": 1,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "HARICA",
+    "slug": "harica",
+    "country": "Greece",
+    "trust_store_count": 4,
+    "root_count": 9
+  },
+  {
+    "ca_owner": "IdenTrust Services, LLC",
+    "slug": "identrust",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 29
+  },
+  {
+    "ca_owner": "Image-X Enterprises Inc",
+    "slug": "image-x-enterprises-inc",
+    "country": "United States of America",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "Internet Security Research Group",
+    "slug": "isrg",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 4
+  },
+  {
+    "ca_owner": "iTrusChina Co., Ltd.",
+    "slug": "itruschina-co-ltd",
+    "country": "China",
+    "trust_store_count": 2,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Izenpe S.A.",
+    "slug": "izenpe-s-a",
+    "country": "Spain",
+    "trust_store_count": 4,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+    "slug": "krajowa-izba-rozliczeniowa-s-a-kir",
+    "country": "Poland",
+    "trust_store_count": 3,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "LAWtrust",
+    "slug": "lawtrust",
+    "country": "South Africa",
+    "trust_store_count": 2,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Macao Post and Telecommunications Bureau",
+    "slug": "macao-post-and-telecommunications-bureau",
+    "country": "China",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Microsec Ltd.",
+    "slug": "microsec-ltd",
+    "country": "Hungary",
+    "trust_store_count": 4,
+    "root_count": 11
+  },
+  {
+    "ca_owner": "Microsoft Corporation",
+    "slug": "microsoft-corporation",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 20
+  },
+  {
+    "ca_owner": "MULTICERT",
+    "slug": "multicert",
+    "country": "Portugal",
+    "trust_store_count": 1,
+    "root_count": 1
+  },
+  {
+    "ca_owner": "NAVER Cloud Trust Services",
+    "slug": "naver-cloud-trust-services",
+    "country": "Republic of Korea (South Korea)",
+    "trust_store_count": 4,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Netlock",
+    "slug": "netlock",
+    "country": "Hungary",
+    "trust_store_count": 3,
+    "root_count": 13
+  },
+  {
+    "ca_owner": "Netrust Pte Ltd",
+    "slug": "netrust-pte-ltd",
+    "country": "Singapore",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Notarius",
+    "slug": "notarius",
+    "country": "Canada",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "OISTE",
+    "slug": "oiste",
+    "country": "Switzerland",
+    "trust_store_count": 4,
+    "root_count": 7
+  },
+  {
+    "ca_owner": "Open Access Technology International, Inc. (OATI)",
+    "slug": "open-access-technology-international-inc-oati",
+    "country": "United States of America",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "PostSignum",
+    "slug": "postsignum",
+    "country": "Czech Republic",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
+    "slug": "prvn-certifika-n-autorita-a-s",
+    "country": "Czech Republic",
+    "trust_store_count": 1,
+    "root_count": 9
+  },
+  {
+    "ca_owner": "SECOM Trust Systems CO., LTD.",
+    "slug": "secom",
+    "country": "Japan",
+    "trust_store_count": 4,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "Sectigo",
+    "slug": "sectigo",
+    "country": "United Kingdom",
+    "trust_store_count": 4,
+    "root_count": 37
+  },
+  {
+    "ca_owner": "Shanghai Electronic Certification Authority Co., Ltd.",
+    "slug": "shanghai-electronic-certification-authority-co-ltd",
+    "country": "China",
+    "trust_store_count": 3,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "SI-TRUST",
+    "slug": "si-trust",
+    "country": "Slovenia",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "Skaitmeninio sertifikavimo centras (SSC)",
+    "slug": "skaitmeninio-sertifikavimo-centras-ssc",
+    "country": "Lithuania",
+    "trust_store_count": 1,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "SSL.com",
+    "slug": "ssl-com",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 15
+  },
+  {
+    "ca_owner": "Swiss BIT, Swiss Federal Office of Information Technology, Systems and Telecommunication (FOITT)",
+    "slug": "swiss-bit-swiss-federal-office-of-information-technology-sys",
+    "country": "Switzerland",
+    "trust_store_count": 1,
+    "root_count": 6
+  },
+  {
+    "ca_owner": "SwissSign AG",
+    "slug": "swisssign-ag",
+    "country": "Switzerland",
+    "trust_store_count": 4,
+    "root_count": 8
+  },
+  {
+    "ca_owner": "Taiwan-CA Inc. (TWCA)",
+    "slug": "twca",
+    "country": "Taiwan (Republic of China)",
+    "trust_store_count": 4,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Telia Company",
+    "slug": "telia-company",
+    "country": "Sweden",
+    "trust_store_count": 4,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "Thailand National Root Certificate Authority (Electronic Transactions Development Agency)",
+    "slug": "thailand-national-root-certificate-authority-electronic-tran",
+    "country": "Thailand",
+    "trust_store_count": 1,
+    "root_count": 3
+  },
+  {
+    "ca_owner": "TrustAsia Technologies, Inc.",
+    "slug": "trustasia-technologies-inc",
+    "country": "China",
+    "trust_store_count": 2,
+    "root_count": 12
+  },
+  {
+    "ca_owner": "TrustFactory(Pty)Ltd",
+    "slug": "trustfactory-pty-ltd",
+    "country": "South Africa",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Trustis",
+    "slug": "trustis",
+    "country": "United Kingdom of Great Britain and Northern Ireland",
+    "trust_store_count": 1,
+    "root_count": 2
+  },
+  {
+    "ca_owner": "Viking Cloud, Inc.",
+    "slug": "viking-cloud-inc",
+    "country": "United States of America",
+    "trust_store_count": 4,
+    "root_count": 8
+  },
+  {
+    "ca_owner": "Visa",
+    "slug": "visa",
+    "country": "United States of America",
+    "trust_store_count": 1,
+    "root_count": 5
+  },
+  {
+    "ca_owner": "Zetes",
+    "slug": "zetes",
+    "country": "Belgium",
+    "trust_store_count": 1,
+    "root_count": 1
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "ca_owner": "PostSignum",
+  "country": "Czech Republic",
+  "root_count": 3,
+  "intermediates_count": 4,
+  "trusted_by": {
+    "mozilla": false,
+    "microsoft": true,
+    "chrome": false,
+    "apple": false
+  },
+  "trust_store_count": 1,
+  "roots": [
+    {
+      "name": "PostSignum Root QCA 2",
+      "sha256": "AD016F958050E0E7E46FAE7DCC50197ED8E3FF0A4B262E5DDCDB3EDDDC7D6578",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2010.01.19",
+      "valid_to": "2025.01.19",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "PostSignum Root QCA 4",
+      "sha256": "AC7F7862E685C7A7D9826A58EA32D183D4893FCC8F8FD6D900C9769A987E77F0",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2018.07.26",
+      "valid_to": "2038.07.26",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    },
+    {
+      "name": "PostSignum Root QCA ECC R1",
+      "sha256": "2D41D6D54CF9C81B0725E963C351F192D46581C8989C96C565695F6C8FC6EA67",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2023.06.29",
+      "valid_to": "2038.06.29",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": ""
+    }
+  ],
+  "intermediates": [
+    {
+      "name": "PostSignum Public CA 4",
+      "sha256": "E4272DFA3FBC48C90929518A0482BA3D9EB9C94A3CD397139F0ECDF2475955F6",
+      "parent_name": "PostSignum Root QCA 4",
+      "valid_from": "2018.09.27",
+      "valid_to": "2033.09.27",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    },
+    {
+      "name": "PostSignum Qualified CA 4",
+      "sha256": "4779BA66C768FE7E5A5BB74A225FA8B69CD6942AF481355630E5AD78B34DFF2B",
+      "parent_name": "PostSignum Root QCA 4",
+      "valid_from": "2018.09.27",
+      "valid_to": "2033.09.27",
+      "tls_capable": true,
+      "ev_capable": false,
+      "smime_capable": true,
+      "code_signing_capable": false,
+      "technically_constrained": false
+    }
+  ],
+  "slug": "postsignum"
+}
