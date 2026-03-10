@@ -1755,14 +1755,14 @@
     },
     {
       "date": "2026-03-10",
-      "generated_at": "2026-03-10T20:22:36.823042+00:00",
+      "generated_at": "2026-03-10T20:32:33.200634+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287190871,
+      "total_unexpired": 1287192730,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.2929
+          "pct": 40.2928
         },
         {
           "ca": "Google Trust Services LLC",
@@ -1804,47 +1804,47 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518645910,
+          "v": 518646155,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212709352,
+          "v": 212710089,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 176157340,
+          "v": 176157511,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166371202,
+          "v": 166371247,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133676880,
+          "v": 133677445,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59648978,
+          "v": 59649057,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12799458,
+          "v": 12799459,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686054,
+          "v": 1686056,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1582829,
+          "v": 1582838,
           "at": 0
         },
         {
@@ -1864,7 +1864,7 @@
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266032,
+          "v": 266034,
           "at": 0
         },
         {
@@ -1874,7 +1874,7 @@
         },
         {
           "id": "certainly-llc",
-          "v": 82632,
+          "v": 82635,
           "at": 0
         },
         {
