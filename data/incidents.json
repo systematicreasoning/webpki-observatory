@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-03-08T17:28:37.882639+00:00",
-    "last_checked": "2026-03-10T21:25:33.583730+00:00",
+    "last_checked": "2026-03-10T21:37:26.970084+00:00",
     "bug_count": 1689,
     "active_incidents": 1424,
     "active_cas": 54,
@@ -839,6 +839,104 @@
       "n": 9,
       "self": 0,
       "ext": 9,
+      "selfPct": 0
+    },
+    {
+      "ca": "Consorci AOC",
+      "n": 8,
+      "self": 0,
+      "ext": 8,
+      "selfPct": 0
+    },
+    {
+      "ca": "iTrusChina",
+      "n": 8,
+      "self": 0,
+      "ext": 8,
+      "selfPct": 0
+    },
+    {
+      "ca": "Autoridad de Certificación (ANF AC)",
+      "n": 8,
+      "self": 0,
+      "ext": 8,
+      "selfPct": 0
+    },
+    {
+      "ca": "CommScope",
+      "n": 8,
+      "self": 0,
+      "ext": 8,
+      "selfPct": 0
+    },
+    {
+      "ca": "Government of Spain, Autoritat de Certificació de la Comunitat Valenciana (ACCV)",
+      "n": 7,
+      "self": 0,
+      "ext": 7,
+      "selfPct": 0
+    },
+    {
+      "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+      "n": 7,
+      "self": 0,
+      "ext": 7,
+      "selfPct": 0
+    },
+    {
+      "ca": "Eviden",
+      "n": 4,
+      "self": 0,
+      "ext": 4,
+      "selfPct": 0
+    },
+    {
+      "ca": "Agence Nationale de Certification Electronique",
+      "n": 4,
+      "self": 0,
+      "ext": 4,
+      "selfPct": 0
+    },
+    {
+      "ca": "Government of Turkey, Kamu Sertifikasyon Merkezi (Kamu SM)",
+      "n": 3,
+      "self": 0,
+      "ext": 3,
+      "selfPct": 0
+    },
+    {
+      "ca": "Visa",
+      "n": 3,
+      "self": 0,
+      "ext": 3,
+      "selfPct": 0
+    },
+    {
+      "ca": "Cybertrust Japan Co., Ltd.",
+      "n": 3,
+      "self": 0,
+      "ext": 3,
+      "selfPct": 0
+    },
+    {
+      "ca": "TrustAsia Technologies, Inc.",
+      "n": 3,
+      "self": 3,
+      "ext": 0,
+      "selfPct": 100
+    },
+    {
+      "ca": "SK ID Solutions AS",
+      "n": 2,
+      "self": 0,
+      "ext": 2,
+      "selfPct": 0
+    },
+    {
+      "ca": "PostSignum",
+      "n": 2,
+      "self": 0,
+      "ext": 2,
       "selfPct": 0
     }
   ],
