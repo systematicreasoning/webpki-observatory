@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-10T21:38:26.403345+00:00",
+    "generated_at": "2026-03-10T22:08:22.850231+00:00",
     "bugs_total": 1689,
     "bugs_with_comments": 1689,
     "total_comments_analyzed": 21987,
@@ -2084,7 +2084,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 266218,
+        "certs": 266233,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2104,7 +2104,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 17,
-        "certs": 83074,
+        "certs": 83093,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2164,7 +2164,7 @@
       {
         "ca": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
         "rank": 40,
-        "certs": 2631,
+        "certs": 2624,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2641,7 +2641,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 518669666,
+        "certs_now": 518664529,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
