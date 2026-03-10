@@ -219,19 +219,21 @@ const GovernanceRiskView = () => {
                   {conc.unique_contributors > 0 && <span>{conc.unique_contributors} people · top1 <span style={{ color: conc.top_contributor_pct > 80 ? COLORS.rd : conc.top_contributor_pct > 50 ? COLORS.am : COLORS.gn, fontWeight: 600 }}>{conc.top_contributor_pct}%</span></span>}
                 </div>
               </div>
-              <div style={{ display: 'flex', height: barH, alignItems: 'flex-end', gap: 1 }}>
+              <div style={{ display: 'flex', height: barH + 12, alignItems: 'flex-end', gap: 1 }}>
                 {vals.map((v, i) => {
                   const h = progPeak > 0 ? (v / progPeak) * barH : 0;
                   const singlePerson = people[i] <= 1 && v > 0;
                   return (
-                    <div key={i} title={`${quarters[i]?.quarter}: ${v} comments, ${people[i]} contributors`}
-                      style={{
-                        flex: 1, height: Math.max(h, v > 0 ? 2 : 0),
-                        background: singlePerson ? STORE_COLORS[prog] : STORE_COLORS[prog],
+                    <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                      {v > 0 && h > 14 && <span style={{ fontSize: 6, fontFamily: FONT_MONO, color: COLORS.t3, marginBottom: 1 }}>{v}</span>}
+                      <div style={{
+                        width: '100%', height: Math.max(h, v > 0 ? 2 : 0),
+                        background: STORE_COLORS[prog],
                         opacity: singlePerson ? 0.4 : 0.85,
                         borderRadius: '2px 2px 0 0',
                         borderBottom: singlePerson && v > 3 ? `2px solid ${COLORS.rd}` : 'none',
                       }} />
+                    </div>
                   );
                 })}
               </div>
@@ -359,11 +361,12 @@ const GovernanceRiskView = () => {
         <CardTitle sub="Who files Bugzilla bugs, and how were incidents actually discovered? Filing a bug is a process step — the actual discovery may have been by a researcher, auditor, root program, or the CA's own monitoring.">
           Incident Detection
         </CardTitle>
-        <div style={{ display: 'flex', height: 80, alignItems: 'flex-end', gap: 2 }}>
+        <div style={{ display: 'flex', height: 90, alignItems: 'flex-end', gap: 2 }}>
           {bugCreation.map(y => {
             const total = STORE_ORDER.reduce((a, s) => a + (y[s] || 0), 0) + (y.other || 0);
             return (
-              <div key={y.y} title={`${y.y}: ${total} bugs filed\n${STORE_ORDER.map(s => `${STORE_NAMES[s]}: ${y[s] || 0}`).join('\n')}${y.other ? `\nCA-filed: ${y.other}` : ''}`} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'default' }}>
+              <div key={y.y} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                {total > 0 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.t3, marginBottom: 1 }}>{total}</span>}
                 <div style={{ width: '100%', height: 70, display: 'flex', flexDirection: 'column-reverse' }}>
                   {STORE_ORDER.map(s => {
                     const v = y[s] || 0;
@@ -424,11 +427,12 @@ const GovernanceRiskView = () => {
                   </div>
                   {/* Per-year breakdown */}
                   {(dm.by_year || []).length > 0 && (
-                    <div style={{ display: 'flex', height: 50, alignItems: 'flex-end', gap: 2, marginBottom: 4 }}>
+                    <div style={{ display: 'flex', height: 60, alignItems: 'flex-end', gap: 2, marginBottom: 4 }}>
                       {dm.by_year.map(y => {
                         const yTotal = y.total || 1;
                         return (
-                          <div key={y.y} title={`${y.y}: ${yTotal} incidents\n${DISC_ORDER.filter(m => m !== 'unknown' && (y[m] || 0) > 0).map(m => `${DISC_LABELS[m]}: ${y[m]} (${Math.round((y[m] / yTotal) * 100)}%)`).join('\n')}`} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', cursor: 'default' }}>
+                          <div key={y.y} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                            <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.t3, marginBottom: 1 }}>{yTotal}</span>
                             <div style={{ width: '100%', height: 40, display: 'flex', flexDirection: 'column-reverse' }}>
                               {DISC_ORDER.filter(m => m !== 'unknown').map(m => {
                                 const v = y[m] || 0;

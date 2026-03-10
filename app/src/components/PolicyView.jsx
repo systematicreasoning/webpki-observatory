@@ -489,7 +489,7 @@ const PolicyView = () => {
                     <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70, marginBottom: 2 }}>
                       <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
                       <div style={{ flex: 1, display: 'flex', height: 18, borderRadius: 3, overflow: 'hidden' }}>
-                        {Object.keys(CAT_LABELS).map(cat => { const v = cats[cat] || 0; return v === 0 ? null : <div key={cat} title={`${CAT_LABELS[cat]}: ${v}`} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14' }} />; })}
+                        {Object.keys(CAT_LABELS).map(cat => { const v = cats[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: '#fff', fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
                       </div>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70 }}>
@@ -521,7 +521,7 @@ const PolicyView = () => {
                   <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90, marginBottom: 2 }}>
                     <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
                     <div style={{ flex: 1, display: 'flex', height: 14, borderRadius: 3, overflow: 'hidden' }}>
-                      {Object.keys(CAT_LABELS).map(cat => { const v = (ca.by_category || {})[cat] || 0; return v === 0 ? null : <div key={cat} title={`${CAT_LABELS[cat]}: ${v}`} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14' }} />; })}
+                      {Object.keys(CAT_LABELS).map(cat => { const v = (ca.by_category || {})[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: '#fff', fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
                     </div>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90 }}>
