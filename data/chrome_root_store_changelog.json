@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "generated_at": "2026-03-10T00:00:51.466623+00:00",
+    "total_commits": 35,
+    "changes_detected": 24,
+    "first_commit_date": "Thu Jun 10 15:25:10 2021",
+    "last_commit_date": "Sat Feb 21 14:06:46 2026",
+    "source": "chromium.googlesource.com git log of root_store.textproto"
+  },
+  "changelog": [
+    {
+      "date": "Wed Feb 16 21:17:29 2022",
+      "commit": "0eadd64b82cf",
+      "message": "Keep all the certificates in the root store in a single file",
+      "added": 117,
+      "removed": 0,
+      "total": 117,
+      "added_hashes": [
+        "edf7ebbca27a2a384d387b7d4010c666e2edb4843e4c29b4ae1d5b9332e6b24d",
+        "5d56499be4d2e08bcfcad08a3e38723d50503bde706948e42f55603019e528ae",
+        "358df39d764af9e1b766e9c972df352ee15cfac227af6ad1d70e8e4a6edcba02",
+        "a040929a02ce53b4acf4f2ffc6981ce4496f755e6d45fe0b2a692bcd52523f36",
+        "db3517d1f6732a2d5ab97c533ec70779ee3270a62fb4ac4238372460e6f01e88"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Fri Apr 01 16:28:57 2022",
+      "commit": "adce2c112ae3",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 2,
+      "total": 115,
+      "added_hashes": [],
+      "removed_hashes": [
+        "bc104f15a48be709dca542a7e1d4b9df6f054527e802eaa92d595444258afe71",
+        "3c4fb0b95ab8b30032f432b86f535fe172c185d0fd39865837cf36187fa6f428"
+      ]
+    },
+    {
+      "date": "Tue Apr 05 16:36:07 2022",
+      "commit": "ccb8b9d1c624",
+      "message": "Automatic update from google3",
+      "added": 19,
+      "removed": 6,
+      "total": 128,
+      "added_hashes": [
+        "3f99cc474acfce4dfed58794665e478d1547739f2e780f1bb4ca9b133097d401",
+        "e59aaa816009c22bff5b25bad37df306f049797c1f81d85ab089e657bd8f0044",
+        "242b69742fcb1e5b2abf98898b94572187544e5b4d9911786573621f6a74b82c",
+        "d95d0e8eda79525bf9beb11b14d2100d3294985f0c62d9fabd9cd999eccb7b1d",
+        "8d25cd97229dbf70356bda4eb3cc734031e24cf00fafcfd32dc76eb5841c7ea8"
+      ],
+      "removed_hashes": [
+        "0c2cd63df7806fa399ede809116b575bf87989f06518f9808c860503178baf66",
+        "71cca5391f9e794b04802530b363e121da8a3043bb26662fea4dca7fc951a4bd",
+        "15f0ba00a3ac7af3ac884c072b1011a077bd77c097f40164b2f8598abd83860c",
+        "15d5b8774619ea7d54ce1ca6d0b0c403e037a917f131e8a04e1e6b7a71babce5",
+        "2a575471e31340bc21581cbd2cf13e158463203ece94bcf9d3cc196bf09a5472"
+      ]
+    },
+    {
+      "date": "Fri Apr 08 17:36:22 2022",
+      "commit": "e379d6d1ce9a",
+      "message": "Automatic update from google3",
+      "added": 2,
+      "removed": 0,
+      "total": 130,
+      "added_hashes": [
+        "018e13f0772532cf809bd1b17281867283fc48c6e13be9c69812854a490c1b05",
+        "371a00dc0533b3721a7eeb40e8419e70799d2b0a0f2c1d80693165f7cec4ad75"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Thu May 19 17:20:23 2022",
+      "commit": "e9ca428dfc45",
+      "message": "Automatic update from google3",
+      "added": 2,
+      "removed": 0,
+      "total": 132,
+      "added_hashes": [
+        "77b82cd8644c4305f7acc5cb156b45675004033d51c60c6202a8e0c33467d3a0",
+        "b4585f22e4ac756a4e8612a1361c5d9d031a93fd84febb778fa3068b0fc42dc2"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Thu Aug 18 16:13:36 2022",
+      "commit": "648fb97fc504",
+      "message": "Automatic update from google3",
+      "added": 10,
+      "removed": 2,
+      "total": 140,
+      "added_hashes": [
+        "e74fbda55bd564c473a36b441aa799c8a68e077440e8288b9fa1e50e4bbaca11",
+        "873f4685fa7f563625252e6d36bcd7f16fc24951f264e47e1b954f4908cdca13",
+        "30fbba2c32238e2a98547af97931e550428b9b3f1c8eeb6633dcfa86c5b27dd3",
+        "8a71de6559336f426c26e53880d00d88a18da4c6a91f0dcb6194e206c5c96387",
+        "554153b13d2cf9ddb753bfbe1a4e0ae08d0aa4187058fe60a2b862b2e4b87bcb"
+      ],
+      "removed_hashes": [
+        "04048028bf1f2864d48f9ad4d83294366a828856553f3b14303f90147f5d40ef",
+        "bec94911c2955676db6c0a550986d76e3ba005667c442c9762b4fbb773de228c"
+      ]
+    },
+    {
+      "date": "Sat Jan 14 14:32:37 2023",
+      "commit": "ea26fb93d932",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 2,
+      "total": 138,
+      "added_hashes": [],
+      "removed_hashes": [
+        "001686cd181f83a1b1217d305b365c41e3470a78a1d37b134a98cd547b92dab3",
+        "4d2491414cfe956746ec4cefa6cf6f72e28a1329432f9d8a907ac4cb5dadc15a"
+      ]
+    },
+    {
+      "date": "Thu Mar 02 14:02:15 2023",
+      "commit": "7c9d25c8288f",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 3,
+      "total": 135,
+      "added_hashes": [],
+      "removed_hashes": [
+        "5a885db19c01d912c5759388938cafbbdf031ab2d48e91ee15589b42971d039c",
+        "0753e940378c1bd5e3836e395daea5cb839e5046f1bd0eae1951cf10fec7c965",
+        "d40e9c86cd8fe468c1776959f49ea774fa548684b6c406f3909261f4dce2575c"
+      ]
+    },
+    {
+      "date": "Sat Jun 03 14:33:38 2023",
+      "commit": "7e19bf7e1100",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 4,
+      "total": 131,
+      "added_hashes": [],
+      "removed_hashes": [
+        "ef66b0b10a3cdb9f2e3648c76bd2af18ead2bfe6f117655e28c4060da1a3f4c2",
+        "b0bfd52bb0d7d9bd92bf5d4dc13da255c02c542f378365ea893911f55e55f23c",
+        "f9e67d336c51002ac054c632022d66dda2e7e3fff10ad061ed31d8bbb410cfb2",
+        "873f4685fa7f563625252e6d36bcd7f16fc24951f264e47e1b954f4908cdca13"
+      ]
+    },
+    {
+      "date": "Wed Sep 20 19:56:02 2023",
+      "commit": "1950592832c7",
+      "message": "Update Chrome Root Store to version 12.",
+      "added": 2,
+      "removed": 0,
+      "total": 133,
+      "added_hashes": [
+        "b2fae53e14ccd7ab9212064701ae279c1d8988facb775fa8a008914e663988a8",
+        "81a9088ea59fb364c548a6f85559099b6f0405efbf18e5324ec9f457ba00112f"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Sun Dec 03 15:49:57 2023",
+      "commit": "8c9c569064da",
+      "message": "Automatic update from google3",
+      "added": 2,
+      "removed": 1,
+      "total": 134,
+      "added_hashes": [
+        "7bb647a62aeeac88bf257aa522d01ffea395e0ab45c73f93f65654ec38f25a06",
+        "c90f26f0fb1b4018b22227519b5ca2b53e2ca5b3be5cf18efe1bef47380c5383"
+      ],
+      "removed_hashes": [
+        "568d6905a2c88708a4b3025190edcfedb1974a606a13c6e5290fcb2ae63edab5"
+      ]
+    },
+    {
+      "date": "Tue Mar 12 16:18:20 2024",
+      "commit": "1c98e0d08af1",
+      "message": "Automatic update from google3",
+      "added": 2,
+      "removed": 0,
+      "total": 136,
+      "added_hashes": [
+        "8faf7d2e2cb4709bb8e0b33666bf75a5dd45b5de480f8ea8d4bfe6bebc17f2ed",
+        "c32ffd9f46f936d16c3673990959434b9ad60aafbb9e7cf33654f144cc1ba143"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Thu May 30 15:58:06 2024",
+      "commit": "cb239fbd1505",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 1,
+      "total": 135,
+      "added_hashes": [],
+      "removed_hashes": [
+        "e75e72ed9f560eec6eb4800073a43fc3ad19195a392282017895974a99026b6c"
+      ]
+    },
+    {
+      "date": "Sat Oct 05 16:06:33 2024",
+      "commit": "c076418dc968",
+      "message": "Automatic update from google3",
+      "added": 0,
+      "removed": 1,
+      "total": 134,
+      "added_hashes": [],
+      "removed_hashes": [
+        "be6c4da2bbb9ba59b6f3939768374246c3c005993fa98f020d1dedbed48a81d5"
+      ]
+    },
+    {
+      "date": "Thu Mar 20 16:00:29 2025",
+      "commit": "8e680e85ca5f",
+      "message": "Automatic update from google3",
+      "added": 110,
+      "removed": 0,
+      "total": 244,
+      "added_hashes": [
+        "82fbe865da22d1f25adf94bbd809d3f516125849e792db7bb18452304c2ecc43",
+        "1edb6bd91274882db795bfc514f8aabe10ad955cbccfd3fd5a5b5febb2ce5b68",
+        "daa0435407fa44c28ab939e6823813605779093873a96649ad6e03b05d28626c",
+        "93c176167eca02a1b262b16517ac5fb5fc25d3568d97ecddd04e3a6126b6c7ba",
+        "46319c69041db9a0d93dae802e3002cc615365931fe0976d392e8863e3f3be31"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Thu Apr 24 15:44:22 2025",
+      "commit": "9bf702e3c459",
+      "message": "Automatic update from google3",
+      "added": 1,
+      "removed": 17,
+      "total": 228,
+      "added_hashes": [
+        "3f63bb2814be174ec8b6439cf08d6d56f0b7c405883a5648a334424d6b3ec558"
+      ],
+      "removed_hashes": [
+        "8a866fd1b276b57e578e921c65828a2bed58e9f2f288054134b7f1f4bfc9cc74",
+        "cecddc905099d8dadfc5b1d209b737cbe2c18cfb2c10c0ff0bcf0d3286fc1aa2",
+        "30d0895a9a448a262091635522d1f52010b5867acae12c78ef958fd4f4389f2f",
+        "44b545aa8a25e65a73ca15dc27fc36d24c1cb9953a066539b11582dc487b4833",
+        "a040929a02ce53b4acf4f2ffc6981ce4496f755e6d45fe0b2a692bcd52523f36"
+      ]
+    },
+    {
+      "date": "Fri Jun 20 19:08:05 2025",
+      "commit": "8c23d6656f3e",
+      "message": "Manually sync Chrome Root Store",
+      "added": 11,
+      "removed": 0,
+      "total": 239,
+      "added_hashes": [
+        "2fe357db13751ff9160e87354975b3407498f41c9bd16a48657866e6e5a9b4c7",
+        "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+        "9c3f2fd11c57d7c649ad5a0932c0f0d29756f6a0a1c74c43e1e89a62d64cd320",
+        "b10b6f00e609509e8700f6d34687a2bfce38ea05a8fdf1cdc40c3a2a0d0d0e45",
+        "d0c97e56c7b0ba812d944ad771f7799b5d4144a2327a4e416554f7ee2aa0aeae"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Fri Jun 20 21:29:30 2025",
+      "commit": "d26e8dcaacbd",
+      "message": "Revert \"Manually sync Chrome Root Store\"",
+      "added": 0,
+      "removed": 11,
+      "total": 228,
+      "added_hashes": [],
+      "removed_hashes": [
+        "2fe357db13751ff9160e87354975b3407498f41c9bd16a48657866e6e5a9b4c7",
+        "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+        "9c3f2fd11c57d7c649ad5a0932c0f0d29756f6a0a1c74c43e1e89a62d64cd320",
+        "b10b6f00e609509e8700f6d34687a2bfce38ea05a8fdf1cdc40c3a2a0d0d0e45",
+        "d0c97e56c7b0ba812d944ad771f7799b5d4144a2327a4e416554f7ee2aa0aeae"
+      ]
+    },
+    {
+      "date": "Wed Jul 09 15:54:28 2025",
+      "commit": "9a22cba32534",
+      "message": "[CRS] Automatic update from google3",
+      "added": 2,
+      "removed": 4,
+      "total": 226,
+      "added_hashes": [
+        "c0076b9ef0531fb1a656d67c4ebe97cd5dbaa41ef44598acc2489878c92d8711",
+        "06c08d7dafd876971eb1124fe67f847ec0c7a158d3ea53cbe940e2ea9791f4c3"
+      ],
+      "removed_hashes": [
+        "9a296a5182d1d451a2e37f439b74daafa267523329f90f9a0d2007c334e23c9a",
+        "bd71fdf6da97e4cf62d1647add2581b07d79adf8397eb4ecba9c5e8488821423",
+        "0a81ec5a929777f145904af38d5d509f66b5e2c58fcdb531058b0e17f3f0b41b",
+        "70a73f7f376b60074248904534b11482d5bf0e698ecc498df52577ebf2e93b9a"
+      ]
+    },
+    {
+      "date": "Tue Aug 12 15:12:24 2025",
+      "commit": "368a3aa98402",
+      "message": "[CRS] Automatic update from google3",
+      "added": 11,
+      "removed": 0,
+      "total": 237,
+      "added_hashes": [
+        "2fe357db13751ff9160e87354975b3407498f41c9bd16a48657866e6e5a9b4c7",
+        "dc9416c2f855126d6de977677538f2f967ff4998e90dfa435a17219be077fc06",
+        "9c3f2fd11c57d7c649ad5a0932c0f0d29756f6a0a1c74c43e1e89a62d64cd320",
+        "b10b6f00e609509e8700f6d34687a2bfce38ea05a8fdf1cdc40c3a2a0d0d0e45",
+        "d0c97e56c7b0ba812d944ad771f7799b5d4144a2327a4e416554f7ee2aa0aeae"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Tue Oct 28 16:27:45 2025",
+      "commit": "b5ea3e38a4b2",
+      "message": "[CRS] Automatic update from google3",
+      "added": 0,
+      "removed": 1,
+      "total": 236,
+      "added_hashes": [],
+      "removed_hashes": [
+        "db3517d1f6732a2d5ab97c533ec70779ee3270a62fb4ac4238372460e6f01e88"
+      ]
+    },
+    {
+      "date": "Tue Dec 16 14:35:31 2025",
+      "commit": "e4c9d227a78b",
+      "message": "[CRS] Automatic update from google3",
+      "added": 1,
+      "removed": 4,
+      "total": 233,
+      "added_hashes": [
+        "193144f431e0fddb740717d4de926a571133884b4360d30e272913cbe660ce41"
+      ],
+      "removed_hashes": [
+        "43df5774b03e7fef5fe40d931a7bedf1bb2e6b42738c4e6d3841103d3aa7f339",
+        "02ed0eb28c14da45165c566791700d6451d7fb56f0b2ab1d3b8eb070e56edff5",
+        "73c176434f1bc6d5adf45b0e76e727287c8de57616c1e6e6141a2b2cbc7d8e4c",
+        "0376ab1d54c5f9803ce4b2e201a0ee7eef7b57b636e8a93c9b8d4860c96f5fa7"
+      ]
+    },
+    {
+      "date": "Thu Jan 08 14:48:55 2026",
+      "commit": "6a0080561c19",
+      "message": "[CRS] Automatic update from google3",
+      "added": 6,
+      "removed": 0,
+      "total": 239,
+      "added_hashes": [
+        "24d45aa9b8d6053d281f3842c8cc0c6c1af7ccdfd42dd5c12f6a74fa9323f7a2",
+        "4185df97806c2ba76f1d79823f112ffa639a49ccdc990908102067ab6412b886",
+        "54715420224c5b65beed018dc3940d7338c577e322d5488f633d8c6a8fed61b2",
+        "ac1274542267f17b525535b5563bf731febb182533b46a82dc869cb64eb528c0",
+        "d3b128216a843f8ef1321501f5df52a5df52939ee2c19297712cd3de4d419354"
+      ],
+      "removed_hashes": []
+    },
+    {
+      "date": "Sat Feb 21 14:06:46 2026",
+      "commit": "d4dd161597af",
+      "message": "[CRS] Automatic update from google3",
+      "added": 4,
+      "removed": 1,
+      "total": 242,
+      "added_hashes": [
+        "8e8221b2e7d4007836a1672f0dcc299c33bc07d316f132fa1a206d587150f1ce",
+        "578af4ded0853f4e5998db4aeaf9cbea8d945f60b620a38d1a3c13b2bc7ba8e1",
+        "0552e6f83fdf65e8fa9670e666df28a4e21340b510cbe52566f97c4fb94b2bd1",
+        "efc65cadbb59adb6efe84da22311b35624b71b3b1ea0da8b6655174ec8978646"
+      ],
+      "removed_hashes": [
+        "b676f2eddae8775cd36cb0f63cd1d4603961f49e6265ba013a2f0307b6d0b804"
+      ]
+    }
+  ]
+}

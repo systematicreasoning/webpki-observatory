@@ -23,6 +23,7 @@ import PolicyView from './components/PolicyView';
 import CryptoView from './components/CryptoView';
 import JurisdictionView from './components/JurisdictionView';
 import DistrustView from './components/DistrustView';
+import GovernanceRiskView from './components/GovernanceRiskView';
 
 const TABS = [
   { id: 'market', l: 'Market Share' },
@@ -36,6 +37,7 @@ const TABS = [
   { id: 'policy', l: 'Policy Impact' },
   { id: 'crypto', l: 'Cryptographic Posture' },
   { id: 'distrust', l: 'Distrust History' },
+  { id: 'governance', l: 'Governance Risk' },
 ];
 
 const VALID_TAB_IDS = TABS.map((t) => t.id);
@@ -163,6 +165,11 @@ function AppContent() {
         {tab === 'distrust' && (
           <ErrorBoundary label="Distrust History">
             <DistrustView />
+          </ErrorBoundary>
+        )}
+        {tab === 'governance' && (
+          <ErrorBoundary label="Governance Risk">
+            <GovernanceRiskView />
           </ErrorBoundary>
         )}
 

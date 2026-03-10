@@ -13,6 +13,7 @@ import {
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import {
   Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap, DataMeta, DataPending, Paginator, TabIntro,
+  MethodologyCard, MethodologyItem,
 } from './shared';
 import { usePipeline } from '../PipelineContext';
 import {
@@ -701,54 +702,43 @@ export default function DistrustView() {
         ))}
       </div>
 
-      {/* Methodology — matches global footer pattern */}
-      <div style={{ ...footnoteStyle, marginTop: 16, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 8 }}>
-        <details style={{ cursor: 'pointer' }}>
-          <summary style={{ color: COLORS.t2, fontWeight: 500, marginBottom: 4 }}>
-            Methodology and Classification
-          </summary>
-          <div style={{ marginTop: 6 }}>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Compliance posture:</strong>{' '}
-              <span style={{ color: '#ef4444' }}>Willful</span> (built systems to violate) ·{' '}
-              <span style={{ color: '#f97316' }}>Argumentative</span> (argued rules don't apply) ·{' '}
-              <span style={{ color: '#f59e0b' }}>Negligent</span> (knew but didn't fix) ·{' '}
-              <span style={{ color: '#eab308' }}>Incompetent</span> (didn't understand) ·{' '}
-              <span style={{ color: '#6b7280' }}>Accidental</span> (genuine mistake)
-            </div>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Distrust pathway:</strong>{' '}
-              <span style={{ color: '#ef4444' }}>Immediate</span> (emergency) ·{' '}
-              <span style={{ color: '#f97316' }}>Triggered</span> (external discovery) ·{' '}
-              <span style={{ color: '#f59e0b' }}>Gradual</span> (accumulated incidents) ·{' '}
-              <span style={{ color: '#3b82f6' }}>Negotiated</span> (managed transition)
-            </div>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Response quality:</strong>{' '}
-              <span style={{ color: '#10b981' }}>Cooperative</span> → <span style={{ color: '#f59e0b' }}>Inadequate</span> → <span style={{ color: '#ef4444' }}>Deceptive</span>.
-              How the CA engaged after issues were identified.
-            </div>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Contributing factors:</strong> 22 failure-pattern tags derived from all 15 events. Each supported by specific Bugzilla bug citations in the expanded detail view.
-            </div>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Classification tiers:</strong>{' '}
-              <TierBadge tier="curated" /> hand-curated from root program announcements ·{' '}
-              <TierBadge tier="high" /> LLM-classified from Bugzilla + cached metadata ·{' '}
-              <TierBadge tier="medium_high" /> LLM-classified primarily from metadata ·{' '}
-              <TierBadge tier="medium" /> Bugzilla only, some tags may be incomplete
-            </div>
-            <div style={{ marginBottom: 4 }}>
-              <strong style={{ color: COLORS.t2 }}>Pipeline:</strong> CCADB detection → Bugzilla enrichment → LLM classification → merge.
-              Caches Bugzilla profiles and classifications; only re-classifies when new bugs are filed or metadata is updated.
-              87% posture accuracy, 88% tag recall against 15-event ground truth.
-            </div>
-            <div>
-              <strong style={{ color: COLORS.t2 }}>Sources:</strong> Bugzilla CA Certificate Compliance, CCADB, mozilla.dev.security.policy, CCADB public list, root program blogs, security researcher reports.
-            </div>
-          </div>
-        </details>
-      </div>
+      {/* Methodology */}
+      <MethodologyCard>
+        <MethodologyItem label="Compliance posture">
+          <span style={{ color: '#ef4444' }}>Willful</span> (built systems to violate) ·{' '}
+          <span style={{ color: '#f97316' }}>Argumentative</span> (argued rules don't apply) ·{' '}
+          <span style={{ color: '#f59e0b' }}>Negligent</span> (knew but didn't fix) ·{' '}
+          <span style={{ color: '#eab308' }}>Incompetent</span> (didn't understand) ·{' '}
+          <span style={{ color: '#6b7280' }}>Accidental</span> (genuine mistake)
+        </MethodologyItem>
+        <MethodologyItem label="Distrust pathway">
+          <span style={{ color: '#ef4444' }}>Immediate</span> (emergency) ·{' '}
+          <span style={{ color: '#f97316' }}>Triggered</span> (external discovery) ·{' '}
+          <span style={{ color: '#f59e0b' }}>Gradual</span> (accumulated incidents) ·{' '}
+          <span style={{ color: '#3b82f6' }}>Negotiated</span> (managed transition)
+        </MethodologyItem>
+        <MethodologyItem label="Response quality">
+          <span style={{ color: '#10b981' }}>Cooperative</span> → <span style={{ color: '#f59e0b' }}>Inadequate</span> → <span style={{ color: '#ef4444' }}>Deceptive</span>.
+          How the CA engaged after issues were identified.
+        </MethodologyItem>
+        <MethodologyItem label="Contributing factors">
+          22 failure-pattern tags derived from all 15 events. Each supported by specific Bugzilla bug citations in the expanded detail view.
+        </MethodologyItem>
+        <MethodologyItem label="Classification tiers">
+          <TierBadge tier="curated" /> hand-curated from root program announcements ·{' '}
+          <TierBadge tier="high" /> LLM-classified from Bugzilla + cached metadata ·{' '}
+          <TierBadge tier="medium_high" /> LLM-classified primarily from metadata ·{' '}
+          <TierBadge tier="medium" /> Bugzilla only, some tags may be incomplete
+        </MethodologyItem>
+        <MethodologyItem label="Pipeline">
+          CCADB detection → Bugzilla enrichment → LLM classification → merge.
+          Caches Bugzilla profiles and classifications; only re-classifies when new bugs are filed or metadata is updated.
+          87% posture accuracy, 88% tag recall against 15-event ground truth.
+        </MethodologyItem>
+        <MethodologyItem label="Sources">
+          Bugzilla CA Certificate Compliance, CCADB, mozilla.dev.security.policy, CCADB public list, root program blogs, security researcher reports.
+        </MethodologyItem>
+      </MethodologyCard>
 
       <DataMeta source="Bugzilla CA Certificate Compliance, CCADB, mozilla.dev.security.policy, CCADB public list"
         updated={distrustData.generated_at?.slice(0, 10)} tab="distrust" />

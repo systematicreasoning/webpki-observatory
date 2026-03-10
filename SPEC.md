@@ -244,7 +244,7 @@ The critical distinction is purpose-built vs general. The combination of compell
 **Question:** What does the historical record of CA distrusts tell us about ecosystem governance, and what patterns emerge from trust failures?
 
 **Metrics:**
-- 15 distrust events (2011–2024) with classification across four dimensions
+- 16 distrust events (2011–2024) with classification across four dimensions
 - Compliance posture distribution (Willful, Argumentative, Negligent, Incompetent, Accidental)
 - Distrust pathway (Immediate, Triggered, Gradual, Negotiated)
 - Response quality assessment per CA
@@ -271,6 +271,45 @@ The critical distinction is purpose-built vs general. The combination of compell
 **Important context:** This tab documents historical removals. It does not predict future distrusts. Classifications are supported by specific Bugzilla bug citations and root program quotes visible in each event's expanded detail view. The distrust pipeline uses caching to avoid redundant LLM calls — only CAs with new Bugzilla bugs or updated metadata are reclassified.
 
 **Defensibility:** 87% posture accuracy and 88% tag recall against a 15-event ground truth set. Each classification includes an evidence chain citing specific bug numbers and metadata excerpts. Events are cross-referenced against mozilla.dev.security.policy threads, CCADB discussions, and root program blog posts.
+
+---
+
+### Tab 12: Governance Risk
+
+**Question:** How effectively do root programs govern the CAs they trust — and does the level of governance match the size of the trust surface?
+
+**Metrics:**
+- Report card heatmap: 12 metrics per program across governance activity and trust surface scope
+- Enforcement: 16 distrust events (2011–2024), who led, who followed, who hasn't acted
+- Bugzilla oversight: comment attribution by email domain across 1,267 bugs and 16,786 comments
+- Oversight concentration: bus factor per program (unique contributors, top-contributor %)
+- Oversight trend: quarterly comments and people counts per program (2020–present)
+- Policy leadership: CA/Browser Forum ballot proposers, endorsers, and voters across 4 working groups
+- Trust surface: CA owners, root certificates, exclusive roots, gov-affiliated CAs, still-trusted removed CAs
+- Notable inclusion and trust gaps: CAs with cross-store disagreements, auto-detected from CCADB
+- Incident detection: bug creation attribution showing who files vs who comments
+- Inclusion velocity: Mozilla pending applications with wait times
+
+**Data sources:**
+| Source | Role |
+|--------|------|
+| Bugzilla REST API | Comment authors, bug creation, oversight vs self-incident classification |
+| CCADB | Trust store membership, root cert counts, CA owner metadata |
+| cabforum.org | Ballot proposers, endorsers, vote results across SC/CSC/SMC/NS working groups |
+| Chromium source (root_store.textproto git log) | Chrome Root Store changelog — every addition/removal with exact commit dates (2022+) |
+| learn.microsoft.com deployment notices | Microsoft CTL changelog — monthly trust store updates with add/notbefore/disable actions (2020+) |
+| Apple support pages | Enforcement actions (e.g., support.apple.com/en-us/121668 for Entrust) |
+| Daily CCADB snapshots | Point-in-time trust store state for all four programs; diffs build changelog over time |
+
+**Key methodological notes:**
+- Oversight attribution uses email domain matching (@google.com → Chrome, @mozilla.com → Mozilla, etc.). Microsoft operates a CA — 487 of their 488 Bugzilla comments are self-incident responses to their own CA's failures, not governance oversight.
+- Bugzilla data has survivorship bias: CAs not yet trusted by any store rarely file incident bugs. Oversight metrics reflect governance of established CAs, not the full applicant pipeline.
+- Each root program discloses enforcement differently. Chrome publishes blog posts. Mozilla uses Bugzilla threads. Microsoft publishes monthly CTL notices. Apple publishes support documents with SHA-256 hashes but does not announce on Bugzilla or mailing lists. "Led" is biased toward programs that announce loudly. Apple's enforcement may be undercounted.
+- Ballot counts treat all ballots equally. SC-081 (reducing certificate validity to 47 days) has vastly more impact than a cleanup ballot.
+- Store size reflects policy philosophy: Chrome is deliberately selective (value must exceed risk), Mozilla is the fastest gateway for new CAs, Apple is highly selective, Microsoft processes rollovers quickly. A larger store is not automatically worse governance, but it requires proportionally more governance activity to maintain assurance.
+- Apple has no public machine-readable trust store changelog. Daily CCADB snapshots will build this history over time.
+
+**Defensibility:** All numbers are derived from public data sources (Bugzilla, CCADB, cabforum.org, Chromium source, learn.microsoft.com). The pipeline caches API responses and is idempotent. Email domain attribution is mechanical — no judgment calls. Enforcement events are read from `distrusted.json` (the same file used by the Distrust History tab) with per-store dates and leader attribution derived from earliest enforcement date. The tab acknowledges its own limitations in a dedicated methodology section.
 
 ---
 

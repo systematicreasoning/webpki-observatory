@@ -207,7 +207,7 @@ Intermediate certificates and leaf certificates — where the signature **is** v
 
 ## Distrust Classification Methodology
 
-The Distrust History tab classifies 15 CA removal events (2011–2024) across four dimensions:
+The Distrust History tab classifies 16 CA removal events (2011–2024) across four dimensions:
 
 **Compliance Posture** (the most important predictor): Willful Circumvention (built systems to violate), Argumentative Noncompliance (argued rules shouldn't apply), Negligent Noncompliance (knew but didn't fix), Demonstrated Incompetence (didn't understand), Accidental (genuine mistake).
 
@@ -215,7 +215,7 @@ The Distrust History tab classifies 15 CA removal events (2011–2024) across fo
 
 **Detection**: CCADB `stores=0` status combined with configuration overrides for CAs where CCADB lags (e.g., Entrust was still listed in stores after distrust effective dates).
 
-**Classification pipeline** (`pipeline/distrust/fetch_distrusted.py`):
+**Classification data** (`pipeline/distrust/distrusted.json`):
 1. Stage 1: CCADB detection — find CAs with `stores=0` or config overrides
 2. Stage 2: Bugzilla enrichment — fetch incident trails, root program comments, CA responses
 3. Stage 3: LLM classification — classify using vocabulary from config + cached metadata when available
@@ -226,6 +226,38 @@ The Distrust History tab classifies 15 CA removal events (2011–2024) across fo
 **Accuracy**: 87% posture accuracy and 88% tag recall against a 15-event ground truth set derived from root program announcements and the blog post "Exploring Browser Distrust" (unmitigatedrisk.com).
 
 **Enrichment sources**: Each event may have cached reference material from root program blog posts, security researcher reports, investigative journalism, and mailing list threads. This metadata improves classification accuracy but is not required — the pipeline classifies from Bugzilla evidence alone when metadata is unavailable.
+
+## Governance Risk Methodology
+
+The Governance Risk tab (Tab 12) compares how effectively Chrome, Mozilla, Apple, and Microsoft govern the CAs they trust. The pipeline (`fetch_rpe.py`) runs in 7 phases:
+
+**Phase 1: Bug Creation Attribution.** Maps Bugzilla bug creators to root programs by email domain. This measures *detection* — which programs file bugs about CA issues. Note: 93% of bugs are CA self-reports. Root program detection is the remaining 7%.
+
+**Phase 2: Comment Participation.** Fetches comments from Bugzilla bugs and classifies each as *oversight* (commenting on another CA's bug) or *self-incident* (responding to your own CA's compliance failure). Microsoft operates a CA (Microsoft PKI Services) — nearly all their Bugzilla activity is self-incident, not governance. Comment concentration analysis computes bus factor per program.
+
+**Phase 3: Enforcement.** Reads distrust events from `pipeline/distrust/distrusted.json` — the same canonical source used by the Distrust History tab (Tab 11). Per-store distrust dates determine who acted and who led (earliest date = leader). "Still trusts" = stores with no distrust date. This ensures a single source of truth: when a new CA is distrusted, updating `distrusted.json` once updates both tabs.
+
+**Phase 4: Store Posture.** Computes per-store metrics from CCADB and `root_algorithms.json`: CA owner count, root certificate count, exclusive roots (counted at root-cert level from `root_algorithms.json`, not CA-owner level), and government-affiliated CAs (pattern-matched on CA owner names).
+
+**Phase 4b: Policy Leadership.** Reads ballot data from `ops_cache/cabforum_ballots.json` (scraped from cabforum.org across 4 working groups: Server Certificate, Code Signing, S/MIME, Network Security). Attributes proposers, endorsers, and voters to root programs by name→organization mapping.
+
+**Phase 5: Notable Gaps.** Auto-detects CAs with cross-store inclusion disagreements from `market_share.json`. Flags CAs in the top 100 by issuance that are missing from at least one store. Also detects distrust divergences (CAs where some stores have acted but others haven't).
+
+**Phase 6: Government CA Counts.** Pattern-matches CA owner names against known government and state-owned enterprise patterns.
+
+**Phase 7: Inclusion Velocity.** Fetches pending Mozilla inclusion applications from Bugzilla with wait times and pipeline stages.
+
+**Additional data sources** (separate pipeline scripts, output read by `fetch_rpe.py` when available):
+- `fetch_microsoft_ctl.py`: Scrapes Microsoft's monthly deployment notices from learn.microsoft.com. Extracts root additions, NotBefore actions, and disables with dates. Handles 5+ URL pattern variants across 2020–present.
+- `fetch_chrome_root_store.py`: Fetches git commit log of `root_store.textproto` from Chromium source via Gitiles JSON API. Diffs consecutive versions to extract additions and removals with exact commit dates (2022–present).
+- `fetch_trust_snapshots.py`: Daily CCADB snapshot capturing current trust store state for all four programs. Diffs between snapshots produce a cross-store changelog over time. This is the only source for Apple trust store changes, as Apple publishes no changelog.
+
+**Key limitations:**
+- Bugzilla participation is biased toward Mozilla because it's their primary governance channel. Other programs may govern through private channels.
+- CAs not yet trusted by any store rarely file Bugzilla bugs — oversight metrics only cover established CAs.
+- Apple's enforcement actions may be undercounted because they publish support documents rather than Bugzilla posts or blog announcements.
+- Ballot counts treat all ballots equally regardless of impact.
+- Email domain attribution is mechanical. Contributors using personal email or shared infrastructure may be misattributed.
 
 ## Validation
 

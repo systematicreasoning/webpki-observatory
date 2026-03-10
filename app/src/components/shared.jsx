@@ -872,3 +872,21 @@ export const CertViewer = ({ sha256, pem: embeddedPem }) => {
     </div>
   );
 };
+
+/** Methodology disclosure card — consistent pattern across all tabs */
+export const MethodologyCard = ({ children }) => (
+  <div style={{
+    background: COLORS.bg, border: `1px solid ${COLORS.bd}`, borderRadius: 10,
+    padding: '14px 16px', marginTop: 16,
+  }}>
+    <div style={{ fontSize: 14, fontWeight: 600, color: COLORS.tx, marginBottom: 10 }}>Methodology</div>
+    <div style={{ fontSize: 9, color: COLORS.t3, lineHeight: 1.7 }}>{children}</div>
+  </div>
+);
+
+/** Individual methodology topic within a MethodologyCard */
+export const MethodologyItem = ({ label, children }) => (
+  <div style={{ marginBottom: 10 }}>
+    <span style={{ color: COLORS.t2, fontWeight: 600 }}>{label}.</span>{' '}{children}
+  </div>
+);

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS } from '../constants';
 import { dn, f, fl, getIncidentRate } from '../helpers';
-import { Card, CardTitle, StatCard, RateDot, GeoMap, TabIntro } from './shared';
+import { Card, CardTitle, StatCard, RateDot, GeoMap, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle, expandedCellStyle } from '../styles';
@@ -381,24 +381,19 @@ const GovView = () => {
       </Card>
 
       <div
-        style={{
-          fontSize: 8,
-          color: COLORS.t3,
-          marginTop: 8,
-          lineHeight: 1.6,
-          borderTop: `1px solid ${COLORS.bd}`,
-          paddingTop: 6,
-        }}
-      >
-        <strong style={{ color: COLORS.t2 }}>Classification methodology:</strong> "Government-operated" = directly run
-        by a government agency (e.g., FNMT is a division of Spain's Royal Mint). "State-owned enterprise" = entity with
-        direct state ownership or legislative mandate (e.g., Chunghwa Telecom is majority state-owned). Classifications
-        are based on structural ownership and legislative relationships only — customer relationships with government
-        agencies do not qualify. Source: manually curated gov_classifications.json, cross-referenced with official
-        corporate registries, legislation, and CCADB metadata. Scope: currently trusted CAs only (at least one root in
-        Mozilla, Chrome, Microsoft, or Apple). Distrusted CAs with historical government ties (e.g., US FPKI) are
-        excluded.
-      </div>
+      <MethodologyCard>
+        <MethodologyItem label="Classification">
+          "Government-operated" = directly run by a government agency (e.g., FNMT is a division of Spain's Royal Mint).
+          "State-owned enterprise" = entity with direct state ownership or legislative mandate (e.g., Chunghwa Telecom is majority state-owned).
+          Classifications are based on structural ownership and legislative relationships only — customer relationships with government agencies do not qualify.
+        </MethodologyItem>
+        <MethodologyItem label="Source">
+          Manually curated gov_classifications.json, cross-referenced with official corporate registries, legislation, and CCADB metadata.
+        </MethodologyItem>
+        <MethodologyItem label="Scope">
+          Currently trusted CAs only (at least one root in Mozilla, Chrome, Microsoft, or Apple). Distrusted CAs with historical government ties (e.g., US FPKI) are excluded.
+        </MethodologyItem>
+      </MethodologyCard>
     </div>
   );
 };

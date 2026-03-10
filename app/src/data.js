@@ -23,3 +23,4 @@ export const SLUG_NAMES = pipelineData.SLUG_NAMES;
 export const JURISDICTION_RISK = pipelineData.JURISDICTION_RISK;
 export const ROOT_ALGO = pipelineData.ROOT_ALGO;
 export const DISTRUST_DATA = pipelineData.DISTRUST_DATA;
+export const RPE_DATA = pipelineData.RPE_DATA;

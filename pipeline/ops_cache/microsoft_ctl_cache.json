@@ -1,0 +1,5219 @@
+{
+  "2020-01": {
+    "year": 2020,
+    "month": 1,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/jan2020",
+    "actions": [
+      {
+        "ca": "This release will add the following roots (Root Certificate",
+        "root": "SHA-1 Thumbprint): Izenpe.com",
+        "thumbprint": "2F783D255218A74A653971B52CA29C45156FE919",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-02": {
+    "year": 2020,
+    "month": 2,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/feb2020",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Athex Exchange S.A. (Athex)",
+        "root": "ATHEX Root CA G2",
+        "thumbprint": "892A1BD4C8B0F8AA9A65ED4CB9D3BF4840B34BC1",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Qual-02",
+        "thumbprint": "CD787A3D5CBA8207082848365E9ACDE9683364D8",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-nQual-03",
+        "thumbprint": "4CAEE38931D19AE73B31AA75CA33D621290FA75E",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Root-05",
+        "thumbprint": "2E66C9841181C08FB1DFABD4FF8D5CC72BE08F02",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Qual-03a",
+        "thumbprint": "42EFDDE6BFF35ED0BAE6ACDD204C50AE86C4F4FA",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Internet Network Information Center (CNNIC)",
+        "root": "China Internet Network Information Center EV Certificates Root",
+        "thumbprint": "4F99AA93FB2BD13726A1994ACE7FF005F2935D1E",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Internet Network Information Center (CNNIC)",
+        "root": "CNNIC Root",
+        "thumbprint": "8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Keynectis)",
+        "root": "KEYNECTSIS ROOT CA",
+        "thumbprint": "9C615C4D4D85103A5326C24DBAEAE4A2D2D5CC97",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Keynectis)",
+        "root": "OpenTrust Root CA G1",
+        "thumbprint": "7991E834F7E2EEDD08950152E9552D14E958D57E",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Lithuania, Registru Centras",
+        "root": "RCSC RootCA",
+        "thumbprint": "FDE7C6FDB32BB8E63939840D6AE052C3D8B73B87",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Electronic Certification System of the State",
+        "root": "ECRaizEstado",
+        "thumbprint": "3913853E45C439A2DA718CDFB6F3E033E04FEE71",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 3 Root CA",
+        "thumbprint": "38DD7659C735100B00A237E491B7BC0FFCD2316C",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 2 Root CA",
+        "thumbprint": "E45501608AA1EF89E27B8CD3C3B34C03B038E6D7",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 4 Root CA",
+        "thumbprint": "20A8F5FFC43AF4A9BC89881EBF9920FF91E9FD0A",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ay, Agency for E-Government and Information Society (AGESIC)",
+        "root": "Autoridad Certificadora Ra\u00edz Nacional de Uruguay",
+        "thumbprint": "7A1CDDE3D2197E7137433D3F99C0B369F706C749",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NLB Nova Ljubljanska Banka d.d. Ljubljana",
+        "root": "NLB Nova Ljubljanska Banka d.d. Ljubljana",
+        "thumbprint": "0456F23D1E9C43AECB0D807F1C0647551A05F456",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Pos Digicert Sdn. Bhd (Malaysia)",
+        "root": "PosDigicert Class 2 Root CA G2",
+        "thumbprint": "313B8D0E7E2E4D20AE8668FFE59DB5193CBF7A32",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Post of Serbia",
+        "root": "Posta CA Root",
+        "thumbprint": "D6BF7994F42BE5FA29DA0BD7587B591F47A44F22",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Post of Slovenia",
+        "root": "POSTarCA",
+        "thumbprint": "B1EAC3E5B82476E9D50B1EC67D2CC11E12E0B491",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Red Abogac\u00eda",
+        "root": "ACA ROOT",
+        "thumbprint": "D496592B305707386CC5F3CDB259AE66D7661FCA",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA Root B",
+        "thumbprint": "C860A318FCF5B7130B1007AD7F614A40FFFF185F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA VS Root",
+        "thumbprint": "D2695E12F592E9C8EE2A4CB8D55E295FEE6B2D31",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA III",
+        "thumbprint": "CCEAE32445CD4218DD188EADCEB3133C7FB340AD",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA II",
+        "thumbprint": "C7F7CBE2023666F986025D4A3E313F29EB0C5B38",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Telekom Applied Business Malaysia (TMCA)",
+        "root": "TM Applied Business Root Certificate",
+        "thumbprint": "9957C53FC59FB8E739F7A4B7A70E9B8E659F208C",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Certic\u00e1mara S.A.",
+        "root": "AC Ra\u00edz Certic\u00e1mara S.A. [CBA1C]",
+        "thumbprint": "CBA1C5F8B0E35EB8B94512D3F934A2E90610D336",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Class 3 Public Primary CA",
+        "thumbprint": "742C3192E607E424EB4549542BE1BBC53E6174E2",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Slovenia",
+        "root": "Sigen-CA",
+        "thumbprint": "3E42A18706BD0C9CCF594750D2E4D6AB0048FDC4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Slovenia",
+        "root": "Sigov-CA",
+        "thumbprint": "7FB9E2C995C97A939F9E81A07AEA9B4D70463496",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Halcom D.D.",
+        "root": "Halcom CA FO",
+        "thumbprint": "0409565B77DA582E6495AC0060A72354E64B0192",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Swisscom (Switzerland) Ltd",
+        "root": "Swisscom Root EV CA 2",
+        "thumbprint": "E7A19029D3D552DC0D0FC692D3EA880D152E1A6B",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ndencia de Servicios de Certificaci\u00f3n Electr\u00f3nica (SUSCERTE)",
+        "root": "Autoridad de Certificacion Raiz de la Republica Bolivariana de Venezuela",
+        "thumbprint": "398EBE9C0F46C079C3C7AFE07A2FDD9FAE5F8A5C",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ndencia de Servicios de Certificaci\u00f3n Electr\u00f3nica (SUSCERTE)",
+        "root": "Autoridad de Certificacion Raiz de la Republica Bolivariana de Venezuela",
+        "thumbprint": "DD83C519D43481FAD4C22C03D702FE9F3B22F517",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ernment of Spain, F\u00e1brica Nacional de Moneda y Timbre (FNMT)",
+        "root": "Fabrica Nacional de Moneda y Timbre",
+        "thumbprint": "43F9B110D5BAFD48225231B0D0082B372FEF9A54",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Entrust",
+        "root": "Entrust Root Certification Authority - G4",
+        "thumbprint": "14884E862637B026AF59625C4077EC3529BA9601",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R6",
+        "thumbprint": "8094640EB5A7A1CA119C1FDDD59F810263A7FBD1",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Zetes S.A.",
+        "root": "ZETES TSP ROOT CA 001",
+        "thumbprint": "3753D295FC6D8BC39B375650BFFC821AED504E1A",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Netrust",
+        "root": "Netrust CA1",
+        "thumbprint": "55C86F7414AC8BDD6814F4D86AF15F3710E104D0",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services (GTS)",
+        "root": "Google Trust Services - GlobalSign Root CA-R2",
+        "thumbprint": "75E0ABB6138512271C04F85FDDDE38E4B7242EFE",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Certigna",
+        "root": "Certigna",
+        "thumbprint": "B12E13634586A46F1AB2606837582DC4ACFD9497",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "PostSignum operated by Ceska posta s.p. (Czech Post)",
+        "root": "PostSignum Root QCA 4",
+        "thumbprint": "AA40D2579BA82424CD27719B1D6B1F3571738099",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "T-Systems International GmbH (Deutsche Telekom)",
+        "root": "T-TeleSec Global Root Class 3",
+        "thumbprint": "55A6723ECBF2ECCDC3237470199D2ABE11E381D1",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "root": "Hongkong Post Root CA 3",
+        "thumbprint": "58A2D0EC2052815BC1F3F86402244EC28E024B02",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "root": "Hongkong Post Root CA 1",
+        "thumbprint": "D6DAA8208D09D2154D24B52FCB346EB258B28A58",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustwave",
+        "root": "Trustwave",
+        "thumbprint": "B80186D1EB9C86A54104CF3054F34C52B7E558C6",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SECOM Trust Systems CO. LTD.",
+        "root": "SECOM Trust Systems CO LTD",
+        "thumbprint": "36B12B49F9819ED74C9EBC380FC6568F5DACB2F7",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Izenpe S.A",
+        "root": "Izenpe.com",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "China Financial CA",
+        "thumbprint": "EABDA240440ABBD694930A01D09764C6C2D77966",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R1",
+        "thumbprint": "B1BC968BD4F49D622AA89A81F2150152A41D829C",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Austrian Society For Data Protection (GlobalTrust)",
+        "root": "Austrian Society for Data Protection GLOBALTRUST Certification Service",
+        "thumbprint": "342CD9D3062DA48C346965297F081EBC2EF68FDC",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HA-1 Thumbprint): Agencia Notarial de Certificaci\u00f3n (ANCERT)",
+        "root": "ANCERT Certificados Notariales V2",
+        "thumbprint": "6F62DEB86C85585AE42E478DB4D76DB367585AE6",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Sweden (F\u00f6rs\u00e4kringskassan)",
+        "root": "Swedish Government Root Authority v3",
+        "thumbprint": "746F88F9AC163C53009EEF920C4067756A15717E",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HA-1 Thumbprint): Agencia Notarial de Certificaci\u00f3n (ANCERT)",
+        "root": "ANCERT Certificados CGN V2",
+        "thumbprint": "7EB1A0429BE5F428AC2B93971D7C8448A536070C",
+        "action": "notbefore_the_code_signing_and_server_authentication_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "print): Asseco Data Systems S.A. (previously Unizeto Certum)",
+        "root": "Certum",
+        "thumbprint": "6252DC40F71143A22FDE9EF7348E064251B18118",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Global CA",
+        "thumbprint": "DE28F4A4FFE5B92FA3C503D1A349A7F9962A8212",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Primary Certification Authority - G2",
+        "thumbprint": "8D1784D537F3037DEC70FE578B519A99E610D7B0",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Microsoft",
+        "root": "Microsoft RSA Root Certificate Authority 2017",
+        "thumbprint": "73A5E64A3BFF8316FF0EDCCC618A906E4EAE4D74",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Microsoft",
+        "root": "Microsoft ECC Root Certificate Authority 2017",
+        "thumbprint": "999A64C37FF47D9FAB95F14769891460EEC4C3C5",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-03": {
+    "year": 2020,
+    "month": 3,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/march2020",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Microsoft",
+        "root": "Microsoft EV ECC Root Certificate Authority 2017",
+        "thumbprint": "6B1937ABFD64E1E40DAF2262A27857C015D6228D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Microsoft",
+        "root": "Microsoft EV RSA Root Certificate Authority 2017",
+        "thumbprint": "ADA06E72393CCBE873648CF122A91C35EF4C984D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Agence Nationale de Certification Electronique (ANCE)",
+        "root": "TunTrust Root CA",
+        "thumbprint": "CFE970840FE0730F9DF60C7F2C4BEE2046349CBB",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "l add the code signing EKU in the following roots: IdenTrust",
+        "root": "IdenTrust Commercial Root CA 1",
+        "thumbprint": "DF717EAA4AD94EC9558499602D48DE5FBCF03A25",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-05": {
+    "year": 2020,
+    "month": 5,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/may2020",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Globalsign",
+        "root": "GlobalSign Code Signing Root E45",
+        "thumbprint": "79AA505EDD09B321E36D57910A5DF5A9FB85CC57",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Client Authentication Root E45",
+        "thumbprint": "A2BEE4AD032713ADCE0A0E9B19B6B85FC24ECA8D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Client Authentication Root R45",
+        "thumbprint": "DC775C1C874F1BBF51099F6FB129DB99FF08EB52",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Code Signing Root R45",
+        "thumbprint": "4EFC31460C619ECAE59C1BCE2C008036D94C84B8",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Document Signing Root E45",
+        "thumbprint": "CE71315DC098611F608C6CDECCEDC35D18D08548",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Document Signing Root R45",
+        "thumbprint": "4F79DF635510276969E823C4B87F793B9748D3EA",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Secure Mail Root E45",
+        "thumbprint": "182E1F324F89DFBEFE8889F093C2C4A02B677521",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Secure Mail Root R45",
+        "thumbprint": "7618D1F380243D5240C6116AAD5777097D8130A0",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Globalsign",
+        "root": "GlobalSign Timestamping Root R45",
+        "thumbprint": "139B1C712FD17C3CA5DA6E5701AFBA0158F9D45D",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-06": {
+    "year": 2020,
+    "month": 6,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/june2020",
+    "actions": [
+      {
+        "ca": "This release will NotBefore the following roots: EDICOM",
+        "root": "EDICOM",
+        "thumbprint": "E0B4322EB2F6A568B654538448184A5036874384",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Japan Local Authority Information Systems (J-LIS)",
+        "root": "Application CA G4 Root",
+        "thumbprint": "21DACE4C2C34E66468EE06314DB055A0A89D4C1D",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ing EKU for following roots: AS Sertifitseerimiskeskuse (SK)",
+        "root": "Estonian Certification Centre Root CA",
+        "thumbprint": "C9A8B9E755805E58E35377A725EBAFC37B27CCD7",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Byte Computer S.A.",
+        "root": "BYTE Root Certification Authority 001",
+        "thumbprint": "3F0FEB17A7EF5804CFD90A77B7BB021EA69C6418",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Certic\u00e1mara S.A.",
+        "root": "AC Ra\u00edz Certic\u00e1mara S.A.",
+        "thumbprint": "5463283B6793FF55277CEDE39098E80422F912F7",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Disig a.s.",
+        "root": "CA Disig Root R2",
+        "thumbprint": "B561EBEAA4DEE4254B691A98A55747C234C7D971",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST Root Class 3 CA 2 2009",
+        "thumbprint": "58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST Root Class 3 CA 2 EV 2009",
+        "thumbprint": "96C91B0B95B4109842FAD0D82279FE60FAB91683",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services (GTS)",
+        "root": "Google Trust Services - GlobalSign ECC Root CA - R4",
+        "thumbprint": "6969562E4080F424A1E7199F14BAF3EE58AB6ABB",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services (GTS)",
+        "root": "Google Trust Services - GlobalSign Root CA-R2",
+        "thumbprint": "75E0ABB6138512271C04F85FDDDE38E4B7242EFE",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Australia",
+        "root": "Australian Defence Public Root CA",
+        "thumbprint": "A9CAFE9DFD67F4145AD397D0E2F3050D198DE6EE",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora da Raiz Brasileira v1 - ICP-Brasil",
+        "thumbprint": "705D2B4565C7047A540694A79AF7ABB842BDC161",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "9B0959898154081BF6A90E9B9E58A4690C9BA104 Red Abogac\u00eda",
+        "root": "ACA ROOT",
+        "thumbprint": "D496592B305707386CC5F3CDB259AE66D7661FCA",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA I",
+        "thumbprint": "A1585187156586CEF9C454E22AB15C58745607B4",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Taiwan-CA Inc. (TWCA)",
+        "root": "TWCA Root Certification Authority 1",
+        "thumbprint": "CF9E876DD3EBFC422697A3B5A37AA076A9062348",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Telia Company (formerly TeliaSonera)",
+        "root": "Sonera Class2 CA",
+        "thumbprint": "37F76DE6077C90C5B13E931AB74110B4F2E49A27",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Atos",
+        "root": "Atos TrustedRoot 2011",
+        "thumbprint": "2BB1F53E550C1DC5F1D4E6B76A464B550602AC21",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "elease will NotBefore the OCSP EKU for following roots: Atos",
+        "root": "Atos TrustedRoot 2011",
+        "thumbprint": "2BB1F53E550C1DC5F1D4E6B76A464B550602AC21",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Asseco Data Systems S.A. (previously Unizeto Certum)",
+        "root": "Certum",
+        "thumbprint": "6252DC40F71143A22FDE9EF7348E064251B18118",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Buypass",
+        "root": "Buypass Class 2 Root CA",
+        "thumbprint": "490A7574DE870A47FE58EEF6C76BEBC60B124099",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Buypass",
+        "root": "Buypass Class 3 Root CA",
+        "thumbprint": "DAFAF7FA6684EC068F1450BDC7C281A5BCA96457",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ComSign",
+        "root": "ComSign Global Root CA",
+        "thumbprint": "AE3B31BF8FD891079CF1DF34CBCE6E70D37FB5B0",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ci Administraci\u00f3 Oberta de Catalunya (Consorci AOC, CATCert)",
+        "root": "Agencia Catalana de Certificacio (NIF Q-0801176-I)",
+        "thumbprint": "28903A635B5280FAE6774C0B6DA7D6BAA64AF2E8",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 03",
+        "thumbprint": "27EED22AFD58A2C64A855E3680AF898BF36CE503",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV BT 02",
+        "thumbprint": "39410BC2303748066069A72A664DE4C743481296",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV BT 03",
+        "thumbprint": "3DB66DFEBEB6712889E7C098B32805896B6218CC",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 03",
+        "thumbprint": "924AEA47F73CB690565E552CFCC6E8D63EEE4242",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 02",
+        "thumbprint": "93F7F48B1261943F6A78210C52E626DFBFBBE260",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 02",
+        "thumbprint": "AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Netrust",
+        "root": "Netrust Root CA 2",
+        "thumbprint": "0AB5C3CD7448B86D711E77A549838B87CE525F7F",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 2 G3",
+        "thumbprint": "093C61F38B8BDC7D55DF7538020500E125F5C836",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 1 G3",
+        "thumbprint": "1B8EEA5796291AC939EAB80A811A7373C0937967",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3",
+        "thumbprint": "1F4914F7D874951DDDAE02C0BEFD3A2D82755185",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3 G3",
+        "thumbprint": "4812BD923CA8C43906E7306D2796E6A4CF222E7D",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 2",
+        "thumbprint": "CA3AFBCF1240364B44B216208880483919937CF7",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "U.S. Federal Public Key Infrastructure (US FPKI)",
+        "root": "U.S Government Common Policy",
+        "thumbprint": "905F942FD9F28F679B378180FD4F846347F645C1",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Visa",
+        "root": "Visa Information Delivery Root CA",
+        "thumbprint": "5A4D0E8B5FDCFDF64E7299A36C060DB222CA78E4",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Visa",
+        "root": "Visa eCommerce Root",
+        "thumbprint": "70179B868C00A4FA609152223F9F3E32BDE00562",
+        "action": "notbefore_the_ocsp_eku",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-07": {
+    "year": 2020,
+    "month": 7,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/july2020",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Asseco Data Systems S.A.",
+        "root": "Certum EC-384 CA",
+        "thumbprint": "F33E783CACDFF4A2CCAC67556956D7E5163CE1ED",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Asseco Data Systems S.A.",
+        "root": "Certum Trusted Root CA",
+        "thumbprint": "C88344C018AE9FCCF187B78F22D1C5D74584BAE5",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "l add the EV Code Signing OID to the following roots: Amazon",
+        "root": "Amazon Root CA 4",
+        "thumbprint": "F6108407D6F8BB67980CC2E244C2EBAE1CEF63BE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Services Root Certificate Authority -- G2",
+        "thumbprint": "925A8F8D2C6D04E0665F596AFF22D863E8256F3F",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Root CA 2",
+        "thumbprint": "5A8CEF45D7A69859767A8C8B4496B578CF474B1A",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "E-Tugra",
+        "root": "E-Tugra Certification Authority",
+        "thumbprint": "51C6E70849066EF392D45CA00D6DA3628FC35239",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Assured ID Root G3",
+        "thumbprint": "F517A24F9A48C6C9F8A200269FDC0F482CAB3089",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "thawte Primary Root CA - G3",
+        "thumbprint": "F18B538D1BE903B6A6F056435B171589CAF36BF2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root G2",
+        "thumbprint": "DF3C24F9BFD666761B268073FE06D1CC8D4F82A4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Trusted Root G4",
+        "thumbprint": "DDFB16CD4931C973A2037D3FC83A4D7D775D05E4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Baltimore Root",
+        "thumbprint": "D4DE20D05E66FC53FE1A50882C78DB2852CAE474",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert",
+        "thumbprint": "A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Assured ID Root G2",
+        "thumbprint": "A14B48D943EE0A0E40904F3CE0A4C09193515D3F",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root G3",
+        "thumbprint": "7E04DE896A3E666D00E687D33FFAD93BE83D349E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert High Assurance EV Root CA",
+        "thumbprint": "5FB7EE0633E259DBAD0C4C9AE6D38F1A61C7DC25",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign",
+        "thumbprint": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Universal Root Certification Authority",
+        "thumbprint": "3679CA35668772304D30A5FB873B0FA77BB70D54",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Assured ID Root CA",
+        "thumbprint": "0563B8630D62D75ABBC8AB1E4BDFB5A899B24D43",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Primary Certification Authority - G3",
+        "thumbprint": "039EEDB80BE7A03C6953893B20D2D9323A4C2AFD",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B Comodo",
+        "root": "Sectigo (CCA)",
+        "thumbprint": "EE869387FFFD8349AB5AD14322588789A457B012",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (AAA)",
+        "thumbprint": "D1EB23A46D17D68FD92564C2F1F1601764D8E349",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo ECC",
+        "thumbprint": "D1CBCA5DB2D52A7F693B674DE5F05A1D0C957DF0",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo",
+        "thumbprint": "AFE5D244A8D1194230FF479FE2F897BBCD7A8CB4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo ECC",
+        "thumbprint": "9F744E9F2B4DBAEC0F312C50B6563B8E2D93C311",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo",
+        "thumbprint": "2B8F1B57330DBBA2D07A6C51F70EE90DDAB9AD8E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (AddTrust)",
+        "thumbprint": "02FAF3E291435468607857694DF5E45B68851868",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R1",
+        "thumbprint": "B1BC968BD4F49D622AA89A81F2150152A41D829C",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R3",
+        "thumbprint": "D69B561148F01C77C54578C10926DF5B856976AD",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign ECC Root CA - R5",
+        "thumbprint": "1F24C630CDA418EF2069FFAD4FDD5F463A1B69AA",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust.net",
+        "thumbprint": "8CF427FD790C3AD166068DE81E57EFBB932272D4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust (2048)",
+        "thumbprint": "503006091D97D4F5AE39F7CBE7927D7D652D3431",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - EC1",
+        "thumbprint": "20D80640DF9B25F512253A11EAF7598AEB14B547",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G4",
+        "thumbprint": "14884E862637B026AF59625C4077EC3529BA9601",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Global Digital Cybersecurity Authority Co., Ltd.",
+        "root": "GDCA TrustAUTH R5 ROOT",
+        "thumbprint": "0F36385B811A25C39B314E83CAE9346670CC74B4",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-08": {
+    "year": 2020,
+    "month": 8,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/august2020",
+    "actions": [
+      {
+        "ca": "Thumbprint): China Financial Certification Authority (CFCA)",
+        "root": "China Financial CA",
+        "thumbprint": "EABDA240440ABBD694930A01D09764C6C2D77966",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "LuxTrust",
+        "root": "LuxTrust Global Root 2",
+        "thumbprint": "1E0E56190AD18B2598B20444FF668A0417995F3F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "lowing roots: China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "ePKI Root Certification Authority - G2",
+        "thumbprint": "D99B104298594763F0B9A927B79269CB47DD158B",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Enterprise Mobile Root for Microsoft",
+        "thumbprint": "92B46C76E13054E104F230517E6E504D43AB10B5",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ation Technology, Controller of Certifying Authorities (CCA)",
+        "root": "CCA India 2015 SPL",
+        "thumbprint": "3BC6DCE00307BD676041EBD85970C62F8FDA5109",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "root": "Izenpe.com",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Korea Information Security Agency (KISA)",
+        "root": "KISA RootCA 1",
+        "thumbprint": "027268293E5F5D17AAA4B3C3E6361E1F92575EAA",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado",
+        "thumbprint": "016897E1A0B8F2C3B134665C20A727B7A158E28F",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SI-TRUST",
+        "root": "SI-TRUST Root",
+        "thumbprint": "3A4979B40FA841488200B582FBEEB63AAB9919AE",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "will Disallow the OCSP EKU to the following roots: Chunghwa",
+        "root": "Telecom Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Baltimore CyberTrust Root",
+        "thumbprint": "D4DE20D05E66FC53FE1A50882C78DB2852CAE474",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "neral de la Polic\u00eda ? Ministerio del Interior ? Espa\u00f1a. AC R",
+        "root": "AIZ DNIE",
+        "thumbprint": "B38FECEC0B148AA686C3D00F01ECC8848E8085EB",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Korea Information Security Agency (KISA)",
+        "root": "KISA RootCA 1",
+        "thumbprint": "027268293E5F5D17AAA4B3C3E6361E1F92575EAA",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SI-TRUST",
+        "root": "SI-TRUST Root",
+        "thumbprint": "3A4979B40FA841488200B582FBEEB63AAB9919AE",
+        "action": "disallow_the_ocsp_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "trian Society for Data Protection (Arge Daten) (GlobalTrust)",
+        "root": "GLOBALTRUST",
+        "thumbprint": "342CD9D3062DA48C346965297F081EBC2EF68FDC",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "ePKI Root Certification Authority - G2",
+        "thumbprint": "D99B104298594763F0B9A927B79269CB47DD158B",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium",
+        "thumbprint": "D8A6332CE0036FB185F6634F7D6A066526322827",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Commercial",
+        "thumbprint": "F9B5B632455F9CBEEC575F80DCE96E2CC7B278B7",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium ECC",
+        "thumbprint": "B8236B002F1D16865301556C11A437CAEBFFC3BB",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust.net Certification Authority (2048)",
+        "thumbprint": "503006091D97D4F5AE39F7CBE7927D7D652D3431",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G2",
+        "thumbprint": "8CF427FD790C3AD166068DE81E57EFBB932272D4",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Networking",
+        "thumbprint": "293621028B20ED02F566C532D1D6ED909F45002F",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+        "root": "GDCA TrustAUTH R5 ROOT",
+        "thumbprint": "0F36385B811A25C39B314E83CAE9346670CC74B4",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "6B5A68D92819D9CE5DD6D7969A4968E11991 IdenTrust Services, LLC",
+        "root": "IdenTrust Public Sector Root CA 1",
+        "thumbprint": "BA29416077983FF4F3EFF231053B2EEA6D4D45FD",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "root": "DST Root CA X3",
+        "thumbprint": "DAC9024F54D8F6DF94935FB1732638CA6AD77C13",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "OISTE",
+        "root": "OISTE WISeKey Global Root GC CA",
+        "thumbprint": "E011845E34DEBE8881B99CF61626D1961FC3B931",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SI-TRUST",
+        "root": "SI-TRUST Root",
+        "thumbprint": "3A4979B40FA841488200B582FBEEB63AAB9919AE",
+        "action": "notbefore_the_efs_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "trian Society for Data Protection (Arge Daten) (GlobalTrust)",
+        "root": "GLOBALTRUST",
+        "thumbprint": "342CD9D3062DA48C346965297F081EBC2EF68FDC",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium",
+        "thumbprint": "D8A6332CE0036FB185F6634F7D6A066526322827",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Commercial",
+        "thumbprint": "F9B5B632455F9CBEEC575F80DCE96E2CC7B278B7",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium ECC",
+        "thumbprint": "B8236B002F1D16865301556C11A437CAEBFFC3BB",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust.net Certification Authority (2048)",
+        "thumbprint": "503006091D97D4F5AE39F7CBE7927D7D652D3431",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G2",
+        "thumbprint": "8CF427FD790C3AD166068DE81E57EFBB932272D4",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Networking",
+        "thumbprint": "293621028B20ED02F566C532D1D6ED909F45002F",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "root": "Izenpe.com",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "notbefore_the_ip_security_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v10",
+        "thumbprint": "6C155ED7271A904A0DC040F0C857FF53BF6DB290",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "ePKI Root Certification Authority - G2",
+        "thumbprint": "D99B104298594763F0B9A927B79269CB47DD158B",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Enterprise Mobile Root for Microsoft",
+        "thumbprint": "92B46C76E13054E104F230517E6E504D43AB10B5",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ation Technology, Controller of Certifying Authorities (CCA)",
+        "root": "CCA India 2015 SPL",
+        "thumbprint": "3BC6DCE00307BD676041EBD85970C62F8FDA5109",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Izenpe S.A.",
+        "root": "Izenpe.com",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Korea Information Security Agency (KISA)",
+        "root": "KISA RootCA 1",
+        "thumbprint": "027268293E5F5D17AAA4B3C3E6361E1F92575EAA",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado",
+        "thumbprint": "016897E1A0B8F2C3B134665C20A727B7A158E28F",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SI-TRUST",
+        "root": "SI-TRUST Root",
+        "thumbprint": "3A4979B40FA841488200B582FBEEB63AAB9919AE",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "trian Society for Data Protection (Arge Daten) (GlobalTrust)",
+        "root": "GLOBALTRUST",
+        "thumbprint": "342CD9D3062DA48C346965297F081EBC2EF68FDC",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Financial Certification Authority (CFCA)",
+        "root": "CFCA EV ROOT",
+        "thumbprint": "E2B8294B5584AB6B58C290466CAC3FB8398F8483",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co., Ltd. - ePKI Root Certification Authority",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "ePKI Root Certification Authority - G2",
+        "thumbprint": "D99B104298594763F0B9A927B79269CB47DD158B",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium",
+        "thumbprint": "D8A6332CE0036FB185F6634F7D6A066526322827",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Commercial",
+        "thumbprint": "F9B5B632455F9CBEEC575F80DCE96E2CC7B278B7",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium ECC",
+        "thumbprint": "B8236B002F1D16865301556C11A437CAEBFFC3BB",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust.net Certification Authority (2048)",
+        "thumbprint": "503006091D97D4F5AE39F7CBE7927D7D652D3431",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G2",
+        "thumbprint": "8CF427FD790C3AD166068DE81E57EFBB932272D4",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Networking",
+        "thumbprint": "293621028B20ED02F566C532D1D6ED909F45002F",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
+        "root": "GDCA TrustAUTH R5 ROOT",
+        "thumbprint": "0F36385B811A25C39B314E83CAE9346670CC74B4",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "6B5A68D92819D9CE5DD6D7969A4968E11991 IdenTrust Services, LLC",
+        "root": "IdenTrust Public Sector Root CA 1",
+        "thumbprint": "BA29416077983FF4F3EFF231053B2EEA6D4D45FD",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "root": "DST Root CA X3",
+        "thumbprint": "DAC9024F54D8F6DF94935FB1732638CA6AD77C13",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "OISTE",
+        "root": "OISTE WISeKey Global Root GC CA",
+        "thumbprint": "E011845E34DEBE8881B99CF61626D1961FC3B931",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SI-TRUST",
+        "root": "SI-TRUST Root",
+        "thumbprint": "3A4979B40FA841488200B582FBEEB63AAB9919AE",
+        "action": "notbefore_efs",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-09": {
+    "year": 2020,
+    "month": 9,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/september2020",
+    "actions": [
+      {
+        "ca": "mbprint): Austrian Society For Data Protection (GlobalTrust)",
+        "root": "GLOBALTRUST 2020",
+        "thumbprint": "D067C11351010CAAD0C76A65373116264F5371A2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "1E70283209903C9472C79B2C103E8EBB238BEB62 GlobalSign",
+        "root": "GlobalSign Root E46",
+        "thumbprint": "39B46CD5FE8006EBE22F4ABB0833A0AFDBB9DD84",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root R46",
+        "thumbprint": "53A2B04BCA6BD645E6398A8EC40DD2BF77C3A290",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2020-10": {
+    "year": 2020,
+    "month": 10,
+    "release_date": "2020-10-27",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2020/october2020",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): DATEV eG",
+        "root": "CA DATEV BT 02",
+        "thumbprint": "39410BC2303748066069A72A664DE4C743481296",
+        "action": "notbefore_the_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 02",
+        "thumbprint": "93F7F48B1261943F6A78210C52E626DFBFBBE260",
+        "action": "notbefore_the_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 02",
+        "thumbprint": "AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37",
+        "action": "notbefore_the_server_authentication",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-01": {
+    "year": 2021,
+    "month": 1,
+    "release_date": "2021-01-26",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/january2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Telia Company",
+        "root": "Telia Root CA v2",
+        "thumbprint": "B999CDD173508AC44705089C8C88FBBEA02B40CD",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "lease will add the Code Signing to the following roots: Atos",
+        "root": "Atos TrustedRoot 2011",
+        "thumbprint": "2BB1F53E550C1DC5F1D4E6B76A464B550602AC21",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-02": {
+    "year": 2021,
+    "month": 2,
+    "release_date": "2021-02-23",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/feb2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Microsoft Corporation",
+        "root": "Microsoft EV RSA Root Certificate Authority 2017",
+        "thumbprint": "ADA06E72393CCBE873648CF122A91C35EF4C984D",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "root": "Microsoft EV ECC Root Certificate Authority 2017",
+        "thumbprint": "DE1AF143FFA160CF5FA86ABFE577291633DC264DA12C863C5738BEA4AFBB2CDB",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "This release will NotBefore the following roots: A-Trust",
+        "root": "A-Trust-Root-07 [1B1815]",
+        "thumbprint": "1B1815AF925D140EFC5AF9A1AA55EEBB4FFBC561",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Primary Certification Authority - G3",
+        "thumbprint": "039EEDB80BE7A03C6953893B20D2D9323A4C2AFD",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Class 3 Public Primary Certification Authority - G3",
+        "thumbprint": "132D0D45534B6997CDB2D5C339E25576609B5CC6",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Class 3 Public Primary Certification Authority - G4",
+        "thumbprint": "22D5D8DF8F0231D18DF79DB7CF8A2D64C93F6C3A",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Symantec Class 3 Public Primary Certification Authority - G6",
+        "thumbprint": "26A16C235A2472229B23628025BC8097C88524A1",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Primary Certification Authority",
+        "thumbprint": "323C118E1BF7B8B65254E2E2100DD6029037F096",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Universal CA 2",
+        "thumbprint": "379A197B418545350CA60369F33C2EAF474F2079",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Class 3 Public Primary Certification Authority - G5",
+        "thumbprint": "4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Symantec Class 3 Public Primary Certification Authority - G4",
+        "thumbprint": "58D52DB93301A4FD291A8C9645A08FEE7F529282",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Symantec Class 2 Public Primary Certification Authority - G4",
+        "thumbprint": "6724902E4801B02296401046B4B1672CA975FD2B",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Symantec Class 1 Public Primary Certification Authority - G4",
+        "thumbprint": "84F2E3DD83133EA91D19527F02D729BFC15FE667",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Primary Certification Authority - G2",
+        "thumbprint": "8D1784D537F3037DEC70FE578B519A99E610D7B0",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "thawte Primary Root CA",
+        "thumbprint": "91C6D6EE3E8AC86384E548C299295C756C817B81",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "thawte Primary Root CA - G2",
+        "thumbprint": "AADBBC22238FC401A127BB38DDF41DDB089EF012",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Thawte Timestamping CA",
+        "thumbprint": "BE36A4562FB2EE05DBB3D32323ADF445084ED656",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Global CA",
+        "thumbprint": "DE28F4A4FFE5B92FA3C503D1A349A7F9962A8212",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Universal CA",
+        "thumbprint": "E621F3354379059A4B68309D8A2F74221587EC79",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "thawte Primary Root CA - G3",
+        "thumbprint": "F18B538D1BE903B6A6F056435B171589CAF36BF2",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Keynectis)",
+        "root": "CertPlus Class 2 Primary CA [742074]",
+        "thumbprint": "74207441729CDD92EC7931D823108DC28192E2BB",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Inera AB (SITHS)",
+        "root": "Inera AB [585F78]",
+        "thumbprint": "585F7875BEE7433EB079EAAB7D05BB0F7AF2BCCC",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Izenpe S.A",
+        "root": "Izenpe.com [30779E]",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Korea Information Security Agency (KISA)",
+        "root": "KISA RootCA 1 [027268]",
+        "thumbprint": "027268293E5F5D17AAA4B3C3E6361E1F92575EAA",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "LuxTrust",
+        "root": "LuxTrust Global Root 2 [1E0E56]",
+        "thumbprint": "1E0E56190AD18B2598B20444FF668A0417995F3F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora da Raiz Brasileira v1 - ICP-Brasil [705D2B]",
+        "thumbprint": "705D2B4565C7047A540694A79AF7ABB842BDC161",
+        "action": "notbefore_the_tls_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2 [A9822E]",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "notbefore_the_tls_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Logius",
+        "root": "Staat der Nederlanden Root CA \u2013 G3",
+        "thumbprint": "D8EB6B41519259E0F3E78500C03DB68897C9EEFC",
+        "action": "notbefore_the_tls_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ode Signing EKUs to the following roots: AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016 [2DE16A]",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Universal Root Certification Authority",
+        "thumbprint": "3679CA35668772304D30A5FB873B0FA77BB70D54",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Cybertrust Global Root [5F43E5]",
+        "thumbprint": "5F43E5B1BFF8788CAC1CC7CA4A9AC6222BCC34C6",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "VeriSign Class 2 Public Primary Certification Authority - G3",
+        "thumbprint": "61EF43D77FCAD46151BC98E0C35912AF9FEB6311",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root CA [912198]",
+        "thumbprint": "912198EEF23DCAC40939312FEE97DD560BAE49B1",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "icate Authority (Electronic Transactions Development Agency)",
+        "root": "Thailand National Root Certification Authority - G1 [66F2DC]",
+        "thumbprint": "66F2DCFB3F814DDEE9B3206F11DEFE1BFBDFE132",
+        "action": "notbefore_the_code_signing_ekus",
+        "notbefore_date": null
+      },
+      {
+        "ca": "d the EV Code Signing OID to the following roots: GlobalSign",
+        "root": "GlobalSign Code Signing Root R45",
+        "thumbprint": "4EFC31460C619ECAE59C1BCE2C008036D94C84B8",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-04": {
+    "year": 2021,
+    "month": 4,
+    "release_date": "2021-04-29",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/april2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Digicert",
+        "root": "DigiCert CS ECC P384 Root G5",
+        "thumbprint": "843573112A3B319344E5E4ECABC9F26C7CD54D07",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert CS RSA4096 Root G5",
+        "thumbprint": "5EEED86FA37C675230642F55C84DDBF67CD33C80",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert TLS RSA4096 Root G5",
+        "thumbprint": "A78849DC5D7C758C8CDE399856B3AAD0B2A57135",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert TLS ECC P384 Root G5",
+        "thumbprint": "17F3DE5E9F0F19E98EF61F32266E20C407AE30EE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert SMIME RSA4096 Root G5",
+        "thumbprint": "5BC5ADE29AA754DA848953A5FED75B4686D05708",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert SMIME ECC P384 Root G5",
+        "thumbprint": "1CB8A708C90D207901A0B2367FF09565E45324FE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert RSA4096 Root G5",
+        "thumbprint": "87B8E6D38F1A39CD97F04A9E174B3C9EE7EE1115",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert ECC P384 Root G5",
+        "thumbprint": "D1EEB1E8C09020BAB85D3DE27F78EE33A06CAEDB",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Client ECC P384 Root G5",
+        "thumbprint": "B218FE6D07952A2207A35AFD5ED8E4991029E336",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Client RSA4096 Root G5",
+        "thumbprint": "B60D92FC064D32AF1FEA30FCD85FB0243463A41C",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "elease will NotBefore the following roots: Digidentity BV **",
+        "root": "Digidentity Services Root CA",
+        "thumbprint": "7B3FB277EE311C1ED560CAB96E4FED775E6A3EED",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV BT 02",
+        "thumbprint": "39410BC2303748066069A72A664DE4C743481296",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 02",
+        "thumbprint": "AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 02",
+        "thumbprint": "93F7F48B1261943F6A78210C52E626DFBFBBE260",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ernment of Spain, Ministerio de Trabajo e Inmigracion (MTIN)",
+        "root": "AC1 RAIZ MTIN",
+        "thumbprint": "6AD23B9DC48E375F859AD9CAB585325C23894071",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "st and Telecommunications eSignTrust Certification Authority",
+        "root": "Macao Post eSign Trust",
+        "thumbprint": "06143151E02B45DDBADD5D8E56530DAAE328CF90",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root Certification Authority",
+        "thumbprint": "DE3F40BD5093D39B6C60F6DABC076201008976C9",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (UTN Object)",
+        "thumbprint": "E12DFB4B41D7D9C32B30514BAC1D81D8385E2D46",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (UTN Client)",
+        "thumbprint": "B172B1A56D95F91FE50287E14D37EA6A4463768A",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (AddTrust)",
+        "thumbprint": "02FAF3E291435468607857694DF5E45B68851868",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SK ID Solutions AS",
+        "root": "Estonian Certification Centre Root CA",
+        "thumbprint": "C9A8B9E755805E58E35377A725EBAFC37B27CCD7",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "T-Systems International GmbH (Deutsche Telekom)",
+        "root": "Deutsche Telekom Root CA 2",
+        "thumbprint": "85A408C09C193E5D51587DCDD61330FD8CDE37BF",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "licy OID to the following roots: Google Trust Services (GTS)",
+        "root": "Google Trust Services - GlobalSign Root CA-R2",
+        "thumbprint": "75E0ABB6138512271C04F85FDDDE38E4B7242EFE",
+        "action": "remove_the_ev_policy_oid",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services (GTS)",
+        "root": "Google Trust Services - GlobalSign ECC Root CA - R4",
+        "thumbprint": "6969562E4080F424A1E7199F14BAF3EE58AB6ABB",
+        "action": "remove_the_ev_policy_oid",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Telia Company (formerly TeliaSonera)",
+        "root": "TeliaSonera Root CA v1",
+        "thumbprint": "4313BB96F1D5869BC14E6A92F6CFF63469878237",
+        "action": "remove_the_ev_policy_oid",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ease will add the EV SSL OID to the following roots: WiseKey",
+        "root": "OISTE WISeKey Global Root GC CA",
+        "thumbprint": "E011845E34DEBE8881B99CF61626D1961FC3B931",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Austrian Society For Data Protection (GlobalTrust)",
+        "root": "GLOBALTRUST 2020",
+        "thumbprint": "D067C11351010CAAD0C76A65373116264F5371A2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ng roots: Austrian Society For Data Protection (GlobalTrust)",
+        "root": "GLOBALTRUST 2020",
+        "thumbprint": "D067C11351010CAAD0C76A65373116264F5371A2",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-05": {
+    "year": 2021,
+    "month": 5,
+    "release_date": "2021-05-25",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/may2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Microsec Ltd",
+        "root": "e-Szigno Root CA 2017",
+        "thumbprint": "89D483034F9E9A48805F7237D4A9A6EFCB7C1FD1",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "2 Internet Security Research Group(ISRG)",
+        "root": "ISRG Root X2",
+        "thumbprint": "BDB1B93CD5978D45C6261455F8DB95C75AD153AF",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-06": {
+    "year": 2021,
+    "month": 6,
+    "release_date": "2021-06-22",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/june2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Microsoft Corporation",
+        "root": "Microsoft Identity Verification Root Certificate Authority 2020",
+        "thumbprint": "F40042E2E5F7E8EF8189FED15519AECE42C3BFA2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA Client RSA Root CA 2021",
+        "thumbprint": "46C6900A773AB6BCF465ADACFCE3F707006EDE6E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA Code Signing RSA Root CA 2021",
+        "thumbprint": "8DDEB82046B6227C79246A3EAD7B32C3E88FFCAC",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA TLS ECC Root CA 2021",
+        "thumbprint": "BCB0C19DE9989270193857E98DA7B45D6EEE0148",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA Client ECC Root CA 2021",
+        "thumbprint": "BE64D3DA144BD26BCDAF8FDBA6A672F8DE26F900",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA TLS RSA Root CA 2021",
+        "thumbprint": "022D0582FA88CE140C0679DE7F1410E945D7A56D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA Code Signing ECC Root CA 2021",
+        "thumbprint": "E436E537B71342B62E8E00305AD9A3D1D73347E9",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "root": "SZAFIR ROOT CA",
+        "thumbprint": "D3EEFBCBBCF49867838626E23BB59CA01E305DB7",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Halcom D.D.",
+        "root": "Halcom Root Certificate Authority",
+        "thumbprint": "23D731FEDC5C8BB97DE6DC8E13B411BD4F24004F",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Halcom D.D.",
+        "root": "Halcom Root Certificate Authority",
+        "thumbprint": "23D731FEDC5C8BB97DE6DC8E13B411BD4F24004F",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-08": {
+    "year": 2021,
+    "month": 8,
+    "release_date": "2021-08-24",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/august2021",
+    "actions": [
+      {
+        "ca": "Keynectis)",
+        "root": "KEYNECTSIS ROOT CA",
+        "thumbprint": "9C615C4D4D85103A5326C24DBAEAE4A2D2D5CC97",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Autoridad de Certificacion (ANF AC)",
+        "root": "ANF Global Root CA",
+        "thumbprint": "5BB59920D11B391479463ADD5100DB1D52F43AD4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Autoridad de Certificacion (ANF AC)",
+        "root": "ANF AC",
+        "thumbprint": "CEA9890D85D80753A626286CDAD78CB566D70CF2",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Lithuania, Registru Centras",
+        "root": "VI Registru Centras RCSC (RootCA)",
+        "thumbprint": "971D3486FC1E8E6315F7C6F2E12967C724342214",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ernment of Spain, Fabrica Nacional de Moneda y Timbre (FNMT)",
+        "root": "AC RAIZ FNMT-RCM (B8651)",
+        "thumbprint": "B865130BEDCA38D27F69929420770BED86EFBC10",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Japan Local Authority Information Systems (J-LIS)",
+        "root": "Application CA G3 Root",
+        "thumbprint": "6F3884568E99C8C6AC0E5DDE2DB202DD002E3663",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Kozjegyzoi (Class A) Tanusitvanykiado",
+        "thumbprint": "ACED5F6553FD25CE015F1F7A483B6A749F6178C6",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Red Abogacia",
+        "root": "Autoridad de Certificacion de la Abogacia",
+        "thumbprint": "7F8A77836BDC6D068F8B0737FCC5725413068CA4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "hanghai Electronic Certification Authority Co., Ltd. (SHECA)",
+        "root": "UCA Root",
+        "thumbprint": "8250BED5A214433A66377CBC10EF83F669DA3A67",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "hanghai Electronic Certification Authority Co., Ltd. (SHECA)",
+        "root": "UCA Global Root",
+        "thumbprint": "0B972C9EA6E7CC58D93B20BF71EC412E7209FABF",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com EV Root Certification Authority RSA",
+        "thumbprint": "1CB7EDE176BCDFEF0C866F46FBF980E901E5CE35",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA Root A",
+        "thumbprint": "0C2009A4A88D8B4202185250540CC42BDFB5B089",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "1AC92F09EA89E28B126DFAC51E3AF7EA9095A3EE Personal I.D. Ltd",
+        "root": "PersonalID Trustworthy RootCA 2011",
+        "thumbprint": "4394CE3126FF1A224CDD4DEEB4F4EC1DA368EF6A",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Halcom D.D.",
+        "root": "Halcom Root CA",
+        "thumbprint": "535B001672ABBF7B6CC25405AE4D24FE033FD1CC",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of France (ANSSI, DCSSI)",
+        "root": "Secretariat General de la Defense Nationale",
+        "thumbprint": "60D68974B5C2659E8A0FC1887C88D246691B182C",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Swisscom (Switzerland) Ltd",
+        "root": "Swisscom Root CA 2",
+        "thumbprint": "77474FC630E40F4C47643F84BAB8C6954A8A41EC",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "84429D9FE2E73A0DC8AA0AE0A902F2749933FE02 SwissSign AG",
+        "root": "SwissSign Silver Root CA \u2013 G3",
+        "thumbprint": "8D08FC43C0770CA84F4DCCB2D41A5D956D786DC4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Image-X Enterprises Inc",
+        "root": "ESIGNIT.ORG",
+        "thumbprint": "9F8DE799CF8764ED2466990564041B194919EDE8",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Orange Polska S.A.",
+        "root": "Signet Root CA",
+        "thumbprint": "B2BD9031AA6D0E14F4C57FD548258F37B1FB39E4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TurkTrust",
+        "root": "TURKTRUST Elektronik Sertifika Hizmet Sa\u00c4\u0178lay\u00c4\u00b1c\u00c4\u00b1s\u00c4\u00b1 H5",
+        "thumbprint": "C418F64D46D1DF003D2730137243A91211C675FB",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "LuxTrust",
+        "root": "LuxTrust Global Root CA",
+        "thumbprint": "C93C34EA90D9130C0F03004B98BD8B3570915611",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Microsoft Corporation",
+        "root": "Microsoft Root Certificate Authority",
+        "thumbprint": "CDD4EEAE6000AC7F40C3802C171E30148030C072",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Athex Exchange S.A. (Athex)",
+        "root": "Athex Root CA",
+        "thumbprint": "DB2B7B434DFB7FC1CB5926EC5D9521FE350FF279",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nt of Japan, Ministry of Internal Affairs and Communications",
+        "root": "GPKI ApplicationCA2 Root",
+        "thumbprint": "F00FC37D6A1C9261FB6BC1C218498C5AA4DC51FB",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digidentity BV **",
+        "root": "Digidentity BV",
+        "thumbprint": "F138A330A4EA986BEB520BB11035876EFB9D7F1C",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Government of Saudi Arabia, NCDC",
+        "root": "Saudi National Root CA",
+        "thumbprint": "8351509B7DF8CFE87BAE62AEB9B03A52F4E62C79",
+        "action": "disallow_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Agencia Notarial de Certificacion (ANCERT)",
+        "root": "ANCERT Certificados CGN V2",
+        "thumbprint": "7EB1A0429BE5F428AC2B93971D7C8448A536070C",
+        "action": "disallow_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Telia Company (formerly TeliaSonera)",
+        "root": "Sonera Class2 CA",
+        "thumbprint": "37F76DE6077C90C5B13E931AB74110B4F2E49A27",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Netrust",
+        "root": "Netrust CA1",
+        "thumbprint": "55C86F7414AC8BDD6814F4D86AF15F3710E104D0",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "root": "Staat der Nederlanden Root CA - G2",
+        "thumbprint": "59AF82799186C7B47507CBCF035746EB04DDB716",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado",
+        "thumbprint": "016897E1A0B8F2C3B134665C20A727B7A158E28F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "adores Mercantile (Spanish Property &amp; Commerce Registry)",
+        "root": "Colegio de Registradores Mercantiles",
+        "thumbprint": "211165CA379FBB5ED801E31C430A62AAC109BCB4",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustis",
+        "root": "Trustis FPS Root CA",
+        "thumbprint": "3BC0380B33C3F6A60C86152293D9DFF54B81C004",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NDCA)",
+        "root": "Tunisian Root Certificate Authority - TunRootCA2",
+        "thumbprint": "9638633C9056AE8814A065D23BDC60A0EE702FA7",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "cion General de la Policia, Ministerio del Interior, Espana.",
+        "root": "DIRECCION GENERAL DE LA POLICIA",
+        "thumbprint": "B38FECEC0B148AA686C3D00F01ECC8848E8085EB",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Entrust",
+        "root": "Entrust Root Certification Authority - G4",
+        "thumbprint": "14884E862637B026AF59625C4077EC3529BA9601",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 1 G3",
+        "thumbprint": "1B8EEA5796291AC939EAB80A811A7373C0937967",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign ECC Root CA - R5",
+        "thumbprint": "1F24C630CDA418EF2069FFAD4FDD5F463A1B69AA",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3",
+        "thumbprint": "1F4914F7D874951DDDAE02C0BEFD3A2D82755185",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - EC1",
+        "thumbprint": "20D80640DF9B25F512253A11EAF7598AEB14B547",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SECOM Trust Systems CO. LTD.",
+        "root": "SECOM Trust Systems CO LTD [36B12]",
+        "thumbprint": "36B12B49F9819ED74C9EBC380FC6568F5DACB2F7",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustwave",
+        "root": "Trustwave [3A44]",
+        "thumbprint": "3A44735AE581901F248661461E3B9CC45FF53A1B",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3 G3",
+        "thumbprint": "4812BD923CA8C43906E7306D2796E6A4CF222E7D",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "EDICOM",
+        "root": "CAEDICOM ROOT",
+        "thumbprint": "559BBA7B0FFE80D6D3829B1FD07AA4D322194790",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Root CA 2",
+        "thumbprint": "5A8CEF45D7A69859767A8C8B4496B578CF474B1A",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Cybertrust Global Root",
+        "thumbprint": "5F43E5B1BFF8788CAC1CC7CA4A9AC6222BCC34C6",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R6",
+        "thumbprint": "8094640EB5A7A1CA119C1FDDD59F810263A7FBD1",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root CA",
+        "thumbprint": "912198EEF23DCAC40939312FEE97DD560BAE49B1",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Services Root Certificate Authority -- G2",
+        "thumbprint": "925A8F8D2C6D04E0665F596AFF22D863E8256F3F",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign Silver G2 Root CA",
+        "thumbprint": "9BAAE59F56EE21CB435ABE2593DFA7F040D11DCB",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert",
+        "thumbprint": "A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustwave",
+        "root": "Trustwave [B8018]",
+        "thumbprint": "B80186D1EB9C86A54104CF3054F34C52B7E558C6",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign",
+        "thumbprint": "D8C5388AB7301B1B6ED47AE645253A6F9F1A2761",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root G2",
+        "thumbprint": "DF3C24F9BFD666761B268073FE06D1CC8D4F82A4",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Platina (Class Platinum) Fotanusitvany",
+        "thumbprint": "EC93DE083C93D933A986B3D5CDE25ACB2FEECF8E",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Assured ID Root G3",
+        "thumbprint": "F517A24F9A48C6C9F8A200269FDC0F482CAB3089",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Root CA 4",
+        "thumbprint": "F6108407D6F8BB67980CC2E244C2EBAE1CEF63BE",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "Hellenic Academic and Research Institutions RootCA 2011",
+        "thumbprint": "FE45659B79035B98A161B5512EACDA580948224D",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "MULTICERT",
+        "root": "MULTICERT Root Certification Authority 01",
+        "thumbprint": "46AF7A31B599460D469D6041145B13651DF9170A",
+        "action": "notbefore_the_code_sign_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Chunghwa Telecom",
+        "root": "Chunghwa Telecom Co. Ltd.",
+        "thumbprint": "67650DF17E8E7E5B8240A4F4564BCFE23D69C6F0",
+        "action": "notbefore_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Chunghwa Telecom",
+        "root": "ePKI Root Certification Authority - G2 [D99B1]",
+        "thumbprint": "D99B104298594763F0B9A927B79269CB47DD158B",
+        "action": "notbefore_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Entrust",
+        "root": "Entrust Root Certification Authority - G4",
+        "thumbprint": "14884E862637B026AF59625C4077EC3529BA9601",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 1 G3",
+        "thumbprint": "1B8EEA5796291AC939EAB80A811A7373C0937967",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign ECC Root CA - R5",
+        "thumbprint": "1F24C630CDA418EF2069FFAD4FDD5F463A1B69AA",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3",
+        "thumbprint": "1F4914F7D874951DDDAE02C0BEFD3A2D82755185",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - EC1",
+        "thumbprint": "20D80640DF9B25F512253A11EAF7598AEB14B547",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SECOM Trust Systems CO. LTD.",
+        "root": "SECOM Trust Systems CO LTD [36B12]",
+        "thumbprint": "36B12B49F9819ED74C9EBC380FC6568F5DACB2F7",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustwave",
+        "root": "Trustwave [3A44]",
+        "thumbprint": "3A44735AE581901F248661461E3B9CC45FF53A1B",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root CA 3 G3",
+        "thumbprint": "4812BD923CA8C43906E7306D2796E6A4CF222E7D",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "EDICOM",
+        "root": "CAEDICOM ROOT",
+        "thumbprint": "559BBA7B0FFE80D6D3829B1FD07AA4D322194790",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Root CA 2",
+        "thumbprint": "5A8CEF45D7A69859767A8C8B4496B578CF474B1A",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Cybertrust Global Root",
+        "thumbprint": "5F43E5B1BFF8788CAC1CC7CA4A9AC6222BCC34C6",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "GlobalSign",
+        "root": "GlobalSign Root CA - R6",
+        "thumbprint": "8094640EB5A7A1CA119C1FDDD59F810263A7FBD1",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root CA",
+        "thumbprint": "912198EEF23DCAC40939312FEE97DD560BAE49B1",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Services Root Certificate Authority -- G2",
+        "thumbprint": "925A8F8D2C6D04E0665F596AFF22D863E8256F3F",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign Silver G2 Root CA",
+        "thumbprint": "9BAAE59F56EE21CB435ABE2593DFA7F040D11DCB",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert",
+        "thumbprint": "A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustwave",
+        "root": "Trustwave [B8018]",
+        "thumbprint": "B80186D1EB9C86A54104CF3054F34C52B7E558C6",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign",
+        "thumbprint": "D8C5388AB7301B1B6ED47AE645253A6F9F1A2761",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Global Root G2",
+        "thumbprint": "DF3C24F9BFD666761B268073FE06D1CC8D4F82A4",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NetLock Ltd.",
+        "root": "NetLock Platina (Class Platinum) Fotanusitvany",
+        "thumbprint": "EC93DE083C93D933A986B3D5CDE25ACB2FEECF8E",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "DigiCert Assured ID Root G3",
+        "thumbprint": "F517A24F9A48C6C9F8A200269FDC0F482CAB3089",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Amazon",
+        "root": "Amazon Root CA 4",
+        "thumbprint": "F6108407D6F8BB67980CC2E244C2EBAE1CEF63BE",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "Hellenic Academic and Research Institutions RootCA 2011",
+        "thumbprint": "FE45659B79035B98A161B5512EACDA580948224D",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      },
+      {
+        "ca": "MULTICERT",
+        "root": "MULTICERT Root Certification Authority 01",
+        "thumbprint": "46AF7A31B599460D469D6041145B13651DF9170A",
+        "action": "notbefore_code_sign",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-09": {
+    "year": 2021,
+    "month": 9,
+    "release_date": "2021-09-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/september2021",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Internet Security Research Group(ISRG)",
+        "root": "ISRG Root X1",
+        "thumbprint": "CABD2A79A1076A31F21D253635CB039D4329A5E8",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Internet Security Research Group(ISRG)",
+        "root": "ISRG Root X2",
+        "thumbprint": "BDB1B93CD5978D45C6261455F8DB95C75AD153AF",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2021-10": {
+    "year": 2021,
+    "month": 10,
+    "release_date": "2021-10-26",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2021/october2021",
+    "actions": [
+      {
+        "ca": "nd, Population Register Centres (Vaestorekisterikeskus, VRK)",
+        "root": "DVV Gov. Root CA - G3 RSA",
+        "thumbprint": "EAF83D8427897576CDD1B30957773E5F74B9B7CC",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nd, Population Register Centres (Vaestorekisterikeskus, VRK)",
+        "root": "DVV Gov. Root CA - G3 ECC",
+        "thumbprint": "B2142AA969EB0DDB5CE9024684CD850B69E418E5",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): SECOM Trust Systems CO. LTD.",
+        "root": "Security Communication ECC RootCA1",
+        "thumbprint": "B80E26A9BFD2B23BC0EF46C9BAC7BBF61D0D4141",
+        "action": "notbefore_the_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Red Abogacia",
+        "root": "ACA ROOT",
+        "thumbprint": "D496592B305707386CC5F3CDB259AE66D7661FCA",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): SECOM Trust Systems CO. LTD.",
+        "root": "Security Communication ECC RootCA1",
+        "thumbprint": "B80E26A9BFD2B23BC0EF46C9BAC7BBF61D0D4141",
+        "action": "notbefore_code_signing",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Red Abogacia",
+        "root": "ACA ROOT",
+        "thumbprint": "D496592B305707386CC5F3CDB259AE66D7661FCA",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-02": {
+    "year": 2022,
+    "month": 2,
+    "release_date": "2022-02-22",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/february2022",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Solutions Notarius Inc",
+        "root": "Notarius Root Certificate Authority",
+        "thumbprint": "B1C3AC0977AAF147E5821A87F8DA32226A210693",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Athex Exchange S.A. (Athex)",
+        "root": "ATHEX Root CA G2",
+        "thumbprint": "892A1BD4C8B0F8AA9A65ED4CB9D3BF4840B34BC1",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Qual-02 [CD787]",
+        "thumbprint": "CD787A3D5CBA8207082848365E9ACDE9683364D8",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Qual-03a",
+        "thumbprint": "42EFDDE6BFF35ED0BAE6ACDD204C50AE86C4F4FA",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "Symantec Enterprise Mobile Root for Microsoft",
+        "thumbprint": "92B46C76E13054E104F230517E6E504D43AB10B5",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NLB Nova Ljubljanska Banka d.d. Ljubljana",
+        "root": "NLB Nova Ljubljanska Banka d.d. Ljubljana",
+        "thumbprint": "0456F23D1E9C43AECB0D807F1C0647551A05F456",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Pos Digicert Sdn. Bhd (Malaysia)",
+        "root": "PosDigicert Class 2 Root CA G2",
+        "thumbprint": "313B8D0E7E2E4D20AE8668FFE59DB5193CBF7A32",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA Root B",
+        "thumbprint": "C860A318FCF5B7130B1007AD7F614A40FFFF185F",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA VS Root",
+        "thumbprint": "D2695E12F592E9C8EE2A4CB8D55E295FEE6B2D31",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA II",
+        "thumbprint": "C7F7CBE2023666F986025D4A3E313F29EB0C5B38",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA III",
+        "thumbprint": "CCEAE32445CD4218DD188EADCEB3133C7FB340AD",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Docapost",
+        "root": "Certinomis - Root CA",
+        "thumbprint": "9D70BB01A5A4A018112EF71C01B932C534E788A8",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Cisco",
+        "root": "Cisco Systems",
+        "thumbprint": "DE990CED99E0431F60EDC3937E7CD5BF0ED9E5FA",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): NetLock Ltd.",
+        "root": "NetLock Arany (Class Gold) Fotanusitvany",
+        "thumbprint": "06083F593F15A104A069A46BA903D006B7970991",
+        "action": "notbefore_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nformation Technology, Systems and Telecommunication (FOITT)",
+        "root": "Swiss Government Root CA I",
+        "thumbprint": "A1585187156586CEF9C454E22AB15C58745607B4",
+        "action": "notbefore_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Cisco",
+        "root": "RXC-R2",
+        "thumbprint": "2C8AFFCE966430BA04C04F81DD4B49C71B5B81A0",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Comodo",
+        "root": "Sectigo (UTN Hardware)",
+        "thumbprint": "0483ED3399AC3608058722EDBC5E4600E3BEF9D7",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "JCSI",
+        "root": "Japan Certification Services, Inc. SecureSign RootCA3",
+        "thumbprint": "8EB03FC3CF7BB292866268B751223DB5103405CB",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "JCSI",
+        "root": "Japan Certification Services, Inc. SecureSign RootCA1",
+        "thumbprint": "CABB51672400588E6419F1D40878D0403AA20264",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TurkTrust",
+        "root": "TURKTRUST Elektronik Sertifika Hizmet Saglayicisi H6",
+        "thumbprint": "8A5C8CEEA503E60556BAD81BD4F6C9B0EDE52FE0",
+        "action": "remove",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-04": {
+    "year": 2022,
+    "month": 4,
+    "release_date": "2022-04-26",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/april2022",
+    "actions": [
+      {
+        "ca": "JCSI",
+        "root": "SecureSign Root CA14",
+        "thumbprint": "DD50C0F779B3642E74A2B89D9FD340DDBBF0F24F",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "JCSI",
+        "root": "Cybertrust iTrust Root Certification Authority",
+        "thumbprint": "D884EF31B85CDBCB0F95A6F4CD038F8848135D25",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "JCSI",
+        "root": "SecureSign Root CA15",
+        "thumbprint": "CBBA83C8C15A5DF1F9736FCAD7EF2813064A077D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "JCSI",
+        "root": "SecureSign Root CA12",
+        "thumbprint": "7A221E3DDE1B06AC9EC84770168E3CE5F76B06F4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): HARICA",
+        "root": "HARICA TLS RSA Root CA 2021",
+        "thumbprint": "022D0582FA88CE140C0679DE7F1410E945D7A56D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA TLS ECC Root CA 2021",
+        "thumbprint": "BCB0C19DE9989270193857E98DA7B45D6EEE0148",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): HARICA",
+        "root": "HARICA Code Signing RSA Root CA 2021",
+        "thumbprint": "8DDEB82046B6227C79246A3EAD7B32C3E88FFCAC",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "HARICA",
+        "root": "HARICA Code Signing ECC Root CA 2021",
+        "thumbprint": "E436E537B71342B62E8E00305AD9A3D1D73347E9",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Docapost",
+        "root": "Certinomis - Root CA",
+        "thumbprint": "9D70BB01A5A4A018112EF71C01B932C534E788A8",
+        "action": "remove_d_notbefore_property_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Solutions Notarius Inc.",
+        "root": "Notarius Root Certificate Authority",
+        "thumbprint": "B1C3AC0977AAF147E5821A87F8DA32226A210693",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "mbprint): Austrian Society For Data Protection (GlobalTrust)",
+        "root": "GLOBALTRUST 2020",
+        "thumbprint": "D067C11351010CAAD0C76A65373116264F5371A2",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-05": {
+    "year": 2022,
+    "month": 5,
+    "release_date": "2022-05-17",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/may2022",
+    "actions": [
+      {
+        "ca": "humbprint): U.S. Federal Public Key Infrastructure (US FPKI)",
+        "root": "U.S Government Common Policy",
+        "thumbprint": "905F942FD9F28F679B378180FD4F846347F645C1",
+        "action": "remove",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-06": {
+    "year": 2022,
+    "month": 6,
+    "release_date": "2022-06-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/june2022",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Visa",
+        "root": "Visa Public RSA Root CA",
+        "thumbprint": "82EF4C64F057CA0038F0DB5B76C24B654D7CDA78",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Visa",
+        "root": "Visa Public ECC Root CA",
+        "thumbprint": "9CB1E6FBC21AAF3D68973CB516E932C44CB9D560",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-08": {
+    "year": 2022,
+    "month": 8,
+    "release_date": "2022-08-23",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/august2022",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): TrustFactory (Pty) Ltd",
+        "root": "TrustFactory SSL Root Certificate Authority",
+        "thumbprint": "D11478E8E5FB62540593D22C51570D014EAC76D8",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): A-Trust",
+        "root": "A-Trust-Root-05",
+        "thumbprint": "2E66C9841181C08FB1DFABD4FF8D5CC72BE08F02",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-nQual-03",
+        "thumbprint": "4CAEE38931D19AE73B31AA75CA33D621290FA75E",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Internet Network Information Center (CNNIC)",
+        "root": "China Internet Network Information Center EV Certificates Root",
+        "thumbprint": "4F99AA93FB2BD13726A1994ACE7FF005F2935D1E",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "China Internet Network Information Center (CNNIC)",
+        "root": "CNNIC Root",
+        "thumbprint": "8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): OISTE",
+        "root": "OISTE WISeKey Global Root GA CA",
+        "thumbprint": "5922A1E15AEA163521F898396A4646B0441B0FA9",
+        "action": "notbefore_server_authentiation_eku",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-09": {
+    "year": 2022,
+    "month": 9,
+    "release_date": "2022-09-27",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/september2022",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Entrust",
+        "root": "Entrust Code Signing Root Certification Authority - CSBR1",
+        "thumbprint": "897424053A4A887AC098380291034D885C8714B9",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "E-Tugra",
+        "root": "E-Tugra Global Root CA RSA v3",
+        "thumbprint": "E9A85D2214521C5BAA0AB4BE246A238AC9BAE2A9",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "E-Tugra",
+        "root": "E-Tugra Global Root CA ECC v3",
+        "thumbprint": "8A2FAF5753B1B0E6A104EC5B6A69716DF61CE284",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Carillon Information Security Inc.",
+        "root": "Carillon PKI Services G2 Root CA 1",
+        "thumbprint": "EB9237B72076F8CC8BC13E7046F2FCABC18199D3",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Firmaprofesional, S.A.",
+        "root": "Autoridad de Certificacion Firmaprofesional CIF A62634068",
+        "thumbprint": "0BBEC2272249CB39AADB355C53E38CAE78FFB6FE",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-10": {
+    "year": 2022,
+    "month": 10,
+    "release_date": "2022-10-25",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/october2022",
+    "actions": [
+      {
+        "ca": "ation Technology, Controller of Certifying Authorities (CCA)",
+        "root": "CCA India 2022",
+        "thumbprint": "A79E41380BAB3ED7F5188D9A5209CEFCB3CA6991",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2022-11": {
+    "year": 2022,
+    "month": 11,
+    "release_date": "2022-11-29",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2022/november2022",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): TrustCor",
+        "root": "TrustCor ECA-1",
+        "thumbprint": "58D1DF9595676B63C0F05B1C174D8B840BC878BD",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor",
+        "root": "TrustCor RootCert CA-1",
+        "thumbprint": "FFBDCDE782C8435E3C6F26865CCAA83A455BC30A",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor",
+        "root": "TrustCor RootCert CA-2",
+        "thumbprint": "B8BE6DCB56F155B963D412CA4E0634C794B21CC0",
+        "action": "notbefore",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2023-02": {
+    "year": 2023,
+    "month": 2,
+    "release_date": "2023-02-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2023/feb2023",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): TrustCor Systems",
+        "root": "TrustCor ECA-1",
+        "thumbprint": "58D1DF9595676B63C0F05B1C174D8B840BC878BD",
+        "action": "disallow_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor Systems",
+        "root": "TrustCor RootCert CA-1",
+        "thumbprint": "FFBDCDE782C8435E3C6F26865CCAA83A455BC30A",
+        "action": "disallow_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor Systems",
+        "root": "TrustCor RootCert CA-2",
+        "thumbprint": "B8BE6DCB56F155B963D412CA4E0634C794B21CC0",
+        "action": "disallow_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): DATEV eG",
+        "root": "CA DATEV BT 02",
+        "thumbprint": "39410BC2303748066069A72A664DE4C743481296",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 02",
+        "thumbprint": "93F7F48B1261943F6A78210C52E626DFBFBBE260",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 02",
+        "thumbprint": "AB9D58C03F54B1DAE3F7C2D4C6C1EC3694559C37",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "Deutsche Telekom Root CA 2",
+        "thumbprint": "85A408C09C193E5D51587DCDD61330FD8CDE37BF",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "VeriSign Class 3 Public Primary Certification Authority - G4",
+        "thumbprint": "22D5D8DF8F0231D18DF79DB7CF8A2D64C93F6C3A",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Universal CA 2",
+        "thumbprint": "379A197B418545350CA60369F33C2EAF474F2079",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 3 Public Primary Certification Authority - G4",
+        "thumbprint": "58D52DB93301A4FD291A8C9645A08FEE7F529282",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 2 Public Primary Certification Authority - G4",
+        "thumbprint": "6724902E4801B02296401046B4B1672CA975FD2B",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 1 Public Primary Certification Authority - G4",
+        "thumbprint": "84F2E3DD83133EA91D19527F02D729BFC15FE667",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "thawte",
+        "thumbprint": "BE36A4562FB2EE05DBB3D32323ADF445084ED656",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Cybertrust Global Root",
+        "thumbprint": "5F43E5B1BFF8788CAC1CC7CA4A9AC6222BCC34C6",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Global CA",
+        "thumbprint": "DE28F4A4FFE5B92FA3C503D1A349A7F9962A8212",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Keynectis)",
+        "root": "CertPlus Class 2 Primary CA",
+        "thumbprint": "74207441729CDD92EC7931D823108DC28192E2BB",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "EDICOM",
+        "root": "EDICOM",
+        "thumbprint": "E0B4322EB2F6A568B654538448184A5036874384",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services LLC",
+        "root": "Google Trust Services - GlobalSign Root CA-R2",
+        "thumbprint": "75E0ABB6138512271C04F85FDDDE38E4B7242EFE",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "root": "Staat der Nederlanden Root CA - G2",
+        "thumbprint": "59AF82799186C7B47507CBCF035746EB04DDB716",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "IdenTrust Services, LLC",
+        "root": "DST Root CA X3",
+        "thumbprint": "DAC9024F54D8F6DF94935FB1732638CA6AD77C13",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Japan Local Authority Information Systems (J-LIS)",
+        "root": "Application CA G4 Root",
+        "thumbprint": "21DACE4C2C34E66468EE06314DB055A0A89D4C1D",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Macao Post and Telecommunications Bureau",
+        "root": "Macao Post eSign Trust",
+        "thumbprint": "06143151E02B45DDBADD5D8E56530DAAE328CF90",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NETLOCK Kft.",
+        "root": "NetLock Minositett Kozjegyzoi (Class QA) Tanusitvanykiado",
+        "thumbprint": "016897E1A0B8F2C3B134665C20A727B7A158E28F",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Netrust Pte Ltd",
+        "root": "Netrust CA1",
+        "thumbprint": "55C86F7414AC8BDD6814F4D86AF15F3710E104D0",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Post of Slovenia",
+        "root": "POSTarCA",
+        "thumbprint": "B1EAC3E5B82476E9D50B1EC67D2CC11E12E0B491",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadis Root Certification Authority",
+        "thumbprint": "DE3F40BD5093D39B6C60F6DABC076201008976C9",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "Sectigo (UTN Client)",
+        "thumbprint": "B172B1A56D95F91FE50287E14D37EA6A4463768A",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "Sectigo (AddTrust)",
+        "thumbprint": "02FAF3E291435468607857694DF5E45B68851868",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "Sectigo (UTN Object)",
+        "thumbprint": "E12DFB4B41D7D9C32B30514BAC1D81D8385E2D46",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Telia Company",
+        "root": "Sonera Class2 CA",
+        "thumbprint": "37F76DE6077C90C5B13E931AB74110B4F2E49A27",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Visa",
+        "root": "Visa eCommerce Root",
+        "thumbprint": "70179B868C00A4FA609152223F9F3E32BDE00562",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "Chambersign Global Root",
+        "thumbprint": "339B6B1450249B557A01877284D9E02FC3D2D8E9",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Carillon Information Security Inc.",
+        "root": "Carillon Information Security Inc.",
+        "thumbprint": "A69E0336C4E59023FF653C71F928EB73F21C00F0",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 03",
+        "thumbprint": "27EED22AFD58A2C64A855E3680AF898BF36CE503",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV BT 03",
+        "thumbprint": "3DB66DFEBEB6712889E7C098B32805896B6218CC",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 03",
+        "thumbprint": "924AEA47F73CB690565E552CFCC6E8D63EEE4242",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digicert",
+        "root": "GeoTrust Universal CA",
+        "thumbprint": "E621F3354379059A4B68309D8A2F74221587EC79",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nt of Taiwan, Government Root Certification Authority (GRCA)",
+        "root": "TW Government Root Certification Authority 2",
+        "thumbprint": "B091AA913847F313D727BCEFC8179F086F3A8C0F",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nt of Taiwan, Government Root Certification Authority (GRCA)",
+        "root": "TW Government Root Certification Authority",
+        "thumbprint": "F48B11BFDEABBE94542071E641DE6BBE882B40B9",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions ECC Certificate Authority",
+        "thumbprint": "80F95B741C38399495C34F20C23E7336314D3C6B",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions RSA Certificate Authority",
+        "thumbprint": "8E928C0FC27BB7ABA34E6BC0CA1250CB57B60F84",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions",
+        "thumbprint": "71899A67BF33AF31BEFDC071F8F733B183856332",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign Platinum CA - G2",
+        "thumbprint": "56E0FAC03B8F18235518E5D311CAE8C24331AB66",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Entrust",
+        "root": "Entrust",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "notbefore_code_signing_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ci Administraci\u00f3 Oberta de Catalunya (Consorci AOC, CATCert)",
+        "root": "Agencia Catalana de Certificacio (NIF Q-0801176-I)",
+        "thumbprint": "28903A635B5280FAE6774C0B6DA7D6BAA64AF2E8",
+        "action": "notbefore_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ernment of Spain, F\u00e1brica Nacional de Moneda y Timbre (FNMT)",
+        "root": "Fabrica Nacional de Moneda y Timbre",
+        "thumbprint": "43F9B110D5BAFD48225231B0D0082B372FEF9A54",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of The Netherlands, PKIoverheid (Logius)",
+        "root": "Staat der Nederlanden EV Root CA",
+        "thumbprint": "76E27EC14FDB82C1C0A675B505BE3D29B4EDDBBB",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): 1.AC Camerfirma, S.A.",
+        "root": "GLOBAL CHAMBERSIGN ROOT - 2016",
+        "thumbprint": "1139A49E8484AAF2D90D985EC4741A65DD5D94E2",
+        "action": "remove_ev_ssl_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "2. AC Camerfirma, S.A.",
+        "root": "Chambers of Commerce Root - 2008",
+        "thumbprint": "786A74AC76AB147F9C6A3050BA9EA87EFE9ACE3C",
+        "action": "remove_ev_ssl_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "3. AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "remove_ev_ssl_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ci Administraci\u00f3 Oberta de Catalunya (Consorci AOC, CATCert)",
+        "root": "Agencia Catalana de Certificacio (NIF Q-0801176-I)",
+        "thumbprint": "28903A635B5280FAE6774C0B6DA7D6BAA64AF2E8",
+        "action": "remove_ev_ssl_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): 1.Entrust",
+        "root": "Entrust",
+        "thumbprint": "B31EB1B740E36C8402DADC37D44DF5D4674952F9",
+        "action": "remove_ev_cs_from",
+        "notbefore_date": null
+      },
+      {
+        "ca": "2. AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "remove_ev_cs_from",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2023-03": {
+    "year": 2023,
+    "month": 3,
+    "release_date": "2023-03-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2023/march2023",
+    "actions": []
+  },
+  "2023-11": {
+    "year": 2023,
+    "month": 11,
+    "release_date": "2023-11-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2023/nov2023",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Altron(Lawtrust)",
+        "root": "LAWtrust Root CA2 (4096)",
+        "thumbprint": "ECA2D530A9AB2C7D0E7561644E0AE016A154387D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Atos",
+        "root": "Atos TrustedRoot Root CA RSA TLS 2021",
+        "thumbprint": "18523B0D0637E4D63ADF23E498FB5B16FB867448",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Atos",
+        "root": "Atos TrustedRoot Root CA ECC G2 2020",
+        "thumbprint": "612556DA6294E5AEB33CF811BDB1DCF8A5D8B3E4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Atos",
+        "root": "Atos TrustedRoot Root CA ECC TLS 2021",
+        "thumbprint": "9EBC751042B302F381F4F73062D48FC3A751B2DD",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Atos",
+        "root": "Atos TrustedRoot Root CA RSA G2 2020",
+        "thumbprint": "32D127FA93B1C14C99E24A40BC7F94411B5AACA4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "A-Trust",
+        "root": "A-Trust-Root-09",
+        "thumbprint": "D05849DE4004DA6E867DEE000671CDA8F423266F",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "Telekom Security TLS ECC Root 2020",
+        "thumbprint": "C0F896C5A93B01062107DA184248BCE99D88D5EC",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "Telekom Security SMIME ECC Root 2021",
+        "thumbprint": "B7F91D98EC2593F35014849AA87E22103CC43927",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "Telekom Security SMIME RSA Root 2023",
+        "thumbprint": "893F6F1CE24D7FFBC3D3147A0580A7DEE10A5E4D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "Telekom Security TLS RSA Root 2023",
+        "thumbprint": "54D3ACB3BD5756F6859DCEE5C321E2D4AD83D093",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust 4K EV TLS Root CA - 2022",
+        "thumbprint": "EADB0AB9DC7938021435FED13E488406A1AA292A",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust P384 TLS Root CA",
+        "thumbprint": "424AAE6D0C8C7624817CDB9CCB510DED6232191D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust 4K TLS Root CA - 2022",
+        "thumbprint": "193C2A76F8CADD84F35BF52EE7AA506657917A38",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust P384 EV TLS Root CA - 2022",
+        "thumbprint": "1E6C44DC6473D4819BE89FB237AF4883FC376987",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust SMIME Root CA - 2022",
+        "thumbprint": "B8B1C5AAC29BEDF0AD71B2F14BFEAA38F817535E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Digital Signing Root Certification Authority - DSR1",
+        "thumbprint": "104FE73700186E692E78A0156A3F9ED807B0608E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust 4K TLS Root CA - 2022",
+        "thumbprint": "2E03931CD19C3FF5985FB87AADC153EB5DBDF1E3",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "vernment of Korea, KLID(Ministry of the Interior and Safety)",
+        "root": "MOIS SSL Root CA",
+        "thumbprint": "65F9901C549C9BEC6BF422B7FD8EE382F626186B",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Client RSA Root CA 2022",
+        "thumbprint": "AA5970E520329FCBD0D5799FFB1B821DFD1F7965",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Client ECC Root CA 2022",
+        "thumbprint": "807B1D9D65723DC756F9ECC5008349F6F2ACF486",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Code Signing RSA Root CA 2022",
+        "thumbprint": "D4695284CD1798D9CB1699464C064994C4E2BBFD",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Code Signing ECC Root CA 2022",
+        "thumbprint": "0D9E9AB20765A89ED9CD8DF2C7A63BC77495EF31",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Document Signing RSA Root CA 2022",
+        "thumbprint": "2F686DC8D4E39553ED32938E6357133BB7D9910C",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com Document Signing ECC Root CA 2022",
+        "thumbprint": "3CC1A683FFE66836491AF36BE1D3FE0A37F59DAE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com TLS RSA Root CA 2022",
+        "thumbprint": "EC2C834072AF269510FF0EF203EE3170F6789DCA",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SSL.com",
+        "root": "SSL.com TLS ECC Root CA 2022",
+        "thumbprint": "9F5FD91A546DF50C71F0EE7ABD1749988473E239",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign RSA TLS Root CA 2022 \u2013 1",
+        "thumbprint": "193144F431E0FDDB740717D4DE926A571133884B4360D30E272913CBE660CE41",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign RSA SMIME Root CA 2022 - 1",
+        "thumbprint": "9A12C392BFE57891A0C545309D4D9FD567E480CB613D6342278B195C79A7931F",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TAIWAN-CA (TWCA)",
+        "root": "TWCA CYBER Root CA",
+        "thumbprint": "F6B11C1A8338E97BDBB3A8C83324E02D9C7F2666",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TAIWAN-CA (TWCA)",
+        "root": "TWCA Global Root CA G2",
+        "thumbprint": "73FE922F836391FFC8C6C4DAD6202F6B072E7F1B",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2024-02": {
+    "year": 2024,
+    "month": 2,
+    "release_date": null,
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2024/feb2024",
+    "actions": [
+      {
+        "ca": "Thumbprint): China Financial Certification Authority (CFCA)",
+        "root": "CFCA_root1",
+        "thumbprint": "EABDA240440ABBD694930A01D09764C6C2D77966",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV INT 03",
+        "thumbprint": "924AEA47F73CB690565E552CFCC6E8D63EEE4242",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV STD 03",
+        "thumbprint": "27EED22AFD58A2C64A855E3680AF898BF36CE503",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DATEV eG",
+        "root": "CA DATEV BT 03",
+        "thumbprint": "3DB66DFEBEB6712889E7C098B32805896B6218CC",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 3 Public Primary Certification Authority - G6",
+        "thumbprint": "26A16C235A2472229B23628025BC8097C88524A1",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Primary Certification Authority",
+        "thumbprint": "323C118E1BF7B8B65254E2E2100DD6029037F096",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "VeriSign Class 3 Public Primary Certification Authority - G3",
+        "thumbprint": "132D0D45534B6997CDB2D5C339E25576609B5CC6",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Thawte Primary Root CA - G3",
+        "thumbprint": "F18B538D1BE903B6A6F056435B171589CAF36BF2",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Primary Certification Authority - G3",
+        "thumbprint": "039EEDB80BE7A03C6953893B20D2D9323A4C2AFD",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Thawte Primary Root CA - G2",
+        "thumbprint": "AADBBC22238FC401A127BB38DDF41DDB089EF012",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Primary Certification Authority - G2",
+        "thumbprint": "8D1784D537F3037DEC70FE578B519A99E610D7B0",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "e-tugra",
+        "root": "E-Tugra Certification Authority",
+        "thumbprint": "51C6E70849066EF392D45CA00D6DA3628FC35239",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
+        "root": "Hongkong Post Root CA 1",
+        "thumbprint": "D6DAA8208D09D2154D24B52FCB346EB258B28A58",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "IZENPE S.A.",
+        "root": "Izenpe.com",
+        "thumbprint": "30779E9315022E94856A3FF8BCF815B082F9AEFD",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
+        "root": "SZAFIR ROOT CA",
+        "thumbprint": "D3EEFBCBBCF49867838626E23BB59CA01E305DB7",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "Chambers of Commerce Root",
+        "thumbprint": "6E3A55A4190C195C93843CC0DB722E313061F0B1",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Nets DanID",
+        "root": "TRUST2408 OCES Primary CA",
+        "thumbprint": "5CFB1F5DB732E4084C0DD4978574E0CBC093BEB3",
+        "action": "notbefore",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "Chambers of Commerce Root - 2008",
+        "thumbprint": "786A74AC76AB147F9C6A3050BA9EA87EFE9ACE3C",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "Global Chambersign Root - 2008",
+        "thumbprint": "4ABDEEEC950D359C89AEC752A12C5B29F6D6AA0C",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "GLOBAL CHAMBERSIGN ROOT - 2016",
+        "thumbprint": "1139A49E8484AAF2D90D985EC4741A65DD5D94E2",
+        "action": "notbefore_the_server_authentication_eku",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Deutsche Telekom Security GmbH",
+        "root": "Deutsche Telekom Root CA 2",
+        "thumbprint": "85A408C09C193E5D51587DCDD61330FD8CDE37BF",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Netrust Pte Ltd",
+        "root": "Netrust_NetrustCA1",
+        "thumbprint": "55C86F7414AC8BDD6814F4D86AF15F3710E104D0",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "UTN-USERFirst-Client Authentication and Email",
+        "thumbprint": "B172B1A56D95F91FE50287E14D37EA6A4463768A",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TurkTrust",
+        "root": "T\u00dcRKTRUST Elektronik Sertifika Hizmet Sa\u011flay\u0131c\u0131s\u0131 H5",
+        "thumbprint": "C418F64D46D1DF003D2730137243A91211C675FB",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Visa",
+        "root": "Visa eCommerce Root",
+        "thumbprint": "70179B868C00A4FA609152223F9F3E32BDE00562",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "Chambers of Commerce Root - 2008",
+        "thumbprint": "786A74AC76AB147F9C6A3050BA9EA87EFE9ACE3C",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "CHAMBERS OF COMMERCE ROOT - 2016",
+        "thumbprint": "2DE16A5677BACA39E1D68C30DCB14ABE22A6179B",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "Global Chambersign Root - 2008",
+        "thumbprint": "4ABDEEEC950D359C89AEC752A12C5B29F6D6AA0C",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": null
+      },
+      {
+        "ca": "AC Camerfirma, S.A.",
+        "root": "GLOBAL CHAMBERSIGN ROOT - 2016",
+        "thumbprint": "1139A49E8484AAF2D90D985EC4741A65DD5D94E2",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2024-03": {
+    "year": 2024,
+    "month": 3,
+    "release_date": "2023-03-26",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2024/march2024",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Secom",
+        "root": "SECOM RSA Root CA 2023",
+        "thumbprint": "4E004413485C145D9FDE64ADB16756E8F26AAC8A",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Secom",
+        "root": "SECOM Document Signing RSA Root CA 2023",
+        "thumbprint": "FDD93B294972BA743A0C2E6ABCFA10050652A047",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Microsec",
+        "root": "E-Szigno TLS Root CA 2023",
+        "thumbprint": "6F9AD5D5DFE82CEBBE3707EE4F4F52582941D1FE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Buypass",
+        "root": "Buypass Class 3 Root CA G2 HT",
+        "thumbprint": "2F7F1FC907B84E71EACC5695E186A144136E595A",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis, DigiCert",
+        "root": "QuoVadis Client RSA 4096 Root G4",
+        "thumbprint": "1068BFBEA253BAE0E6E03F34E8C2F1CE2D764B57",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis, DigiCert",
+        "root": "QuoVadis SMIME ECC P384 Root G4",
+        "thumbprint": "5B27E1E3C91FD30E6E6EE66EDFED12F5BCDF9236",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis, DigiCert",
+        "root": "QuoVadis SMIME RSA 4096 Root G4",
+        "thumbprint": "C9B8DBF79C9A3D54B7E46EE63D72F9435E32BFA6",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis, DigiCert",
+        "root": "QuoVadis TLS ECC P384 Root G4",
+        "thumbprint": "B6BF372A3689B35699F09913DA011D73A6E10FCE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis, DigiCert",
+        "root": "QuoVadis TLS RSA 4096 Root G4",
+        "thumbprint": "20AFEA8DCB031F0684DF8FFD2598C8B7967FCD3C",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "CCA India",
+        "root": "CCA India 2022 SPL",
+        "thumbprint": "9152D077FEF058914009BB4C0E42A710A38238AF",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2024-05": {
+    "year": 2024,
+    "month": 5,
+    "release_date": "2024-05-28",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2024/may-2024",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): D-TRUST",
+        "root": "D-TRUST EV Root CA 2 2023",
+        "thumbprint": "8E8221B2E7D4007836A1672F0DCC299C33BC07D316F132FA1A206D587150F1CE",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-Trust SBR Root CA 1 2022",
+        "thumbprint": "D92C171F5CF890BA428019292927FE22F3207FD2B54449CB6F675AF4922146E2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-Trust SBR Root CA 2 2022",
+        "thumbprint": "DBA84DD7EF622D485463A90137EA4D574DF8550928F6AFA03B4D8B1141E636CC",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST BR Root CA 1 2020",
+        "thumbprint": "E59AAA816009C22BFF5B25BAD37DF306F049797C1F81D85AB089E657BD8F0044",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST BR Root CA 2 2023",
+        "thumbprint": "0552E6F83FDF65E8FA9670E666DF28A4E21340B510CBE52566F97C4FB94B2BD1",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST EV Root CA 1 2020",
+        "thumbprint": "08170D1AA36453901A2F959245E347DB0C8D37ABAABC56B81AA100DC958970DB",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NAVER Cloud Trust Service",
+        "root": "NAVER Cloud Trust Services ECC Root G1",
+        "thumbprint": "87E73E149246AA634308E3A3142B1417F00FE25D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NAVER Cloud Trust Service",
+        "root": "NAVER Cloud Trust Services RSA Root G1",
+        "thumbprint": "C4DA90EE324D7E4D041CB1F286FBB45388207CA1",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadisSigningECCP384RootG4",
+        "thumbprint": "771535D43D4633BD307EB7B8A3966B5DF00707C088089920080C1AE6D3CB0F68",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadisSigningRSA4096RootG4",
+        "thumbprint": "9F8E6DB31E740285E0C2C2DEB09E442BDD4E74BDEEAE2962BC82D1ECB9F39855",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "QuoVadis",
+        "root": "QuoVadisClientECCP384RootG4",
+        "thumbprint": "D3C07AC44BD8FF1975BC62F1C7E9840EA8E188A4BA51133B8C4EFF05E34A2729",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services",
+        "root": "GTSR2",
+        "thumbprint": "D947432ABDE7B7FA90FC2E6B59101B1280E0E1C7E4E40FA3C6887FFF57A7F4CF",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services",
+        "root": "GTSR3",
+        "thumbprint": "34D8A73EE208D9BCDB0D956520934B4E40E69482596E8B6F73C8426B010A6F48",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services",
+        "root": "GTSR4",
+        "thumbprint": "349DFA4058C5E263123B398AE795573C4E1313C83FE68F93556CD5E8031B3C7D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services",
+        "root": "GTSR1",
+        "thumbprint": "D947432ABDE7B7FA90FC2E6B59101B1280E0E1C7E4E40FA3C6887FFF57A7F4CF",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Google Trust Services",
+        "root": "GSR4",
+        "thumbprint": "B085D70B964F191A73E4AF0D54AE7A0E07AAFDAF9B71DD0862138AB7325A24A2",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "Sectigo Public Code Signing Root R46",
+        "thumbprint": "7E76260AE69A55D3F060B0FD18B2A8C01443C87B60791030C9FA0B0585101A38",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Sectigo",
+        "root": "Sectigo Public Code Signing Root E46",
+        "thumbprint": "8F6371D8CC5AA7CA149667A98B5496398951E4319F7AFBCC6A660D673E438D0B",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2024-08": {
+    "year": 2024,
+    "month": 8,
+    "release_date": "2024-08-27",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2024/august-2024",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): e-commerce monitoring GmbH",
+        "root": "GLOBALTRUST 2020",
+        "thumbprint": "D067C11351010CAAD0C76A65373116264F5371A2",
+        "action": "notbefore",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2025-02": {
+    "year": 2025,
+    "month": 2,
+    "release_date": "2025-02-25",
+    "notbefore_date": "2025-04-16",
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2025/february-2025",
+    "actions": [
+      {
+        "ca": "SHA-256 Thumbprint): Entrust",
+        "root": "AffirmTrust 4K TLS Root CA - 2022",
+        "thumbprint": "A7DEDF5A842167DD12FDAA0F2080E73295B8B8BEA71B2094EA0950945A482FC1",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Commercial",
+        "thumbprint": "0376AB1D54C5F9803CE4B2E201A0EE7EEF7B57B636E8A93C9B8D4860C96F5FA7",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Networking",
+        "thumbprint": "0A81EC5A929777F145904AF38D5D509F66B5E2C58FCDB531058B0E17F3F0B41B",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium",
+        "thumbprint": "70A73F7F376B60074248904534B11482D5BF0E698ECC498DF52577EBF2E93B9A",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "AffirmTrust Premium ECC",
+        "thumbprint": "BD71FDF6DA97E4CF62D1647ADD2581B07D79ADF8397EB4ECBA9C5E8488821423",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority",
+        "thumbprint": "73C176434F1BC6D5ADF45B0E76E727287C8DE57616C1E6E6141A2B2CBC7D8E4C",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust.net Certification Authority (2048)",
+        "thumbprint": "6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust 4K EV TLS Root CA - 2022",
+        "thumbprint": "647987D98D52645DA4D3DE3B80771A0CE02B9B9285E6E86999882170744EC9AA",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust 4K TLS Root CA - 2022",
+        "thumbprint": "DD6C44B39401B053DBE61120748BBB0F6056007665C168E5C286750EDC8DF129",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust P384 EV TLS Root CA - 2022",
+        "thumbprint": "937EF8F12276B3C7A3F58E345D09A6EFF01F862F8D2794441CD84D511825FA0C",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust P384 TLS Root CA - 2022",
+        "thumbprint": "420332EF876EBE78F2AF5D28AAACDE24AAD0C10F8FFAAC469EFD7BD941929568",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - EC1",
+        "thumbprint": "02ED0EB28C14DA45165C566791700D6451D7FB56F0B2AB1D3B8EB070E56EDFF5",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G4",
+        "thumbprint": "DB3517D1F6732A2D5AB97C533EC70779EE3270A62FB4AC4238372460E6F01E88",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      },
+      {
+        "ca": "Entrust",
+        "root": "Entrust Root Certification Authority - G2",
+        "thumbprint": "43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339",
+        "action": "notbefore",
+        "notbefore_date": "2025-04-16"
+      }
+    ]
+  },
+  "2025-05": {
+    "year": 2025,
+    "month": 5,
+    "release_date": "2025-05-27",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2025/may-2025",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Secom",
+        "root": "SECOM SMIME RSA Root CA 2024",
+        "thumbprint": "90A5E1BDC53F6908C2E3739FE755E37F75F38447",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Secom",
+        "root": "SECOM TLS ECC Root CA 2024",
+        "thumbprint": "7A1F222D72B2C3198744DB6169E8A64BD70D440E",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Secom",
+        "root": "SECOM TLS RSA Root CA 2024",
+        "thumbprint": "FB97967CEF8D986306C03BB611F8E01397A298D3",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Japan, Digital Agency",
+        "root": "Japanese Government Root CA",
+        "thumbprint": "4DCF7D1B9B2608ED2C96B66B29610FCEE76AC7F4",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Secom",
+        "root": "SECOM Document Signing RSA Root CA 2023",
+        "thumbprint": "FDD93B294972BA743A0C2E6ABCFA10050652A047",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-1 Thumbprint): GlobalSign",
+        "root": "GlobalSign Code Signing Root E45",
+        "thumbprint": "79AA505EDD09B321E36D57910A5DF5A9FB85CC57",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2025-06": {
+    "year": 2025,
+    "month": 6,
+    "release_date": "2025-06-26",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2025/june-2025",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Govt of Spain FMNT",
+        "root": "AC RAIZ FNMT-RCM G2",
+        "thumbprint": "A4D6B770E765A9BF17ECD7B5E03B852D612FA71D",
+        "action": "add",
+        "notbefore_date": null
+      },
+      {
+        "ca": "CyberTrust Japan",
+        "root": "SecureSign Root CA 16",
+        "thumbprint": "D17917EC45E2A0CAD774513010A4C65CAAB33C49",
+        "action": "add",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2025-08": {
+    "year": 2025,
+    "month": 8,
+    "release_date": "2025-08-27",
+    "notbefore_date": "2025-09-15",
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2025/august-2025",
+    "actions": [
+      {
+        "ca": "SHA-1 Thumbprint): Certic\u00e1mara",
+        "root": "AC Ra\u00edz Certic\u00e1mara S.A.",
+        "thumbprint": "5463283B6793FF55277CEDE39098E80422F912F7",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Echoworx",
+        "root": "Echoworx Root CA2",
+        "thumbprint": "CB658264EA8CDA186E1752FB52C397367EA387BE",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "e-tugra",
+        "root": "E-Tugra Global Root CA RSA v3",
+        "thumbprint": "E9A85D2214521C5BAA0AB4BE246A238AC9BAE2A9",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "e-tugra",
+        "root": "E-Tugra Global Root CA ECC v3",
+        "thumbprint": "8A2FAF5753B1B0E6A104EC5B6A69716DF61CE284",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Government of Korea, KLID",
+        "root": "GPKIRootCA1",
+        "thumbprint": "7612ED9E49B365B4DAD3120C01E603748DAE8CF0",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "HARICA",
+        "root": "Hellenic Academic and Research Institutions RootCA 2015",
+        "thumbprint": "010C0695A6981914FFBF5FC6B0B695EA29E912A6",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "HARICA",
+        "root": "Hellenic Academic and Research Institutions RootCA 2011",
+        "thumbprint": "FE45659B79035B98A161B5512EACDA580948224D",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "HARICA",
+        "root": "Hellenic Academic and Research Institutions ECC RootCA 2015",
+        "thumbprint": "9FF1718D92D59AF37D7497B4BC6F84680BBAB666",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "NISZ Nemzeti Infokommunik\u00e1ci\u00f3s Szolg\u00e1ltat\u00f3 Zrt.",
+        "root": "F\u0151tan\u00fas\u00edtv\u00e1nykiad\u00f3 - Korm\u00e1nyzati Hiteles\u00edt\u00e9s Szolg\u00e1ltat\u00f3",
+        "thumbprint": "FFB7E08F66E1D0C2582F0245C4970292A46E8803",
+        "action": "notbefore",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): GoDaddy",
+        "root": "Go Daddy Root Certificate Authority - G2",
+        "thumbprint": "47BEABC922EAE80E78783462A79F45C254FDE68B",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "GoDaddy",
+        "root": "Starfield Root Certificate Authority - G2",
+        "thumbprint": "B51C067CEE2B0C3DF855AB2D92F4FE39D4E70F0E",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "GoDaddy",
+        "root": "godaddy_GD-Class2-root",
+        "thumbprint": "2796BAE63F1801E277261BA0D77770028F20EEE4",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "GoDaddy",
+        "root": "godaddy_SF-Class2-root",
+        "thumbprint": "AD7E1C28B064EF8F6003402014C3D0E3370EB58A",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SecureTrust",
+        "root": "SecureTrust CA",
+        "thumbprint": "8782C6C304353BCFD29692D2593E7D44D934FF11",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SecureTrust",
+        "root": "Trustwave Global Certification Authority",
+        "thumbprint": "2F8F364FE1589744215987A52A9AD06995267FB5",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SecureTrust",
+        "root": "Trustwave Global ECC P256 Certification Authority",
+        "thumbprint": "B49082DD450CBE8B5BB166D3E2A40826CDED42CF",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SecureTrust",
+        "root": "Trustwave Global ECC P384 Certification Authority",
+        "thumbprint": "E7F3A3C8CF6FC3042E6D0E6732C59E68950D5ED2",
+        "action": "notbefore_code_signing_on",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Buypass",
+        "root": "Buypass Class 3 Root CA",
+        "thumbprint": "DAFAF7FA6684EC068F1450BDC7C281A5BCA96457",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Buypass",
+        "root": "Buypass Class 2 Root CA",
+        "thumbprint": "490A7574DE870A47FE58EEF6C76BEBC60B124099",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "certSIGN",
+        "root": "certSIGN_root",
+        "thumbprint": "FAB7EE36972662FB2DB02AF6BF03FDE87C4B2F9B",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "certSIGN",
+        "root": "CERTSIGNSA_certSIGNROOTCAG226F9",
+        "thumbprint": "26F993B4ED3D2827B0B94BA7E9151DA38D92E532",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Deutsche Telekom Security GmbH",
+        "root": "T-TeleSec GlobalRoot Class 3",
+        "thumbprint": "55A6723ECBF2ECCDC3237470199D2ABE11E381D1",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST Root Class 3 CA 2 2009",
+        "thumbprint": "58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "Root Class 3 CA 2 EV 2009",
+        "thumbprint": "96C91B0B95B4109842FAD0D82279FE60FAB91683",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "EDICOM",
+        "root": "CAEDICOM Root",
+        "thumbprint": "559BBA7B0FFE80D6D3829B1FD07AA4D322194790",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "d, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
+        "root": "VRK Gov. Root CA - G2",
+        "thumbprint": "F435F85F0108DA684E7BFD517C90C627BB9A6CF5",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Autoritat de Certificaci\u00f3 de la Comunitat Valenciana (ACCV)",
+        "root": "ACCVRAIZ1",
+        "thumbprint": "93057A8815C64FCE882FFA9116522878BC536417",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "LAWtrust",
+        "root": "LAWtrust Root Certification Authority 2048",
+        "thumbprint": "335A7FF00927CF2DF278E2C9192F7A4D5534F80C",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "Macao Post and Telecommunications Bureau",
+        "root": "eSignTrust Root Certification Authority (G03)",
+        "thumbprint": "9D319381546EA6A12811E09CF90A20C840BE944D",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "MULTICERT",
+        "root": "MULTICERT Root Certification Authority 01",
+        "thumbprint": "46AF7A31B599460D469D6041145B13651DF9170A",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "root": "Security Communication RootCA3",
+        "thumbprint": "C303C8227492E561A29C5F79912B1E441391303A",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "root": "Security Communication ECC RootCA1",
+        "thumbprint": "B80E26A9BFD2B23BC0EF46C9BAC7BBF61D0D4141",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SSL.com",
+        "root": "EV Root Certification Authority ECC",
+        "thumbprint": "4CDD51A3D1F5203214B0C6C532230391C746426D",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SSL.com",
+        "root": "EV Root Certification Authority RSA R2",
+        "thumbprint": "743AF0529BD032A0F44A83CDD4BAA97B7C2EC49A",
+        "action": "notbefore_smim",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): D-TRUST",
+        "root": "D-TRUST Root Class 3 CA 2 2009",
+        "thumbprint": "58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0",
+        "action": "notbefore_timestamping",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "D-TRUST",
+        "root": "D-TRUST Root Class 3 CA 2 EV 2009",
+        "thumbprint": "96C91B0B95B4109842FAD0D82279FE60FAB91683",
+        "action": "notbefore_timestamping",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "root": "Security Communication ECC RootCA1",
+        "thumbprint": "B80E26A9BFD2B23BC0EF46C9BAC7BBF61D0D4141",
+        "action": "notbefore_timestamping",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): MULTICERT",
+        "root": "MULTICERT Root Certification Authority 01",
+        "thumbprint": "46AF7A31B599460D469D6041145B13651DF9170A",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "root": "Security Communication RootCA3",
+        "thumbprint": "C303C8227492E561A29C5F79912B1E441391303A",
+        "action": "notbefore_server_authentication",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Buypass",
+        "root": "Buypass Class 2 Root CA",
+        "thumbprint": "490A7574DE870A47FE58EEF6C76BEBC60B124099",
+        "action": "notbefore_ip_tunnel",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "RSA",
+        "root": "RSA",
+        "thumbprint": "9B0959898154081BF6A90E9B9E58A4690C9BA104",
+        "action": "notbefore_client_authentication",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): SECOM Trust Systems CO., LTD.",
+        "root": "Security Communication ECC RootCA1",
+        "thumbprint": "B80E26A9BFD2B23BC0EF46C9BAC7BBF61D0D4141",
+        "action": "notbefore_document_signing",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Buypass",
+        "root": "Buypass Class 2 Root CA",
+        "thumbprint": "490A7574DE870A47FE58EEF6C76BEBC60B124099",
+        "action": "notbefore_ip_us",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): Buypass",
+        "root": "Buypass Class 2 Root CA",
+        "thumbprint": "490A7574DE870A47FE58EEF6C76BEBC60B124099",
+        "action": "notbefore_encrypting_file_system",
+        "notbefore_date": "2025-09-15"
+      },
+      {
+        "ca": "SHA-1 Thumbprint): AC Camerfirma, S.A.",
+        "root": "Global Chambersign Root",
+        "thumbprint": "339B6B1450249B557A01877284D9E02FC3D2D8E9",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Carillon Information Security Inc.",
+        "root": "CISRCA1",
+        "thumbprint": "A69E0336C4E59023FF653C71F928EB73F21C00F0",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Cisco",
+        "root": "Cisco RXC-R2",
+        "thumbprint": "2C8AFFCE966430BA04C04F81DD4B49C71B5B81A0",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Cisco",
+        "root": "Cisco Root CA 2048",
+        "thumbprint": "DE990CED99E0431F60EDC3937E7CD5BF0ED9E5FA",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "adores Mercantile (Spanish Property &amp; Commerce Registry)",
+        "root": "Registradores de Espa\u00f1a - CA Ra\u00edz",
+        "thumbprint": "211165CA379FBB5ED801E31C430A62AAC109BCB4",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Digidentity B.V.",
+        "root": "Digidentity Services Root CA",
+        "thumbprint": "7B3FB277EE311C1ED560CAB96E4FED775E6A3EED",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of Lithuania, Registru Centras",
+        "root": "RCSC RootCA",
+        "thumbprint": "FDE7C6FDB32BB8E63939840D6AE052C3D8B73B87",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Electronic Certification System of the State",
+        "root": "ECRaizEstado",
+        "thumbprint": "3913853E45C439A2DA718CDFB6F3E033E04FEE71",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 2 Root CA",
+        "thumbprint": "E45501608AA1EF89E27B8CD3C3B34C03B038E6D7",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 3 Root CA",
+        "thumbprint": "38DD7659C735100B00A237E491B7BC0FFCD2316C",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Government of South Africa, Post Office Trust Centre",
+        "root": "SAPO Class 4 Root CA",
+        "thumbprint": "20A8F5FFC43AF4A9BC89881EBF9920FF91E9FD0A",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "\u00f3n General de la Polic\u00eda \u2013 Ministerio del Interior \u2013 Espa\u00f1a.",
+        "root": "AC RAIZ DNIE",
+        "thumbprint": "B38FECEC0B148AA686C3D00F01ECC8848E8085EB",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nt of Taiwan, Government Root Certification Authority (GRCA)",
+        "root": "grca_grca2",
+        "thumbprint": "B091AA913847F313D727BCEFC8179F086F3A8C0F",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "nt of Taiwan, Government Root Certification Authority (GRCA)",
+        "root": "grca_grca",
+        "thumbprint": "F48B11BFDEABBE94542071E641DE6BBE882B40B9",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "NDCA)",
+        "root": "Tunisian Root Certificate Authority - TunRootCA2",
+        "thumbprint": "9638633C9056AE8814A065D23BDC60A0EE702FA7",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ay, Agency for E-Government and Information Society (AGESIC)",
+        "root": "Autoridad Certificadora Ra\u00edz Nacional de Uruguay",
+        "thumbprint": "7A1CDDE3D2197E7137433D3F99C0B369F706C749",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ation Technology, Controller of Certifying Authorities (CCA)",
+        "root": "CCA India 2014",
+        "thumbprint": "A2B86B5A68D92819D9CE5DD6D7969A4968E11991",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "ernment of Spain, Ministerio de Trabajo e Inmigraci\u00f3n (MTIN)",
+        "root": "AC1 RAIZ MTIN",
+        "thumbprint": "6AD23B9DC48E375F859AD9CAB585325C23894071",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v2",
+        "thumbprint": "A9822E6C6933C63C148C2DCAA44A5CF1AAD2C42E",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
+        "root": "Autoridade Certificadora Raiz Brasileira v1",
+        "thumbprint": "705D2B4565C7047A540694A79AF7ABB842BDC161",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "d, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
+        "root": "VRK Gov. Root CA",
+        "thumbprint": "FAA7D9FB31B746F200A85E65797613D816E063B5",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Inera AB (SITHS)",
+        "root": "SITHS Root CA v1",
+        "thumbprint": "585F7875BEE7433EB079EAAB7D05BB0F7AF2BCCC",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Korea Information Security Agency (KISA)",
+        "root": "KISA RootCA 1",
+        "thumbprint": "027268293E5F5D17AAA4B3C3E6361E1F92575EAA",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "LuxTrust",
+        "root": "LuxTrust Global Root 2",
+        "thumbprint": "1E0E56190AD18B2598B20444FF668A0417995F3F",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions Certificate Authority",
+        "thumbprint": "71899A67BF33AF31BEFDC071F8F733B183856332",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions RSA Certificate Authority",
+        "thumbprint": "8E928C0FC27BB7ABA34E6BC0CA1250CB57B60F84",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Network Solutions",
+        "root": "Network Solutions ECC Certificate Authority",
+        "thumbprint": "80F95B741C38399495C34F20C23E7336314D3C6B",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Post of Serbia",
+        "root": "Posta CA Root",
+        "thumbprint": "D6BF7994F42BE5FA29DA0BD7587B591F47A44F22",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SECOM Trust Systems CO., LTD.",
+        "root": "secom_secom",
+        "thumbprint": "36B12B49F9819ED74C9EBC380FC6568F5DACB2F7",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SK ID Solutions AS",
+        "root": "EE Certification Centre Root CA",
+        "thumbprint": "C9A8B9E755805E58E35377A725EBAFC37B27CCD7",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SwissSign AG",
+        "root": "SwissSign Platinum CA - G2",
+        "thumbprint": "56E0FAC03B8F18235518E5D311CAE8C24331AB66",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Telekom Applied Business Malaysia (TMCA)",
+        "root": "TM Applied Business Root Certificate",
+        "thumbprint": "9957C53FC59FB8E739F7A4B7A70E9B8E659F208C",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor Systems",
+        "root": "TrustCor RootCert CA-1",
+        "thumbprint": "FFBDCDE782C8435E3C6F26865CCAA83A455BC30A",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor Systems",
+        "root": "TrustCor RootCert CA-2",
+        "thumbprint": "B8BE6DCB56F155B963D412CA4E0634C794B21CC0",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustCor Systems",
+        "root": "TrustCor ECA-1",
+        "thumbprint": "58D1DF9595676B63C0F05B1C174D8B840BC878BD",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "TrustFactory(Pty)Ltd",
+        "root": "TrustFactory SSL Root Certificate Authority",
+        "thumbprint": "D11478E8E5FB62540593D22C51570D014EAC76D8",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "PostSignum",
+        "root": "PostSignum Root QCA 2",
+        "thumbprint": "A0F8DB3F0BF417693B282EB74A6AD86DF9D448A3",
+        "action": "disable",
+        "notbefore_date": null
+      },
+      {
+        "ca": "SHA-256 Thumbprint): Autoridad de Certificaci\u00f3n (ANF AC)",
+        "root": "ANF Global Root CA",
+        "thumbprint": "5BB59920D11B391479463ADD5100DB1D52F43AD4",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 1 Public Primary Certification Authority - G4",
+        "thumbprint": "84F2E3DD83133EA91D19527F02D729BFC15FE667",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "Symantec Class 2 Public Primary Certification Authority - G4",
+        "thumbprint": "6724902E4801B02296401046B4B1672CA975FD2B",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "DigiCert",
+        "root": "GeoTrust Universal CA",
+        "thumbprint": "E621F3354379059A4B68309D8A2F74221587EC79",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Image-X Enterprises Inc",
+        "root": "esignit.org",
+        "thumbprint": "9F8DE799CF8764ED2466990564041B194919EDE8",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Skaitmeninio sertifikavimo centras (SSC)",
+        "root": "SSC GDL CA VS Root",
+        "thumbprint": "D2695E12F592E9C8EE2A4CB8D55E295FEE6B2D31",
+        "action": "remove",
+        "notbefore_date": null
+      },
+      {
+        "ca": "Trustis",
+        "root": "Trustis_FPSRootCA",
+        "thumbprint": "3BC0380B33C3F6A60C86152293D9DFF54B81C004",
+        "action": "remove",
+        "notbefore_date": null
+      }
+    ]
+  },
+  "2025-09": {
+    "year": 2025,
+    "month": 9,
+    "release_date": "2025-09-04",
+    "notbefore_date": null,
+    "url": "https://learn.microsoft.com/en-us/security/trusted-root/2025/september-2025",
+    "actions": []
+  }
+}

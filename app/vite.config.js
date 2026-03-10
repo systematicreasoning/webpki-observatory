@@ -354,6 +354,13 @@ function pipelineDataPlugin() {
         console.log("[pipeline-data] Distrust:", DISTRUST_DATA.events?.length || 0, "events");
       }
 
+      // ── RPE_DATA: root program effectiveness / governance risk pipeline output ──
+      const rpeData = loadJSON(dataDir, "root_program_effectiveness.json") || null;
+      if (rpeData) {
+        console.log("[pipeline-data] RPE:", rpeData.meta?.bugs_with_comments || 0, "bugs analyzed,",
+          rpeData.meta?.total_comments_analyzed || 0, "comments");
+      }
+
       const output = {
         CA_DATA: D,
         BR_VALIDITY,
@@ -368,6 +375,7 @@ function pipelineDataPlugin() {
         JURISDICTION_RISK: jurisdictionRisk,
         ROOT_ALGO,
         DISTRUST_DATA,
+        RPE_DATA: rpeData,
       };
 
       console.log("[pipeline-data]", D.length, "CAs,",

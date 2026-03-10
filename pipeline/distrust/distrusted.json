@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-03-09T01:44:45.673505+00:00",
   "pipeline_version": "0.3.0",
-  "total_events": 15,
+  "total_events": 16,
   "stats": {
     "total_events": 15,
     "year_range": [
@@ -100,8 +100,8 @@
       "distrust_dates": {
         "chrome": "2011-08-29",
         "mozilla": "2011-09-02",
-        "microsoft": "2011-09-13",
-        "apple": "2011-09-09"
+        "apple": "2011-09-09",
+        "microsoft": "2011-09-13"
       },
       "references": {
         "root_program_announcements": [
@@ -216,7 +216,12 @@
       "response_quality": "cooperative",
       "distrust_pathway": "triggered",
       "summary": "Government CA issued intermediate certificate to network appliance company for traffic inspection. Used to issue MITM certificate for Google domains. ANSSI cooperated, certificate was revoked. Distrust limited to specific intermediate, not full root removal.",
-      "distrust_dates": {},
+      "distrust_dates": {
+        "chrome": "2013-12-09",
+        "mozilla": "2013-12-09",
+        "apple": "2013-12-09",
+        "microsoft": "2013-12-09"
+      },
       "references": {
         "root_program_announcements": [
           "https://security.googleblog.com/2013/12/further-improving-digital-certificate.html",
@@ -284,6 +289,64 @@
       }
     },
     {
+      "ca": "India CCA (NIC)",
+      "ca_owner": "India CCA",
+      "country": "IN",
+      "year": 2014,
+      "source": "seed",
+      "classification_tier": "curated",
+      "classification_tier_note": "Added from root program announcements",
+      "compliance_posture": "negligent_noncompliance",
+      "distrust_pathway": "triggered",
+      "response_quality": "inadequate",
+      "root_cause": "Unauthorized certificate issuance for Google domains via NIC intermediate CA",
+      "summary": "Indian government CA (National Informatics Centre) issued unauthorized certificates for Google domains. Chrome, Mozilla, and Apple constrained or removed trust. Microsoft has not acted.",
+      "reason_tags": [
+        "unauthorized_certificate",
+        "government_ca",
+        "lack_of_controls"
+      ],
+      "bugzilla_bugs": [],
+      "references": [],
+      "posture_evidence": "NIC intermediate CA issued unauthorized Google certificates.",
+      "tag_evidence": {},
+      "metadata_available": false,
+      "distrust_dates": {
+        "chrome": "2014-07-12",
+        "mozilla": "2014-07-14",
+        "apple": "2014-07-14"
+      },
+      "timeline": {
+        "first_bug_date": null,
+        "last_bug_date": null,
+        "distrust_date": "2014-07-12",
+        "distrust_dates_per_store": {
+          "chrome": "2014-07-12",
+          "mozilla": "2014-07-14",
+          "apple": "2014-07-14"
+        },
+        "runway_days": null,
+        "bug_count": 0,
+        "milestones": [
+          {
+            "date": "2014-07-02",
+            "type": "public_discovery",
+            "detail": "Google detects unauthorized certificate for Google domains from NIC intermediate CA"
+          },
+          {
+            "date": "2014-07-12",
+            "type": "root_program_announcement",
+            "detail": "Chrome constrains India CCA certificates"
+          },
+          {
+            "date": "2014-07-14",
+            "type": "root_program_announcement",
+            "detail": "Mozilla and Apple constrain/remove India CCA"
+          }
+        ]
+      }
+    },
+    {
       "ca": "CNNIC",
       "ca_owner": "China Internet Network Information Center (CNNIC)",
       "year": 2015,
@@ -301,7 +364,9 @@
       "summary": "Issued unconstrained intermediate certificate to MCS Holdings, an Egyptian company that used it as a MITM proxy to issue unauthorized certificates for Google domains.",
       "distrust_dates": {
         "chrome": "2015-04-01",
-        "mozilla": "2015-04-02"
+        "mozilla": "2015-04-02",
+        "apple": "2015-04-02",
+        "microsoft": "2015-04-02"
       },
       "references": {
         "root_program_announcements": [
@@ -417,7 +482,12 @@
       },
       "bugzilla_bugs": 1,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
@@ -559,7 +629,12 @@
       },
       "bugzilla_bugs": 8,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2016-10-31",
+        "mozilla": "2016-10-24",
+        "apple": "2016-12-01",
+        "microsoft": "2017-01-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://security.googleblog.com/2016/10/distrusting-wosign-and-startcom.html"
@@ -657,10 +732,10 @@
       "distrust_pathway": "negotiated",
       "summary": "Google documented years of misissuance incidents including test certificates, non-audited intermediates, and BR violations. DigiCert acquired Symantec's CA business and managed the transition. Gradual distrust over 12+ months with subscriber migration.",
       "distrust_dates": {
-        "chrome": "2018-10-23",
-        "mozilla": "2018-10-23",
+        "chrome": "2018-04-17",
+        "mozilla": "2018-10-01",
         "apple": "2018-10-15",
-        "microsoft": "2018-10-09"
+        "microsoft": "2018-10-15"
       },
       "references": {
         "root_program_announcements": [
@@ -823,7 +898,12 @@
       },
       "bugzilla_bugs": 2,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2018-06-01",
+        "mozilla": "2018-05-01",
+        "apple": "2018-06-01",
+        "microsoft": "2018-06-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://krebsonsecurity.com/2013/01/turkish-registrar-enabled-phishers-to-spoof-google/"
@@ -945,7 +1025,11 @@
       },
       "bugzilla_bugs": 20,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2019-07-01",
+        "mozilla": "2019-06-01",
+        "apple": "2019-07-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://venafi.com/blog/mozilla-distrusts-certinomis-issued-certificates/"
@@ -1049,7 +1133,12 @@
       },
       "bugzilla_bugs": 2,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2020-07-01",
+        "mozilla": "2020-06-01",
+        "apple": "2020-07-01",
+        "microsoft": "2020-07-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://venafi.com/blog/mozilla-distrusts-procert-local-certificate-authorities-have-global-impact/"
@@ -1169,7 +1258,11 @@
       },
       "bugzilla_bugs": 46,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2021-07-01",
+        "mozilla": "2021-06-01",
+        "apple": "2021-07-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://www.theregister.com/2021/02/02/chrome_camerfirma_certificates/"
@@ -1326,7 +1419,12 @@
       },
       "bugzilla_bugs": 5,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2022-12-02",
+        "mozilla": "2022-12-01",
+        "apple": "2022-12-02",
+        "microsoft": "2023-02-28"
+      },
       "references": {
         "root_program_announcements": [
           "https://www.ghacks.net/2022/12/02/mozilla-and-microsoft-distrust-trustcor-root-certificates-in-their-browsers/"
@@ -1446,7 +1544,11 @@
       },
       "bugzilla_bugs": 4,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2022-07-01",
+        "mozilla": "2022-06-01",
+        "apple": "2022-07-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://www.feistyduck.com/newsletter/issue_45_visa_certificate_authority_in_trouble"
@@ -1561,7 +1663,12 @@
       },
       "bugzilla_bugs": 14,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2023-01-09",
+        "mozilla": "2023-01-16",
+        "apple": "2023-01-16",
+        "microsoft": "2023-03-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://ian.sh/etugra"
@@ -1690,7 +1797,12 @@
       },
       "bugzilla_bugs": 9,
       "metadata_available": true,
-      "distrust_dates": null,
+      "distrust_dates": {
+        "chrome": "2024-07-01",
+        "mozilla": "2024-06-01",
+        "apple": "2024-07-01",
+        "microsoft": "2024-07-01"
+      },
       "references": {
         "root_program_announcements": [
           "https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/HFMEAMUe7v4/"
@@ -1826,9 +1938,9 @@
       "bugzilla_bugs": 100,
       "metadata_available": true,
       "distrust_dates": {
-        "chrome": "2024-11-11",
+        "chrome": "2024-11-12",
         "apple": "2024-11-15",
-        "mozilla": "2024-12-01",
+        "mozilla": "2025-03-01",
         "microsoft": "2025-04-16"
       },
       "references": {

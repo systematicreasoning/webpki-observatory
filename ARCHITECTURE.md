@@ -32,7 +32,7 @@ There is no backend server. The pipeline runs in GitHub Actions, the build produ
 
 ### Pipeline Stage
 
-Four Python scripts run daily at 06:00 UTC via GitHub Actions:
+Eight Python scripts run daily at 06:00 UTC via GitHub Actions:
 
 | Script | Input | Output | Purpose |
 |--------|-------|--------|---------|
@@ -40,6 +40,12 @@ Four Python scripts run daily at 06:00 UTC via GitHub Actions:
 | `fetch_incidents.py` | Bugzilla REST API, Anthropic API | `incidents.json` | Operational risk: incident counts, classification, self-report rates |
 | `fetch_root_algo.py` | CCADB root PEMs | `root_algorithms.json` | Cryptographic posture: key families, sizes, signature hashes |
 | `fetch_browser_share.py` | StatCounter | `browser_coverage.json` | Browser market share for web coverage estimates |
+| `fetch_rpe.py` | Bugzilla REST API, CCADB, cabforum.org | `root_program_effectiveness.json` | Governance risk: enforcement, oversight, policy leadership, trust surface (7 phases) |
+| `fetch_microsoft_ctl.py` | learn.microsoft.com | `microsoft_ctl_changelog.json` | Microsoft trust store changelog from monthly deployment notices (2020+) |
+| `fetch_chrome_root_store.py` | Chromium Gitiles API | `chrome_root_store_changelog.json` | Chrome Root Store changelog from source code git history (2022+) |
+| `fetch_trust_snapshots.py` | CCADB CSV | `snapshots/YYYY-MM-DD.json` | Daily trust store state for all four programs; diffs build cross-store changelog |
+
+The distrust history data (`distrust/distrusted.json`) is a curated dataset with per-event classification, timeline, and per-store distrust dates. It is the single source of truth for both the Distrust History tab (Tab 11) and the Governance Risk tab (Tab 12, enforcement metrics).
 
 Pipeline outputs are committed to the repository. This means the data directory is a versioned, auditable record of the WebPKI's state over time.
 
@@ -57,7 +63,7 @@ The output is a virtual ES module that the React app imports as `virtual:pipelin
 
 ### Dashboard Stage
 
-The React app renders 11 tabs from the embedded data via a shared `PipelineContext`. Each tab is a self-contained view component that pulls what it needs from the context and renders cards, tables, charts, and maps.
+The React app renders 12 tabs from the embedded data via a shared `PipelineContext`. Each tab is a self-contained view component that pulls what it needs from the context and renders cards, tables, charts, and maps.
 
 ## Key Architectural Decisions
 
@@ -84,8 +90,9 @@ App.jsx
 ├── PipelineProvider (context: all pipeline data)
 │   ├── TabBar (hash-based routing)
 │   ├── ErrorBoundary (per-tab crash isolation)
-│   │   └── MarketView / TrustView / ConcView / ... (11 tabs)
+│   │   └── MarketView / TrustView / ConcView / ... (12 tabs)
 │   │       ├── StatCard, Card, CardTitle (layout atoms)
+│   │       ├── MethodologyCard, MethodologyItem (shared methodology pattern)
 │   │       ├── GeoMap, ChartWrap (visualization wrappers)
 │   │       ├── TrustDots, Badge, RateDot (data display atoms)
 │   │       └── CADetail (shared expandable CA detail panel)
@@ -97,7 +104,7 @@ Each view component follows the same pattern:
 1. Destructure what it needs from `usePipeline()`
 2. Compute derived metrics via `useMemo()`
 3. Render summary stat cards, then charts/maps, then detailed tables
-4. Include a methodology footnote explaining data sources, derivations, and limitations
+4. Include a `MethodologyCard` at the bottom explaining data sources, derivations, and limitations (shared component from `shared.jsx`)
 
 ## File Structure
 
@@ -108,13 +115,18 @@ webpki-observatory/
 │   ├── fetch_incidents.py       # Bugzilla → incident classification
 │   ├── fetch_root_algo.py       # CCADB PEMs → root algorithm analysis
 │   ├── fetch_browser_share.py   # StatCounter → browser coverage
-│   ├── distrust/                # Distrust detection pipeline
-│   │   ├── fetch_distrusted.py  # 4-stage: CCADB detect → Bugzilla → LLM classify → merge
-│   │   ├── distrust_config.json # Seed events, taxonomy, special handling
-│   │   ├── distrust_metadata.json # Cached references, milestones, articles
-│   │   ├── reason_vocabulary.json # 22 tags, 5 postures, ground truth
-│   │   ├── distrusted.json      # Pipeline output (embedded at build time)
-│   │   └── cache/               # Bugzilla + classification cache
+│   ├── fetch_rpe.py             # Bugzilla + CCADB + cabforum → governance risk (7 phases)
+│   ├── fetch_microsoft_ctl.py   # learn.microsoft.com → Microsoft trust store changelog
+│   ├── fetch_chrome_root_store.py # Chromium git log → Chrome Root Store changelog
+│   ├── fetch_trust_snapshots.py # Daily CCADB snapshot for cross-store diff changelog
+│   ├── distrust/                # Distrust history data
+│   │   └── distrusted.json     # Curated events with per-store dates (single source of truth)
+│   ├── ops_cache/               # Cached API responses
+│   │   ├── bugs_raw.json        # Bugzilla bug list cache
+│   │   ├── comments_cache.json  # Bugzilla comment cache
+│   │   ├── cabforum_ballots.json # CA/Browser Forum ballot data (SC+CSC+SMC+NS)
+│   │   ├── microsoft_ctl_cache.json # Microsoft deployment notice cache
+│   │   └── chrome_root_store_cache.json # Chromium commit diff cache
 │   ├── gov_classifications.json # Manually curated government CA ties
 │   ├── name_mappings.json       # crt.sh ↔ CCADB name normalization
 │   └── enrichments.json         # Manual capability overrides
@@ -127,6 +139,10 @@ webpki-observatory/
 │   ├── jurisdiction_risk.json   # Key seizure / compulsion laws
 │   ├── root_algorithms.json     # Root cert cryptographic data
 │   ├── browser_coverage.json    # Browser → root program mapping
+│   ├── root_program_effectiveness.json # Governance risk metrics (7-phase pipeline)
+│   ├── microsoft_ctl_changelog.json    # Microsoft trust store change history
+│   ├── chrome_root_store_changelog.json # Chrome Root Store change history
+│   ├── snapshots/               # Daily CCADB trust store snapshots
 │   └── ca/                      # Per-CA detail files (roots, intermediates)
 ├── app/                         # Dashboard (React + Vite)
 │   ├── vite.config.js           # Data transform plugin
@@ -152,7 +168,8 @@ webpki-observatory/
 │   │       ├── OpsView.jsx      # Tab 8: Operational Risk
 │   │       ├── PolicyView.jsx   # Tab 9: Policy Impact
 │   │       ├── CryptoView.jsx   # Tab 10: Cryptographic Posture
-│   │       └── DistrustView.jsx # Tab 11: Distrust History
+│   │       ├── DistrustView.jsx # Tab 11: Distrust History
+│   │       └── GovernanceRiskView.jsx # Tab 12: Governance Risk
 │   └── .eslintrc.json, .prettierrc
 └── .github/workflows/deploy.yml # Daily pipeline + build + deploy
 ```

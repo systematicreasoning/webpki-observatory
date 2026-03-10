@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS } from '../constants';
 import { dn, f, getWebCoverage } from '../helpers';
-import { Card, CardTitle, StatCard, GeoMap, Paginator, TabIntro } from './shared';
+import { Card, CardTitle, StatCard, GeoMap, Paginator, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { compactTableStyle } from '../styles';
@@ -797,27 +797,17 @@ const JurisdictionView = () => {
         </div>
       </Card>
 
-      <div
-        style={{
-          fontSize: 8,
-          color: COLORS.t3,
-          marginTop: 8,
-          lineHeight: 1.6,
-          borderTop: `1px solid ${COLORS.bd}`,
-          paddingTop: 6,
-        }}
-      >
-        <strong style={{ color: COLORS.t2 }}>Methodology:</strong> Legislation data is cross-verified against Wikipedia
-        Key Disclosure Law, official legislation sites, EFF, Global Partners Digital, Comparitech, and CA/B Forum
-        context. Risk levels reflect the strength and scope of government authority to compel key disclosure or CA
-        cooperation — not the likelihood of exercise. "Exposure" means the CA is headquartered in that jurisdiction; it
-        does not mean the CA's operations or subscribers are located there.{' '}
-        <strong style={{ color: COLORS.t2 }}>Scope:</strong> Only currently trusted CAs (included in at least one major
-        trust store). Distrusted CAs are excluded even if they were historically in a high-risk jurisdiction.{' '}
-        <strong style={{ color: COLORS.t2 }}>Limitation:</strong> Jurisdiction is based on CA owner country from CCADB.
-        A CA incorporated in one country may operate infrastructure in another. Subsidiary relationships and operational
-        geography are not captured.
-      </div>
+      <MethodologyCard>
+        <MethodologyItem label="Methodology">
+          Legislation data is cross-verified against Wikipedia Key Disclosure Law, official legislation sites, EFF, Global Partners Digital, Comparitech, and CA/B Forum context. Risk levels reflect the strength and scope of government authority to compel key disclosure or CA cooperation — not the likelihood of exercise. "Exposure" means the CA is headquartered in that jurisdiction; it does not mean the CA's operations or subscribers are located there.
+        </MethodologyItem>
+        <MethodologyItem label="Scope">
+          Only currently trusted CAs (included in at least one major trust store). Distrusted CAs are excluded even if they were historically in a high-risk jurisdiction.
+        </MethodologyItem>
+        <MethodologyItem label="Limitation">
+          Jurisdiction is based on CA owner country from CCADB. A CA incorporated in one country may operate infrastructure in another. Subsidiary relationships and operational geography are not captured.
+        </MethodologyItem>
+      </MethodologyCard>
     </div>
   );
 };

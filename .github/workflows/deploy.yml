@@ -50,6 +50,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline/fetch_incidents.py
 
+      - name: Run Microsoft CTL changelog pipeline
+        run: python pipeline/fetch_microsoft_ctl.py
+
+      - name: Run Chrome Root Store changelog pipeline
+        run: python pipeline/fetch_chrome_root_store.py
+
+      - name: Run daily trust store snapshot
+        run: python pipeline/fetch_trust_snapshots.py
+
+      - name: Run governance risk pipeline
+        run: RPE_MAX_BUGS=200 python pipeline/fetch_rpe.py
+
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
