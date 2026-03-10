@@ -66,6 +66,9 @@ jobs:
         continue-on-error: true
         run: RPE_MAX_BUGS=500 python pipeline/fetch_rpe.py
 
+      - name: Export LLM snapshot
+        run: python pipeline/export_llm_snapshot.py
+
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
@@ -120,6 +123,7 @@ jobs:
           npm run build
           mkdir -p dist/data
           cp -r ${{ github.workspace }}/data/ca dist/data/ca
+          cp ${{ github.workspace }}/data/llm_snapshot.json dist/llm_snapshot.json
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
