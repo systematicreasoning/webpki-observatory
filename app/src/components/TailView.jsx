@@ -4,7 +4,9 @@ import { dn, f, fl } from '../helpers';
 import { Card, CardTitle, StatCard, TrustDots, GeoMap, buildPins, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { compactTableStyle, expandedCellStyle } from '../styles';
+import {
+  cardHeaderStyle, compactTableStyle, controlRowStyle, expandedCellStyle, footnoteStyle, searchInputNarrow, statGridStyle,
+} from '../styles';
 
 /**
  * TailView — Long Tail Risk tab.
@@ -54,12 +56,7 @@ const TailView = () => {
 
       {/* ── Summary stats ── */}
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))',
-          gap: 16,
-          marginBottom: 20,
-        }}
+        style={{ ...statGridStyle, marginBottom: 20 }}
       >
         <StatCard l="Tail CAs" v={tail.length} s={`share ${tailPct.toFixed(2)}%`} c={COLORS.am} />
         <StatCard l="Tail Certificates" v={f(tailCerts)} s="total unexpired" />
@@ -176,34 +173,17 @@ const TailView = () => {
       {/* ── Tail CA table ── */}
       <Card>
         <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            gap: 8,
-            marginBottom: 12,
-          }}
+          style={cardHeaderStyle}
         >
           <CardTitle sub={`CAs below the ${TAIL_THRESHOLD}% cumulative issuance threshold. Click any row to expand.`}>
             Tail CAs
           </CardTitle>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
+          <div style={controlRowStyle}>
             <input
               value={tailFilter}
               onChange={(e) => setTailFilter(e.target.value)}
               placeholder="Filter CAs..."
-              style={{
-                background: COLORS.bg,
-                border: `1px solid ${COLORS.bd}`,
-                borderRadius: 6,
-                padding: '6px 10px',
-                fontSize: 11,
-                color: COLORS.tx,
-                fontFamily: FONT_SANS,
-                width: 160,
-                outline: 'none',
-              }}
+              style={searchInputNarrow}
             />
             <div style={{ display: 'flex', gap: 4 }}>
               {[10, 25, 0].map((n) => (
@@ -348,14 +328,7 @@ const TailView = () => {
       </Card>
 
       <div
-        style={{
-          fontSize: 8,
-          color: COLORS.t3,
-          marginTop: 8,
-          lineHeight: 1.6,
-          borderTop: `1px solid ${COLORS.bd}`,
-          paddingTop: 6,
-        }}
+        style={footnoteStyle}
       >
         <strong style={{ color: COLORS.t2 }}>Tail definition:</strong> Head = the fewest CAs whose cumulative issuance ≥
         {TAIL_THRESHOLD}% of all unexpired certificates. Currently {headSize} CAs. Everything below is "tail." The

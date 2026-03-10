@@ -5,6 +5,9 @@ import { dn } from '../helpers';
 import { Card, CardTitle, StatCard, ChartTooltip as TT, ChartWrap, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
+import {
+  cardHeaderStyle, controlRowStyle, footnoteStyle, searchInputNarrow, statGridStyle,
+} from '../styles';
 
 const TREEMAP_COLORS = [
   COLORS.ac,
@@ -118,12 +121,7 @@ const ConcView = () => {
 
       {/* ── Summary stats ── */}
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))',
-          gap: 16,
-          marginBottom: 24,
-        }}
+        style={{ ...statGridStyle, marginBottom: 24 }}
       >
         <StatCard
           l="Top 3 Control"
@@ -220,34 +218,17 @@ const ConcView = () => {
       {/* ── Concentration Ladder ── */}
       <Card>
         <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            gap: 8,
-            marginBottom: 12,
-          }}
+          style={cardHeaderStyle}
         >
           <CardTitle sub="Ranked by cumulative market share. Click any row to expand CA details.">
             Concentration Ladder
           </CardTitle>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
+          <div style={controlRowStyle}>
             <input
               value={concFilter}
               onChange={(e) => setConcFilter(e.target.value)}
               placeholder="Filter CAs..."
-              style={{
-                background: COLORS.bg,
-                border: `1px solid ${COLORS.bd}`,
-                borderRadius: 6,
-                padding: '6px 10px',
-                fontSize: 11,
-                color: COLORS.tx,
-                fontFamily: FONT_SANS,
-                width: 160,
-                outline: 'none',
-              }}
+              style={searchInputNarrow}
             />
             <div style={{ display: 'flex', gap: 4 }}>
               {[10, 25, 0].map((n) => (
@@ -353,14 +334,7 @@ const ConcView = () => {
       </Card>
 
       <div
-        style={{
-          fontSize: 8,
-          color: COLORS.t3,
-          marginTop: 8,
-          lineHeight: 1.6,
-          borderTop: `1px solid ${COLORS.bd}`,
-          paddingTop: 6,
-        }}
+        style={footnoteStyle}
       >
         <strong style={{ color: COLORS.t2 }}>HHI (Herfindahl–Hirschman Index)</strong> = sum of squared market shares.
         Standard concentration metric used by DOJ/FTC. &lt;1,500 = unconcentrated, 1,500–2,500 = moderately
@@ -372,9 +346,8 @@ const ConcView = () => {
       </div>
 
       <MethodologyCard>
-        <MethodologyItem label="Concentration metric">Share of total unexpired certificates issued by each CA. HHI (Herfindahl-Hirschman Index) = sum of squared market shares. DOJ/FTC thresholds: below 1,500 unconcentrated, 1,500–2,500 moderately concentrated, above 2,500 highly concentrated. CR3/CR5/CR7 = combined share of the top 3, 5, or 7 CAs.</MethodologyItem>
-        <MethodologyItem label="Context">HHI measures issuance concentration, not market power in the traditional antitrust sense. CAs cannot unilaterally raise prices because free alternatives exist (Let's Encrypt). Concentration matters for blast radius — a misissuance or distrust event at a dominant CA forces millions of sites through emergency replacement — and for ecosystem resilience if a major CA fails.</MethodologyItem>
-        <MethodologyItem label="Risk">If a top CA is compromised or distrusted, the blast radius is proportional to their issuance share. Concentration in few CAs creates systemic single points of failure.</MethodologyItem>
+        <MethodologyItem label="Concentration metric">Share of total unexpired certificates issued by each CA. HHI (Herfindahl-Hirschman Index) measures market concentration — higher values indicate fewer CAs account for more issuance.</MethodologyItem>
+        <MethodologyItem label="Risk">If a top CA is compromised or distrusted, the blast radius is proportional to their market share. Concentration in few CAs creates systemic single points of failure.</MethodologyItem>
       </MethodologyCard>
     </div>
   );

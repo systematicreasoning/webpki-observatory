@@ -5,7 +5,9 @@ import { dn, f, fl, getIncidentRate, getWebCoverage } from '../helpers';
 import { Card, CardTitle, TrustDots, Badge, RateDot, ChartWrap, GeoMap, buildPins, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { expandedCellStyle, scrollXStyle, tableStyle } from '../styles';
+import {
+  expandedCellStyle, scrollXStyle, searchInputStyle, tableStyle,
+} from '../styles';
 
 const DONUT_COLORS = [
   COLORS.ac,
@@ -217,17 +219,7 @@ const MarketView = () => {
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Filter CAs..."
-          style={{
-            background: COLORS.bg,
-            border: `1px solid ${COLORS.bd}`,
-            borderRadius: 6,
-            padding: '6px 10px',
-            fontSize: 11,
-            color: COLORS.tx,
-            fontFamily: FONT_SANS,
-            width: 200,
-            outline: 'none',
-          }}
+          style={searchInputStyle}
         />
         <PageButtons onReset={() => setExpanded(null)} />
       </div>

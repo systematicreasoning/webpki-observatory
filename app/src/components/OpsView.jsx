@@ -34,7 +34,9 @@ import {
 } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { compactTableStyle, expandedCellStyle, scrollXStyle } from '../styles';
+import {
+  cardHeaderStyle, compactTableStyle, controlRowStyle, expandedCellStyle, narrowStatGrid, scrollXStyle, searchInputNarrow,
+} from '../styles';
 
 /**
  * OpsMap — Jurisdiction map for operational risk.
@@ -259,12 +261,7 @@ const OpsView = () => {
       </TabIntro>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(120px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={narrowStatGrid}
       >
         <StatCard l="Incidents" v={fl(d.total)} s={`${d.ca_count} CAs with incidents`} c={COLORS.ac} />
         <StatCard l="Peak Year" v={peakYear.y} s={`${peakYear.n} incidents`} c={COLORS.am} />
@@ -608,34 +605,17 @@ const OpsView = () => {
 
       <Card>
         <div
-          style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            gap: 8,
-            marginBottom: 12,
-          }}
+          style={cardHeaderStyle}
         >
           <CardTitle sub="Per M Certs normalizes for issuance volume. Only currently trusted CAs shown.">
             CAs by Incident Count
           </CardTitle>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexShrink: 0 }}>
+          <div style={controlRowStyle}>
             <input
               value={opsFilter}
               onChange={(e) => setOpsFilter(e.target.value)}
               placeholder="Filter CAs..."
-              style={{
-                background: COLORS.bg,
-                border: `1px solid ${COLORS.bd}`,
-                borderRadius: 6,
-                padding: '6px 10px',
-                fontSize: 11,
-                color: COLORS.tx,
-                fontFamily: FONT_SANS,
-                width: 160,
-                outline: 'none',
-              }}
+              style={searchInputNarrow}
             />
             <div style={{ display: 'flex', gap: 4 }}>
               {[10, 20, 0].map((n) => (

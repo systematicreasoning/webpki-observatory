@@ -5,7 +5,9 @@ import { dn, f } from '../helpers';
 import { Card, CardTitle, StatCard, ChartWrap, GeoMap, buildPins, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { tinyTableStyle } from '../styles';
+import {
+  footnoteStyle, statGridStyle, tinyTableStyle,
+} from '../styles';
 
 /**
  * GeoView — Geographic Risk tab.
@@ -56,12 +58,7 @@ const GeoView = () => {
       </TabIntro>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={{ ...statGridStyle, gridTemplateColumns: 'repeat(auto-fill,minmax(160px,1fr))' }}
       >
         <StatCard
           l="United States"
@@ -747,14 +744,7 @@ const GeoView = () => {
       ))}
 
       <div
-        style={{
-          fontSize: 8,
-          color: COLORS.t3,
-          marginTop: 8,
-          lineHeight: 1.6,
-          borderTop: `1px solid ${COLORS.bd}`,
-          paddingTop: 6,
-        }}
+        style={footnoteStyle}
       >
         <strong style={{ color: COLORS.t2 }}>Jurisdiction</strong> = country of the CA owner organization as recorded in
         CCADB, not where the CA's servers are located or where its subscribers are. A CA headquartered in Belgium (e.g.,

@@ -5,7 +5,9 @@ import { dn, f } from '../helpers';
 import { Card, CardTitle, StatCard, ChartWrap, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { compactTableStyle, expandedCellStyle } from '../styles';
+import {
+  compactTableStyle, expandedCellStyle, statGridStyle,
+} from '../styles';
 
 /**
  * PolicyView — Policy Impact tab.
@@ -67,12 +69,7 @@ const PolicyView = () => {
       </div>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={statGridStyle}
       >
         <StatCard l="CAs with Usage Data" v={casWithUsage.length} c={COLORS.ac} />
         <StatCard

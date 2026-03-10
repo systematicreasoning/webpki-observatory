@@ -4,7 +4,9 @@ import { dn, f, fl, getIncidentRate } from '../helpers';
 import { Card, CardTitle, StatCard, RateDot, GeoMap, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { compactTableStyle, expandedCellStyle } from '../styles';
+import {
+  compactTableStyle, expandedCellStyle, statGridStyle,
+} from '../styles';
 
 /**
  * GovTable — Expandable table of government-classified CAs.
@@ -148,12 +150,7 @@ const GovView = () => {
       </TabIntro>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={statGridStyle}
       >
         <StatCard l="Gov/State CAs" v={govRisk.n} c={COLORS.am} />
         <StatCard l="Share of Trusted CAs" v={`${govPct}%`} c={COLORS.am} />

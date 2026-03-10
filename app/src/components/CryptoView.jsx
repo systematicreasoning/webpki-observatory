@@ -45,7 +45,9 @@ import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import { STANDARDS_BODY_SOURCES, ALGO_THRESHOLDS } from '../constants';
 import { keyBelowStandard, hashBelowStandard, standardsStatusColor, standardsStatusLabel } from '../helpers';
-import { compactTableStyle, expandedCellStyle, scrollXStyle } from '../styles';
+import {
+  compactTableStyle, expandedCellStyle, narrowStatGrid, scrollXStyle,
+} from '../styles';
 
 /** Page size selector for tables */
 const Pg = ({ cnt, setCnt }) => (
@@ -300,12 +302,7 @@ const CryptoView = () => {
       </TabIntro>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(120px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={narrowStatGrid}
       >
         <StatCard l="Root Certificates" v={allRoots.length} c={COLORS.ac} />
         <StatCard l="RSA Roots" v={`${rsaPct}%`} s={`${rsaRoots.length} roots`} c={COLORS.am} />

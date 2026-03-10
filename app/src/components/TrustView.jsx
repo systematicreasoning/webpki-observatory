@@ -4,7 +4,9 @@ import { dn, f, fl, parseDate, yearsDiff, getIncidentRate } from '../helpers';
 import { Card, CardTitle, StatCard, TrustDots, RateDot, GeoMap, Paginator, buildPins, TabIntro, MethodologyCard, MethodologyItem } from './shared';
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
-import { compactTableStyle, expandedCellStyle, scrollXStyle, tableStyle } from '../styles';
+import {
+  cardHeaderStyle, compactTableStyle, expandedCellStyle, scrollXStyle, statGridStyle, tableStyle,
+} from '../styles';
 
 const now = new Date();
 
@@ -71,7 +73,7 @@ const TrustDisagreements = ({ caData, browserCoverage }) => {
 
   return (
     <Card>
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8, marginBottom: 10 }}>
+      <div style={{ ...cardHeaderStyle, marginBottom: 10 }}>
         <CardTitle sub={`${disagreements.length} CAs are trusted by some but not all root programs. ${withCerts.length} have active certificate issuance. ${msftOnly.length} are Microsoft-only. Sorted by web coverage gap.`}>
           Trust Store Disagreements
         </CardTitle>
@@ -252,12 +254,7 @@ const TrustView = () => {
       </TabIntro>
 
       <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))',
-          gap: 16,
-          marginBottom: 28,
-        }}
+        style={statGridStyle}
       >
         <StatCard l="CAs in All 4 Stores" v={intersections.allFourStores.owners} s="CA owners" c={COLORS.gn} />
         <StatCard l="Roots in All 4 Stores" v={intersections.allFourStores.roots} s={`of ${intersections.totalRoots} total`} />
