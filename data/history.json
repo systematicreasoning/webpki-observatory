@@ -1755,14 +1755,14 @@
     },
     {
       "date": "2026-03-10",
-      "generated_at": "2026-03-10T22:07:33.763468+00:00",
+      "generated_at": "2026-03-10T22:09:42.485415+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287549598,
+      "total_unexpired": 1287550401,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.2831
+          "pct": 40.2829
         },
         {
           "ca": "Google Trust Services LLC",
@@ -1770,7 +1770,7 @@
         },
         {
           "ca": "DigiCert",
-          "pct": 13.6895
+          "pct": 13.6896
         },
         {
           "ca": "GoDaddy",
@@ -1778,7 +1778,7 @@
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3941
+          "pct": 10.3943
         },
         {
           "ca": "Microsoft Corporation",
@@ -1804,47 +1804,47 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518664529,
+          "v": 518662315,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212770475,
+          "v": 212769700,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 176259670,
+          "v": 176260747,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166384980,
+          "v": 166385157,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133829483,
+          "v": 133831933,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59651601,
+          "v": 59651581,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12803660,
+          "v": 12803747,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686383,
+          "v": 1686366,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1584944,
+          "v": 1584977,
           "at": 0
         },
         {
@@ -1864,17 +1864,17 @@
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266233,
+          "v": 266237,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 220259,
+          "v": 220255,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 83093,
+          "v": 83096,
           "at": 0
         },
         {
