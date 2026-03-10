@@ -28,6 +28,8 @@ All analysis is scoped to **currently trusted CAs** — those with at least one 
 
 **Limitation — Country Field:** The "CA Owner" country field reflects the organization's jurisdiction of incorporation, not where its operations, infrastructure, or subscribers are located. A CA incorporated in Belgium may operate servers in the US and issue certificates to subscribers worldwide.
 
+**Intermediate De-duplication:** Cross-signed intermediate certificates share the same Subject Key Identifier (SKI) but appear as separate CCADB records because they chain to different root certificates. The pipeline de-duplicates intermediates by SKI after filtering for trusted, non-expired chain paths, so the "Issuing CAs" count reflects operationally distinct issuing CAs rather than raw CCADB certificate records.
+
 ### Bugzilla (Mozilla CA Compliance)
 
 **What it provides:** CA compliance incident records from 2014 to present, including incident descriptions, filing dates, resolution status, and the identity of the bug filer.
@@ -227,6 +229,8 @@ The Distrust History tab classifies 16 CA removal events (2011–2024) across fo
 
 **Enrichment sources**: Each event may have cached reference material from root program blog posts, security researcher reports, investigative journalism, and mailing list threads. This metadata improves classification accuracy but is not required — the pipeline classifies from Bugzilla evidence alone when metadata is unavailable.
 
+**Evidence basis**: All classifications are based on publicly available evidence only. Root programs may possess non-public information — including private communications, confidential audit findings, or bilateral agreements — that influenced their decisions but is not reflected in this analysis.
+
 ## Governance Risk Methodology
 
 The Governance Risk tab (Tab 12) compares how effectively Chrome, Mozilla, Apple, and Microsoft govern the CAs they trust. The pipeline (`fetch_rpe.py`) runs in 7 phases:
@@ -235,7 +239,7 @@ The Governance Risk tab (Tab 12) compares how effectively Chrome, Mozilla, Apple
 
 **Phase 2: Comment Participation.** Fetches comments from Bugzilla bugs and classifies each as *oversight* (commenting on another CA's bug) or *self-incident* (responding to your own CA's compliance failure). Microsoft operates a CA (Microsoft PKI Services) — nearly all their Bugzilla activity is self-incident, not governance. Comment concentration analysis computes bus factor per program.
 
-**Phase 3: Enforcement.** Reads distrust events from `pipeline/distrust/distrusted.json` — the same canonical source used by the Distrust History tab (Tab 11). Per-store distrust dates determine who acted and who led (earliest date = leader). "Still trusts" = stores with no distrust date. This ensures a single source of truth: when a new CA is distrusted, updating `distrusted.json` once updates both tabs.
+**Phase 3: Enforcement.** Reads distrust events from `pipeline/distrust/distrusted.json` — the same canonical source used by the Distrust History tab (Tab 11). Per-store distrust dates determine who acted and who was first to publicly announce (earliest date = "First Public Action"). "Still trusts" = stores with no distrust date. This ensures a single source of truth: when a new CA is distrusted, updating `distrusted.json` once updates both tabs.
 
 **Phase 4: Store Posture.** Computes per-store metrics from CCADB and `root_algorithms.json`: CA owner count, root certificate count, exclusive roots (counted at root-cert level from `root_algorithms.json`, not CA-owner level), and government-affiliated CAs (pattern-matched on CA owner names).
 

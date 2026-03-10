@@ -57,6 +57,8 @@ The WebPKI Observatory provides a quantitative, evidence-based view of the Certi
 
 **Known limitation:** Microsoft's web browser share is ~0% because Edge uses Chrome's root store. Microsoft's trust store matters for Windows enterprise TLS, S/MIME, and code signing — contexts not captured by web browser market share. The "web coverage" metric is accurate for browser TLS but understates Microsoft-only CAs' operational importance.
 
+**Intermediate count methodology:** The "Issuing CAs" count per CA owner is de-duplicated by Subject Key Identifier (SKI). Cross-signed intermediates share the same key but appear as separate CCADB records; the pipeline collapses these into one logical issuing CA per unique SKI. Only non-revoked, non-expired intermediates chaining to a currently trusted root are counted.
+
 **Defensibility:** Root inclusion status comes directly from CCADB, the canonical cross-program database maintained by Mozilla and used by all four root programs. Browser market share is from StatCounter (public, widely cited).
 
 ---
@@ -281,7 +283,7 @@ The critical distinction is purpose-built vs general. The combination of compell
 **Metrics:**
 - Report card heatmap: 12 metrics per program across governance activity and trust surface scope
 - Enforcement: 16 distrust events (2011–2024), who led, who followed, who hasn't acted
-- Bugzilla oversight: comment attribution by email domain across 1,267 bugs and 16,786 comments
+- Bugzilla oversight: comment attribution by email domain across all sampled bugs and comments
 - Oversight concentration: bus factor per program (unique contributors, top-contributor %)
 - Oversight trend: quarterly comments and people counts per program (2020–present)
 - Policy leadership: CA/Browser Forum ballot proposers, endorsers, and voters across 4 working groups
@@ -304,8 +306,8 @@ The critical distinction is purpose-built vs general. The combination of compell
 **Key methodological notes:**
 - Oversight attribution uses email domain matching (@google.com → Chrome, @mozilla.com → Mozilla, etc.). Microsoft operates a CA — 487 of their 488 Bugzilla comments are self-incident responses to their own CA's failures, not governance oversight.
 - Bugzilla data has survivorship bias: CAs not yet trusted by any store rarely file incident bugs. Oversight metrics reflect governance of established CAs, not the full applicant pipeline.
-- Each root program discloses enforcement differently. Chrome publishes blog posts. Mozilla uses Bugzilla threads. Microsoft publishes monthly CTL notices. Apple publishes support documents with SHA-256 hashes but does not announce on Bugzilla or mailing lists. "Led" is biased toward programs that announce loudly. Apple's enforcement may be undercounted.
-- Ballot counts treat all ballots equally. SC-081 (reducing certificate validity to 47 days) has vastly more impact than a cleanup ballot.
+- Each root program discloses enforcement differently. Chrome publishes blog posts. Mozilla uses Bugzilla threads. Microsoft publishes monthly CTL notices. Apple publishes support documents with SHA-256 hashes but does not announce on Bugzilla or mailing lists. "First Public Action" is biased toward programs that announce loudly. Apple's enforcement may predate other programs' public announcements.
+- Ballot counts treat all ballots equally. SC-081 (reducing certificate validity to 47 days) has vastly more impact than a cleanup ballot. Vote participation includes yes, no, and abstain votes. Not voting may reflect policy disagreement or a deliberate choice not to legitimize a ballot — it is not inherently a governance failure.
 - Store size reflects policy philosophy: Chrome is deliberately selective (value must exceed risk), Mozilla is the fastest gateway for new CAs, Apple is highly selective, Microsoft processes rollovers quickly. A larger store is not automatically worse governance, but it requires proportionally more governance activity to maintain assurance.
 - Apple has no public machine-readable trust store changelog. Daily CCADB snapshots will build this history over time.
 

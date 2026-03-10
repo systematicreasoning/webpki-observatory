@@ -8,7 +8,7 @@ The system has three layers:
 
 1. **Pipeline** — Python scripts that fetch from public data sources, normalize, enrich, and produce JSON files
 2. **Build** — A Vite plugin that reads the JSON at compile time, applies trust-scope filtering, and embeds the data into the JavaScript bundle
-3. **Dashboard** — A React single-page app that renders 11 analytical views from the embedded data
+3. **Dashboard** — A React single-page app that renders 12 analytical views from the embedded data
 
 There is no backend server. The pipeline runs in GitHub Actions, the build produces static files, and the dashboard is served from GitHub Pages. All data is public.
 
@@ -53,7 +53,7 @@ Pipeline outputs are committed to the repository. This means the data directory 
 
 The Vite plugin (`vite.config.js`) reads the pipeline JSON at build time and applies three critical transformations:
 
-1. **Trust-scope filtering** — Only CAs with `trust_store_count > 0` or a `parent_ca` relationship pass through. Distrusted CAs (WoSign, CNNIC, DigiNotar, etc.) are excluded from all current-ecosystem analysis. CCADB tracks 248 CA owners; 98 are currently trusted.
+1. **Trust-scope filtering** — Only CAs with `trust_store_count > 0` or a `parent_ca` relationship pass through. Distrusted CAs (WoSign, CNNIC, DigiNotar, etc.) are excluded from all current-ecosystem analysis. CCADB tracks 248 CA owners; 97 are currently trusted.
 
 2. **Country normalization** — CCADB uses inconsistent country names ("United States of America", "USA", "US"). The plugin normalizes these to canonical forms ("United States") so cross-referencing works.
 
@@ -142,8 +142,13 @@ webpki-observatory/
 │   ├── root_program_effectiveness.json # Governance risk metrics (7-phase pipeline)
 │   ├── microsoft_ctl_changelog.json    # Microsoft trust store change history
 │   ├── chrome_root_store_changelog.json # Chrome Root Store change history
+│   ├── trust_surface.json       # Trust store intersection analysis
+│   ├── trust_store_changelog.json # Cross-store trust change history (from snapshots)
+│   ├── history.json             # Historical trust store state diffs
+│   ├── ca_details.json          # Per-CA aggregate detail (roots, intermediates, counts)
+│   ├── metadata.json            # Pipeline run timestamps and freshness tracking
 │   ├── snapshots/               # Daily CCADB trust store snapshots
-│   └── ca/                      # Per-CA detail files (roots, intermediates)
+│   └── ca/                      # Per-CA detail files (roots, intermediates, PEMs)
 ├── app/                         # Dashboard (React + Vite)
 │   ├── vite.config.js           # Data transform plugin
 │   ├── scripts/validate-data.cjs # Build-time data validation

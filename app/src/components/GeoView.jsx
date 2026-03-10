@@ -55,21 +55,6 @@ const GeoView = () => {
         Where the world's trusted CAs are headquartered, and how certificate issuance volume distributes across regions and countries. Geographic concentration matters because CA operations are subject to the laws, political pressures, and regulatory regimes of their home jurisdiction. A region that hosts a disproportionate share of issuance becomes a single point of geopolitical risk — sanctions, conflict, or regulatory shifts in one country can ripple across the global WebPKI. This view helps relying parties assess their sovereign exposure and gives CAs context for how their home jurisdiction shapes their risk profile.
       </TabIntro>
 
-      {/* ── Jurisdiction limitation banner ── */}
-      <div style={{
-        background: 'rgba(234,179,8,0.08)',
-        border: `1px solid rgba(234,179,8,0.25)`,
-        borderRadius: 8,
-        padding: '10px 14px',
-        marginBottom: 16,
-        fontSize: 12,
-        color: COLORS.t2,
-        lineHeight: 1.5,
-      }}>
-        <span style={{ fontWeight: 600, color: 'rgba(234,179,8,0.9)' }}>⚠ Jurisdiction ≠ operations:</span>{' '}
-        Country reflects the CA owner's jurisdiction of incorporation per CCADB — not where infrastructure is operated, where subscribers are located, or where the CA may be subject to legal process. CAs with global operations face multi-jurisdictional exposure that this view does not capture.
-      </div>
-
       <div
         style={{
           display: 'grid',
@@ -781,7 +766,7 @@ const GeoView = () => {
       <MethodologyCard>
         <MethodologyItem label="Jurisdiction">Derived from the CCADB CA Owner country field. Country-to-region mapping uses UN M49 standard geographic groupings.</MethodologyItem>
         <MethodologyItem label="Government classification">Manually curated structural relationships identify CAs with government ownership or affiliation. "Government-affiliated" includes state-owned, military, and regulatory body CAs.</MethodologyItem>
-        <MethodologyItem label="Limitation">CA Owner country may not reflect where certificates are actually used or where subscribers are located. A CA headquartered in one country may primarily serve another.</MethodologyItem>
+        <MethodologyItem label="Limitation">Country reflects jurisdiction of incorporation per CCADB — not where infrastructure is operated, where subscribers are located, or where the CA may be subject to legal process. CAs with global operations face multi-jurisdictional exposure not captured here. A CA headquartered in one country may primarily serve another.</MethodologyItem>
       </MethodologyCard>
     </div>
   );
