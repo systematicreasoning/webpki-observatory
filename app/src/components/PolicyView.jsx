@@ -424,11 +424,11 @@ const PolicyView = () => {
         </div>
       </Card>
 
-      <div style={{ fontSize: 8, color: COLORS.t3, marginTop: 8, lineHeight: 1.5 }}>
-        "Usage period" is average time before replacement, not the validity period on the certificate. CAs with short
-        usage periods have subscriber bases that already automate renewal. BR max validity schedule: 200d from Mar 2026,
-        100d from Mar 2027, 47d from Mar 2029.
-      </div>
+      <MethodologyCard>
+        <MethodologyItem label="Usage period">365 / (all-time certs / unexpired certs). Measures how frequently a CA's subscribers actually replace certificates, not the validity period configured on the certificate. A CA issuing 90-day certs whose subscribers renew at 60 days has a ~22-day usage period.</MethodologyItem>
+        <MethodologyItem label="BR schedule">CA/B Forum Baseline Requirements are reducing maximum certificate validity: 200 days (March 2026), 100 days (March 2027), 47 days (March 2029). CAs whose average usage period exceeds the next threshold face the largest subscriber disruption.</MethodologyItem>
+        <MethodologyItem label="Limitation">Usage period is a population average. It does not capture subscriber heterogeneity — a CA may have some subscribers with 30-day automation and others doing manual annual renewal.</MethodologyItem>
+      </MethodologyCard>
 
       {/* ═══ BALLOT CONTRIBUTIONS ═══ */}
       {rpeData?.ballot_classification && (() => {

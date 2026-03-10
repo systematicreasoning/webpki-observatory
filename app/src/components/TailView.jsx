@@ -368,8 +368,10 @@ const TailView = () => {
       </div>
 
       <MethodologyCard>
-        <MethodologyItem label="Threshold">The long tail boundary is set at 99.9% cumulative certificate issuance. CAs beyond this threshold issue very few certificates but retain full trust store privileges.</MethodologyItem>
-        <MethodologyItem label="Risk">Low-volume CAs have less operational experience, fewer incident reports, and less community scrutiny. They represent disproportionate attack surface relative to their contribution.</MethodologyItem>
+        <MethodologyItem label="Threshold">Head = the fewest CAs whose cumulative issuance accounts for ≥99.99% of all unexpired certificates. Computed dynamically on each pipeline run, so the boundary adapts as the market evolves. Everything below is "tail."</MethodologyItem>
+        <MethodologyItem label="Store grouping">Tail CAs grouped by trust store presence (4, 3, 2, or 1 store). Tail CAs in all 4 stores represent the highest risk-to-utility ratio: maximum blast radius (~97% web coverage) with minimal ecosystem contribution.</MethodologyItem>
+        <MethodologyItem label="Risk">Low-volume CAs have less operational experience, fewer incident reports, and less community scrutiny. Tail CAs are disproportionately represented in historical distrust events. They represent disproportionate attack surface relative to their contribution.</MethodologyItem>
+        <MethodologyItem label="Data">Unexpired precertificates from CT logs via crt.sh. Scope: currently trusted CAs only.</MethodologyItem>
       </MethodologyCard>
     </div>
   );

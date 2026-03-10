@@ -600,8 +600,9 @@ const MarketView = () => {
 
       <MethodologyCard>
         <MethodologyItem label="Data source">Unexpired precertificates from Certificate Transparency logs via crt.sh, grouped by Root Owner (CA organization level). Updated daily.</MethodologyItem>
-        <MethodologyItem label="Cross-sign caveat">Cross-signed roots mean some certificates issued under one CA may be attributed to another. Volume may be undercounted for CAs with cross-signing relationships (e.g., ISRG / IdenTrust).</MethodologyItem>
-        <MethodologyItem label="Scope">Only publicly-trusted TLS certificates. Private PKI, S/MIME, and code signing certificates are not included.</MethodologyItem>
+        <MethodologyItem label="Cross-sign caveat">crt.sh attributes certificates to the root CA owner, not the operating CA. CAs issuing through cross-signed intermediates under another root appear undercounted (e.g., Amazon via Starfield/GoDaddy, historical Let's Encrypt via IdenTrust). CAs with known attribution gaps are marked with ⚠.</MethodologyItem>
+        <MethodologyItem label="Derived metrics">Usage Period = 365 / (all-time certs / unexpired certs) — measures actual replacement behavior, not configured validity. Ops‡ (incidents per million) = cumulative Bugzilla incidents / all-time certs × 1,000,000. Web Coverage = sum of browser market shares for trust stores that include this CA.</MethodologyItem>
+        <MethodologyItem label="Scope">Only publicly-trusted TLS certificates. Private PKI, S/MIME, and code signing certificates are not included. Issuance share measures certificate volume, not market power — free CAs exist, so high share does not imply pricing leverage.</MethodologyItem>
       </MethodologyCard>
     </div>
   );

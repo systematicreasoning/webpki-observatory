@@ -372,8 +372,9 @@ const ConcView = () => {
       </div>
 
       <MethodologyCard>
-        <MethodologyItem label="Concentration metric">Share of total unexpired certificates issued by each CA. HHI (Herfindahl-Hirschman Index) measures market concentration — higher values indicate fewer CAs account for more issuance.</MethodologyItem>
-        <MethodologyItem label="Risk">If a top CA is compromised or distrusted, the blast radius is proportional to their market share. Concentration in few CAs creates systemic single points of failure.</MethodologyItem>
+        <MethodologyItem label="Concentration metric">Share of total unexpired certificates issued by each CA. HHI (Herfindahl-Hirschman Index) = sum of squared market shares. DOJ/FTC thresholds: below 1,500 unconcentrated, 1,500–2,500 moderately concentrated, above 2,500 highly concentrated. CR3/CR5/CR7 = combined share of the top 3, 5, or 7 CAs.</MethodologyItem>
+        <MethodologyItem label="Context">HHI measures issuance concentration, not market power in the traditional antitrust sense. CAs cannot unilaterally raise prices because free alternatives exist (Let's Encrypt). Concentration matters for blast radius — a misissuance or distrust event at a dominant CA forces millions of sites through emergency replacement — and for ecosystem resilience if a major CA fails.</MethodologyItem>
+        <MethodologyItem label="Risk">If a top CA is compromised or distrusted, the blast radius is proportional to their issuance share. Concentration in few CAs creates systemic single points of failure.</MethodologyItem>
       </MethodologyCard>
     </div>
   );

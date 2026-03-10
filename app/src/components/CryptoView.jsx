@@ -1101,9 +1101,11 @@ const CryptoView = () => {
       </div>
 
       <MethodologyCard>
-        <MethodologyItem label="Root algorithms">Key algorithm and size extracted from root certificates in CCADB. Shows what cryptographic foundations the trust stores rely on.</MethodologyItem>
+        <MethodologyItem label="Root algorithms">Key algorithm and size extracted from root certificate PEM files obtained from CCADB. Shows what cryptographic foundations the trust stores rely on.</MethodologyItem>
+        <MethodologyItem label="Standards bodies">Five bodies compared: NIST SP 800-57 (US federal), ECRYPT-CSA (European academic), BSI TR-02102-1 (German federal), ANSSI RGS (French national security), NSA CNSA Suite (US national security). "Below standard" = the root's key size or signature hash falls below that body's current minimum recommendation.</MethodologyItem>
+        <MethodologyItem label="Self-signature caveat">Root certificates are self-signed. The self-signature is not validated during certificate chain building — a root is trusted because it's in the trust store. SHA-1 on a self-signed root is not a security vulnerability. Standards compliance flags indicate the root's generation era, not current cryptographic exposure.</MethodologyItem>
         <MethodologyItem label="Expiry">Root certificate notAfter dates. Note: many clients (e.g., Android) unconditionally trust roots in their store even after expiry. Root programs use removal schedules rather than relying on expiry dates for enforcement.</MethodologyItem>
-        <MethodologyItem label="Limitation">This tab shows root certificate algorithms only, not leaf/intermediate certificate algorithms. Leaf algorithm adoption (e.g., ECC migration) requires separate CT log analysis not currently performed.</MethodologyItem>
+        <MethodologyItem label="Limitation">This tab shows root certificate algorithms only, not leaf or intermediate certificate algorithms. A CA with RSA-only roots can issue ECC leaf certificates through cross-signed ECC intermediates. Leaf algorithm adoption requires separate CT log analysis not currently performed.</MethodologyItem>
       </MethodologyCard>
     </div>
   );
