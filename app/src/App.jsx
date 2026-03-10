@@ -204,6 +204,10 @@ function Footer({ intersections, roots }) {
         <span>
           Data: crt.sh cert-populations (Root Owner) + CCADB AllCertificateRecordsCSVFormatv4 + Bugzilla CA Certificate
           Compliance + StatCounter browser market share
+          {' · '}
+          <a href="/llm_snapshot.json" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.t3, textDecoration: 'underline' }}>LLM Snapshot</a>
+          {' · '}
+          <a href="/schema.json" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.t3, textDecoration: 'underline' }}>Schema</a>
         </span>
         <span><a href="https://SystematicReasoning.com" target="_blank" rel="noopener noreferrer" style={{ color: COLORS.t3, textDecoration: 'none' }}>Systematic Reasoning, Inc.</a></span>
       </div>
