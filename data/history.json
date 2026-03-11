@@ -2315,34 +2315,34 @@
     },
     {
       "date": "2026-03-11",
-      "generated_at": "2026-03-11T01:34:58.424572+00:00",
+      "generated_at": "2026-03-11T01:57:01.155854+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1286634035,
+      "total_unexpired": 1286667429,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.3125
+          "pct": 40.3111
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.5366
+          "pct": 16.5357
         },
         {
           "ca": "DigiCert",
-          "pct": 13.6693
+          "pct": 13.6698
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9334
+          "pct": 12.9332
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3578
+          "pct": 10.3598
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6361
+          "pct": 4.636
         },
         {
           "ca": "IdenTrust Services, LLC",
@@ -2364,47 +2364,47 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518673776,
+          "v": 518669228,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212765292,
+          "v": 212759027,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 175873465,
+          "v": 175885200,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166405966,
+          "v": 166407295,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133266856,
+          "v": 133296147,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59649420,
+          "v": 59649954,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12811137,
+          "v": 12811875,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686859,
+          "v": 1686868,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1586641,
+          "v": 1586970,
           "at": 0
         },
         {
@@ -2414,37 +2414,37 @@
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 667809,
+          "v": 667819,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 513361,
+          "v": 513366,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266616,
+          "v": 266739,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 220477,
+          "v": 220504,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 83245,
+          "v": 83259,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62494,
+          "v": 62496,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 49427,
+          "v": 49432,
           "at": 0
         },
         {
@@ -2454,12 +2454,12 @@
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43863,
+          "v": 43871,
           "at": 0
         },
         {
           "id": "cybertrust-japan-co.,-ltd.",
-          "v": 35492,
+          "v": 35502,
           "at": 0
         },
         {
@@ -2469,7 +2469,7 @@
         },
         {
           "id": "shanghai-electronic-certificat",
-          "v": 32019,
+          "v": 32021,
           "at": 0
         },
         {
@@ -2479,7 +2479,7 @@
         },
         {
           "id": "naver-cloud-trust-services",
-          "v": 18203,
+          "v": 18204,
           "at": 0
         },
         {
@@ -2499,7 +2499,7 @@
         },
         {
           "id": "china-financial-certification-",
-          "v": 5630,
+          "v": 5631,
           "at": 0
         },
         {
@@ -2519,7 +2519,7 @@
         },
         {
           "id": "government-of-hong-kong-(sar),",
-          "v": 2943,
+          "v": 2941,
           "at": 0
         },
         {
