@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "lint": "eslint src/ --ext .js,.jsx",
     "validate": "node scripts/validate-data.cjs ../data",
-    "prebuild": "node scripts/validate-data.cjs ../data"
+    "prebuild": "node scripts/validate-data.cjs ../data",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@peculiar/certificates-viewer-react": "^4.9.1",
@@ -20,13 +22,17 @@
     "world-atlas": "^2.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.5.2",
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.5",
+    "jsdom": "^28.1.0",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vitest": "^4.0.18"
   }
 }
