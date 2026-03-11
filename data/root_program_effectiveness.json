@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-11T06:40:42.256176+00:00",
+    "generated_at": "2026-03-11T19:08:43.282734+00:00",
     "bugs_total": 1689,
     "bugs_with_comments": 1689,
     "total_comments_analyzed": 21987,
@@ -2084,7 +2084,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 268326,
+        "certs": 271350,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2104,7 +2104,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 17,
-        "certs": 83281,
+        "certs": 86563,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2124,7 +2124,7 @@
       {
         "ca": "Cybertrust Japan Co., Ltd.",
         "rank": 22,
-        "certs": 35539,
+        "certs": 35555,
         "stores": {
           "chrome": "not_included",
           "mozilla": "included",
@@ -2144,7 +2144,7 @@
       {
         "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
         "rank": 24,
-        "certs": 32039,
+        "certs": 32013,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2164,7 +2164,7 @@
       {
         "ca": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
         "rank": 40,
-        "certs": 2624,
+        "certs": 2630,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2184,7 +2184,7 @@
       {
         "ca": "Open Access Technology International, Inc. (OATI)",
         "rank": 42,
-        "certs": 2352,
+        "certs": 2366,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2204,7 +2204,7 @@
       {
         "ca": "PostSignum",
         "rank": 46,
-        "certs": 996,
+        "certs": 998,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2224,7 +2224,7 @@
       {
         "ca": "Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)",
         "rank": 49,
-        "certs": 489,
+        "certs": 490,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2244,7 +2244,7 @@
       {
         "ca": "Krajowa Izba Rozliczeniowa S.A. (KIR)",
         "rank": 50,
-        "certs": 437,
+        "certs": 433,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2264,7 +2264,7 @@
       {
         "ca": "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
         "rank": 51,
-        "certs": 380,
+        "certs": 379,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2283,7 +2283,7 @@
       },
       {
         "ca": "Financijska agencija (Fina)",
-        "rank": 52,
+        "rank": 53,
         "certs": 349,
         "stores": {
           "chrome": "not_included",
@@ -2304,7 +2304,7 @@
       {
         "ca": "Government of Korea, KLID",
         "rank": 54,
-        "certs": 273,
+        "certs": 266,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2322,29 +2322,9 @@
         "wait_years": 3
       },
       {
-        "ca": "Netlock",
-        "rank": 55,
-        "certs": 156,
-        "stores": {
-          "chrome": "included",
-          "mozilla": "included",
-          "apple": "not_included",
-          "microsoft": "included"
-        },
-        "missing_from": [
-          "apple"
-        ],
-        "included_in": [
-          "chrome",
-          "mozilla",
-          "microsoft"
-        ],
-        "wait_years": 18
-      },
-      {
         "ca": "Government of India, Ministry of Communications & Information Technology, Controller of Certifying Authorities (CCA)",
-        "rank": 57,
-        "certs": 153,
+        "rank": 55,
+        "certs": 155,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2360,6 +2340,26 @@
           "microsoft"
         ],
         "wait_years": 4
+      },
+      {
+        "ca": "Netlock",
+        "rank": 56,
+        "certs": 155,
+        "stores": {
+          "chrome": "included",
+          "mozilla": "included",
+          "apple": "not_included",
+          "microsoft": "included"
+        },
+        "missing_from": [
+          "apple"
+        ],
+        "included_in": [
+          "chrome",
+          "mozilla",
+          "microsoft"
+        ],
+        "wait_years": 18
       },
       {
         "ca": "A-Trust",
@@ -2464,7 +2464,7 @@
       {
         "ca": "iTrusChina Co., Ltd.",
         "rank": 64,
-        "certs": 10,
+        "certs": 11,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2641,7 +2641,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 518699306,
+        "certs_now": 518615498,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",

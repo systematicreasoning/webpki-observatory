@@ -16,7 +16,7 @@
   "unmapped_browsers": {},
   "source": "StatCounter Global Stats",
   "source_url": "https://gs.statcounter.com/browser-market-share",
-  "fetched_at": "2026-03-11T06:40:04.268568+00:00",
+  "fetched_at": "2026-03-11T19:07:54.071313+00:00",
   "notes": "Chrome coverage includes all Chromium-based browsers (Edge, Samsung Internet, Opera, Brave, etc.) since they all use the Chrome Root Store. Apple coverage is Safari only. Mozilla coverage is Firefox only. Microsoft coverage is IE only (near-zero for web, relevant for Windows enterprise and non-browser TLS).",
   "mapping": {
     "chrome": [

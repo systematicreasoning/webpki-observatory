@@ -29,22 +29,6 @@
     },
     {
       "name": "Class 1 Public Primary Certification Authority",
-      "sha256": "D17CD8ECD586B712238A482CE46FA5293970742F276D8AB6A9E46EE0288F3355",
-      "mozilla_status": "Not Yet Included",
-      "microsoft_status": "Removed",
-      "chrome_status": "Not Included",
-      "apple_status": "Not Included",
-      "valid_from": "1996.01.29",
-      "valid_to": "2028.08.01",
-      "tls_capable": false,
-      "ev_capable": false,
-      "smime_capable": false,
-      "code_signing_capable": false,
-      "trust_bits": "",
-      "pem": "-----BEGIN CERTIFICATE-----\nMIICPTCCAaYCEQDNun9W8N/kvFT+IqyzcqpVMA0GCSqGSIb3DQEBAgUAMF8xCzAJ\nBgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5jLjE3MDUGA1UECxMuQ2xh\nc3MgMSBQdWJsaWMgUHJpbWFyeSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw05\nNjAxMjkwMDAwMDBaFw0yODA4MDEyMzU5NTlaMF8xCzAJBgNVBAYTAlVTMRcwFQYD\nVQQKEw5WZXJpU2lnbiwgSW5jLjE3MDUGA1UECxMuQ2xhc3MgMSBQdWJsaWMgUHJp\nbWFyeSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTCBnzANBgkqhkiG9w0BAQEFAAOB\njQAwgYkCgYEA5Rm/baNWYS2ZSHH2Z965jeu3noaACpEO+jglr0aIguVzqKCbJF0N\nH8xlbgyw0FaEGIeaBpsQoXPftFg5a27B9hXVqKg/qhIGjTGsf7A01480Z4gJzRQR\n4k5FVmkfeAKA2txHkSm7NsljXMXg1y2He6G3MrB7MLoqLzGq7qNn2tsCAwEAATAN\nBgkqhkiG9w0BAQIFAAOBgQBMP7iLxmjf7kMzDl3ppssHhE16M/+SG/Q2rdiVIjZo\nEWx8QszznC7EBz8UsA9P/5CSdvnivErpj82ggAr3xSnxgiJduLHdgSOjeyUVRjB5\nFvjqBUuUfx3CHMjjt/QQQDwTw18fU+hI5Ia0e6E1sHslurjTjqs/OJ0ANACY89Fx\nlA==\n-----END CERTIFICATE-----"
-    },
-    {
-      "name": "Class 1 Public Primary Certification Authority",
       "sha256": "13B84ABAECA3DE8C719A067DE8CF185F65DC19E03EBD92C20BD38C75097BE113",
       "mozilla_status": "Not Yet Included",
       "microsoft_status": "Removed",
@@ -58,6 +42,22 @@
       "code_signing_capable": false,
       "trust_bits": "",
       "pem": "-----BEGIN CERTIFICATE-----\nMIICPDCCAaUCEDJQM89Q0VbzXIGtZVxPyCUwDQYJKoZIhvcNAQECBQAwXzELMAkG\nA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMTcwNQYDVQQLEy5DbGFz\ncyAxIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTk2\nMDEyOTAwMDAwMFoXDTIwMDEwNzIzNTk1OVowXzELMAkGA1UEBhMCVVMxFzAVBgNV\nBAoTDlZlcmlTaWduLCBJbmMuMTcwNQYDVQQLEy5DbGFzcyAxIFB1YmxpYyBQcmlt\nYXJ5IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIGfMA0GCSqGSIb3DQEBAQUAA4GN\nADCBiQKBgQDlGb9to1ZhLZlIcfZn3rmN67eehoAKkQ76OCWvRoiC5XOooJskXQ0f\nzGVuDLDQVoQYh5oGmxChc9+0WDlrbsH2FdWoqD+qEgaNMax/sDTXjzRniAnNFBHi\nTkVWaR94AoDa3EeRKbs2yWNcxeDXLYd7obcysHswuiovMaruo2fa2wIDAQABMA0G\nCSqGSIb3DQEBAgUAA4GBAEtEZmBoZOSYG/OwcuaViXzde7OVwB0u2NgZ0C00PcZQ\nmhCGjKo/O6gE/DdSlcPZydvN8oYGxLEb8IKIMEKOF1AcZHq4PplJdJf8rAJD+5YM\nVgQlDHx8h50kp9jwMim1pN9dokzFFjKoQvZFprY2ueC/ZTaTwtLXa9zeWdaiNfhF\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Class 1 Public Primary Certification Authority",
+      "sha256": "D17CD8ECD586B712238A482CE46FA5293970742F276D8AB6A9E46EE0288F3355",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "1996.01.29",
+      "valid_to": "2028.08.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIICPTCCAaYCEQDNun9W8N/kvFT+IqyzcqpVMA0GCSqGSIb3DQEBAgUAMF8xCzAJ\nBgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5jLjE3MDUGA1UECxMuQ2xh\nc3MgMSBQdWJsaWMgUHJpbWFyeSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTAeFw05\nNjAxMjkwMDAwMDBaFw0yODA4MDEyMzU5NTlaMF8xCzAJBgNVBAYTAlVTMRcwFQYD\nVQQKEw5WZXJpU2lnbiwgSW5jLjE3MDUGA1UECxMuQ2xhc3MgMSBQdWJsaWMgUHJp\nbWFyeSBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTCBnzANBgkqhkiG9w0BAQEFAAOB\njQAwgYkCgYEA5Rm/baNWYS2ZSHH2Z965jeu3noaACpEO+jglr0aIguVzqKCbJF0N\nH8xlbgyw0FaEGIeaBpsQoXPftFg5a27B9hXVqKg/qhIGjTGsf7A01480Z4gJzRQR\n4k5FVmkfeAKA2txHkSm7NsljXMXg1y2He6G3MrB7MLoqLzGq7qNn2tsCAwEAATAN\nBgkqhkiG9w0BAQIFAAOBgQBMP7iLxmjf7kMzDl3ppssHhE16M/+SG/Q2rdiVIjZo\nEWx8QszznC7EBz8UsA9P/5CSdvnivErpj82ggAr3xSnxgiJduLHdgSOjeyUVRjB5\nFvjqBUuUfx3CHMjjt/QQQDwTw18fU+hI5Ia0e6E1sHslurjTjqs/OJ0ANACY89Fx\nlA==\n-----END CERTIFICATE-----"
     },
     {
       "name": "Class 1 Public Primary Certification Authority - G2",
@@ -701,22 +701,6 @@
     },
     {
       "name": "GTE CyberTrust Root",
-      "sha256": "527B050527DF529C0F7AD00CEF1E7BA421788182615C326C8B6D1A2061A0BD7C",
-      "mozilla_status": "Not Yet Included",
-      "microsoft_status": "Removed",
-      "chrome_status": "Not Included",
-      "apple_status": "Not Included",
-      "valid_from": "1996.02.23",
-      "valid_to": "2006.02.23",
-      "tls_capable": false,
-      "ev_capable": false,
-      "smime_capable": false,
-      "code_signing_capable": false,
-      "trust_bits": "",
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIB+jCCAWMCAgGjMA0GCSqGSIb3DQEBBAUAMEUxCzAJBgNVBAYTAlVTMRgwFgYD\nVQQKEw9HVEUgQ29ycG9yYXRpb24xHDAaBgNVBAMTE0dURSBDeWJlclRydXN0IFJv\nb3QwHhcNOTYwMjIzMjMwMTAwWhcNMDYwMjIzMjM1OTAwWjBFMQswCQYDVQQGEwJV\nUzEYMBYGA1UEChMPR1RFIENvcnBvcmF0aW9uMRwwGgYDVQQDExNHVEUgQ3liZXJU\ncnVzdCBSb290MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC45k+625h8cXyv\nRLfTD0bZZOWTwUKOx7pJjTUteueLveUFMVnGsS8KDPufpz+iCWaEVh43KRuH6X4M\nypqfpX/1FZSj1aJGgthoTNE3FQZor734sLPwKfWVWgkWYXcKIiXUT0Wqx73llt/5\n1KiOQswkwB6RJ0q1bQaAYznEol44AwIDAQABMA0GCSqGSIb3DQEBBAUAA4GBABKz\ndcZfHeFhVYAA1IFLezEPI2PnPfMD+fQ2qLvZ46WXTeorKeDWanOB5sCJo9Px4KWl\nIjeaY8JIILTbcuPI9tl8vrGvU9oUtCG41tWW4/5ODFlitppK+ULdjG+BqXH/9Apy\nbW1EDp3zdHSo1TRJ6V6e6bR64eVaH4QwnNOfpSXY\n-----END CERTIFICATE-----"
-    },
-    {
-      "name": "GTE CyberTrust Root",
       "sha256": "2DFCBACADF22A6FF107A51FD3E8B9E17858028879B13F7C3B57B3E1BD2315809",
       "mozilla_status": "Not Yet Included",
       "microsoft_status": "Removed",
@@ -730,6 +714,22 @@
       "code_signing_capable": false,
       "trust_bits": "",
       "pem": "-----BEGIN CERTIFICATE-----\nMIICTDCCAbUCAgD9MA0GCSqGSIb3DQEBBAUAMG4xCzAJBgNVBAYTAlVTMRgwFgYD\nVQQKEw9HVEUgQ29ycG9yYXRpb24xJzAlBgNVBAsTHkdURSBDeWJlclRydXN0IFNv\nbHV0aW9ucywgSW5jLjEcMBoGA1UEAxMTR1RFIEN5YmVyVHJ1c3QgUm9vdDAeFw05\nODA0MDMxNDUyMDFaFw0wNDA0MDMyMzU5MDBaMG4xCzAJBgNVBAYTAlVTMRgwFgYD\nVQQKEw9HVEUgQ29ycG9yYXRpb24xJzAlBgNVBAsTHkdURSBDeWJlclRydXN0IFNv\nbHV0aW9ucywgSW5jLjEcMBoGA1UEAxMTR1RFIEN5YmVyVHJ1c3QgUm9vdDCBnzAN\nBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuo69dZAS+uV5dLLZ9ybUDkEd6TYHVnLV\nuGnaVNSx1nhtquM7PaOENyXHr68E3LMiseltvoJt640vvbSucB6i1m4gMVHmVlxz\nUrIjUE68+5pnQMSGEUbHQyK66gBPbHLNYZzey/ruMNLm+ludxZncIPg5v2SMB1Y7\nvdxsXva/4dkCAwEAATANBgkqhkiG9w0BAQQFAAOBgQCWXx08xnWVtmuvhwDNpUEr\ni7/QjTFbOWXT8dGPWB5SIsM9hvLCmvbdSF5xw0UcfEyiWe6hUZY999U0JDqq/YIm\nZcVMQg8Mj2lgfOfW1RpLefruWrVMpsyja0bW0cgyVKAwZ9JdhhGRvMO6KpzVeFEa\n1F3ddpEiRWsxWT75hVlOyw==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "GTE CyberTrust Root",
+      "sha256": "527B050527DF529C0F7AD00CEF1E7BA421788182615C326C8B6D1A2061A0BD7C",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "1996.02.23",
+      "valid_to": "2006.02.23",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIB+jCCAWMCAgGjMA0GCSqGSIb3DQEBBAUAMEUxCzAJBgNVBAYTAlVTMRgwFgYD\nVQQKEw9HVEUgQ29ycG9yYXRpb24xHDAaBgNVBAMTE0dURSBDeWJlclRydXN0IFJv\nb3QwHhcNOTYwMjIzMjMwMTAwWhcNMDYwMjIzMjM1OTAwWjBFMQswCQYDVQQGEwJV\nUzEYMBYGA1UEChMPR1RFIENvcnBvcmF0aW9uMRwwGgYDVQQDExNHVEUgQ3liZXJU\ncnVzdCBSb290MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC45k+625h8cXyv\nRLfTD0bZZOWTwUKOx7pJjTUteueLveUFMVnGsS8KDPufpz+iCWaEVh43KRuH6X4M\nypqfpX/1FZSj1aJGgthoTNE3FQZor734sLPwKfWVWgkWYXcKIiXUT0Wqx73llt/5\n1KiOQswkwB6RJ0q1bQaAYznEol44AwIDAQABMA0GCSqGSIb3DQEBBAUAA4GBABKz\ndcZfHeFhVYAA1IFLezEPI2PnPfMD+fQ2qLvZ46WXTeorKeDWanOB5sCJo9Px4KWl\nIjeaY8JIILTbcuPI9tl8vrGvU9oUtCG41tWW4/5ODFlitppK+ULdjG+BqXH/9Apy\nbW1EDp3zdHSo1TRJ6V6e6bR64eVaH4QwnNOfpSXY\n-----END CERTIFICATE-----"
     },
     {
       "name": "Hotspot 2.0 Trust Root CA - 03",
@@ -1309,22 +1309,6 @@
     },
     {
       "name": "Thawte Premium Server CA",
-      "sha256": "3F9F27D583204B9E09C8A3D2066C4B57D3A2479C3693650880505698105DBCE9",
-      "mozilla_status": "Not Yet Included",
-      "microsoft_status": "Removed",
-      "chrome_status": "Not Included",
-      "apple_status": "Not Included",
-      "valid_from": "1996.08.01",
-      "valid_to": "2021.01.01",
-      "tls_capable": false,
-      "ev_capable": false,
-      "smime_capable": false,
-      "code_signing_capable": false,
-      "trust_bits": "",
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIDNjCCAp+gAwIBAgIQNhIilsXjOKUgodJfTNcJVDANBgkqhkiG9w0BAQUFADCB\nzjELMAkGA1UEBhMCWkExFTATBgNVBAgTDFdlc3Rlcm4gQ2FwZTESMBAGA1UEBxMJ\nQ2FwZSBUb3duMR0wGwYDVQQKExRUaGF3dGUgQ29uc3VsdGluZyBjYzEoMCYGA1UE\nCxMfQ2VydGlmaWNhdGlvbiBTZXJ2aWNlcyBEaXZpc2lvbjEhMB8GA1UEAxMYVGhh\nd3RlIFByZW1pdW0gU2VydmVyIENBMSgwJgYJKoZIhvcNAQkBFhlwcmVtaXVtLXNl\ncnZlckB0aGF3dGUuY29tMB4XDTk2MDgwMTAwMDAwMFoXDTIxMDEwMTIzNTk1OVow\ngc4xCzAJBgNVBAYTAlpBMRUwEwYDVQQIEwxXZXN0ZXJuIENhcGUxEjAQBgNVBAcT\nCUNhcGUgVG93bjEdMBsGA1UEChMUVGhhd3RlIENvbnN1bHRpbmcgY2MxKDAmBgNV\nBAsTH0NlcnRpZmljYXRpb24gU2VydmljZXMgRGl2aXNpb24xITAfBgNVBAMTGFRo\nYXd0ZSBQcmVtaXVtIFNlcnZlciBDQTEoMCYGCSqGSIb3DQEJARYZcHJlbWl1bS1z\nZXJ2ZXJAdGhhd3RlLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0jY2\naovXwlue2oFBYo847kkEVdbQ7xwblRZH7xhINTpS9CtqBo87L+pW46+GjZ4X9560\nZXUCTe/LCaIhUdib0GfQug2SBhRz1JPLlyoAnFxODLz6FVL88kRu2hFKbgifLy3j\n+ao6hnO2RlNYyIkFvYMRuHM/qgeN9EJN50CdHDcCAwEAAaMTMBEwDwYDVR0TAQH/\nBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQBlkKyID1bZ5jA01CbH0FDxkt5r1DmI\nCSLGpmODA/eZd9iy5Ri4XWPz1HP7bJyZePFLeH0ZJMMrAoT4vCLZiiLXoPxx7JGH\nIPG47LHlVYCsPVLIOQ7C8MAFT9aCdYy9X9LcdpoFEsmvcsPcJX6kTY4XpeCHf+Ga\nWuFg3GQjPEIuTQ==\n-----END CERTIFICATE-----"
-    },
-    {
-      "name": "Thawte Premium Server CA",
       "sha256": "AB7036365C7154AA29C2C29F5D4191163B162A2225011357D56D07FFA7BC1F72",
       "mozilla_status": "Removed",
       "microsoft_status": "Disabled",
@@ -1338,6 +1322,22 @@
       "code_signing_capable": false,
       "trust_bits": "",
       "pem": "-----BEGIN CERTIFICATE-----\nMIIDJzCCApCgAwIBAgIBATANBgkqhkiG9w0BAQQFADCBzjELMAkGA1UEBhMCWkEx\nFTATBgNVBAgTDFdlc3Rlcm4gQ2FwZTESMBAGA1UEBxMJQ2FwZSBUb3duMR0wGwYD\nVQQKExRUaGF3dGUgQ29uc3VsdGluZyBjYzEoMCYGA1UECxMfQ2VydGlmaWNhdGlv\nbiBTZXJ2aWNlcyBEaXZpc2lvbjEhMB8GA1UEAxMYVGhhd3RlIFByZW1pdW0gU2Vy\ndmVyIENBMSgwJgYJKoZIhvcNAQkBFhlwcmVtaXVtLXNlcnZlckB0aGF3dGUuY29t\nMB4XDTk2MDgwMTAwMDAwMFoXDTIwMTIzMTIzNTk1OVowgc4xCzAJBgNVBAYTAlpB\nMRUwEwYDVQQIEwxXZXN0ZXJuIENhcGUxEjAQBgNVBAcTCUNhcGUgVG93bjEdMBsG\nA1UEChMUVGhhd3RlIENvbnN1bHRpbmcgY2MxKDAmBgNVBAsTH0NlcnRpZmljYXRp\nb24gU2VydmljZXMgRGl2aXNpb24xITAfBgNVBAMTGFRoYXd0ZSBQcmVtaXVtIFNl\ncnZlciBDQTEoMCYGCSqGSIb3DQEJARYZcHJlbWl1bS1zZXJ2ZXJAdGhhd3RlLmNv\nbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0jY2aovXwlue2oFBYo847kkE\nVdbQ7xwblRZH7xhINTpS9CtqBo87L+pW46+GjZ4X9560ZXUCTe/LCaIhUdib0GfQ\nug2SBhRz1JPLlyoAnFxODLz6FVL88kRu2hFKbgifLy3j+ao6hnO2RlNYyIkFvYMR\nuHM/qgeN9EJN50CdHDcCAwEAAaMTMBEwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG\n9w0BAQQFAAOBgQAmSCwWwlj66BZ0DKqqX1Q/8tfJeGBeXm43YyJ3Nn6yF8Q0ufUI\nhfzJATj/Tb7yFkJD57taRvvBxhEf8UqwKEbJw8RCfbz6q1lu1bdRiBHjpIUZa4JM\npAwSremkrj/xw0llmozFyD4lt5SZu5IycQfwhl7tUCemDaYj+bvLpgcUQg==\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "Thawte Premium Server CA",
+      "sha256": "3F9F27D583204B9E09C8A3D2066C4B57D3A2479C3693650880505698105DBCE9",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Removed",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "1996.08.01",
+      "valid_to": "2021.01.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDNjCCAp+gAwIBAgIQNhIilsXjOKUgodJfTNcJVDANBgkqhkiG9w0BAQUFADCB\nzjELMAkGA1UEBhMCWkExFTATBgNVBAgTDFdlc3Rlcm4gQ2FwZTESMBAGA1UEBxMJ\nQ2FwZSBUb3duMR0wGwYDVQQKExRUaGF3dGUgQ29uc3VsdGluZyBjYzEoMCYGA1UE\nCxMfQ2VydGlmaWNhdGlvbiBTZXJ2aWNlcyBEaXZpc2lvbjEhMB8GA1UEAxMYVGhh\nd3RlIFByZW1pdW0gU2VydmVyIENBMSgwJgYJKoZIhvcNAQkBFhlwcmVtaXVtLXNl\ncnZlckB0aGF3dGUuY29tMB4XDTk2MDgwMTAwMDAwMFoXDTIxMDEwMTIzNTk1OVow\ngc4xCzAJBgNVBAYTAlpBMRUwEwYDVQQIEwxXZXN0ZXJuIENhcGUxEjAQBgNVBAcT\nCUNhcGUgVG93bjEdMBsGA1UEChMUVGhhd3RlIENvbnN1bHRpbmcgY2MxKDAmBgNV\nBAsTH0NlcnRpZmljYXRpb24gU2VydmljZXMgRGl2aXNpb24xITAfBgNVBAMTGFRo\nYXd0ZSBQcmVtaXVtIFNlcnZlciBDQTEoMCYGCSqGSIb3DQEJARYZcHJlbWl1bS1z\nZXJ2ZXJAdGhhd3RlLmNvbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0jY2\naovXwlue2oFBYo847kkEVdbQ7xwblRZH7xhINTpS9CtqBo87L+pW46+GjZ4X9560\nZXUCTe/LCaIhUdib0GfQug2SBhRz1JPLlyoAnFxODLz6FVL88kRu2hFKbgifLy3j\n+ao6hnO2RlNYyIkFvYMRuHM/qgeN9EJN50CdHDcCAwEAAaMTMBEwDwYDVR0TAQH/\nBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQBlkKyID1bZ5jA01CbH0FDxkt5r1DmI\nCSLGpmODA/eZd9iy5Ri4XWPz1HP7bJyZePFLeH0ZJMMrAoT4vCLZiiLXoPxx7JGH\nIPG47LHlVYCsPVLIOQ7C8MAFT9aCdYy9X9LcdpoFEsmvcsPcJX6kTY4XpeCHf+Ga\nWuFg3GQjPEIuTQ==\n-----END CERTIFICATE-----"
     },
     {
       "name": "thawte Primary Root CA",
@@ -7885,7 +7885,7 @@
     },
     {
       "name": "Symantec Class 2 MPKI Individual Subscriber CA - G3",
-      "sha256": "E79BACE9FF58B8EE6D3BD94AE8ADB13DF42DFD86B3701BFF8EDFF5C4E84BAE91",
+      "sha256": "A67582B9277224D9801027217156D283136B29FD2F33031781F604EB807970D7",
       "parent_name": "VeriSign Class 2 Public Primary Certification Authority - G3",
       "valid_from": "2016.11.15",
       "valid_to": "2026.11.14",
@@ -7894,7 +7894,7 @@
       "smime_capable": true,
       "code_signing_capable": false,
       "technically_constrained": false,
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIGUTCCBTmgAwIBAgIQL+1uj5LUXgXUR/LFql2IYDANBgkqhkiG9w0BAQsFADCBy\njELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLE\nxZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMTk5OSBWZXJpU\n2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZ\nXJpU2lnbiBDbGFzcyAyIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0a\nG9yaXR5IC0gRzMwHhcNMTYxMTE1MDAwMDAwWhcNMjYxMTE0MjM1OTU5WjCBwjELM\nAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDV\nQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQLEyxDbGFzcyAyIE1hb\nmFnZWQgUEtJIEluZGl2aWR1YWwgU3Vic2NyaWJlciBDQTE8MDoGA1UEAxMzU3ltY\nW50ZWMgQ2xhc3MgMiBNUEtJIEluZGl2aWR1YWwgU3Vic2NyaWJlciBDQSAtIEczM\nIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzxsWI4N9dhs3Ms+xnngv3\ni3mgKTw5FUiEoQYJ+kzl2NO6FVz2u3t20DtrKcJQYqnaFu3/flWxBIwqouPipMPX\nATdM/lOMb7sqj1L4ZkrwRfjcHQNT46r4DNwetcF7UuvcRba75I6gG0yrmvjKoSM2\nl2/+ca/3on+Vl57ziRLg5Gei8pkhW0jaGXjf16iGDJToTojJOj9x9mQFkGZVGEM1\nK3qiu4aE6mWgnwJtzo3DagpUV1TyzFbEptrohGDJ4KfZTx5nPgaWJpvTOvPfsE0p\nOc5UqaSI6WlFDtzikZqtWT5QcSatZ6yb+sOnJNMHiAsFxpm8d7dD+bWrwXQAZyiJ\nwIDAQABo4ICNzCCAjMwEgYDVR0TAQH/BAgwBgEB/wIBADBmBgNVHSAEXzBdMFsGC\n2CGSAGG+EUBBxcCMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY\n3BzMCUGCCsGAQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBhMC8GA1UdH\nwQoMCYwJKAioCCGHmh0dHA6Ly9zLnN5bWNiLmNvbS9wY2EyLWczLmNybDAOBgNVH\nQ8BAf8EBAMCAQYwKQYDVR0RBCIwIKQeMBwxGjAYBgNVBAMTEVN5bWFudGVjUEtJL\nTItNjU5MB0GA1UdDgQWBBTRPr/AA/LmbxTH4Ak9uhX7EJkN2DCB8AYDVR0jBIHoM\nIHloYHQpIHNMIHKMQswCQYDVQQGEwJVUzEXMBUGA1UEChMOVmVyaVNpZ24sIEluY\ny4xHzAdBgNVBAsTFlZlcmlTaWduIFRydXN0IE5ldHdvcmsxOjA4BgNVBAsTMShjK\nSAxOTk5IFZlcmlTaWduLCBJbmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9ubHkxR\nTBDBgNVBAMTPFZlcmlTaWduIENsYXNzIDIgUHVibGljIFByaW1hcnkgQ2VydGlma\nWNhdGlvbiBBdXRob3JpdHkgLSBHM4IQYXDLSYxfmEUp57Cm2VBbejA3BggrBgEFB\nQcBAQQrMCkwJwYIKwYBBQUHMAGGG2h0dHA6Ly9wa2ktb2NzcC5zeW1hdXRoLmNvb\nTANBgkqhkiG9w0BAQsFAAOCAQEArqaLWBQUgCpW36grCjU/FXXPViTd0AFywOJhM\nXY/JMX6NDJjC27+ayanrQE7jwViTgT1WmpOzFAWDw7Xd4JSGw9qId9Y2jj78HSaM\nls/jPDtRoDym6ybiOMKCekezx0ZYD28E+0BY9rdtsp+pi5wbCN+H2ZeBMosojwwf\ngkYHp4owhxvibHfM6EIJFup945QlA9zMLuqvDhiDWspsQQagnYrN1zFX7pbF7nUY\nHn1Xm+rRBnofAlPEAK9/1RYk4FEtfFgI9BFA++0DSu4qvDALT9LZZAAfi+PTVcVe\ntxrGXVj1Tev9JEujpk9//mNTPLtVU0r54xPAHobBdHkgqmV5Q==\n-----END CERTIFICATE-----"
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIGcDCCBVigAwIBAgIQCRfXyaoMyozxuKoaBrSnzTANBgkqhkiG9w0BAQsFADCBy\njELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDVQQLE\nxZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMTk5OSBWZXJpU\n2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDEzxWZ\nXJpU2lnbiBDbGFzcyAyIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQXV0a\nG9yaXR5IC0gRzMwHhcNMTYxMTE1MDAwMDAwWhcNMjYxMTE0MjM1OTU5WjCBwjELM\nAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENvcnBvcmF0aW9uMR8wHQYDV\nQQLExZTeW1hbnRlYyBUcnVzdCBOZXR3b3JrMTUwMwYDVQQLEyxDbGFzcyAyIE1hb\nmFnZWQgUEtJIEluZGl2aWR1YWwgU3Vic2NyaWJlciBDQTE8MDoGA1UEAxMzU3ltY\nW50ZWMgQ2xhc3MgMiBNUEtJIEluZGl2aWR1YWwgU3Vic2NyaWJlciBDQSAtIEczM\nIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzxsWI4N9dhs3Ms+xnngv3\ni3mgKTw5FUiEoQYJ+kzl2NO6FVz2u3t20DtrKcJQYqnaFu3/flWxBIwqouPipMPX\nATdM/lOMb7sqj1L4ZkrwRfjcHQNT46r4DNwetcF7UuvcRba75I6gG0yrmvjKoSM2\nl2/+ca/3on+Vl57ziRLg5Gei8pkhW0jaGXjf16iGDJToTojJOj9x9mQFkGZVGEM1\nK3qiu4aE6mWgnwJtzo3DagpUV1TyzFbEptrohGDJ4KfZTx5nPgaWJpvTOvPfsE0p\nOc5UqaSI6WlFDtzikZqtWT5QcSatZ6yb+sOnJNMHiAsFxpm8d7dD+bWrwXQAZyiJ\nwIDAQABo4ICVjCCAlIwNwYIKwYBBQUHAQEEKzApMCcGCCsGAQUFBzABhhtodHRwO\ni8vcGtpLW9jc3Auc3ltYXV0aC5jb20wEgYDVR0TAQH/BAgwBgEB/wIBADBmBgNVH\nSAEXzBdMFsGC2CGSAGG+EUBBxcCMEwwIwYIKwYBBQUHAgEWF2h0dHBzOi8vZC5ze\nW1jYi5jb20vY3BzMCUGCCsGAQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vc\nnBhMC8GA1UdHwQoMCYwJKAioCCGHmh0dHA6Ly9zLnN5bWNiLmNvbS9wY2EyLWczL\nmNybDAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwDgYDVR0PAQH/BAQDA\ngEGMCkGA1UdEQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0yLTY1OTAdB\ngNVHQ4EFgQU0T6/wAPy5m8Ux+AJPboV+xCZDdgwgfAGA1UdIwSB6DCB5aGB0KSBz\nTCByjELMAkGA1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMuMR8wHQYDV\nQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3JrMTowOAYDVQQLEzEoYykgMTk5OSBWZ\nXJpU2lnbiwgSW5jLiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MUUwQwYDVQQDE\nzxWZXJpU2lnbiBDbGFzcyAyIFB1YmxpYyBQcmltYXJ5IENlcnRpZmljYXRpb24gQ\nXV0aG9yaXR5IC0gRzOCEGFwy0mMX5hFKeewptlQW3owDQYJKoZIhvcNAQELBQADg\ngEBACqc/Z22k2MAomz1Uu7q3JYPIUYyOdhjRD0sVMUB02oeB815/rz011RuPwH9J\nlvVd/R+Pz/QZWNla7C1Jl3WLova4gU+7nguXU2squRbG4koB8OnmJ9YyHXBcISLv\nJWRWVx/1wyWgKPKyC5d5sRbxAeftd70gl/Q14tdOy+MJ9rBHOd5AEWsjaTFafeak\nSqXSsPc3eztNZcFx6UIqAqQES6pRnmZ+fTMUrZRax8r+TLKB/OwjNZKS7fD6NTRv\n3s9JxwvHUhQ0G3DlLO0imcP12h43bA+5tWSdQkvuRS2kazxrkFba/Vt4ZZ7Ng6JZ\nPCZQQJDkzTRtHm55l0+rfTq3UQ=\n-----END CERTIFICATE-----"
     },
     {
       "name": "Symantec Class 2 Signing ECC Intermediate CA",
