@@ -2315,38 +2315,38 @@
     },
     {
       "date": "2026-03-11",
-      "generated_at": "2026-03-11T00:14:06.392072+00:00",
+      "generated_at": "2026-03-11T00:27:28.505883+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1286820040,
+      "total_unexpired": 1286484895,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.3051
+          "pct": 40.3163
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.535
+          "pct": 16.5385
         },
         {
           "ca": "DigiCert",
-          "pct": 13.686
+          "pct": 13.6677
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9311
+          "pct": 12.9346
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3535
+          "pct": 10.3522
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6355
+          "pct": 4.6365
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 0.9953
+          "pct": 0.9956
         },
         {
           "ca": "SSL.com",
@@ -2354,107 +2354,107 @@
         },
         {
           "ca": "GlobalSign nv-sa",
-          "pct": 0.1232
+          "pct": 0.1233
         },
         {
           "ca": "Actalis",
-          "pct": 0.1166
+          "pct": 0.1167
         }
       ],
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518653699,
+          "v": 518663104,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212775378,
+          "v": 212765098,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 176113921,
+          "v": 175832393,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166399962,
+          "v": 166401145,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133231124,
+          "v": 133179657,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59650814,
+          "v": 59648268,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12808260,
+          "v": 12808595,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686839,
+          "v": 1686749,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1585914,
+          "v": 1585887,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500924,
+          "v": 1501137,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668158,
+          "v": 667783,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 513317,
+          "v": 513344,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266318,
+          "v": 266365,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 220380,
+          "v": 220406,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 83130,
+          "v": 83135,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62490,
+          "v": 62491,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 49429,
+          "v": 49435,
           "at": 0
         },
         {
           "id": "swisssign-ag",
-          "v": 45549,
+          "v": 45548,
           "at": 0
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43850,
+          "v": 43853,
           "at": 0
         },
         {
@@ -2464,17 +2464,17 @@
         },
         {
           "id": "telia-company",
-          "v": 35400,
+          "v": 35401,
           "at": 0
         },
         {
           "id": "shanghai-electronic-certificat",
-          "v": 32014,
+          "v": 32015,
           "at": 0
         },
         {
           "id": "deutsche-telekom-security-gmbh",
-          "v": 20715,
+          "v": 20655,
           "at": 0
         },
         {
@@ -2504,7 +2504,7 @@
         },
         {
           "id": "certigna",
-          "v": 4317,
+          "v": 4252,
           "at": 0
         },
         {
@@ -2514,7 +2514,7 @@
         },
         {
           "id": "viking-cloud,-inc.",
-          "v": 3103,
+          "v": 3100,
           "at": 0
         },
         {
@@ -2549,7 +2549,7 @@
         },
         {
           "id": "oiste",
-          "v": 2466,
+          "v": 2469,
           "at": 0
         },
         {
@@ -2848,7 +2848,7 @@
           "at": 0
         }
       ],
-      "hhi": 2382,
+      "hhi": 2383,
       "roots_all4": 90,
       "owners_all4": 38,
       "total_roots": 335,
