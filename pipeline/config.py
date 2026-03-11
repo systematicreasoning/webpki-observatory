@@ -14,6 +14,16 @@ DISTRUST_OVERRIDES = {
     },
 }
 
+# CA Owners in CCADB that belong to the same parent organization.
+# Cross-signs between affiliated CAs are intra-organizational: crt.sh
+# attribution stays within the same org, so no caveat is needed.
+# Each entry is a frozenset of CCADB "CA Owner" strings.
+ORG_AFFILIATES = [
+    frozenset({"Google Trust Services LLC", "GlobalSign nv-sa"}),
+    frozenset({"D-Trust", "D-TRUST"}),
+    frozenset({"SECOM Trust Systems Co., Ltd.", "SECOM Trust Systems CO., LTD."}),
+]
+
 COUNTRY_NAMES = {
     "US": "United States", "USA": "United States",
     "United States of America": "United States",
