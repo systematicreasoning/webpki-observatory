@@ -6,7 +6,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Operated by Greek academic/research network, government-funded institution",
       "jurisdiction": "Greece",
-      "issued": 513311,
+      "issued": 513317,
       "pct": 0.0399,
       "trust_store_count": 4,
       "trusted_by": {
@@ -23,7 +23,7 @@
       "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
       "jurisdiction": "Sweden",
       "issued": 35400,
-      "pct": 0.0027,
+      "pct": 0.0028,
       "trust_store_count": 4,
       "trusted_by": {
         "mozilla": true,
@@ -54,7 +54,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "German federal government holds ~30% of Deutsche Telekom via KfW",
       "jurisdiction": "Germany",
-      "issued": 20721,
+      "issued": 20715,
       "pct": 0.0016,
       "trust_store_count": 4,
       "trusted_by": {
@@ -390,7 +390,7 @@
       "label": "State-Owned Enterprise",
       "count": 7,
       "issued": 616434,
-      "pct": 0.0478
+      "pct": 0.0479
     },
     "government": {
       "label": "Government-Operated",
@@ -403,7 +403,7 @@
     {
       "jurisdiction": "Greece",
       "count": 1,
-      "issued": 513311,
+      "issued": 513317,
       "types": [
         "state_enterprise"
       ]
@@ -428,7 +428,7 @@
     {
       "jurisdiction": "Germany",
       "count": 1,
-      "issued": 20721,
+      "issued": 20715,
       "types": [
         "state_enterprise"
       ]
@@ -555,6 +555,6 @@
     }
   ],
   "total_gov_state": 24,
-  "total_gov_state_pct": 0.0487,
+  "total_gov_state_pct": 0.0488,
   "total_classified": 24
 }
