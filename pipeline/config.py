@@ -22,4 +22,5 @@ COUNTRY_NAMES = {
     "Türkiye (Turkey)": "Turkey", "Czech Republic": "Czechia",
     "People's Republic of China": "China",
     "Hong Kong SAR": "Hong Kong", "The Netherlands": "Netherlands",
+    "Polska": "Poland", "España": "Spain", "SPAIN": "Spain",
 }

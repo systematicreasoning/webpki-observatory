@@ -138,11 +138,12 @@ def main():
     shares = [ca["share"] for ca in market]
     hhi = round(sum(s ** 2 for s in shares))
     hhi_label = "highly concentrated" if hhi > 2500 else "moderately concentrated" if hhi > 1500 else "unconcentrated"
-    cum = 0
+    total_certs_conc = sum(ca["certs"] for ca in market)
+    cum_certs = 0
     head_count = len(market)
     for i, ca in enumerate(market):
-        cum += ca["share"]
-        if cum >= 99.99:
+        cum_certs += ca["certs"]
+        if total_certs_conc > 0 and (cum_certs / total_certs_conc) * 100 >= 99.99:
             head_count = i + 1
             break
     head_pct = round(sum(shares[:head_count]), 4)
@@ -397,18 +398,22 @@ def main():
     # ═══════════════════════════════════════════════════════════════
     report_card = {}
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
-        rc = rpe.get("report_card", {}).get(prog, {})
+        e = rpe.get("enforcement", {}).get(prog, {})
+        c = rpe.get("program_comment_summary", {}).get(prog, {})
+        p = rpe.get("policy_leadership", {}).get("programs", {}).get(prog, {})
+        sp = rpe.get("store_posture", {}).get(prog, {})
+        bc = rpe.get("ballot_classification", {}).get("browser_summary", {}).get(prog, {})
         report_card[prog] = {
-            "enforcement": rc.get("enforcement", "0/0"),
-            "firstPublicAction": rc.get("led", rc.get("initiated", 0)),
-            "neverActed": rc.get("never_acted", 0),
-            "oversightPct": rc.get("oversight", 0),
-            "ballotsProposed": rc.get("proposed", 0),
-            "voteParticipation": rc.get("voted", "0/0"),
-            "substantiveBallots": rc.get("substantive", 0),
-            "caOwners": rc.get("owners", 0),
-            "roots": rc.get("roots", 0),
-            "exclusiveRoots": rc.get("exclusive", 0),
+            "enforcement": f"{e.get('acted', 0)}/{e.get('total', 0)}",
+            "firstPublicAction": e.get("initiated", 0),
+            "neverActed": (e.get("total", 0)) - (e.get("acted", 0)),
+            "oversightPct": c.get("oversight_pct", 0),
+            "ballotsProposed": p.get("proposed", 0),
+            "voteParticipation": f"{p.get('voted', 0)}/{p.get('ballots_with_votes', 0)}",
+            "substantiveBallots": bc.get("substantive", 0),
+            "caOwners": sp.get("owners", 0),
+            "roots": sp.get("roots", 0),
+            "exclusiveRoots": sp.get("exclusive_count", 0),
         }
 
     governance = {
