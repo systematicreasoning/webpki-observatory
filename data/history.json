@@ -2315,34 +2315,34 @@
     },
     {
       "date": "2026-03-11",
-      "generated_at": "2026-03-11T00:27:28.505883+00:00",
+      "generated_at": "2026-03-11T00:45:10.314839+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1286484895,
+      "total_unexpired": 1286522594,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.3163
+          "pct": 40.3155
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.5385
+          "pct": 16.5377
         },
         {
           "ca": "DigiCert",
-          "pct": 13.6677
+          "pct": 13.6682
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9346
+          "pct": 12.9343
         },
         {
           "ca": "Sectigo",
-          "pct": 10.3522
+          "pct": 10.3537
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6365
+          "pct": 4.6364
         },
         {
           "ca": "IdenTrust Services, LLC",
@@ -2364,87 +2364,87 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 518663104,
+          "v": 518667813,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 212765098,
+          "v": 212760863,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 175832393,
+          "v": 175844156,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166401145,
+          "v": 166402309,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 133179657,
+          "v": 133203004,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59648268,
+          "v": 59648209,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 12808595,
+          "v": 12809149,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1686749,
+          "v": 1686757,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1585887,
+          "v": 1586178,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1501137,
+          "v": 1501138,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 667783,
+          "v": 667785,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 513344,
+          "v": 513351,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 266365,
+          "v": 266423,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 220406,
+          "v": 220420,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 83135,
+          "v": 83170,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62491,
+          "v": 62492,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 49435,
+          "v": 49424,
           "at": 0
         },
         {
@@ -2454,12 +2454,12 @@
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43853,
+          "v": 43851,
           "at": 0
         },
         {
           "id": "cybertrust-japan-co.,-ltd.",
-          "v": 35449,
+          "v": 35464,
           "at": 0
         },
         {
@@ -2469,7 +2469,7 @@
         },
         {
           "id": "shanghai-electronic-certificat",
-          "v": 32015,
+          "v": 32016,
           "at": 0
         },
         {
@@ -2539,7 +2539,7 @@
         },
         {
           "id": "government-of-spain,-autoritat",
-          "v": 2642,
+          "v": 2641,
           "at": 0
         },
         {
@@ -2549,7 +2549,7 @@
         },
         {
           "id": "oiste",
-          "v": 2469,
+          "v": 2470,
           "at": 0
         },
         {
