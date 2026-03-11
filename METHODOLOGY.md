@@ -126,7 +126,7 @@ Computed dynamically from the data on each pipeline run. The boundary adapts as 
 
 All current-ecosystem analysis is restricted to **trusted CAs**: those with `trust_store_count > 0` or a `parent_ca` subordinate relationship to a trusted CA.
 
-The pipeline's raw data (CCADB) tracks 248 CA owners, including organizations whose roots have been removed, revoked, or were never included. Of these, 98 are currently trusted.
+The pipeline's raw data (CCADB) tracks 248 CA owners, including organizations whose roots have been removed, revoked, or were never included. Of these, 97 are currently trusted.
 
 Distrusted CAs excluded from the trusted scope include:
 - Entrust (distrusted 2024 — pattern of compliance failures, sold public CA business to Sectigo)
