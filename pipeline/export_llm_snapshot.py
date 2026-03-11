@@ -20,6 +20,10 @@ import sys
 from collections import Counter
 from datetime import datetime, timezone
 
+# Shared config
+sys.path.insert(0, os.path.dirname(__file__))
+from config import BR_VALIDITY, DISTRUST_OVERRIDES, COUNTRY_NAMES
+
 SCHEMA_VERSION = "1.0.0"
 SCHEMA_URL = "https://webpki.systematicreasoning.com/schema.json"
 SNAPSHOT_URL = "https://webpki.systematicreasoning.com/llm_snapshot.json"
@@ -47,19 +51,8 @@ def slugify(name):
     return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", name.lower()))
 
 
-COUNTRY_NAMES = {
-    "US": "United States", "USA": "United States",
-    "United States of America": "United States",
-    "UK": "United Kingdom", "Republic of Korea": "South Korea",
-    "Korea": "South Korea", "Türkiye": "Turkey",
-    "Türkiye (Turkey)": "Turkey", "Czech Republic": "Czechia",
-    "People's Republic of China": "China",
-    "Hong Kong SAR": "Hong Kong", "The Netherlands": "Netherlands",
-}
-
-
 def norm_country(c):
-    return COUNTRY_NAMES.get(c, c)
+    return COUNTRY_NAMES.get(c, c) if c else ""
 
 
 def main():
@@ -78,8 +71,6 @@ def main():
     browser_cov = load_json(DATA_DIR, "browser_coverage.json") or {}
     rpe = load_json(DATA_DIR, "root_program_effectiveness.json") or {}
     distrust = load_json(PIPELINE_DIR, "distrust/distrusted.json") or {}
-
-    DISTRUST_OVERRIDES = {"Entrust"}
 
     # ── Incident lookup ──
     inc_by_ca = {}
@@ -316,12 +307,7 @@ def main():
     # ═══════════════════════════════════════════════════════════════
     # Section 8: BR Thresholds
     # ═══════════════════════════════════════════════════════════════
-    br_thresholds = [
-        {"from": "2020-09-01", "days": 398, "label": "398 days"},
-        {"from": "2026-03-15", "days": 200, "label": "200 days"},
-        {"from": "2027-03-15", "days": 100, "label": "100 days"},
-        {"from": "2029-03-15", "days": 47, "label": "47 days"},
-    ]
+    br_thresholds = BR_VALIDITY
 
     # ═══════════════════════════════════════════════════════════════
     # Section 9: Crypto + Root Algorithms (GAP 1 FIX: merge store/capability into rootAlgorithms)
@@ -527,4 +513,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        print(f"ERROR: export_llm_snapshot.py failed: {e}", file=sys.stderr)
+        sys.exit(1)

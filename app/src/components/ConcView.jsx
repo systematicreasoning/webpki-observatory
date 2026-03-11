@@ -16,8 +16,8 @@ const TREEMAP_COLORS = [
   COLORS.gn,
   COLORS.am,
   COLORS.pk,
-  '#f97316',
-  '#14b8a6',
+  COLORS.or,
+  COLORS.tl,
   '#a78bfa',
   '#fb923c',
 ];

@@ -443,8 +443,8 @@ const PolicyView = () => {
           cleanup: 'Cleanup', governance: 'Governance', uncategorized: 'Other',
         };
         const CAT_COLORS_L = {
-          security_modernization: '#ef4444', validation_improvement: '#f59e0b', incident_response: '#10b981',
-          infrastructure: '#3b82f6', transparency_profiles: '#8b5cf6', audit_standards: '#6b7280',
+          security_modernization: COLORS.rd, validation_improvement: COLORS.am, incident_response: COLORS.gn,
+          infrastructure: COLORS.ac, transparency_profiles: COLORS.pu, audit_standards: COLORS.g5,
           cleanup: '#374151', governance: '#1f2937', uncategorized: '#111827',
         };
         const SUB_CATS = ['security_modernization', 'validation_improvement', 'incident_response', 'infrastructure', 'transparency_profiles', 'audit_standards'];
@@ -452,7 +452,7 @@ const PolicyView = () => {
           ...STORE_ORDER_L.map(s => Math.max(bc.browser_summary?.[s]?.total || 0, bc.browser_summary?.[s]?.endorsed || 0)),
           ...(bc.top_ca_contributors || []).map(c => Math.max(c.total, c.endorsed || 0)), 1
         );
-        const tgl = (on) => ({ padding: '3px 10px', fontSize: 10, fontWeight: on ? 600 : 400, borderRadius: 4, cursor: 'pointer', border: 'none', background: on ? COLORS.ac : 'transparent', color: on ? '#fff' : COLORS.t3 });
+        const tgl = (on) => ({ padding: '3px 10px', fontSize: 10, fontWeight: on ? 600 : 400, borderRadius: 4, cursor: 'pointer', border: 'none', background: on ? COLORS.ac : 'transparent', color: on ? COLORS.wh : COLORS.t3 });
 
         return (
           <>
@@ -486,7 +486,7 @@ const PolicyView = () => {
                     <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70, marginBottom: 2 }}>
                       <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
                       <div style={{ flex: 1, display: 'flex', height: 18, borderRadius: 3, overflow: 'hidden' }}>
-                        {Object.keys(CAT_LABELS).map(cat => { const v = cats[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: '#fff', fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
+                        {Object.keys(CAT_LABELS).map(cat => { const v = cats[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.wh, fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
                       </div>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70 }}>
@@ -518,7 +518,7 @@ const PolicyView = () => {
                   <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90, marginBottom: 2 }}>
                     <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
                     <div style={{ flex: 1, display: 'flex', height: 14, borderRadius: 3, overflow: 'hidden' }}>
-                      {Object.keys(CAT_LABELS).map(cat => { const v = (ca.by_category || {})[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: '#fff', fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
+                      {Object.keys(CAT_LABELS).map(cat => { const v = (ca.by_category || {})[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.wh, fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
                     </div>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90 }}>

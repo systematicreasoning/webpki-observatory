@@ -193,7 +193,7 @@ const GovernanceRiskView = () => {
               <button key={v} onClick={() => setOversightView(v)} style={{
                 padding: '3px 10px', fontSize: 10, fontWeight: oversightView === v ? 600 : 400, borderRadius: 4,
                 cursor: 'pointer', border: 'none', background: oversightView === v ? COLORS.ac : 'transparent',
-                color: oversightView === v ? '#fff' : COLORS.t3,
+                color: oversightView === v ? COLORS.wh : COLORS.t3,
               }}>{l}</button>
             ))}
           </div>
@@ -398,7 +398,7 @@ const GovernanceRiskView = () => {
             <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
               <div style={{ width: 66, display: 'flex', alignItems: 'center', gap: 4 }}><Dot store={s} size={6} /><span style={{ fontSize: 9, color: STORE_COLORS[s], fontWeight: 500 }}>{STORE_NAMES[s]}</span></div>
               <div style={{ flex: 1, height: 20, display: 'flex', borderRadius: 4, overflow: 'hidden' }}>
-                {(cs.oversight_comments || 0) > 0 && <div style={{ width: `${((cs.oversight_comments || 0) / maxOv) * 100}%`, background: STORE_COLORS[s], opacity: 0.8, display: 'flex', alignItems: 'center', paddingLeft: (cs.oversight_comments || 0) > 40 ? 6 : 2 }}>{(cs.oversight_comments || 0) > 40 && <span style={{ fontSize: 8, color: '#fff', fontFamily: FONT_MONO, fontWeight: 600 }}>{cs.oversight_comments}</span>}</div>}
+                {(cs.oversight_comments || 0) > 0 && <div style={{ width: `${((cs.oversight_comments || 0) / maxOv) * 100}%`, background: STORE_COLORS[s], opacity: 0.8, display: 'flex', alignItems: 'center', paddingLeft: (cs.oversight_comments || 0) > 40 ? 6 : 2 }}>{(cs.oversight_comments || 0) > 40 && <span style={{ fontSize: 8, color: COLORS.wh, fontFamily: FONT_MONO, fontWeight: 600 }}>{cs.oversight_comments}</span>}</div>}
                 {(cs.self_incident_comments || 0) > 0 && <div style={{ width: `${((cs.self_incident_comments || 0) / maxOv) * 100}%`, background: STORE_COLORS[s], opacity: 0.25, display: 'flex', alignItems: 'center', paddingLeft: (cs.self_incident_comments || 0) > 40 ? 6 : 2 }}>{(cs.self_incident_comments || 0) > 40 && <span style={{ fontSize: 8, color: COLORS.t3, fontFamily: FONT_MONO }}>{cs.self_incident_comments}</span>}</div>}
               </div>
               <span style={{ fontSize: 9, fontFamily: FONT_MONO, width: 33, textAlign: 'right', fontWeight: 600, color: (cs.oversight_pct || 0) > 50 ? COLORS.gn : (cs.oversight_pct || 0) > 0 ? COLORS.am : COLORS.rd }}>{cs.oversight_pct || 0}%</span>
@@ -447,8 +447,8 @@ const GovernanceRiskView = () => {
           const t = dm.totals || {};
           const unknownPct = total > 0 ? Math.round((t.unknown || 0) / total * 100) : 100;
           const DISC_COLORS = {
-            self_detected: '#10b981', external_researcher: '#f59e0b', root_program: '#3b82f6',
-            community: '#8b5cf6', audit: '#6b7280', unknown: '#1f2937',
+            self_detected: COLORS.gn, external_researcher: COLORS.am, root_program: COLORS.ac,
+            community: COLORS.pu, audit: COLORS.g5, unknown: '#1f2937',
           };
           const DISC_LABELS = {
             self_detected: 'Self-Detected', external_researcher: 'Externally Reported',

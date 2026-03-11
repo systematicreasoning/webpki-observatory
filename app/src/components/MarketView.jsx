@@ -13,13 +13,13 @@ const DONUT_COLORS = [
   COLORS.ac,
   '#0ea5e9',
   COLORS.cy,
-  '#8b5cf6',
+  COLORS.pu,
   '#a855f7',
   '#6366f1',
   COLORS.gn,
-  '#14b8a6',
-  '#f97316',
-  '#ec4899',
+  COLORS.tl,
+  COLORS.or,
+  COLORS.pk,
 ];
 
 /**

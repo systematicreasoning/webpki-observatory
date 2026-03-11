@@ -16,6 +16,10 @@ export const COLORS = {
   pu: '#8b5cf6',
   cy: '#06b6d4',
   pk: '#ec4899',
+  wh: '#fff',
+  or: '#f97316',
+  g5: '#6b7280',
+  tl: '#14b8a6',
 };
 
 export const STORE_COLORS = {

@@ -469,7 +469,7 @@ const OpsView = () => {
                                   title={`${CC[k].l}: ${ca[k]} (${pct.toFixed(0)}%)`}
                                 >
                                   {pct >= 12 && (
-                                    <span style={{ fontSize: 7, fontWeight: 600, color: '#fff', textShadow: '0 0 2px rgba(0,0,0,0.5)' }}>
+                                    <span style={{ fontSize: 7, fontWeight: 600, color: COLORS.wh, textShadow: '0 0 2px rgba(0,0,0,0.5)' }}>
                                       {pct.toFixed(0)}%
                                     </span>
                                   )}
@@ -526,7 +526,7 @@ const OpsView = () => {
                         'CRL / OCSP': COLORS.am,
                         Audit: COLORS.pu,
                         'Policy Violation': COLORS.pk,
-                        'Revocation Delay': '#f97316',
+                        'Revocation Delay': COLORS.or,
                         Disclosure: COLORS.cy,
                         Other: COLORS.t3,
                       };
@@ -568,7 +568,7 @@ const OpsView = () => {
                                 'CRL / OCSP': COLORS.am,
                                 Audit: COLORS.pu,
                                 'Policy Violation': COLORS.pk,
-                                'Revocation Delay': '#f97316',
+                                'Revocation Delay': COLORS.or,
                                 Disclosure: COLORS.cy,
                                 Other: COLORS.t3,
                               }[c.cat] || COLORS.t3,

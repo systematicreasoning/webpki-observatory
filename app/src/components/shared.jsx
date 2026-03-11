@@ -568,7 +568,7 @@ export const GeoMap = ({ pins, legend, height = 280 }) => {
                   r={r}
                   fill={pin.color}
                   opacity={hov === i ? 1 : 0.75}
-                  stroke={hov === i ? '#fff' : pin.color}
+                  stroke={hov === i ? COLORS.wh : pin.color}
                   strokeWidth={hov === i ? 2 : 1}
                 />
                 {pin.label && (r >= 3 || hov === i) && (
@@ -819,29 +819,29 @@ import { PeculiarCertificateViewer } from '@peculiar/certificates-viewer-react';
 
 const certViewerDarkTheme = {
   '--pv-color-white': '#0f1729',
-  '--pv-color-black': '#e2e8f0',
+  '--pv-color-black': COLORS.tx,
   '--pv-color-primary': '#60a5fa',
   '--pv-color-primary-contrast': '#0f1729',
-  '--pv-color-primary-tint-1': '#3b82f6',
+  '--pv-color-primary-tint-1': COLORS.ac,
   '--pv-color-primary-tint-2': '#2563eb',
   '--pv-color-primary-tint-3': '#1d4ed8',
   '--pv-color-primary-tint-4': '#1e3a5f',
   '--pv-color-primary-tint-5': '#172554',
-  '--pv-color-secondary': '#06b6d4',
+  '--pv-color-secondary': COLORS.cy,
   '--pv-color-secondary-tint-5': '#164e63',
-  '--pv-color-gray-1': '#e2e8f0',
+  '--pv-color-gray-1': COLORS.tx,
   '--pv-color-gray-2': '#cbd5e1',
   '--pv-color-gray-3': '#1e293b',
   '--pv-color-gray-4': '#253349',
   '--pv-color-gray-5': '#334155',
   '--pv-color-gray-6': '#475569',
   '--pv-color-gray-7': '#64748b',
-  '--pv-color-gray-8': '#94a3b8',
+  '--pv-color-gray-8': COLORS.t2,
   '--pv-color-gray-9': '#cbd5e1',
-  '--pv-color-gray-10': '#e2e8f0',
-  '--pv-color-wrong': '#ef4444',
+  '--pv-color-gray-10': COLORS.tx,
+  '--pv-color-wrong': COLORS.rd,
   '--pv-color-success': '#22c55e',
-  '--pv-color-attention': '#f59e0b',
+  '--pv-color-attention': COLORS.am,
   '--pv-font-family': "'IBM Plex Sans', sans-serif",
 };
 

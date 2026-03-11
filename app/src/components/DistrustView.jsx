@@ -24,11 +24,11 @@ import {
 /* ── Constants ── */
 
 const POSTURE_COLORS = {
-  willful_circumvention: '#ef4444',
+  willful_circumvention: COLORS.rd,
   argumentative_noncompliance: '#e879f9',
-  negligent_noncompliance: '#f59e0b',
+  negligent_noncompliance: COLORS.am,
   demonstrated_incompetence: '#38bdf8',
-  accidental: '#6b7280',
+  accidental: COLORS.g5,
 };
 
 const POSTURE_LABELS = {
@@ -40,7 +40,7 @@ const POSTURE_LABELS = {
 };
 
 const PATHWAY_COLORS = {
-  immediate: '#ef4444', triggered: '#f97316', gradual: '#f59e0b', negotiated: '#3b82f6',
+  immediate: COLORS.rd, triggered: COLORS.or, gradual: COLORS.am, negotiated: COLORS.ac,
 };
 const PATHWAY_LABELS = {
   immediate: 'Immediate', triggered: 'Triggered', gradual: 'Gradual', negotiated: 'Negotiated',
@@ -50,8 +50,8 @@ const RESPONSE_LABELS = {
   non_responsive: 'Non-Responsive', moot: 'Moot',
 };
 const RESPONSE_COLORS = {
-  cooperative: '#10b981', inadequate: '#f59e0b', deceptive: '#ef4444',
-  non_responsive: '#6b7280', moot: '#5a6a82',
+  cooperative: COLORS.gn, inadequate: COLORS.am, deceptive: COLORS.rd,
+  non_responsive: COLORS.g5, moot: COLORS.t3,
 };
 const ROOT_CAUSE_LABELS = {
   infrastructure_compromise: 'Infrastructure', misissuance: 'Misissuance',
@@ -59,9 +59,9 @@ const ROOT_CAUSE_LABELS = {
   organizational_trust: 'Organizational',
 };
 const MILESTONE_COLORS = {
-  first_bug: '#5a6a82', incident: '#ef4444', public_discovery: '#f97316',
-  mdsp_escalation: '#f59e0b', root_program_announcement: '#3b82f6',
-  distrust_effective: '#8b5cf6', business_outcome: '#6b7280',
+  first_bug: COLORS.t3, incident: COLORS.rd, public_discovery: COLORS.or,
+  mdsp_escalation: COLORS.am, root_program_announcement: COLORS.ac,
+  distrust_effective: COLORS.pu, business_outcome: COLORS.g5,
 };
 const MILESTONE_LABELS = {
   first_bug: 'First Bug', incident: 'Incident', public_discovery: 'Discovery',
@@ -705,20 +705,20 @@ export default function DistrustView() {
       {/* Methodology */}
       <MethodologyCard>
         <MethodologyItem label="Compliance posture">
-          <span style={{ color: '#ef4444' }}>Willful</span> (built systems to violate) ·{' '}
+          <span style={{ color: COLORS.rd }}>Willful</span> (built systems to violate) ·{' '}
           <span style={{ color: '#e879f9' }}>Argumentative</span> (argued rules don't apply) ·{' '}
-          <span style={{ color: '#f59e0b' }}>Negligent</span> (knew but didn't fix) ·{' '}
+          <span style={{ color: COLORS.am }}>Negligent</span> (knew but didn't fix) ·{' '}
           <span style={{ color: '#38bdf8' }}>Incompetent</span> (didn't understand) ·{' '}
-          <span style={{ color: '#6b7280' }}>Accidental</span> (genuine mistake)
+          <span style={{ color: COLORS.g5 }}>Accidental</span> (genuine mistake)
         </MethodologyItem>
         <MethodologyItem label="Distrust pathway">
-          <span style={{ color: '#ef4444' }}>Immediate</span> (emergency) ·{' '}
-          <span style={{ color: '#f97316' }}>Triggered</span> (external discovery) ·{' '}
-          <span style={{ color: '#f59e0b' }}>Gradual</span> (accumulated incidents) ·{' '}
-          <span style={{ color: '#3b82f6' }}>Negotiated</span> (managed transition)
+          <span style={{ color: COLORS.rd }}>Immediate</span> (emergency) ·{' '}
+          <span style={{ color: COLORS.or }}>Triggered</span> (external discovery) ·{' '}
+          <span style={{ color: COLORS.am }}>Gradual</span> (accumulated incidents) ·{' '}
+          <span style={{ color: COLORS.ac }}>Negotiated</span> (managed transition)
         </MethodologyItem>
         <MethodologyItem label="Response quality">
-          <span style={{ color: '#10b981' }}>Cooperative</span> → <span style={{ color: '#f59e0b' }}>Inadequate</span> → <span style={{ color: '#ef4444' }}>Deceptive</span>.
+          <span style={{ color: COLORS.gn }}>Cooperative</span> → <span style={{ color: COLORS.am }}>Inadequate</span> → <span style={{ color: COLORS.rd }}>Deceptive</span>.
           How the CA engaged after issues were identified.
         </MethodologyItem>
         <MethodologyItem label="Contributing factors">

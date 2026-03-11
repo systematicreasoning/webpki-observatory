@@ -309,7 +309,7 @@ const CADetail = ({ d }) => {
                   >
                     {pct >= 8 && (
                       <span
-                        style={{ fontSize: 8, fontWeight: 600, color: '#fff', textShadow: '0 0 3px rgba(0,0,0,0.5)' }}
+                        style={{ fontSize: 8, fontWeight: 600, color: COLORS.wh, textShadow: '0 0 3px rgba(0,0,0,0.5)' }}
                       >
                         {pct.toFixed(0)}%
                       </span>
