@@ -106,9 +106,19 @@ jobs:
         with:
           ref: main
 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Generate UI bundle
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          PIPELINE_DIR: ${{ github.workspace }}/pipeline
+        run: python pipeline/export_ui_bundle.py
 
       - name: Install dependencies
         working-directory: app
