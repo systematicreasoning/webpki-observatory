@@ -537,8 +537,14 @@ def join_data(crtsh_data, ccadb_profiles):
 def detect_cross_sign_attribution(ccadb_records):
     """Detect CAs whose issuance may be misattributed due to cross-signed roots.
     
-    When a root is cross-signed under another CA's root, crt.sh may attribute
-    certificates to the cross-signing root's owner rather than the operating CA.
+    When CA-A's root is cross-signed under CA-B's root, crt.sh attributes
+    CA-A's issuance to CA-B. CA-A is undercounted, CA-B is overcounted.
+    
+    CCADB records cross-signs as intermediate certs whose name matches
+    a root cert but whose parent is owned by a different CA. However,
+    cross-signing can create records in both directions in CCADB, so we
+    collect all relationships first, then use issuance volume to resolve
+    direction when both sides appear.
     
     Returns (undercounted, overcounted) dicts mapping CA owner -> set of affected owners.
     """
@@ -549,8 +555,9 @@ def detect_cross_sign_attribution(ccadb_records):
         if r.get("Certificate Record Type") == "Root Certificate":
             root_owners_by_name[r.get("Certificate Name", "")].add(r.get("CA Owner", ""))
     
-    undercounted = defaultdict(set)
-    overcounted = defaultdict(set)
+    # Collect all cross-sign relationships as (subject_owner, parent_owner) pairs
+    # meaning: subject_owner has a root that is also an intermediate under parent_owner's root
+    relationships = set()
     
     for r in ccadb_records:
         if r.get("Certificate Record Type") != "Intermediate Certificate":
@@ -566,26 +573,68 @@ def detect_cross_sign_attribution(ccadb_records):
         for po in parent_owners:
             if po not in self_signed_owners:
                 for so in self_signed_owners:
-                    undercounted[so].add(po)
-                    overcounted[po].add(so)
+                    relationships.add((so, po))
     
-    return dict(undercounted), dict(overcounted)
+    return relationships
 
 
 def apply_cross_sign_flags(joined, ccadb_records):
     """Apply cross-sign attribution flags to market share records.
     
-    Detects CAs whose issuance volume may be misattributed in crt.sh 
-    due to cross-signed root certificates, and flags both the undercounted
-    and overcounted CAs.
+    Uses issuance volume to resolve direction: when A and B have cross-sign
+    relationships in both directions, the higher-volume CA is the one whose
+    issuance is being misattributed (undercounted), and the lower-volume CA
+    is overcounted. When the relationship is one-directional, direction is clear.
     """
-    undercounted, overcounted = detect_cross_sign_attribution(ccadb_records)
+    relationships = detect_cross_sign_attribution(ccadb_records)
+    
+    # Build volume lookup from joined data
+    volume = {}
+    for rec in joined:
+        volume[rec["ca_owner"]] = rec.get("all_certs", 0) + rec.get("all_precerts", 0)
+    
+    # For each relationship (subject, parent), subject's volume may be attributed to parent.
+    # But if (parent, subject) also exists, use volume to determine who's actually undercounted.
+    from collections import defaultdict
+    undercounted = defaultdict(set)  # CA -> set of CAs that may hold its volume
+    overcounted = defaultdict(set)   # CA -> set of CAs whose volume it may hold
+    
+    processed = set()
+    for (a, b) in relationships:
+        pair = tuple(sorted([a, b]))
+        if pair in processed:
+            continue
+        processed.add(pair)
+        
+        reverse_exists = (b, a) in relationships
+        
+        if not reverse_exists:
+            # One-directional: a's root is cross-signed under b's root
+            # a is undercounted, b is overcounted
+            undercounted[a].add(b)
+            overcounted[b].add(a)
+        else:
+            # Bidirectional in CCADB — use volume to resolve.
+            # The CA with more volume is the one being misattributed (undercounted),
+            # because crt.sh attributes to the root owner, and the larger CA's
+            # certificates chaining through the smaller CA's root is the common pattern.
+            vol_a = volume.get(a, 0)
+            vol_b = volume.get(b, 0)
+            if vol_a > vol_b:
+                undercounted[a].add(b)
+                overcounted[b].add(a)
+            elif vol_b > vol_a:
+                undercounted[b].add(a)
+                overcounted[a].add(b)
+            else:
+                # Equal or both zero — flag both as ambiguous
+                undercounted[a].add(b)
+                undercounted[b].add(a)
     
     flagged = 0
     for rec in joined:
         ca = rec["ca_owner"]
         if ca in undercounted:
-            # Convert set to sorted list for JSON serialization
             attribution_targets = sorted(undercounted[ca])
             rec["issuance_caveat"] = "undercounted_cross_sign"
             rec["attribution_note"] = (
@@ -593,10 +642,9 @@ def apply_cross_sign_flags(joined, ccadb_records):
                 f"issued under {ca} may be attributed to: {', '.join(attribution_targets)}."
             )
             flagged += 1
-        elif ca in overcounted:
+        if ca in overcounted:
             sources = sorted(overcounted[ca])
             rec["overcounted_from"] = sources
-            # Don't override existing note, just add the overcounted flag
     
     if flagged:
         print(f"  Flagged {flagged} CAs with cross-sign attribution caveats")
