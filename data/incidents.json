@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-03-08T17:28:37.882639+00:00",
-    "last_checked": "2026-03-11T02:32:26.420853+00:00",
+    "last_checked": "2026-03-11T02:42:41.881497+00:00",
     "bug_count": 1689,
     "active_incidents": 1424,
     "active_cas": 54,
@@ -14,7 +14,9 @@
     "pipeline_error_time": null
   },
   "total": 1424,
+  "total_with_distrusted": 1610,
   "ca_count": 54,
+  "ca_count_with_distrusted": 55,
   "years": [
     {
       "y": 2014,
@@ -942,36 +944,50 @@
   ],
   "distrusted_excluded": [
     {
-      "ca": "AC Camerfirma",
-      "n": 0
+      "ca": null,
+      "n": 186
+    }
+  ],
+  "distrusted_years": [
+    {
+      "y": 2017,
+      "n": 23
     },
     {
-      "ca": "CNNIC",
-      "n": 0
+      "y": 2018,
+      "n": 22
     },
     {
-      "ca": "Camerfirma",
-      "n": 0
+      "y": 2019,
+      "n": 42
     },
     {
-      "ca": "Camerfirma / AC Camerfirma",
-      "n": 0
+      "y": 2020,
+      "n": 29
     },
     {
-      "ca": "Certicamara",
-      "n": 0
+      "y": 2021,
+      "n": 23
     },
     {
-      "ca": "Certinomis",
-      "n": 0
+      "y": 2022,
+      "n": 7
     },
     {
-      "ca": "Certinomis / Docapost",
-      "n": 0
+      "y": 2023,
+      "n": 4
     },
     {
-      "ca": "DarkMatter",
-      "n": 0
+      "y": 2024,
+      "n": 31
+    },
+    {
+      "y": 2025,
+      "n": 4
+    },
+    {
+      "y": 2026,
+      "n": 1
     }
   ]
 }
