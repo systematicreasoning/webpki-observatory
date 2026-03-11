@@ -35,7 +35,7 @@ export function PipelineProvider({ children }) {
       const intersections = INTERSECTIONS || { rc: [], oc: [], ps: {}, a4: { r: 0, o: 0 }, ao: 0, tr: 0 };
       const geography = Array.isArray(GEOGRAPHY) ? GEOGRAPHY : [];
       const govRisk = GOV_RISK || { t: {}, n: 0, cas: [] };
-      const incidentsData = INCIDENTS_DATA || { total: 0, ca_count: 0, years: [], categories: [], cas: [], yearsByClass: [], fingerprints: [], distrusted_excluded: [] };
+      const incidentsData = INCIDENTS_DATA || { total: 0, total_with_distrusted: 0, ca_count: 0, ca_count_with_distrusted: 0, years: [], categories: [], cas: [], yearsByClass: [], fingerprints: [], distrusted_excluded: [], distrusted_years: [] };
       const roots = ROOTS || {};
       const incidentCounts = INCIDENT_COUNTS || {};
       const jurisdictionRisk = JURISDICTION_RISK || { jurisdictions: [] };

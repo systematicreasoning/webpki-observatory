@@ -281,7 +281,7 @@ const OpsView = () => {
       <div
         style={narrowStatGrid}
       >
-        <StatCard l="Incidents" v={fl(d.total)} s={`${d.ca_count} CAs with incidents`} c={COLORS.ac} />
+        <StatCard l="Incidents" v={fl(d.total_with_distrusted || d.total)} s={`${d.ca_count_with_distrusted || d.ca_count} CAs · ${d.distrusted_excluded?.length || 0} distrusted`} c={COLORS.ac} />
         <StatCard l="Peak Year" v={peakYear.y} s={`${peakYear.n} incidents`} c={COLORS.am} />
         <StatCard
           l={`${curYear.y} YTD`}
@@ -363,6 +363,12 @@ const OpsView = () => {
         <div style={{ fontSize: 9, color: COLORS.am, marginTop: 4 }}>
           ⚠ {d.years[d.years.length - 1]?.y} is year-to-date — dashed dot marks incomplete data. ~{curPace} incidents annualized at current pace.
         </div>
+        {(d.total_with_distrusted && d.total_with_distrusted !== d.total) ? (
+          <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 2 }}>
+            Chart shows {fl(d.total)} incidents from {d.ca_count} currently trusted CAs. {fl(d.total_with_distrusted - d.total)} additional from {d.distrusted_excluded?.length || 0} distrusted CAs
+            ({(d.distrusted_excluded || []).filter(x => x.n > 0).slice(0, 5).map(x => `${x.ca}: ${x.n}`).join(', ')}{(d.distrusted_excluded || []).filter(x => x.n > 0).length > 5 ? ', …' : ''}) included in headline total.
+          </div>
+        ) : null}
 
         {/* Milestone strip */}
         <div style={{ marginTop: 12, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 10 }}>

@@ -338,6 +338,8 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
     classified_total = 0
     unmapped = defaultdict(int)
     distrusted_total = 0
+    distrusted_by_ca = defaultdict(lambda: {"n": 0})
+    distrusted_by_year = defaultdict(int)
 
     for b in all_bugs:
         raw_ca = extract_ca(b["summary"])
@@ -349,12 +351,15 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
             unmapped[raw_ca] += 1
             continue
 
+        year = b["creation_time"][:4]
+
         if entry["status"] == "distrusted":
             distrusted_total += 1
+            distrusted_by_ca[entry["ccadb_owner"]]["n"] += 1
+            distrusted_by_year[year] += 1
             continue
 
         canonical = entry["ccadb_owner"]
-        year = b["creation_time"][:4]
         sr = is_self_reported(b.get("creator", ""), raw_ca)
 
         # Check AI classification
@@ -416,11 +421,12 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
             if s["mi"] + s["rv"] + s["gv"] + s["vl"] > 0
         ]
 
-    # Distrusted CAs for footnote
-    distrusted_names = sorted(set(
-        k for k, v in mappings.items()
-        if v["status"] == "distrusted"
-    ))[:8]
+    # Distrusted CAs with actual counts
+    distrusted_cas = sorted(
+        [{"ca": ca, "n": stats["n"]} for ca, stats in distrusted_by_ca.items()],
+        key=lambda x: -x["n"],
+    )
+    distrusted_years = [{"y": int(y), "n": n} for y, n in sorted(distrusted_by_year.items())]
 
     output = {
         "meta": {
@@ -438,13 +444,16 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
             "pipeline_error_time": meta.get("last_error_time"),
         },
         "total": total,
+        "total_with_distrusted": total + distrusted_total,
         "ca_count": len(by_ca),
+        "ca_count_with_distrusted": len(by_ca) + len(distrusted_by_ca),
         "years": years,
         "categories": categories,         # [] until classification runs
         "yearsByClass": years_by_class,    # [] until classification runs
         "fingerprints": fingerprints,      # [] until classification runs
         "cas": cas_list,
-        "distrusted_excluded": [{"ca": n, "n": 0} for n in distrusted_names],
+        "distrusted_excluded": distrusted_cas,
+        "distrusted_years": distrusted_years,
     }
 
     return output, unmapped
