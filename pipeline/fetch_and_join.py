@@ -17,6 +17,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from config import ORG_AFFILIATES
 
 # Force unbuffered stdout so CI shows progress in real time
 if not sys.stdout.isatty():
@@ -542,6 +543,10 @@ def detect_cross_sign_attribution(ccadb_records):
     CA's root. crt.sh may attribute the operating CA's issuance to the signing
     CA's root.
     
+    Cross-signs between CA Owners that belong to the same parent organization
+    (per ORG_AFFILIATES in config.py) are excluded — volume stays within the
+    same org and crt.sh attribution is not meaningfully wrong.
+    
     Uses SKI (not cert name) to identify cross-signs, avoiding false positives
     from name collisions in CCADB. Separates active (unexpired, trusted) from
     historical (expired or fully distrusted) cross-signs. Historical cross-signs
@@ -567,6 +572,21 @@ def detect_cross_sign_attribution(ccadb_records):
         if fp:
             owner_by_fp[fp] = r.get("CA Owner", "")
     
+    # Build affiliate lookup: CA Owner -> frozenset of all names in its group.
+    # Cross-signs between affiliated CA Owners are intra-organizational and
+    # do not cause crt.sh misattribution — volume stays within the same org.
+    affiliate_group = {}
+    for group in ORG_AFFILIATES:
+        for name in group:
+            affiliate_group[name] = group
+    
+    def same_org(a, b):
+        """True if a and b are the same CA Owner or affiliated under the same parent org."""
+        if a == b:
+            return True
+        group = affiliate_group.get(a)
+        return group is not None and b in group
+    
     now = datetime.now(timezone.utc)
     active = set()
     historical = set()
@@ -583,7 +603,7 @@ def detect_cross_sign_attribution(ccadb_records):
         parent_fp = r.get("Parent SHA-256 Fingerprint", "").strip().upper()
         parent_owner = owner_by_fp.get(parent_fp, "")
         
-        if not parent_owner or parent_owner == root_owner:
+        if not parent_owner or same_org(parent_owner, root_owner):
             continue
         
         pair = (root_owner, parent_owner)
