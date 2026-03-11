@@ -537,114 +537,168 @@ def join_data(crtsh_data, ccadb_profiles):
 def detect_cross_sign_attribution(ccadb_records):
     """Detect CAs whose issuance may be misattributed due to cross-signed roots.
     
-    When CA-A's root is cross-signed under CA-B's root, crt.sh attributes
-    CA-A's issuance to CA-B. CA-A is undercounted, CA-B is overcounted.
+    A cross-sign is an intermediate certificate that shares the same Subject Key
+    Identifier (public key) as a root certificate but is signed by a different
+    CA's root. crt.sh may attribute the operating CA's issuance to the signing
+    CA's root.
     
-    CCADB records cross-signs as intermediate certs whose name matches
-    a root cert but whose parent is owned by a different CA. However,
-    cross-signing can create records in both directions in CCADB, so we
-    collect all relationships first, then use issuance volume to resolve
-    direction when both sides appear.
+    Uses SKI (not cert name) to identify cross-signs, avoiding false positives
+    from name collisions in CCADB. Separates active (unexpired, trusted) from
+    historical (expired or fully distrusted) cross-signs. Historical cross-signs
+    still affect all-time volume attribution in crt.sh.
     
-    Returns (undercounted, overcounted) dicts mapping CA owner -> set of affected owners.
+    Returns (active, historical) — each a set of (subject_owner, parent_owner) tuples.
     """
     from collections import defaultdict
+    from datetime import datetime, timezone
     
-    root_owners_by_name = defaultdict(set)
+    # Map root SKI -> CA Owner
+    root_owner_by_ski = {}
     for r in ccadb_records:
         if r.get("Certificate Record Type") == "Root Certificate":
-            root_owners_by_name[r.get("Certificate Name", "")].add(r.get("CA Owner", ""))
+            ski = r.get("Subject Key Identifier", "").strip().upper()
+            if ski:
+                root_owner_by_ski[ski] = r.get("CA Owner", "")
     
-    # Collect all cross-sign relationships as (subject_owner, parent_owner) pairs
-    # meaning: subject_owner has a root that is also an intermediate under parent_owner's root
-    relationships = set()
+    # Map fingerprint -> CA Owner for parent lookup
+    owner_by_fp = {}
+    for r in ccadb_records:
+        fp = r.get("SHA-256 Fingerprint", "").strip().upper()
+        if fp:
+            owner_by_fp[fp] = r.get("CA Owner", "")
+    
+    now = datetime.now(timezone.utc)
+    active = set()
+    historical = set()
     
     for r in ccadb_records:
         if r.get("Certificate Record Type") != "Intermediate Certificate":
             continue
-        cert_name = r.get("Certificate Name", "")
-        parent_name = r.get("Parent Certificate Name", "")
         
-        if cert_name not in root_owners_by_name:
+        ski = r.get("Subject Key Identifier", "").strip().upper()
+        if not ski or ski not in root_owner_by_ski:
             continue
         
-        self_signed_owners = root_owners_by_name[cert_name]
-        parent_owners = root_owners_by_name.get(parent_name, set())
-        for po in parent_owners:
-            if po not in self_signed_owners:
-                for so in self_signed_owners:
-                    relationships.add((so, po))
+        root_owner = root_owner_by_ski[ski]
+        parent_fp = r.get("Parent SHA-256 Fingerprint", "").strip().upper()
+        parent_owner = owner_by_fp.get(parent_fp, "")
+        
+        if not parent_owner or parent_owner == root_owner:
+            continue
+        
+        pair = (root_owner, parent_owner)
+        
+        # Check if expired
+        expired = False
+        valid_to = r.get("Valid To (GMT)", "").strip()
+        if valid_to:
+            try:
+                expiry = datetime.strptime(valid_to, "%Y.%m.%d").replace(tzinfo=timezone.utc)
+                if expiry < now:
+                    expired = True
+            except ValueError:
+                pass
+        
+        # Check if not trusted by any store
+        not_trusted = False
+        store_statuses = [
+            r.get("Apple Status", ""),
+            r.get("Chrome Status", ""),
+            r.get("Microsoft Status", ""),
+            r.get("Mozilla Status", ""),
+        ]
+        if all(s.strip().lower() in ("not trusted", "removed", "") for s in store_statuses):
+            not_trusted = True
+        
+        if expired or not_trusted:
+            historical.add(pair)
+        else:
+            active.add(pair)
     
-    return relationships
+    # A relationship in both sets means at least one active path exists
+    historical -= active
+    
+    return active, historical
 
 
 def apply_cross_sign_flags(joined, ccadb_records):
     """Apply cross-sign attribution flags to market share records.
     
-    Uses issuance volume to resolve direction: when A and B have cross-sign
-    relationships in both directions, the higher-volume CA is the one whose
-    issuance is being misattributed (undercounted), and the lower-volume CA
-    is overcounted. When the relationship is one-directional, direction is clear.
+    Active cross-signs affect current issuance attribution.
+    Historical cross-signs affect all-time counts but not current.
+    
+    Uses issuance volume to resolve direction when both (A,B) and (B,A)
+    exist: the higher-volume CA is undercounted.
     """
-    relationships = detect_cross_sign_attribution(ccadb_records)
+    active, historical = detect_cross_sign_attribution(ccadb_records)
+    all_relationships = active | historical
     
     # Build volume lookup from joined data
     volume = {}
     for rec in joined:
         volume[rec["ca_owner"]] = rec.get("all_certs", 0) + rec.get("all_precerts", 0)
     
-    # For each relationship (subject, parent), subject's volume may be attributed to parent.
-    # But if (parent, subject) also exists, use volume to determine who's actually undercounted.
     from collections import defaultdict
-    undercounted = defaultdict(set)  # CA -> set of CAs that may hold its volume
-    overcounted = defaultdict(set)   # CA -> set of CAs whose volume it may hold
+    undercounted = defaultdict(set)
+    overcounted = defaultdict(set)
+    historical_undercounted = defaultdict(set)
     
-    processed = set()
-    for (a, b) in relationships:
-        pair = tuple(sorted([a, b]))
-        if pair in processed:
-            continue
-        processed.add(pair)
-        
-        reverse_exists = (b, a) in relationships
-        
-        if not reverse_exists:
-            # One-directional: a's root is cross-signed under b's root
-            # a is undercounted, b is overcounted
-            undercounted[a].add(b)
-            overcounted[b].add(a)
-        else:
-            # Bidirectional in CCADB — use volume to resolve.
-            # The CA with more volume is the one being misattributed (undercounted),
-            # because crt.sh attributes to the root owner, and the larger CA's
-            # certificates chaining through the smaller CA's root is the common pattern.
-            vol_a = volume.get(a, 0)
-            vol_b = volume.get(b, 0)
-            if vol_a > vol_b:
-                undercounted[a].add(b)
-                overcounted[b].add(a)
-            elif vol_b > vol_a:
-                undercounted[b].add(a)
-                overcounted[a].add(b)
+    def resolve_direction(rels, uc, oc):
+        processed = set()
+        for (a, b) in rels:
+            pair = tuple(sorted([a, b]))
+            if pair in processed:
+                continue
+            processed.add(pair)
+            
+            reverse_exists = (b, a) in rels
+            if not reverse_exists:
+                uc[a].add(b)
+                oc[b].add(a)
             else:
-                # Equal or both zero — flag both as ambiguous
-                undercounted[a].add(b)
-                undercounted[b].add(a)
+                vol_a = volume.get(a, 0)
+                vol_b = volume.get(b, 0)
+                if vol_a > vol_b:
+                    uc[a].add(b)
+                    oc[b].add(a)
+                elif vol_b > vol_a:
+                    uc[b].add(a)
+                    oc[a].add(b)
+                else:
+                    uc[a].add(b)
+                    uc[b].add(a)
+    
+    resolve_direction(active, undercounted, overcounted)
+    resolve_direction(historical, historical_undercounted, defaultdict(set))
     
     flagged = 0
     for rec in joined:
         ca = rec["ca_owner"]
+        notes = []
+        
         if ca in undercounted:
-            attribution_targets = sorted(undercounted[ca])
+            targets = sorted(undercounted[ca])
             rec["issuance_caveat"] = "undercounted_cross_sign"
-            rec["attribution_note"] = (
+            notes.append(
                 f"Volume may be undercounted. Cross-signed roots mean some certificates "
-                f"issued under {ca} may be attributed to: {', '.join(attribution_targets)}."
+                f"issued under {ca} may be attributed to: {', '.join(targets)}."
             )
             flagged += 1
+        
+        if ca in historical_undercounted and ca not in undercounted:
+            targets = sorted(historical_undercounted[ca])
+            rec["issuance_caveat"] = rec.get("issuance_caveat") or "historical_cross_sign"
+            notes.append(
+                f"All-time volume may be undercounted due to historical cross-signs "
+                f"(now expired) under: {', '.join(targets)}."
+            )
+            flagged += 1
+        
+        if notes:
+            rec["attribution_note"] = " ".join(notes)
+        
         if ca in overcounted:
-            sources = sorted(overcounted[ca])
-            rec["overcounted_from"] = sources
+            rec["overcounted_from"] = sorted(overcounted[ca])
     
     if flagged:
         print(f"  Flagged {flagged} CAs with cross-sign attribution caveats")
