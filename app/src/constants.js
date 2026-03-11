@@ -405,3 +405,18 @@ export const ALGO_THRESHOLDS = [
     webpki: 'Used by Asseco/Certum. Uncommon elsewhere in WebPKI.',
   },
 ];
+
+// ── Ecosystem milestones for Annual Incident Volume chart ──
+// Each milestone explains an inflection in the incident curve.
+// `measurement: true` marks detection-capability milestones (default-selected).
+export const INCIDENT_MILESTONES = [
+  { id: 'acme', year: 2016, label: "ACME / Let's Encrypt launches", color: COLORS.gn, measurement: false },
+  { id: 'symantec', year: 2017, label: 'Symantec distrust announced', color: COLORS.rd, measurement: false },
+  { id: 'ct', year: 2018, label: 'CT mandatory (Chrome)', color: COLORS.ac, measurement: true },
+  { id: 'zlint', year: 2019, label: 'ZLint + crt.sh pipeline operational', color: COLORS.pu, measurement: true },
+  { id: 'covid', year: 2020, label: 'COVID-19 strains CA operations', color: COLORS.am, measurement: false },
+  { id: 'remediation', year: 2022, label: 'Post-wave CA remediation + reporting dip', color: COLORS.g5, measurement: false },
+  { id: 'chromerp', year: 2023, label: 'Chrome Root Program formalizes', color: COLORS.cy, measurement: false },
+  { id: 'entrust', year: 2024, label: 'Entrust distrust', color: COLORS.rd, measurement: false },
+  { id: 'mpic', year: 2025, label: 'MPIC required', color: COLORS.cy, measurement: false },
+];

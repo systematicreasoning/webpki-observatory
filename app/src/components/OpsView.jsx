@@ -16,7 +16,7 @@ import {
   ReferenceLine,
   LabelList,
 } from 'recharts';
-import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS } from '../constants';
+import { COLORS, FONT_MONO, FONT_SANS, COUNTRY_COORDS, INCIDENT_MILESTONES } from '../constants';
 import { dn, f, fl } from '../helpers';
 import {
   Card,
@@ -249,6 +249,24 @@ const OpsView = () => {
   const [srCnt, setSrCnt] = useState(10);
   const [fpCnt, setFpCnt] = useState(10);
   const [opsFilter, setOpsFilter] = useState('');
+  // Milestone selection — these are editorial annotations, not pipeline data
+  const [milestones, setMilestones] = useState(() => {
+    const init = {};
+    INCIDENT_MILESTONES.forEach((m) => { init[m.id] = m.measurement; });
+    return init;
+  });
+  const toggleMilestone = (id) => setMilestones((p) => ({ ...p, [id]: !p[id] }));
+  const setAllMilestones = (val) => {
+    const o = {};
+    INCIDENT_MILESTONES.forEach((m) => { o[m.id] = val; });
+    setMilestones(o);
+  };
+  const resetMilestones = () => {
+    const o = {};
+    INCIDENT_MILESTONES.forEach((m) => { o[m.id] = m.measurement; });
+    setMilestones(o);
+  };
+  const activeMilestones = INCIDENT_MILESTONES.filter((m) => milestones[m.id]);
   const opsFiltered = useMemo(() => {
     const q = opsFilter.toLowerCase();
     return q ? withPpm.filter((c) => c.ca.toLowerCase().includes(q)) : withPpm;
@@ -329,11 +347,103 @@ const OpsView = () => {
                 }}
                 activeDot={{ r: 5, fill: COLORS.ac }}
               />
+              {activeMilestones.map((m) => (
+                <ReferenceLine
+                  key={m.id}
+                  x={m.year}
+                  stroke={m.color}
+                  strokeDasharray="3 4"
+                  strokeOpacity={0.6}
+                  strokeWidth={1}
+                />
+              ))}
             </AreaChart>
           </ResponsiveContainer>
         </ChartWrap>
         <div style={{ fontSize: 9, color: COLORS.am, marginTop: 4 }}>
           ⚠ {d.years[d.years.length - 1]?.y} is year-to-date — dashed dot marks incomplete data. ~{curPace} incidents annualized at current pace.
+        </div>
+
+        {/* Milestone strip */}
+        <div style={{ marginTop: 12, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
+            <div style={{ fontSize: 9, fontWeight: 600, color: COLORS.t3, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              Ecosystem Milestones
+            </div>
+            <div style={{ display: 'flex', gap: 4 }}>
+              {[
+                ['All', () => setAllMilestones(true)],
+                ['None', () => setAllMilestones(false)],
+                ['Detection', resetMilestones],
+              ].map(([label, fn]) => (
+                <button
+                  key={label}
+                  onClick={fn}
+                  style={{
+                    padding: '2px 7px',
+                    fontSize: 8,
+                    borderRadius: 3,
+                    cursor: 'pointer',
+                    border: `1px solid ${COLORS.bd}`,
+                    background: 'transparent',
+                    color: COLORS.t3,
+                    fontFamily: FONT_SANS,
+                  }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px 0' }}>
+            {INCIDENT_MILESTONES.map((m) => {
+              const on = milestones[m.id];
+              return (
+                <div
+                  key={m.id}
+                  onClick={() => toggleMilestone(m.id)}
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    padding: '4px 8px',
+                    borderRadius: 4,
+                    background: on ? COLORS.s2 : 'transparent',
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                  }}
+                >
+                  <span
+                    style={{
+                      width: 12,
+                      height: 12,
+                      borderRadius: 2,
+                      flexShrink: 0,
+                      border: `1.5px solid ${on ? m.color : COLORS.bl}`,
+                      background: on ? m.color + '22' : 'transparent',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      fontSize: 0,
+                    }}
+                  >
+                    {on && (
+                      <svg width="7" height="7" viewBox="0 0 10 10">
+                        <polyline points="2,5 4.5,7.5 8,2.5" fill="none" stroke={m.color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    )}
+                  </span>
+                  <span style={{ fontFamily: FONT_MONO, fontSize: 9, fontWeight: 500, color: on ? COLORS.t2 : COLORS.t3, minWidth: 28 }}>
+                    {m.year}
+                  </span>
+                  <span style={{ width: 5, height: 5, borderRadius: '50%', background: m.color, flexShrink: 0, opacity: on ? 1 : 0.3 }} />
+                  <span style={{ color: on ? COLORS.tx : COLORS.t3, fontSize: 10, lineHeight: 1.3 }}>
+                    {m.label}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </Card>
 
