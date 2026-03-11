@@ -6,7 +6,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Operated by Greek academic/research network, government-funded institution",
       "jurisdiction": "Greece",
-      "issued": 513375,
+      "issued": 513394,
       "pct": 0.0399,
       "trust_store_count": 4,
       "trusted_by": {
@@ -22,7 +22,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
       "jurisdiction": "Sweden",
-      "issued": 35401,
+      "issued": 35400,
       "pct": 0.0028,
       "trust_store_count": 4,
       "trusted_by": {
@@ -38,7 +38,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "State-affiliated entity, Shanghai municipality",
       "jurisdiction": "China",
-      "issued": 32025,
+      "issued": 32032,
       "pct": 0.0025,
       "trust_store_count": 3,
       "trusted_by": {
@@ -70,7 +70,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Majority state-owned telecom (Taiwan Ministry of Transportation)",
       "jurisdiction": "Taiwan",
-      "issued": 9007,
+      "issued": 8997,
       "pct": 0.0007,
       "trust_store_count": 4,
       "trusted_by": {
@@ -86,7 +86,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Established by People's Bank of China",
       "jurisdiction": "China",
-      "issued": 5631,
+      "issued": 5642,
       "pct": 0.0004,
       "trust_store_count": 4,
       "trusted_by": {
@@ -389,7 +389,7 @@
     "state_enterprise": {
       "label": "State-Owned Enterprise",
       "count": 7,
-      "issued": 616444,
+      "issued": 616470,
       "pct": 0.0479
     },
     "government": {
@@ -403,7 +403,7 @@
     {
       "jurisdiction": "Greece",
       "count": 1,
-      "issued": 513375,
+      "issued": 513394,
       "types": [
         "state_enterprise"
       ]
@@ -411,7 +411,7 @@
     {
       "jurisdiction": "China",
       "count": 2,
-      "issued": 37656,
+      "issued": 37674,
       "types": [
         "state_enterprise"
       ]
@@ -419,7 +419,7 @@
     {
       "jurisdiction": "Sweden",
       "count": 2,
-      "issued": 35401,
+      "issued": 35400,
       "types": [
         "government",
         "state_enterprise"
@@ -436,7 +436,7 @@
     {
       "jurisdiction": "Taiwan",
       "count": 1,
-      "issued": 9007,
+      "issued": 8997,
       "types": [
         "state_enterprise"
       ]
