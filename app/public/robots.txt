@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# LLM-readable dataset
+# See /llms.txt for structured data discovery
+# See /llm_snapshot.json for complete machine-readable dataset
+# See /schema.json for dataset validation schema

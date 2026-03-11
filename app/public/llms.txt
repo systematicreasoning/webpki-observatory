@@ -1,0 +1,24 @@
+# WebPKI Observatory
+> Quantitative, evidence-based analysis of the Certificate Authority trust ecosystem that underpins TLS on the public internet.
+
+Maintained by Systematic Reasoning, Inc.
+
+## Data Resources
+
+- [LLM Snapshot](https://webpki.systematicreasoning.com/llm_snapshot.json): Complete observatory dataset (~66K tokens). Self-describing JSON with schema reference. Updated daily. Contains: 96 trusted CAs with issuance metrics, concentration analysis, trust store intersections, geographic/government/jurisdiction risk, incident history, cryptographic posture, distrust event classifications, and root program governance comparison.
+- [JSON Schema](https://webpki.systematicreasoning.com/schema.json): Validation schema for the snapshot (JSON Schema draft 2020-12).
+- [Per-CA Details](https://webpki.systematicreasoning.com/data/ca/): Individual CA profiles with root certificates, intermediates, and PEM data.
+
+## Data Sources
+
+- crt.sh: Certificate Transparency logs (certificate population counts per CA)
+- CCADB: Common CA Database (trust store metadata, CA organization details)
+- Mozilla Bugzilla: CA Certificate Compliance incidents (2014-present)
+- StatCounter: Global browser market share
+- CA/Browser Forum: Ballot records across 4 working groups
+
+## Methodology
+
+Full methodology documentation: https://github.com/systematicreasoning/webpki-observatory/blob/main/METHODOLOGY.md
+
+Pipeline runs daily at 06:00 UTC. All analysis is scoped to currently trusted CAs.

@@ -7,6 +7,39 @@
   <title>WebPKI Observatory</title>
   <meta name="description" content="Certificate Authority market share, trust surface analysis, and ecosystem health metrics for the Web PKI.">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" type="application/json" href="/llm_snapshot.json" title="WebPKI Observatory Machine-Readable Dataset">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "WebPKI Observatory",
+    "description": "Quantitative analysis of the Certificate Authority trust ecosystem: market share, trust surface, concentration, geographic/government/jurisdiction risk, incident history, cryptographic posture, distrust classifications, and root program governance.",
+    "url": "https://webpki.systematicreasoning.com",
+    "license": "https://github.com/systematicreasoning/webpki-observatory",
+    "creator": {
+      "@type": "Organization",
+      "name": "Systematic Reasoning, Inc.",
+      "url": "https://systematicreasoning.com"
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://webpki.systematicreasoning.com/llm_snapshot.json",
+        "description": "Complete observatory dataset (~66K tokens, updated daily)"
+      },
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/schema+json",
+        "contentUrl": "https://webpki.systematicreasoning.com/schema.json",
+        "description": "JSON Schema for snapshot validation"
+      }
+    ],
+    "temporalCoverage": "2014/..",
+    "spatialCoverage": "Global",
+    "keywords": ["WebPKI", "Certificate Authority", "TLS", "trust store", "root program", "CA compliance", "certificate transparency"]
+  }
+  </script>
 </head>
 <body>
   <div id="root"></div>
