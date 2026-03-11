@@ -9,10 +9,10 @@
 import React, { useState, useMemo } from 'react';
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS } from '../constants';
 import {
-  Card, CardTitle, DataPending, TabIntro, MethodologyCard, MethodologyItem,
+  Card, CardTitle, DataPending, StatCard, TabIntro, MethodologyCard, MethodologyItem,
 } from './shared';
 import { usePipeline } from '../PipelineContext';
-import { footnoteStyle } from '../styles';
+import { footnoteStyle, statGridStyle } from '../styles';
 
 /* ── Local constants ── */
 
@@ -296,6 +296,60 @@ const GovernanceRiskView = () => {
           </tbody>
         </table>
       </Card>
+
+      {/* ═══ INCLUSION VELOCITY ═══ */}
+      {d.inclusion_velocity?.mozilla_stats && (() => {
+        const iv = d.inclusion_velocity;
+        const stats = iv.mozilla_stats;
+        const pending = (iv.mozilla_pending || []).sort((a, b) => b.days_waiting - a.days_waiting);
+        return (
+          <Card>
+            <CardTitle sub={`${stats.pending_count} CAs currently in Mozilla's inclusion pipeline. Based on Bugzilla CA Certificate Root Inclusion Request bugs.`}>
+              Inclusion Velocity (Mozilla)
+            </CardTitle>
+            <div style={statGridStyle}>
+              <StatCard l="Median Wait" v={`${stats.median_days}d`} s={`${(stats.median_days / 365).toFixed(1)} years`} c={stats.median_days > 365 ? COLORS.am : COLORS.gn} />
+              <StatCard l="Mean Wait" v={`${stats.mean_days}d`} s={`${(stats.mean_days / 365).toFixed(1)} years`} c={COLORS.t2} />
+              <StatCard l="Longest Pending" v={`${stats.longest_pending_days}d`} s={`${(stats.longest_pending_days / 365).toFixed(1)} years`} c={COLORS.rd} />
+              <StatCard l="Pending" v={stats.pending_count} s={`${stats.completed_count} completed`} c={COLORS.ac} />
+            </div>
+            {pending.length > 0 && (
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
+                  <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
+                    <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left', textTransform: 'uppercase', letterSpacing: '0.04em' }}>CA</th>
+                    <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'right', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Filed</th>
+                    <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'right', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Waiting</th>
+                    <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Stage</th>
+                  </tr></thead>
+                  <tbody>
+                    {pending.slice(0, 15).map(p => (
+                      <tr key={p.bug} style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
+                        <td style={{ padding: '4px 5px', color: COLORS.tx, fontWeight: 500, maxWidth: 220, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                          <a href={`https://bugzilla.mozilla.org/show_bug.cgi?id=${p.bug}`} target="_blank" rel="noopener noreferrer" style={{ color: COLORS.tx, textDecoration: 'none' }}>{p.ca}</a>
+                        </td>
+                        <td style={{ padding: '4px 5px', fontFamily: FONT_MONO, fontSize: 9, color: COLORS.t3, textAlign: 'right' }}>{p.filed}</td>
+                        <td style={{ padding: '4px 5px', fontFamily: FONT_MONO, fontSize: 9, textAlign: 'right', color: p.days_waiting > 1000 ? COLORS.rd : p.days_waiting > 365 ? COLORS.am : COLORS.t2 }}>
+                          {p.days_waiting}d ({(p.days_waiting / 365).toFixed(1)}y)
+                        </td>
+                        <td style={{ padding: '4px 5px', fontSize: 9, color: COLORS.t3 }}>{p.stage || '\u2014'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {pending.length > 15 && (
+                  <div style={{ fontSize: 8, color: COLORS.t3, marginTop: 4 }}>
+                    Showing 15 of {pending.length} pending applications (sorted by wait time)
+                  </div>
+                )}
+              </div>
+            )}
+            <div style={{ fontSize: 8, color: COLORS.t3, marginTop: 6, lineHeight: 1.4 }}>
+              Wait times measured from Bugzilla bug creation to present for pending, or to resolution for completed. Mozilla is shown because it is the only program with a fully public, trackable inclusion pipeline. Other programs accept applications but do not publish queue status.
+            </div>
+          </Card>
+        );
+      })()}
 
       {/* ═══ ENFORCEMENT ═══ */}
       <Card>
