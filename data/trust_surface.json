@@ -102,7 +102,7 @@
     "SPAIN": 1
   },
   "total_roots": 933,
-  "total_intermediates": 2843,
+  "total_intermediates": 2842,
   "capabilities": {
     "tls": 205,
     "ev": 165,

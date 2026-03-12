@@ -1,11 +1,11 @@
 [
   {
     "ca_owner": "Internet Security Research Group",
-    "all_certs": 8870743572,
-    "unexpired_certs": 517735616,
-    "all_precerts": 8627261802,
-    "unexpired_precerts": 518593882,
-    "market_share_pct": 40.2462,
+    "all_certs": 8873202133,
+    "unexpired_certs": 517656816,
+    "all_precerts": 8629725445,
+    "unexpired_precerts": 518520162,
+    "market_share_pct": 40.2507,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -22,18 +22,18 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 40.2462,
+    "cumulative_pct": 40.2507,
     "rank": 1,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: IdenTrust Services, LLC."
   },
   {
     "ca_owner": "Google Trust Services LLC",
-    "all_certs": 548674910,
-    "unexpired_certs": 101746804,
-    "all_precerts": 1715019230,
-    "unexpired_precerts": 212868156,
-    "market_share_pct": 16.5199,
+    "all_certs": 549347358,
+    "unexpired_certs": 102001477,
+    "all_precerts": 1716177171,
+    "unexpired_precerts": 212900056,
+    "market_share_pct": 16.5266,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -50,16 +50,16 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 56.7661,
+    "cumulative_pct": 56.7773,
     "rank": 2
   },
   {
     "ca_owner": "DigiCert",
-    "all_certs": 261274009,
-    "unexpired_certs": 67913517,
-    "all_precerts": 1108216269,
-    "unexpired_precerts": 176566501,
-    "market_share_pct": 13.7027,
+    "all_certs": 261364442,
+    "unexpired_certs": 67749262,
+    "all_precerts": 1108544761,
+    "unexpired_precerts": 176359376,
+    "market_share_pct": 13.6901,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -76,7 +76,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 70.4688,
+    "cumulative_pct": 70.4674,
     "rank": 3,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: Sectigo.",
@@ -86,11 +86,11 @@
   },
   {
     "ca_owner": "GoDaddy",
-    "all_certs": 224162629,
-    "unexpired_certs": 135307309,
-    "all_precerts": 416091458,
-    "unexpired_precerts": 166519117,
-    "market_share_pct": 12.9229,
+    "all_certs": 224381250,
+    "unexpired_certs": 135412560,
+    "all_precerts": 416309518,
+    "unexpired_precerts": 166540285,
+    "market_share_pct": 12.9279,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -107,7 +107,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 83.3917,
+    "cumulative_pct": 83.3953,
     "rank": 4,
     "overcounted_from": [
       "Amazon Trust Services"
@@ -115,11 +115,11 @@
   },
   {
     "ca_owner": "Sectigo",
-    "all_certs": 1275063340,
-    "unexpired_certs": 134347087,
-    "all_precerts": 1213946475,
-    "unexpired_precerts": 134272980,
-    "market_share_pct": 10.4204,
+    "all_certs": 1275850015,
+    "unexpired_certs": 134183046,
+    "all_precerts": 1214732340,
+    "unexpired_precerts": 134108118,
+    "market_share_pct": 10.4103,
     "matched": true,
     "country": "United Kingdom",
     "trusted_by": {
@@ -136,7 +136,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 93.8121,
+    "cumulative_pct": 93.8056,
     "rank": 5,
     "overcounted_from": [
       "SSL.com"
@@ -144,11 +144,11 @@
   },
   {
     "ca_owner": "Microsoft Corporation",
-    "all_certs": 6267424,
-    "unexpired_certs": 2108813,
-    "all_precerts": 310827740,
-    "unexpired_precerts": 59663531,
-    "market_share_pct": 4.6303,
+    "all_certs": 6270312,
+    "unexpired_certs": 2107546,
+    "all_precerts": 310999818,
+    "unexpired_precerts": 59691516,
+    "market_share_pct": 4.6336,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -165,18 +165,18 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": true,
-    "cumulative_pct": 98.4424,
+    "cumulative_pct": 98.4392,
     "rank": 6,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Microsoft Corporation may be attributed to: DigiCert."
   },
   {
     "ca_owner": "IdenTrust Services, LLC",
-    "all_certs": 1741791,
-    "unexpired_certs": 1510,
-    "all_precerts": 36813927,
-    "unexpired_precerts": 12855854,
-    "market_share_pct": 0.9977,
+    "all_certs": 1741795,
+    "unexpired_certs": 1513,
+    "all_precerts": 36852885,
+    "unexpired_precerts": 12883126,
+    "market_share_pct": 1.0001,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -193,16 +193,16 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.4401,
+    "cumulative_pct": 99.4393,
     "rank": 7
   },
   {
     "ca_owner": "SSL.com",
-    "all_certs": 6667576,
-    "unexpired_certs": 1694320,
-    "all_precerts": 93078581,
-    "unexpired_precerts": 1693663,
-    "market_share_pct": 0.1314,
+    "all_certs": 6680682,
+    "unexpired_certs": 1698704,
+    "all_precerts": 93091889,
+    "unexpired_precerts": 1697526,
+    "market_share_pct": 0.1318,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -219,18 +219,18 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.5715,
+    "cumulative_pct": 99.5711,
     "rank": 8,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under SSL.com may be attributed to: Sectigo, Viking Cloud, Inc.."
   },
   {
     "ca_owner": "GlobalSign nv-sa",
-    "all_certs": 8026666,
-    "unexpired_certs": 368928,
-    "all_precerts": 49496113,
-    "unexpired_precerts": 1592893,
-    "market_share_pct": 0.1236,
+    "all_certs": 8027887,
+    "unexpired_certs": 369511,
+    "all_precerts": 49513443,
+    "unexpired_precerts": 1595732,
+    "market_share_pct": 0.1239,
     "matched": true,
     "country": "Belgium",
     "trusted_by": {
@@ -247,7 +247,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.6951,
+    "cumulative_pct": 99.695,
     "rank": 9,
     "overcounted_from": [
       "Government of Hong Kong (SAR), Hongkong Post, Certizen"
@@ -255,11 +255,11 @@
   },
   {
     "ca_owner": "Actalis",
-    "all_certs": 3066851,
-    "unexpired_certs": 811953,
-    "all_precerts": 6527721,
-    "unexpired_precerts": 1502482,
-    "market_share_pct": 0.1166,
+    "all_certs": 3067494,
+    "unexpired_certs": 812474,
+    "all_precerts": 6528474,
+    "unexpired_precerts": 1501389,
+    "market_share_pct": 0.1165,
     "matched": true,
     "country": "Italy",
     "trusted_by": {
@@ -276,15 +276,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.8117,
+    "cumulative_pct": 99.8115,
     "rank": 10
   },
   {
     "ca_owner": "Asseco Data Systems S.A.",
-    "all_certs": 1607109,
-    "unexpired_certs": 68050,
-    "all_precerts": 5887669,
-    "unexpired_precerts": 668509,
+    "all_certs": 1607385,
+    "unexpired_certs": 68006,
+    "all_precerts": 5888479,
+    "unexpired_precerts": 668418,
     "market_share_pct": 0.0519,
     "matched": true,
     "country": "Polska",
@@ -302,7 +302,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.8636,
+    "cumulative_pct": 99.8634,
     "rank": 11,
     "overcounted_from": [
       "Shanghai Electronic Certification Authority Co., Ltd.",
@@ -311,11 +311,11 @@
   },
   {
     "ca_owner": "HARICA",
-    "all_certs": 35960,
-    "unexpired_certs": 25990,
-    "all_precerts": 546416,
-    "unexpired_precerts": 514656,
-    "market_share_pct": 0.0399,
+    "all_certs": 36117,
+    "unexpired_certs": 26141,
+    "all_precerts": 546741,
+    "unexpired_precerts": 514956,
+    "market_share_pct": 0.04,
     "matched": true,
     "country": "Greece",
     "trusted_by": {
@@ -332,16 +332,16 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9035,
+    "cumulative_pct": 99.9034,
     "rank": 12
   },
   {
     "ca_owner": "TrustAsia Technologies, Inc.",
-    "all_certs": 308654,
-    "unexpired_certs": 264437,
-    "all_precerts": 346426,
-    "unexpired_precerts": 271389,
-    "market_share_pct": 0.0211,
+    "all_certs": 309313,
+    "unexpired_certs": 264860,
+    "all_precerts": 348777,
+    "unexpired_precerts": 273504,
+    "market_share_pct": 0.0212,
     "matched": true,
     "country": "China",
     "trusted_by": {
@@ -365,11 +365,11 @@
   },
   {
     "ca_owner": "Amazon Trust Services",
-    "all_certs": 3360,
-    "unexpired_certs": 3293,
-    "all_precerts": 711924,
-    "unexpired_precerts": 221619,
-    "market_share_pct": 0.0172,
+    "all_certs": 3362,
+    "unexpired_certs": 3295,
+    "all_precerts": 713773,
+    "unexpired_precerts": 222288,
+    "market_share_pct": 0.0173,
     "matched": true,
     "country": "United States of America",
     "trusted_by": {
@@ -386,18 +386,18 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9418,
+    "cumulative_pct": 99.9419,
     "rank": 14,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Amazon Trust Services may be attributed to: GoDaddy."
   },
   {
     "ca_owner": "JPRS",
-    "all_certs": 238437,
-    "unexpired_certs": 76996,
-    "all_precerts": 641587,
-    "unexpired_precerts": 119190,
-    "market_share_pct": 0.0092,
+    "all_certs": 238626,
+    "unexpired_certs": 77185,
+    "all_precerts": 641797,
+    "unexpired_precerts": 119400,
+    "market_share_pct": 0.0093,
     "matched": false,
     "country": "Japan",
     "full_name": "Japan Registry Services Co., Ltd.",
@@ -417,15 +417,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.951,
+    "cumulative_pct": 99.9512,
     "rank": 15
   },
   {
     "ca_owner": "?",
-    "all_certs": 352141,
-    "unexpired_certs": 95953,
-    "all_precerts": 278549,
-    "unexpired_precerts": 93790,
+    "all_certs": 352276,
+    "unexpired_certs": 96088,
+    "all_precerts": 278685,
+    "unexpired_precerts": 93926,
     "market_share_pct": 0.0073,
     "matched": false,
     "country": "",
@@ -446,15 +446,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9583,
+    "cumulative_pct": 99.9585,
     "rank": 16
   },
   {
     "ca_owner": "Certainly LLC",
-    "all_certs": 12116891,
-    "unexpired_certs": 86369,
-    "all_precerts": 12784265,
-    "unexpired_precerts": 86567,
+    "all_certs": 12117852,
+    "unexpired_certs": 86393,
+    "all_precerts": 12785224,
+    "unexpired_precerts": 86589,
     "market_share_pct": 0.0067,
     "matched": true,
     "country": "USA",
@@ -472,15 +472,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.965,
+    "cumulative_pct": 99.9652,
     "rank": 17
   },
   {
     "ca_owner": "Taiwan-CA Inc. (TWCA)",
-    "all_certs": 157786,
-    "unexpired_certs": 62313,
-    "all_precerts": 345336,
-    "unexpired_precerts": 62562,
+    "all_certs": 157883,
+    "unexpired_certs": 62410,
+    "all_precerts": 345434,
+    "unexpired_precerts": 62660,
     "market_share_pct": 0.0049,
     "matched": true,
     "country": "Taiwan (Republic of China)",
@@ -498,15 +498,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9699,
+    "cumulative_pct": 99.9701,
     "rank": 18
   },
   {
     "ca_owner": "D-TRUST",
-    "all_certs": 11881,
-    "unexpired_certs": 1201,
-    "all_precerts": 124184,
-    "unexpired_precerts": 49643,
+    "all_certs": 11882,
+    "unexpired_certs": 1202,
+    "all_precerts": 124293,
+    "unexpired_precerts": 49749,
     "market_share_pct": 0.0039,
     "matched": true,
     "country": "Germany",
@@ -524,14 +524,14 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9738,
+    "cumulative_pct": 99.974,
     "rank": 19
   },
   {
     "ca_owner": "SwissSign AG",
-    "all_certs": 200250,
+    "all_certs": 200258,
     "unexpired_certs": 45574,
-    "all_precerts": 170824,
+    "all_precerts": 170832,
     "unexpired_precerts": 45523,
     "market_share_pct": 0.0035,
     "matched": true,
@@ -550,15 +550,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9773,
+    "cumulative_pct": 99.9775,
     "rank": 20
   },
   {
     "ca_owner": "SECOM Trust Systems CO., LTD.",
-    "all_certs": 396988,
-    "unexpired_certs": 27159,
-    "all_precerts": 485009,
-    "unexpired_precerts": 44074,
+    "all_certs": 397030,
+    "unexpired_certs": 27200,
+    "all_precerts": 485073,
+    "unexpired_precerts": 44138,
     "market_share_pct": 0.0034,
     "matched": true,
     "country": "Japan",
@@ -576,15 +576,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9807,
+    "cumulative_pct": 99.9809,
     "rank": 21
   },
   {
     "ca_owner": "Cybertrust Japan Co., Ltd.",
-    "all_certs": 89819,
-    "unexpired_certs": 35500,
-    "all_precerts": 201626,
-    "unexpired_precerts": 35555,
+    "all_certs": 89904,
+    "unexpired_certs": 35585,
+    "all_precerts": 201711,
+    "unexpired_precerts": 35640,
     "market_share_pct": 0.0028,
     "matched": true,
     "country": "Japan",
@@ -602,15 +602,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9835,
+    "cumulative_pct": 99.9837,
     "rank": 22
   },
   {
     "ca_owner": "Telia Company",
     "all_certs": 22047,
-    "unexpired_certs": 409,
-    "all_precerts": 134227,
-    "unexpired_precerts": 35383,
+    "unexpired_certs": 408,
+    "all_precerts": 134239,
+    "unexpired_precerts": 35385,
     "market_share_pct": 0.0027,
     "matched": true,
     "country": "Sweden",
@@ -628,15 +628,15 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9862,
+    "cumulative_pct": 99.9864,
     "rank": 23
   },
   {
     "ca_owner": "Shanghai Electronic Certification Authority Co., Ltd.",
-    "all_certs": 15448,
-    "unexpired_certs": 4313,
-    "all_precerts": 62594,
-    "unexpired_precerts": 32013,
+    "all_certs": 15452,
+    "unexpired_certs": 4317,
+    "all_precerts": 62620,
+    "unexpired_precerts": 32039,
     "market_share_pct": 0.0025,
     "matched": true,
     "country": "China",
@@ -654,17 +654,17 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9887,
+    "cumulative_pct": 99.9889,
     "rank": 24,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Shanghai Electronic Certification Authority Co., Ltd. may be attributed to: Asseco Data Systems S.A.."
   },
   {
     "ca_owner": "Apple Inc.",
-    "all_certs": 44238,
-    "unexpired_certs": 5040,
-    "all_precerts": 191514,
-    "unexpired_precerts": 24584,
+    "all_certs": 44295,
+    "unexpired_certs": 5081,
+    "all_precerts": 192006,
+    "unexpired_precerts": 25031,
     "market_share_pct": 0.0019,
     "matched": true,
     "country": "US",
@@ -682,15 +682,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9906,
+    "cumulative_pct": 99.9908,
     "rank": 25
   },
   {
     "ca_owner": "Deutsche Telekom Security GmbH",
-    "all_certs": 102351,
-    "unexpired_certs": 993,
-    "all_precerts": 118079,
-    "unexpired_precerts": 20854,
+    "all_certs": 102352,
+    "unexpired_certs": 987,
+    "all_precerts": 118085,
+    "unexpired_precerts": 20810,
     "market_share_pct": 0.0016,
     "matched": true,
     "country": "Germany",
@@ -708,15 +708,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9922,
+    "cumulative_pct": 99.9924,
     "rank": 26
   },
   {
     "ca_owner": "NAVER Cloud Trust Services",
-    "all_certs": 21288,
-    "unexpired_certs": 18206,
-    "all_precerts": 21463,
-    "unexpired_precerts": 18239,
+    "all_certs": 21308,
+    "unexpired_certs": 18226,
+    "all_precerts": 21482,
+    "unexpired_precerts": 18258,
     "market_share_pct": 0.0014,
     "matched": true,
     "country": "Republic of Korea (South Korea)",
@@ -734,15 +734,15 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9936,
+    "cumulative_pct": 99.9938,
     "rank": 27
   },
   {
     "ca_owner": "Buypass",
     "all_certs": 1297905,
-    "unexpired_certs": 15259,
+    "unexpired_certs": 14823,
     "all_precerts": 1293950,
-    "unexpired_precerts": 15261,
+    "unexpired_precerts": 14825,
     "market_share_pct": 0.0012,
     "matched": true,
     "country": "Norway",
@@ -760,15 +760,15 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9948,
+    "cumulative_pct": 99.995,
     "rank": 28
   },
   {
     "ca_owner": "eMudhra Technologies Limited",
-    "all_certs": 29086,
-    "unexpired_certs": 8503,
-    "all_precerts": 30797,
-    "unexpired_precerts": 8655,
+    "all_certs": 29108,
+    "unexpired_certs": 8518,
+    "all_precerts": 30818,
+    "unexpired_precerts": 8671,
     "market_share_pct": 0.0007,
     "matched": true,
     "country": "India",
@@ -786,15 +786,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9955,
+    "cumulative_pct": 99.9957,
     "rank": 29
   },
   {
     "ca_owner": "Chunghwa Telecom",
-    "all_certs": 14170,
-    "unexpired_certs": 626,
+    "all_certs": 14172,
+    "unexpired_certs": 625,
     "all_precerts": 41688,
-    "unexpired_precerts": 8600,
+    "unexpired_precerts": 8558,
     "market_share_pct": 0.0007,
     "matched": true,
     "country": "Taiwan, Republic of China",
@@ -806,21 +806,21 @@
     },
     "trust_store_count": 4,
     "root_count": 6,
-    "intermediates_count": 11,
+    "intermediates_count": 10,
     "inferred": false,
     "tls_capable": true,
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9962,
+    "cumulative_pct": 99.9964,
     "rank": 30
   },
   {
     "ca_owner": "China Financial Certification Authority (CFCA)",
-    "all_certs": 8030,
+    "all_certs": 8032,
     "unexpired_certs": 759,
-    "all_precerts": 26064,
-    "unexpired_precerts": 5649,
+    "all_precerts": 26078,
+    "unexpired_precerts": 5657,
     "market_share_pct": 0.0004,
     "matched": true,
     "country": "China",
@@ -838,34 +838,8 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9966,
+    "cumulative_pct": 99.9968,
     "rank": 31
-  },
-  {
-    "ca_owner": "Certigna",
-    "all_certs": 23045,
-    "unexpired_certs": 1476,
-    "all_precerts": 75845,
-    "unexpired_precerts": 4253,
-    "market_share_pct": 0.0003,
-    "matched": true,
-    "country": "France",
-    "trusted_by": {
-      "mozilla": true,
-      "microsoft": true,
-      "chrome": true,
-      "apple": true
-    },
-    "trust_store_count": 4,
-    "root_count": 6,
-    "intermediates_count": 10,
-    "inferred": false,
-    "tls_capable": true,
-    "ev_capable": true,
-    "smime_capable": true,
-    "code_signing_capable": true,
-    "cumulative_pct": 99.9969,
-    "rank": 32
   },
   {
     "ca_owner": "certSIGN",
@@ -890,15 +864,41 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9972,
+    "cumulative_pct": 99.9971,
+    "rank": 32
+  },
+  {
+    "ca_owner": "Certigna",
+    "all_certs": 23047,
+    "unexpired_certs": 1456,
+    "all_precerts": 75849,
+    "unexpired_precerts": 4215,
+    "market_share_pct": 0.0003,
+    "matched": true,
+    "country": "France",
+    "trusted_by": {
+      "mozilla": true,
+      "microsoft": true,
+      "chrome": true,
+      "apple": true
+    },
+    "trust_store_count": 4,
+    "root_count": 6,
+    "intermediates_count": 10,
+    "inferred": false,
+    "tls_capable": true,
+    "ev_capable": true,
+    "smime_capable": true,
+    "code_signing_capable": true,
+    "cumulative_pct": 99.9974,
     "rank": 33
   },
   {
     "ca_owner": "Viking Cloud, Inc.",
     "all_certs": 178472,
-    "unexpired_certs": 1014,
+    "unexpired_certs": 1009,
     "all_precerts": 76186,
-    "unexpired_precerts": 3058,
+    "unexpired_precerts": 3034,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "United States of America",
@@ -916,7 +916,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9974,
+    "cumulative_pct": 99.9976,
     "rank": 34,
     "overcounted_from": [
       "SSL.com"
@@ -924,10 +924,10 @@
   },
   {
     "ca_owner": "Government of Hong Kong (SAR), Hongkong Post, Certizen",
-    "all_certs": 9383,
-    "unexpired_certs": 599,
-    "all_precerts": 15605,
-    "unexpired_precerts": 2938,
+    "all_certs": 9384,
+    "unexpired_certs": 596,
+    "all_precerts": 15609,
+    "unexpired_precerts": 2931,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "China",
@@ -945,17 +945,17 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9976,
+    "cumulative_pct": 99.9978,
     "rank": 35,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Government of Hong Kong (SAR), Hongkong Post, Certizen may be attributed to: GlobalSign nv-sa."
   },
   {
     "ca_owner": "Government of Spain, F\u00e1brica Nacional de Moneda y Timbre (FNMT)",
-    "all_certs": 82880,
+    "all_certs": 82881,
     "unexpired_certs": 314,
-    "all_precerts": 15837,
-    "unexpired_precerts": 2859,
+    "all_precerts": 15840,
+    "unexpired_precerts": 2861,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Spain",
@@ -973,15 +973,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9978,
+    "cumulative_pct": 99.998,
     "rank": 36
   },
   {
     "ca_owner": "Microsec Ltd.",
-    "all_certs": 28936,
-    "unexpired_certs": 2802,
-    "all_precerts": 10701,
-    "unexpired_precerts": 2778,
+    "all_certs": 28950,
+    "unexpired_certs": 2816,
+    "all_precerts": 10715,
+    "unexpired_precerts": 2792,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Hungary",
@@ -999,15 +999,15 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.998,
+    "cumulative_pct": 99.9982,
     "rank": 37
   },
   {
     "ca_owner": "WISeKey",
-    "all_certs": 5884,
-    "unexpired_certs": 458,
+    "all_certs": 5886,
+    "unexpired_certs": 457,
     "all_precerts": 14687,
-    "unexpired_precerts": 2736,
+    "unexpired_precerts": 2729,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Switzerland",
@@ -1025,15 +1025,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9982,
+    "cumulative_pct": 99.9984,
     "rank": 38
   },
   {
     "ca_owner": "Government of Spain, Autoritat de Certificaci\u00f3 de la Comunitat Valenciana (ACCV)",
     "all_certs": 5567,
     "unexpired_certs": 30,
-    "all_precerts": 16674,
-    "unexpired_precerts": 2641,
+    "all_precerts": 16677,
+    "unexpired_precerts": 2644,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Spain",
@@ -1051,7 +1051,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9984,
+    "cumulative_pct": 99.9986,
     "rank": 39
   },
   {
@@ -1059,7 +1059,7 @@
     "all_certs": 808,
     "unexpired_certs": 33,
     "all_precerts": 13281,
-    "unexpired_precerts": 2630,
+    "unexpired_precerts": 2615,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Finland",
@@ -1077,15 +1077,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9986,
+    "cumulative_pct": 99.9988,
     "rank": 40
   },
   {
     "ca_owner": "OISTE",
-    "all_certs": 415,
-    "unexpired_certs": 404,
-    "all_precerts": 2513,
-    "unexpired_precerts": 2510,
+    "all_certs": 420,
+    "unexpired_certs": 409,
+    "all_precerts": 2539,
+    "unexpired_precerts": 2536,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "Switzerland",
@@ -1103,15 +1103,15 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9988,
+    "cumulative_pct": 99.999,
     "rank": 41
   },
   {
     "ca_owner": "Open Access Technology International, Inc. (OATI)",
-    "all_certs": 5280,
-    "unexpired_certs": 16,
-    "all_precerts": 11376,
-    "unexpired_precerts": 2366,
+    "all_certs": 5281,
+    "unexpired_certs": 17,
+    "all_precerts": 11379,
+    "unexpired_precerts": 2369,
     "market_share_pct": 0.0002,
     "matched": true,
     "country": "United States of America",
@@ -1129,7 +1129,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.999,
+    "cumulative_pct": 99.9992,
     "rank": 42
   },
   {
@@ -1155,7 +1155,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9991,
+    "cumulative_pct": 99.9993,
     "rank": 43
   },
   {
@@ -1181,15 +1181,15 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9992,
+    "cumulative_pct": 99.9994,
     "rank": 44
   },
   {
     "ca_owner": "Eviden",
-    "all_certs": 7269,
-    "unexpired_certs": 350,
+    "all_certs": 7271,
+    "unexpired_certs": 330,
     "all_precerts": 16965,
-    "unexpired_precerts": 1473,
+    "unexpired_precerts": 1450,
     "market_share_pct": 0.0001,
     "matched": true,
     "country": "Germany",
@@ -1207,7 +1207,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9993,
+    "cumulative_pct": 99.9995,
     "rank": 45
   },
   {
@@ -1233,7 +1233,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 46
   },
   {
@@ -1262,15 +1262,15 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 47
   },
   {
     "ca_owner": "Global Digital Cybersecurity Authority Co., Ltd. (Formerly Guang Dong Certificate Authority (GDCA))",
     "all_certs": 2379,
     "unexpired_certs": 112,
-    "all_precerts": 5704,
-    "unexpired_precerts": 501,
+    "all_precerts": 5706,
+    "unexpired_precerts": 502,
     "market_share_pct": 0.0,
     "matched": true,
     "country": "China",
@@ -1288,7 +1288,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 48
   },
   {
@@ -1314,7 +1314,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 49,
     "overcounted_from": [
       "Servi\u00e7o Federal de Processamento de Dados",
@@ -1344,7 +1344,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 50
   },
   {
@@ -1370,7 +1370,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 51
   },
   {
@@ -1396,7 +1396,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 52
   },
   {
@@ -1422,7 +1422,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 53
   },
   {
@@ -1448,7 +1448,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 54
   },
   {
@@ -1474,7 +1474,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 55
   },
   {
@@ -1500,7 +1500,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 56
   },
   {
@@ -1526,7 +1526,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 57
   },
   {
@@ -1552,7 +1552,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 58
   },
   {
@@ -1578,7 +1578,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 59
   },
   {
@@ -1604,7 +1604,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 60
   },
   {
@@ -1630,7 +1630,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 61
   },
   {
@@ -1656,7 +1656,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 62
   },
   {
@@ -1682,7 +1682,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 63
   },
   {
@@ -1708,7 +1708,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 64
   },
   {
@@ -1734,7 +1734,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 65
   },
   {
@@ -1760,7 +1760,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 66
   },
   {
@@ -1786,7 +1786,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 67
   },
   {
@@ -1812,7 +1812,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 68,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: Sectigo, SwissSign AG."
@@ -1840,7 +1840,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 69,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: Asseco Data Systems S.A., Sectigo, Start Commercial (StartCom) Ltd.."
@@ -1871,7 +1871,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 70
   },
   {
@@ -1900,7 +1900,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 71
   },
   {
@@ -1926,7 +1926,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 72
   },
   {
@@ -1952,7 +1952,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 73
   },
   {
@@ -1978,7 +1978,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 74
   },
   {
@@ -2004,7 +2004,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 75
   },
   {
@@ -2030,13 +2030,13 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 76
   },
   {
     "ca_owner": "Belgium",
     "all_certs": 12003,
-    "unexpired_certs": 100,
+    "unexpired_certs": 99,
     "all_precerts": 0,
     "unexpired_precerts": 0,
     "market_share_pct": 0.0,
@@ -2059,7 +2059,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 77
   },
   {
@@ -2085,7 +2085,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 78,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: Sectigo."
@@ -2113,7 +2113,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 79
   },
   {
@@ -2139,7 +2139,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 80
   },
   {
@@ -2165,7 +2165,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 81
   },
   {
@@ -2191,7 +2191,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 82
   },
   {
@@ -2217,7 +2217,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 83
   },
   {
@@ -2243,7 +2243,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 84
   },
   {
@@ -2269,7 +2269,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 85
   },
   {
@@ -2295,7 +2295,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 86
   },
   {
@@ -2321,7 +2321,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 87
   },
   {
@@ -2347,7 +2347,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 88
   },
   {
@@ -2373,7 +2373,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 89
   },
   {
@@ -2399,7 +2399,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 90
   },
   {
@@ -2425,7 +2425,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 91
   },
   {
@@ -2451,7 +2451,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 92
   },
   {
@@ -2477,7 +2477,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 93
   },
   {
@@ -2503,7 +2503,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 94
   },
   {
@@ -2529,7 +2529,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 95
   },
   {
@@ -2558,7 +2558,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 96
   },
   {
@@ -2584,7 +2584,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 97
   },
   {
@@ -2610,7 +2610,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 98
   },
   {
@@ -2636,7 +2636,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 99
   },
   {
@@ -2662,7 +2662,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": true,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 100
   },
   {
@@ -2688,7 +2688,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 101
   },
   {
@@ -2714,7 +2714,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 102
   },
   {
@@ -2740,7 +2740,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 103
   },
   {
@@ -2766,7 +2766,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 104
   },
   {
@@ -2792,7 +2792,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 105
   },
   {
@@ -2818,7 +2818,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 106
   },
   {
@@ -2844,7 +2844,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 107
   },
   {
@@ -2870,7 +2870,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 108
   },
   {
@@ -2896,7 +2896,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 109
   },
   {
@@ -2922,7 +2922,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 110
   },
   {
@@ -2948,7 +2948,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 111
   },
   {
@@ -2977,7 +2977,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 112
   },
   {
@@ -3003,7 +3003,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 113
   },
   {
@@ -3032,7 +3032,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 114
   },
   {
@@ -3061,7 +3061,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 115
   },
   {
@@ -3090,7 +3090,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 116
   },
   {
@@ -3116,7 +3116,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 117
   },
   {
@@ -3142,7 +3142,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 118
   },
   {
@@ -3168,7 +3168,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 119
   },
   {
@@ -3194,7 +3194,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 120,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: DigiCert."
@@ -3222,7 +3222,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 121
   },
   {
@@ -3251,7 +3251,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 122
   },
   {
@@ -3277,7 +3277,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 123
   },
   {
@@ -3303,7 +3303,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 124
   },
   {
@@ -3329,7 +3329,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 125
   },
   {
@@ -3355,7 +3355,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 126
   },
   {
@@ -3381,7 +3381,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 127
   },
   {
@@ -3410,7 +3410,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 128
   },
   {
@@ -3436,7 +3436,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 129
   },
   {
@@ -3462,7 +3462,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 130
   },
   {
@@ -3488,7 +3488,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 131
   },
   {
@@ -3514,7 +3514,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 132
   },
   {
@@ -3543,7 +3543,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 133
   },
   {
@@ -3569,7 +3569,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 134
   },
   {
@@ -3595,7 +3595,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 135
   },
   {
@@ -3621,7 +3621,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 136
   },
   {
@@ -3650,7 +3650,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 137
   },
   {
@@ -3676,7 +3676,7 @@
     "ev_capable": true,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 138
   },
   {
@@ -3702,7 +3702,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 139,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: DigiCert."
@@ -3730,7 +3730,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 140
   },
   {
@@ -3756,7 +3756,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 141
   },
   {
@@ -3782,7 +3782,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 142
   },
   {
@@ -3808,7 +3808,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 143
   },
   {
@@ -3837,7 +3837,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 144
   },
   {
@@ -3863,7 +3863,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 145
   },
   {
@@ -3889,7 +3889,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 146
   },
   {
@@ -3915,7 +3915,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 147
   },
   {
@@ -3941,7 +3941,7 @@
     "ev_capable": true,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 148
   },
   {
@@ -3967,7 +3967,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 149
   },
   {
@@ -3993,7 +3993,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 150
   },
   {
@@ -4019,7 +4019,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 151
   },
   {
@@ -4045,7 +4045,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 152
   },
   {
@@ -4074,7 +4074,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 153
   },
   {
@@ -4100,7 +4100,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 154
   },
   {
@@ -4126,7 +4126,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 155
   },
   {
@@ -4155,7 +4155,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 156
   },
   {
@@ -4181,7 +4181,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 157
   },
   {
@@ -4207,7 +4207,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 158
   },
   {
@@ -4236,7 +4236,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 159
   },
   {
@@ -4265,7 +4265,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 160
   },
   {
@@ -4294,7 +4294,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 161
   },
   {
@@ -4320,7 +4320,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 162
   },
   {
@@ -4349,7 +4349,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 163
   },
   {
@@ -4375,7 +4375,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 164
   },
   {
@@ -4401,7 +4401,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 165
   },
   {
@@ -4427,7 +4427,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 166
   },
   {
@@ -4453,7 +4453,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 167
   },
   {
@@ -4479,7 +4479,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 168
   },
   {
@@ -4505,7 +4505,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 169
   },
   {
@@ -4531,7 +4531,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 170
   },
   {
@@ -4560,7 +4560,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 171
   },
   {
@@ -4586,7 +4586,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 172
   },
   {
@@ -4612,7 +4612,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 173
   },
   {
@@ -4638,7 +4638,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 174
   },
   {
@@ -4667,7 +4667,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 175
   },
   {
@@ -4693,7 +4693,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 176
   },
   {
@@ -4719,7 +4719,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 177
   },
   {
@@ -4748,7 +4748,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 178
   },
   {
@@ -4774,7 +4774,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 179
   },
   {
@@ -4800,7 +4800,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 180
   },
   {
@@ -4826,7 +4826,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 181
   },
   {
@@ -4852,7 +4852,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 182
   },
   {
@@ -4878,7 +4878,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 183
   },
   {
@@ -4904,7 +4904,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 184
   },
   {
@@ -4930,7 +4930,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 185
   },
   {
@@ -4956,7 +4956,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 186
   },
   {
@@ -4982,7 +4982,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 187
   },
   {
@@ -5008,7 +5008,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 188
   },
   {
@@ -5034,7 +5034,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 189
   },
   {
@@ -5060,7 +5060,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 190
   },
   {
@@ -5086,7 +5086,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 191
   },
   {
@@ -5115,7 +5115,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 192
   },
   {
@@ -5141,7 +5141,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 193
   },
   {
@@ -5167,7 +5167,7 @@
     "ev_capable": false,
     "smime_capable": true,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 194
   },
   {
@@ -5196,7 +5196,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 195
   },
   {
@@ -5222,7 +5222,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 196
   },
   {
@@ -5251,7 +5251,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 197
   },
   {
@@ -5280,7 +5280,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 198
   },
   {
@@ -5306,7 +5306,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 199
   },
   {
@@ -5332,7 +5332,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 200
   },
   {
@@ -5358,7 +5358,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 201
   },
   {
@@ -5387,7 +5387,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 202
   },
   {
@@ -5413,7 +5413,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 203
   },
   {
@@ -5439,7 +5439,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 204
   },
   {
@@ -5468,7 +5468,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 205
   },
   {
@@ -5494,7 +5494,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 206
   },
   {
@@ -5520,7 +5520,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 207
   },
   {
@@ -5546,7 +5546,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 208
   },
   {
@@ -5575,7 +5575,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 209
   },
   {
@@ -5604,7 +5604,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 210
   },
   {
@@ -5630,7 +5630,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 211
   },
   {
@@ -5656,7 +5656,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 212
   },
   {
@@ -5682,7 +5682,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 213
   },
   {
@@ -5708,7 +5708,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 214
   },
   {
@@ -5737,7 +5737,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 215
   },
   {
@@ -5763,7 +5763,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 216
   },
   {
@@ -5789,7 +5789,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 217
   },
   {
@@ -5815,7 +5815,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 218
   },
   {
@@ -5841,7 +5841,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 219
   },
   {
@@ -5867,7 +5867,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 220
   },
   {
@@ -5896,7 +5896,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 221
   },
   {
@@ -5925,7 +5925,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 222
   },
   {
@@ -5954,7 +5954,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 223
   },
   {
@@ -5983,7 +5983,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 224
   },
   {
@@ -6012,7 +6012,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 225
   },
   {
@@ -6041,7 +6041,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 226
   },
   {
@@ -6070,7 +6070,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 227
   },
   {
@@ -6096,7 +6096,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 228,
     "issuance_caveat": "undercounted_cross_sign",
     "attribution_note": "Volume may be undercounted. Cross-signed roots mean some certificates issued under Servi\u00e7o Federal de Processamento de Dados may be attributed to: Government of Brazil, Instituto Nacional de Tecnologia da Informa\u00e7\u00e3o (ITI)."
@@ -6127,7 +6127,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 229
   },
   {
@@ -6156,7 +6156,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 230
   },
   {
@@ -6185,7 +6185,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 231
   },
   {
@@ -6214,7 +6214,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 232
   },
   {
@@ -6243,7 +6243,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 233
   },
   {
@@ -6272,7 +6272,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 234
   },
   {
@@ -6301,7 +6301,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 235
   },
   {
@@ -6327,7 +6327,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 236,
     "issuance_caveat": "historical_cross_sign",
     "attribution_note": "All-time volume may be undercounted due to historical cross-signs (now expired) under: DigiCert."
@@ -6358,7 +6358,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 237
   },
   {
@@ -6387,7 +6387,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 238
   },
   {
@@ -6416,7 +6416,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 239
   },
   {
@@ -6445,7 +6445,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 240
   },
   {
@@ -6474,7 +6474,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 241
   },
   {
@@ -6503,7 +6503,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 242
   },
   {
@@ -6532,7 +6532,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 243
   },
   {
@@ -6561,7 +6561,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 244
   },
   {
@@ -6590,7 +6590,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 245
   },
   {
@@ -6619,7 +6619,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 246
   },
   {
@@ -6648,7 +6648,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 247
   },
   {
@@ -6677,7 +6677,7 @@
     "ev_capable": false,
     "smime_capable": false,
     "code_signing_capable": false,
-    "cumulative_pct": 99.9994,
+    "cumulative_pct": 99.9996,
     "rank": 248
   }
 ]

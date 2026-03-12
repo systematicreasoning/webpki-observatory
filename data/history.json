@@ -2872,6 +2872,566 @@
         }
       },
       "gov_classified": 24
+    },
+    {
+      "date": "2026-03-12",
+      "generated_at": "2026-03-12T06:41:46.770009+00:00",
+      "crtsh_available": true,
+      "total_unexpired": 1288226368,
+      "active_ca_count": 97,
+      "top10": [
+        {
+          "ca": "Internet Security Research Group",
+          "pct": 40.2507
+        },
+        {
+          "ca": "Google Trust Services LLC",
+          "pct": 16.5266
+        },
+        {
+          "ca": "DigiCert",
+          "pct": 13.6901
+        },
+        {
+          "ca": "GoDaddy",
+          "pct": 12.9279
+        },
+        {
+          "ca": "Sectigo",
+          "pct": 10.4103
+        },
+        {
+          "ca": "Microsoft Corporation",
+          "pct": 4.6336
+        },
+        {
+          "ca": "IdenTrust Services, LLC",
+          "pct": 1.0001
+        },
+        {
+          "ca": "SSL.com",
+          "pct": 0.1318
+        },
+        {
+          "ca": "GlobalSign nv-sa",
+          "pct": 0.1239
+        },
+        {
+          "ca": "Actalis",
+          "pct": 0.1165
+        }
+      ],
+      "ca_certs": [
+        {
+          "id": "internet-security-research-gro",
+          "v": 518520162,
+          "at": 0
+        },
+        {
+          "id": "google-trust-services-llc",
+          "v": 212900056,
+          "at": 0
+        },
+        {
+          "id": "digicert",
+          "v": 176359376,
+          "at": 0
+        },
+        {
+          "id": "godaddy",
+          "v": 166540285,
+          "at": 0
+        },
+        {
+          "id": "sectigo",
+          "v": 134108118,
+          "at": 0
+        },
+        {
+          "id": "microsoft-corporation",
+          "v": 59691516,
+          "at": 0
+        },
+        {
+          "id": "identrust-services,-llc",
+          "v": 12883126,
+          "at": 0
+        },
+        {
+          "id": "ssl.com",
+          "v": 1697526,
+          "at": 0
+        },
+        {
+          "id": "globalsign-nv-sa",
+          "v": 1595732,
+          "at": 0
+        },
+        {
+          "id": "actalis",
+          "v": 1501389,
+          "at": 0
+        },
+        {
+          "id": "asseco-data-systems-s.a.",
+          "v": 668418,
+          "at": 0
+        },
+        {
+          "id": "harica",
+          "v": 514956,
+          "at": 0
+        },
+        {
+          "id": "trustasia-technologies,-inc.",
+          "v": 273504,
+          "at": 0
+        },
+        {
+          "id": "amazon-trust-services",
+          "v": 222288,
+          "at": 0
+        },
+        {
+          "id": "certainly-llc",
+          "v": 86589,
+          "at": 0
+        },
+        {
+          "id": "taiwan-ca-inc.-(twca)",
+          "v": 62660,
+          "at": 0
+        },
+        {
+          "id": "d-trust",
+          "v": 49749,
+          "at": 0
+        },
+        {
+          "id": "swisssign-ag",
+          "v": 45523,
+          "at": 0
+        },
+        {
+          "id": "secom-trust-systems-co.,-ltd.",
+          "v": 44138,
+          "at": 0
+        },
+        {
+          "id": "cybertrust-japan-co.,-ltd.",
+          "v": 35640,
+          "at": 0
+        },
+        {
+          "id": "telia-company",
+          "v": 35385,
+          "at": 0
+        },
+        {
+          "id": "shanghai-electronic-certificat",
+          "v": 32039,
+          "at": 0
+        },
+        {
+          "id": "deutsche-telekom-security-gmbh",
+          "v": 20810,
+          "at": 0
+        },
+        {
+          "id": "naver-cloud-trust-services",
+          "v": 18258,
+          "at": 0
+        },
+        {
+          "id": "buypass",
+          "v": 14825,
+          "at": 0
+        },
+        {
+          "id": "emudhra-technologies-limited",
+          "v": 8671,
+          "at": 0
+        },
+        {
+          "id": "chunghwa-telecom",
+          "v": 8558,
+          "at": 0
+        },
+        {
+          "id": "china-financial-certification-",
+          "v": 5657,
+          "at": 0
+        },
+        {
+          "id": "certsign",
+          "v": 4242,
+          "at": 0
+        },
+        {
+          "id": "certigna",
+          "v": 4215,
+          "at": 0
+        },
+        {
+          "id": "viking-cloud,-inc.",
+          "v": 3034,
+          "at": 0
+        },
+        {
+          "id": "government-of-hong-kong-(sar),",
+          "v": 2931,
+          "at": 0
+        },
+        {
+          "id": "government-of-spain,-f\u00e1brica-n",
+          "v": 2861,
+          "at": 0
+        },
+        {
+          "id": "microsec-ltd.",
+          "v": 2792,
+          "at": 0
+        },
+        {
+          "id": "wisekey",
+          "v": 2729,
+          "at": 0
+        },
+        {
+          "id": "government-of-spain,-autoritat",
+          "v": 2644,
+          "at": 0
+        },
+        {
+          "id": "government-of-finland,-populat",
+          "v": 2615,
+          "at": 0
+        },
+        {
+          "id": "oiste",
+          "v": 2536,
+          "at": 0
+        },
+        {
+          "id": "open-access-technology-interna",
+          "v": 2369,
+          "at": 0
+        },
+        {
+          "id": "autoridad-de-certificacion-fir",
+          "v": 1872,
+          "at": 0
+        },
+        {
+          "id": "izenpe-s.a.",
+          "v": 1593,
+          "at": 0
+        },
+        {
+          "id": "eviden",
+          "v": 1450,
+          "at": 0
+        },
+        {
+          "id": "postsignum",
+          "v": 998,
+          "at": 0
+        },
+        {
+          "id": "global-digital-cybersecurity-a",
+          "v": 502,
+          "at": 0
+        },
+        {
+          "id": "government-of-brazil,-institut",
+          "v": 490,
+          "at": 0
+        },
+        {
+          "id": "krajowa-izba-rozliczeniowa-s.a",
+          "v": 433,
+          "at": 0
+        },
+        {
+          "id": "prvn\u00ed-certifika\u010dn\u00ed-autorita,-a",
+          "v": 379,
+          "at": 0
+        },
+        {
+          "id": "disig,-a.s.",
+          "v": 365,
+          "at": 0
+        },
+        {
+          "id": "financijska-agencija-(fina)",
+          "v": 349,
+          "at": 0
+        },
+        {
+          "id": "government-of-korea,-klid",
+          "v": 266,
+          "at": 0
+        },
+        {
+          "id": "government-of-india,-ministry-",
+          "v": 155,
+          "at": 0
+        },
+        {
+          "id": "netlock",
+          "v": 155,
+          "at": 0
+        },
+        {
+          "id": "government-of-turkey,-kamu-ser",
+          "v": 155,
+          "at": 0
+        },
+        {
+          "id": "a-trust",
+          "v": 143,
+          "at": 0
+        },
+        {
+          "id": "agence-nationale-de-certificat",
+          "v": 76,
+          "at": 0
+        },
+        {
+          "id": "visa",
+          "v": 53,
+          "at": 0
+        },
+        {
+          "id": "edicom",
+          "v": 45,
+          "at": 0
+        },
+        {
+          "id": "beijing-certificate-authority-",
+          "v": 16,
+          "at": 0
+        },
+        {
+          "id": "itruschina-co.,-ltd.",
+          "v": 11,
+          "at": 0
+        },
+        {
+          "id": "e-commerce-monitoring-gmbh",
+          "v": 8,
+          "at": 0
+        },
+        {
+          "id": "autoridad-de-certificaci\u00f3n-(an",
+          "v": 8,
+          "at": 0
+        },
+        {
+          "id": "entrust",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "verizon-terremark-nv",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "verizon",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "ac-camerfirma,-s.a.",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "quovadis-trustlink-b.v.",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "t-systems-international-gmbh",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "siemens-ag",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "consorci-administraci\u00f3-oberta-",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "multicert",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "swiss-bit,-swiss-federal-offic",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "government-of-the-netherlands,",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "si-trust",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "docaposte-certinomis-sas",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "quo-vadis-trustlink-b.v.",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "cybertrust-japan-/-jcsi",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "government-of-japan,-digital-a",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "agencia-notarial-de-certificac",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "trustis",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "halcom-d.d.",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "consejo-general-de-la-abogac\u00eda",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "comsign",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "netrust-pte-ltd",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "skaitmeninio-sertifikavimo-cen",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "government-of-sweden-(f\u00f6rs\u00e4kri",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "department-of-defence-australi",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "carillon-information-security-",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "macao-post-and-telecommunicati",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "trustfactory(pty)ltd",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "lawtrust",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "zetes",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "byte-computer-s.a.",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "digitalsign---certificadora-di",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "thailand-national-root-certifi",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "notarius",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "government-of-saudi-arabia,-ni",
+          "v": 0,
+          "at": 0
+        },
+        {
+          "id": "image-x-enterprises-inc",
+          "v": 0,
+          "at": 0
+        }
+      ],
+      "hhi": 2379,
+      "roots_all4": 90,
+      "owners_all4": 38,
+      "total_roots": 335,
+      "total_active_owners": 89,
+      "per_store": {
+        "Mozilla": {
+          "roots": 181,
+          "owners": 53
+        },
+        "Microsoft": {
+          "roots": 310,
+          "owners": 84
+        },
+        "Chrome": {
+          "roots": 116,
+          "owners": 46
+        },
+        "Apple": {
+          "roots": 140,
+          "owners": 40
+        }
+      },
+      "gov_classified": 24
     }
   ]
 }

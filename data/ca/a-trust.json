@@ -93,22 +93,6 @@
     },
     {
       "name": "A-Trust-Qual-02",
-      "sha256": "F28630BABF256E567B5821069FCF13148AB9A23E28FC0D70615AAE6ED284F4C8",
-      "mozilla_status": "Not Yet Included",
-      "microsoft_status": "Disabled",
-      "chrome_status": "Not Included",
-      "apple_status": "Not Included",
-      "valid_from": "2014.07.01",
-      "valid_to": "2024.07.01",
-      "tls_capable": false,
-      "ev_capable": false,
-      "smime_capable": false,
-      "code_signing_capable": false,
-      "trust_bits": "",
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIDyzCCArOgAwIBAgIDFE3kMA0GCSqGSIb3DQEBBQUAMIGLMQswCQYDVQQGEwJB\nVDFIMEYGA1UECgw/QS1UcnVzdCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBp\nbSBlbGVrdHIuIERhdGVudmVya2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1\nYWwtMDIxGDAWBgNVBAMMD0EtVHJ1c3QtUXVhbC0wMjAeFw0xNDA3MDExMTIzMzNa\nFw0yNDA3MDEwOTIzMzNaMIGLMQswCQYDVQQGEwJBVDFIMEYGA1UECgw/QS1UcnVz\ndCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBpbSBlbGVrdHIuIERhdGVudmVy\na2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1YWwtMDIxGDAWBgNVBAMMD0Et\nVHJ1c3QtUXVhbC0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJaR\nq9eOsFm4Ab20Hq2Z/aH86gyWa48uSUjY6eQkguHYuszr3gdcSMYZggFHQgnhfLmf\nro/27l5rqKhWiDhWs+b+yZ1PNDhRPJy+86ycHMg9XJqErveULBSyZDdgjhSwOyrN\nibUir/fkf+4sKzP5jjytTKJXD/uCxY4fAd9TjMEVpN3umpIS0ijpYhclYDHvzzGU\n833z5Dwhq5D8bc9jp8YSAHFJ1xzIoO1jmn3jjyjdYPnY5harJtHQL73nDQnfbtTs\n5ThT9GQLulrMgLU4WeyAWWWEMWpfVZFMJOUkmoOEer6A8e5fIAeqdxdsC+JVqpZ4\nCAKel/Arrlj1gFA//jsCAwEAAaM2MDQwDwYDVR0TAQH/BAUwAwEB/zARBgNVHQ4E\nCgQIQj0rJKbBRc4wDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBBQUAA4IBAQBh\nMfOINQm4XpzF6DmkOmb/ArSXHf5LObqFmIMooNr2TkyzrUTK/NE+mdrm15Rfdts7\nkZVq/ICfQSFeaPvWaAVq4plH/26OjvMTVv7DfgfPBUxDWqlCuDnDnPAVQ+yo/o5i\nBA5uUlMbp5znbDtlxwF/5gWqcn/hKxSUCP1uiOPIlKfeVvsRmBcJAdoixTM/Ic10\npavJMGOI20onArvQZAUEbXQLA8cs8naxfF6Bo36U9nk6wn7q8VPXhViekByd17F6\n9A+ah0Iqw4SPf9BqNRIe1YxxjDhCmjWt3aoyE3ZFBuGjW+r2ipb/vGU1+2oyy2Fd\n2dMmiMQ7gGhWX9X6gWLd\n-----END CERTIFICATE-----"
-    },
-    {
-      "name": "A-Trust-Qual-02",
       "sha256": "75C9D4361CB96E993ABD9620CF043BE9407A4633F202F0F4C0E17851CC6089CD",
       "mozilla_status": "Not Yet Included",
       "microsoft_status": "Removed",
@@ -122,6 +106,22 @@
       "code_signing_capable": false,
       "trust_bits": "",
       "pem": "-----BEGIN CERTIFICATE-----\nMIIDyzCCArOgAwIBAgIDAOJIMA0GCSqGSIb3DQEBBQUAMIGLMQswCQYDVQQGEwJB\nVDFIMEYGA1UECgw/QS1UcnVzdCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBp\nbSBlbGVrdHIuIERhdGVudmVya2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1\nYWwtMDIxGDAWBgNVBAMMD0EtVHJ1c3QtUXVhbC0wMjAeFw0wNDEyMDIyMzAwMDBa\nFw0xNDEyMDIyMzAwMDBaMIGLMQswCQYDVQQGEwJBVDFIMEYGA1UECgw/QS1UcnVz\ndCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBpbSBlbGVrdHIuIERhdGVudmVy\na2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1YWwtMDIxGDAWBgNVBAMMD0Et\nVHJ1c3QtUXVhbC0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJaR\nq9eOsFm4Ab20Hq2Z/aH86gyWa48uSUjY6eQkguHYuszr3gdcSMYZggFHQgnhfLmf\nro/27l5rqKhWiDhWs+b+yZ1PNDhRPJy+86ycHMg9XJqErveULBSyZDdgjhSwOyrN\nibUir/fkf+4sKzP5jjytTKJXD/uCxY4fAd9TjMEVpN3umpIS0ijpYhclYDHvzzGU\n833z5Dwhq5D8bc9jp8YSAHFJ1xzIoO1jmn3jjyjdYPnY5harJtHQL73nDQnfbtTs\n5ThT9GQLulrMgLU4WeyAWWWEMWpfVZFMJOUkmoOEer6A8e5fIAeqdxdsC+JVqpZ4\nCAKel/Arrlj1gFA//jsCAwEAAaM2MDQwDwYDVR0TAQH/BAUwAwEB/zARBgNVHQ4E\nCgQIQj0rJKbBRc4wDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBBQUAA4IBAQBG\nyxFjUA2bPkXUSC2SfJ29tmrbiLKal+g6a9M8Xwd+Ejo+oYkNP6F4GfeDtAXpm7xb\n9Ly8lhdbHcpRhzCUQHJ1tBCiGdLgmhSx7TXjhhanKOdDgkdsC1T+++piuuYL72TD\ngUy2Sb1GHlJ1Nc6rvB4fpxSDAOHqGpUq9LWsc3tFkXqRqmQVtqtR77npKIFBioc6\n2jTBwDMPX3hDJDR1DSPc6BnZliaNw2IHdiMQ0mBoYeRnFdq+TyDKsjmJOOQPLzzL\n/saaw6F891+gBjLFEFquDyR73lAPJS279R3csi8WWk4ZYUC/1V8H3Ktip/J6ac8e\nqhLCbmJ81Lo92JGHz/ot\n-----END CERTIFICATE-----"
+    },
+    {
+      "name": "A-Trust-Qual-02",
+      "sha256": "F28630BABF256E567B5821069FCF13148AB9A23E28FC0D70615AAE6ED284F4C8",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Disabled",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
+      "valid_from": "2014.07.01",
+      "valid_to": "2024.07.01",
+      "tls_capable": false,
+      "ev_capable": false,
+      "smime_capable": false,
+      "code_signing_capable": false,
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIDyzCCArOgAwIBAgIDFE3kMA0GCSqGSIb3DQEBBQUAMIGLMQswCQYDVQQGEwJB\nVDFIMEYGA1UECgw/QS1UcnVzdCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBp\nbSBlbGVrdHIuIERhdGVudmVya2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1\nYWwtMDIxGDAWBgNVBAMMD0EtVHJ1c3QtUXVhbC0wMjAeFw0xNDA3MDExMTIzMzNa\nFw0yNDA3MDEwOTIzMzNaMIGLMQswCQYDVQQGEwJBVDFIMEYGA1UECgw/QS1UcnVz\ndCBHZXMuIGYuIFNpY2hlcmhlaXRzc3lzdGVtZSBpbSBlbGVrdHIuIERhdGVudmVy\na2VociBHbWJIMRgwFgYDVQQLDA9BLVRydXN0LVF1YWwtMDIxGDAWBgNVBAMMD0Et\nVHJ1c3QtUXVhbC0wMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJaR\nq9eOsFm4Ab20Hq2Z/aH86gyWa48uSUjY6eQkguHYuszr3gdcSMYZggFHQgnhfLmf\nro/27l5rqKhWiDhWs+b+yZ1PNDhRPJy+86ycHMg9XJqErveULBSyZDdgjhSwOyrN\nibUir/fkf+4sKzP5jjytTKJXD/uCxY4fAd9TjMEVpN3umpIS0ijpYhclYDHvzzGU\n833z5Dwhq5D8bc9jp8YSAHFJ1xzIoO1jmn3jjyjdYPnY5harJtHQL73nDQnfbtTs\n5ThT9GQLulrMgLU4WeyAWWWEMWpfVZFMJOUkmoOEer6A8e5fIAeqdxdsC+JVqpZ4\nCAKel/Arrlj1gFA//jsCAwEAAaM2MDQwDwYDVR0TAQH/BAUwAwEB/zARBgNVHQ4E\nCgQIQj0rJKbBRc4wDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBBQUAA4IBAQBh\nMfOINQm4XpzF6DmkOmb/ArSXHf5LObqFmIMooNr2TkyzrUTK/NE+mdrm15Rfdts7\nkZVq/ICfQSFeaPvWaAVq4plH/26OjvMTVv7DfgfPBUxDWqlCuDnDnPAVQ+yo/o5i\nBA5uUlMbp5znbDtlxwF/5gWqcn/hKxSUCP1uiOPIlKfeVvsRmBcJAdoixTM/Ic10\npavJMGOI20onArvQZAUEbXQLA8cs8naxfF6Bo36U9nk6wn7q8VPXhViekByd17F6\n9A+ah0Iqw4SPf9BqNRIe1YxxjDhCmjWt3aoyE3ZFBuGjW+r2ipb/vGU1+2oyy2Fd\n2dMmiMQ7gGhWX9X6gWLd\n-----END CERTIFICATE-----"
     },
     {
       "name": "A-Trust-Qual-03",
