@@ -13,19 +13,19 @@
   "roots": [
     {
       "name": "AC RAIZ FNMT-RCM",
-      "sha256": "EBC5570C29018C4D67B1AA127BAF12F703B4611EBC17B7DAB5573894179B93FA",
-      "mozilla_status": "Included",
-      "microsoft_status": "Included",
-      "chrome_status": "Included",
-      "apple_status": "Included",
+      "sha256": "B82210CDE9DDEA0E14BE29AF647E4B32F96ED2A9EF1AA5BAA9CC64B38B6C01CA",
+      "mozilla_status": "Not Yet Included",
+      "microsoft_status": "Not Included",
+      "chrome_status": "Not Included",
+      "apple_status": "Not Included",
       "valid_from": "2008.10.29",
       "valid_to": "2030.01.01",
-      "tls_capable": true,
+      "tls_capable": false,
       "ev_capable": false,
-      "smime_capable": true,
+      "smime_capable": false,
       "code_signing_capable": false,
-      "trust_bits": "",
-      "pem": "-----BEGIN CERTIFICATE-----\nMIIFgzCCA2ugAwIBAgIPXZONMGc2yAYdGsdUhGkHMA0GCSqGSIb3DQEBCwUAMDsx\nCzAJBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJ\nWiBGTk1ULVJDTTAeFw0wODEwMjkxNTU5NTZaFw0zMDAxMDEwMDAwMDBaMDsxCzAJ\nBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJWiBG\nTk1ULVJDTTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALpxgHpMhm5/\nyBNtwMZ9HACXjywMI7sQmkCpGreHiPibVmr75nuOi5KOpyVdWRHbNi63URcfqQgf\nBBckWKo3Shjf5TnUV/3XwSyRAZHiItQDwFj8d0fsjz50Q7qsNI1NOHZnjrDIbzAz\nWHFctPVrbtQBULgTfmxKo0nRIBnuvMApGGWn3v7v3QqQIecaZ5JCEJhfTzC8PhxF\ntBDXaEAUwED653cXeuYLj2VbPNmaUtu1vZ5Gzz3rkQUCwJaydkxNEJY7kvqcfw+Z\n374jNUUeAlz+taibmSXaXvMiwzn15Cou08YfxGyqxRxqAQVKL9LFwag0Jl1mpdIC\nIfkYtwb1TplvqKtMUejPUBjFd8g5CSxJkjKZqLsXF3mwWsXmo8RZZUc1g16p6DUL\nmbvkzSDGm0oGObVo/CK67lWMK07q87Hj/LaZmtVC+nFNCM+HHmpxffnTtOmlcYF7\nwk5HlqX2doWjKI/pgG6BU6VtX7hI+cL5NqYuSf+4lsKMB7ObiFj86xsc3i1w4peS\nMKGJ47xVqCfWS+2QrYv6YyVZLag13cqXM7zlzced0ezvXg5KkAYmY6252TUtB7p2\nZSysV4999AeU14ECll2jB0nVetBX+RvnU0Z1qrB5QstocQjpYL05ac70r8NWQMet\nUqIJ5G+GR4of6ygnXYMgrwTJbFaai0b1AgMBAAGjgYMwgYAwDwYDVR0TAQH/BAUw\nAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFPd9xf3E6Jobd2Sn9R2gzL+H\nYJptMD4GA1UdIAQ3MDUwMwYEVR0gADArMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3\nLmNlcnQuZm5tdC5lcy9kcGNzLzANBgkqhkiG9w0BAQsFAAOCAgEAB5BK3/MjTvDD\nnFFlm5wioooMhfNzKWtN/gHiqQxjAb8EZ6WdmF/9ARP67Jpi6Yb+tmLSbkyU+8B1\nRXxlDPiyN8+sD8+Nb/kZ94/sHvJwnvDKuO+3/3Y3dlv2bojzr2IyIpMNOmqOFGYM\nLVN0V2Ue1bLdI4E7pWYjJ2cJj+F3qkPNZVEI7VFY/uY5+ctHhKQV8Xa7pO6kO8Rf\n77IzlhEYt8llvhjho6Tc+hj507wTmzl6NLrTQfv6MooqtyuGC2mDOL7Nii4LcK2N\nJpLuHvUBKwrZ1pebbuCoGRw6IYsMHkCtA+fdZn71uSANA+iW+YJF1DngoABd15jm\nfZ5nc8OaKveri6E6FO80vFIOiZiaBECEHX5FaZNXzuvO+FB8TxxuBEOb+dY7Ixjp\n6o7RTUaN8Tvkasq6+yO3m/qZASlaWFot4/nUbQ4mrcFuNLwy+AwF+mWj2zs3gyLp\n1txyM/1d8iC9djwj2ij3+RvrWWTV3F9yfiD8zYm1kGdNYno/Tq0dwzn+evQoFt9B\n9kiABdcPUXmsEKvU7ANm5mqwujGSQkBqvjrTcuFqN1W8rB2Vt2lh8kORdOag0wok\nRqEIr9baRRmW1FMdW4R58MD3R++Lj8UGrp1MYp3/RgT408m2ECVAdf4WqslKYIYv\nuu8wd+RU4riEmViAqhOLUTpPSPaLtrM=\n-----END CERTIFICATE-----"
+      "trust_bits": "Client Authentication;Document Signing;Secure Email;Server Authentication;Time Stamping",
+      "pem": "-----BEGIN CERTIFICATE-----\r\nMIIFgzCCA2ugAwIBAgIPDhzYzUUyWkcAUQyqwtseMA0GCSqGSIb3DQEBDQUAMDsx\r\nCzAJBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJ\r\nWiBGTk1ULVJDTTAeFw0wODEwMjkxNTU5NTZaFw0zMDAxMDEwMDAwMDBaMDsxCzAJ\r\nBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJWiBG\r\nTk1ULVJDTTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALpxgHpMhm5/\r\nyBNtwMZ9HACXjywMI7sQmkCpGreHiPibVmr75nuOi5KOpyVdWRHbNi63URcfqQgf\r\nBBckWKo3Shjf5TnUV/3XwSyRAZHiItQDwFj8d0fsjz50Q7qsNI1NOHZnjrDIbzAz\r\nWHFctPVrbtQBULgTfmxKo0nRIBnuvMApGGWn3v7v3QqQIecaZ5JCEJhfTzC8PhxF\r\ntBDXaEAUwED653cXeuYLj2VbPNmaUtu1vZ5Gzz3rkQUCwJaydkxNEJY7kvqcfw+Z\r\n374jNUUeAlz+taibmSXaXvMiwzn15Cou08YfxGyqxRxqAQVKL9LFwag0Jl1mpdIC\r\nIfkYtwb1TplvqKtMUejPUBjFd8g5CSxJkjKZqLsXF3mwWsXmo8RZZUc1g16p6DUL\r\nmbvkzSDGm0oGObVo/CK67lWMK07q87Hj/LaZmtVC+nFNCM+HHmpxffnTtOmlcYF7\r\nwk5HlqX2doWjKI/pgG6BU6VtX7hI+cL5NqYuSf+4lsKMB7ObiFj86xsc3i1w4peS\r\nMKGJ47xVqCfWS+2QrYv6YyVZLag13cqXM7zlzced0ezvXg5KkAYmY6252TUtB7p2\r\nZSysV4999AeU14ECll2jB0nVetBX+RvnU0Z1qrB5QstocQjpYL05ac70r8NWQMet\r\nUqIJ5G+GR4of6ygnXYMgrwTJbFaai0b1AgMBAAGjgYMwgYAwDwYDVR0TAQH/BAUw\r\nAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFPd9xf3E6Jobd2Sn9R2gzL+H\r\nYJptMD4GA1UdIAQ3MDUwMwYEVR0gADArMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3\r\nLmNlcnQuZm5tdC5lcy9kcGNzLzANBgkqhkiG9w0BAQ0FAAOCAgEAA6kGfD2AupaI\r\nv2NYWHer7JvK92qJbn9UhdwED4wvjJ4AfBiGXys7JAP4dfjxUjCHo+siH5mNPrvq\r\ngZBF/fxLngMO8D2wQKS2M4N4IzaML4u8nR0fA97caXfR4kD+NzQr5KgKfGR4AJiQ\r\nfHPgDPttGmpyPST21rdoJHo4rx78uFVkAoAnPuCfU9IWDoCMp7i0gNtD90C1dRsj\r\nnHgiv3U1Lsga9lAaYuDRefPgdppm1oVyrNyjyxQtDNnERdpV4xTYuzW21gSPrGrH\r\n1hEvd9dKQN1ZAqnaZ+GwIeV+l3+J0vPv5mED0VwMUAHwg4euAS7dMO9GhciRvN0z\r\nC9wjX1//IerBy4TqALVSfv17PHk5d+WtuImsyZvX0ZjhC9VGk/pGQDn+XVkizcpe\r\n/ZAbzpBQj7jY+D7N7rpwxmOswwXSz8g9v0agQ+hvBRqF/zuMkMJB8Z9kB/pSuMQG\r\nBEOl7zbbA+PtutS8+Zb+A4uDNmKx2AJqflBwySzpskpK6lvX503hJbcct6BQfBLE\r\nzHMKWPxBag4AKlqB4N+hIV7/UuCfm6WssH/JWFsfvSJg30r5mGVJ1LeQ1TquDrMA\r\nhJoeio0BGz+Ph/knnebw5ojiXF9ZaVu659DKpUGzwZbkbTskdZMJM01YNFwzqk+m\r\ngC3AQfs2sTc9RSk4TP2sxl83jmWuBt0=\r\n-----END CERTIFICATE-----"
     },
     {
       "name": "AC RAIZ FNMT-RCM",
@@ -45,19 +45,19 @@
     },
     {
       "name": "AC RAIZ FNMT-RCM",
-      "sha256": "B82210CDE9DDEA0E14BE29AF647E4B32F96ED2A9EF1AA5BAA9CC64B38B6C01CA",
-      "mozilla_status": "Not Yet Included",
-      "microsoft_status": "Not Included",
-      "chrome_status": "Not Included",
-      "apple_status": "Not Included",
+      "sha256": "EBC5570C29018C4D67B1AA127BAF12F703B4611EBC17B7DAB5573894179B93FA",
+      "mozilla_status": "Included",
+      "microsoft_status": "Included",
+      "chrome_status": "Included",
+      "apple_status": "Included",
       "valid_from": "2008.10.29",
       "valid_to": "2030.01.01",
-      "tls_capable": false,
+      "tls_capable": true,
       "ev_capable": false,
-      "smime_capable": false,
+      "smime_capable": true,
       "code_signing_capable": false,
-      "trust_bits": "Client Authentication;Document Signing;Secure Email;Server Authentication;Time Stamping",
-      "pem": "-----BEGIN CERTIFICATE-----\r\nMIIFgzCCA2ugAwIBAgIPDhzYzUUyWkcAUQyqwtseMA0GCSqGSIb3DQEBDQUAMDsx\r\nCzAJBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJ\r\nWiBGTk1ULVJDTTAeFw0wODEwMjkxNTU5NTZaFw0zMDAxMDEwMDAwMDBaMDsxCzAJ\r\nBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJWiBG\r\nTk1ULVJDTTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALpxgHpMhm5/\r\nyBNtwMZ9HACXjywMI7sQmkCpGreHiPibVmr75nuOi5KOpyVdWRHbNi63URcfqQgf\r\nBBckWKo3Shjf5TnUV/3XwSyRAZHiItQDwFj8d0fsjz50Q7qsNI1NOHZnjrDIbzAz\r\nWHFctPVrbtQBULgTfmxKo0nRIBnuvMApGGWn3v7v3QqQIecaZ5JCEJhfTzC8PhxF\r\ntBDXaEAUwED653cXeuYLj2VbPNmaUtu1vZ5Gzz3rkQUCwJaydkxNEJY7kvqcfw+Z\r\n374jNUUeAlz+taibmSXaXvMiwzn15Cou08YfxGyqxRxqAQVKL9LFwag0Jl1mpdIC\r\nIfkYtwb1TplvqKtMUejPUBjFd8g5CSxJkjKZqLsXF3mwWsXmo8RZZUc1g16p6DUL\r\nmbvkzSDGm0oGObVo/CK67lWMK07q87Hj/LaZmtVC+nFNCM+HHmpxffnTtOmlcYF7\r\nwk5HlqX2doWjKI/pgG6BU6VtX7hI+cL5NqYuSf+4lsKMB7ObiFj86xsc3i1w4peS\r\nMKGJ47xVqCfWS+2QrYv6YyVZLag13cqXM7zlzced0ezvXg5KkAYmY6252TUtB7p2\r\nZSysV4999AeU14ECll2jB0nVetBX+RvnU0Z1qrB5QstocQjpYL05ac70r8NWQMet\r\nUqIJ5G+GR4of6ygnXYMgrwTJbFaai0b1AgMBAAGjgYMwgYAwDwYDVR0TAQH/BAUw\r\nAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFPd9xf3E6Jobd2Sn9R2gzL+H\r\nYJptMD4GA1UdIAQ3MDUwMwYEVR0gADArMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3\r\nLmNlcnQuZm5tdC5lcy9kcGNzLzANBgkqhkiG9w0BAQ0FAAOCAgEAA6kGfD2AupaI\r\nv2NYWHer7JvK92qJbn9UhdwED4wvjJ4AfBiGXys7JAP4dfjxUjCHo+siH5mNPrvq\r\ngZBF/fxLngMO8D2wQKS2M4N4IzaML4u8nR0fA97caXfR4kD+NzQr5KgKfGR4AJiQ\r\nfHPgDPttGmpyPST21rdoJHo4rx78uFVkAoAnPuCfU9IWDoCMp7i0gNtD90C1dRsj\r\nnHgiv3U1Lsga9lAaYuDRefPgdppm1oVyrNyjyxQtDNnERdpV4xTYuzW21gSPrGrH\r\n1hEvd9dKQN1ZAqnaZ+GwIeV+l3+J0vPv5mED0VwMUAHwg4euAS7dMO9GhciRvN0z\r\nC9wjX1//IerBy4TqALVSfv17PHk5d+WtuImsyZvX0ZjhC9VGk/pGQDn+XVkizcpe\r\n/ZAbzpBQj7jY+D7N7rpwxmOswwXSz8g9v0agQ+hvBRqF/zuMkMJB8Z9kB/pSuMQG\r\nBEOl7zbbA+PtutS8+Zb+A4uDNmKx2AJqflBwySzpskpK6lvX503hJbcct6BQfBLE\r\nzHMKWPxBag4AKlqB4N+hIV7/UuCfm6WssH/JWFsfvSJg30r5mGVJ1LeQ1TquDrMA\r\nhJoeio0BGz+Ph/knnebw5ojiXF9ZaVu659DKpUGzwZbkbTskdZMJM01YNFwzqk+m\r\ngC3AQfs2sTc9RSk4TP2sxl83jmWuBt0=\r\n-----END CERTIFICATE-----"
+      "trust_bits": "",
+      "pem": "-----BEGIN CERTIFICATE-----\nMIIFgzCCA2ugAwIBAgIPXZONMGc2yAYdGsdUhGkHMA0GCSqGSIb3DQEBCwUAMDsx\nCzAJBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJ\nWiBGTk1ULVJDTTAeFw0wODEwMjkxNTU5NTZaFw0zMDAxMDEwMDAwMDBaMDsxCzAJ\nBgNVBAYTAkVTMREwDwYDVQQKDAhGTk1ULVJDTTEZMBcGA1UECwwQQUMgUkFJWiBG\nTk1ULVJDTTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBALpxgHpMhm5/\nyBNtwMZ9HACXjywMI7sQmkCpGreHiPibVmr75nuOi5KOpyVdWRHbNi63URcfqQgf\nBBckWKo3Shjf5TnUV/3XwSyRAZHiItQDwFj8d0fsjz50Q7qsNI1NOHZnjrDIbzAz\nWHFctPVrbtQBULgTfmxKo0nRIBnuvMApGGWn3v7v3QqQIecaZ5JCEJhfTzC8PhxF\ntBDXaEAUwED653cXeuYLj2VbPNmaUtu1vZ5Gzz3rkQUCwJaydkxNEJY7kvqcfw+Z\n374jNUUeAlz+taibmSXaXvMiwzn15Cou08YfxGyqxRxqAQVKL9LFwag0Jl1mpdIC\nIfkYtwb1TplvqKtMUejPUBjFd8g5CSxJkjKZqLsXF3mwWsXmo8RZZUc1g16p6DUL\nmbvkzSDGm0oGObVo/CK67lWMK07q87Hj/LaZmtVC+nFNCM+HHmpxffnTtOmlcYF7\nwk5HlqX2doWjKI/pgG6BU6VtX7hI+cL5NqYuSf+4lsKMB7ObiFj86xsc3i1w4peS\nMKGJ47xVqCfWS+2QrYv6YyVZLag13cqXM7zlzced0ezvXg5KkAYmY6252TUtB7p2\nZSysV4999AeU14ECll2jB0nVetBX+RvnU0Z1qrB5QstocQjpYL05ac70r8NWQMet\nUqIJ5G+GR4of6ygnXYMgrwTJbFaai0b1AgMBAAGjgYMwgYAwDwYDVR0TAQH/BAUw\nAwEB/zAOBgNVHQ8BAf8EBAMCAQYwHQYDVR0OBBYEFPd9xf3E6Jobd2Sn9R2gzL+H\nYJptMD4GA1UdIAQ3MDUwMwYEVR0gADArMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3\nLmNlcnQuZm5tdC5lcy9kcGNzLzANBgkqhkiG9w0BAQsFAAOCAgEAB5BK3/MjTvDD\nnFFlm5wioooMhfNzKWtN/gHiqQxjAb8EZ6WdmF/9ARP67Jpi6Yb+tmLSbkyU+8B1\nRXxlDPiyN8+sD8+Nb/kZ94/sHvJwnvDKuO+3/3Y3dlv2bojzr2IyIpMNOmqOFGYM\nLVN0V2Ue1bLdI4E7pWYjJ2cJj+F3qkPNZVEI7VFY/uY5+ctHhKQV8Xa7pO6kO8Rf\n77IzlhEYt8llvhjho6Tc+hj507wTmzl6NLrTQfv6MooqtyuGC2mDOL7Nii4LcK2N\nJpLuHvUBKwrZ1pebbuCoGRw6IYsMHkCtA+fdZn71uSANA+iW+YJF1DngoABd15jm\nfZ5nc8OaKveri6E6FO80vFIOiZiaBECEHX5FaZNXzuvO+FB8TxxuBEOb+dY7Ixjp\n6o7RTUaN8Tvkasq6+yO3m/qZASlaWFot4/nUbQ4mrcFuNLwy+AwF+mWj2zs3gyLp\n1txyM/1d8iC9djwj2ij3+RvrWWTV3F9yfiD8zYm1kGdNYno/Tq0dwzn+evQoFt9B\n9kiABdcPUXmsEKvU7ANm5mqwujGSQkBqvjrTcuFqN1W8rB2Vt2lh8kORdOag0wok\nRqEIr9baRRmW1FMdW4R58MD3R++Lj8UGrp1MYp3/RgT408m2ECVAdf4WqslKYIYv\nuu8wd+RU4riEmViAqhOLUTpPSPaLtrM=\n-----END CERTIFICATE-----"
     },
     {
       "name": "AC RAIZ FNMT-RCM G2",
