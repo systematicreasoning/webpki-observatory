@@ -388,8 +388,25 @@ def analyze_comment_participation(comment_cache, bugs_raw):
     Also computes:
     - Per-person oversight counts (bus factor / concentration risk)
     - Quarterly oversight trends per program
+
+    Administrative filtering:
+    - Empty-text comments are Bugzilla workflow events (status changes, flag
+      sets, NEEDINFO requests). They carry no governance content and are
+      excluded from all participation metrics. They are counted separately
+      as workflow_events for transparency.
+    - Known bot accounts (bug-husbandry-bot, release-mgmt-account-bot) are
+      excluded entirely from program attribution.
     """
     print("\n── Phase 2b: Comment Participation Analysis ──")
+
+    # Bot accounts that should never be attributed to a root program
+    BOT_DOMAINS = {"mozilla.bugs", "mozilla.tld"}
+
+    def is_bot(email):
+        if not email or "@" not in email:
+            return False
+        domain = email.lower().split("@")[-1]
+        return domain in BOT_DOMAINS
     
     bug_lookup = {}
     for bug in bugs_raw:
@@ -398,9 +415,10 @@ def analyze_comment_participation(comment_cache, bugs_raw):
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
-    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0})
+    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0})
     unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set()})
     comment_count_total = 0
+    substantive_count_total = 0
     bugs_with_comments = 0
     
     # NEW: per-person oversight tracking and quarterly trends
@@ -423,15 +441,33 @@ def analyze_comment_participation(comment_cache, bugs_raw):
         
         for comment in comments:
             author = comment.get("author", "")
-            program = classify_email(author)
             comment_count_total += 1
-            
+
+            # Skip bot accounts entirely — they are not root program governance
+            if is_bot(author):
+                continue
+
+            program = classify_email(author)
+
+            # Empty-text comments are Bugzilla workflow events (status changes,
+            # flag sets, NEEDINFO). They are not governance participation.
+            text = comment.get("text", "").strip()
+            is_substantive = bool(text)
+
             if program == "other":
                 totals["other"]["all"] += 1
                 continue
             
-            is_own = _bug_is_about_program(summary, program)
             totals[program]["all"] += 1
+
+            if not is_substantive:
+                # Count as workflow event, exclude from governance metrics
+                totals[program]["workflow_events"] += 1
+                continue
+
+            substantive_count_total += 1
+            is_own = _bug_is_about_program(summary, program)
+
             if is_own:
                 totals[program]["self_incident"] += 1
             else:
@@ -476,11 +512,14 @@ def analyze_comment_participation(comment_cache, bugs_raw):
     program_summary = {}
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         t = totals[prog]
+        substantive = t["oversight"] + t["self_incident"]
         program_summary[prog] = {
             "total_comments": t["all"],
+            "substantive_comments": substantive,
+            "workflow_events": t.get("workflow_events", 0),
             "oversight_comments": t["oversight"],
             "self_incident_comments": t["self_incident"],
-            "oversight_pct": round((t["oversight"] / t["all"]) * 100) if t["all"] else 0,
+            "oversight_pct": round((t["oversight"] / substantive) * 100) if substantive else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
         }
@@ -537,12 +576,13 @@ def analyze_comment_participation(comment_cache, bugs_raw):
         quarterly_trends.append(entry)
     
     print(f"  Bugs with comments: {bugs_with_comments}")
-    print(f"  Total comments: {comment_count_total}")
-    print(f"  {'Program':12} {'Total':>7} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8} {'Bus Factor':>11}")
+    print(f"  Total comments (raw): {comment_count_total}")
+    print(f"  Substantive comments (non-empty, non-bot): {substantive_count_total}")
+    print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8} {'Bus Factor':>11}")
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         s = program_summary[prog]
         c = concentration[prog]
-        print(f"  {prog:12} {s['total_comments']:>7} {s['oversight_comments']:>10} "
+        print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']:>7} {s['oversight_comments']:>10} "
               f"{s['self_incident_comments']:>10} {s['oversight_pct']:>8}% {s['bugs_oversight']:>8} "
               f"top1={c['top_contributor_pct']}%")
     
@@ -553,6 +593,7 @@ def analyze_comment_participation(comment_cache, bugs_raw):
         "oversight_quarterly": quarterly_trends,
         "bugs_analyzed": bugs_with_comments,
         "total_comments": comment_count_total,
+        "substantive_comments": substantive_count_total,
         "sample_pct": round((bugs_with_comments / len(bugs_raw)) * 100) if bugs_raw else 0,
     }
 
@@ -1555,9 +1596,10 @@ def main():
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "bugs_total": len(bugs_raw),
             "bugs_with_comments": comment_data["bugs_analyzed"],
-            "total_comments_analyzed": comment_data["total_comments"],
-            "pipeline_version": "0.3",
-            "note": "Comment data may be partial — fetched incrementally with rate limiting",
+            "total_comments_raw": comment_data["total_comments"],
+            "total_comments_analyzed": comment_data["substantive_comments"],
+            "pipeline_version": "0.4",
+            "note": "total_comments_analyzed counts substantive (non-empty, non-bot) comments only. Empty comments are Bugzilla workflow events (status changes, flag sets) excluded from governance metrics.",
         },
         **creation_data,
         **discovery_data,

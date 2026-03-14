@@ -110,7 +110,7 @@ function useReportCard(d, isRecent) {
         // For oversight %, keep the same semantics: non-self oversight / bugs engaged
         // We only have quarterly totals, not a breakdown of oversight vs self-incident
         // Best approximation: use the proportion of recent vs all-time to scale the all-time oversight_pct
-        const allTimeComments = c.total_comments || 0;
+        const allTimeComments = c.substantive_comments || c.total_comments || 0;
         const recentComments = recentTotal;
         const recentOversightEst = allTimeComments > 0
           ? Math.round((recentComments / allTimeComments) * (c.oversight_comments || 0))
@@ -175,7 +175,7 @@ const GovernanceRiskView = () => {
   const allQuarters = d.oversight_quarterly || [];
   const [oversightView, setOversightView] = useState('recent');
   const quarters = oversightView === 'recent' ? allQuarters.slice(-12) : allQuarters;
-  const maxOv = Math.max(...STORE_ORDER.map(s => (d.program_comment_summary?.[s]?.total_comments || 0)), 1);
+  const maxOv = Math.max(...STORE_ORDER.map(s => (d.program_comment_summary?.[s]?.substantive_comments || d.program_comment_summary?.[s]?.total_comments || 0)), 1);
   const maxQC = Math.max(...quarters.map(q => Math.max(...STORE_ORDER.map(s => q[`${s}_comments`] || 0))), 1);
   const [incidentOversightView, setIncidentOversightView] = useState('recent');
   const [incidentDetectionView, setIncidentDetectionView] = useState('recent');
@@ -278,7 +278,7 @@ const GovernanceRiskView = () => {
           {isRecentRC ? (
             <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} of 15 total), oversight last 12 quarters (3 years), ballots last 50 SC ballots. Trust surface metrics are always current snapshot — no time filter applies there. `}</>
           ) : (
-            `Enforcement: ${totalEvents} events since 2011. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments, all time). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
+            `Enforcement: ${totalEvents} events since 2011. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0)} substantive comments — ${(d.meta?.total_comments_raw || 0).toLocaleString()} raw minus workflow events). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
           )}
           Store size reflects policy philosophy, not just governance quality: Chrome is deliberately selective (value must exceed risk, only one new CA accepted),
           Mozilla is the fastest gateway for new CAs, Apple is highly selective, and Microsoft processes root rollovers quickly.
@@ -494,7 +494,7 @@ const GovernanceRiskView = () => {
       </Card>
       <Card>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 8 }}>
-          <CardTitle sub={`Oversight = commenting on CA compliance incidents. Self-incident = responding to your own CA's issues. ${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments.`}>
+          <CardTitle sub={`Oversight = substantive comments on other CAs' compliance bugs. Self-incident = responding to your own CA's issues. ${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0)} substantive comments (${(d.meta?.total_comments_raw || 0).toLocaleString()} raw — workflow events excluded).`}>
             Incident Oversight
           </CardTitle>
           <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2, flexShrink: 0 }}>
@@ -518,7 +518,7 @@ const GovernanceRiskView = () => {
           }
           const windowMax = Math.max(...STORE_ORDER.map(s => {
             const cs = pcs[s] || {};
-            if (!isRO) return cs.total_comments || 0;
+            if (!isRO) return cs.substantive_comments || cs.total_comments || 0;
             // For recent, scale self-incident proportionally so bars have the right relative sizes
             const allOC = cs.oversight_comments || 0;
             const allSI = cs.self_incident_comments || 0;
@@ -763,10 +763,10 @@ const GovernanceRiskView = () => {
       {/* ═══ METHODOLOGY ═══ */}
       <MethodologyCard>
         <MethodologyItem label="Bugzilla Oversight">
-          Comment authors attributed to root programs by email domain. {d.meta?.bugs_with_comments || 0} of {d.meta?.bugs_total || 0} bugs sampled ({d.meta?.bugs_with_comments && d.meta?.bugs_total ? Math.round((d.meta.bugs_with_comments / d.meta.bugs_total) * 100) : 0}%), {(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments analyzed.
+          Comment authors attributed to root programs by email domain. {d.meta?.bugs_with_comments || 0} of {d.meta?.bugs_total || 0} bugs sampled ({d.meta?.bugs_with_comments && d.meta?.bugs_total ? Math.round((d.meta.bugs_with_comments / d.meta.bugs_total) * 100) : 0}%), {(d.meta?.total_comments_analyzed || 0).toLocaleString()} substantive comments analyzed ({(d.meta?.total_comments_raw || 0).toLocaleString()} raw — empty-text Bugzilla workflow events excluded).
           "Oversight" = comments on CA compliance bugs. "Self-incident" = responding to your own CA's compliance failures.
           Mozilla's oversight count is inflated by administrative bug closures — until the incident-reporting account was created, a single Mozilla employee commented to close every bug as a process step, not as governance review. This accounts for the 99% single-contributor concentration shown above.
-          Microsoft operates a CA — {d.program_comment_summary?.microsoft?.self_incident_comments || 0} of their {d.program_comment_summary?.microsoft?.total_comments || 0} comments are self-incident responses, not governance.
+          Microsoft operates a CA — {d.program_comment_summary?.microsoft?.self_incident_comments || 0} of their {d.program_comment_summary?.microsoft?.substantive_comments || d.program_comment_summary?.microsoft?.total_comments || 0} substantive comments are self-incident responses, not governance.
           Bugzilla data has survivorship bias: CAs not yet trusted by any store rarely file incident bugs because there is no enforcement mechanism requiring them to.
         </MethodologyItem>
         <MethodologyItem label="Enforcement">

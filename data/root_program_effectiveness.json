@@ -1,11 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-03-14T06:37:15.350757+00:00",
+    "generated_at": "2026-03-14T21:10:09.731103+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
-    "total_comments_analyzed": 21988,
-    "pipeline_version": "0.3",
-    "note": "Comment data may be partial \u2014 fetched incrementally with rate limiting"
+    "total_comments_raw": 21988,
+    "total_comments_analyzed": 123,
+    "pipeline_version": "0.4",
+    "note": "total_comments_analyzed counts substantive (non-empty, non-bot) comments only. Empty comments are Bugzilla workflow events (status changes, flag sets) excluded from governance metrics."
   },
   "bug_creation_by_year": [
     {
@@ -490,13 +491,6 @@
     {
       "y": 2014,
       "chrome": 0,
-      "mozilla": 2,
-      "apple": 0,
-      "microsoft": 0
-    },
-    {
-      "y": 2015,
-      "chrome": 0,
       "mozilla": 1,
       "apple": 0,
       "microsoft": 0
@@ -504,245 +498,214 @@
     {
       "y": 2016,
       "chrome": 0,
-      "mozilla": 4,
+      "mozilla": 2,
       "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2017,
       "chrome": 0,
-      "mozilla": 87,
-      "apple": 0,
-      "microsoft": 0
-    },
-    {
-      "y": 2018,
-      "chrome": 0,
-      "mozilla": 8,
+      "mozilla": 6,
       "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2019,
       "chrome": 0,
-      "mozilla": 30,
+      "mozilla": 0,
       "apple": 1,
-      "microsoft": 1
+      "microsoft": 0
     },
     {
       "y": 2020,
-      "chrome": 1,
-      "mozilla": 185,
+      "chrome": 0,
+      "mozilla": 4,
       "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2021,
-      "chrome": 8,
-      "mozilla": 173,
+      "chrome": 1,
+      "mozilla": 11,
       "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2022,
-      "chrome": 15,
-      "mozilla": 101,
+      "chrome": 0,
+      "mozilla": 6,
       "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2023,
-      "chrome": 25,
-      "mozilla": 126,
-      "apple": 2,
+      "chrome": 6,
+      "mozilla": 5,
+      "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2024,
-      "chrome": 55,
-      "mozilla": 225,
-      "apple": 14,
+      "chrome": 4,
+      "mozilla": 4,
+      "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2025,
-      "chrome": 47,
-      "mozilla": 48,
-      "apple": 18,
+      "chrome": 0,
+      "mozilla": 1,
+      "apple": 0,
       "microsoft": 0
     },
     {
       "y": 2026,
-      "chrome": 7,
-      "mozilla": 12,
-      "apple": 11,
+      "chrome": 0,
+      "mozilla": 0,
+      "apple": 8,
       "microsoft": 0
     }
   ],
   "program_comment_summary": {
     "chrome": {
       "total_comments": 563,
-      "oversight_comments": 272,
-      "self_incident_comments": 291,
-      "oversight_pct": 48,
-      "bugs_engaged": 193,
-      "bugs_oversight": 158
+      "substantive_comments": 31,
+      "workflow_events": 532,
+      "oversight_comments": 11,
+      "self_incident_comments": 20,
+      "oversight_pct": 35,
+      "bugs_engaged": 31,
+      "bugs_oversight": 11
     },
     "mozilla": {
       "total_comments": 1892,
-      "oversight_comments": 1892,
+      "substantive_comments": 40,
+      "workflow_events": 1852,
+      "oversight_comments": 40,
       "self_incident_comments": 0,
       "oversight_pct": 100,
-      "bugs_engaged": 1002,
-      "bugs_oversight": 1002
+      "bugs_engaged": 40,
+      "bugs_oversight": 40
     },
     "apple": {
       "total_comments": 188,
-      "oversight_comments": 57,
-      "self_incident_comments": 131,
-      "oversight_pct": 30,
-      "bugs_engaged": 63,
-      "bugs_oversight": 46
+      "substantive_comments": 26,
+      "workflow_events": 162,
+      "oversight_comments": 9,
+      "self_incident_comments": 17,
+      "oversight_pct": 35,
+      "bugs_engaged": 26,
+      "bugs_oversight": 9
     },
     "microsoft": {
       "total_comments": 489,
-      "oversight_comments": 1,
-      "self_incident_comments": 488,
+      "substantive_comments": 26,
+      "workflow_events": 463,
+      "oversight_comments": 0,
+      "self_incident_comments": 26,
       "oversight_pct": 0,
-      "bugs_engaged": 42,
-      "bugs_oversight": 1
+      "bugs_engaged": 26,
+      "bugs_oversight": 0
     }
   },
   "oversight_concentration": {
     "chrome": {
-      "total_oversight_comments": 272,
-      "unique_contributors": 6,
-      "top_contributor_pct": 37,
-      "top_3_contributors_pct": 98,
-      "top_contributor_email": "chrome-root-program@google.com",
-      "top_contributor_first_quarter": "2024-Q4",
-      "top_contributor_last_quarter": "2026-Q1",
+      "total_oversight_comments": 11,
+      "unique_contributors": 3,
+      "top_contributor_pct": 55,
+      "top_3_contributors_pct": 100,
+      "top_contributor_email": "cclements@google.com",
+      "top_contributor_first_quarter": "2023-Q2",
+      "top_contributor_last_quarter": "2024-Q1",
       "contributors": [
         {
-          "email": "chrome-root-program@google.com",
-          "comments": 101,
-          "pct": 37
+          "email": "cclements@google.com",
+          "comments": 6,
+          "pct": 55
         },
         {
           "email": "ryandickson@google.com",
-          "comments": 100,
-          "pct": 37
-        },
-        {
-          "email": "cclements@google.com",
-          "comments": 66,
-          "pct": 24
-        },
-        {
-          "email": "mozilla@google.com",
-          "comments": 3,
-          "pct": 1
+          "comments": 4,
+          "pct": 36
         },
         {
           "email": "fhochstrasser@google.com",
           "comments": 1,
-          "pct": 0
+          "pct": 9
         }
       ]
     },
     "mozilla": {
-      "total_oversight_comments": 1892,
-      "unique_contributors": 12,
-      "top_contributor_pct": 89,
-      "top_3_contributors_pct": 99,
+      "total_oversight_comments": 40,
+      "unique_contributors": 5,
+      "top_contributor_pct": 72,
+      "top_3_contributors_pct": 92,
       "top_contributor_email": "bwilson@mozilla.com",
       "top_contributor_first_quarter": "2020-Q2",
-      "top_contributor_last_quarter": "2026-Q1",
+      "top_contributor_last_quarter": "2025-Q1",
       "contributors": [
         {
           "email": "bwilson@mozilla.com",
-          "comments": 1680,
-          "pct": 89
+          "comments": 29,
+          "pct": 72
         },
         {
           "email": "gerv@mozilla.org",
-          "comments": 178,
-          "pct": 9
-        },
-        {
-          "email": "jcristau@mozilla.com",
-          "comments": 14,
-          "pct": 1
+          "comments": 5,
+          "pct": 12
         },
         {
           "email": "dkeeler@mozilla.com",
-          "comments": 8,
-          "pct": 0
+          "comments": 3,
+          "pct": 8
         },
         {
-          "email": "dveditz@mozilla.com",
-          "comments": 4,
-          "pct": 0
-        }
-      ]
-    },
-    "apple": {
-      "total_oversight_comments": 57,
-      "unique_contributors": 3,
-      "top_contributor_pct": 56,
-      "top_3_contributors_pct": 100,
-      "top_contributor_email": "dhollenback@apple.com",
-      "top_contributor_first_quarter": "2025-Q4",
-      "top_contributor_last_quarter": "2026-Q1",
-      "contributors": [
-        {
-          "email": "dhollenback@apple.com",
-          "comments": 32,
-          "pct": 56
+          "email": "jschanck@mozilla.com",
+          "comments": 2,
+          "pct": 5
         },
         {
-          "email": "clintw@apple.com",
-          "comments": 24,
-          "pct": 42
-        },
-        {
-          "email": "cspann@apple.com",
+          "email": "web-security@mozilla.org",
           "comments": 1,
           "pct": 2
         }
       ]
     },
-    "microsoft": {
-      "total_oversight_comments": 1,
-      "unique_contributors": 1,
-      "top_contributor_pct": 100,
+    "apple": {
+      "total_oversight_comments": 9,
+      "unique_contributors": 2,
+      "top_contributor_pct": 89,
       "top_3_contributors_pct": 100,
-      "top_contributor_email": "julio.montano@microsoft.com",
-      "top_contributor_first_quarter": "2020-Q1",
-      "top_contributor_last_quarter": "2020-Q1",
+      "top_contributor_email": "dhollenback@apple.com",
+      "top_contributor_first_quarter": "2026-Q1",
+      "top_contributor_last_quarter": "2026-Q1",
       "contributors": [
         {
-          "email": "julio.montano@microsoft.com",
+          "email": "dhollenback@apple.com",
+          "comments": 8,
+          "pct": 89
+        },
+        {
+          "email": "cspann@apple.com",
           "comments": 1,
-          "pct": 100
+          "pct": 11
         }
       ]
+    },
+    "microsoft": {
+      "total_oversight_comments": 0,
+      "unique_contributors": 0,
+      "top_contributor_pct": 0,
+      "top_3_contributors_pct": 0,
+      "top_contributor_email": null,
+      "top_contributor_first_quarter": null,
+      "top_contributor_last_quarter": null,
+      "contributors": []
     }
   },
   "oversight_quarterly": [
     {
       "quarter": "2014-Q1",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 3,
-      "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2014-Q3",
       "chrome_comments": 0,
       "chrome_people": 0,
       "mozilla_comments": 1,
@@ -767,17 +730,6 @@
       "quarter": "2016-Q3",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 2,
-      "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2016-Q4",
-      "chrome_comments": 0,
-      "chrome_people": 0,
       "mozilla_comments": 1,
       "mozilla_people": 1,
       "apple_comments": 0,
@@ -789,8 +741,8 @@
       "quarter": "2017-Q1",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 8,
-      "mozilla_people": 2,
+      "mozilla_comments": 1,
+      "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -800,7 +752,7 @@
       "quarter": "2017-Q2",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 13,
+      "mozilla_comments": 3,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -811,8 +763,8 @@
       "quarter": "2017-Q3",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 55,
-      "mozilla_people": 3,
+      "mozilla_comments": 1,
+      "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -822,52 +774,8 @@
       "quarter": "2017-Q4",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 97,
-      "mozilla_people": 3,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2018-Q1",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 10,
-      "mozilla_people": 2,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2018-Q2",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 2,
-      "mozilla_people": 2,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2019-Q1",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 2,
+      "mozilla_comments": 1,
       "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2019-Q2",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 3,
-      "mozilla_people": 2,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -885,22 +793,11 @@
       "microsoft_people": 0
     },
     {
-      "quarter": "2020-Q1",
+      "quarter": "2020-Q2",
       "chrome_comments": 0,
       "chrome_people": 0,
       "mozilla_comments": 1,
       "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 1,
-      "microsoft_people": 1
-    },
-    {
-      "quarter": "2020-Q2",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 65,
-      "mozilla_people": 2,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -908,21 +805,10 @@
     },
     {
       "quarter": "2020-Q3",
-      "chrome_comments": 1,
-      "chrome_people": 1,
-      "mozilla_comments": 176,
-      "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2020-Q4",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 99,
-      "mozilla_people": 2,
+      "mozilla_comments": 3,
+      "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -932,8 +818,8 @@
       "quarter": "2021-Q1",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 102,
-      "mozilla_people": 2,
+      "mozilla_comments": 1,
+      "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -943,7 +829,7 @@
       "quarter": "2021-Q2",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 86,
+      "mozilla_comments": 5,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -954,8 +840,8 @@
       "quarter": "2021-Q3",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 102,
-      "mozilla_people": 2,
+      "mozilla_comments": 4,
+      "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -963,20 +849,9 @@
     },
     {
       "quarter": "2021-Q4",
-      "chrome_comments": 14,
+      "chrome_comments": 1,
       "chrome_people": 1,
-      "mozilla_comments": 60,
-      "mozilla_people": 2,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2022-Q1",
-      "chrome_comments": 0,
-      "chrome_people": 0,
-      "mozilla_comments": 56,
+      "mozilla_comments": 1,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -987,18 +862,7 @@
       "quarter": "2022-Q2",
       "chrome_comments": 0,
       "chrome_people": 0,
-      "mozilla_comments": 53,
-      "mozilla_people": 2,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2022-Q3",
-      "chrome_comments": 6,
-      "chrome_people": 2,
-      "mozilla_comments": 38,
+      "mozilla_comments": 4,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1007,9 +871,9 @@
     },
     {
       "quarter": "2022-Q4",
-      "chrome_comments": 11,
-      "chrome_people": 2,
-      "mozilla_comments": 39,
+      "chrome_comments": 0,
+      "chrome_people": 0,
+      "mozilla_comments": 2,
       "mozilla_people": 2,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1018,9 +882,9 @@
     },
     {
       "quarter": "2023-Q1",
-      "chrome_comments": 9,
-      "chrome_people": 2,
-      "mozilla_comments": 28,
+      "chrome_comments": 0,
+      "chrome_people": 0,
+      "mozilla_comments": 1,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1029,9 +893,9 @@
     },
     {
       "quarter": "2023-Q2",
-      "chrome_comments": 29,
-      "chrome_people": 2,
-      "mozilla_comments": 57,
+      "chrome_comments": 4,
+      "chrome_people": 1,
+      "mozilla_comments": 1,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1040,9 +904,9 @@
     },
     {
       "quarter": "2023-Q3",
-      "chrome_comments": 3,
+      "chrome_comments": 2,
       "chrome_people": 2,
-      "mozilla_comments": 64,
+      "mozilla_comments": 2,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1051,9 +915,9 @@
     },
     {
       "quarter": "2023-Q4",
-      "chrome_comments": 5,
-      "chrome_people": 2,
-      "mozilla_comments": 60,
+      "chrome_comments": 0,
+      "chrome_people": 0,
+      "mozilla_comments": 1,
       "mozilla_people": 1,
       "apple_comments": 0,
       "apple_people": 0,
@@ -1062,43 +926,43 @@
     },
     {
       "quarter": "2024-Q1",
-      "chrome_comments": 14,
+      "chrome_comments": 2,
       "chrome_people": 2,
-      "mozilla_comments": 48,
-      "mozilla_people": 1,
-      "apple_comments": 2,
-      "apple_people": 1,
+      "mozilla_comments": 0,
+      "mozilla_people": 0,
+      "apple_comments": 0,
+      "apple_people": 0,
       "microsoft_comments": 0,
       "microsoft_people": 0
     },
     {
       "quarter": "2024-Q2",
-      "chrome_comments": 40,
-      "chrome_people": 2,
-      "mozilla_comments": 114,
+      "chrome_comments": 1,
+      "chrome_people": 1,
+      "mozilla_comments": 2,
       "mozilla_people": 1,
-      "apple_comments": 17,
-      "apple_people": 1,
+      "apple_comments": 0,
+      "apple_people": 0,
       "microsoft_comments": 0,
       "microsoft_people": 0
     },
     {
       "quarter": "2024-Q3",
-      "chrome_comments": 13,
-      "chrome_people": 2,
-      "mozilla_comments": 145,
-      "mozilla_people": 3,
-      "apple_comments": 3,
-      "apple_people": 1,
+      "chrome_comments": 0,
+      "chrome_people": 0,
+      "mozilla_comments": 2,
+      "mozilla_people": 1,
+      "apple_comments": 0,
+      "apple_people": 0,
       "microsoft_comments": 0,
       "microsoft_people": 0
     },
     {
       "quarter": "2024-Q4",
-      "chrome_comments": 21,
-      "chrome_people": 5,
-      "mozilla_comments": 76,
-      "mozilla_people": 1,
+      "chrome_comments": 1,
+      "chrome_people": 1,
+      "mozilla_comments": 0,
+      "mozilla_people": 0,
       "apple_comments": 0,
       "apple_people": 0,
       "microsoft_comments": 0,
@@ -1106,55 +970,22 @@
     },
     {
       "quarter": "2025-Q1",
-      "chrome_comments": 22,
-      "chrome_people": 3,
-      "mozilla_comments": 169,
-      "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2025-Q2",
-      "chrome_comments": 33,
-      "chrome_people": 2,
-      "mozilla_comments": 31,
-      "mozilla_people": 1,
-      "apple_comments": 0,
-      "apple_people": 0,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2025-Q3",
-      "chrome_comments": 22,
-      "chrome_people": 1,
-      "mozilla_comments": 9,
-      "mozilla_people": 1,
-      "apple_comments": 2,
-      "apple_people": 1,
-      "microsoft_comments": 0,
-      "microsoft_people": 0
-    },
-    {
-      "quarter": "2025-Q4",
-      "chrome_comments": 14,
-      "chrome_people": 1,
+      "chrome_comments": 0,
+      "chrome_people": 0,
       "mozilla_comments": 1,
       "mozilla_people": 1,
-      "apple_comments": 15,
-      "apple_people": 1,
+      "apple_comments": 0,
+      "apple_people": 0,
       "microsoft_comments": 0,
       "microsoft_people": 0
     },
     {
       "quarter": "2026-Q1",
-      "chrome_comments": 15,
-      "chrome_people": 1,
-      "mozilla_comments": 15,
-      "mozilla_people": 1,
-      "apple_comments": 17,
+      "chrome_comments": 0,
+      "chrome_people": 0,
+      "mozilla_comments": 0,
+      "mozilla_people": 0,
+      "apple_comments": 8,
       "apple_people": 1,
       "microsoft_comments": 0,
       "microsoft_people": 0
@@ -1162,6 +993,7 @@
   ],
   "bugs_analyzed": 1690,
   "total_comments": 21988,
+  "substantive_comments": 123,
   "sample_pct": 100,
   "enforcement": {
     "chrome": {
