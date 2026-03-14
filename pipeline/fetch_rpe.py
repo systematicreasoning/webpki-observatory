@@ -389,15 +389,24 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
     cache = load_json(cache_path, {})
     cached_ids = set(cache.keys())
     
-    # Find bugs that need fetching: either not cached, or cached without first comment text
+    # Find bugs that need fetching: not cached, or cached in old format (text only on first comment)
     need_fetch = []
     need_text_backfill = []
     for bid in bug_ids:
         sbid = str(bid)
         if sbid not in cached_ids:
             need_fetch.append(sbid)
-        elif cache[sbid] and isinstance(cache[sbid], list) and cache[sbid][0] and "text" not in cache[sbid][0]:
-            need_text_backfill.append(sbid)
+        else:
+            comments = cache.get(sbid, [])
+            # Old format: text field missing from comments after index 0
+            # Detect by checking if any non-first comment has no 'text' key
+            needs_backfill = (
+                len(comments) > 1 and "text" not in comments[1]
+            ) or (
+                len(comments) == 1 and comments[0] and "text" not in comments[0]
+            )
+            if needs_backfill:
+                need_text_backfill.append(sbid)
     
     # Prioritize new bugs, then backfill text for existing
     all_to_fetch = need_fetch + need_text_backfill
@@ -438,14 +447,18 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
                 with urllib.request.urlopen(req, timeout=30) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
                 
-                # Extract author emails, timestamps, and first comment text (for discovery classification)
+                # Extract author emails, timestamps, and text for all comments.
+                # Text is truncated at 1000 chars — sufficient for classification
+                # and governance analysis. Previously only stored text for ci==0
+                # (discovery classification) which caused root program comments
+                # on later positions to appear empty and be miscounted.
                 comments = data.get("bugs", {}).get(str(bug_id), {}).get("comments", [])
                 cache[str(bug_id)] = [
                     {
                         "author": c.get("creator", ""),
                         "time": c.get("creation_time", ""),
                         "is_private": c.get("is_private", False),
-                        **({"text": c.get("text", "")[:1000]} if ci == 0 else {}),
+                        "text": c.get("text", "")[:1000],
                     }
                     for ci, c in enumerate(comments)
                 ]
@@ -658,7 +671,10 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     program_summary = {}
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         t = totals[prog]
-        substantive = t["oversight"] + t["self_incident"]
+        # substantive = all non-empty, non-bot comments (oversight + self_incident + admin_filtered)
+        # oversight_pct denominator = oversight + self_incident (excludes admin, which is not governance)
+        governance_total = t["oversight"] + t["self_incident"]
+        substantive = governance_total + t.get("admin_comments", 0)
         program_summary[prog] = {
             "total_comments": t["all"],
             "substantive_comments": substantive,
@@ -667,7 +683,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "oversight_comments": t["oversight"],
             "recent_oversight_comments": t.get("recent_oversight", 0),
             "self_incident_comments": t["self_incident"],
-            "oversight_pct": round((t["oversight"] / substantive) * 100) if substantive else 0,
+            "oversight_pct": round((t["oversight"] / governance_total) * 100) if governance_total else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
             "recent_bugs_oversight": len(unique_bugs[prog]["recent_oversight"]),
@@ -734,7 +750,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Admin':>6} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8}")
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         s = program_summary[prog]
-        print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']+s['admin_comments']:>7} "
+        print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']:>7} "
               f"{s['admin_comments']:>6} {s['oversight_comments']:>10} "
               f"{s['self_incident_comments']:>10} {s['oversight_pct']:>8}% {s['bugs_oversight']:>8}")
     
@@ -1718,6 +1734,10 @@ def main():
     comment_clf_path = CACHE_DIR / "comment_classifications.json"
     comment_classifications = load_json(comment_clf_path, {})
 
+    if comment_classifications:
+        print(f"\n── Phase 2c: LLM Comment Classification ──")
+        print(f"  Loaded {len(comment_classifications)} cached classifications")
+
     if api_key:
         print("\n── Phase 2c: LLM Comment Classification ──")
         BOT_DOMAINS_MAIN = {"mozilla.bugs", "mozilla.tld"}
@@ -1756,7 +1776,7 @@ def main():
     # Phase 2b: Comment participation analysis (with LLM classifications if available)
     comment_data = analyze_comment_participation(
         comment_cache, bugs_raw,
-        comment_classifications=comment_classifications if api_key else None,
+        comment_classifications=comment_classifications if comment_classifications else None,
     )
     
     # Phase 1b: Discovery method classification
@@ -1797,8 +1817,8 @@ def main():
             "bugs_with_comments": comment_data["bugs_analyzed"],
             "total_comments_raw": comment_data["total_comments"],
             "total_comments_analyzed": comment_data["substantive_comments"],
-            "pipeline_version": "0.4",
-            "note": "total_comments_analyzed counts substantive (non-empty, non-bot) comments only. Empty comments are Bugzilla workflow events (status changes, flag sets) excluded from governance metrics.",
+            "pipeline_version": "0.5",
+            "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). oversight_pct denominator = oversight + self_incident (excludes admin).",
         },
         **creation_data,
         **discovery_data,
