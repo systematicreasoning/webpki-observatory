@@ -732,50 +732,60 @@ const GovernanceRiskView = () => {
       {/* ═══ METHODOLOGY ═══ */}
       <MethodologyCard>
         <MethodologyItem label="Bugzilla Oversight">
-          Comment authors attributed to root programs by email domain. {d.meta?.bugs_with_comments || 0} of {d.meta?.bugs_total || 0} bugs sampled ({d.meta?.bugs_with_comments && d.meta?.bugs_total ? Math.round((d.meta.bugs_with_comments / d.meta.bugs_total) * 100) : 0}%), {(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments after LLM admin filtering ({(d.meta?.total_comments_raw || 0).toLocaleString()} raw). Admin-filtered comments include short acknowledgments, boilerplate survey notices, tracking bug openers, and status pings with no technical content.
-          "Oversight" = comments on CA compliance bugs. "Self-incident" = responding to your own CA's compliance failures.
-          Mozilla's oversight count is inflated by administrative bug closures — until the incident-reporting account was created, a single Mozilla employee commented to close every bug as a process step, not as governance review. This accounts for the 99% single-contributor concentration shown above.
-          Microsoft operates a CA — {d.program_comment_summary?.microsoft?.self_incident_comments || 0} of their {d.program_comment_summary?.microsoft?.substantive_comments || d.program_comment_summary?.microsoft?.total_comments || 0} governance comments are self-incident responses, not oversight.
-          Bugzilla data has survivorship bias: CAs not yet trusted by any store rarely file incident bugs because there is no enforcement mechanism requiring them to.
+          Measures genuine governance participation by root program staff on CA compliance incident bugs.
+          Comment authors are attributed to root programs by email domain (google.com → Chrome, mozilla.com/mozilla.org → Mozilla, apple.com → Apple, microsoft.com → Microsoft).
+          Bot accounts (bug-husbandry-bot, release-mgmt-account-bot) are excluded entirely.
+          {' '}Comments are then filtered by an LLM classifier (claude-haiku) that distinguishes genuine governance from administrative process.
+          Genuine governance: technical analysis of a certificate or CRL issue, citing a specific policy violation with evidence, substantive feedback on a CA's remediation plan, raising a compliance issue the CA had not reported.
+          Administrative process (excluded): short acknowledgments ("Thanks", "Correct", "ping?"), boilerplate survey non-response notices where only the CA name changes, tracking bug openers, and status requests with no technical content.
+          {' '}{(d.meta?.total_comments_raw || 0).toLocaleString()} raw comments across {d.meta?.bugs_with_comments || 0} bugs → {(d.meta?.total_comments_analyzed || 0).toLocaleString()} after filtering.
+          "Oversight" = genuine governance comments on other CAs' bugs. "Self-incident" = genuine governance comments on your own CA's bugs (Microsoft operates Microsoft PKI Services; all {d.program_comment_summary?.microsoft?.self_incident_comments || 0} of their governance comments are self-incident).
+          Oversight % = oversight / (oversight + self-incident). Recent % uses 2021+ comments only for both numerator and denominator.
+          This measures publicly visible Bugzilla engagement only. Root programs that govern primarily through private channels (email, direct CA contact) will appear underrepresented relative to their actual governance activity.
         </MethodologyItem>
         <MethodologyItem label="Enforcement">
-          {totalEvents} events curated from root program announcements, Bugzilla, CCADB status, and Apple support documents.
-          "First" = first program to publicly announce action. "Never Acted" = CCADB still shows trust while peers removed.
-          Each root program discloses enforcement differently: Chrome publishes blog posts. Mozilla uses Bugzilla threads. Microsoft publishes monthly CTL deployment notices.
-          Apple publishes support documents with SHA-256 hashes but does not announce on Bugzilla or mailing lists — their actions may predate other programs' public announcements. "First" is biased toward programs that announce loudly.
+          {totalEvents} distrust events curated from root program announcements, Bugzilla threads, CCADB status changes, and Apple support documents.
+          "First" = first program to publicly announce action. "Never Acted" = CCADB still shows trust while peers have removed the CA.
+          Each root program discloses enforcement differently: Chrome publishes blog posts and policy announcements. Mozilla uses Bugzilla threads and the mozilla.dev.security.policy mailing list. Microsoft publishes monthly CTL deployment notices.
+          Apple publishes support documents with SHA-256 hashes but does not announce on Bugzilla or mailing lists — their actions may predate other programs' public announcements. "First" is biased toward programs that announce publicly.
         </MethodologyItem>
         <MethodologyItem label="Incident Detection">
-          Bug filing counts reflect who opened the Bugzilla bug, not who discovered the issue. A root program filing a bug may be splitting an existing incident into per-CA threads (administrative action) rather than independently discovering a new compliance failure. The "How Were Incidents Discovered?" breakdown attempts to classify actual discovery method separately from filer.
+          Bug filing counts reflect who opened the Bugzilla bug, not who discovered the underlying issue.
+          A root program filing a bug may be splitting an existing incident into per-CA tracking threads rather than independently discovering a new compliance failure.
+          The "How Were Incidents Discovered?" breakdown classifies actual discovery method from the incident report text using keyword patterns: self-detected (CA's own monitoring), externally reported (researcher or customer), root program, community (CT logs, linting tools), and audit.
         </MethodologyItem>
         <MethodologyItem label="Policy Leadership">
-          Ballot proposers/endorsers scraped from cabforum.org across {Object.keys(d.policy_leadership?.by_working_group || {}).length} working groups ({Object.values(d.policy_leadership?.by_working_group || {}).reduce((a, w) => a + (w.total_ballots || 0), 0)} total ballots).
-          Vote participation from {d.policy_leadership?.programs?.chrome?.ballots_with_votes || 0} most recent SC ballots with published results.
-          Vote participation includes yes, no, and abstain votes. Not voting may reflect policy disagreement, a deliberate choice not to legitimize a ballot, or capacity constraints — it is not inherently a governance failure.
-          Ballot counts treat all ballots equally — a future enhancement could weight by impact.
-          This tab tracks root program participation only. Some CAs actively participate in incident discussions — this ecosystem-level oversight is a separate analysis not captured here.
+          Ballot proposers and endorsers scraped from cabforum.org across {Object.keys(d.policy_leadership?.by_working_group || {}).length} working groups ({Object.values(d.policy_leadership?.by_working_group || {}).reduce((a, w) => a + (w.total_ballots || 0), 0)} total ballots).
+          Vote participation from the {d.policy_leadership?.programs?.chrome?.ballots_with_votes || 0} most recent SC ballots with published results.
+          "Security-Improving Ballots" = ballots classified as substantive (validation improvement, security modernization, transparency) rather than procedural. Classification is title-based using keyword matching.
+          Vote participation includes yes, no, and abstain. Abstaining or not voting may reflect policy disagreement, a deliberate choice not to legitimize a ballot, or capacity constraints — it is not inherently a governance failure.
+          Recent window = last 50 ballots across all working groups.
         </MethodologyItem>
         <MethodologyItem label="Trust Store Changelogs">
           Chrome: complete history from Chromium source code git log (since 2022).
-          Microsoft: monthly deployment notices scraped from learn.microsoft.com (since 2020).
-          Mozilla: Bugzilla inclusion/removal bugs with exact timestamps.
-          Apple: no public changelog — daily CCADB snapshots will build history over time from diffs.
+          Microsoft: monthly CTL deployment notices scraped from learn.microsoft.com (since 2020).
+          Mozilla: Bugzilla inclusion and removal bugs with exact timestamps.
+          Apple: no public changelog — daily CCADB snapshots build history over time from diffs.
         </MethodologyItem>
         <MethodologyItem label="Inclusion Gaps">
-          Auto-detected: CAs with rank ≤ 100 or {'>'} 100 certs missing from at least one store. Wait time from root cert creation date (proxy — CAs may not apply simultaneously).
-          Mozilla pipeline stages use Bugzilla whiteboard labels which are not always applied consistently.
+          Auto-detected: CAs with market share rank ≤ 100 or more than 100 unexpired certificates that are missing from at least one trust store.
+          Wait time is approximated from root certificate creation date — CAs may not apply to all stores simultaneously so this is a lower bound.
+          Mozilla pipeline stages use Bugzilla whiteboard labels which are not always applied consistently; stage labels should be treated as approximate.
         </MethodologyItem>
         <MethodologyItem label="Limitations and Bias">
-          Root programs participate in public forums unequally — Mozilla uses Bugzilla as its primary governance channel, so Mozilla activity is naturally overrepresented there.
-          Chrome, Apple, and Microsoft may conduct significant governance work through private channels that leave no public trace.
-          A program showing low public participation may still be actively governing — but without public evidence, relying parties cannot verify this.
-          The data here reflects what the ecosystem can observe, which is also what creates accountability.
+          All metrics in this tab measure publicly observable behavior only. Root programs that govern through private channels (direct CA correspondence, private email threads, in-person meetings) will appear less active than programs that use Bugzilla and public mailing lists as their primary governance channel. Mozilla's high oversight count reflects their deliberate use of Bugzilla as a public governance record, not necessarily a higher absolute level of governance activity.
+          Chrome's recent oversight engagement appears lower in absolute terms than Mozilla's all-time total, but Chrome's year-on-year growth since 2021 is the steepest of any program.
+          Microsoft's 0% oversight reflects public Bugzilla data only. Their governance activity through private channels and CTL deployment decisions is not captured here.
+          Apple's public Bugzilla participation has grown in 2024-2026 but remains modest; their governance posture is largely opaque due to limited public disclosure.
+          The data here reflects what the ecosystem can observe externally — which is also what creates public accountability.
         </MethodologyItem>
         <MethodologyItem label="Data and Definitions">
           Unit of analysis: CA Owner (organization level). Certificate counts: unexpired precertificates from CT logs via crt.sh, grouped by Root Owner.
-          Incident rate (Ops‡): cumulative Bugzilla bugs / all-time certs, per million (lifetime, not annual).
-          Usage period (†): 365 / (all-time certs / unexpired certs) — measures replacement behavior, not validity period.
-          Web coverage: trust store presence × StatCounter browser share (Chrome ~77%, Apple ~18%, Mozilla ~2.5%, Microsoft {'<'}1%).
-          Pipeline runs daily at 06:00 UTC. crt.sh/CCADB warn after 48h, critical after 7d.
+          Incident rate (Ops‡): cumulative Bugzilla bugs / all-time certs × 1,000,000 (lifetime rate, not annual).
+          Usage period (†): 365 / (all-time certs / unexpired certs) — measures actual certificate replacement behavior, not configured validity period.
+          Web coverage: trust store inclusion × StatCounter browser market share (Chrome ~77%, Apple ~18%, Mozilla ~2.5%, Microsoft {'<'}1%).
+          Pipeline runs daily at 06:00 UTC. Data freshness warnings: crt.sh/CCADB after 48h, critical after 7d.
+          LLM comment classification uses claude-haiku. Classifications are cached and applied incrementally — new comments classified on each daily run. Unclassified comments default to governance=true.
         </MethodologyItem>
       </MethodologyCard>
     </div>
