@@ -129,7 +129,14 @@ def classify_comments_llm(candidates, existing_classifications, api_key):
                 if block.get("type") == "text"
             )
 
-            items = json.loads(text)
+            # Strip markdown code fences if present
+            clean = text.strip()
+            if clean.startswith("```"):
+                clean = clean.split("\n", 1)[-1]  # drop opening fence line
+                clean = clean.rsplit("```", 1)[0]  # drop closing fence
+            clean = clean.strip()
+
+            items = json.loads(clean)
             for item in items:
                 key = str(item.get("key", ""))
                 if key:
@@ -142,7 +149,7 @@ def classify_comments_llm(candidates, existing_classifications, api_key):
 
         except json.JSONDecodeError as e:
             print(f"    Batch {batch_num}: JSON parse error — {e}")
-            print(f"    Raw response: {text[:200]}")
+            print(f"    Raw response: {clean[:200]}")
         except Exception as e:
             print(f"    Batch {batch_num}: ERROR — {e}")
 
