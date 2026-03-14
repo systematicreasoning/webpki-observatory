@@ -98,15 +98,14 @@ function useReportCard(d, isRecent) {
       const neverActed = totalEvents - acted;
 
       // Recent oversight: use pipeline-computed recent_oversight_comments directly.
-      // This is exact — per-comment timestamps filtered to >= 2021, LLM-classified,
-      // no estimation from quarterly proxy data needed.
+      // This is exact — per-comment timestamps filtered to >= 2021, LLM-classified.
       let oversightPct;
       if (isRecent) {
         const recentOC = c.recent_oversight_comments ?? c.oversight_comments ?? 0;
-        const recentSI = c.self_incident_comments || 0; // self-incident timing not separately tracked; use all-time as denominator proxy
-        const recentSubstantive = recentOC + recentSI;
-        oversightPct = recentSubstantive > 0
-          ? `${Math.min(100, Math.round((recentOC / recentSubstantive) * 100))}%`
+        const recentSI = c.recent_self_incident_comments ?? c.self_incident_comments ?? 0;
+        const recentTotal = recentOC + recentSI;
+        oversightPct = recentTotal > 0
+          ? `${Math.min(100, Math.round((recentOC / recentTotal) * 100))}%`
           : `${c.oversight_pct || 0}%`;
       } else {
         oversightPct = `${c.oversight_pct || 0}%`;
@@ -512,7 +511,7 @@ const GovernanceRiskView = () => {
             } else {
               // Use exact recent_oversight_comments from pipeline (2021+, LLM-filtered)
               oc = cs.recent_oversight_comments ?? cs.oversight_comments ?? 0;
-              sic = cs.self_incident_comments || 0;
+              sic = cs.recent_self_incident_comments ?? cs.self_incident_comments ?? 0;
               const combined = oc + sic;
               pct = combined > 0 ? Math.min(100, Math.round((oc / combined) * 100)) : 0;
               if (cs.oversight_pct === 0) pct = 0;

@@ -552,7 +552,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
-    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0})
+    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0, "recent_self_incident": 0})
     unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set(), "recent_oversight": set()})
     RECENT_OVERSIGHT_CUTOFF = "2021"
     comment_count_total = 0
@@ -608,6 +608,10 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
 
             if is_own:
                 totals[program]["self_incident"] += 1
+                # Track recent self-incident for accurate recent oversight% denominator
+                comment_year = comment.get("time", "")[:4]
+                if comment_year >= RECENT_OVERSIGHT_CUTOFF:
+                    totals[program]["recent_self_incident"] += 1
                 # Self-incident comments are not governance oversight — skip classification
                 if program not in seen_this_bug:
                     seen_this_bug.add(program)
@@ -683,6 +687,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "oversight_comments": t["oversight"],
             "recent_oversight_comments": t.get("recent_oversight", 0),
             "self_incident_comments": t["self_incident"],
+            "recent_self_incident_comments": t.get("recent_self_incident", 0),
             "oversight_pct": round((t["oversight"] / governance_total) * 100) if governance_total else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
