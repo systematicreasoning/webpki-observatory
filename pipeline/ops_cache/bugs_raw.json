@@ -27022,5 +27022,21 @@
     "id": 2021685,
     "resolution": "",
     "whiteboard": ""
+  },
+  {
+    "status": "ASSIGNED",
+    "resolution": "",
+    "summary": "Asseco DS / Certum: Delayed revocation of S/MIME certificates issued with mailbox validation older than 30 days",
+    "creator": "kateryna.aleksieieva@assecods.pl",
+    "creation_time": "2026-03-13T14:37:17Z",
+    "id": 2023190,
+    "creator_detail": {
+      "name": "kateryna.aleksieieva@assecods.pl",
+      "real_name": "Kateryna Aleksieieva",
+      "id": 697118,
+      "nick": "kateryna.aleksieieva",
+      "email": "kateryna.aleksieieva@assecods.pl"
+    },
+    "whiteboard": "[ca-compliance] [leaf-revocation-delay]"
   }
 ]

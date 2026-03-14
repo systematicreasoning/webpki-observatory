@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-03-08T17:28:37.882639+00:00",
-    "last_checked": "2026-03-13T06:41:46.176507+00:00",
-    "bug_count": 1689,
-    "active_incidents": 1424,
+    "last_updated": "2026-03-14T06:35:52.508813+00:00",
+    "last_checked": "2026-03-14T06:35:52.508829+00:00",
+    "bug_count": 1690,
+    "active_incidents": 1425,
     "active_cas": 54,
-    "classified_count": 1424,
+    "classified_count": 1425,
     "unclassified_count": 0,
     "distrusted_excluded": 186,
     "unmapped_bugs": 68,
@@ -13,8 +13,8 @@
     "pipeline_error": null,
     "pipeline_error_time": null
   },
-  "total": 1424,
-  "total_with_distrusted": 1610,
+  "total": 1425,
+  "total_with_distrusted": 1611,
   "ca_count": 54,
   "ca_count_with_distrusted": 55,
   "years": [
@@ -68,7 +68,7 @@
     },
     {
       "y": 2026,
-      "n": 62
+      "n": 63
     }
   ],
   "categories": [
@@ -82,7 +82,7 @@
     },
     {
       "cat": "Revocation",
-      "n": 322
+      "n": 323
     },
     {
       "cat": "Validation",
@@ -177,7 +177,7 @@
     {
       "y": 2026,
       "mi": 15,
-      "rv": 11,
+      "rv": 12,
       "gv": 30,
       "vl": 6
     }
@@ -219,6 +219,13 @@
       "vl": 5
     },
     {
+      "ca": "Asseco Data Systems S.A.",
+      "mi": 21,
+      "rv": 10,
+      "gv": 12,
+      "vl": 4
+    },
+    {
       "ca": "Microsoft Corporation",
       "mi": 12,
       "rv": 13,
@@ -231,13 +238,6 @@
       "rv": 17,
       "gv": 8,
       "vl": 8
-    },
-    {
-      "ca": "Asseco Data Systems S.A.",
-      "mi": 21,
-      "rv": 9,
-      "gv": 12,
-      "vl": 4
     },
     {
       "ca": "Government of The Netherlands, PKIoverheid (Logius)",
@@ -599,6 +599,13 @@
       "selfPct": 64
     },
     {
+      "ca": "Asseco Data Systems S.A.",
+      "n": 47,
+      "self": 27,
+      "ext": 20,
+      "selfPct": 57
+    },
+    {
       "ca": "Microsoft Corporation",
       "n": 47,
       "self": 26,
@@ -611,13 +618,6 @@
       "self": 27,
       "ext": 19,
       "selfPct": 59
-    },
-    {
-      "ca": "Asseco Data Systems S.A.",
-      "n": 46,
-      "self": 26,
-      "ext": 20,
-      "selfPct": 57
     },
     {
       "ca": "Government of The Netherlands, PKIoverheid (Logius)",

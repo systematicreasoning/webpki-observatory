@@ -6,7 +6,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Operated by Greek academic/research network, government-funded institution",
       "jurisdiction": "Greece",
-      "issued": 516660,
+      "issued": 517339,
       "pct": 0.0401,
       "trust_store_count": 4,
       "trusted_by": {
@@ -22,7 +22,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
       "jurisdiction": "Sweden",
-      "issued": 35362,
+      "issued": 35396,
       "pct": 0.0027,
       "trust_store_count": 4,
       "trusted_by": {
@@ -38,7 +38,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "State-affiliated entity, Shanghai municipality",
       "jurisdiction": "China",
-      "issued": 32021,
+      "issued": 31994,
       "pct": 0.0025,
       "trust_store_count": 3,
       "trusted_by": {
@@ -54,7 +54,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "German federal government holds ~30% of Deutsche Telekom via KfW",
       "jurisdiction": "Germany",
-      "issued": 20925,
+      "issued": 20932,
       "pct": 0.0016,
       "trust_store_count": 4,
       "trusted_by": {
@@ -70,8 +70,8 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Majority state-owned telecom (Taiwan Ministry of Transportation)",
       "jurisdiction": "Taiwan",
-      "issued": 8430,
-      "pct": 0.0007,
+      "issued": 8355,
+      "pct": 0.0006,
       "trust_store_count": 4,
       "trusted_by": {
         "mozilla": true,
@@ -86,7 +86,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Established by People's Bank of China",
       "jurisdiction": "China",
-      "issued": 5669,
+      "issued": 5703,
       "pct": 0.0004,
       "trust_store_count": 4,
       "trusted_by": {
@@ -102,7 +102,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Hong Kong Post, SAR government agency",
       "jurisdiction": "Hong Kong",
-      "issued": 2957,
+      "issued": 2972,
       "pct": 0.0002,
       "trust_store_count": 4,
       "trusted_by": {
@@ -118,7 +118,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Spanish Royal Mint, government agency",
       "jurisdiction": "Spain",
-      "issued": 2853,
+      "issued": 2849,
       "pct": 0.0002,
       "trust_store_count": 4,
       "trusted_by": {
@@ -134,7 +134,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Valencian regional government agency",
       "jurisdiction": "Spain",
-      "issued": 2667,
+      "issued": 2653,
       "pct": 0.0002,
       "trust_store_count": 4,
       "trusted_by": {
@@ -150,7 +150,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Finnish population register, government agency",
       "jurisdiction": "Finland",
-      "issued": 2615,
+      "issued": 2614,
       "pct": 0.0002,
       "trust_store_count": 1,
       "trusted_by": {
@@ -166,7 +166,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Spanish notarial professional body, quasi-governmental",
       "jurisdiction": "Spain",
-      "issued": 1873,
+      "issued": 1871,
       "pct": 0.0001,
       "trust_store_count": 4,
       "trusted_by": {
@@ -182,7 +182,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Brazilian federal IT institute, operates ICP-Brasil",
       "jurisdiction": "Brazil",
-      "issued": 493,
+      "issued": 494,
       "pct": 0.0,
       "trust_store_count": 1,
       "trusted_by": {
@@ -198,7 +198,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Croatian state-owned financial agency",
       "jurisdiction": "Croatia",
-      "issued": 350,
+      "issued": 351,
       "pct": 0.0,
       "trust_store_count": 1,
       "trusted_by": {
@@ -214,7 +214,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Korean government agency",
       "jurisdiction": "South Korea",
-      "issued": 264,
+      "issued": 258,
       "pct": 0.0,
       "trust_store_count": 1,
       "trusted_by": {
@@ -230,7 +230,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Indian federal ministry",
       "jurisdiction": "India",
-      "issued": 155,
+      "issued": 159,
       "pct": 0.0,
       "trust_store_count": 1,
       "trusted_by": {
@@ -262,7 +262,7 @@
       "type_label": "Government-Operated",
       "state_influence": "Tunisian national certification agency",
       "jurisdiction": "Tunisia",
-      "issued": 76,
+      "issued": 78,
       "pct": 0.0,
       "trust_store_count": 3,
       "trusted_by": {
@@ -389,13 +389,13 @@
     "state_enterprise": {
       "label": "State-Owned Enterprise",
       "count": 7,
-      "issued": 619417,
-      "pct": 0.048
+      "issued": 620070,
+      "pct": 0.0479
     },
     "government": {
       "label": "Government-Operated",
       "count": 17,
-      "issued": 14134,
+      "issued": 14129,
       "pct": 0.0009
     }
   },
@@ -403,7 +403,7 @@
     {
       "jurisdiction": "Greece",
       "count": 1,
-      "issued": 516660,
+      "issued": 517339,
       "types": [
         "state_enterprise"
       ]
@@ -411,7 +411,7 @@
     {
       "jurisdiction": "China",
       "count": 2,
-      "issued": 37690,
+      "issued": 37697,
       "types": [
         "state_enterprise"
       ]
@@ -419,7 +419,7 @@
     {
       "jurisdiction": "Sweden",
       "count": 2,
-      "issued": 35362,
+      "issued": 35396,
       "types": [
         "government",
         "state_enterprise"
@@ -428,7 +428,7 @@
     {
       "jurisdiction": "Germany",
       "count": 1,
-      "issued": 20925,
+      "issued": 20932,
       "types": [
         "state_enterprise"
       ]
@@ -436,7 +436,7 @@
     {
       "jurisdiction": "Taiwan",
       "count": 1,
-      "issued": 8430,
+      "issued": 8355,
       "types": [
         "state_enterprise"
       ]
@@ -444,7 +444,7 @@
     {
       "jurisdiction": "Spain",
       "count": 4,
-      "issued": 7401,
+      "issued": 7381,
       "types": [
         "government"
       ]
@@ -452,7 +452,7 @@
     {
       "jurisdiction": "Hong Kong",
       "count": 1,
-      "issued": 2957,
+      "issued": 2972,
       "types": [
         "government"
       ]
@@ -460,7 +460,7 @@
     {
       "jurisdiction": "Finland",
       "count": 1,
-      "issued": 2615,
+      "issued": 2614,
       "types": [
         "government"
       ]
@@ -468,7 +468,7 @@
     {
       "jurisdiction": "Brazil",
       "count": 1,
-      "issued": 493,
+      "issued": 494,
       "types": [
         "government"
       ]
@@ -476,7 +476,7 @@
     {
       "jurisdiction": "Croatia",
       "count": 1,
-      "issued": 350,
+      "issued": 351,
       "types": [
         "state_enterprise"
       ]
@@ -484,7 +484,7 @@
     {
       "jurisdiction": "South Korea",
       "count": 1,
-      "issued": 264,
+      "issued": 258,
       "types": [
         "government"
       ]
@@ -492,7 +492,7 @@
     {
       "jurisdiction": "India",
       "count": 1,
-      "issued": 155,
+      "issued": 159,
       "types": [
         "government"
       ]
@@ -508,7 +508,7 @@
     {
       "jurisdiction": "Tunisia",
       "count": 1,
-      "issued": 76,
+      "issued": 78,
       "types": [
         "government"
       ]
@@ -555,6 +555,6 @@
     }
   ],
   "total_gov_state": 24,
-  "total_gov_state_pct": 0.0489,
+  "total_gov_state_pct": 0.0488,
   "total_classified": 24
 }

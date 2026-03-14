@@ -11821,5 +11821,12 @@
     "severity": "medium",
     "summary": "Asseco DS / Certum: Finding in Routine WebTrust Audit – S/MIME certificates issued with mailbox validation older than 30 days",
     "classified_at": "2026-03-08T17:28:40.183799+00:00"
+  },
+  "2023190": {
+    "cat": "revocation",
+    "self": false,
+    "severity": "medium",
+    "summary": "Asseco DS / Certum: Delayed revocation of S/MIME certificates issued with mailbox validation older than 30 days",
+    "classified_at": "2026-03-14T06:35:53.759526+00:00"
   }
 }
