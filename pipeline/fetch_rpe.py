@@ -38,6 +38,120 @@ PIPELINE_DIR = Path(__file__).parent
 CACHE_DIR = PIPELINE_DIR / "ops_cache"
 OUTPUT_DIR = PIPELINE_DIR.parent / "data"
 BUGZILLA_URL = "https://bugzilla.mozilla.org/rest/bug"
+ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"  # Fast + cheap for binary classification
+COMMENT_CLASSIFICATION_BATCH_SIZE = 30
+
+COMMENT_CLASSIFICATION_PROMPT = """You are classifying Bugzilla comments left by browser root program staff (Chrome, Mozilla, Apple, Microsoft) on CA compliance incident bugs.
+
+For each comment below, return a JSON array where each entry has:
+- "key": the comment key provided (e.g. "123456:2")
+- "governance": true if the comment represents genuine governance participation, false if it is administrative process
+
+Genuine governance (true) includes:
+- Technical analysis of a certificate, CRL, OCSP, or audit finding
+- Citing a specific policy violation with evidence (crt.sh links, RFC citations, hash values, certificate fields)
+- Substantive feedback on a CA's incident response or remediation plan
+- Raising a new compliance issue the CA hadn't reported
+- Requesting specific technical remediation with reasoning
+
+Administrative process (false) includes:
+- Opening a tracking or meta bug ("Opening this bug to track...", "This is a meta bug...")
+- Templated notices that a CA failed to respond to a survey (boilerplate policy text with only the CA name changed)
+- Requiring a CA to file a follow-up bug as a process step
+- Test bug filings or browser bug report templates
+- Comments that are purely procedural with no technical content
+
+When in doubt, lean toward true — governance participation does not have to be highly technical.
+
+Return ONLY a valid JSON array, no other text.
+
+"""
+
+
+def classify_comments_llm(candidates, existing_classifications, api_key):
+    """
+    Use LLM to classify root program comments as genuine governance vs administrative process.
+    
+    candidates: list of dicts with keys: key, author, bug_id, summary, text
+    existing_classifications: dict keyed by comment key -> {governance: bool}
+    Returns updated classifications dict and count of newly classified comments.
+    """
+    if not api_key:
+        print("  No ANTHROPIC_API_KEY — skipping LLM comment classification")
+        return existing_classifications, 0
+
+    needs = [c for c in candidates if c["key"] not in existing_classifications]
+    if not needs:
+        print(f"  All {len(candidates)} comments already classified")
+        return existing_classifications, 0
+
+    print(f"  {len(needs)} comments need LLM classification ({len(candidates) - len(needs)} cached)")
+    classified = 0
+
+    for i in range(0, len(needs), COMMENT_CLASSIFICATION_BATCH_SIZE):
+        batch = needs[i:i + COMMENT_CLASSIFICATION_BATCH_SIZE]
+        batch_num = i // COMMENT_CLASSIFICATION_BATCH_SIZE + 1
+        total_batches = (len(needs) + COMMENT_CLASSIFICATION_BATCH_SIZE - 1) // COMMENT_CLASSIFICATION_BATCH_SIZE
+
+        # Format each comment for the prompt
+        lines = []
+        for c in batch:
+            lines.append(f"Key: {c['key']}")
+            lines.append(f"Bug: {c['summary'][:80]}")
+            lines.append(f"Author: {c['author']}")
+            lines.append(f"Comment: {c['text'][:400]}")
+            lines.append("")
+        prompt_text = COMMENT_CLASSIFICATION_PROMPT + "\n".join(lines)
+
+        try:
+            req_body = json.dumps({
+                "model": ANTHROPIC_MODEL,
+                "max_tokens": 1000,
+                "messages": [{"role": "user", "content": prompt_text}],
+            }).encode()
+
+            req = urllib.request.Request(
+                ANTHROPIC_URL,
+                data=req_body,
+                headers={
+                    "Content-Type": "application/json",
+                    "x-api-key": api_key,
+                    "anthropic-version": "2023-06-01",
+                },
+            )
+
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                result = json.loads(resp.read())
+
+            text = "".join(
+                block["text"] for block in result.get("content", [])
+                if block.get("type") == "text"
+            )
+
+            items = json.loads(text)
+            for item in items:
+                key = str(item.get("key", ""))
+                if key:
+                    existing_classifications[key] = {
+                        "governance": bool(item.get("governance", True)),
+                    }
+                    classified += 1
+
+            print(f"    Batch {batch_num}/{total_batches}: classified {len(items)} comments")
+
+        except json.JSONDecodeError as e:
+            print(f"    Batch {batch_num}: JSON parse error — {e}")
+            print(f"    Raw response: {text[:200]}")
+        except Exception as e:
+            print(f"    Batch {batch_num}: ERROR — {e}")
+
+        if i + COMMENT_CLASSIFICATION_BATCH_SIZE < len(needs):
+            time.sleep(0.5)
+
+    return existing_classifications, classified
+
+
 
 # ── Root program email domain mapping ─────────────────────────────────────────
 # Curated manually. These are stable — staff may move between orgs but domains don't.
@@ -376,7 +490,7 @@ def _bug_is_about_program(summary, program):
     return False
 
 
-def analyze_comment_participation(comment_cache, bugs_raw):
+def analyze_comment_participation(comment_cache, bugs_raw, comment_classifications=None):
     """
     Analyze comment participation by root program.
     
@@ -396,6 +510,9 @@ def analyze_comment_participation(comment_cache, bugs_raw):
       as workflow_events for transparency.
     - Known bot accounts (bug-husbandry-bot, release-mgmt-account-bot) are
       excluded entirely from program attribution.
+    - When comment_classifications is provided (LLM output), oversight comments
+      classified as administrative process (governance=false) are excluded from
+      governance metrics but counted separately as admin_comments.
     """
     print("\n── Phase 2b: Comment Participation Analysis ──")
 
@@ -415,7 +532,7 @@ def analyze_comment_participation(comment_cache, bugs_raw):
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
-    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0})
+    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0})
     unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set()})
     comment_count_total = 0
     substantive_count_total = 0
@@ -439,7 +556,7 @@ def analyze_comment_participation(comment_cache, bugs_raw):
         
         seen_this_bug = set()
         
-        for comment in comments:
+        for ci, comment in enumerate(comments):
             author = comment.get("author", "")
             comment_count_total += 1
 
@@ -470,31 +587,45 @@ def analyze_comment_participation(comment_cache, bugs_raw):
 
             if is_own:
                 totals[program]["self_incident"] += 1
-            else:
-                totals[program]["oversight"] += 1
-                
-                # Track per-person oversight and quarterly
-                ts = comment.get("time", "")[:7]
-                if ts and len(ts) >= 7:
-                    try:
-                        cy = ts[:4]
-                        cm = int(ts[5:7])
-                        quarter = f"{cy}-Q{(cm - 1) // 3 + 1}"
-                        person_oversight[author][quarter] += 1
-                        person_program[author] = program
-                        program_quarter_comments[program][quarter] += 1
-                        program_quarter_people[program][quarter].add(author)
-                    except (ValueError, IndexError):
-                        pass
+                # Self-incident comments are not governance oversight — skip classification
+                if program not in seen_this_bug:
+                    seen_this_bug.add(program)
+                    unique_bugs[program]["all"].add(bug_id)
+                    by_year_all[year][program] += 1
+                continue
+
+            # For oversight comments: apply LLM classification if available
+            comment_key = f"{bug_id}:{ci}"
+            if comment_classifications is not None:
+                clf = comment_classifications.get(comment_key)
+                if clf is not None and not clf.get("governance", True):
+                    # LLM classified as administrative process — exclude from governance metrics
+                    totals[program]["admin_comments"] += 1
+                    continue
+
+            totals[program]["oversight"] += 1
+            
+            # Track per-person oversight and quarterly
+            ts = comment.get("time", "")[:7]
+            if ts and len(ts) >= 7:
+                try:
+                    cy = ts[:4]
+                    cm = int(ts[5:7])
+                    quarter = f"{cy}-Q{(cm - 1) // 3 + 1}"
+                    person_oversight[author][quarter] += 1
+                    person_program[author] = program
+                    program_quarter_comments[program][quarter] += 1
+                    program_quarter_people[program][quarter].add(author)
+                except (ValueError, IndexError):
+                    pass
             
             # Track unique bug engagement (deduplicate per-bug)
             if program not in seen_this_bug:
                 seen_this_bug.add(program)
                 unique_bugs[program]["all"].add(bug_id)
                 by_year_all[year][program] += 1
-                if not is_own:
-                    unique_bugs[program]["oversight"].add(bug_id)
-                    by_year_oversight[year][program] += 1
+                unique_bugs[program]["oversight"].add(bug_id)
+                by_year_oversight[year][program] += 1
     
     # Format yearly oversight data
     oversight_years = []
@@ -517,6 +648,7 @@ def analyze_comment_participation(comment_cache, bugs_raw):
             "total_comments": t["all"],
             "substantive_comments": substantive,
             "workflow_events": t.get("workflow_events", 0),
+            "admin_comments": t.get("admin_comments", 0),
             "oversight_comments": t["oversight"],
             "self_incident_comments": t["self_incident"],
             "oversight_pct": round((t["oversight"] / substantive) * 100) if substantive else 0,
@@ -575,16 +707,19 @@ def analyze_comment_participation(comment_cache, bugs_raw):
             entry[f"{prog}_people"] = len(program_quarter_people[prog].get(q, set()))
         quarterly_trends.append(entry)
     
+    has_llm = comment_classifications is not None
     print(f"  Bugs with comments: {bugs_with_comments}")
     print(f"  Total comments (raw): {comment_count_total}")
     print(f"  Substantive comments (non-empty, non-bot): {substantive_count_total}")
-    print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8} {'Bus Factor':>11}")
+    if has_llm:
+        total_admin = sum(program_summary[p]["admin_comments"] for p in ["chrome","mozilla","apple","microsoft"])
+        print(f"  LLM-filtered admin comments: {total_admin}")
+    print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Admin':>6} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8}")
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         s = program_summary[prog]
-        c = concentration[prog]
-        print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']:>7} {s['oversight_comments']:>10} "
-              f"{s['self_incident_comments']:>10} {s['oversight_pct']:>8}% {s['bugs_oversight']:>8} "
-              f"top1={c['top_contributor_pct']}%")
+        print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']+s['admin_comments']:>7} "
+              f"{s['admin_comments']:>6} {s['oversight_comments']:>10} "
+              f"{s['self_incident_comments']:>10} {s['oversight_pct']:>8}% {s['bugs_oversight']:>8}")
     
     return {
         "oversight_by_year": oversight_years,
@@ -1557,8 +1692,55 @@ def main():
         max_bugs=max_fetch,
         rate_limit_delay=0.5,
     )
-    
-    comment_data = analyze_comment_participation(comment_cache, bugs_raw)
+
+    # Build a fast bug lookup for Phase 2c candidate collection
+    bug_lookup_main = {str(b["id"]): b for b in bugs_raw}
+
+    # Phase 2c: LLM classification of oversight comments (admin vs genuine governance)
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    comment_clf_path = CACHE_DIR / "comment_classifications.json"
+    comment_classifications = load_json(comment_clf_path, {})
+
+    if api_key:
+        print("\n── Phase 2c: LLM Comment Classification ──")
+        BOT_DOMAINS_MAIN = {"mozilla.bugs", "mozilla.tld"}
+        candidates = []
+        for bug_id, comments in comment_cache.items():
+            bug = bug_lookup_main.get(bug_id, {})
+            summary = bug.get("summary", "")
+            for ci, c in enumerate(comments):
+                author = c.get("author", "")
+                if not author or "@" not in author: continue
+                domain = author.lower().split("@")[-1]
+                if domain in BOT_DOMAINS_MAIN: continue
+                prog = classify_email(author)
+                if prog == "other" or not prog: continue
+                text = c.get("text", "").strip()
+                if not text: continue
+                if _bug_is_about_program(summary, prog): continue
+                candidates.append({
+                    "key": f"{bug_id}:{ci}",
+                    "author": author,
+                    "bug_id": bug_id,
+                    "summary": summary,
+                    "text": text,
+                })
+
+        comment_classifications, n_classified = classify_comments_llm(
+            candidates, comment_classifications, api_key
+        )
+        if n_classified > 0:
+            with open(comment_clf_path, "w") as f:
+                json.dump(comment_classifications, f, indent=2)
+            print(f"  Saved {len(comment_classifications)} classifications to cache")
+    else:
+        print("\n  No ANTHROPIC_API_KEY — skipping LLM comment classification (using all substantive comments)")
+
+    # Phase 2b: Comment participation analysis (with LLM classifications if available)
+    comment_data = analyze_comment_participation(
+        comment_cache, bugs_raw,
+        comment_classifications=comment_classifications if api_key else None,
+    )
     
     # Phase 1b: Discovery method classification
     discovery_data = analyze_discovery_methods(bugs_raw, comment_cache)
