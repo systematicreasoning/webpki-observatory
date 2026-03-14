@@ -2109,7 +2109,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 283991,
+        "certs": 286959,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2129,7 +2129,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 95569,
+        "certs": 95925,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2149,7 +2149,7 @@
       {
         "ca": "Cybertrust Japan Co., Ltd.",
         "rank": 22,
-        "certs": 35653,
+        "certs": 35601,
         "stores": {
           "chrome": "not_included",
           "mozilla": "included",
@@ -2169,7 +2169,7 @@
       {
         "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
         "rank": 24,
-        "certs": 31994,
+        "certs": 31928,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2189,7 +2189,7 @@
       {
         "ca": "Government of Finland, Population Register Centre\u2019s (V\u00e4est\u00f6rekisterikeskus, VRK)",
         "rank": 40,
-        "certs": 2614,
+        "certs": 2609,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2209,7 +2209,7 @@
       {
         "ca": "Open Access Technology International, Inc. (OATI)",
         "rank": 42,
-        "certs": 2387,
+        "certs": 2382,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2229,7 +2229,7 @@
       {
         "ca": "PostSignum",
         "rank": 46,
-        "certs": 1007,
+        "certs": 1003,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2289,7 +2289,7 @@
       {
         "ca": "Prvn\u00ed certifika\u010dn\u00ed autorita, a.s.",
         "rank": 52,
-        "certs": 370,
+        "certs": 369,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2309,7 +2309,7 @@
       {
         "ca": "Financijska agencija (Fina)",
         "rank": 53,
-        "certs": 351,
+        "certs": 350,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2329,7 +2329,7 @@
       {
         "ca": "Government of Korea, KLID",
         "rank": 54,
-        "certs": 258,
+        "certs": 254,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2369,7 +2369,7 @@
       {
         "ca": "Netlock",
         "rank": 57,
-        "certs": 151,
+        "certs": 150,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2666,7 +2666,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517547328,
+        "certs_now": 517284867,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
