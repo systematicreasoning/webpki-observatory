@@ -552,8 +552,8 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
-    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0, "recent_self_incident": 0})
-    unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set(), "recent_oversight": set()})
+    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0, "recent_self_incident": 0, "technical_oversight": 0, "recent_technical_oversight": 0})
+    unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set(), "recent_oversight": set(), "technical_oversight": set(), "recent_technical_oversight": set()})
     RECENT_OVERSIGHT_CUTOFF = "2021"
     comment_count_total = 0
     substantive_count_total = 0
@@ -621,12 +621,11 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
 
             # For oversight comments: apply LLM classification if available
             comment_key = f"{bug_id}:{ci}"
-            if comment_classifications is not None:
-                clf = comment_classifications.get(comment_key)
-                if clf is not None and not clf.get("governance", True):
-                    # LLM classified as administrative process — exclude from governance metrics
-                    totals[program]["admin_comments"] += 1
-                    continue
+            clf_entry = comment_classifications.get(comment_key) if comment_classifications is not None else None
+            if clf_entry is not None and not clf_entry.get("governance", True):
+                # LLM classified as administrative process — exclude from governance metrics
+                totals[program]["admin_comments"] += 1
+                continue
 
             totals[program]["oversight"] += 1
 
@@ -634,6 +633,13 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             comment_year = comment.get("time", "")[:4]
             if comment_year >= RECENT_OVERSIGHT_CUTOFF:
                 totals[program]["recent_oversight"] += 1
+
+            # Track technical oversight (second-pass LLM classification)
+            is_technical = clf_entry.get("technical", False) if clf_entry else False
+            if is_technical:
+                totals[program]["technical_oversight"] += 1
+                if comment_year >= RECENT_OVERSIGHT_CUTOFF:
+                    totals[program]["recent_technical_oversight"] += 1
             
             # Track per-person oversight and quarterly
             ts = comment.get("time", "")[:7]
@@ -658,6 +664,11 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
                 by_year_oversight[year][program] += 1
                 if comment_year >= RECENT_OVERSIGHT_CUTOFF:
                     unique_bugs[program]["recent_oversight"].add(bug_id)
+            # Technical bugs tracked per-comment (multiple technical comments on same bug = 1 bug)
+            if is_technical:
+                unique_bugs[program]["technical_oversight"].add(bug_id)
+                if comment_year >= RECENT_OVERSIGHT_CUTOFF:
+                    unique_bugs[program]["recent_technical_oversight"].add(bug_id)
     
     # Format yearly oversight data
     oversight_years = []
@@ -686,12 +697,16 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "admin_comments": t.get("admin_comments", 0),
             "oversight_comments": t["oversight"],
             "recent_oversight_comments": t.get("recent_oversight", 0),
+            "technical_oversight_comments": t.get("technical_oversight", 0),
+            "recent_technical_oversight_comments": t.get("recent_technical_oversight", 0),
             "self_incident_comments": t["self_incident"],
             "recent_self_incident_comments": t.get("recent_self_incident", 0),
             "oversight_pct": round((t["oversight"] / governance_total) * 100) if governance_total else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
             "recent_bugs_oversight": len(unique_bugs[prog]["recent_oversight"]),
+            "bugs_technical_oversight": len(unique_bugs[prog]["technical_oversight"]),
+            "recent_bugs_technical_oversight": len(unique_bugs[prog]["recent_technical_oversight"]),
         }
     
     # NEW: Compute concentration / bus factor per program

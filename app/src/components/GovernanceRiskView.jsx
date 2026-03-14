@@ -34,8 +34,10 @@ const METRICS = [
       : (v > 5 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd) },
   { key: 'never_acted', label: 'Never Acted', tip: 'peers acted, this store didn\u2019t', good: 'low',
     color: (v) => v === 0 ? COLORS.gn : v <= 1 ? COLORS.am : COLORS.rd },
-  { key: 'oversight', label: 'Bugzilla Oversight', tip: '% comments on CA incidents', good: 'high',
-    color: (v) => { const n = parseInt(v); return n > 50 ? COLORS.gn : n > 0 ? COLORS.am : COLORS.rd; } },
+  { key: 'oversight_coverage', label: 'Bugzilla Coverage', tip: 'CA compliance bugs engaged with governance comments', good: 'high',
+    color: (v) => { const n = parseInt(v); return n > 100 ? COLORS.gn : n > 30 ? COLORS.am : n > 0 ? COLORS.rd : COLORS.rd; } },
+  { key: 'oversight_substantive', label: 'Substantive Oversight', tip: 'bugs with technical findings — not just process enforcement', good: 'high',
+    color: (v) => { const n = parseInt(v); return n > 40 ? COLORS.gn : n > 10 ? COLORS.am : n > 0 ? COLORS.rd : COLORS.rd; } },
   { key: 'proposed', label: 'Ballots Proposed', tip: 'SC + NetSec', good: 'high',
     color: (v, _tot, isRecent) => isRecent
       ? (v > 4 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd)
@@ -97,19 +99,17 @@ function useReportCard(d, isRecent) {
         : (e.initiated || 0);
       const neverActed = totalEvents - acted;
 
-      // Recent oversight: use pipeline-computed recent_oversight_comments directly.
-      // This is exact — per-comment timestamps filtered to >= 2021, LLM-classified.
-      let oversightPct;
-      if (isRecent) {
-        const recentOC = c.recent_oversight_comments ?? c.oversight_comments ?? 0;
-        const recentSI = c.recent_self_incident_comments ?? c.self_incident_comments ?? 0;
-        const recentTotal = recentOC + recentSI;
-        oversightPct = recentTotal > 0
-          ? `${Math.min(100, Math.round((recentOC / recentTotal) * 100))}%`
-          : `${c.oversight_pct || 0}%`;
-      } else {
-        oversightPct = `${c.oversight_pct || 0}%`;
-      }
+      // Total bugs in corpus for coverage rate denominator
+      const totalBugs = d.meta?.bugs_total || 1690;
+
+      // Coverage: bugs engaged with genuine governance comments / total bugs
+      // Substantive: bugs with technically substantive comments / total bugs
+      const coverageBugs = isRecent
+        ? (c.recent_bugs_oversight ?? c.bugs_oversight ?? 0)
+        : (c.bugs_oversight ?? 0);
+      const substantiveBugs = isRecent
+        ? (c.recent_bugs_technical_oversight ?? c.bugs_technical_oversight ?? 0)
+        : (c.bugs_technical_oversight ?? 0);
 
       // Voted: for recent, count yes votes in recent_votes (14 ballots)
       const recentVotes = d.policy_leadership?.recent_votes || [];
@@ -121,7 +121,8 @@ function useReportCard(d, isRecent) {
         enforcement: `${acted}/${totalEvents}`,
         led,
         never_acted: neverActed,
-        oversight: oversightPct,
+        oversight_coverage: coverageBugs,
+        oversight_substantive: substantiveBugs,
         proposed: isRecent ? (bcRecent.endorsed || 0) : (p.proposed || 0),
         voted: isRecent
           ? `${votedRecent}/${recentVotes.length}`
@@ -161,8 +162,6 @@ const GovernanceRiskView = () => {
   const allQuarters = d.oversight_quarterly || [];
   const [oversightView, setOversightView] = useState('recent');
   const quarters = oversightView === 'recent' ? allQuarters.slice(-12) : allQuarters;
-  const maxOv = Math.max(...STORE_ORDER.map(s => (d.program_comment_summary?.[s]?.substantive_comments || d.program_comment_summary?.[s]?.total_comments || 0)), 1);
-  const maxQC = Math.max(...quarters.map(q => Math.max(...STORE_ORDER.map(s => q[`${s}_comments`] || 0))), 1);
   const [incidentOversightView, setIncidentOversightView] = useState('recent');
   const [incidentDetectionView, setIncidentDetectionView] = useState('recent');
   const allBugCreation = d.bug_creation_by_year || [];
@@ -258,9 +257,9 @@ const GovernanceRiskView = () => {
         </div>
         <div style={{ ...footnoteStyle, marginTop: 10 }}>
           {isRecentRC ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} of 15 total), oversight last 12 quarters (3 years), ballots last 50 SC ballots. Trust surface metrics are always current snapshot — no time filter applies there. `}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} of 15 total), Bugzilla oversight 2021+, ballots last 50 SC ballots. Trust surface is always current snapshot. `}</>
           ) : (
-            `Enforcement: ${totalEvents} events since 2011. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments — admin noise filtered by LLM). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
+            `Enforcement: ${totalEvents} events since 2011. Bugzilla Coverage = unique CA compliance bugs engaged with genuine governance comments. Substantive Oversight = bugs with technically substantive comments (cert/CRL analysis, policy findings) — excludes process enforcement (survey notices, CCADB reminders, status requests). LLM-classified. Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
           )}
           Store size reflects policy philosophy, not just governance quality: Chrome is deliberately selective (value must exceed risk, only one new CA accepted),
           Mozilla is the fastest gateway for new CAs, Apple is highly selective, and Microsoft processes root rollovers quickly.
@@ -490,32 +489,25 @@ const GovernanceRiskView = () => {
           </div>
         </div>
         {(() => {
-          // In recent mode, use pipeline-computed recent_oversight_comments directly —
-          // exact per-comment timestamps, LLM-classified, no quarterly approximation needed.
+          // Show three segments: technical oversight (bright), process oversight (mid), self-incident (faded)
           const isRO = incidentOversightView === 'recent';
           const pcs = d.program_comment_summary || {};
+          const totalBugs = d.meta?.bugs_total || 1690;
 
           const windowMax = Math.max(...STORE_ORDER.map(s => {
             const cs = pcs[s] || {};
-            if (!isRO) return cs.substantive_comments || cs.total_comments || 0;
-            return (cs.recent_oversight_comments || 0) + (cs.self_incident_comments || 0);
+            const cov = isRO ? (cs.recent_bugs_oversight ?? cs.bugs_oversight ?? 0) : (cs.bugs_oversight ?? 0);
+            const si = cs.self_incident_comments || 0;
+            return cov + si;
           }), 1);
 
           return STORE_ORDER.map(s => {
             const cs = pcs[s] || {};
-            let oc, sic, pct;
-            if (!isRO) {
-              oc = cs.oversight_comments || 0;
-              sic = cs.self_incident_comments || 0;
-              pct = cs.oversight_pct || 0;
-            } else {
-              // Use exact recent_oversight_comments from pipeline (2021+, LLM-filtered)
-              oc = cs.recent_oversight_comments ?? cs.oversight_comments ?? 0;
-              sic = cs.recent_self_incident_comments ?? cs.self_incident_comments ?? 0;
-              const combined = oc + sic;
-              pct = combined > 0 ? Math.min(100, Math.round((oc / combined) * 100)) : 0;
-              if (cs.oversight_pct === 0) pct = 0;
-            }
+            const covBugs = isRO ? (cs.recent_bugs_oversight ?? cs.bugs_oversight ?? 0) : (cs.bugs_oversight ?? 0);
+            const techBugs = isRO ? (cs.recent_bugs_technical_oversight ?? cs.bugs_technical_oversight ?? 0) : (cs.bugs_technical_oversight ?? 0);
+            const procBugs = covBugs - techBugs;
+            const sic = cs.self_incident_comments || 0;
+            const covPct = Math.round(covBugs / totalBugs * 100);
             return (
               <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
                 <div style={{ width: 66, display: 'flex', alignItems: 'center', gap: 4 }}>
@@ -523,25 +515,31 @@ const GovernanceRiskView = () => {
                   <span style={{ fontSize: 9, color: STORE_COLORS[s], fontWeight: 500 }}>{STORE_NAMES[s]}</span>
                 </div>
                 <div style={{ flex: 1, height: 20, display: 'flex', borderRadius: 4, overflow: 'hidden' }}>
-                  {oc > 0 && <div style={{ width: `${(oc / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.8, display: 'flex', alignItems: 'center', paddingLeft: oc > 40 ? 6 : 2 }}>
-                    {oc > 40 && <span style={{ fontSize: 8, color: COLORS.wh, fontFamily: FONT_MONO, fontWeight: 600 }}>{oc}</span>}
+                  {techBugs > 0 && <div style={{ width: `${(techBugs / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.9, display: 'flex', alignItems: 'center', paddingLeft: techBugs > 20 ? 5 : 2 }}>
+                    {techBugs > 20 && <span style={{ fontSize: 8, color: COLORS.wh, fontFamily: FONT_MONO, fontWeight: 700 }}>{techBugs}</span>}
                   </div>}
-                  {sic > 0 && <div style={{ width: `${(sic / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.25, display: 'flex', alignItems: 'center', paddingLeft: sic > 40 ? 6 : 2 }}>
-                    {sic > 40 && <span style={{ fontSize: 8, color: COLORS.t3, fontFamily: FONT_MONO }}>{sic}</span>}
-                  </div>}
+                  {procBugs > 0 && <div style={{ width: `${(procBugs / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.4 }} />}
+                  {sic > 0 && <div style={{ width: `${(sic / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.15 }} />}
                 </div>
-                <span style={{ fontSize: 9, fontFamily: FONT_MONO, width: 33, textAlign: 'right', fontWeight: 600, color: pct > 50 ? COLORS.gn : pct > 0 ? COLORS.am : COLORS.rd }}>{pct}%</span>
+                <span style={{ fontSize: 9, fontFamily: FONT_MONO, width: 50, textAlign: 'right', fontWeight: 600, color: covBugs > 0 ? COLORS.t2 : COLORS.rd }}>
+                  {covBugs}<span style={{ fontWeight: 400, color: COLORS.t3 }}> bugs</span>
+                </span>
               </div>
             );
           });
         })()}
+        <div style={{ display: 'flex', gap: 12, fontSize: 8, color: COLORS.t3, marginTop: 4 }}>
+          <span><span style={{ display: 'inline-block', width: 10, height: 8, borderRadius: 2, background: COLORS.t2, opacity: 0.9, marginRight: 3, verticalAlign: 'middle' }} />Technical findings</span>
+          <span><span style={{ display: 'inline-block', width: 10, height: 8, borderRadius: 2, background: COLORS.t2, opacity: 0.4, marginRight: 3, verticalAlign: 'middle' }} />Process enforcement</span>
+          <span><span style={{ display: 'inline-block', width: 10, height: 8, borderRadius: 2, background: COLORS.t2, opacity: 0.15, marginRight: 3, verticalAlign: 'middle' }} />Self-incident</span>
+        </div>
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
           {incidentOversightView === 'recent' ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Genuine oversight comments only — empty workflow events and LLM-classified administrative process excluded. '}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' '}</>
           ) : (
-            'All time: 2014–present. Genuine oversight comments only — empty workflow events and LLM-classified administrative process excluded. '
+            'All time: 2014–present. '
           )}
-          Programs that govern through private channels appear underrepresented. Mozilla's count is inflated by administrative closures — a single employee commented on every bug as a process step. Microsoft's 0% reflects public Bugzilla only, not private governance.
+          Bar = unique bugs engaged. Bright = technical findings. Mid = process enforcement. Faded = self-incident (own CA). LLM-classified; administrative noise excluded. Public Bugzilla only — private governance not captured.
         </div>
       </Card>
 
@@ -732,16 +730,15 @@ const GovernanceRiskView = () => {
       {/* ═══ METHODOLOGY ═══ */}
       <MethodologyCard>
         <MethodologyItem label="Bugzilla Oversight">
-          Measures genuine governance participation by root program staff on CA compliance incident bugs.
-          Comment authors are attributed to root programs by email domain (google.com → Chrome, mozilla.com/mozilla.org → Mozilla, apple.com → Apple, microsoft.com → Microsoft).
-          Bot accounts (bug-husbandry-bot, release-mgmt-account-bot) are excluded entirely.
-          {' '}Comments are then filtered by an LLM classifier (claude-haiku) that distinguishes genuine governance from administrative process.
-          Genuine governance: technical analysis of a certificate or CRL issue, citing a specific policy violation with evidence, substantive feedback on a CA's remediation plan, raising a compliance issue the CA had not reported.
-          Administrative process (excluded): short acknowledgments ("Thanks", "Correct", "ping?"), boilerplate survey non-response notices where only the CA name changes, tracking bug openers, and status requests with no technical content.
-          {' '}{(d.meta?.total_comments_raw || 0).toLocaleString()} raw comments across {d.meta?.bugs_with_comments || 0} bugs → {(d.meta?.total_comments_analyzed || 0).toLocaleString()} after filtering.
-          "Oversight" = genuine governance comments on other CAs' bugs. "Self-incident" = genuine governance comments on your own CA's bugs (Microsoft operates Microsoft PKI Services; all {d.program_comment_summary?.microsoft?.self_incident_comments || 0} of their governance comments are self-incident).
-          Oversight % = oversight / (oversight + self-incident). Recent % uses 2021+ comments only for both numerator and denominator.
-          This measures publicly visible Bugzilla engagement only. Root programs that govern primarily through private channels (email, direct CA contact) will appear underrepresented relative to their actual governance activity.
+          Measures root program governance participation on CA compliance incident bugs. Two metrics:
+          "Bugzilla Coverage" = unique bugs where the program left at least one genuine governance comment, divided by total bugs in corpus ({d.meta?.bugs_total || 1690}).
+          "Substantive Oversight" = unique bugs where the program left a technically substantive comment — certificate or CRL analysis, specific policy violation with evidence, raising an issue the CA had not reported. Process enforcement comments (survey non-response notices, CCADB reminders, status requests, follow-up demands) are counted in coverage but not substantive.
+          {' '}Two-pass LLM classification (claude-haiku): first pass separates genuine governance from administrative noise (short acks, boilerplate templates, tracking bug openers). Second pass separates technical findings from process enforcement within the genuine set.
+          {' '}{(d.meta?.total_comments_raw || 0).toLocaleString()} raw comments → {(d.meta?.total_comments_analyzed || 0).toLocaleString()} after pass 1 → {
+            Object.values(d.program_comment_summary || {}).reduce((a, s) => a + (s.technical_oversight_comments || 0), 0)
+          } technical after pass 2.
+          Comment authors attributed by email domain. Bot accounts excluded. Public Bugzilla only — private governance not captured.
+          Microsoft operates Microsoft PKI Services (a publicly trusted CA); all their governance comments are self-incident responses. Their 0 coverage reflects genuine absence of public oversight engagement, not a data artifact.
         </MethodologyItem>
         <MethodologyItem label="Enforcement">
           {totalEvents} distrust events curated from root program announcements, Bugzilla threads, CCADB status changes, and Apple support documents.

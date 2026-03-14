@@ -1,189 +1,236 @@
 {
   "2015569:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015569:1": {
     "governance": false
   },
   "2015568:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015568:1": {
     "governance": false
   },
   "2015567:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015567:2": {
     "governance": false
   },
   "2015566:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015566:2": {
     "governance": false
   },
   "2015566:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015565:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015565:1": {
     "governance": false
   },
   "2015564:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015564:3": {
     "governance": false
   },
   "2015563:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015563:1": {
     "governance": false
   },
   "2015562:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2015562:1": {
     "governance": false
   },
   "2014609:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2013375:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2013375:7": {
     "governance": false
   },
   "2012326:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2011430:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2011430:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009941:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009941:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009525:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009525:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009525:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009491:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2009491:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2009491:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2009149:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2008803:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2008788:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2008028:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2008023:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2007297:10": {
     "governance": false
   },
   "2007116:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2007070:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2006711:10": {
     "governance": false
   },
   "2005567:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2005399:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2005196:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2005149:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2005149:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004733:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004732:2": {
     "governance": false
   },
   "2004732:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004699:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2004699:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004699:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004699:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004668:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004521:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "2004521:6": {
     "governance": false
   },
   "2002402:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "2001327:4": {
     "governance": false
   },
   "1999296:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1999296:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1999296:8": {
     "governance": false
   },
   "1994051:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1994051:22": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1994051:23": {
     "governance": false
@@ -195,52 +242,68 @@
     "governance": false
   },
   "1993357:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1991558:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1991215:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1990282:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1990282:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1986968:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1983955:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1983955:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1983275:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1983270:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1983269:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1983267:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1983267:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1981680:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1981680:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1981680:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1981380:4": {
     "governance": false
@@ -249,94 +312,122 @@
     "governance": false
   },
   "1978163:10": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1978163:20": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1978163:28": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1978163:31": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1978163:38": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1978163:52": {
     "governance": false
   },
   "1978163:68": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1977253:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1976860:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1976256:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1976256:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1975624:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1974539:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1966515:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1966515:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1966006:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965807:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:43": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:50": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:54": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:56": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:64": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:65": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1965612:83": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965612:93": {
     "governance": false
   },
   "1965612:166": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1965559:1": {
     "governance": false
@@ -345,43 +436,55 @@
     "governance": false
   },
   "1965559:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1963663:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1963546:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1963546:6": {
     "governance": false
   },
   "1963456:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1962829:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1962829:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1962829:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1962809:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1962809:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1961406:17": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1961406:27": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1959733:14": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1959721:6": {
     "governance": false
@@ -390,7 +493,8 @@
     "governance": false
   },
   "1957499:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1957474:0": {
     "governance": false
@@ -399,25 +503,31 @@
     "governance": false
   },
   "1955721:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1955365:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1955365:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1954861:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1954861:9": {
     "governance": false
   },
   "1952639:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1952639:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1952591:1": {
     "governance": false
@@ -426,31 +536,39 @@
     "governance": false
   },
   "1952519:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1951415:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1951415:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1951415:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1951415:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1951415:16": {
     "governance": false
   },
   "1951415:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1950574:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1950574:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1950574:6": {
     "governance": false
@@ -465,16 +583,20 @@
     "governance": false
   },
   "1949131:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1949131:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1949131:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1948600:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1948600:7": {
     "governance": false
@@ -489,10 +611,12 @@
     "governance": false
   },
   "1947691:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1947691:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1947207:6": {
     "governance": false
@@ -507,13 +631,16 @@
     "governance": false
   },
   "1946414:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1946414:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1946414:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1946414:15": {
     "governance": false
@@ -525,25 +652,30 @@
     "governance": false
   },
   "1945536:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1945536:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1945536:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1945536:19": {
     "governance": false
   },
   "1945536:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1945536:30": {
     "governance": false
   },
   "1945536:36": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1945536:37": {
     "governance": false
@@ -567,10 +699,12 @@
     "governance": false
   },
   "1944436:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1944436:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1944436:19": {
     "governance": false
@@ -591,7 +725,8 @@
     "governance": false
   },
   "1943379:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1942879:11": {
     "governance": false
@@ -618,7 +753,8 @@
     "governance": false
   },
   "1941009:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1941009:7": {
     "governance": false
@@ -684,25 +820,32 @@
     "governance": false
   },
   "1934361:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1934361:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1934361:22": {
     "governance": false
@@ -723,7 +866,8 @@
     "governance": false
   },
   "1932973:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1932973:22": {
     "governance": false
@@ -750,7 +894,8 @@
     "governance": false
   },
   "1931615:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1931615:13": {
     "governance": false
@@ -771,7 +916,8 @@
     "governance": false
   },
   "1927532:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1927506:14": {
     "governance": false
@@ -795,40 +941,50 @@
     "governance": false
   },
   "1925106:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:15": {
     "governance": false
   },
   "1925106:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:26": {
     "governance": false
   },
   "1925106:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:38": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1925106:47": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:49": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:56": {
     "governance": false
@@ -837,19 +993,24 @@
     "governance": false
   },
   "1925106:72": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1925106:76": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1925106:82": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:87": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1925106:94": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1924992:2": {
     "governance": false
@@ -876,7 +1037,8 @@
     "governance": false
   },
   "1924385:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1924385:4": {
     "governance": false
@@ -894,7 +1056,8 @@
     "governance": false
   },
   "1922844:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1922844:4": {
     "governance": false
@@ -924,10 +1087,12 @@
     "governance": false
   },
   "1921573:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1921573:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1921573:11": {
     "governance": false
@@ -939,10 +1104,12 @@
     "governance": false
   },
   "1921254:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1921254:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1921254:20": {
     "governance": false
@@ -960,10 +1127,12 @@
     "governance": false
   },
   "1919162:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1919162:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1919162:7": {
     "governance": false
@@ -1011,22 +1180,27 @@
     "governance": false
   },
   "1916489:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1916489:10": {
     "governance": false
   },
   "1916478:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1916478:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1916478:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1916478:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1916478:12": {
     "governance": false
@@ -1038,7 +1212,8 @@
     "governance": false
   },
   "1916392:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1916392:14": {
     "governance": false
@@ -1074,7 +1249,8 @@
     "governance": false
   },
   "1914383:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1914383:22": {
     "governance": false
@@ -1113,7 +1289,8 @@
     "governance": false
   },
   "1911335:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1911335:11": {
     "governance": false
@@ -1122,7 +1299,8 @@
     "governance": false
   },
   "1911335:21": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1911183:0": {
     "governance": false
@@ -1131,25 +1309,30 @@
     "governance": false
   },
   "1910805:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910805:18": {
     "governance": false
   },
   "1910805:22": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910805:39": {
     "governance": false
   },
   "1910805:46": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910805:60": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910805:62": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910805:76": {
     "governance": false
@@ -1164,13 +1347,16 @@
     "governance": false
   },
   "1910322:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910322:35": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1910322:48": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1910322:70": {
     "governance": false
@@ -1203,25 +1389,29 @@
     "governance": false
   },
   "1908128:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1908128:7": {
     "governance": false
   },
   "1907949:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1907949:4": {
     "governance": false
   },
   "1907949:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1907949:10": {
     "governance": false
   },
   "1907833:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1907833:8": {
     "governance": false
@@ -1230,7 +1420,8 @@
     "governance": false
   },
   "1907667:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1907667:14": {
     "governance": false
@@ -1275,28 +1466,33 @@
     "governance": false
   },
   "1905509:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1905509:21": {
     "governance": false
   },
   "1905509:23": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1905509:29": {
     "governance": false
   },
   "1905509:34": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1905446:9": {
     "governance": false
   },
   "1905419:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1905419:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1905419:10": {
     "governance": false
@@ -1314,7 +1510,8 @@
     "governance": false
   },
   "1904494:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904494:13": {
     "governance": false
@@ -1335,34 +1532,42 @@
     "governance": false
   },
   "1904399:21": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1904399:22": {
     "governance": false
   },
   "1904257:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1904257:3": {
     "governance": false
   },
   "1904041:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:23": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:27": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1904041:28": {
     "governance": false
@@ -1380,28 +1585,35 @@
     "governance": false
   },
   "1903823:12": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1903823:14": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1903823:16": {
     "governance": false
   },
   "1903066:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1903066:33": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1903066:34": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1903066:40": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1903066:57": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1903066:61": {
     "governance": false
@@ -1419,7 +1631,8 @@
     "governance": false
   },
   "1902592:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1902592:13": {
     "governance": false
@@ -1449,7 +1662,8 @@
     "governance": false
   },
   "1900492:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1900492:6": {
     "governance": false
@@ -1470,7 +1684,8 @@
     "governance": false
   },
   "1898848:46": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1898848:47": {
     "governance": false
@@ -1488,37 +1703,46 @@
     "governance": false
   },
   "1897538:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1897538:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1897538:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1897538:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1897538:11": {
     "governance": false
   },
   "1897538:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1897538:16": {
     "governance": false
   },
   "1897346:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1897346:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1897346:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1897346:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1897346:30": {
     "governance": false
@@ -1527,7 +1751,8 @@
     "governance": false
   },
   "1897134:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1897134:4": {
     "governance": false
@@ -1536,7 +1761,8 @@
     "governance": false
   },
   "1896596:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1896596:9": {
     "governance": false
@@ -1554,16 +1780,19 @@
     "governance": false
   },
   "1896553:45": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1896553:48": {
     "governance": false
   },
   "1896462:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1896462:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1896462:6": {
     "governance": false
@@ -1575,7 +1804,8 @@
     "governance": false
   },
   "1896108:10": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1896108:27": {
     "governance": false
@@ -1587,19 +1817,22 @@
     "governance": false
   },
   "1896053:25": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1896053:39": {
     "governance": false
   },
   "1896053:44": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1896053:45": {
     "governance": false
   },
   "1896053:58": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1895722:4": {
     "governance": false
@@ -1614,16 +1847,19 @@
     "governance": false
   },
   "1894560:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1894560:5": {
     "governance": false
   },
   "1894560:26": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1894560:27": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1894560:32": {
     "governance": false
@@ -1632,10 +1868,12 @@
     "governance": false
   },
   "1894111:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1894111:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1894111:42": {
     "governance": false
@@ -1647,43 +1885,53 @@
     "governance": false
   },
   "1892419:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1892419:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1892419:18": {
     "governance": false
   },
   "1891531:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891531:11": {
     "governance": false
   },
   "1891331:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:31": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:32": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891331:34": {
     "governance": false
   },
   "1891251:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1891251:3": {
     "governance": false
@@ -1707,55 +1955,69 @@
     "governance": false
   },
   "1890898:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:37": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:39": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:40": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:44": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:45": {
     "governance": false
   },
   "1890898:73": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:77": {
     "governance": false
   },
   "1890898:105": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890898:106": {
     "governance": false
   },
   "1890896:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:32": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:34": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890896:36": {
     "governance": false
@@ -1764,13 +2026,16 @@
     "governance": false
   },
   "1890685:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890685:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890685:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890685:49": {
     "governance": false
@@ -1779,7 +2044,8 @@
     "governance": false
   },
   "1890685:99": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890685:100": {
     "governance": false
@@ -1791,13 +2057,15 @@
     "governance": false
   },
   "1890123:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1890123:15": {
     "governance": false
   },
   "1889699:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1889699:10": {
     "governance": false
@@ -1809,7 +2077,8 @@
     "governance": false
   },
   "1889570:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1889570:8": {
     "governance": false
@@ -1833,7 +2102,8 @@
     "governance": false
   },
   "1889217:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1889217:14": {
     "governance": false
@@ -1842,7 +2112,8 @@
     "governance": false
   },
   "1889062:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1889062:7": {
     "governance": false
@@ -1851,16 +2122,20 @@
     "governance": false
   },
   "1889062:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1889062:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1889062:35": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1889062:36": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1889062:38": {
     "governance": false
@@ -1869,16 +2144,20 @@
     "governance": false
   },
   "1888882:32": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888882:33": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888882:35": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1888882:41": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888882:44": {
     "governance": false
@@ -1887,7 +2166,8 @@
     "governance": false
   },
   "1888881:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888881:11": {
     "governance": false
@@ -1896,7 +2176,8 @@
     "governance": false
   },
   "1888714:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1888714:15": {
     "governance": false
@@ -1917,7 +2198,8 @@
     "governance": false
   },
   "1888689:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1888689:7": {
     "governance": false
@@ -1929,28 +2211,34 @@
     "governance": false
   },
   "1888667:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888667:14": {
     "governance": false
   },
   "1888371:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888371:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888371:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888104:23": {
     "governance": false
   },
   "1888060:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1888060:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1888060:29": {
     "governance": false
@@ -1968,31 +2256,38 @@
     "governance": false
   },
   "1887888:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887888:6": {
     "governance": false
   },
   "1887888:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887888:33": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887888:34": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1887888:37": {
     "governance": false
   },
   "1887753:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1887753:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1887753:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1887753:18": {
     "governance": false
@@ -2001,13 +2296,15 @@
     "governance": false
   },
   "1887705:26": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887705:57": {
     "governance": false
   },
   "1887110:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887110:25": {
     "governance": false
@@ -2016,10 +2313,12 @@
     "governance": false
   },
   "1887096:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1887096:26": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1887096:31": {
     "governance": false
@@ -2049,28 +2348,34 @@
     "governance": false
   },
   "1886722:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886722:7": {
     "governance": false
   },
   "1886665:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886665:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886665:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886665:30": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1886665:33": {
     "governance": false
   },
   "1886627:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886627:12": {
     "governance": false
@@ -2079,13 +2384,15 @@
     "governance": false
   },
   "1886624:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886624:7": {
     "governance": false
   },
   "1886532:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886532:6": {
     "governance": false
@@ -2094,7 +2401,8 @@
     "governance": false
   },
   "1886532:103": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886532:104": {
     "governance": false
@@ -2103,10 +2411,12 @@
     "governance": false
   },
   "1886467:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1886467:13": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1886467:19": {
     "governance": false
@@ -2127,22 +2437,27 @@
     "governance": false
   },
   "1886135:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886135:22": {
     "governance": false
   },
   "1886110:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886110:20": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886110:31": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886110:36": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1886110:38": {
     "governance": false
@@ -2157,7 +2472,8 @@
     "governance": false
   },
   "1885568:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1885568:34": {
     "governance": false
@@ -2169,31 +2485,38 @@
     "governance": false
   },
   "1885568:48": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1885568:52": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1885132:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1885132:18": {
     "governance": false
   },
   "1884714:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1884714:21": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1884714:29": {
     "governance": false
   },
   "1884568:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1884568:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1884568:22": {
     "governance": false
@@ -2205,7 +2528,8 @@
     "governance": false
   },
   "1884532:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1884532:13": {
     "governance": false
@@ -2214,16 +2538,19 @@
     "governance": false
   },
   "1883843:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883843:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883843:55": {
     "governance": false
   },
   "1883843:64": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883843:67": {
     "governance": false
@@ -2235,16 +2562,19 @@
     "governance": false
   },
   "1883779:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883779:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883779:21": {
     "governance": false
   },
   "1883731:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883731:12": {
     "governance": false
@@ -2262,10 +2592,12 @@
     "governance": false
   },
   "1883493:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883493:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1883493:9": {
     "governance": false
@@ -2310,7 +2642,8 @@
     "governance": false
   },
   "1879602:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1879602:26": {
     "governance": false
@@ -2334,13 +2667,16 @@
     "governance": false
   },
   "1877388:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1877388:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1877388:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1877388:43": {
     "governance": false
@@ -2355,13 +2691,15 @@
     "governance": false
   },
   "1877388:68": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1877388:70": {
     "governance": false
   },
   "1877388:72": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1877388:73": {
     "governance": false
@@ -2382,7 +2720,8 @@
     "governance": false
   },
   "1875942:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1875942:10": {
     "governance": false
@@ -2403,13 +2742,15 @@
     "governance": false
   },
   "1873739:26": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1872738:20": {
     "governance": false
   },
   "1872738:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1872738:26": {
     "governance": false
@@ -2418,7 +2759,8 @@
     "governance": false
   },
   "1872738:31": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1872738:33": {
     "governance": false
@@ -2430,10 +2772,12 @@
     "governance": false
   },
   "1872374:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1872374:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1872371:31": {
     "governance": false
@@ -2466,13 +2810,15 @@
     "governance": false
   },
   "1866448:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1866448:22": {
     "governance": false
   },
   "1866448:25": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1866091:3": {
     "governance": false
@@ -2481,7 +2827,8 @@
     "governance": false
   },
   "1865880:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1865880:10": {
     "governance": false
@@ -2499,10 +2846,12 @@
     "governance": false
   },
   "1865080:10": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1865080:12": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1865080:17": {
     "governance": false
@@ -2526,10 +2875,12 @@
     "governance": false
   },
   "1862004:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1862004:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1862004:19": {
     "governance": false
@@ -2541,25 +2892,30 @@
     "governance": false
   },
   "1861682:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1861682:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1861682:8": {
     "governance": false
   },
   "1861069:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1861069:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1861069:22": {
     "governance": false
   },
   "1860750:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1860750:9": {
     "governance": false
@@ -2580,7 +2936,8 @@
     "governance": false
   },
   "1859812:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1859812:3": {
     "governance": false
@@ -2598,10 +2955,12 @@
     "governance": false
   },
   "1858965:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1858965:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1858965:9": {
     "governance": false
@@ -2613,7 +2972,8 @@
     "governance": false
   },
   "1855997:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1855997:7": {
     "governance": false
@@ -2622,7 +2982,8 @@
     "governance": false
   },
   "1853987:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1853783:6": {
     "governance": false
@@ -2643,7 +3004,8 @@
     "governance": false
   },
   "1850807:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1850807:7": {
     "governance": false
@@ -2658,7 +3020,8 @@
     "governance": false
   },
   "1848854:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1848854:18": {
     "governance": false
@@ -2676,7 +3039,8 @@
     "governance": false
   },
   "1848240:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1848240:4": {
     "governance": false
@@ -2697,10 +3061,12 @@
     "governance": false
   },
   "1845803:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1845803:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1845634:6": {
     "governance": false
@@ -2712,7 +3078,8 @@
     "governance": false
   },
   "1844799:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1844799:7": {
     "governance": false
@@ -2736,10 +3103,12 @@
     "governance": false
   },
   "1843265:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1843265:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1843265:21": {
     "governance": false
@@ -2772,10 +3141,12 @@
     "governance": false
   },
   "1839305:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1839305:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1839305:28": {
     "governance": false
@@ -2784,7 +3155,8 @@
     "governance": false
   },
   "1839105:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1839105:10": {
     "governance": false
@@ -2832,7 +3204,8 @@
     "governance": false
   },
   "1838371:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1838371:16": {
     "governance": false
@@ -2886,19 +3259,24 @@
     "governance": false
   },
   "1832570:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832570:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832570:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832570:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832570:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832570:18": {
     "governance": false
@@ -2913,7 +3291,8 @@
     "governance": false
   },
   "1832342:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1832342:6": {
     "governance": false
@@ -2940,7 +3319,8 @@
     "governance": false
   },
   "1830536:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1830536:4": {
     "governance": false
@@ -2964,7 +3344,8 @@
     "governance": false
   },
   "1829024:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1829024:5": {
     "governance": false
@@ -2979,13 +3360,15 @@
     "governance": false
   },
   "1827490:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1827490:9": {
     "governance": false
   },
   "1826713:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1826713:8": {
     "governance": false
@@ -3009,13 +3392,15 @@
     "governance": false
   },
   "1825780:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1825780:20": {
     "governance": false
   },
   "1825734:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1825734:6": {
     "governance": false
@@ -3033,7 +3418,8 @@
     "governance": false
   },
   "1824206:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1824206:6": {
     "governance": false
@@ -3045,7 +3431,8 @@
     "governance": false
   },
   "1822809:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1822809:5": {
     "governance": false
@@ -3060,7 +3447,8 @@
     "governance": false
   },
   "1820174:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1820174:9": {
     "governance": false
@@ -3075,16 +3463,19 @@
     "governance": false
   },
   "1819105:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1819105:4": {
     "governance": false
   },
   "1819105:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1819105:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1819105:10": {
     "governance": false
@@ -3114,7 +3505,8 @@
     "governance": false
   },
   "1815534:22": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1815534:25": {
     "governance": false
@@ -3129,7 +3521,8 @@
     "governance": false
   },
   "1815534:37": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1815534:41": {
     "governance": false
@@ -3147,22 +3540,26 @@
     "governance": false
   },
   "1815355:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1815355:9": {
     "governance": false
   },
   "1815355:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1815355:13": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1815355:22": {
     "governance": false
   },
   "1814288:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1814288:5": {
     "governance": false
@@ -3177,7 +3574,8 @@
     "governance": false
   },
   "1809382:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1809382:20": {
     "governance": false
@@ -3189,7 +3587,8 @@
     "governance": false
   },
   "1805866:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1805866:7": {
     "governance": false
@@ -3198,7 +3597,8 @@
     "governance": false
   },
   "1804753:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1804753:9": {
     "governance": false
@@ -3213,43 +3613,55 @@
     "governance": false
   },
   "1801345:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1801345:8": {
     "governance": false
   },
   "1801345:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1801345:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:22": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:33": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:36": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:39": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1801345:40": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:43": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1801345:44": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1801345:49": {
     "governance": false
@@ -3270,10 +3682,12 @@
     "governance": false
   },
   "1800753:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1800753:15": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1800753:17": {
     "governance": false
@@ -3285,10 +3699,12 @@
     "governance": false
   },
   "1798812:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1798812:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1798812:4": {
     "governance": false
@@ -3297,10 +3713,12 @@
     "governance": false
   },
   "1798626:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1798626:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1798626:8": {
     "governance": false
@@ -3318,10 +3736,12 @@
     "governance": false
   },
   "1796803:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1796803:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1796803:15": {
     "governance": false
@@ -3345,7 +3765,8 @@
     "governance": false
   },
   "1793848:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793848:8": {
     "governance": false
@@ -3357,7 +3778,8 @@
     "governance": false
   },
   "1793692:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1793692:3": {
     "governance": false
@@ -3366,7 +3788,8 @@
     "governance": false
   },
   "1793642:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793642:10": {
     "governance": false
@@ -3378,7 +3801,8 @@
     "governance": false
   },
   "1793443:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793441:4": {
     "governance": false
@@ -3387,13 +3811,15 @@
     "governance": false
   },
   "1793210:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793114:22": {
     "governance": false
   },
   "1793059:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793059:10": {
     "governance": false
@@ -3402,7 +3828,8 @@
     "governance": false
   },
   "1793053:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1793053:18": {
     "governance": false
@@ -3411,7 +3838,8 @@
     "governance": false
   },
   "1792111:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1792111:6": {
     "governance": false
@@ -3426,7 +3854,8 @@
     "governance": false
   },
   "1787537:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1787537:9": {
     "governance": false
@@ -3435,28 +3864,34 @@
     "governance": false
   },
   "1785865:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1785865:7": {
     "governance": false
   },
   "1784881:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1784881:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1784881:6": {
     "governance": false
   },
   "1784820:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1784820:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1784820:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1784820:10": {
     "governance": false
@@ -3468,13 +3903,15 @@
     "governance": false
   },
   "1782391:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1782391:6": {
     "governance": false
   },
   "1782356:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1782356:6": {
     "governance": false
@@ -3483,13 +3920,16 @@
     "governance": false
   },
   "1778035:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1778035:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1778035:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1778035:13": {
     "governance": false
@@ -3498,13 +3938,15 @@
     "governance": false
   },
   "1777757:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1777757:12": {
     "governance": false
   },
   "1777270:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1777128:1": {
     "governance": false
@@ -3513,7 +3955,8 @@
     "governance": false
   },
   "1776764:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1775454:2": {
     "governance": false
@@ -3522,7 +3965,8 @@
     "governance": false
   },
   "1774418:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1774418:6": {
     "governance": false
@@ -3549,25 +3993,29 @@
     "governance": false
   },
   "1772414:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1772414:2": {
     "governance": false
   },
   "1772413:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1772413:2": {
     "governance": false
   },
   "1772412:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1772412:3": {
     "governance": false
   },
   "1772411:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1772411:2": {
     "governance": false
@@ -3588,7 +4036,8 @@
     "governance": false
   },
   "1771715:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1771715:8": {
     "governance": false
@@ -3600,7 +4049,8 @@
     "governance": false
   },
   "1771482:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1771482:19": {
     "governance": false
@@ -3618,16 +4068,19 @@
     "governance": false
   },
   "1770510:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1769240:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1769240:8": {
     "governance": false
   },
   "1769222:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1769222:6": {
     "governance": false
@@ -3636,25 +4089,30 @@
     "governance": false
   },
   "1766255:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1765800:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1763203:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1763173:6": {
     "governance": false
   },
   "1762707:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1760311:8": {
     "governance": false
   },
   "1759959:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1759959:14": {
     "governance": false
@@ -3663,10 +4121,12 @@
     "governance": false
   },
   "1758372:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1758372:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1758372:26": {
     "governance": false
@@ -3696,7 +4156,8 @@
     "governance": false
   },
   "1754593:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1754593:3": {
     "governance": false
@@ -3705,10 +4166,12 @@
     "governance": false
   },
   "1753287:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1753287:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1753287:10": {
     "governance": false
@@ -3729,7 +4192,8 @@
     "governance": false
   },
   "1749089:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1749089:16": {
     "governance": false
@@ -3753,7 +4217,8 @@
     "governance": false
   },
   "1745015:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1745015:3": {
     "governance": false
@@ -3762,7 +4227,8 @@
     "governance": false
   },
   "1744827:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1744827:20": {
     "governance": false
@@ -3774,7 +4240,8 @@
     "governance": false
   },
   "1744627:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1744627:9": {
     "governance": false
@@ -3783,10 +4250,12 @@
     "governance": false
   },
   "1743943:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1743943:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1743943:13": {
     "governance": false
@@ -3795,13 +4264,15 @@
     "governance": false
   },
   "1743943:51": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1743943:59": {
     "governance": false
   },
   "1743935:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1743935:8": {
     "governance": false
@@ -3810,31 +4281,37 @@
     "governance": false
   },
   "1742657:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1742657:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1742657:37": {
     "governance": false
   },
   "1742602:0": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1742602:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1742602:4": {
     "governance": false
   },
   "1742602:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1742195:3": {
     "governance": false
   },
   "1741777:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1741777:29": {
     "governance": false
@@ -3852,7 +4329,8 @@
     "governance": false
   },
   "1741497:13": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1741497:17": {
     "governance": false
@@ -3864,10 +4342,12 @@
     "governance": false
   },
   "1740585:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1740585:10": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1740585:13": {
     "governance": false
@@ -3885,16 +4365,20 @@
     "governance": false
   },
   "1738778:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1738778:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1738778:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1738778:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1738778:16": {
     "governance": false
@@ -3906,7 +4390,8 @@
     "governance": false
   },
   "1738207:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1738207:10": {
     "governance": false
@@ -3924,22 +4409,26 @@
     "governance": false
   },
   "1737057:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1737057:6": {
     "governance": false
   },
   "1736706:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1736706:8": {
     "governance": false
   },
   "1736064:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1736064:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1736064:24": {
     "governance": false
@@ -3954,19 +4443,23 @@
     "governance": false
   },
   "1735908:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1735908:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1735908:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1735908:7": {
     "governance": false
   },
   "1735908:12": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1735908:14": {
     "governance": false
@@ -3984,7 +4477,8 @@
     "governance": false
   },
   "1734917:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1734917:13": {
     "governance": false
@@ -4008,25 +4502,30 @@
     "governance": false
   },
   "1731939:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1731939:10": {
     "governance": false
   },
   "1731887:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1731887:5": {
     "governance": false
   },
   "1731586:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1731586:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1731586:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1731586:14": {
     "governance": false
@@ -4038,7 +4537,8 @@
     "governance": false
   },
   "1729567:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1729567:7": {
     "governance": false
@@ -4056,7 +4556,8 @@
     "governance": false
   },
   "1728790:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1728790:12": {
     "governance": false
@@ -4065,7 +4566,8 @@
     "governance": false
   },
   "1727963:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1727963:3": {
     "governance": false
@@ -4077,7 +4579,8 @@
     "governance": false
   },
   "1725047:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1725047:1": {
     "governance": false
@@ -4086,16 +4589,19 @@
     "governance": false
   },
   "1725043:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1725043:1": {
     "governance": false
   },
   "1725043:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1725043:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1725043:7": {
     "governance": false
@@ -4104,13 +4610,15 @@
     "governance": false
   },
   "1725041:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1725041:1": {
     "governance": false
   },
   "1725041:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1725041:5": {
     "governance": false
@@ -4119,7 +4627,8 @@
     "governance": false
   },
   "1725039:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1725039:1": {
     "governance": false
@@ -4134,7 +4643,8 @@
     "governance": false
   },
   "1724520:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1724520:15": {
     "governance": false
@@ -4158,7 +4668,8 @@
     "governance": false
   },
   "1722089:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1722089:19": {
     "governance": false
@@ -4173,7 +4684,8 @@
     "governance": false
   },
   "1720723:37": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1720723:40": {
     "governance": false
@@ -4224,10 +4736,12 @@
     "governance": false
   },
   "1717044:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1717044:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1717044:8": {
     "governance": false
@@ -4242,16 +4756,19 @@
     "governance": false
   },
   "1717001:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1716902:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1716902:18": {
     "governance": false
   },
   "1716874:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1716874:3": {
     "governance": false
@@ -4263,7 +4780,8 @@
     "governance": false
   },
   "1716843:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1716843:15": {
     "governance": false
@@ -4272,13 +4790,15 @@
     "governance": false
   },
   "1716670:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1716670:8": {
     "governance": false
   },
   "1716670:12": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1716670:14": {
     "governance": false
@@ -4290,7 +4810,8 @@
     "governance": false
   },
   "1716123:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1716123:17": {
     "governance": false
@@ -4320,16 +4841,19 @@
     "governance": false
   },
   "1714193:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1714193:12": {
     "governance": false
   },
   "1713976:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1713976:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1713976:5": {
     "governance": false
@@ -4365,13 +4889,15 @@
     "governance": false
   },
   "1711147:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1711147:20": {
     "governance": false
   },
   "1710856:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1710856:9": {
     "governance": false
@@ -4407,7 +4933,8 @@
     "governance": false
   },
   "1709192:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1709192:16": {
     "governance": false
@@ -4443,7 +4970,8 @@
     "governance": false
   },
   "1707229:27": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1707229:42": {
     "governance": false
@@ -4452,7 +4980,8 @@
     "governance": false
   },
   "1707229:44": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1707229:46": {
     "governance": false
@@ -4461,7 +4990,8 @@
     "governance": false
   },
   "1706976:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1706976:3": {
     "governance": false
@@ -4482,16 +5012,19 @@
     "governance": false
   },
   "1705904:20": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1705904:28": {
     "governance": false
   },
   "1705832:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1705832:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1705791:27": {
     "governance": false
@@ -4530,7 +5063,8 @@
     "governance": false
   },
   "1704199:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1704199:2": {
     "governance": false
@@ -4554,28 +5088,33 @@
     "governance": false
   },
   "1699756:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1699756:2": {
     "governance": false
   },
   "1699756:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1699756:11": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1699756:12": {
     "governance": false
   },
   "1698936:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1698936:8": {
     "governance": false
   },
   "1698936:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1698936:12": {
     "governance": false
@@ -4602,7 +5141,8 @@
     "governance": false
   },
   "1695786:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1695786:26": {
     "governance": false
@@ -4611,7 +5151,8 @@
     "governance": false
   },
   "1694233:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1694233:16": {
     "governance": false
@@ -4641,16 +5182,19 @@
     "governance": false
   },
   "1691704:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1691704:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1691704:6": {
     "governance": false
   },
   "1691117:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1691117:6": {
     "governance": false
@@ -4665,7 +5209,8 @@
     "governance": false
   },
   "1688382:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1688382:10": {
     "governance": false
@@ -4692,13 +5237,16 @@
     "governance": false
   },
   "1686524:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1686524:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1686524:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1685767:3": {
     "governance": false
@@ -4728,13 +5276,15 @@
     "governance": false
   },
   "1680378:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1680378:16": {
     "governance": false
   },
   "1680378:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1680378:21": {
     "governance": false
@@ -4746,7 +5296,8 @@
     "governance": false
   },
   "1678410:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1678183:7": {
     "governance": false
@@ -4773,7 +5324,8 @@
     "governance": false
   },
   "1676352:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1676352:14": {
     "governance": false
@@ -4788,7 +5340,8 @@
     "governance": false
   },
   "1675923:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1675684:5": {
     "governance": false
@@ -4827,25 +5380,31 @@
     "governance": false
   },
   "1671410:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1671410:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1671410:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1671410:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1671410:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1671410:18": {
     "governance": false
   },
   "1671113:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1671113:10": {
     "governance": false
@@ -4857,22 +5416,26 @@
     "governance": false
   },
   "1670894:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1670894:9": {
     "governance": false
   },
   "1670861:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1670861:6": {
     "governance": false
   },
   "1670458:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1670458:24": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1670458:25": {
     "governance": false
@@ -4881,7 +5444,8 @@
     "governance": false
   },
   "1670458:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1670458:38": {
     "governance": false
@@ -4899,16 +5463,19 @@
     "governance": false
   },
   "1669594:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1669594:9": {
     "governance": false
   },
   "1669518:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1669518:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1669518:9": {
     "governance": false
@@ -4920,10 +5487,12 @@
     "governance": false
   },
   "1668007:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1668007:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1668007:10": {
     "governance": false
@@ -4935,25 +5504,30 @@
     "governance": false
   },
   "1667944:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667944:13": {
     "governance": false
   },
   "1667846:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1667846:6": {
     "governance": false
   },
   "1667844:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1667844:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667844:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667844:7": {
     "governance": false
@@ -4968,13 +5542,15 @@
     "governance": false
   },
   "1667799:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667799:12": {
     "governance": false
   },
   "1667744:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667744:12": {
     "governance": false
@@ -4983,7 +5559,8 @@
     "governance": false
   },
   "1667684:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1667684:16": {
     "governance": false
@@ -4998,7 +5575,8 @@
     "governance": false
   },
   "1667430:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1666872:2": {
     "governance": false
@@ -5037,7 +5615,8 @@
     "governance": false
   },
   "1663080:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1663080:10": {
     "governance": false
@@ -5055,13 +5634,15 @@
     "governance": false
   },
   "1662533:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1662382:3": {
     "governance": false
   },
   "1662346:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1662346:9": {
     "governance": false
@@ -5091,7 +5672,8 @@
     "governance": false
   },
   "1658437:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1656882:5": {
     "governance": false
@@ -5100,10 +5682,12 @@
     "governance": false
   },
   "1655698:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1655698:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1655698:13": {
     "governance": false
@@ -5136,7 +5720,8 @@
     "governance": false
   },
   "1653284:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1653284:19": {
     "governance": false
@@ -5151,10 +5736,12 @@
     "governance": false
   },
   "1652610:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652610:20": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652604:0": {
     "governance": false
@@ -5172,22 +5759,26 @@
     "governance": false
   },
   "1652603:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652603:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652603:15": {
     "governance": false
   },
   "1652603:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652581:15": {
     "governance": false
   },
   "1652581:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652581:25": {
     "governance": false
@@ -5196,22 +5787,27 @@
     "governance": false
   },
   "1652581:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652581:32": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1652581:33": {
     "governance": false
   },
   "1651828:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651828:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651828:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651828:28": {
     "governance": false
@@ -5232,7 +5828,8 @@
     "governance": false
   },
   "1651651:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651651:8": {
     "governance": false
@@ -5259,7 +5856,8 @@
     "governance": false
   },
   "1651611:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1651611:7": {
     "governance": false
@@ -5274,10 +5872,12 @@
     "governance": false
   },
   "1651481:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651481:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651481:18": {
     "governance": false
@@ -5304,19 +5904,23 @@
     "governance": false
   },
   "1651026:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651026:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651026:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1651026:31": {
     "governance": false
   },
   "1650910:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1650910:24": {
     "governance": false
@@ -5325,13 +5929,16 @@
     "governance": false
   },
   "1650910:29": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1650910:35": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1650845:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1650845:8": {
     "governance": false
@@ -5340,16 +5947,19 @@
     "governance": false
   },
   "1650234:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1650234:22": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1650234:24": {
     "governance": false
   },
   "1650018:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1650018:4": {
     "governance": false
@@ -5433,31 +6043,37 @@
     "governance": false
   },
   "1649937:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649937:16": {
     "governance": false
   },
   "1649937:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649937:19": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649937:29": {
     "governance": false
   },
   "1649937:34": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649880:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649880:20": {
     "governance": false
   },
   "1649726:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649726:17": {
     "governance": false
@@ -5466,7 +6082,8 @@
     "governance": false
   },
   "1649679:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649679:8": {
     "governance": false
@@ -5475,7 +6092,8 @@
     "governance": false
   },
   "1649502:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1649277:8": {
     "governance": false
@@ -5499,13 +6117,15 @@
     "governance": false
   },
   "1648593:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1648593:5": {
     "governance": false
   },
   "1648593:25": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1648593:34": {
     "governance": false
@@ -5532,13 +6152,15 @@
     "governance": false
   },
   "1647084:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1647084:11": {
     "governance": false
   },
   "1647030:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1647030:3": {
     "governance": false
@@ -5547,19 +6169,22 @@
     "governance": false
   },
   "1646226:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1646226:6": {
     "governance": false
   },
   "1645832:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1645708:9": {
     "governance": false
   },
   "1645686:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1645686:83": {
     "governance": false
@@ -5577,19 +6202,22 @@
     "governance": false
   },
   "1644936:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1644936:13": {
     "governance": false
   },
   "1640805:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1640805:26": {
     "governance": false
   },
   "1640310:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1640310:10": {
     "governance": false
@@ -5598,13 +6226,15 @@
     "governance": false
   },
   "1639805:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1639805:14": {
     "governance": false
   },
   "1639804:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1639804:21": {
     "governance": false
@@ -5613,13 +6243,15 @@
     "governance": false
   },
   "1639801:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1639801:11": {
     "governance": false
   },
   "1639801:16": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1639801:24": {
     "governance": false
@@ -5646,28 +6278,33 @@
     "governance": false
   },
   "1639502:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1639502:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1639502:26": {
     "governance": false
   },
   "1639032:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1639032:15": {
     "governance": false
   },
   "1637093:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1637093:7": {
     "governance": false
   },
   "1637093:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1636544:7": {
     "governance": false
@@ -5676,28 +6313,34 @@
     "governance": false
   },
   "1636339:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1636339:6": {
     "governance": false
   },
   "1636141:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1636141:9": {
     "governance": false
   },
   "1636140:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1636140:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1636140:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1635840:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1635279:3": {
     "governance": false
@@ -5718,7 +6361,8 @@
     "governance": false
   },
   "1632632:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1632632:6": {
     "governance": false
@@ -5727,19 +6371,22 @@
     "governance": false
   },
   "1632632:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1632632:23": {
     "governance": false
   },
   "1630870:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1630870:14": {
     "governance": false
   },
   "1628292:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1628292:12": {
     "governance": false
@@ -5748,10 +6395,12 @@
     "governance": false
   },
   "1627346:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1626805:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1626355:7": {
     "governance": false
@@ -5772,13 +6421,15 @@
     "governance": false
   },
   "1624527:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1624527:16": {
     "governance": false
   },
   "1623384:11": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1623384:18": {
     "governance": false
@@ -5796,10 +6447,12 @@
     "governance": false
   },
   "1620561:34": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1619359:11": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1619359:12": {
     "governance": false
@@ -5820,7 +6473,8 @@
     "governance": false
   },
   "1614448:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1613406:7": {
     "governance": false
@@ -5829,7 +6483,8 @@
     "governance": false
   },
   "1613334:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1613334:16": {
     "governance": false
@@ -5838,7 +6493,8 @@
     "governance": false
   },
   "1610767:13": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1606380:6": {
     "governance": false
@@ -5859,16 +6515,19 @@
     "governance": false
   },
   "1597950:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1597950:4": {
     "governance": false
   },
   "1597950:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1597948:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1597947:2": {
     "governance": false
@@ -5907,13 +6566,16 @@
     "governance": false
   },
   "1588213:33": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1588213:35": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1588213:36": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1588001:23": {
     "governance": false
@@ -5928,19 +6590,22 @@
     "governance": false
   },
   "1581597:41": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1578505:7": {
     "governance": false
   },
   "1578505:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1578505:9": {
     "governance": false
   },
   "1577014:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1576013:76": {
     "governance": false
@@ -5958,10 +6623,12 @@
     "governance": false
   },
   "1575530:22": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1575530:28": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1575530:31": {
     "governance": false
@@ -5976,10 +6643,12 @@
     "governance": false
   },
   "1565270:28": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1565270:35": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1565270:37": {
     "governance": false
@@ -6000,31 +6669,38 @@
     "governance": false
   },
   "1557199:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1557198:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1551372:29": {
     "governance": false
   },
   "1551372:31": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1540961:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1532559:19": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1532559:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1532559:22": {
     "governance": false
   },
   "1532436:50": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1532436:56": {
     "governance": false
@@ -6033,7 +6709,8 @@
     "governance": false
   },
   "1524815:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1507376:7": {
     "governance": false
@@ -6042,25 +6719,29 @@
     "governance": false
   },
   "1496616:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1467110:2": {
     "governance": false
   },
   "1463975:26": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1463975:29": {
     "governance": false
   },
   "1463975:30": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1463975:32": {
     "governance": false
   },
   "1462844:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1462423:6": {
     "governance": false
@@ -6069,10 +6750,12 @@
     "governance": false
   },
   "1428891:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1421820:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1421820:15": {
     "governance": false
@@ -6084,22 +6767,27 @@
     "governance": false
   },
   "1420873:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1420873:11": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1420871:2": {
     "governance": false
   },
   "1420871:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1420871:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1420861:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1420860:1": {
     "governance": false
@@ -6108,13 +6796,16 @@
     "governance": false
   },
   "1420858:5": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1420858:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1420858:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1420766:2": {
     "governance": false
@@ -6144,16 +6835,19 @@
     "governance": false
   },
   "1417777:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1417777:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1417771:1": {
     "governance": false
   },
   "1417771:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1414115:0": {
     "governance": false
@@ -6162,10 +6856,12 @@
     "governance": false
   },
   "1414039:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1414039:4": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1413761:2": {
     "governance": false
@@ -6186,7 +6882,8 @@
     "governance": false
   },
   "1410301:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1409859:2": {
     "governance": false
@@ -6195,7 +6892,8 @@
     "governance": false
   },
   "1409766:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1409764:2": {
     "governance": false
@@ -6207,7 +6905,8 @@
     "governance": false
   },
   "1408647:14": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1405826:2": {
     "governance": false
@@ -6216,19 +6915,22 @@
     "governance": false
   },
   "1405815:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1405815:4": {
     "governance": false
   },
   "1404403:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1404403:11": {
     "governance": false
   },
   "1401486:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1401407:2": {
     "governance": false
@@ -6237,7 +6939,8 @@
     "governance": false
   },
   "1401211:1": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1398545:13": {
     "governance": false
@@ -6246,16 +6949,19 @@
     "governance": false
   },
   "1398428:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398428:8": {
     "governance": false
   },
   "1398427:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398427:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398269:5": {
     "governance": false
@@ -6267,16 +6973,19 @@
     "governance": false
   },
   "1398259:6": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1398259:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398259:10": {
     "governance": false
   },
   "1398259:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398259:14": {
     "governance": false
@@ -6288,19 +6997,22 @@
     "governance": false
   },
   "1398258:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398255:2": {
     "governance": false
   },
   "1398255:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398255:5": {
     "governance": false
   },
   "1398255:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398247:3": {
     "governance": false
@@ -6309,67 +7021,81 @@
     "governance": false
   },
   "1398246:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398246:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398246:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1398246:9": {
     "governance": false
   },
   "1398243:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398242:7": {
     "governance": false
   },
   "1398240:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398240:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1398233:5": {
     "governance": false
   },
   "1398233:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1397969:5": {
     "governance": false
   },
   "1397969:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397969:13": {
     "governance": false
   },
   "1397961:2": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397961:3": {
     "governance": false
   },
   "1397960:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397954:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397954:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397832:2": {
     "governance": false
   },
   "1397832:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397832:9": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1397832:13": {
     "governance": false
@@ -6378,16 +7104,20 @@
     "governance": false
   },
   "1393557:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1393557:9": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1393557:20": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1393555:15": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391429:8": {
     "governance": false
@@ -6402,28 +7132,35 @@
     "governance": false
   },
   "1391074:22": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391074:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391067:8": {
     "governance": false
   },
   "1391066:3": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391063:23": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391058:10": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1391058:22": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1391058:31": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391058:46": {
     "governance": false
@@ -6432,10 +7169,12 @@
     "governance": false
   },
   "1391055:7": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1391055:8": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391055:10": {
     "governance": false
@@ -6444,10 +7183,12 @@
     "governance": false
   },
   "1391054:17": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1391054:19": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1391000:4": {
     "governance": false
@@ -6456,19 +7197,23 @@
     "governance": false
   },
   "1390990:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390988:5": {
     "governance": false
   },
   "1390988:16": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390988:21": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1390988:23": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390981:20": {
     "governance": false
@@ -6480,34 +7225,43 @@
     "governance": false
   },
   "1390977:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390977:21": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390977:24": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390977:26": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1390974:18": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1386891:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1378074:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1378074:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1378074:18": {
     "governance": false
   },
   "1378074:22": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1378074:30": {
     "governance": false
@@ -6516,13 +7270,16 @@
     "governance": false
   },
   "1374381:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1369359:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1369342:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1369342:3": {
     "governance": false
@@ -6534,22 +7291,26 @@
     "governance": false
   },
   "1368171:5": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1368171:9": {
     "governance": false
   },
   "1357067:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1357067:10": {
     "governance": false
   },
   "1353833:2": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1350615:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1350615:2": {
     "governance": false
@@ -6558,28 +7319,34 @@
     "governance": false
   },
   "1350615:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1350615:8": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1350615:9": {
     "governance": false
   },
   "1341014:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1341014:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1341014:12": {
     "governance": false
   },
   "1335132:3": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1335132:6": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1335132:7": {
     "governance": false
@@ -6588,7 +7355,8 @@
     "governance": false
   },
   "1335132:12": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1335132:28": {
     "governance": false
@@ -6600,13 +7368,15 @@
     "governance": false
   },
   "1330482:10": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1330482:14": {
     "governance": false
   },
   "1319609:1": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1319609:4": {
     "governance": false
@@ -6615,25 +7385,30 @@
     "governance": false
   },
   "1304895:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1304895:10": {
     "governance": false
   },
   "1262610:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "1195115:7": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "1017157:3": {
     "governance": false
   },
   "988633:0": {
-    "governance": true
+    "governance": true,
+    "technical": true
   },
   "988633:4": {
-    "governance": true
+    "governance": true,
+    "technical": false
   },
   "988633:5": {
     "governance": false

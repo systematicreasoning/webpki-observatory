@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-14T22:29:21.812468+00:00",
+    "generated_at": "2026-03-14T22:59:35.036870+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
     "total_comments_raw": 22029,
@@ -588,12 +588,16 @@
       "admin_comments": 38,
       "oversight_comments": 234,
       "recent_oversight_comments": 233,
+      "technical_oversight_comments": 54,
+      "recent_technical_oversight_comments": 54,
       "self_incident_comments": 291,
       "recent_self_incident_comments": 251,
       "oversight_pct": 45,
       "bugs_engaged": 175,
       "bugs_oversight": 140,
-      "recent_bugs_oversight": 139
+      "recent_bugs_oversight": 139,
+      "bugs_technical_oversight": 42,
+      "recent_bugs_technical_oversight": 42
     },
     "mozilla": {
       "total_comments": 1892,
@@ -602,12 +606,16 @@
       "admin_comments": 1396,
       "oversight_comments": 496,
       "recent_oversight_comments": 286,
+      "technical_oversight_comments": 132,
+      "recent_technical_oversight_comments": 74,
       "self_incident_comments": 0,
       "recent_self_incident_comments": 0,
       "oversight_pct": 100,
       "bugs_engaged": 334,
       "bugs_oversight": 334,
-      "recent_bugs_oversight": 193
+      "recent_bugs_oversight": 193,
+      "bugs_technical_oversight": 115,
+      "recent_bugs_technical_oversight": 64
     },
     "apple": {
       "total_comments": 188,
@@ -616,12 +624,16 @@
       "admin_comments": 3,
       "oversight_comments": 54,
       "recent_oversight_comments": 53,
+      "technical_oversight_comments": 17,
+      "recent_technical_oversight_comments": 16,
       "self_incident_comments": 131,
       "recent_self_incident_comments": 74,
       "oversight_pct": 29,
       "bugs_engaged": 62,
       "bugs_oversight": 45,
-      "recent_bugs_oversight": 44
+      "recent_bugs_oversight": 44,
+      "bugs_technical_oversight": 14,
+      "recent_bugs_technical_oversight": 13
     },
     "microsoft": {
       "total_comments": 494,
@@ -630,12 +642,16 @@
       "admin_comments": 1,
       "oversight_comments": 0,
       "recent_oversight_comments": 0,
+      "technical_oversight_comments": 0,
+      "recent_technical_oversight_comments": 0,
       "self_incident_comments": 493,
       "recent_self_incident_comments": 440,
       "oversight_pct": 0,
       "bugs_engaged": 41,
       "bugs_oversight": 0,
-      "recent_bugs_oversight": 0
+      "recent_bugs_oversight": 0,
+      "bugs_technical_oversight": 0,
+      "recent_bugs_technical_oversight": 0
     }
   },
   "oversight_concentration": {
