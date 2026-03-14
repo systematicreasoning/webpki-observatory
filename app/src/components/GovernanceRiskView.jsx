@@ -275,10 +275,11 @@ const GovernanceRiskView = () => {
           </table>
         </div>
         <div style={{ ...footnoteStyle, marginTop: 10 }}>
-          {isRecentRC
-            ? `Recent window: enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} events), oversight last 12 quarters, ballots last 50 SC ballots. Trust surface is always current snapshot.`
-            : `Enforcement: ${totalEvents} events. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}).`
-          }{' '}
+          {isRecentRC ? (
+            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} of 15 total), oversight last 12 quarters (3 years), ballots last 50 SC ballots. Trust surface metrics are always current snapshot — no time filter applies there. `}</>
+          ) : (
+            `Enforcement: ${totalEvents} events since 2011. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments, all time). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
+          )}
           Store size reflects policy philosophy, not just governance quality: Chrome is deliberately selective (value must exceed risk, only one new CA accepted),
           Mozilla is the fastest gateway for new CAs, Apple is highly selective, and Microsoft processes root rollovers quickly.
           A larger store is not automatically worse — but it does require proportionally more governance activity to maintain assurance.
@@ -566,10 +567,11 @@ const GovernanceRiskView = () => {
           });
         })()}
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
-          {incidentOversightView === 'recent'
-            ? `Showing ${RECENT_YEAR_CUTOFF}–present. Oversight/self-incident split estimated from all-time ratio — oversight_by_year tracks total attributed comments only.`
-            : 'Bugzilla activity measures publicly visible governance only.'
-          }{' '}
+          {incidentOversightView === 'recent' ? (
+            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Oversight/self-incident split estimated from all-time ratio — oversight_by_year tracks total attributed comments per year, not the breakdown. '}</>
+          ) : (
+            'All time: 2014–present. Bugzilla activity measures publicly visible governance only. '
+          )}
           Programs that govern through private channels appear underrepresented. Mozilla's count is inflated by administrative closures — a single employee commented on every bug as a process step. Microsoft's 0% reflects public Bugzilla only, not private governance.
         </div>
       </Card>
@@ -701,6 +703,14 @@ const GovernanceRiskView = () => {
             </div>
           );
         })()}
+        <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
+          {incidentDetectionView === 'recent' ? (
+            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Bug filing totals and discovery method proportions reflect this window only. '}</>
+          ) : (
+            'All time: 2014–present. '
+          )}
+          Bug filing counts show who opened the Bugzilla bug, not who discovered the issue. A root program filing a bug may be splitting an existing incident into per-CA threads rather than independently discovering a new compliance failure.
+        </div>
       </Card>
 
       {/* ═══ VOTE MATRIX ═══ */}
