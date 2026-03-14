@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-14T21:22:28.839596+00:00",
+    "generated_at": "2026-03-14T21:25:27.571477+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
     "total_comments_raw": 21988,
@@ -559,10 +559,12 @@
       "workflow_events": 532,
       "admin_comments": 3,
       "oversight_comments": 8,
+      "recent_oversight_comments": 8,
       "self_incident_comments": 20,
       "oversight_pct": 29,
       "bugs_engaged": 28,
-      "bugs_oversight": 8
+      "bugs_oversight": 8,
+      "recent_bugs_oversight": 8
     },
     "mozilla": {
       "total_comments": 1892,
@@ -570,10 +572,12 @@
       "workflow_events": 1852,
       "admin_comments": 13,
       "oversight_comments": 27,
+      "recent_oversight_comments": 19,
       "self_incident_comments": 0,
       "oversight_pct": 100,
       "bugs_engaged": 27,
-      "bugs_oversight": 27
+      "bugs_oversight": 27,
+      "recent_bugs_oversight": 19
     },
     "apple": {
       "total_comments": 188,
@@ -581,10 +585,12 @@
       "workflow_events": 162,
       "admin_comments": 0,
       "oversight_comments": 9,
+      "recent_oversight_comments": 8,
       "self_incident_comments": 17,
       "oversight_pct": 35,
       "bugs_engaged": 26,
-      "bugs_oversight": 9
+      "bugs_oversight": 9,
+      "recent_bugs_oversight": 8
     },
     "microsoft": {
       "total_comments": 489,
@@ -592,10 +598,12 @@
       "workflow_events": 463,
       "admin_comments": 0,
       "oversight_comments": 0,
+      "recent_oversight_comments": 0,
       "self_incident_comments": 26,
       "oversight_pct": 0,
       "bugs_engaged": 26,
-      "bugs_oversight": 0
+      "bugs_oversight": 0,
+      "recent_bugs_oversight": 0
     }
   },
   "oversight_concentration": {

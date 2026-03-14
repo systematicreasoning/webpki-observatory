@@ -539,8 +539,9 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
-    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0})
-    unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set()})
+    totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0})
+    unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set(), "recent_oversight": set()})
+    RECENT_OVERSIGHT_CUTOFF = "2021"
     comment_count_total = 0
     substantive_count_total = 0
     bugs_with_comments = 0
@@ -611,6 +612,11 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
                     continue
 
             totals[program]["oversight"] += 1
+
+            # Track recent oversight (year >= RECENT_OVERSIGHT_CUTOFF)
+            comment_year = comment.get("time", "")[:4]
+            if comment_year >= RECENT_OVERSIGHT_CUTOFF:
+                totals[program]["recent_oversight"] += 1
             
             # Track per-person oversight and quarterly
             ts = comment.get("time", "")[:7]
@@ -633,6 +639,8 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
                 by_year_all[year][program] += 1
                 unique_bugs[program]["oversight"].add(bug_id)
                 by_year_oversight[year][program] += 1
+                if comment_year >= RECENT_OVERSIGHT_CUTOFF:
+                    unique_bugs[program]["recent_oversight"].add(bug_id)
     
     # Format yearly oversight data
     oversight_years = []
@@ -657,10 +665,12 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "workflow_events": t.get("workflow_events", 0),
             "admin_comments": t.get("admin_comments", 0),
             "oversight_comments": t["oversight"],
+            "recent_oversight_comments": t.get("recent_oversight", 0),
             "self_incident_comments": t["self_incident"],
             "oversight_pct": round((t["oversight"] / substantive) * 100) if substantive else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
+            "recent_bugs_oversight": len(unique_bugs[prog]["recent_oversight"]),
         }
     
     # NEW: Compute concentration / bus factor per program

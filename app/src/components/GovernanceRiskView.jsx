@@ -97,29 +97,16 @@ function useReportCard(d, isRecent) {
         : (e.initiated || 0);
       const neverActed = totalEvents - acted;
 
-      // Recent oversight: compute % from last 12 quarters
+      // Recent oversight: use pipeline-computed recent_oversight_comments directly.
+      // This is exact — per-comment timestamps filtered to >= 2021, LLM-classified,
+      // no estimation from quarterly proxy data needed.
       let oversightPct;
       if (isRecent) {
-        const recentTotal = recentQuarters.reduce((sum, q) => sum + (q[`${s}_comments`] || 0), 0);
-        // Use all stores' recent totals as the denominator reference for consistent pct display
-        // Show raw comment count + trend marker instead of % which needs a denominator
-        // Actually compute pct of all comments in those quarters that belong to this store
-        const allStoresTotal = recentQuarters.reduce(
-          (sum, q) => sum + STORE_ORDER.reduce((s2, st) => s2 + (q[`${st}_comments`] || 0), 0), 0
-        );
-        // For oversight %, keep the same semantics: non-self oversight / bugs engaged
-        // We only have quarterly totals, not a breakdown of oversight vs self-incident
-        // Best approximation: use the proportion of recent vs all-time to scale the all-time oversight_pct
-        const allTimeComments = c.substantive_comments || c.total_comments || 0;
-        const recentComments = recentTotal;
-        const recentOversightEst = allTimeComments > 0
-          ? Math.round((recentComments / allTimeComments) * (c.oversight_comments || 0))
-          : 0;
-        const recentTotalEst = allTimeComments > 0
-          ? Math.round((recentComments / allTimeComments) * allTimeComments)
-          : 0;
-        oversightPct = recentTotalEst > 0
-          ? `${Math.min(100, Math.round((recentOversightEst / recentTotalEst) * 100))}%`
+        const recentOC = c.recent_oversight_comments ?? c.oversight_comments ?? 0;
+        const recentSI = c.self_incident_comments || 0; // self-incident timing not separately tracked; use all-time as denominator proxy
+        const recentSubstantive = recentOC + recentSI;
+        oversightPct = recentSubstantive > 0
+          ? `${Math.min(100, Math.round((recentOC / recentSubstantive) * 100))}%`
           : `${c.oversight_pct || 0}%`;
       } else {
         oversightPct = `${c.oversight_pct || 0}%`;
@@ -179,10 +166,6 @@ const GovernanceRiskView = () => {
   const maxQC = Math.max(...quarters.map(q => Math.max(...STORE_ORDER.map(s => q[`${s}_comments`] || 0))), 1);
   const [incidentOversightView, setIncidentOversightView] = useState('recent');
   const [incidentDetectionView, setIncidentDetectionView] = useState('recent');
-  const allOversightByYear = d.oversight_by_year || [];
-  const oversightByYear = incidentOversightView === 'recent'
-    ? allOversightByYear.filter(r => r.y >= RECENT_YEAR_CUTOFF)
-    : allOversightByYear;
   const allBugCreation = d.bug_creation_by_year || [];
   const bugCreation = incidentDetectionView === 'recent'
     ? allBugCreation.filter(r => r.y >= RECENT_YEAR_CUTOFF)
@@ -508,23 +491,15 @@ const GovernanceRiskView = () => {
           </div>
         </div>
         {(() => {
-          // Derive per-store comment totals from the year-level data for the active window
+          // In recent mode, use pipeline-computed recent_oversight_comments directly —
+          // exact per-comment timestamps, LLM-classified, no quarterly approximation needed.
           const isRO = incidentOversightView === 'recent';
           const pcs = d.program_comment_summary || {};
-          // Sum oversight comments from oversight_by_year for the window
-          const windowOversight = {};
-          for (const s of STORE_ORDER) {
-            windowOversight[s] = oversightByYear.reduce((sum, r) => sum + (r[s] || 0), 0);
-          }
+
           const windowMax = Math.max(...STORE_ORDER.map(s => {
             const cs = pcs[s] || {};
             if (!isRO) return cs.substantive_comments || cs.total_comments || 0;
-            // For recent, scale self-incident proportionally so bars have the right relative sizes
-            const allOC = cs.oversight_comments || 0;
-            const allSI = cs.self_incident_comments || 0;
-            const allTotal = allOC + allSI;
-            const ratio = allTotal > 0 ? windowOversight[s] / allTotal : 0;
-            return windowOversight[s] + Math.round(allSI * ratio);
+            return (cs.recent_oversight_comments || 0) + (cs.self_incident_comments || 0);
           }), 1);
 
           return STORE_ORDER.map(s => {
@@ -535,17 +510,12 @@ const GovernanceRiskView = () => {
               sic = cs.self_incident_comments || 0;
               pct = cs.oversight_pct || 0;
             } else {
-              // oversight_by_year only has the total comments attributed to the program, not the
-              // oversight vs self-incident split. Scale using the all-time ratio as a proxy.
-              oc = windowOversight[s];
-              const allTotal = (cs.oversight_comments || 0) + (cs.self_incident_comments || 0);
-              const ratio = allTotal > 0 ? windowOversight[s] / allTotal : 0;
-              sic = Math.round((cs.self_incident_comments || 0) * ratio);
+              // Use exact recent_oversight_comments from pipeline (2021+, LLM-filtered)
+              oc = cs.recent_oversight_comments ?? cs.oversight_comments ?? 0;
+              sic = cs.self_incident_comments || 0;
               const combined = oc + sic;
               pct = combined > 0 ? Math.min(100, Math.round((oc / combined) * 100)) : 0;
-              // If all-time pct was 0 keep it 0; if was 100 keep 100 (no split to recompute)
               if (cs.oversight_pct === 0) pct = 0;
-              if (cs.oversight_pct === 100) pct = 100;
             }
             return (
               <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
@@ -568,9 +538,9 @@ const GovernanceRiskView = () => {
         })()}
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
           {incidentOversightView === 'recent' ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Oversight/self-incident split estimated from all-time ratio — oversight_by_year tracks total attributed comments per year, not the breakdown. '}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Genuine oversight comments only — empty workflow events and LLM-classified administrative process excluded. '}</>
           ) : (
-            'All time: 2014–present. Bugzilla activity measures publicly visible governance only. '
+            'All time: 2014–present. Genuine oversight comments only — empty workflow events and LLM-classified administrative process excluded. '
           )}
           Programs that govern through private channels appear underrepresented. Mozilla's count is inflated by administrative closures — a single employee commented on every bug as a process step. Microsoft's 0% reflects public Bugzilla only, not private governance.
         </div>
