@@ -177,8 +177,26 @@ const GovernanceRiskView = () => {
   const quarters = oversightView === 'recent' ? allQuarters.slice(-12) : allQuarters;
   const maxOv = Math.max(...STORE_ORDER.map(s => (d.program_comment_summary?.[s]?.total_comments || 0)), 1);
   const maxQC = Math.max(...quarters.map(q => Math.max(...STORE_ORDER.map(s => q[`${s}_comments`] || 0))), 1);
-  const bugCreation = d.bug_creation_by_year || [];
-  const bugTotals = d.bug_creation_totals || {};
+  const [incidentOversightView, setIncidentOversightView] = useState('recent');
+  const [incidentDetectionView, setIncidentDetectionView] = useState('recent');
+  const allOversightByYear = d.oversight_by_year || [];
+  const oversightByYear = incidentOversightView === 'recent'
+    ? allOversightByYear.filter(r => r.y >= RECENT_YEAR_CUTOFF)
+    : allOversightByYear;
+  const allBugCreation = d.bug_creation_by_year || [];
+  const bugCreation = incidentDetectionView === 'recent'
+    ? allBugCreation.filter(r => r.y >= RECENT_YEAR_CUTOFF)
+    : allBugCreation;
+  const allDiscoveryByYear = (d.discovery_methods?.by_year || []);
+  const discoveryByYear = incidentDetectionView === 'recent'
+    ? allDiscoveryByYear.filter(r => r.y >= RECENT_YEAR_CUTOFF)
+    : allDiscoveryByYear;
+  const bugTotals = incidentDetectionView === 'recent'
+    ? STORE_ORDER.reduce((acc, s) => {
+        acc[s] = bugCreation.reduce((sum, y) => sum + (y[s] || 0), 0);
+        return acc;
+      }, { other: bugCreation.reduce((sum, y) => sum + (y.other || 0), 0) })
+    : d.bug_creation_totals || {};
   const maxBugYr = Math.max(...bugCreation.map(y => (y.chrome || 0) + (y.mozilla || 0) + (y.apple || 0) + (y.microsoft || 0)), 1);
 
   const bgMap = {
@@ -474,32 +492,104 @@ const GovernanceRiskView = () => {
         </div>
       </Card>
       <Card>
-        <CardTitle sub={`Oversight = commenting on CA compliance incidents. Self-incident = responding to your own CA's issues. ${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments.`}>
-          Incident Oversight
-        </CardTitle>
-        {['mozilla', 'chrome', 'apple', 'microsoft'].map(s => {
-          const cs = d.program_comment_summary?.[s] || {};
-          return (
-            <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
-              <div style={{ width: 66, display: 'flex', alignItems: 'center', gap: 4 }}><Dot store={s} size={6} /><span style={{ fontSize: 9, color: STORE_COLORS[s], fontWeight: 500 }}>{STORE_NAMES[s]}</span></div>
-              <div style={{ flex: 1, height: 20, display: 'flex', borderRadius: 4, overflow: 'hidden' }}>
-                {(cs.oversight_comments || 0) > 0 && <div style={{ width: `${((cs.oversight_comments || 0) / maxOv) * 100}%`, background: STORE_COLORS[s], opacity: 0.8, display: 'flex', alignItems: 'center', paddingLeft: (cs.oversight_comments || 0) > 40 ? 6 : 2 }}>{(cs.oversight_comments || 0) > 40 && <span style={{ fontSize: 8, color: COLORS.wh, fontFamily: FONT_MONO, fontWeight: 600 }}>{cs.oversight_comments}</span>}</div>}
-                {(cs.self_incident_comments || 0) > 0 && <div style={{ width: `${((cs.self_incident_comments || 0) / maxOv) * 100}%`, background: STORE_COLORS[s], opacity: 0.25, display: 'flex', alignItems: 'center', paddingLeft: (cs.self_incident_comments || 0) > 40 ? 6 : 2 }}>{(cs.self_incident_comments || 0) > 40 && <span style={{ fontSize: 8, color: COLORS.t3, fontFamily: FONT_MONO }}>{cs.self_incident_comments}</span>}</div>}
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 8 }}>
+          <CardTitle sub={`Oversight = commenting on CA compliance incidents. Self-incident = responding to your own CA's issues. ${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments.`}>
+            Incident Oversight
+          </CardTitle>
+          <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2, flexShrink: 0 }}>
+            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
+              <button key={v} onClick={() => setIncidentOversightView(v)} style={{
+                padding: '3px 10px', fontSize: 10, fontWeight: incidentOversightView === v ? 600 : 400, borderRadius: 4,
+                cursor: 'pointer', border: 'none', background: incidentOversightView === v ? COLORS.ac : 'transparent',
+                color: incidentOversightView === v ? COLORS.wh : COLORS.t3,
+              }}>{l}</button>
+            ))}
+          </div>
+        </div>
+        {(() => {
+          // Derive per-store comment totals from the year-level data for the active window
+          const isRO = incidentOversightView === 'recent';
+          const pcs = d.program_comment_summary || {};
+          // Sum oversight comments from oversight_by_year for the window
+          const windowOversight = {};
+          for (const s of STORE_ORDER) {
+            windowOversight[s] = oversightByYear.reduce((sum, r) => sum + (r[s] || 0), 0);
+          }
+          const windowMax = Math.max(...STORE_ORDER.map(s => {
+            const cs = pcs[s] || {};
+            if (!isRO) return cs.total_comments || 0;
+            // For recent, scale self-incident proportionally so bars have the right relative sizes
+            const allOC = cs.oversight_comments || 0;
+            const allSI = cs.self_incident_comments || 0;
+            const allTotal = allOC + allSI;
+            const ratio = allTotal > 0 ? windowOversight[s] / allTotal : 0;
+            return windowOversight[s] + Math.round(allSI * ratio);
+          }), 1);
+
+          return STORE_ORDER.map(s => {
+            const cs = pcs[s] || {};
+            let oc, sic, pct;
+            if (!isRO) {
+              oc = cs.oversight_comments || 0;
+              sic = cs.self_incident_comments || 0;
+              pct = cs.oversight_pct || 0;
+            } else {
+              // oversight_by_year only has the total comments attributed to the program, not the
+              // oversight vs self-incident split. Scale using the all-time ratio as a proxy.
+              oc = windowOversight[s];
+              const allTotal = (cs.oversight_comments || 0) + (cs.self_incident_comments || 0);
+              const ratio = allTotal > 0 ? windowOversight[s] / allTotal : 0;
+              sic = Math.round((cs.self_incident_comments || 0) * ratio);
+              const combined = oc + sic;
+              pct = combined > 0 ? Math.min(100, Math.round((oc / combined) * 100)) : 0;
+              // If all-time pct was 0 keep it 0; if was 100 keep 100 (no split to recompute)
+              if (cs.oversight_pct === 0) pct = 0;
+              if (cs.oversight_pct === 100) pct = 100;
+            }
+            return (
+              <div key={s} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 5 }}>
+                <div style={{ width: 66, display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <Dot store={s} size={6} />
+                  <span style={{ fontSize: 9, color: STORE_COLORS[s], fontWeight: 500 }}>{STORE_NAMES[s]}</span>
+                </div>
+                <div style={{ flex: 1, height: 20, display: 'flex', borderRadius: 4, overflow: 'hidden' }}>
+                  {oc > 0 && <div style={{ width: `${(oc / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.8, display: 'flex', alignItems: 'center', paddingLeft: oc > 40 ? 6 : 2 }}>
+                    {oc > 40 && <span style={{ fontSize: 8, color: COLORS.wh, fontFamily: FONT_MONO, fontWeight: 600 }}>{oc}</span>}
+                  </div>}
+                  {sic > 0 && <div style={{ width: `${(sic / windowMax) * 100}%`, background: STORE_COLORS[s], opacity: 0.25, display: 'flex', alignItems: 'center', paddingLeft: sic > 40 ? 6 : 2 }}>
+                    {sic > 40 && <span style={{ fontSize: 8, color: COLORS.t3, fontFamily: FONT_MONO }}>{sic}</span>}
+                  </div>}
+                </div>
+                <span style={{ fontSize: 9, fontFamily: FONT_MONO, width: 33, textAlign: 'right', fontWeight: 600, color: pct > 50 ? COLORS.gn : pct > 0 ? COLORS.am : COLORS.rd }}>{pct}%</span>
               </div>
-              <span style={{ fontSize: 9, fontFamily: FONT_MONO, width: 33, textAlign: 'right', fontWeight: 600, color: (cs.oversight_pct || 0) > 50 ? COLORS.gn : (cs.oversight_pct || 0) > 0 ? COLORS.am : COLORS.rd }}>{cs.oversight_pct || 0}%</span>
-            </div>
-          );
-        })}
+            );
+          });
+        })()}
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
-          Bugzilla activity measures publicly visible governance only. Programs that govern through private channels appear underrepresented. Mozilla's count is inflated by administrative closures — a single employee commented on every bug as a process step. Microsoft's 0% reflects public Bugzilla only, not private governance.
+          {incidentOversightView === 'recent'
+            ? `Showing ${RECENT_YEAR_CUTOFF}–present. Oversight/self-incident split estimated from all-time ratio — oversight_by_year tracks total attributed comments only.`
+            : 'Bugzilla activity measures publicly visible governance only.'
+          }{' '}
+          Programs that govern through private channels appear underrepresented. Mozilla's count is inflated by administrative closures — a single employee commented on every bug as a process step. Microsoft's 0% reflects public Bugzilla only, not private governance.
         </div>
       </Card>
 
       {/* ═══ INCIDENT DETECTION ═══ */}
       <Card>
-        <CardTitle sub="Who files Bugzilla bugs, and how were incidents actually discovered? Filing a bug is a process step — the actual discovery may have been by a researcher, auditor, root program, or the CA's own monitoring.">
-          Incident Detection
-        </CardTitle>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 8 }}>
+          <CardTitle sub="Who files Bugzilla bugs, and how were incidents actually discovered? Filing a bug is a process step — the actual discovery may have been by a researcher, auditor, root program, or the CA's own monitoring.">
+            Incident Detection
+          </CardTitle>
+          <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2, flexShrink: 0 }}>
+            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
+              <button key={v} onClick={() => setIncidentDetectionView(v)} style={{
+                padding: '3px 10px', fontSize: 10, fontWeight: incidentDetectionView === v ? 600 : 400, borderRadius: 4,
+                cursor: 'pointer', border: 'none', background: incidentDetectionView === v ? COLORS.ac : 'transparent',
+                color: incidentDetectionView === v ? COLORS.wh : COLORS.t3,
+              }}>{l}</button>
+            ))}
+          </div>
+        </div>
         <div style={{ display: 'flex', height: 90, alignItems: 'flex-end', gap: 2 }}>
           {bugCreation.map(y => {
             const total = STORE_ORDER.reduce((a, s) => a + (y[s] || 0), 0) + (y.other || 0);
@@ -528,8 +618,17 @@ const GovernanceRiskView = () => {
         {/* Discovery method breakdown */}
         {d.discovery_methods && (() => {
           const dm = d.discovery_methods;
-          const total = dm.classified_bugs || 0;
-          const t = dm.totals || {};
+          const isRecDet = incidentDetectionView === 'recent';
+          // Recompute totals from filtered by_year rows in recent mode
+          const t = isRecDet
+            ? discoveryByYear.reduce((acc, y) => {
+                for (const k of ['self_detected','external_researcher','root_program','community','audit','unknown']) {
+                  acc[k] = (acc[k] || 0) + (y[k] || 0);
+                }
+                return acc;
+              }, {})
+            : dm.totals || {};
+          const total = Object.values(t).reduce((a, v) => a + v, 0);
           const unknownPct = total > 0 ? Math.round((t.unknown || 0) / total * 100) : 100;
           const DISC_COLORS = {
             self_detected: COLORS.gn, external_researcher: COLORS.am, root_program: COLORS.ac,
@@ -565,9 +664,9 @@ const GovernanceRiskView = () => {
                     })}
                   </div>
                   {/* Per-year breakdown */}
-                  {(dm.by_year || []).length > 0 && (
+                  {discoveryByYear.length > 0 && (
                     <div style={{ display: 'flex', height: 60, alignItems: 'flex-end', gap: 2, marginBottom: 4 }}>
-                      {dm.by_year.map(y => {
+                      {discoveryByYear.map(y => {
                         const yTotal = y.total || 1;
                         return (
                           <div key={y.y} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
