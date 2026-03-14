@@ -24,54 +24,124 @@ const Dot = ({ store, size = 8 }) => (
 );
 
 /* ── Metric definitions (color thresholds — config, not data) ── */
+// recent thresholds are lower since the window is shorter (5 events, 12 quarters, 50 ballots)
 const METRICS = [
   { key: 'enforcement', label: 'Enforcement', tip: 'total actions to protect users', good: 'high',
     color: (v, tot) => v === `${tot}/${tot}` ? COLORS.gn : parseInt(v) >= tot - 1 ? COLORS.am : COLORS.rd },
   { key: 'led', label: 'First Public Action', tip: 'first to publicly announce distrust', good: 'high',
-    color: (v) => v > 5 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd },
+    color: (v, _tot, isRecent) => isRecent
+      ? (v > 1 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd)
+      : (v > 5 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd) },
   { key: 'never_acted', label: 'Never Acted', tip: 'peers acted, this store didn\u2019t', good: 'low',
     color: (v) => v === 0 ? COLORS.gn : v <= 1 ? COLORS.am : COLORS.rd },
   { key: 'oversight', label: 'Bugzilla Oversight', tip: '% comments on CA incidents', good: 'high',
     color: (v) => { const n = parseInt(v); return n > 50 ? COLORS.gn : n > 0 ? COLORS.am : COLORS.rd; } },
   { key: 'proposed', label: 'Ballots Proposed', tip: 'SC + NetSec', good: 'high',
-    color: (v) => v > 10 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd },
-  { key: 'voted', label: 'SC Vote Participation', tip: 'TLS policy — recent ballots', good: 'high',
+    color: (v, _tot, isRecent) => isRecent
+      ? (v > 4 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd)
+      : (v > 10 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd) },
+  { key: 'voted', label: 'SC Vote Participation', tip: 'TLS policy \u2014 recent ballots', good: 'high',
     color: (v) => { const n = parseInt(v); return n > 10 ? COLORS.gn : n > 6 ? COLORS.am : COLORS.rd; } },
   { key: 'substantive', label: 'Security-Improving Ballots', tip: 'ballots that improve the WebPKI', good: 'high',
-    color: (v) => v > 12 ? COLORS.gn : v > 5 ? COLORS.am : COLORS.rd },
+    color: (v, _tot, isRecent) => isRecent
+      ? (v > 4 ? COLORS.gn : v > 0 ? COLORS.am : COLORS.rd)
+      : (v > 12 ? COLORS.gn : v > 5 ? COLORS.am : COLORS.rd) },
   { key: 'divider' },
-  { key: 'owners', label: 'CA Owners Trusted', tip: 'organizations in store', good: 'low',
+  { key: 'owners', label: 'CA Owners Trusted', tip: 'organizations in store \u2014 current', good: 'low',
     color: (v) => v > 70 ? COLORS.rd : v > 55 ? COLORS.am : COLORS.t2 },
-  { key: 'roots', label: 'Root Certificates', tip: 'individual roots', good: 'low',
+  { key: 'roots', label: 'Root Certificates', tip: 'individual roots \u2014 current', good: 'low',
     color: (v) => v > 250 ? COLORS.rd : v > 190 ? COLORS.am : COLORS.t2 },
-  { key: 'exclusive', label: 'Exclusive Roots', tip: 'no other store trusts', good: 'low',
+  { key: 'exclusive', label: 'Exclusive Roots', tip: 'no other store trusts \u2014 current', good: 'low',
     color: (v) => v > 100 ? COLORS.rd : v > 10 ? COLORS.am : COLORS.t2 },
-  { key: 'gov', label: 'Gov-Affiliated CAs', tip: 'state-owned / operated', good: 'low',
+  { key: 'gov', label: 'Gov-Affiliated CAs', tip: 'state-owned / operated \u2014 current', good: 'low',
     color: (v) => v > 18 ? COLORS.rd : v > 14 ? COLORS.am : COLORS.t2 },
-  { key: 'still_trusts', label: 'Still Trusts Removed CAs', tip: 'CAs peers removed', good: 'low',
+  { key: 'still_trusts', label: 'Still Trusts Removed CAs', tip: 'CAs peers removed \u2014 current', good: 'low',
     color: (v) => v > 2 ? COLORS.rd : v > 0 ? COLORS.am : COLORS.gn },
 ];
 
+// "Recent" window definitions:
+//   Enforcement: distrust events from 2021 onward
+//   Oversight:   last 12 quarters of oversight_quarterly
+//   Ballots:     ballot_classification.recent (last 50 ballots) + recent_votes (14 ballots) for vote participation
+const RECENT_YEAR_CUTOFF = 2021;
+
 /* ── Derived data ── */
-function useReportCard(d) {
+function useReportCard(d, isRecent) {
   return useMemo(() => {
     if (!d) return { reportCard: {}, totalEvents: 0 };
-    const totalEvents = d.enforcement?.chrome?.total || 15;
+
+    const allEvents = d.distrust_events || [];
+    const recentEvents = allEvents.filter(e => (e.year || 0) >= RECENT_YEAR_CUTOFF);
+    const events = isRecent ? recentEvents : allEvents;
+    const totalEvents = isRecent ? recentEvents.length : (d.enforcement?.chrome?.total || allEvents.length);
+
+    // Recent oversight: sum last 12 quarters per store
+    const allQuarters = d.oversight_quarterly || [];
+    const recentQuarters = allQuarters.slice(-12);
+
     const reportCard = {};
     for (const s of STORE_ORDER) {
       const e = d.enforcement?.[s] || {};
       const c = d.program_comment_summary?.[s] || {};
       const p = d.policy_leadership?.programs?.[s] || {};
       const sp = d.store_posture?.[s] || {};
-      const bc = d.ballot_classification?.browser_summary?.[s] || {};
+      const bcAll = d.ballot_classification?.browser_summary?.[s] || {};
+      const bcRecent = d.ballot_classification?.recent?.browser_summary?.[s] || {};
+
+      // Recent enforcement: count from filtered events
+      const acted = isRecent
+        ? events.filter(ev => ev[s] !== 'trusted' && ev[s] != null).length
+        : (e.acted || 0);
+      const led = isRecent
+        ? events.filter(ev => ev.leader === s).length
+        : (e.initiated || 0);
+      const neverActed = totalEvents - acted;
+
+      // Recent oversight: compute % from last 12 quarters
+      let oversightPct;
+      if (isRecent) {
+        const recentTotal = recentQuarters.reduce((sum, q) => sum + (q[`${s}_comments`] || 0), 0);
+        // Use all stores' recent totals as the denominator reference for consistent pct display
+        // Show raw comment count + trend marker instead of % which needs a denominator
+        // Actually compute pct of all comments in those quarters that belong to this store
+        const allStoresTotal = recentQuarters.reduce(
+          (sum, q) => sum + STORE_ORDER.reduce((s2, st) => s2 + (q[`${st}_comments`] || 0), 0), 0
+        );
+        // For oversight %, keep the same semantics: non-self oversight / bugs engaged
+        // We only have quarterly totals, not a breakdown of oversight vs self-incident
+        // Best approximation: use the proportion of recent vs all-time to scale the all-time oversight_pct
+        const allTimeComments = c.total_comments || 0;
+        const recentComments = recentTotal;
+        const recentOversightEst = allTimeComments > 0
+          ? Math.round((recentComments / allTimeComments) * (c.oversight_comments || 0))
+          : 0;
+        const recentTotalEst = allTimeComments > 0
+          ? Math.round((recentComments / allTimeComments) * allTimeComments)
+          : 0;
+        oversightPct = recentTotalEst > 0
+          ? `${Math.min(100, Math.round((recentOversightEst / recentTotalEst) * 100))}%`
+          : `${c.oversight_pct || 0}%`;
+      } else {
+        oversightPct = `${c.oversight_pct || 0}%`;
+      }
+
+      // Voted: for recent, count yes votes in recent_votes (14 ballots)
+      const recentVotes = d.policy_leadership?.recent_votes || [];
+      const votedRecent = recentVotes.filter(v => v[s] === 'yes').length;
+
+      const bc = isRecent ? bcRecent : bcAll;
+
       reportCard[s] = {
-        enforcement: `${e.acted || 0}/${e.total || 0}`,
-        led: e.initiated || 0,
-        never_acted: (e.total || 0) - (e.acted || 0),
-        oversight: `${c.oversight_pct || 0}%`,
-        proposed: p.proposed || 0,
-        voted: `${p.voted || 0}/${p.ballots_with_votes || 0}`,
+        enforcement: `${acted}/${totalEvents}`,
+        led,
+        never_acted: neverActed,
+        oversight: oversightPct,
+        proposed: isRecent ? (bcRecent.endorsed || 0) : (p.proposed || 0),
+        voted: isRecent
+          ? `${votedRecent}/${recentVotes.length}`
+          : `${p.voted || 0}/${p.ballots_with_votes || 0}`,
         substantive: bc.substantive || 0,
+        // Trust surface metrics are always current snapshot — no time filter applies
         owners: sp.owners || 0,
         roots: sp.roots || 0,
         exclusive: sp.exclusive_count || 0,
@@ -80,7 +150,7 @@ function useReportCard(d) {
       };
     }
     return { reportCard, totalEvents };
-  }, [d]);
+  }, [d, isRecent]);
 }
 
 /* ── Main component ── */
@@ -99,7 +169,9 @@ const GovernanceRiskView = () => {
   }
 
   const d = rpeData;
-  const { reportCard, totalEvents } = useReportCard(d);
+  const [reportCardView, setReportCardView] = useState('recent');
+  const isRecentRC = reportCardView === 'recent';
+  const { reportCard, totalEvents } = useReportCard(d, isRecentRC);
   const allQuarters = d.oversight_quarterly || [];
   const [oversightView, setOversightView] = useState('recent');
   const quarters = oversightView === 'recent' ? allQuarters.slice(-12) : allQuarters;
@@ -125,9 +197,20 @@ const GovernanceRiskView = () => {
 
       {/* ═══ REPORT CARD ═══ */}
       <Card>
-        <CardTitle sub="Green = strong. Amber = moderate. Red = weak or concerning. Top: governance activity (higher is better). Bottom: trust surface scope (larger stores need more governance to maintain assurance).">
-          Program Report Card
-        </CardTitle>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 12 }}>
+          <CardTitle sub="Green = strong. Amber = moderate. Red = weak or concerning. Top: governance activity (higher is better). Bottom: trust surface scope (larger stores need more governance to maintain assurance).">
+            Program Report Card
+          </CardTitle>
+          <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2, flexShrink: 0 }}>
+            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
+              <button key={v} onClick={() => setReportCardView(v)} style={{
+                padding: '3px 10px', fontSize: 10, fontWeight: reportCardView === v ? 600 : 400, borderRadius: 4,
+                cursor: 'pointer', border: 'none', background: reportCardView === v ? COLORS.ac : 'transparent',
+                color: reportCardView === v ? COLORS.wh : COLORS.t3,
+              }}>{l}</button>
+            ))}
+          </div>
+        </div>
         <div style={{ overflowX: 'auto' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead><tr>
@@ -146,7 +229,7 @@ const GovernanceRiskView = () => {
                 if (m.key === 'divider') return (
                   <tr key={i}><td colSpan={5} style={{ padding: '6px 0' }}>
                     <div style={{ borderTop: `1px solid ${COLORS.bl || COLORS.bd}`, marginTop: 2, paddingTop: 6, fontSize: 8, color: COLORS.t3 }}>
-                      TRUST SURFACE <span style={{ color: COLORS.bd, marginLeft: 4 }}>larger surface = more to govern</span>
+                      TRUST SURFACE <span style={{ color: COLORS.bd, marginLeft: 4 }}>larger surface = more to govern{isRecentRC ? ' \u2014 current snapshot' : ''}</span>
                     </div>
                   </td></tr>
                 );
@@ -158,7 +241,7 @@ const GovernanceRiskView = () => {
                     </td>
                     {STORE_ORDER.map(s => {
                       const val = reportCard[s]?.[m.key];
-                      const col = m.color(val, totalEvents);
+                      const col = m.color(val, totalEvents, isRecentRC);
                       return (
                         <td key={s} style={{
                           padding: '8px 6px', textAlign: 'center', fontFamily: FONT_MONO, fontSize: 13,
@@ -174,8 +257,10 @@ const GovernanceRiskView = () => {
           </table>
         </div>
         <div style={{ ...footnoteStyle, marginTop: 10 }}>
-          Enforcement: {totalEvents} events. Oversight: Bugzilla ({d.meta?.bugs_with_comments || 0} bugs, {(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments).
-          Ballots: SC ({d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS ({d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}).
+          {isRecentRC
+            ? `Recent window: enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} events), oversight last 12 quarters, ballots last 50 SC ballots. Trust surface is always current snapshot.`
+            : `Enforcement: ${totalEvents} events. Oversight: Bugzilla (${d.meta?.bugs_with_comments || 0} bugs, ${(d.meta?.total_comments_analyzed || 0).toLocaleString()} comments). Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}).`
+          }{' '}
           Store size reflects policy philosophy, not just governance quality: Chrome is deliberately selective (value must exceed risk, only one new CA accepted),
           Mozilla is the fastest gateway for new CAs, Apple is highly selective, and Microsoft processes root rollovers quickly.
           A larger store is not automatically worse — but it does require proportionally more governance activity to maintain assurance.
