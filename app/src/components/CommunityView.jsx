@@ -286,7 +286,7 @@ const CommunityView = () => {
   const maxBalP   = Math.max(...orgRows.map(r => r.p), 1);
   const maxBallot = Math.max(...orgRows.map(r => r.p + r.e), 1);
   const maxFiling = Math.max(...orgRows.map(r => r.f), 1);
-  const activeOrgRows = orgRows.filter(r => r.s > 0 && !r.o.distrusted);
+  const activeOrgRows = orgRows.filter(r => r.s > 0);
   const zeroOrgRows   = orgRows.filter(r => r.s === 0 && r.o.cabf_member && !r.o.distrusted);
 
   // ── Sorted individuals ──
@@ -446,8 +446,13 @@ const CommunityView = () => {
           </thead>
           <tbody>
             {activeOrgRows.map(({ org, o, bz, tech, p, e, f }) => (
-              <tr key={org} style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
-                <td style={{ padding: '6px 8px', fontSize: 11, color: COLORS.tx, fontWeight: 500 }}>{org}</td>
+              <tr key={org} style={{ borderBottom: `1px solid ${COLORS.bd}`, opacity: o.distrusted ? 0.6 : 1 }}>
+                <td style={{ padding: '6px 8px', fontSize: 11, color: COLORS.tx, fontWeight: 500 }}>
+                  {org}
+                  {o.distrusted && (
+                    <span title="Distrusted by one or more root programs" style={{ marginLeft: 5, fontSize: 9, color: COLORS.am, fontWeight: 400 }}>distrusted</span>
+                  )}
+                </td>
                 <td style={{ padding: '6px 8px' }}>{o.cabf_member && <CABFBadge />}</td>
                 <td style={{ padding: '6px 8px' }}><MiniBar value={bz}   max={maxBz}     color={COLORS.ac} /></td>
                 <td style={{ padding: '6px 8px' }}><MiniBar value={tech} max={maxBz}     color={COLORS.cy} width={48} /></td>

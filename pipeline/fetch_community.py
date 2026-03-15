@@ -185,12 +185,6 @@ ORG_CANONICAL = {
     "qikfox":               None,   # certificate consumer
     "zertificon":           None,   # certificate consumer
     "netsolve":             None,
-    "cisco systems":        None,   # certificate consumer member, not CA
-    "cisco":                None,
-    "opera software":       None,   # browser member, not CA
-    "opera as":             None,
-    "opera software as":    None,
-    "opera":                None,
     "securetrust":          None,   # absorbed into VikingCloud
     "secure trust":         None,
     "certinomis":           None,   # distrusted 2019, defunct

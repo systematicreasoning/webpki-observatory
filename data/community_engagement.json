@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T17:24:09.629795+00:00",
+    "generated_at": "2026-03-15T17:33:11.632550+00:00",
     "pipeline_version": "1.1",
-    "total_orgs": 60,
+    "total_orgs": 62,
     "total_cabf_ca_members": 56,
     "total_individuals": 118,
     "total_ballots": 174,
@@ -610,6 +610,47 @@
         "individuals": [],
         "working_groups": [],
         "by_year": {}
+      },
+      "bug_filing": {
+        "bugs_filed": 0,
+        "recent_bugs_filed": 0,
+        "by_year": {},
+        "top_cas_filed_about": []
+      }
+    },
+    "Cisco": {
+      "cabf_member": false,
+      "distrusted": false,
+      "bugzilla": {
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
+      },
+      "ballots": {
+        "proposed": 2,
+        "endorsed": 1,
+        "recent_proposed": 1,
+        "recent_endorsed": 1,
+        "individuals": [
+          "Jos Purvis"
+        ],
+        "working_groups": [
+          "SC"
+        ],
+        "by_year": {
+          "2020": {
+            "proposed": 1,
+            "endorsed": 0
+          },
+          "2021": {
+            "proposed": 1,
+            "endorsed": 1
+          }
+        }
       },
       "bug_filing": {
         "bugs_filed": 0,
@@ -1776,6 +1817,52 @@
         ],
         "by_year": {
           "2024": {
+            "proposed": 0,
+            "endorsed": 2
+          },
+          "2025": {
+            "proposed": 0,
+            "endorsed": 1
+          }
+        }
+      },
+      "bug_filing": {
+        "bugs_filed": 0,
+        "recent_bugs_filed": 0,
+        "by_year": {},
+        "top_cas_filed_about": []
+      }
+    },
+    "Opera": {
+      "cabf_member": false,
+      "distrusted": false,
+      "bugzilla": {
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
+      },
+      "ballots": {
+        "proposed": 0,
+        "endorsed": 5,
+        "recent_proposed": 0,
+        "recent_endorsed": 3,
+        "individuals": [
+          "Tobias Josefowitz"
+        ],
+        "working_groups": [
+          "NS",
+          "SC"
+        ],
+        "by_year": {
+          "2020": {
+            "proposed": 0,
+            "endorsed": 2
+          },
+          "2023": {
             "proposed": 0,
             "endorsed": 2
           },
@@ -8279,6 +8366,28 @@
         }
       }
     },
+    "Jos Purvis": {
+      "proposed": 2,
+      "endorsed": 1,
+      "recent_proposed": 1,
+      "recent_endorsed": 1,
+      "orgs": [
+        "Cisco"
+      ],
+      "working_groups": [
+        "SC"
+      ],
+      "by_year": {
+        "2020": {
+          "proposed": 1,
+          "endorsed": 0
+        },
+        "2021": {
+          "proposed": 1,
+          "endorsed": 1
+        }
+      }
+    },
     "Paul van Brouwershaven": {
       "proposed": 2,
       "endorsed": 0,
@@ -8317,6 +8426,33 @@
         "2024": {
           "proposed": 0,
           "endorsed": 2
+        }
+      }
+    },
+    "Tobias Josefowitz": {
+      "proposed": 0,
+      "endorsed": 5,
+      "recent_proposed": 0,
+      "recent_endorsed": 3,
+      "orgs": [
+        "Opera"
+      ],
+      "working_groups": [
+        "NS",
+        "SC"
+      ],
+      "by_year": {
+        "2020": {
+          "proposed": 0,
+          "endorsed": 2
+        },
+        "2023": {
+          "proposed": 0,
+          "endorsed": 2
+        },
+        "2025": {
+          "proposed": 0,
+          "endorsed": 1
         }
       }
     },
