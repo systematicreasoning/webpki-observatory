@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-03-14T06:35:52.508813+00:00",
-    "last_checked": "2026-03-15T05:40:36.206549+00:00",
+    "last_updated": "2026-03-15T05:43:30.758004+00:00",
+    "last_checked": "2026-03-15T05:43:30.758017+00:00",
     "bug_count": 1690,
-    "active_incidents": 1425,
+    "active_incidents": 1426,
     "active_cas": 54,
-    "classified_count": 1425,
+    "classified_count": 1426,
     "unclassified_count": 0,
     "distrusted_excluded": 186,
     "unmapped_bugs": 68,
@@ -13,8 +13,8 @@
     "pipeline_error": null,
     "pipeline_error_time": null
   },
-  "total": 1425,
-  "total_with_distrusted": 1611,
+  "total": 1426,
+  "total_with_distrusted": 1612,
   "ca_count": 54,
   "ca_count_with_distrusted": 55,
   "years": [
@@ -68,7 +68,7 @@
     },
     {
       "y": 2026,
-      "n": 63
+      "n": 64
     }
   ],
   "categories": [
@@ -78,7 +78,7 @@
     },
     {
       "cat": "Governance",
-      "n": 417
+      "n": 418
     },
     {
       "cat": "Revocation",
@@ -178,7 +178,7 @@
       "y": 2026,
       "mi": 15,
       "rv": 12,
-      "gv": 30,
+      "gv": 31,
       "vl": 6
     }
   ],
@@ -257,7 +257,7 @@
       "ca": "Netlock",
       "mi": 9,
       "rv": 10,
-      "gv": 17,
+      "gv": 18,
       "vl": 1
     },
     {
@@ -635,8 +635,8 @@
     },
     {
       "ca": "Netlock",
-      "n": 37,
-      "self": 28,
+      "n": 38,
+      "self": 29,
       "ext": 9,
       "selfPct": 76
     },
