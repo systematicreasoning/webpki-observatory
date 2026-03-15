@@ -621,12 +621,19 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     # Track per-program: total comments, oversight comments, self-incident comments
     by_year_oversight = defaultdict(lambda: defaultdict(int))
     by_year_all = defaultdict(lambda: defaultdict(int))
+    bugs_per_year = defaultdict(int)  # total bugs filed each year
     totals = defaultdict(lambda: {"all": 0, "oversight": 0, "self_incident": 0, "workflow_events": 0, "admin_comments": 0, "recent_oversight": 0, "recent_self_incident": 0, "technical_oversight": 0, "recent_technical_oversight": 0})
     unique_bugs = defaultdict(lambda: {"all": set(), "oversight": set(), "recent_oversight": set(), "technical_oversight": set(), "recent_technical_oversight": set()})
     RECENT_OVERSIGHT_CUTOFF = "2021"
     comment_count_total = 0
     substantive_count_total = 0
     bugs_with_comments = 0
+    
+    # Count all bugs per year (denominator for coverage rate)
+    for bug in bugs_raw:
+        year = bug.get("creation_time", "")[:4]
+        if year and int(year) >= 2014:
+            bugs_per_year[year] += 1
     
     # NEW: per-person oversight tracking and quarterly trends
     person_oversight = defaultdict(lambda: defaultdict(int))  # email -> quarter -> count
@@ -750,6 +757,23 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "apple": d.get("apple", 0),
             "microsoft": d.get("microsoft", 0),
         })
+
+    # Coverage rate by year: bugs_oversight[year][prog] / bugs_per_year[year]
+    # This is the research-quality metric — not distorted by comment volume per person
+    coverage_rate_by_year = []
+    for year in sorted(bugs_per_year.keys()):
+        total = bugs_per_year[year]
+        if total == 0:
+            continue
+        d = by_year_oversight[year]
+        coverage_rate_by_year.append({
+            "y": int(year),
+            "total_bugs": total,
+            "chrome":    round(d.get("chrome", 0) / total * 100, 1),
+            "mozilla":   round(d.get("mozilla", 0) / total * 100, 1),
+            "apple":     round(d.get("apple", 0) / total * 100, 1),
+            "microsoft": round(d.get("microsoft", 0) / total * 100, 1),
+        })
     
     # Build per-program summary
     program_summary = {}
@@ -846,6 +870,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     
     return {
         "oversight_by_year": oversight_years,
+        "coverage_rate_by_year": coverage_rate_by_year,
         "program_comment_summary": program_summary,
         "oversight_concentration": concentration,
         "oversight_quarterly": quarterly_trends,

@@ -13,6 +13,10 @@ import {
 } from './shared';
 import { usePipeline } from '../PipelineContext';
 import { footnoteStyle, statGridStyle } from '../styles';
+import {
+  ResponsiveContainer, LineChart, Line, XAxis, YAxis,
+  CartesianGrid, Tooltip, ReferenceLine, Legend,
+} from 'recharts';
 
 /* ── Local constants ── */
 
@@ -227,6 +231,68 @@ const GovernanceRiskView = () => {
           s={`${(d.meta?.total_comments_raw || 0).toLocaleString()} comments classified`}
         />
       </div>
+
+      {/* ═══ COVERAGE RATE TREND ═══ */}
+      {(d.coverage_rate_by_year || []).length > 0 && (() => {
+        const cov = d.coverage_rate_by_year;
+        const currentYear = new Date().getFullYear();
+        return (
+          <Card>
+            <CardTitle sub="Percentage of all open CA compliance bugs each program commented on per year. Coverage rate — not raw comment volume — is the correct metric: it accounts for a growing bug corpus. Declining rates mean programs are covering a smaller fraction of incidents each year.">
+              Oversight Coverage Rate by Year
+            </CardTitle>
+            <div style={{ height: 220, marginTop: 12 }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={cov} margin={{ left: 0, right: 16, top: 8, bottom: 20 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={COLORS.bd} />
+                  <XAxis
+                    dataKey="y"
+                    tick={{ fill: COLORS.t3, fontSize: 9 }}
+                    axisLine={{ stroke: COLORS.bd }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    tick={{ fill: COLORS.t3, fontSize: 9 }}
+                    axisLine={false}
+                    tickLine={false}
+                    tickFormatter={v => `${v}%`}
+                    domain={[0, 'auto']}
+                  />
+                  <Tooltip
+                    contentStyle={{ background: COLORS.s2, border: `1px solid ${COLORS.bd}`, borderRadius: 6, fontSize: 11 }}
+                    labelStyle={{ color: COLORS.tx, fontWeight: 600, marginBottom: 4 }}
+                    formatter={(val, name) => [`${val}%`, name.charAt(0).toUpperCase() + name.slice(1)]}
+                    labelFormatter={(y) => {
+                      const row = cov.find(r => r.y === y);
+                      return `${y}${y === currentYear ? ' (partial)' : ''} — ${row?.total_bugs || 0} bugs`;
+                    }}
+                  />
+                  <ReferenceLine x={2021} stroke={COLORS.ac} strokeDasharray="4 4"
+                    label={{ value: 'Chrome RP', position: 'top', fill: COLORS.ac, fontSize: 8 }} />
+                  <Line dataKey="chrome"    stroke={STORE_COLORS.chrome}    strokeWidth={2} dot={false} name="chrome" />
+                  <Line dataKey="mozilla"   stroke={STORE_COLORS.mozilla}   strokeWidth={2} dot={false} name="mozilla" />
+                  <Line dataKey="apple"     stroke={STORE_COLORS.apple}     strokeWidth={1.5} dot={false} name="apple" strokeDasharray="3 3" />
+                  <Line dataKey="microsoft" stroke={STORE_COLORS.microsoft} strokeWidth={1} dot={false} name="microsoft" opacity={0.5} />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+            <div style={{ display: 'flex', gap: 16, fontSize: 9, color: COLORS.t3, marginTop: 6, flexWrap: 'wrap' }}>
+              {['chrome','mozilla','apple','microsoft'].map(p => (
+                <span key={p} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span style={{ display: 'inline-block', width: 16, height: 2, background: STORE_COLORS[p], borderRadius: 1 }} />
+                  {p.charAt(0).toUpperCase() + p.slice(1)}
+                </span>
+              ))}
+              <span style={{ marginLeft: 'auto' }}>Vertical line = 2021 Chrome Root Program launch</span>
+            </div>
+            <div style={{ ...footnoteStyle, marginTop: 6 }}>
+              Both Chrome and Mozilla cover a declining share of an expanding bug corpus — the total number of CA compliance bugs grew from ~100/yr (2017) to ~220/yr (2024–25).
+              Apple rose from near-zero to 15% in 2026. Microsoft has remained at zero throughout.
+              Pre-2017 years excluded (fewer than 10 bugs/year — not statistically meaningful).
+            </div>
+          </Card>
+        );
+      })()}
 
       {/* ═══ REPORT CARD ═══ */}
       <Card>

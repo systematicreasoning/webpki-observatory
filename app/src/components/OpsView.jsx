@@ -467,7 +467,7 @@ const OpsView = () => {
             <>
               {ybc.length > 0 && (
                 <Card>
-                  <CardTitle sub="Incident types by year. Stacked bars show the evolving mix of misissuance, revocation, governance, and validation issues.">
+                  <CardTitle sub="Governance incidents (audit failures, CPS violations, disclosure failures) were 60% of all incidents in 2025 — up from 21% in prior years. Driven by broad CCADB/CPS enforcement across ~30 CAs. 2026 marked as partial year.">
                     Incidents by Class
                   </CardTitle>
                   <ChartWrap height={240}>
@@ -476,7 +476,15 @@ const OpsView = () => {
                         <CartesianGrid strokeDasharray="3 3" stroke={COLORS.bd} />
                         <XAxis
                           dataKey="y"
-                          tick={{ fill: COLORS.t3, fontSize: 9 }}
+                          tick={({ x, y, payload }) => {
+                            const isPartial = payload.value === 2026;
+                            return (
+                              <text x={x} y={y + 12} fill={isPartial ? COLORS.am : COLORS.t3}
+                                fontSize={9} textAnchor="middle">
+                                {payload.value}{isPartial ? '*' : ''}
+                              </text>
+                            );
+                          }}
                           axisLine={{ stroke: COLORS.bd }}
                           tickLine={false}
                         />
@@ -487,17 +495,20 @@ const OpsView = () => {
                               {...p}
                               render={(x) => (
                                 <>
-                                  <div style={{ fontWeight: 600, color: COLORS.tx }}>{x.y}</div>
+                                  <div style={{ fontWeight: 600, color: COLORS.tx }}>
+                                    {x.y}{x.y === 2026 ? ' (partial)' : ''}
+                                  </div>
                                   {[
+                                    ['gv', 'Governance'],
                                     ['mi', 'Misissuance'],
                                     ['rv', 'Revocation'],
-                                    ['gv', 'Governance'],
                                     ['vl', 'Validation'],
                                   ].map(
                                     ([k, l]) =>
                                       x[k] > 0 && (
                                         <div key={k} style={{ color: CC[k].c }}>
                                           {l}: {x[k]}
+                                          {k === 'gv' && x.y === 2025 ? ' ← 60% of total' : ''}
                                         </div>
                                       ),
                                   )}
@@ -516,24 +527,20 @@ const OpsView = () => {
                       </BarChart>
                     </ResponsiveContainer>
                   </ChartWrap>
-                  <div style={{ display: 'flex', gap: 14, fontSize: 9, color: COLORS.t3, marginTop: 4 }}>
+                  <div style={{ display: 'flex', gap: 14, fontSize: 9, color: COLORS.t3, marginTop: 4, flexWrap: 'wrap' }}>
                     {Object.entries(CC).map(([k, v]) => (
                       <span key={k}>
-                        <span
-                          style={{
-                            display: 'inline-block',
-                            width: 10,
-                            height: 10,
-                            borderRadius: 2,
-                            background: v.c,
-                            opacity: 0.8,
-                            marginRight: 4,
-                            verticalAlign: 'middle',
-                          }}
-                        />
+                        <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2,
+                          background: v.c, opacity: 0.8, marginRight: 4, verticalAlign: 'middle' }} />
                         {v.l}
                       </span>
                     ))}
+                    <span style={{ marginLeft: 'auto', color: COLORS.am }}>* 2026 partial year (Q1 only)</span>
+                  </div>
+                  <div style={{ ...footnoteStyle, marginTop: 6 }}>
+                    Governance = audit qualifications, CPS/policy violations, disclosure failures, CCADB non-compliance.
+                    2025 spike driven by broad enforcement across ~30 CAs: PKIoverheid (25 bugs), SwissSign (14), and others — not a single incident.
+                    Tags from Bugzilla whiteboard labels.
                   </div>
                 </Card>
               )}
