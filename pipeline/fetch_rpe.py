@@ -446,96 +446,132 @@ def analyze_discovery_methods(bugs_raw, comment_cache):
         }
     }
 
+def bulk_fetch_comment_counts(bug_ids, rate_limit_delay=0.3):
+    """
+    Bulk-fetch comment_count for all known bug IDs.
+    Uses /rest/bug?id=1,2,3&include_fields=id,comment_count
+    Bugzilla supports ~200 IDs per request — very cheap metadata poll.
+    Returns dict: {bug_id_str: comment_count}
+    """
+    BATCH = 200
+    result = {}
+    ids = [str(b) for b in bug_ids]
+    total_batches = (len(ids) + BATCH - 1) // BATCH
+
+    for i in range(0, len(ids), BATCH):
+        batch = ids[i:i + BATCH]
+        id_str = ",".join(batch)
+        url = f"https://bugzilla.mozilla.org/rest/bug?id={id_str}&include_fields=id,comment_count"
+        try:
+            req = urllib.request.Request(url)
+            req.add_header("Accept", "application/json")
+            req.add_header("User-Agent", "WebPKI-Observatory/1.0")
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            for bug in data.get("bugs", []):
+                result[str(bug["id"])] = bug.get("comment_count", 0)
+        except Exception as e:
+            print(f"  Warning: metadata batch {i//BATCH+1}/{total_batches} failed: {e}")
+        if i + BATCH < len(ids):
+            time.sleep(rate_limit_delay)
+
+    return result
+
+
 def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0):
     """
-    Fetch comments for a list of bug IDs from Bugzilla REST API.
-    
-    Bugzilla REST API: GET /rest/bug/{id}/comment
-    Returns: { bugs: { "12345": { comments: [...] } } }
-    
-    We cache results to avoid re-fetching on subsequent runs.
+    Fetch comments for bug IDs from Bugzilla REST API.
+
+    Smart caching: bulk-poll comment_count for all bugs first (cheap),
+    then only fetch actual comments for bugs where the count has grown.
+    Stores counts in comment_count_meta.json as the change-detection record.
+
+    Typical daily run: 9 metadata API calls + comments for 3-20 changed bugs
+    rather than fetching all 1,690+ bugs unconditionally.
     """
     print("\n── Phase 2: Bugzilla Comment Fetch ──")
-    
-    # Load existing cache
-    cache = load_json(cache_path, {})
-    cached_ids = set(cache.keys())
-    
-    # Find bugs that need fetching: not cached, or cached in old format (text only on first comment)
+
+    cache_path = Path(cache_path)
+    meta_path  = cache_path.parent / "comment_count_meta.json"
+
+    cache         = load_json(cache_path, {})
+    stored_counts = load_json(meta_path, {})
+    cached_ids    = set(cache.keys())
+
+    # ── Step 1: Bulk metadata poll ──
+    print(f"  Polling comment counts for {len(bug_ids)} bugs...")
+    live_counts = bulk_fetch_comment_counts(bug_ids)
+    print(f"  Got metadata for {len(live_counts)} bugs")
+
+    # ── Step 2: Determine what to fetch ──
     need_fetch = []
-    need_text_backfill = []
     for bid in bug_ids:
         sbid = str(bid)
+        live_count   = live_counts.get(sbid, 0)
+        stored_count = stored_counts.get(sbid, -1)
         if sbid not in cached_ids:
-            need_fetch.append(sbid)
-        else:
+            need_fetch.append(sbid)          # new bug
+        elif live_count > stored_count:
+            need_fetch.append(sbid)          # existing bug with new comments
+
+    # Legacy backfill: cached comments missing text field
+    need_text_backfill = []
+    for sbid in cached_ids:
+        if sbid in {str(b) for b in bug_ids} and sbid not in need_fetch:
             comments = cache.get(sbid, [])
-            # Old format: text field missing from comments after index 0
-            # Detect by checking if any non-first comment has no 'text' key
-            needs_backfill = (
-                len(comments) > 1 and "text" not in comments[1]
-            ) or (
-                len(comments) == 1 and comments[0] and "text" not in comments[0]
-            )
-            if needs_backfill:
+            if (len(comments) > 1 and "text" not in comments[1]) or \
+               (len(comments) == 1 and comments[0] and "text" not in comments[0]):
                 need_text_backfill.append(sbid)
-    
-    # Prioritize new bugs, then backfill text for existing
+
     all_to_fetch = need_fetch + need_text_backfill
     if max_bugs:
         all_to_fetch = all_to_fetch[:max_bugs]
-    
-    print(f"  {len(cached_ids)} bugs already cached")
-    print(f"  {len(need_fetch)} new bugs to fetch")
-    print(f"  {len(need_text_backfill)} cached bugs need text backfill")
-    print(f"  {len(all_to_fetch)} total to fetch this run")
-    
-    need_fetch = all_to_fetch
-    
-    if not need_fetch:
+
+    unchanged = len(bug_ids) - len(need_fetch)
+    print(f"  {unchanged} bugs unchanged (comment count matches cache) — skipped")
+    print(f"  {len(need_fetch)} bugs with new or uncached comments to fetch")
+    if need_text_backfill:
+        print(f"  {len(need_text_backfill)} legacy backfill needed")
+    print(f"  {len(all_to_fetch)} total fetches this run")
+
+    if not all_to_fetch:
         print("  Nothing to fetch")
+        # Update meta with live counts even when nothing fetched
+        stored_counts.update(live_counts)
+        with open(meta_path, "w") as f:
+            json.dump(stored_counts, f)
         return cache
-    
-    # Bugzilla supports fetching comments for multiple bugs at once
-    # but the response can be large. Batch in groups of 20.
+
+    # ── Step 3: Fetch comments for changed/new bugs ──
     BATCH_SIZE = 20
     fetched = 0
-    errors = 0
-    
-    for i in range(0, len(need_fetch), BATCH_SIZE):
-        batch = need_fetch[i:i+BATCH_SIZE]
-        # Bugzilla REST API: /rest/bug/{id}/comment works for single bug
-        # For multiple bugs, use /rest/bug/{id1},{id2},.../comment — but that
-        # doesn't exist. We need to fetch one at a time or use the batch endpoint.
-        # Actually: /rest/bug/{id}/comment works, and we can batch by using
-        # /rest/bug?id=1,2,3&include_fields=id with a separate comment fetch.
-        # Simplest: fetch one bug's comments at a time.
-        
+    errors  = 0
+
+    for i in range(0, len(all_to_fetch), BATCH_SIZE):
+        batch = all_to_fetch[i:i + BATCH_SIZE]
         for bug_id in batch:
             url = f"{BUGZILLA_URL}/{bug_id}/comment"
             try:
                 req = urllib.request.Request(url)
                 req.add_header("Accept", "application/json")
+                req.add_header("User-Agent", "WebPKI-Observatory/1.0")
                 with urllib.request.urlopen(req, timeout=30) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
-                
-                # Extract author emails, timestamps, and text for all comments.
-                # Text is truncated at 1000 chars — sufficient for classification
-                # and governance analysis. Previously only stored text for ci==0
-                # (discovery classification) which caused root program comments
-                # on later positions to appear empty and be miscounted.
+
                 comments = data.get("bugs", {}).get(str(bug_id), {}).get("comments", [])
                 cache[str(bug_id)] = [
                     {
-                        "author": c.get("creator", ""),
-                        "time": c.get("creation_time", ""),
+                        "author":     c.get("creator", ""),
+                        "time":       c.get("creation_time", ""),
                         "is_private": c.get("is_private", False),
-                        "text": c.get("text", "")[:1000],
+                        "text":       c.get("text", "")[:1000],
                     }
-                    for ci, c in enumerate(comments)
+                    for c in comments
                 ]
+                if bug_id in live_counts:
+                    stored_counts[str(bug_id)] = live_counts[bug_id]
                 fetched += 1
-                
+
             except urllib.error.HTTPError as e:
                 if e.code == 429:
                     print(f"  Rate limited at bug {bug_id}, stopping")
@@ -545,28 +581,31 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
             except Exception as e:
                 print(f"  Error fetching bug {bug_id}: {e}")
                 errors += 1
-            
+
             time.sleep(rate_limit_delay)
-        
-        # Save cache after each batch
+
         with open(cache_path, "w") as f:
             json.dump(cache, f)
-        
-        pct = min(100, ((i + len(batch)) / len(need_fetch)) * 100)
+        with open(meta_path, "w") as f:
+            json.dump(stored_counts, f)
+
+        pct = min(100, ((i + len(batch)) / len(all_to_fetch)) * 100)
         print(f"  Progress: {fetched} fetched, {errors} errors ({pct:.0f}%)")
-        
-        # Check if we got rate limited
+
         if errors > 5:
             print("  Too many errors, stopping")
             break
-    
-    print(f"  Final: {len(cache)} total bugs with comments cached")
-    
-    # Save final cache
+
+    # Update meta for all polled bugs
+    stored_counts.update({k: v for k, v in live_counts.items() if k not in need_fetch})
     with open(cache_path, "w") as f:
         json.dump(cache, f)
-    
+    with open(meta_path, "w") as f:
+        json.dump(stored_counts, f)
+
+    print(f"  Final: {len(cache)} bugs cached, {fetched} updated this run")
     return cache
+
 
 
 def _bug_is_about_program(summary, program):

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T17:33:11.632550+00:00",
+    "generated_at": "2026-03-15T17:58:02.516289+00:00",
     "pipeline_version": "1.1",
-    "total_orgs": 62,
+    "total_orgs": 60,
     "total_cabf_ca_members": 56,
     "total_individuals": 118,
     "total_ballots": 174,
@@ -610,47 +610,6 @@
         "individuals": [],
         "working_groups": [],
         "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "Cisco": {
-      "cabf_member": false,
-      "distrusted": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 2,
-        "endorsed": 1,
-        "recent_proposed": 1,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Jos Purvis"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2020": {
-            "proposed": 1,
-            "endorsed": 0
-          },
-          "2021": {
-            "proposed": 1,
-            "endorsed": 1
-          }
-        }
       },
       "bug_filing": {
         "bugs_filed": 0,
@@ -1833,52 +1792,6 @@
         "top_cas_filed_about": []
       }
     },
-    "Opera": {
-      "cabf_member": false,
-      "distrusted": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 5,
-        "recent_proposed": 0,
-        "recent_endorsed": 3,
-        "individuals": [
-          "Tobias Josefowitz"
-        ],
-        "working_groups": [
-          "NS",
-          "SC"
-        ],
-        "by_year": {
-          "2020": {
-            "proposed": 0,
-            "endorsed": 2
-          },
-          "2023": {
-            "proposed": 0,
-            "endorsed": 2
-          },
-          "2025": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "PKIoverheid": {
       "cabf_member": false,
       "distrusted": false,
@@ -2870,15 +2783,15 @@
     "Zacharias.bjorngren@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 20,
-        "comments": 40,
+        "bugs_engaged": 21,
+        "comments": 41,
         "technical_comments": 9,
-        "recent_bugs_engaged": 20,
+        "recent_bugs_engaged": 21,
         "recent_technical_comments": 9,
         "by_year": {
           "2024": 11,
           "2025": 27,
-          "2026": 2
+          "2026": 3
         },
         "top_cas_commented_on": [
           [
@@ -2887,7 +2800,7 @@
           ],
           [
             "NETLOCK",
-            6
+            7
           ],
           [
             "Entrust",
@@ -6958,13 +6871,14 @@
     "ragtime_knoll5n@icloud.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 12,
+        "bugs_engaged": 5,
+        "comments": 13,
         "technical_comments": 3,
-        "recent_bugs_engaged": 4,
+        "recent_bugs_engaged": 5,
         "recent_technical_comments": 3,
         "by_year": {
-          "2025": 12
+          "2025": 12,
+          "2026": 1
         },
         "top_cas_commented_on": [
           [
@@ -6974,6 +6888,10 @@
           [
             "SHECA",
             2
+          ],
+          [
+            "iTrusChina",
+            1
           ],
           [
             "Financijska agencija (Fina)",
@@ -7020,15 +6938,15 @@
     "rdaurne77@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 90,
-        "comments": 277,
+        "bugs_engaged": 91,
+        "comments": 278,
         "technical_comments": 92,
-        "recent_bugs_engaged": 90,
+        "recent_bugs_engaged": 91,
         "recent_technical_comments": 92,
         "by_year": {
           "2024": 197,
           "2025": 48,
-          "2026": 32
+          "2026": 33
         },
         "top_cas_commented_on": [
           [
@@ -7037,7 +6955,7 @@
           ],
           [
             "NETLOCK",
-            33
+            34
           ],
           [
             "Microsoft PKI Services",
@@ -7701,7 +7619,7 @@
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 8,
-        "comments": 42,
+        "comments": 43,
         "technical_comments": 18,
         "recent_bugs_engaged": 8,
         "recent_technical_comments": 18,
@@ -7710,12 +7628,12 @@
           "2022": 2,
           "2024": 19,
           "2025": 1,
-          "2026": 3
+          "2026": 4
         },
         "top_cas_commented_on": [
           [
             "iTrusChina",
-            42
+            43
           ]
         ]
       },
@@ -8366,28 +8284,6 @@
         }
       }
     },
-    "Jos Purvis": {
-      "proposed": 2,
-      "endorsed": 1,
-      "recent_proposed": 1,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Cisco"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 1,
-          "endorsed": 0
-        },
-        "2021": {
-          "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
     "Paul van Brouwershaven": {
       "proposed": 2,
       "endorsed": 0,
@@ -8426,33 +8322,6 @@
         "2024": {
           "proposed": 0,
           "endorsed": 2
-        }
-      }
-    },
-    "Tobias Josefowitz": {
-      "proposed": 0,
-      "endorsed": 5,
-      "recent_proposed": 0,
-      "recent_endorsed": 3,
-      "orgs": [
-        "Opera"
-      ],
-      "working_groups": [
-        "NS",
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 0,
-          "endorsed": 2
-        },
-        "2023": {
-          "proposed": 0,
-          "endorsed": 2
-        },
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
         }
       }
     },

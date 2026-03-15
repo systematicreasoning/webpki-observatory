@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T10:21:51.756727+00:00",
+    "generated_at": "2026-03-15T17:58:02.288301+00:00",
     "bugs_total": 1690,
-    "bugs_with_comments": 1690,
-    "total_comments_raw": 22035,
-    "total_comments_analyzed": 6037,
+    "bugs_with_comments": 1689,
+    "total_comments_raw": 22028,
+    "total_comments_analyzed": 6036,
     "pipeline_version": "0.5",
     "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs."
   },
@@ -346,8 +346,8 @@
   },
   "discovery_methods": {
     "totals": {
-      "root_program": 882,
-      "unknown": 208,
+      "root_program": 881,
+      "unknown": 209,
       "community": 240,
       "audit": 95,
       "self_detected": 148,
@@ -438,10 +438,10 @@
         "y": 2022,
         "self_detected": 12,
         "external_researcher": 8,
-        "root_program": 56,
+        "root_program": 55,
         "community": 16,
         "audit": 1,
-        "unknown": 13,
+        "unknown": 14,
         "total": 106
       },
       {
@@ -705,10 +705,10 @@
       "recent_bugs_technical_oversight": 239
     },
     "mozilla": {
-      "total_comments": 3243,
-      "substantive_comments": 3242,
+      "total_comments": 3242,
+      "substantive_comments": 3241,
       "workflow_events": 1,
-      "admin_comments": 2047,
+      "admin_comments": 2046,
       "oversight_comments": 1195,
       "recent_oversight_comments": 286,
       "technical_oversight_comments": 880,
@@ -1330,9 +1330,9 @@
       "microsoft_people": 0
     }
   ],
-  "bugs_analyzed": 1690,
-  "total_comments": 22035,
-  "substantive_comments": 6037,
+  "bugs_analyzed": 1689,
+  "total_comments": 22028,
+  "substantive_comments": 6036,
   "sample_pct": 100,
   "enforcement": {
     "chrome": {
@@ -2255,7 +2255,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 288954,
+        "certs": 289615,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2275,7 +2275,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 96415,
+        "certs": 96339,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2295,7 +2295,7 @@
       {
         "ca": "Cybertrust Japan Co., Ltd.",
         "rank": 22,
-        "certs": 35603,
+        "certs": 35507,
         "stores": {
           "chrome": "not_included",
           "mozilla": "included",
@@ -2315,7 +2315,7 @@
       {
         "ca": "Shanghai Electronic Certification Authority Co., Ltd.",
         "rank": 24,
-        "certs": 31931,
+        "certs": 31924,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2355,7 +2355,7 @@
       {
         "ca": "Open Access Technology International, Inc. (OATI)",
         "rank": 42,
-        "certs": 2382,
+        "certs": 2380,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2375,7 +2375,7 @@
       {
         "ca": "PostSignum",
         "rank": 46,
-        "certs": 1003,
+        "certs": 1000,
         "stores": {
           "chrome": "not_included",
           "mozilla": "not_included",
@@ -2812,7 +2812,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 516974262,
+        "certs_now": 516718427,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
