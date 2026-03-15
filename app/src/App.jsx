@@ -71,6 +71,16 @@ function AppContent() {
 
   const [tab, setTabState] = useState(getTabFromHash);
 
+  // ── Theme ──
+  const [theme, setTheme] = useState(() => {
+    try { return localStorage.getItem('theme') || 'dark'; } catch { return 'dark'; }
+  });
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try { localStorage.setItem('theme', theme); } catch {}
+  }, [theme]);
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark');
+
   const setTab = (id) => {
     setTabState(id);
     window.location.hash = id;
@@ -124,6 +134,23 @@ function AppContent() {
               All data reflects currently trusted CAs only. Distrusted CAs are excluded.
             </p>
           </div>
+          <button
+            onClick={toggleTheme}
+            title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            style={{
+              background: COLORS.s2,
+              border: `1px solid ${COLORS.bd}`,
+              borderRadius: 6,
+              color: COLORS.t2,
+              cursor: 'pointer',
+              fontSize: 14,
+              padding: '4px 10px',
+              lineHeight: 1,
+              userSelect: 'none',
+            }}
+          >
+            {theme === 'dark' ? '☀' : '☾'}
+          </button>
         </div>
 
         {/* Tab navigation */}
