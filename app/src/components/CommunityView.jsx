@@ -85,7 +85,7 @@ const CommunityView = () => {
   }
 
   const d = communityData;
-  const [isRecent, setIsRecent] = useState(false);
+  const [isRecent, setIsRecent] = useState(true);
   const [orgSort, setOrgSort] = useState('score');
   const [showAllZero, setShowAllZero] = useState(false);
   const [showAllInds, setShowAllInds] = useState(false);
