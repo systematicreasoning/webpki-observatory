@@ -271,6 +271,8 @@ const GovernanceRiskView = () => {
                   <Line dataKey="mozilla"   stroke={STORE_COLORS.mozilla}   strokeWidth={2} dot={false} name="mozilla" />
                   <Line dataKey="apple"     stroke={STORE_COLORS.apple}     strokeWidth={1.5} dot={false} name="apple" strokeDasharray="3 3" />
                   <Line dataKey="microsoft" stroke={STORE_COLORS.microsoft} strokeWidth={1} dot={false} name="microsoft" opacity={0.5} />
+                  <ReferenceLine x={2021} stroke={COLORS.ac} strokeDasharray="4 4"
+                    label={{ value: 'Chrome Root Program launched', position: 'insideTopLeft', fill: COLORS.ac, fontSize: 8 }} />
                 </LineChart>
               </ResponsiveContainer>
             </div>
