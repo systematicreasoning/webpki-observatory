@@ -24,18 +24,30 @@ import { statGridStyle, footnoteStyle } from '../styles';
 /* ── helpers ── */
 
 /** Mask email to reduce scraping surface.
- *  Personal domains (gmail, hotmail, etc): show only masked local part — domain
- *  gives no org-affiliation signal and leaks provider unnecessarily.
- *  Org domains: keep domain for affiliation context, mask local part.
- *    agwa-bugs@mm.beanwood.com -> a********@mm.beanwood.com
- *    rdaurne77@gmail.com       -> r********
- *    dzacharo@harica.gr        -> d*******@harica.gr
+ *  Only show domain if it's a known CA/org domain that provides affiliation context.
+ *  Everything else (personal domains, researcher domains, unknown) — show masked local only.
+ *    dzacharo@harica.gr        -> d*******@harica.gr  (CA domain — kept)
+ *    rob@sectigo.com           -> r**@sectigo.com     (CA domain — kept)
+ *    rdaurne77@gmail.com       -> r********           (personal — dropped)
+ *    agwa-bugs@mm.beanwood.com -> a********           (personal — dropped)
  */
-const PERSONAL_DOMAINS = new Set([
-  'gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'protonmail.com',
-  'icloud.com', 'me.com', 'mac.com', 'live.com', 'msn.com',
-  'thisisntrocket.science', 'mm.beanwood.com', 'hezmatt.org',
-  'fozzie.dev', 'hboeck.de', 'proton.me', 'scheitle.de',
+const CA_ORG_DOMAINS = new Set([
+  'digicert.com', 'harica.gr', 'sectigo.com', 'comodo.com',
+  'letsencrypt.org', 'abetterinternet.org', 'entrust.com', 'entrustdatacard.com',
+  'ssl.com', 'globalsign.com', 'actalis.it', 'certum.pl', 'assecods.pl',
+  'godaddy.com', 'buypass.no', 'dhimyotis.com', 'kir.pl', 'secom.co.jp',
+  'cht.com.tw', 'cfca.com.cn', 'bdr.de', 'd-trust.net', 'logius.nl',
+  'aruba.it', 'swisssign.com', 'emudhra.com', 'identrust.com',
+  'amazon.com', 'fastly.com', 'netlock.hu', 'e-tugra.com',
+  'telia.com', 'teliacompany.com', 'isigma.es', 'certigna.fr',
+  'trustcor.ca', 'certinomis.fr', 'trustasia.com', 'twca.com.tw',
+  'vikingcloud.com', 'visa.com', 'chunghwapost.com.tw',
+  'comsign.co.il', 'digidentity.eu', 'disig.sk', 'docusign.com',
+  'gdca.com.cn', 'globaltrust.eu', 'izenpe.eus', 'jprs.co.jp',
+  'kamusm.gov.tr', 'kpn.com', 'msctrustgate.com', 'naver.com',
+  'networksolutions.com', 'oati.net', 'oiste.org', 'posdigicert.com.my',
+  'certisign.com.br', 'ica.cz', 'sdaia.gov.sa', 'sheca.com',
+  'sk.ee', 'ssc.lt', 'swisscom.com',
 ]);
 
 function maskEmail(email) {
@@ -43,7 +55,7 @@ function maskEmail(email) {
   const [local, domain] = email.split('@');
   if (local.length <= 1) return email;
   const masked = `${local[0]}${'*'.repeat(local.length - 1)}`;
-  return PERSONAL_DOMAINS.has(domain) ? masked : `${masked}@${domain}`;
+  return CA_ORG_DOMAINS.has(domain) ? `${masked}@${domain}` : masked;
 }
 
 function scoreOrg(o, recent) {
