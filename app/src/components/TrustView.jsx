@@ -595,7 +595,7 @@ const TrustView = () => {
               </ResponsiveContainer>
             </div>
             <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 6, lineHeight: 1.5 }}>
-              +{growth} roots in ~4 years. Chrome Root Program launched February 2022 with 117 roots inherited from the OS trust store.
+              +{growth} roots since {first.label.slice(0, 7)}. Chrome Root Program launched with {first.total} roots inherited from the OS trust store.
               Growth reflects both new CA inclusion decisions and cross-sign intermediate certificate additions.
               Source: chromium/src/net/data/ssl/chrome_root_store commit history.
             </div>

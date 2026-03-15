@@ -346,7 +346,7 @@ const CryptoView = () => {
             </span>
           </div>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
           <div>
             <div style={{ fontSize: 10, color: COLORS.t2, fontWeight: 600, marginBottom: 6 }}>Key Size</div>
             {keySizes.map((k) => (

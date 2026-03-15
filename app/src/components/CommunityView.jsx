@@ -356,7 +356,7 @@ const CommunityView = () => {
       <TabIntro quote='"None of us is as smart as all of us." — Ken Blanchard'>
         Voluntary ecosystem contribution beyond compliance obligations. Three signals: Bugzilla
         engagement on other CAs' bugs, CA/B Forum ballot proposals and endorsements, and proactive
-        bug filing. All 56 CABF CA members appear — including those with zero contribution.
+        bug filing. All {stats.activeMembers + stats.zeroMembers} CABF CA members appear — including those with zero contribution.
         Absence is intentionally visible.
       </TabIntro>
 
@@ -599,7 +599,7 @@ const CommunityView = () => {
           Root program staff excluded. Self-incident responses excluded.
         </MethodologyItem>
         <MethodologyItem label="CABF Baseline and Recent Window">
-          All 56 current CABF CA members appear as rows, including those with zero engagement.
+          All {d.cabf_members?.certification_authorities?.length || (Object.values(orgs).filter(o => o.cabf_member).length)} current CABF CA members appear as rows, including those with zero engagement.
           Absence is intentionally visible.
           Recent = 2021 and later for all three signals: Bugzilla comments by timestamp,
           ballot activity by ballot publication date extracted from cabforum.org URLs.

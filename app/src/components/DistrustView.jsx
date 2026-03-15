@@ -288,7 +288,7 @@ const PostureDonut = ({ distribution }) => {
 
 /* ── Timeline axis ── */
 const TimelineAxis = ({ events }) => {
-  const minY = 2010.5, maxY = 2026.5, range = maxY - minY;
+  const minY = 2010.5, maxY = Math.max(new Date().getFullYear() + 0.5, allEvents.reduce((m, e) => Math.max(m, e.year || 0), 0) + 1.5), range = maxY - minY;
   const sorted = [...events].sort((a, b) => (a.year || 0) - (b.year || 0));
   return (
     <Card>
@@ -531,9 +531,12 @@ export default function DistrustView() {
     <div>
       <TabIntro quote={`"Those who cannot remember the past are condemned to repeat it." — George Santayana`}>
         Every CA distrust event in browser history — the root cause, the compliance posture, the response timeline, and the final outcome.
-        Fifteen of sixteen events involved compliance operations failures: inadequate incident response, patterns of unresolved issues, concealment, or non-engagement with root programs.
-        Only one event (ANSSI, 2013) was a purely technical failure with no behavioral component.
-        The data shows that distrust is rarely caused by a single certificate error — it is almost always preceded by a pattern of compliance process failures that root programs track over time.
+        {(() => {
+          const OPS = new Set(['inadequate_incident_response','pattern_of_issues','lack_of_meaningful_improvement','non_responsive_to_root_programs','minimized_severity','active_deception','hidden_corporate_changes','recharacterized_incidents','concealed_breach_or_incident','delayed_or_refused_revocation','demonstrated_lack_of_understanding','argued_rules_dont_apply','limited_ecosystem_value']);
+          const n = allEvents.filter(e => (e.reason_tags||[]).some(t => OPS.has(t))).length;
+          const tot = allEvents.length;
+          return `${n} of ${tot} events involved compliance operations failures: inadequate incident response, patterns of unresolved issues, concealment, or non-engagement with root programs. ${tot - n === 1 ? 'One event was' : tot - n + ' events were'} purely technical with no behavioral component. Distrust is almost always preceded by a pattern of compliance process failures — not a single certificate error.`;
+        })()}
       </TabIntro>
 
       <CardTitle sub="Every CA removed from browser trust stores. Classification from Bugzilla evidence and root program announcements.">
@@ -760,7 +763,7 @@ export default function DistrustView() {
           How the CA engaged after issues were identified.
         </MethodologyItem>
         <MethodologyItem label="Contributing factors">
-          22 failure-pattern tags derived from all 15 events. Each supported by specific Bugzilla bug citations in the expanded detail view.
+          {allEvents.length} events classified across {Object.keys(distrustData?.taxonomy || {}).length || 22} failure-pattern tags. Each supported by specific Bugzilla bug citations in the expanded detail view.
         </MethodologyItem>
         <MethodologyItem label="Classification tiers">
           <TierBadge tier="curated" /> hand-curated from root program announcements ·{' '}

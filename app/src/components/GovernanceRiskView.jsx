@@ -104,7 +104,7 @@ function useReportCard(d, isRecent) {
       const neverActed = totalEvents - acted;
 
       // Total bugs in corpus for coverage rate denominator
-      const totalBugs = d.meta?.bugs_total || 1690;
+      const totalBugs = d.meta?.bugs_total || 0;
 
       // Coverage: bugs engaged with genuine governance comments / total bugs
       // Substantive: bugs with technically substantive comments / total bugs
@@ -286,7 +286,7 @@ const GovernanceRiskView = () => {
               <span style={{ marginLeft: 'auto' }}>Vertical line = 2021 Chrome Root Program launch</span>
             </div>
             <div style={{ ...footnoteStyle, marginTop: 6 }}>
-              Both Chrome and Mozilla cover a declining share of an expanding bug corpus — the total number of CA compliance bugs grew from ~100/yr (2017) to ~220/yr (2024–25).
+              Both Chrome and Mozilla cover a declining share of an expanding bug corpus as the total number of CA compliance bugs has grown each year.
               Apple participation has grown in recent years from near zero. Microsoft has remained at zero throughout.
               Pre-2017 years excluded (fewer than 10 bugs/year — not statistically meaningful).
             </div>
@@ -597,7 +597,7 @@ const GovernanceRiskView = () => {
           // Show three segments: technical oversight (bright), process oversight (mid), self-incident (faded)
           const isRO = incidentOversightView === 'recent';
           const pcs = d.program_comment_summary || {};
-          const totalBugs = d.meta?.bugs_total || 1690;
+          const totalBugs = d.meta?.bugs_total || 0;
 
           const windowMax = Math.max(...STORE_ORDER.map(s => {
             const cs = pcs[s] || {};
@@ -840,7 +840,7 @@ const GovernanceRiskView = () => {
       <MethodologyCard>
         <MethodologyItem label="Bugzilla Oversight">
           Measures root program governance participation on CA compliance incident bugs. Two metrics:
-          "Bugzilla Coverage" = unique bugs where the program left at least one genuine governance comment, divided by total bugs in corpus ({d.meta?.bugs_total || 1690}).
+          "Bugzilla Coverage" = unique bugs where the program left at least one genuine governance comment, divided by total bugs in corpus ({d.meta?.bugs_total || 0}).
           "Substantive Oversight" = unique bugs where the program left a technically substantive comment — certificate or CRL analysis, specific policy violation with evidence, raising an issue the CA had not reported. Process enforcement comments (survey non-response notices, CCADB reminders, status requests, follow-up demands) are counted in coverage but not substantive.
           {' '}Two-pass LLM classification (claude-haiku): first pass separates genuine governance from administrative noise (short acks, boilerplate templates, tracking bug openers). Second pass separates technical findings from process enforcement within the genuine set.
           {' '}{(d.meta?.total_comments_raw || 0).toLocaleString()} raw comments → {(d.meta?.total_comments_analyzed || 0).toLocaleString()} after pass 1 → {

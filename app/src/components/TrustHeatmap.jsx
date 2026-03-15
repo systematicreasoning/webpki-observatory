@@ -24,8 +24,8 @@ const RootExpirationHeatmap = ({ roots, caData, heatmapCount, setHeatmapCount })
     const yearSet = new Set();
     Object.values(caYears).forEach((y) => Object.keys(y).forEach((k) => yearSet.add(parseInt(k))));
     const allYears = [...yearSet].sort();
-    const minYr = Math.max(2025, allYears[0] || 2025);
-    const maxYr = Math.min(2040, allYears[allYears.length - 1] || 2040);
+    const minYr = Math.max(new Date().getFullYear(), allYears[0] || new Date().getFullYear());
+    const maxYr = Math.min(new Date().getFullYear() + 15, allYears[allYears.length - 1] || new Date().getFullYear() + 15);
     const years = allYears.filter((y) => y >= minYr && y <= maxYr);
 
     const caIds = Object.keys(caYears).sort((a, b) => {
