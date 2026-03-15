@@ -24,6 +24,18 @@ export const COLORS = {
   tl: 'var(--tl)',
 };
 
+// ── Alpha variants — use instead of hex-suffix opacity (e.g. \`\${COLORS.ac}88\`)
+// color-mix() correctly resolves CSS custom properties; string concatenation does not.
+export const ALPHA = {
+  ac07: 'var(--ac-07)', ac13: 'var(--ac-13)', ac20: 'var(--ac-20)',
+  ac27: 'var(--ac-27)', ac40: 'var(--ac-40)', ac53: 'var(--ac-53)',
+  am38: 'var(--am-38)', am53: 'var(--am-53)',
+  cy07: 'var(--cy-07)', cy20: 'var(--cy-20)', cy40: 'var(--cy-40)',
+  gn09: 'var(--gn-09)', gn20: 'var(--gn-20)',
+  pu07: 'var(--pu-07)', pu20: 'var(--pu-20)',
+  rd07: 'var(--rd-07)', rd27: 'var(--rd-27)',
+};
+
 export const STORE_COLORS = {
   mozilla: '#ff6611',
   microsoft: '#22d3ee',

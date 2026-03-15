@@ -42,7 +42,7 @@ const RiskBadge = ({ risk }) => (
  * general = possible via normal judicial process (every country with courts has this)
  * none    = no authority or constitutionally protected
  */
-const AC = { purpose: COLORS.rd, general: `${COLORS.am}88`, none: COLORS.gn };
+const AC = { purpose: COLORS.rd, general: ALPHA.am53, none: COLORS.gn };
 const AT = { purpose: 'Purpose-built statute', general: 'General judicial process', none: 'No authority / protected' };
 const AXIS_KEYS = ['key_seizure', 'compelled_issuance', 'secrecy'];
 const AXIS_LABELS = { key_seizure: 'Key Seizure', compelled_issuance: 'Compelled Issuance', secrecy: 'Secrecy' };
@@ -56,7 +56,7 @@ const AxisDot = ({ value, size = 9 }) => (
       width: size,
       height: size,
       borderRadius: '50%',
-      background: value === 'purpose' ? COLORS.rd : value === 'general' ? `${COLORS.am}60` : 'transparent',
+      background: value === 'purpose' ? COLORS.rd : value === 'general' ? ALPHA.am38 : 'transparent',
       border: `1.5px solid ${value === 'purpose' ? COLORS.rd : value === 'general' ? COLORS.am : COLORS.gn}`,
       verticalAlign: 'middle',
     }}
@@ -706,7 +706,7 @@ const JurisdictionView = () => {
                                       whiteSpace: 'nowrap',
                                       padding: '2px 6px',
                                       borderRadius: 3,
-                                      border: `1px solid ${COLORS.ac}33`,
+                                      border: `1px solid ${ALPHA.ac20}`,
                                     }}
                                   >
                                     Source ↗

@@ -317,7 +317,7 @@ const ConcView = () => {
                           style={{
                             height: '100%',
                             width: `${p.cumPct}%`,
-                            background: `linear-gradient(90deg,${COLORS.ac}66,${COLORS.cy}66)`,
+                            background: `linear-gradient(90deg,${ALPHA.ac40},${ALPHA.cy40})`,
                             borderRadius: 6,
                           }}
                         />

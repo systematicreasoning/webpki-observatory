@@ -874,6 +874,34 @@ const certViewerDarkTheme = {
   '--pv-font-family': "'IBM Plex Sans', sans-serif",
 };
 
+const certViewerLightTheme = {
+  '--pv-color-white': '#ffffff',
+  '--pv-color-black': '#0f172a',
+  '--pv-color-primary': '#2563eb',
+  '--pv-color-primary-contrast': '#ffffff',
+  '--pv-color-primary-tint-1': '#3b82f6',
+  '--pv-color-primary-tint-2': '#60a5fa',
+  '--pv-color-primary-tint-3': '#93c5fd',
+  '--pv-color-primary-tint-4': '#dbeafe',
+  '--pv-color-primary-tint-5': '#eff6ff',
+  '--pv-color-secondary': '#0891b2',
+  '--pv-color-secondary-tint-5': '#e0f2fe',
+  '--pv-color-gray-1': '#0f172a',
+  '--pv-color-gray-2': '#334155',
+  '--pv-color-gray-3': '#f1f5f9',
+  '--pv-color-gray-4': '#e2e8f0',
+  '--pv-color-gray-5': '#cbd5e1',
+  '--pv-color-gray-6': '#94a3b8',
+  '--pv-color-gray-7': '#64748b',
+  '--pv-color-gray-8': '#475569',
+  '--pv-color-gray-9': '#334155',
+  '--pv-color-gray-10': '#0f172a',
+  '--pv-color-wrong': '#dc2626',
+  '--pv-color-success': '#059669',
+  '--pv-color-attention': '#d97706',
+  '--pv-font-family': "'IBM Plex Sans', sans-serif",
+};
+
 export const CertViewer = ({ sha256, pem: embeddedPem }) => {
   if (!embeddedPem) {
     return (
@@ -888,13 +916,17 @@ export const CertViewer = ({ sha256, pem: embeddedPem }) => {
     .replace(/-----END CERTIFICATE-----/g, '')
     .replace(/\s/g, '');
 
+  const ctx = React.useContext(PipelineCtx);
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  const certTheme = isDark ? certViewerDarkTheme : certViewerLightTheme;
+
   return (
     <div
       style={{
         marginTop: 8,
         borderRadius: 6,
         border: `1px solid ${COLORS.bd}`,
-        ...certViewerDarkTheme,
+        ...certTheme,
       }}
     >
       <PeculiarCertificateViewer certificate={b64} download />

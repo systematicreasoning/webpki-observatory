@@ -82,3 +82,27 @@ html, body {
     max-width: 100% !important;
   }
 }
+
+/* ── Alpha variants (for components that need semi-transparent versions) ──
+   color-mix() resolves CSS variables correctly, unlike hex suffix appending.
+   Percentages match the original hex values:
+   11≈7%, 12≈7%, 18≈9%, 22≈13%, 33≈20%, 44≈27%, 60≈38%, 66≈40%, 88≈53% */
+:root, [data-theme="light"] {
+  --ac-07: color-mix(in srgb, var(--ac) 7%, transparent);
+  --ac-13: color-mix(in srgb, var(--ac) 13%, transparent);
+  --ac-20: color-mix(in srgb, var(--ac) 20%, transparent);
+  --ac-27: color-mix(in srgb, var(--ac) 27%, transparent);
+  --ac-40: color-mix(in srgb, var(--ac) 40%, transparent);
+  --ac-53: color-mix(in srgb, var(--ac) 53%, transparent);
+  --am-38: color-mix(in srgb, var(--am) 38%, transparent);
+  --am-53: color-mix(in srgb, var(--am) 53%, transparent);
+  --cy-07: color-mix(in srgb, var(--cy) 7%, transparent);
+  --cy-20: color-mix(in srgb, var(--cy) 20%, transparent);
+  --cy-40: color-mix(in srgb, var(--cy) 40%, transparent);
+  --gn-09: color-mix(in srgb, var(--gn) 9%, transparent);
+  --gn-20: color-mix(in srgb, var(--gn) 20%, transparent);
+  --pu-07: color-mix(in srgb, var(--pu) 7%, transparent);
+  --pu-20: color-mix(in srgb, var(--pu) 20%, transparent);
+  --rd-07: color-mix(in srgb, var(--rd) 7%, transparent);
+  --rd-27: color-mix(in srgb, var(--rd) 27%, transparent);
+}

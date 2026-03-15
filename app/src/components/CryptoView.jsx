@@ -744,9 +744,9 @@ const CryptoView = () => {
                                     fontFamily: FONT_MONO,
                                     color: bodyColor?.color || COLORS.rd,
                                     padding: '1px 4px',
-                                    border: `1px solid ${bodyColor?.color || COLORS.rd}44`,
+                                    border: `1px solid ${bodyColor?.color ? bodyColor.color + "44" : ALPHA.rd27}`,
                                     borderRadius: 2,
-                                    background: `${bodyColor?.color || COLORS.rd}11`,
+                                    background: `${bodyColor?.color ? bodyColor.color + "11" : ALPHA.rd07}`,
                                   }}
                                 >
                                   {b}
@@ -989,7 +989,7 @@ const CryptoView = () => {
                                     fontFamily: FONT_MONO,
                                     color: bc?.color || COLORS.rd,
                                     padding: '1px 3px',
-                                    border: `1px solid ${bc?.color || COLORS.rd}44`,
+                                    border: `1px solid ${bc?.color ? bc.color + "44" : ALPHA.rd27}`,
                                     borderRadius: 2,
                                   }}
                                 >

@@ -141,8 +141,8 @@ const TagPill = ({ tag, active, onClick }) => (
       display: 'inline-block', padding: '1px 6px', borderRadius: 3,
       fontSize: 9, fontFamily: FONT_MONO, cursor: onClick ? 'pointer' : 'default',
       color: active ? COLORS.ac : COLORS.t2,
-      background: active ? `${COLORS.ac}22` : COLORS.s2,
-      border: `1px solid ${active ? `${COLORS.ac}44` : COLORS.bd}`,
+      background: active ? ALPHA.ac13 : COLORS.s2,
+      border: `1px solid ${active ? ALPHA.ac27 : COLORS.bd}`,
       whiteSpace: 'nowrap',
     }}
   >
@@ -406,9 +406,9 @@ const ExpandedDetail = ({ event: e, tagFilter, setTagFilter }) => {
                     <span key={s} style={{
                       display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
                       borderRadius: 3, fontSize: 10, fontFamily: FONT_MONO,
-                      background: d ? `${c}22` : `${COLORS.gn}18`,
+                      background: d ? `${c}22` : ALPHA.gn09,
                       color: d ? c : COLORS.gn,
-                      border: `1px solid ${d ? `${c}44` : `${COLORS.gn}33`}`,
+                      border: `1px solid ${d ? `${c}44` : ALPHA.gn20}`,
                     }}>
                       {s}: {d || 'trusted'}
                     </span>
@@ -423,7 +423,7 @@ const ExpandedDetail = ({ event: e, tagFilter, setTagFilter }) => {
               <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap', marginBottom: 8 }}>
                 {(refs.root_program_announcements || []).map((u, i) => (
                   <a key={i} href={u} target="_blank" rel="noopener noreferrer"
-                    style={{ padding: '3px 8px', background: `${COLORS.ac}12`, border: `1px solid ${COLORS.ac}33`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
+                    style={{ padding: '3px 8px', background: ALPHA.ac07, border: `1px solid ${ALPHA.ac20}`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
                     {srcName(u)} ↗
                   </a>
                 ))}
@@ -435,14 +435,14 @@ const ExpandedDetail = ({ event: e, tagFilter, setTagFilter }) => {
                 ))}
                 {(refs.ccadb_threads || []).map((u, i) => (
                   <a key={`c${i}`} href={u} target="_blank" rel="noopener noreferrer"
-                    style={{ padding: '3px 8px', background: `${COLORS.cy}12`, border: `1px solid ${COLORS.cy}33`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
+                    style={{ padding: '3px 8px', background: ALPHA.cy07, border: `1px solid ${ALPHA.cy20}`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
                     CCADB{refs.ccadb_threads.length > 1 ? ` ${i + 1}` : ''} ↗
                   </a>
                 ))}
                 {t.bug_count > 0 && (
                   <a href={`https://bugzilla.mozilla.org/buglist.cgi?component=CA%20Certificate%20Compliance&query_format=advanced&short_desc=${encodeURIComponent(e.ca)}&short_desc_type=allwordssubstr`}
                     target="_blank" rel="noopener noreferrer"
-                    style={{ padding: '3px 8px', background: `${COLORS.pu}12`, border: `1px solid ${COLORS.pu}33`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
+                    style={{ padding: '3px 8px', background: ALPHA.pu07, border: `1px solid ${ALPHA.pu20}`, borderRadius: 3, fontSize: 10, color: COLORS.ac, textDecoration: 'none' }}>
                     Bugzilla ({t.bug_count} bugs) ↗
                   </a>
                 )}
@@ -604,7 +604,7 @@ export default function DistrustView() {
                 <div style={{ fontSize: 10, color: COLORS.t2, width: 150, textAlign: 'right', flexShrink: 0, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                   {fmtTag(k)}
                 </div>
-                <div style={{ height: 14, borderRadius: '0 3px 3px 0', minWidth: 2, width: `${(v / maxTag) * 140}px`, background: `${COLORS.ac}88` }} />
+                <div style={{ height: 14, borderRadius: '0 3px 3px 0', minWidth: 2, width: `${(v / maxTag) * 140}px`, background: ALPHA.ac53 }} />
                 <span style={{ fontSize: 9, fontFamily: FONT_MONO, color: COLORS.t3, width: 20 }}>{v}</span>
               </div>
             ))}
