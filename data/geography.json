@@ -1,33 +1,33 @@
 {
-  "total": 1287874829,
+  "total": 1287867072,
   "regions": [
     {
       "region": "United States",
-      "issued": 1147350152,
-      "pct": 89.0886,
+      "issued": 1147339969,
+      "pct": 89.0884,
       "countries": [
         {
           "country": "United States",
-          "issued": 1147350152,
-          "pct": 89.0886,
+          "issued": 1147339969,
+          "pct": 89.0884,
           "ca_count": 29
         }
       ]
     },
     {
       "region": "Europe",
-      "issued": 139802151,
-      "pct": 10.8553,
+      "issued": 139804566,
+      "pct": 10.8555,
       "countries": [
         {
           "country": "United Kingdom",
-          "issued": 135345596,
-          "pct": 10.5092,
+          "issued": 135348024,
+          "pct": 10.5095,
           "ca_count": 3
         },
         {
           "country": "Belgium",
-          "issued": 1572568,
+          "issued": 1572558,
           "pct": 0.1221,
           "ca_count": 4
         },
@@ -39,7 +39,7 @@
         },
         {
           "country": "Poland",
-          "issued": 668759,
+          "issued": 668758,
           "pct": 0.0519,
           "ca_count": 3
         },
@@ -51,7 +51,7 @@
         },
         {
           "country": "Germany",
-          "issued": 72457,
+          "issued": 72455,
           "pct": 0.0056,
           "ca_count": 8
         },
@@ -197,18 +197,18 @@
     },
     {
       "region": "Asia-Pacific",
-      "issued": 537195,
+      "issued": 537203,
       "pct": 0.0417,
       "countries": [
         {
           "country": "China",
-          "issued": 328818,
+          "issued": 328832,
           "pct": 0.0255,
           "ca_count": 12
         },
         {
           "country": "Japan",
-          "issued": 199509,
+          "issued": 199503,
           "pct": 0.0155,
           "ca_count": 7
         },
@@ -270,7 +270,7 @@
     },
     {
       "region": "Unknown",
-      "issued": 94621,
+      "issued": 94624,
       "pct": 0.0073,
       "countries": []
     },
