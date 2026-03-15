@@ -33,6 +33,14 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Restore pipeline ops cache
+        uses: actions/cache@v4
+        with:
+          path: pipeline/ops_cache
+          key: ops-cache-${{ runner.os }}-${{ hashFiles('pipeline/fetch_rpe.py', 'pipeline/fetch_incidents.py') }}
+          restore-keys: |
+            ops-cache-${{ runner.os }}-
+
       - name: Install dependencies
         run: pip install -r pipeline/requirements.txt
 
@@ -85,23 +93,21 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Save ALL pipeline output to temp (before any git operations)
-          mkdir -p /tmp/pipeline-data /tmp/pipeline-ops-cache
+          # Save generated data to temp (before any git operations)
+          mkdir -p /tmp/pipeline-data
           cp -r data/* /tmp/pipeline-data/
-          cp -r pipeline/ops_cache/* /tmp/pipeline-ops-cache/
           cp pipeline/algo_cache.json /tmp/algo_cache.json 2>/dev/null || true
           cp pipeline/pem_cache.json /tmp/pem_cache.json 2>/dev/null || true
-          # Reset working tree completely, pull latest
+          # Reset working tree, pull latest
           git checkout -- . 2>/dev/null || true
-          git clean -fd data/ pipeline/ops_cache/ 2>/dev/null || true
+          git clean -fd data/ 2>/dev/null || true
           git pull origin main --rebase || true
-          # Restore pipeline output (always wins — freshly generated)
+          # Restore generated outputs
           cp -r /tmp/pipeline-data/* data/
-          cp -r /tmp/pipeline-ops-cache/* pipeline/ops_cache/
           cp /tmp/algo_cache.json pipeline/algo_cache.json 2>/dev/null || true
           cp /tmp/pem_cache.json pipeline/pem_cache.json 2>/dev/null || true
-          # Stage and commit if anything changed
-          git add data/ pipeline/ops_cache/ pipeline/algo_cache.json pipeline/pem_cache.json
+          # Stage and commit data outputs only — ops_cache lives in Actions cache, not git
+          git add data/ pipeline/algo_cache.json pipeline/pem_cache.json
           if git diff --staged --quiet; then
             echo "No data changes"
           else
