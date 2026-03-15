@@ -41,20 +41,22 @@ const CA_ORG_DOMAINS = new Set([
   'amazon.com', 'fastly.com', 'netlock.hu', 'e-tugra.com',
   'telia.com', 'teliacompany.com', 'isigma.es', 'certigna.fr',
   'trustcor.ca', 'certinomis.fr', 'trustasia.com', 'twca.com.tw',
-  'vikingcloud.com', 'visa.com', 'chunghwapost.com.tw',
-  'comsign.co.il', 'digidentity.eu', 'disig.sk', 'docusign.com',
-  'gdca.com.cn', 'globaltrust.eu', 'izenpe.eus', 'jprs.co.jp',
-  'kamusm.gov.tr', 'kpn.com', 'msctrustgate.com', 'naver.com',
-  'networksolutions.com', 'oati.net', 'oiste.org', 'posdigicert.com.my',
-  'certisign.com.br', 'ica.cz', 'sdaia.gov.sa', 'sheca.com',
-  'sk.ee', 'ssc.lt', 'swisscom.com',
+  'vikingcloud.com', 'sheca.com', 'izenpe.eus',
+  'quovadis.bm', 'quovadis.com',  // acquired by DigiCert
+  'comsign.co.il', 'digidentity.eu', 'disig.sk',
+  'gdca.com.cn', 'globaltrust.eu', 'jprs.co.jp',
+  'msctrustgate.com', 'naver.com', 'networksolutions.com',
+  'oati.net', 'oiste.org', 'sk.ee', 'ssc.lt', 'swisscom.com',
+  'telekom.de', 'certsign.ro', 'microsec.hu', 'firmaprofesional.com',
+  'camerfirma.com', 'wisekey.com', 'ml.secom-sts.co.jp',
 ]);
 
 function maskEmail(email) {
   if (!email || !email.includes('@')) return email;
   const [local, domain] = email.split('@');
-  if (local.length <= 1) return email;
-  const masked = `${local[0]}${'*'.repeat(local.length - 1)}`;
+  const show = Math.min(3, local.length);
+  if (local.length <= show) return CA_ORG_DOMAINS.has(domain) ? email : local;
+  const masked = `${local.slice(0, show)}${'*'.repeat(local.length - show)}`;
   return CA_ORG_DOMAINS.has(domain) ? `${masked}@${domain}` : masked;
 }
 
@@ -91,11 +93,11 @@ const CABFBadge = () => (
 );
 
 const IPBadge = () => (
-  <span style={{
-    fontSize: 8, fontFamily: FONT_MONO, fontWeight: 700, padding: '1px 4px',
+  <span title="CABF Interested Party — formal observer status with signed IPR agreement" style={{
+    fontSize: 8, fontFamily: FONT_MONO, fontWeight: 700, padding: '1px 5px',
     borderRadius: 3, background: 'rgba(16,185,129,0.1)', color: COLORS.gn,
-    border: '1px solid rgba(16,185,129,0.2)',
-  }}>IP</span>
+    border: '1px solid rgba(16,185,129,0.2)', cursor: 'help',
+  }}>Observer</span>
 );
 
 /* ── Over-time chart ── */
@@ -502,7 +504,7 @@ const CommunityView = () => {
       {/* ── Individuals ── */}
       <Card>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 10 }}>
-          <CardTitle sub="Individuals participating without a CA or root program hat. Includes CA staff acting as individuals, independent researchers, and CABF Interested Parties (IP).">
+          <CardTitle sub="Individuals participating without a CA or root program hat. Includes CA staff acting as individuals, independent researchers, and CABF Observers (formal interested party status).">
             Individual Participants
           </CardTitle>
           <div style={toggleStyle}>
@@ -552,7 +554,7 @@ const CommunityView = () => {
           </button>
         )}
         <div style={{ ...footnoteStyle, marginTop: 8 }}>
-          IP = CABF Interested Party (formal observer, signed IPR agreement).
+          Observer = CABF Interested Party — formal observer status with signed IPR agreement. Can participate in discussions but cannot vote.
           {isRecent ? ' Showing 2021+ activity.' : ''}
           Ballot activity matched by name from cabforum.org ballot text.
         </div>
