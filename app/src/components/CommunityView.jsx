@@ -451,9 +451,16 @@ const CommunityView = () => {
                 </div>
               </div>
               {wgs.length > 0 && <div style={{ fontSize: 8, color: COLORS.t3, fontFamily: FONT_MONO }}>{wgs.join(' · ')}</div>}
-              {people.length > 0 && <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 3 }}>{people.slice(0, 3).join(', ')}</div>}
+              {people.length > 0 && (
+                <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 3, lineHeight: 1.5 }}>
+                  {people.join(', ')}
+                </div>
+              )}
             </div>
           ))}
+        </div>
+        <div style={{ ...footnoteStyle, marginTop: 8 }}>
+          People listed per organization reflect their affiliation at the time of the ballot — individuals who have since moved organizations may appear under a former employer.
         </div>
       </Card>
 
