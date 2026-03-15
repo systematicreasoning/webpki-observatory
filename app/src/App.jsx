@@ -42,7 +42,7 @@ const TABS = [
   { id: 'crypto', l: 'Cryptographic Posture' },
   { id: 'distrust', l: 'Distrust History' },
   { id: 'governance', l: 'Governance Risk' },
-  { id: 'community', l: 'Ecosystem Health' },
+  { id: 'community', l: 'Community Governance' },
 ];
 
 const VALID_TAB_IDS = TABS.map((t) => t.id);
@@ -188,7 +188,7 @@ function AppContent() {
             </ErrorBoundary>
           )}
           {tab === 'community' && (
-            <ErrorBoundary label="Ecosystem Health">
+            <ErrorBoundary label="Community Governance">
               <CommunityView />
             </ErrorBoundary>
           )}
