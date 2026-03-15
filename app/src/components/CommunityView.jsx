@@ -213,7 +213,7 @@ const CommunityView = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
-      <TabIntro quote="It might actually motivate CAs to engage more in Bugzilla incidents of other CAs and CABF discussions, including ballot proposals and endorsements. — Dimitris Zacharopoulos, HARICA">
+      <TabIntro quote={`"Sunlight is said to be the best of disinfectants." — Louis Brandeis, 1914`}>
         This tab measures voluntary ecosystem contribution — participation in CA compliance
         governance beyond a CA's own obligations. Three signals: Bugzilla engagement on other
         CAs' bugs, CA/B Forum ballot proposals and endorsements, and proactive bug filing.
