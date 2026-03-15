@@ -529,7 +529,7 @@ export default function DistrustView() {
 
   return (
     <div>
-      <TabIntro quote={`"Those who cannot remember the past are condemned to repeat it." — George Santayana`}>
+      <TabIntro tabId="distrust" quote={`"Those who cannot remember the past are condemned to repeat it." — George Santayana`}>
         Every CA distrust event in browser history — the root cause, the compliance posture, the response timeline, and the final outcome.
         {(() => {
           const OPS = new Set(['inadequate_incident_response','pattern_of_issues','lack_of_meaningful_improvement','non_responsive_to_root_programs','minimized_severity','active_deception','hidden_corporate_changes','recharacterized_incidents','concealed_breach_or_incident','delayed_or_refused_revocation','demonstrated_lack_of_understanding','argued_rules_dont_apply','limited_ecosystem_value']);

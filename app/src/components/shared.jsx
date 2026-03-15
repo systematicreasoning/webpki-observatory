@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import * as d3 from 'd3';
 import { COLORS, STORE_COLORS, FONT_MONO, FONT_SANS, STALE, COUNTRY_COORDS } from '../constants';
 import { f, dn } from '../helpers';
+import { PipelineContext as PipelineCtx } from '../PipelineContext';
 
 // ── Atoms ──
 
@@ -33,7 +34,10 @@ export const CardTitle = ({ children, sub }) => (
  * `quote` is the italic lead-in (aphorism or framing line).
  * `children` is the explanatory body text.
  */
-export const TabIntro = ({ quote, children }) => (
+export const TabIntro = ({ quote, tabId, children }) => {
+  const ctx = React.useContext(PipelineCtx);
+  const generated = tabId && ctx?.tabIntros?.[tabId];
+  return (
   <div
     style={{
       marginBottom: 20,
@@ -58,9 +62,12 @@ export const TabIntro = ({ quote, children }) => (
         {quote}
       </div>
     )}
-    <div style={{ fontSize: 11, color: COLORS.t3 }}>{children}</div>
+    <div style={{ fontSize: 11, color: COLORS.t3 }}>
+      {generated || children}
+    </div>
   </div>
-);
+  );
+};
 
 export const StatCard = ({ l, v, s, c }) => (
   <div style={{ textAlign: 'center' }}>

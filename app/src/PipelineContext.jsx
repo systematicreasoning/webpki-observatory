@@ -7,24 +7,13 @@
  */
 import React, { createContext, useContext, useMemo } from 'react';
 import {
-  CA_DATA,
-  BR_VALIDITY,
-  BROWSER_COVERAGE,
-  INTERSECTIONS,
-  GEOGRAPHY,
-  GOV_RISK,
-  INCIDENTS_DATA,
-  ROOTS,
-  INCIDENT_COUNTS,
-  JURISDICTION_RISK,
-  ROOT_ALGO,
-  DISTRUST_DATA,
-  RPE_DATA,
-  COMMUNITY_DATA,
-  CHROME_CHANGELOG,
+  CA_DATA, BR_VALIDITY, BROWSER_COVERAGE, INTERSECTIONS, GEOGRAPHY,
+  GOV_RISK, INCIDENTS_DATA, ROOTS, INCIDENT_COUNTS, JURISDICTION_RISK,
+  ROOT_ALGO, DISTRUST_DATA, RPE_DATA, COMMUNITY_DATA, CHROME_CHANGELOG,
+  TAB_INTROS,
 } from './data';
 
-const PipelineContext = createContext(null);
+export const PipelineContext = createContext(null);
 
 export function PipelineProvider({ children }) {
   const value = useMemo(
@@ -46,12 +35,14 @@ export function PipelineProvider({ children }) {
       const rpeData = RPE_DATA || null;
       const communityData = COMMUNITY_DATA || null;
       const chromeChangelog = CHROME_CHANGELOG || null;
+      const tabIntros = TAB_INTROS?.intros || {};
       const trustedCAs = caData.filter((d) => d.storeCount > 0 || d.parent);
 
       return {
         caData, brValidity, browserCoverage, intersections, geography,
         govRisk, incidentsData, roots, incidentCounts, jurisdictionRisk,
-        rootAlgo, distrustData, rpeData, communityData, chromeChangelog, trustedCAs,
+        rootAlgo, distrustData, rpeData, communityData, chromeChangelog,
+        tabIntros, trustedCAs,
       };
     },
     [],

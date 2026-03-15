@@ -26,3 +26,4 @@ export const DISTRUST_DATA = pipelineData.DISTRUST_DATA;
 export const RPE_DATA = pipelineData.RPE_DATA;
 export const COMMUNITY_DATA = pipelineData.COMMUNITY_DATA;
 export const CHROME_CHANGELOG = pipelineData.CHROME_CHANGELOG;
+export const TAB_INTROS = pipelineData.TAB_INTROS;

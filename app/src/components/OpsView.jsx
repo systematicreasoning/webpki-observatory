@@ -278,7 +278,7 @@ const OpsView = () => {
   const opsShown = opsCnt === 0 ? opsFiltered : opsFiltered.slice(0, opsCnt);
   return (
     <div>
-      <TabIntro quote="By their incidents you shall know them.">
+      <TabIntro tabId="ops" quote="By their incidents you shall know them.">
         Public compliance failures from Mozilla's Bugzilla CA Certificate Compliance tracker, normalized per million certificates issued to enable fair comparison across CAs of vastly different scale.
         Root programs discover more than half of all CA compliance incidents. CAs' own monitoring accounts for fewer than one in ten.
         The fastest-growing incident category is governance — audit failures, CPS violations, and disclosure failures — not certificate misissuance.

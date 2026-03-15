@@ -75,7 +75,7 @@ const MarketView = () => {
 
   return (
     <div>
-      <TabIntro quote="You can't manage what you can't measure.">
+      <TabIntro tabId="market" quote="You can't manage what you can't measure.">
         The complete roster of currently trusted CAs ranked by unexpired certificate volume from Certificate Transparency logs. Every CA's trust store inclusion, home jurisdiction, compliance incident rate, and effective web coverage in a single sortable view. This is the starting point for understanding who issues the certificates the internet depends on, how much of the ecosystem each CA accounts for, and where the concentration, geographic, and operational risks begin to compound.
       </TabIntro>
 

@@ -50,7 +50,7 @@ const TailView = () => {
 
   return (
     <div>
-      <TabIntro quote="The long tail is where oversight goes to die.">
+      <TabIntro tabId="tail" quote="The long tail is where oversight goes to die.">
         Dozens of CAs issue only a handful of certificates yet carry the same root-level trust as the largest issuers. Low issuance volume means less operational practice, less community scrutiny, and higher per-certificate risk. These tail CAs are disproportionately represented in past distrust events. This tab separates the "head" — the fewest CAs that collectively account for the vast majority of issuance — from the "tail" that accounts for the remainder, letting relying parties identify CAs where limited scale may signal limited maturity, and giving root programs a lens for risk-proportionate oversight.
       </TabIntro>
 

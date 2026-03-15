@@ -60,6 +60,7 @@ def main():
     rpe_data = load_json(DATA_DIR, "root_program_effectiveness.json")
     community_data = load_json(DATA_DIR, "community_engagement.json")
     chrome_changelog = load_json(DATA_DIR, "chrome_root_store_changelog.json")
+    tab_intros = load_json(DATA_DIR, "tab_intros.json")
 
     # Load per-CA detail files
     ca_details = {}
@@ -355,6 +356,7 @@ def main():
         "RPE_DATA": rpe_data,
         "COMMUNITY_DATA": community_data,
         "CHROME_CHANGELOG": chrome_changelog,
+        "TAB_INTROS": tab_intros,
     }
 
     out_path = os.path.join(DATA_DIR, "ui_bundle.json")

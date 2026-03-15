@@ -198,7 +198,7 @@ const GovernanceRiskView = () => {
 
   return (
     <div>
-      <TabIntro quote="Who watches the watchmen?">
+      <TabIntro tabId="governance" quote="Who watches the watchmen?">
         Root programs decide who gets trusted and who gets removed. Not all of them govern with the same
         intensity. This tab compares Chrome, Mozilla, Apple, and Microsoft on enforcement, oversight,
         policy leadership, and trust store size — because a program that trusts more CAs but invests less

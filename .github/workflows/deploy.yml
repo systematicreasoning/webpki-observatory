@@ -73,6 +73,11 @@ jobs:
       - name: Export LLM snapshot
         run: python pipeline/export_llm_snapshot.py
 
+      - name: Generate tab intro text
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python pipeline/fetch_tab_intros.py
+
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"

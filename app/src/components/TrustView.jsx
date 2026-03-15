@@ -251,7 +251,7 @@ const TrustView = () => {
   const so = ['Mozilla', 'Chrome', 'Apple', 'Microsoft'];
   return (
     <div>
-      <TabIntro quote="A certificate is only as trusted as the root program that includes it.">
+      <TabIntro tabId="trust" quote="A certificate is only as trusted as the root program that includes it.">
         The four major root programs — Chrome, Mozilla, Apple, and Microsoft — each make independent inclusion decisions. When they disagree, some CAs end up trusted by certain browsers but not others, creating coverage gaps and inconsistent security postures across the ecosystem. This tab maps every root certificate intersection, tracks inclusion timelines, and highlights the CAs caught in the gaps. Relying parties can assess whether their CA choice delivers consistent cross-browser trust, and CAs can see exactly where their store coverage falls short.
       </TabIntro>
 

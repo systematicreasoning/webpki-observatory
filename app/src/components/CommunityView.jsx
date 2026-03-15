@@ -353,7 +353,7 @@ const CommunityView = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
-      <TabIntro quote='"None of us is as smart as all of us." — Ken Blanchard'>
+      <TabIntro tabId="community" quote='"None of us is as smart as all of us." — Ken Blanchard'>
         Voluntary ecosystem contribution beyond compliance obligations. Three signals: Bugzilla
         engagement on other CAs' bugs, CA/B Forum ballot proposals and endorsements, and proactive
         bug filing. All {stats.activeMembers + stats.zeroMembers} CABF CA members appear — including those with zero contribution.

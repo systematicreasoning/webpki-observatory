@@ -297,7 +297,7 @@ const CryptoView = () => {
 
   return (
     <div>
-      <TabIntro quote="Cryptography has a shelf life. The question is whether yours expired already.">
+      <TabIntro tabId="crypto" quote="Cryptography has a shelf life. The question is whether yours expired already.">
         Root certificate algorithm distribution, key sizes, and expiry timelines evaluated against deprecation guidance from NIST, BSI, and NSA/CNSA. The WebPKI still relies heavily on RSA-2048 roots that multiple standards bodies have flagged for deprecation or disqualification. Some CAs have already deployed ECC roots; others remain entirely anchored to aging primitives. This tab tracks which CAs meet or fall below each standards body's thresholds, maps the root expiry timeline to identify upcoming forced transitions, and gives relying parties visibility into the cryptographic foundation their certificate chains rest on — including how prepared each CA is for the eventual post-quantum migration.
       </TabIntro>
 

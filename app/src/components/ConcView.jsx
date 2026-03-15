@@ -115,7 +115,7 @@ const ConcView = () => {
 
   return (
     <div>
-      <TabIntro quote="Concentration creates single points of catastrophic failure.">
+      <TabIntro tabId="conc" quote="Concentration creates single points of catastrophic failure.">
         {(() => {
           const top3Pct = points[2]?.cumPct?.toFixed(0) || '—';
           const leEntry = data.find(d => (d.ca || d.caOwner || '').toLowerCase().includes('let\'s encrypt') || (d.ca || d.caOwner || '').toLowerCase().includes('isrg'));
