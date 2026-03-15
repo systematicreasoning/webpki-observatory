@@ -448,6 +448,7 @@ const GovernanceRiskView = () => {
       {/* ═══ NOTABLE GAPS ═══ */}
       <Card>
         <CardTitle sub="Where root store decisions diverge — on inclusion or enforcement.">Notable Inclusion and Trust Gaps</CardTitle>
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
           <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
             <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left' }}>CA</th>
@@ -481,6 +482,7 @@ const GovernanceRiskView = () => {
             )}
           </tbody>
         </table>
+        </div>
       </Card>
 
       {/* ═══ INCLUSION VELOCITY ═══ */}
@@ -540,6 +542,7 @@ const GovernanceRiskView = () => {
       {/* ═══ ENFORCEMENT ═══ */}
       <Card>
         <CardTitle sub={`${totalEvents} events since 2011 where root programs acted to protect users.`}>Actions to Protect Users</CardTitle>
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
           <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
             <th style={{ padding: '4px 5px', color: COLORS.t3, fontSize: 8, textAlign: 'left' }}>CA</th>
@@ -570,6 +573,7 @@ const GovernanceRiskView = () => {
             </tr>
           </tbody>
         </table>
+        </div>
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 6, lineHeight: 1.4 }}>
           * "First" = first program to publicly announce action. Apple often acts before other programs but does not announce on Bugzilla or mailing lists — their actions may predate public announcements from other programs.
         </div>
@@ -783,6 +787,7 @@ const GovernanceRiskView = () => {
 
       {/* ═══ VOTE MATRIX ═══ */}
       <Card>
+        <div style={{ overflowX: 'auto' }}>
         <CardTitle sub="How each root program voted on recent Server Certificate ballots.">Recent SC Ballot Votes</CardTitle>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
           <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -798,11 +803,13 @@ const GovernanceRiskView = () => {
             ))}
           </tbody>
         </table>
+        </div>
       </Card>
 
       {/* ═══ CROSS-WG ═══ */}
       <Card>
         <CardTitle sub="Proposed + endorsed ballots per working group.">Policy Engagement by Working Group</CardTitle>
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
           <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
             <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left' }}>Working Group</th>
@@ -826,6 +833,7 @@ const GovernanceRiskView = () => {
             ))}
           </tbody>
         </table>
+        </div>
       </Card>
 
       {/* ═══ METHODOLOGY ═══ */}
