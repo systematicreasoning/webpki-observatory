@@ -210,6 +210,7 @@ const TailView = () => {
           </div>
         </div>
         <div>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -324,6 +325,7 @@ const TailView = () => {
               })()}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
       </Card>
 

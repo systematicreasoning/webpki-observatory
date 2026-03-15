@@ -423,6 +423,7 @@ const CommunityView = () => {
           </div>
         </div>
 
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
           <thead>
             <tr>
@@ -482,6 +483,7 @@ const CommunityView = () => {
             )}
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
 
         <div style={{ ...footnoteStyle, marginTop: 8 }}>
           {isRecent
@@ -536,6 +538,7 @@ const CommunityView = () => {
             Individual Participants
           </CardTitle>
         </div>
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 10 }}>
           <thead>
             <tr>
@@ -564,6 +567,7 @@ const CommunityView = () => {
             ))}
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
         {indRows.length > 20 && (
           <button onClick={() => setShowAllInds(v => !v)} style={{
             marginTop: 8, background: 'none', border: `1px solid ${COLORS.bd}`,

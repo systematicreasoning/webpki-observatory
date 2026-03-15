@@ -303,6 +303,7 @@ const PolicyView = () => {
             )}
           </div>
           <div>
+            <div style={{ overflowX: 'auto' }}>
             <table style={compactTableStyle}>
               <thead>
                 <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -381,6 +382,7 @@ const PolicyView = () => {
                 })}
               </tbody>
             </table>
+            </div> {/* overflow wrapper */}
             {filteredCAs.length > policyPage && (
               <div style={{ textAlign: 'center', marginTop: 6 }}>
                 <button
@@ -533,6 +535,7 @@ const PolicyView = () => {
 
             <Card>
               <CardTitle sub={`Ballots by category, browsers vs CAs. ${isRecent ? 'Last 50.' : 'All time.'}`}>Ballots by Category</CardTitle>
+              <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
                 <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
                   <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left' }}>Category</th>
@@ -550,6 +553,7 @@ const PolicyView = () => {
                     </tr>); })}
                 </tbody>
               </table>
+              </div> {/* overflow wrapper */}
             </Card>
 
             <MethodologyCard>

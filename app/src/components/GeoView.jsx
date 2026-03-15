@@ -241,6 +241,7 @@ const GeoView = () => {
                         >
                           {rName} ({cas.length} CAs)
                         </div>
+                        <div style={{ overflowX: 'auto' }}>
                         <table
                           style={tinyTableStyle}
                         >
@@ -274,6 +275,7 @@ const GeoView = () => {
                             ))}
                           </tbody>
                         </table>
+                        </div> {/* overflow wrapper */}
                         {cas.length > regPage && (
                           <div style={{ textAlign: 'center', marginTop: 3 }}>
                             <button
@@ -439,6 +441,7 @@ const GeoView = () => {
                     const shown = cas.slice(0, ctyPage);
                     return (
                       <div style={{ maxHeight: 220, overflowY: 'auto' }}>
+                        <div style={{ overflowX: 'auto' }}>
                         <table
                           style={tinyTableStyle}
                         >
@@ -489,6 +492,7 @@ const GeoView = () => {
                             ))}
                           </tbody>
                         </table>
+                        </div> {/* overflow wrapper */}
                         {cas.length > ctyPage && (
                           <div style={{ textAlign: 'center', marginTop: 4 }}>
                             <button

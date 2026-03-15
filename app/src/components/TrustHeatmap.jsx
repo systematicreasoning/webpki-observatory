@@ -61,6 +61,7 @@ const RootExpirationHeatmap = ({ roots, caData, heatmapCount, setHeatmapCount })
         <Paginator count={heatmapCount} setCount={setHeatmapCount} options={[10, 15, 25, 0]} />
       </div>
       <div style={scrollXStyle}>
+        <div style={{ overflowX: 'auto' }}>
         <table style={{ borderCollapse: 'collapse', fontSize: 8, fontFamily: FONT_MONO, width: '100%' }}>
           <thead>
             <tr>
@@ -100,6 +101,7 @@ const RootExpirationHeatmap = ({ roots, caData, heatmapCount, setHeatmapCount })
             </tr>
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 12px', fontSize: 8, color: COLORS.t3, marginTop: 6 }}>
         {[

@@ -381,6 +381,7 @@ const JurisdictionView = () => {
           <Paginator count={caPageSize} setCount={setCaPageSize} options={[10, 15, 25, 0]} />
         </div>
         <div>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -490,6 +491,7 @@ const JurisdictionView = () => {
               )}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
       </Card>
 
@@ -569,6 +571,7 @@ const JurisdictionView = () => {
         </div>
 
         <div style={{ maxHeight: 560, overflowY: 'auto' }}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead style={{ position: 'sticky', top: 0, background: COLORS.s1, zIndex: 1 }}>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -747,6 +750,7 @@ const JurisdictionView = () => {
               )}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         {pageSize > 0 && filtered.length > pageSize && (
           <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, textAlign: 'center' }}>

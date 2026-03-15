@@ -18,6 +18,7 @@ const GovTable = () => {
   const [govExp, setGovExp] = useState(null);
   return (
     <div style={{ maxHeight: 500, overflowY: 'auto' }}>
+      <div style={{ overflowX: 'auto' }}>
       <table style={compactTableStyle}>
         <thead style={{ position: 'sticky', top: 0, background: COLORS.s1 }}>
           <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -126,6 +127,7 @@ const GovTable = () => {
           })}
         </tbody>
       </table>
+      </div> {/* overflow wrapper */}
     </div>
   );
 };

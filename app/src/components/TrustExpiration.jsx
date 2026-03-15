@@ -88,6 +88,7 @@ const RootExpirationTimeline = ({ roots, caData }) => {
         </div>
       </div>
       <div style={scrollXStyle}>
+        <div style={{ overflowX: 'auto' }}>
         <table style={compactTableStyle}>
           <thead>
             <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -124,6 +125,7 @@ const RootExpirationTimeline = ({ roots, caData }) => {
             })}
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
       </div>
       <div style={{ display: 'flex', gap: 12, fontSize: 8, color: COLORS.t3, marginTop: 6 }}>
         {[['mozilla', 'Mozilla'], ['chrome', 'Chrome'], ['microsoft', 'Microsoft'], ['apple', 'Apple']].map(([k, l]) => (

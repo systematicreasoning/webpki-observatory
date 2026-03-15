@@ -104,7 +104,7 @@ function AppContent() {
         rel="stylesheet"
       />
 
-      <div style={{ maxWidth: 1120, margin: '0 auto', padding: '28px 24px', overflow: 'hidden' }}>
+      <div style={{ maxWidth: 1120, margin: '0 auto', padding: 'clamp(12px, 4vw, 28px) clamp(12px, 3vw, 24px)', overflow: 'hidden' }}>
         {/* Header */}
         <div
           style={{

@@ -421,6 +421,7 @@ const CryptoView = () => {
           Standards Body Recommendations
         </CardTitle>
         <div style={scrollXStyle}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -528,6 +529,7 @@ const CryptoView = () => {
               ))}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         <div
           style={{ display: 'flex', flexWrap: 'wrap', gap: '4px 14px', fontSize: 8, color: COLORS.t3, marginTop: 8 }}
@@ -649,6 +651,7 @@ const CryptoView = () => {
           <Pg cnt={pageCount} setCnt={setPageCount} />
         </div>
         <div style={scrollXStyle}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -796,6 +799,7 @@ const CryptoView = () => {
               })}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         <div
           style={{
@@ -878,6 +882,7 @@ const CryptoView = () => {
           <Pg cnt={expiryPageCount} setCnt={setExpiryPageCount} />
         </div>
         <div style={scrollXStyle}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -1037,6 +1042,7 @@ const CryptoView = () => {
               })}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         <div style={{ display: 'flex', gap: 12, fontSize: 8, color: COLORS.t3, marginTop: 6 }}>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: 2 }}>

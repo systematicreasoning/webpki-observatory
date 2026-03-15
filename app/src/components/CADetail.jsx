@@ -349,6 +349,7 @@ const CADetail = ({ d }) => {
         <div style={{ marginBottom: 10 }}>
           <SectionLabel>Root Certificates ({rootList.length} currently included)</SectionLabel>
           <div>
+            <div style={{ overflowX: 'auto' }}>
             <table style={tinyTableStyle}>
               <thead>
                 <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -457,6 +458,7 @@ const CADetail = ({ d }) => {
                 })}
               </tbody>
             </table>
+            </div> {/* overflow wrapper */}
           </div>
         </div>
       )}
@@ -619,6 +621,7 @@ function IntermediateSection({ intermediates }) {
       </div>
 
       <div>
+        <div style={{ overflowX: 'auto' }}>
         <table style={tinyTableStyle}>
           <thead>
             <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -742,6 +745,7 @@ function IntermediateSection({ intermediates }) {
             })}
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
       </div>
 
       {intermediates.length > pageSize && pageSize > 0 && (

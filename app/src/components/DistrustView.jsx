@@ -642,6 +642,7 @@ export default function DistrustView() {
       {/* Events table */}
       <Card>
         <div style={scrollXStyle}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -685,6 +686,7 @@ export default function DistrustView() {
               })}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         <div style={{ ...footnoteStyle, padding: '6px 10px', borderTop: `1px solid ${COLORS.bd}` }}>
           Showing {events.length} of {allEvents.length} events

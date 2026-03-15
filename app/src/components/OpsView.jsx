@@ -755,6 +755,7 @@ const OpsView = () => {
           </div>
         </div>
         <div style={scrollXStyle}>
+          <div style={{ overflowX: 'auto' }}>
           <table style={compactTableStyle}>
             <thead>
               <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -904,6 +905,7 @@ const OpsView = () => {
               })}
             </tbody>
           </table>
+          </div> {/* overflow wrapper */}
         </div>
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.5 }}>
           High incident count does not indicate low maturity. Volume CAs and transparent self-reporters accumulate more

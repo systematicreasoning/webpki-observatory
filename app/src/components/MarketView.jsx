@@ -226,6 +226,7 @@ const MarketView = () => {
 
       {/* ── CA Table ── */}
       <div style={scrollXStyle}>
+        <div style={{ overflowX: 'auto' }}>
         <table style={tableStyle}>
           <thead>
             <tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
@@ -446,6 +447,7 @@ const MarketView = () => {
             })}
           </tbody>
         </table>
+        </div> {/* overflow wrapper */}
       </div>
 
       {/* Inferred note */}
