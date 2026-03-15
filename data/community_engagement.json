@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T06:26:45.496987+00:00",
+    "generated_at": "2026-03-15T06:37:26.619567+00:00",
     "pipeline_version": "1.1",
     "total_orgs": 64,
     "total_cabf_ca_members": 56,
@@ -2871,15 +2871,15 @@
     "Zacharias.bjorngren@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 20,
-        "comments": 40,
+        "bugs_engaged": 21,
+        "comments": 41,
         "technical_comments": 9,
-        "recent_bugs_engaged": 20,
+        "recent_bugs_engaged": 21,
         "recent_technical_comments": 9,
         "by_year": {
           "2024": 11,
           "2025": 27,
-          "2026": 2
+          "2026": 3
         },
         "top_cas_commented_on": [
           [
@@ -2888,7 +2888,7 @@
           ],
           [
             "NETLOCK",
-            6
+            7
           ],
           [
             "Entrust",
@@ -3624,15 +3624,14 @@
     "capoc@gdca.com.cn": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 62,
+        "bugs_engaged": 8,
+        "comments": 61,
         "technical_comments": 18,
         "recent_bugs_engaged": 4,
         "recent_technical_comments": 15,
         "by_year": {
           "2018": 7,
           "2019": 3,
-          "2020": 1,
           "2021": 4,
           "2024": 40,
           "2025": 7
@@ -3640,7 +3639,7 @@
         "top_cas_commented_on": [
           [
             "GDCA",
-            62
+            61
           ]
         ]
       },
@@ -4276,22 +4275,21 @@
     "dtokgoz@e-tugra.com.tr": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 13,
-        "comments": 62,
+        "bugs_engaged": 12,
+        "comments": 59,
         "technical_comments": 7,
         "recent_bugs_engaged": 7,
         "recent_technical_comments": 5,
         "by_year": {
           "2018": 8,
           "2019": 9,
-          "2020": 3,
           "2021": 39,
           "2022": 3
         },
         "top_cas_commented_on": [
           [
             "E-Tugra",
-            62
+            59
           ]
         ]
       },
@@ -6927,21 +6925,21 @@
     "r.delval@certigna.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 27,
+        "bugs_engaged": 8,
+        "comments": 25,
         "technical_comments": 8,
-        "recent_bugs_engaged": 9,
+        "recent_bugs_engaged": 8,
         "recent_technical_comments": 6,
         "by_year": {
           "2020": 3,
           "2021": 4,
-          "2024": 4,
+          "2024": 2,
           "2025": 16
         },
         "top_cas_commented_on": [
           [
             "Certigna",
-            20
+            18
           ],
           [
             "Dhimyotis / Certigna",
@@ -7022,14 +7020,14 @@
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 90,
-        "comments": 277,
-        "technical_comments": 92,
+        "comments": 276,
+        "technical_comments": 91,
         "recent_bugs_engaged": 90,
-        "recent_technical_comments": 92,
+        "recent_technical_comments": 91,
         "by_year": {
-          "2024": 197,
+          "2024": 195,
           "2025": 48,
-          "2026": 32
+          "2026": 33
         },
         "top_cas_commented_on": [
           [
@@ -7038,7 +7036,7 @@
           ],
           [
             "NETLOCK",
-            33
+            34
           ],
           [
             "Microsoft PKI Services",
@@ -7702,7 +7700,7 @@
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 8,
-        "comments": 42,
+        "comments": 43,
         "technical_comments": 18,
         "recent_bugs_engaged": 8,
         "recent_technical_comments": 18,
@@ -7711,12 +7709,12 @@
           "2022": 2,
           "2024": 19,
           "2025": 1,
-          "2026": 3
+          "2026": 4
         },
         "top_cas_commented_on": [
           [
             "iTrusChina",
-            42
+            43
           ]
         ]
       },
