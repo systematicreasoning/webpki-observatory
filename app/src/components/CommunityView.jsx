@@ -329,7 +329,7 @@ const CommunityView = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
-      <TabIntro quote="It might actually motivate CAs to engage more in Bugzilla incidents of other CAs and CABF discussions, including ballot proposals and endorsements. — Dimitris Zacharopoulos, HARICA">
+      <TabIntro quote="Visible participation records motivate broader engagement. What the ecosystem can observe is also what creates accountability.">
         Voluntary ecosystem contribution beyond compliance obligations. Three signals: Bugzilla
         engagement on other CAs' bugs, CA/B Forum ballot proposals and endorsements, and proactive
         bug filing. All 56 CABF CA members appear — including those with zero contribution.

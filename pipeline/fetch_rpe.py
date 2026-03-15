@@ -262,6 +262,20 @@ def load_json(path, default=None):
         return default
 
 
+def mask_email(email):
+    """Mask email local part for output — keeps first char and domain.
+    Example: ryan.sleevi@gmail.com -> r***********@gmail.com
+    Applied to all committed pipeline output to avoid being a source of
+    email harvesting from public Bugzilla data.
+    """
+    if not email or "@" not in email:
+        return email
+    local, domain = email.split("@", 1)
+    if len(local) <= 1:
+        return email
+    return f"{local[0]}{'*' * (len(local) - 1)}@{domain}"
+
+
 # ── Phase 1: Bug creation attribution (from existing cache) ──────────────────
 
 def analyze_bug_creation(bugs_raw):
@@ -794,11 +808,11 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "unique_contributors": len(people),
             "top_contributor_pct": top1_pct,
             "top_3_contributors_pct": top3_pct,
-            "top_contributor_email": top_email,
+            "top_contributor_email": mask_email(top_email),
             "top_contributor_first_quarter": top_first,
             "top_contributor_last_quarter": top_last,
             "contributors": [
-                {"email": email, "comments": count,
+                {"email": mask_email(email), "comments": count,
                  "pct": round((count / total_oversight) * 100) if total_oversight else 0}
                 for email, count in people[:5]
             ],

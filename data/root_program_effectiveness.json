@@ -656,32 +656,32 @@
       "unique_contributors": 7,
       "top_contributor_pct": 86,
       "top_3_contributors_pct": 96,
-      "top_contributor_email": "ryan.sleevi@gmail.com",
+      "top_contributor_email": "r**********@gmail.com",
       "top_contributor_first_quarter": "2014-Q1",
       "top_contributor_last_quarter": "2022-Q2",
       "contributors": [
         {
-          "email": "ryan.sleevi@gmail.com",
+          "email": "r**********@gmail.com",
           "comments": 1419,
           "pct": 86
         },
         {
-          "email": "ryandickson@google.com",
+          "email": "r**********@google.com",
           "comments": 86,
           "pct": 5
         },
         {
-          "email": "chrome-root-program@google.com",
+          "email": "c******************@google.com",
           "comments": 85,
           "pct": 5
         },
         {
-          "email": "cclements@google.com",
+          "email": "c********@google.com",
           "comments": 58,
           "pct": 4
         },
         {
-          "email": "mozilla@google.com",
+          "email": "m******@google.com",
           "comments": 3,
           "pct": 0
         }
@@ -692,32 +692,32 @@
       "unique_contributors": 9,
       "top_contributor_pct": 47,
       "top_3_contributors_pct": 91,
-      "top_contributor_email": "wthayer@fastly.com",
+      "top_contributor_email": "w******@fastly.com",
       "top_contributor_first_quarter": "2017-Q4",
       "top_contributor_last_quarter": "2020-Q2",
       "contributors": [
         {
-          "email": "wthayer@fastly.com",
+          "email": "w******@fastly.com",
           "comments": 561,
           "pct": 47
         },
         {
-          "email": "bwilson@mozilla.com",
+          "email": "b******@mozilla.com",
           "comments": 389,
           "pct": 33
         },
         {
-          "email": "kathleen.a.wilson@gmail.com",
+          "email": "k****************@gmail.com",
           "comments": 133,
           "pct": 11
         },
         {
-          "email": "gerv@mozilla.org",
+          "email": "g***@mozilla.org",
           "comments": 87,
           "pct": 7
         },
         {
-          "email": "jcristau@mozilla.com",
+          "email": "j*******@mozilla.com",
           "comments": 9,
           "pct": 1
         }
@@ -728,22 +728,22 @@
       "unique_contributors": 3,
       "top_contributor_pct": 56,
       "top_3_contributors_pct": 100,
-      "top_contributor_email": "dhollenback@apple.com",
+      "top_contributor_email": "d**********@apple.com",
       "top_contributor_first_quarter": "2025-Q4",
       "top_contributor_last_quarter": "2026-Q1",
       "contributors": [
         {
-          "email": "dhollenback@apple.com",
+          "email": "d**********@apple.com",
           "comments": 30,
           "pct": 56
         },
         {
-          "email": "clintw@apple.com",
+          "email": "c*****@apple.com",
           "comments": 23,
           "pct": 43
         },
         {
-          "email": "cspann@apple.com",
+          "email": "c*****@apple.com",
           "comments": 1,
           "pct": 2
         }

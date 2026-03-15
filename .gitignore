@@ -16,3 +16,8 @@ Thumbs.db
 .env
 .env.local
 pipeline/pem_cache.json
+
+# Pipeline cache files — contain email addresses from public Bugzilla data.
+# Regenerated on every CI run; not source data.
+pipeline/ops_cache/comments_cache.json
+pipeline/ops_cache/bugs_raw.json
