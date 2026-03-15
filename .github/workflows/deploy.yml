@@ -42,6 +42,13 @@ jobs:
             ops-cache-${{ runner.os }}-v2
             ops-cache-${{ runner.os }}-
 
+      - name: Sync meta file from git (overrides stale cached version)
+        run: |
+          if [ -f pipeline/ops_cache/comment_count_meta.json ]; then
+            git checkout HEAD -- pipeline/ops_cache/comment_count_meta.json 2>/dev/null || true
+            echo "  Synced comment_count_meta.json from git"
+          fi
+
       - name: Install dependencies
         run: pip install -r pipeline/requirements.txt
 
