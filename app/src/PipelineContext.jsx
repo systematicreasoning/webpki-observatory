@@ -20,6 +20,7 @@ import {
   ROOT_ALGO,
   DISTRUST_DATA,
   RPE_DATA,
+  COMMUNITY_DATA,
 } from './data';
 
 const PipelineContext = createContext(null);
@@ -42,12 +43,13 @@ export function PipelineProvider({ children }) {
       const rootAlgo = Array.isArray(ROOT_ALGO) ? ROOT_ALGO : [];
       const distrustData = DISTRUST_DATA || { events: [], stats: {}, taxonomy: {} };
       const rpeData = RPE_DATA || null;
+      const communityData = COMMUNITY_DATA || null;
       const trustedCAs = caData.filter((d) => d.storeCount > 0 || d.parent);
 
       return {
         caData, brValidity, browserCoverage, intersections, geography,
         govRisk, incidentsData, roots, incidentCounts, jurisdictionRisk,
-        rootAlgo, distrustData, rpeData, trustedCAs,
+        rootAlgo, distrustData, rpeData, communityData, trustedCAs,
       };
     },
     [],

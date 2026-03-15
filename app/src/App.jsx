@@ -27,6 +27,7 @@ const CryptoView = lazy(() => import('./components/CryptoView'));
 const JurisdictionView = lazy(() => import('./components/JurisdictionView'));
 const DistrustView = lazy(() => import('./components/DistrustView'));
 const GovernanceRiskView = lazy(() => import('./components/GovernanceRiskView'));
+const CommunityView = lazy(() => import('./components/CommunityView'));
 
 const TABS = [
   { id: 'market', l: 'Market Share' },
@@ -41,6 +42,7 @@ const TABS = [
   { id: 'crypto', l: 'Cryptographic Posture' },
   { id: 'distrust', l: 'Distrust History' },
   { id: 'governance', l: 'Governance Risk' },
+  { id: 'community', l: 'Ecosystem Health' },
 ];
 
 const VALID_TAB_IDS = TABS.map((t) => t.id);
@@ -183,6 +185,11 @@ function AppContent() {
           {tab === 'governance' && (
             <ErrorBoundary label="Governance Risk">
               <GovernanceRiskView />
+            </ErrorBoundary>
+          )}
+          {tab === 'community' && (
+            <ErrorBoundary label="Ecosystem Health">
+              <CommunityView />
             </ErrorBoundary>
           )}
         </Suspense>

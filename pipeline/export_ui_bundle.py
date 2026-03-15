@@ -58,6 +58,7 @@ def main():
     root_algo_json = load_json(DATA_DIR, "root_algorithms.json") or {}
     browser_cov_json = load_json(DATA_DIR, "browser_coverage.json") or {}
     rpe_data = load_json(DATA_DIR, "root_program_effectiveness.json")
+    community_data = load_json(DATA_DIR, "community_engagement.json")
 
     # Load per-CA detail files
     ca_details = {}
@@ -351,6 +352,7 @@ def main():
         "ROOT_ALGO": ROOT_ALGO,
         "DISTRUST_DATA": distrust_data,
         "RPE_DATA": rpe_data,
+        "COMMUNITY_DATA": community_data,
     }
 
     out_path = os.path.join(DATA_DIR, "ui_bundle.json")
