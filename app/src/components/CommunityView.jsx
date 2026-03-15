@@ -23,6 +23,16 @@ import { statGridStyle, footnoteStyle } from '../styles';
 
 /* ── helpers ── */
 
+/** Mask email local part to reduce scraping surface.
+ *  keeps first char + domain: ryan_hurst@hotmail.com → r*********@hotmail.com
+ */
+function maskEmail(email) {
+  if (!email || !email.includes('@')) return email;
+  const [local, domain] = email.split('@');
+  if (local.length <= 1) return email;
+  return `${local[0]}${'*'.repeat(local.length - 1)}@${domain}`;
+}
+
 function scoreOrg(o, recent) {
   const bz = recent ? (o.bugzilla?.recent_bugs_engaged || 0) : (o.bugzilla?.bugs_engaged || 0);
   const p  = recent ? (o.ballots?.recent_proposed || 0) : (o.ballots?.proposed || 0);
@@ -210,7 +220,7 @@ const CommunityView = () => {
       totalProposed: totalP,
       totalFiled:    totalF,
       topOrg:  top?.[0] || String.fromCharCode(8212),
-      topInd:  topInd?.[0]?.split('@')[0] || String.fromCharCode(8212),
+      topInd:  topInd?.[0] ? maskEmail(topInd[0]) : String.fromCharCode(8212),
     };
   }, [orgs, inds]);
 
@@ -342,7 +352,7 @@ const CommunityView = () => {
               <SortBtn id="filing" label="Filing" />
             </div>
             <div style={toggleStyle}>
-              {[['recent', 'Recent (2021+)'], ['all', 'All Time']].map(([v, l]) => (
+              {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
                 <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
                   onClick={() => setIsRecent(v === 'recent')}>{l}</button>
               ))}
@@ -412,7 +422,7 @@ const CommunityView = () => {
 
         <div style={{ ...footnoteStyle, marginTop: 8 }}>
           {isRecent
-            ? <><strong style={{ color: COLORS.t2 }}>Recent (2021+):</strong>{' Bugzilla and ballot data filtered to 2021 and later. '}</>
+            ? <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{' Bugzilla and ballot data from the recent window only. '}</>
             : 'All time: 2014 to present. '}
           Bugzilla counts genuine governance comments only (LLM-filtered, self-incident excluded).
           Ballots: proposals and endorsements only — votes are a membership obligation and are excluded.
@@ -427,7 +437,7 @@ const CommunityView = () => {
             Standards Leadership
           </CardTitle>
           <div style={toggleStyle}>
-            {[['recent', 'Recent (2021+)'], ['all', 'All Time']].map(([v, l]) => (
+            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
               <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
                 onClick={() => setIsRecent(v === 'recent')}>{l}</button>
             ))}
@@ -471,7 +481,7 @@ const CommunityView = () => {
             Individual Participants
           </CardTitle>
           <div style={toggleStyle}>
-            {[['recent', 'Recent (2021+)'], ['all', 'All Time']].map(([v, l]) => (
+            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
               <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
                 onClick={() => setIsRecent(v === 'recent')}>{l}</button>
             ))}
@@ -492,7 +502,7 @@ const CommunityView = () => {
             {indRows.slice(0, SHOW_IND).map(({ email, bz, tech, f, bp, be, ip }) => (
               <tr key={email} style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
                 <td style={{ padding: '5px 8px' }}>
-                  <div style={{ fontSize: 11, color: COLORS.tx, fontFamily: FONT_MONO }}>{email}</div>
+                  <div style={{ fontSize: 11, color: COLORS.tx, fontFamily: FONT_MONO }}>{maskEmail(email)}</div>
                   {ip && <div style={{ fontSize: 9, color: COLORS.ac, marginTop: 1 }}>{ip}</div>}
                 </td>
                 <td style={{ padding: '5px 8px' }}>{ip && <IPBadge />}</td>
