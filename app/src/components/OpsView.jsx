@@ -233,6 +233,10 @@ const OpsView = () => {
     );
   // When incidentsData is populated, render the full visualizations
   const d = incidentsData;
+  const NOW = new Date();
+  const CUR_YEAR = NOW.getFullYear();
+  const CUR_MONTH_SHORT = NOW.toLocaleString('en-US', { month: 'short' });
+  const PARTIAL_LABEL = `${CUR_YEAR} partial year (${CUR_MONTH_SHORT} YTD)`;
   const maxCA = d.cas[0]?.n || 1;
   const peakYear = d.years.reduce((a, b) => (b.n > a.n ? b : a), { n: 0 });
   const curYear = d.years[d.years.length - 1];
@@ -467,7 +471,7 @@ const OpsView = () => {
             <>
               {ybc.length > 0 && (
                 <Card>
-                  <CardTitle sub="Incident types by year — misissuance, revocation, governance (audit/policy failures), and validation. 2026 partial year.">
+                  <CardTitle sub="Incident types by year — misissuance, revocation, governance (audit/policy failures), and validation. Current year is partial.">
                     Incidents by Class
                   </CardTitle>
                   <ChartWrap height={240}>
@@ -477,7 +481,7 @@ const OpsView = () => {
                         <XAxis
                           dataKey="y"
                           tick={({ x, y, payload }) => {
-                            const isPartial = payload.value === 2026;
+                            const isPartial = payload.value === CUR_YEAR;
                             return (
                               <text x={x} y={y + 12} fill={isPartial ? COLORS.am : COLORS.t3}
                                 fontSize={9} textAnchor="middle">
@@ -496,7 +500,7 @@ const OpsView = () => {
                               render={(x) => (
                                 <>
                                   <div style={{ fontWeight: 600, color: COLORS.tx }}>
-                                    {x.y}{x.y === 2026 ? ' (partial)' : ''}
+                                    {x.y}{x.y === CUR_YEAR ? ' (partial)' : ''}
                                   </div>
                                   {[
                                     ['gv', 'Governance'],
@@ -508,7 +512,7 @@ const OpsView = () => {
                                       x[k] > 0 && (
                                         <div key={k} style={{ color: CC[k].c }}>
                                           {l}: {x[k]}
-                                          {k === 'gv' && x.y === 2025 ? ' ← 60% of total' : ''}
+                                          
                                         </div>
                                       ),
                                   )}
@@ -535,12 +539,11 @@ const OpsView = () => {
                         {v.l}
                       </span>
                     ))}
-                    <span style={{ marginLeft: 'auto', color: COLORS.am }}>* 2026 partial year (Q1 only)</span>
+                    <span style={{ marginLeft: 'auto', color: COLORS.am }}>* {PARTIAL_LABEL}</span>
                   </div>
                   <div style={{ ...footnoteStyle, marginTop: 6 }}>
                     Governance = audit qualifications, CPS/policy violations, disclosure failures, CCADB non-compliance.
-                    2025 spike driven by broad enforcement across ~30 CAs: PKIoverheid (25 bugs), SwissSign (14), and others — not a single incident.
-                    Tags from Bugzilla whiteboard labels.
+                    Governance incidents include audit qualifications, CPS/policy violations, and disclosure failures. Tags from Bugzilla whiteboard labels.
                   </div>
                 </Card>
               )}
@@ -1157,7 +1160,7 @@ const OpsView = () => {
         });
         return (
           <Card>
-            <CardTitle sub="Who discovers CA compliance problems? Root program share is declining as audit detection and external researchers grow. 2026 partial year.">
+            <CardTitle sub="Who discovers CA compliance problems? Root program share has been declining as audit detection and external research grow. Current year is partial.">
               Incident Discovery Method Trends
             </CardTitle>
             <div style={{ display: 'flex', gap: 12, marginBottom: 8, flexWrap: 'wrap' }}>
@@ -1194,7 +1197,7 @@ const OpsView = () => {
                       const m = METHODS.find(m => m.key === name);
                       return [`${Math.round(val * 100)}%`, m?.label || name];
                     }}
-                    labelFormatter={y => `${y}${y === 2026 ? ' (partial)' : ''}`}
+                    labelFormatter={y => `${y}${y === CUR_YEAR ? ' (partial)' : ''}`}
                   />
                   {METHODS.map(m => (
                     <Area key={m.key} type="monotone" dataKey={m.key}
@@ -1205,10 +1208,15 @@ const OpsView = () => {
               </ResponsiveContainer>
             </ChartWrap>
             <div style={{ ...footnoteStyle, marginTop: 6 }}>
-              Root program detection declining: 53% (2022) → 30% (2025).
-              Audit-detected jumped from 1% to 26% in 2025 — formal audit pipelines maturing.
-              External researchers rose to 26% in early 2026.
-              {' '}* 2026 partial year (Q1 only).
+              {(() => {
+                const first = byYear[0];
+                const last = byYear[byYear.length - 2]; // exclude partial current year
+                const rpFirst = first?.total > 0 ? Math.round(first.root_program / first.total * 100) : 0;
+                const rpLast  = last?.total  > 0 ? Math.round(last.root_program  / last.total  * 100) : 0;
+                const auLast  = last?.total  > 0 ? Math.round(last.audit         / last.total  * 100) : 0;
+                return `Root program detection: ${rpFirst}% (${first?.y}) → ${rpLast}% (${last?.y}). Audit-detected: ${auLast}% (${last?.y}).`;
+              })()}
+              {' '}* {PARTIAL_LABEL}.
             </div>
           </Card>
         );

@@ -220,7 +220,7 @@ const CADetail = ({ d }) => {
                     : 'Above 200d'}
             </div>
             <div style={{ fontSize: 8, color: COLORS.t3 }}>
-              next limit: {d.avgDays > 200 ? '200d Mar 2026' : d.avgDays > 100 ? '100d Mar 2027' : '47d Mar 2029'}
+              next limit: {d.avgDays > 200 ? '200d (Mar 2026)' : d.avgDays > 100 ? '100d (Mar 2027)' : '47d (Mar 2029)'}
             </div>
           </div>
         )}

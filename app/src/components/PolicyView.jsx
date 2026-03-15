@@ -58,7 +58,7 @@ const PolicyView = () => {
   return (
     <div>
       <TabIntro quote="Policy shapes the Web PKI.">
-        Minimum practices evolve with threats and technology: some CAs lead, others follow, some lag. The CA/Browser Forum's Baseline Requirements are tightening maximum certificate validity: 200 days (March 2026 — now in effect), 100 days (March 2027), and eventually 47 days (March 2029). This tab measures each CA's actual certificate usage period — how frequently their subscribers replace certificates — against those thresholds. CAs operating well above the next deadline face the largest subscriber disruption. CAs already below the 47-day target have proven their automation story. Relying parties can assess which CAs are prepared for the upcoming reductions and which are likely to struggle.
+        Minimum practices evolve with threats and technology: some CAs lead, others follow, some lag. The CA/Browser Forum's Baseline Requirements are tightening maximum certificate validity: 200 days (March 15 2026), 100 days (March 15 2027), and 47 days (March 15 2029). This tab measures each CA's actual certificate usage period — how frequently their subscribers replace certificates — against those thresholds. CAs operating well above the next deadline face the largest subscriber disruption. CAs already below the 47-day target have proven their automation story. Relying parties can assess which CAs are prepared for the upcoming reductions and which are likely to struggle.
       </TabIntro>
 
       <div style={{ marginBottom: 20 }}>
@@ -155,7 +155,7 @@ const PolicyView = () => {
         <CardTitle sub="CAs grouped by average certificate usage period relative to upcoming BR max validity thresholds. Click a segment to filter the table.">
           Usage Period Distribution
         </CardTitle>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
           <div>
             {(() => {
               const pieData = tiers.map((t) => ({
@@ -425,7 +425,7 @@ const PolicyView = () => {
 
       <MethodologyCard>
         <MethodologyItem label="Usage period">365 / (all-time certs / unexpired certs). Measures how frequently a CA's subscribers actually replace certificates, not the validity period configured on the certificate. A CA issuing 90-day certs whose subscribers renew at 60 days has a ~22-day usage period.</MethodologyItem>
-        <MethodologyItem label="BR schedule">CA/B Forum Baseline Requirements are reducing maximum certificate validity: 200 days (March 15 2026 — now in effect), 100 days (March 15 2027), 47 days (March 15 2029). CAs whose average usage period exceeds the next threshold face the largest subscriber disruption.</MethodologyItem>
+        <MethodologyItem label="BR schedule">CA/B Forum Baseline Requirements are reducing maximum certificate validity: 200 days (March 15 2026), 100 days (March 15 2027), 47 days (March 15 2029). CAs whose average usage period exceeds the next threshold face the largest subscriber disruption.</MethodologyItem>
         <MethodologyItem label="Limitation">Usage period is a population average. It does not capture subscriber heterogeneity — a CA may have some subscribers with 30-day automation and others doing manual annual renewal.</MethodologyItem>
       </MethodologyCard>
 

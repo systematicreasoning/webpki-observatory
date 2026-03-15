@@ -287,7 +287,7 @@ const GovernanceRiskView = () => {
             </div>
             <div style={{ ...footnoteStyle, marginTop: 6 }}>
               Both Chrome and Mozilla cover a declining share of an expanding bug corpus — the total number of CA compliance bugs grew from ~100/yr (2017) to ~220/yr (2024–25).
-              Apple rose from near-zero to 15% in 2026. Microsoft has remained at zero throughout.
+              Apple participation has grown in recent years from near zero. Microsoft has remained at zero throughout.
               Pre-2017 years excluded (fewer than 10 bugs/year — not statistically meaningful).
             </div>
           </Card>
@@ -883,7 +883,7 @@ const GovernanceRiskView = () => {
           All metrics in this tab measure publicly observable behavior only. Root programs that govern through private channels (direct CA correspondence, private email threads, in-person meetings) will appear less active than programs that use Bugzilla and public mailing lists as their primary governance channel. Mozilla's high oversight count reflects their deliberate use of Bugzilla as a public governance record, not necessarily a higher absolute level of governance activity.
           Chrome's recent oversight engagement appears lower in absolute terms than Mozilla's all-time total, but Chrome's year-on-year growth since 2021 is the steepest of any program.
           Microsoft's 0% oversight reflects public Bugzilla data only. Their governance activity through private channels and CTL deployment decisions is not captured here.
-          Apple's public Bugzilla participation has grown in 2024-2026 but remains modest; their governance posture is largely opaque due to limited public disclosure.
+          Apple's public Bugzilla participation has grown in recent years but remains modest relative to the corpus size; their governance posture is largely opaque due to limited public disclosure.
           The data here reflects what the ecosystem can observe externally — which is also what creates public accountability.
         </MethodologyItem>
         <MethodologyItem label="Data and Definitions">
