@@ -4555,22 +4555,22 @@
     },
     {
       "date": "2026-03-15",
-      "generated_at": "2026-03-15T05:14:34.081990+00:00",
+      "generated_at": "2026-03-15T05:25:31.438232+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287862642,
+      "total_unexpired": 1287862670,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.1568
+          "pct": 40.1564
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.4015
+          "pct": 16.4012
         },
         {
           "ca": "DigiCert",
-          "pct": 13.7684
+          "pct": 13.7688
         },
         {
           "ca": "GoDaddy",
@@ -4578,11 +4578,11 @@
         },
         {
           "ca": "Sectigo",
-          "pct": 10.5102
+          "pct": 10.5105
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6348
+          "pct": 4.6347
         },
         {
           "ca": "IdenTrust Services, LLC",
@@ -4604,77 +4604,77 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 517164255,
+          "v": 517158722,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 211228361,
+          "v": 211225009,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 177318057,
+          "v": 177323180,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166856249,
+          "v": 166856149,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 135356539,
+          "v": 135360778,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59689752,
+          "v": 59688988,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 13024301,
+          "v": 13024642,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1692684,
+          "v": 1692730,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1572544,
+          "v": 1572508,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500561,
+          "v": 1500560,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668295,
+          "v": 668298,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 517125,
+          "v": 517127,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 287756,
+          "v": 287801,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 226609,
+          "v": 226621,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 96262,
+          "v": 96271,
           "at": 0
         },
         {
@@ -4684,7 +4684,7 @@
         },
         {
           "id": "d-trust",
-          "v": 50192,
+          "v": 50188,
           "at": 0
         },
         {
@@ -4694,7 +4694,7 @@
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 44003,
+          "v": 44001,
           "at": 0
         },
         {
