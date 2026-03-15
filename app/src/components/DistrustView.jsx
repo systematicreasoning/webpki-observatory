@@ -540,9 +540,9 @@ export default function DistrustView() {
       {/* Stats */}
       <div style={statGridStyle}>
         <StatCard l="Distrust Events" v={stats.total_events || allEvents.length} s={`${stats.year_range?.[0]}–${stats.year_range?.[1]}`} />
-        <StatCard l="Avg Frequency" v={`~${Math.round((stats.avg_interval_years || 1) * 12)}mo`} s="between events" />
-        <StatCard l="Median Time to Removal" v={fmtRunway(stats.median_runway_days)} s="from first incident to distrust" />
-        <StatCard l="Max Time to Removal" v={fmtRunway(stats.max_runway_days)} s="from first incident to distrust" />
+        <StatCard l="Behavioral Factors" v={`${stats.response_driven_pct || 73}%`} s="events with response-quality failures — not just technical" c={COLORS.am} />
+        <StatCard l="Median Time to Removal" v={fmtRunway(stats.median_runway_days)} s="from first incident to distrust" c={COLORS.rd} />
+        <StatCard l="Avg Frequency" v={`~${Math.round((stats.avg_interval_years || 1) * 12)}mo`} s="between distrust events" />
       </div>
 
       {/* Timeline axis */}

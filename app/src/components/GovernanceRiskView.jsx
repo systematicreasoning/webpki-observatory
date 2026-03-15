@@ -185,6 +185,13 @@ const GovernanceRiskView = () => {
     [COLORS.rd]: 'rgba(239,68,68,0.18)', [COLORS.t2]: 'rgba(148,163,184,0.06)',
   };
 
+  const pcs = d.program_comment_summary || {};
+  const chromeRecentSub  = pcs.chrome?.recent_bugs_technical_oversight  || 0;
+  const mozillaRecentSub = pcs.mozilla?.recent_bugs_technical_oversight || 0;
+  const chromeAllSub     = pcs.chrome?.bugs_technical_oversight  || 0;
+  const mozillaAllSub    = pcs.mozilla?.bugs_technical_oversight || 0;
+  const msftOversight    = pcs.microsoft?.oversight_comments || 0;
+
   return (
     <div>
       <TabIntro quote="Who watches the watchmen?">
@@ -193,6 +200,33 @@ const GovernanceRiskView = () => {
         policy leadership, and trust store size — because a program that trusts more CAs but invests less
         in governance creates risk everyone else absorbs.
       </TabIntro>
+
+      {/* ═══ STRIKING FINDINGS ═══ */}
+      <div style={statGridStyle}>
+        <StatCard
+          l="Chrome Leads — Recently"
+          v={`${chromeRecentSub} vs ${mozillaRecentSub}`}
+          s="Chrome vs Mozilla substantive oversight bugs (2021+)"
+          c={COLORS.ac}
+        />
+        <StatCard
+          l="All-Time Leader"
+          v={`${chromeAllSub} vs ${mozillaAllSub}`}
+          s="Chrome vs Mozilla substantive oversight bugs (all-time)"
+          c={COLORS.t2}
+        />
+        <StatCard
+          l="Microsoft Oversight"
+          v={msftOversight === 0 ? 'Zero' : msftOversight}
+          s="governance comments on other CAs — despite operating a CA"
+          c={msftOversight === 0 ? COLORS.am : COLORS.gn}
+        />
+        <StatCard
+          l="Bugs Analyzed"
+          v={(d.meta?.bugs_total || 0).toLocaleString()}
+          s={`${(d.meta?.total_comments_raw || 0).toLocaleString()} comments classified`}
+        />
+      </div>
 
       {/* ═══ REPORT CARD ═══ */}
       <Card>

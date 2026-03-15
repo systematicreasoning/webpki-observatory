@@ -240,14 +240,20 @@ const CommunityView = () => {
     const topInd = Object.entries(inds)
       .map(([e, o]) => [e, (o.bugzilla?.bugs_engaged || 0) * 2 + (o.bug_filing?.bugs_filed || 0) * 3])
       .sort((a, b) => b[1] - a[1])[0];
+    const topIndBz   = topInd ? (inds[topInd[0]]?.bugzilla?.bugs_engaged || 0) : 0;
+    const topIndFiled= topInd ? (inds[topInd[0]]?.bug_filing?.bugs_filed || 0) : 0;
+    const digicertP  = orgs['DigiCert']?.ballots?.proposed || 0;
+    const digicertPct= totalP > 0 ? Math.round(digicertP / totalP * 100) : 0;
     return {
       activeMembers: active.length,
       zeroMembers:   zero.length,
       totalBzBugs:   totalBz,
       totalProposed: totalP,
       totalFiled:    totalF,
-      topOrg:  top?.[0] || String.fromCharCode(8212),
-      topInd:  topInd?.[0] ? maskEmail(topInd[0]).split('@')[0] : String.fromCharCode(8212),
+      topOrg:      top?.[0] || String.fromCharCode(8212),
+      topInd:      topInd?.[0] ? maskEmail(topInd[0]).split('@')[0] : String.fromCharCode(8212),
+      topIndBz, topIndFiled,
+      digicertP, digicertPct,
     };
   }, [orgs, inds]);
 
@@ -351,14 +357,41 @@ const CommunityView = () => {
       </TabIntro>
 
       {/* ── Stat cards ── */}
-      <div style={{ ...statGridStyle, gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))' }}>
-        <StatCard l="Active CA Members"  v={stats.activeMembers}  s={`of ${stats.activeMembers + stats.zeroMembers} CABF CAs`} />
-        <StatCard l="Silent Members"     v={stats.zeroMembers}    s="no recorded contribution" c={stats.zeroMembers > 20 ? COLORS.am : COLORS.t2} />
-        <StatCard l="Other-CA Bugs"      v={stats.totalBzBugs}    s="governance comments (all-time)" />
-        <StatCard l="Ballots Proposed"   v={stats.totalProposed}  s="by CA organizations" c={COLORS.gn} />
-        <StatCard l="Bugs Filed"         v={stats.totalFiled}     s="proactive, about other CAs" c={COLORS.pu} />
-        <StatCard l="Top Organization"   v={stats.topOrg.length > 14 ? stats.topOrg.slice(0,13)+'…' : stats.topOrg} s="combined signal" c={COLORS.ac} />
-        <StatCard l="Top Individual"     v={stats.topInd}         s="bugs engaged + filed" c={COLORS.cy} />
+      <div style={{ ...statGridStyle, gridTemplateColumns: 'repeat(auto-fit, minmax(148px, 1fr))' }}>
+        <StatCard
+          l="Silent CABF Members"
+          v={`${stats.zeroMembers} of ${stats.activeMembers + stats.zeroMembers}`}
+          s="no recorded community contribution"
+          c={COLORS.am}
+        />
+        <StatCard
+          l="DigiCert Ballot Share"
+          v={`${stats.digicertPct}%`}
+          s={`${stats.digicertP} of ${stats.totalProposed} CA ballot proposals`}
+          c={COLORS.ac}
+        />
+        <StatCard
+          l="Top Individual"
+          v={stats.topInd}
+          s={`${stats.topIndBz} bugs engaged · ${stats.topIndFiled} bugs filed`}
+          c={COLORS.cy}
+        />
+        <StatCard
+          l="Active CA Members"
+          v={stats.activeMembers}
+          s="with at least one recorded contribution"
+        />
+        <StatCard
+          l="Other-CA Bugs"
+          v={stats.totalBzBugs}
+          s="governance comments on other CAs"
+        />
+        <StatCard
+          l="Bugs Filed"
+          v={stats.totalFiled}
+          s="proactive, about other CAs"
+          c={COLORS.pu}
+        />
       </div>
 
       {/* ── Over-time chart ── */}
