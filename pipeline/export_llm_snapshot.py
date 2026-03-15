@@ -71,6 +71,8 @@ def main():
     browser_cov = load_json(DATA_DIR, "browser_coverage.json") or {}
     rpe = load_json(DATA_DIR, "root_program_effectiveness.json") or {}
     distrust = load_json(PIPELINE_DIR, "distrust/distrusted.json") or {}
+    community = load_json(DATA_DIR, "community_engagement.json") or {}
+    chrome_cl = load_json(DATA_DIR, "chrome_root_store_changelog.json") or {}
 
     # ── Incident lookup ──
     inc_by_ca = {}
@@ -452,6 +454,51 @@ def main():
         "notableGaps": rpe.get("notable_gaps", {}),
         # Inclusion velocity
         "inclusionVelocity": rpe.get("inclusion_velocity", {}),
+        "coverageRateByYear": rpe.get("coverage_rate_by_year", []),
+    }
+
+    # ── Community / Ecosystem Participation ──
+    orgs = community.get("organizations", {})
+    inds = community.get("individuals", {})
+    bal_inds = community.get("ballot_individuals", {})
+    cabf_members = [o for o, d in orgs.items() if d.get("cabf_member")]
+    active_members = [o for o in cabf_members
+                      if orgs[o]["bugzilla"]["bugs_engaged"] > 0
+                      or orgs[o]["ballots"]["proposed"] > 0
+                      or orgs[o]["ballots"]["endorsed"] > 0
+                      or orgs[o]["bug_filing"]["bugs_filed"] > 0]
+    community_out = {
+        "meta": community.get("meta", {}),
+        "cabfMemberCount": len(cabf_members),
+        "activeMemberCount": len(active_members),
+        "zeroContributionCount": len(cabf_members) - len(active_members),
+        "topOrganizations": sorted(
+            [{"name": o,
+              "cabfMember": d.get("cabf_member", False),
+              "bugzillaEngaged": d["bugzilla"]["bugs_engaged"],
+              "ballotsProposed": d["ballots"]["proposed"],
+              "ballotsEndorsed": d["ballots"]["endorsed"],
+              "bugsFiled": d["bug_filing"]["bugs_filed"]}
+             for o, d in orgs.items() if
+             d["bugzilla"]["bugs_engaged"] + d["ballots"]["proposed"] + d["bug_filing"]["bugs_filed"] > 0],
+            key=lambda x: -(x["bugzillaEngaged"] * 2 + x["ballotsProposed"] * 3 + x["ballotsEndorsed"] + x["bugsFiled"] * 3)
+        )[:20],
+        "topBallotIndividuals": sorted(
+            [{"name": n, "proposed": v["proposed"], "endorsed": v["endorsed"]}
+             for n, v in bal_inds.items() if v["proposed"] + v["endorsed"] > 0],
+            key=lambda x: -(x["proposed"] * 3 + x["endorsed"])
+        )[:15],
+        "individualCount": len(inds),
+    }
+
+    # ── Chrome Root Store Growth ──
+    chrome_growth = {
+        "source": "chromium/src/net/data/ssl/chrome_root_store commit history",
+        "entries": [
+            {"date": e["date"], "totalRoots": e["total_after"],
+             "added": e["added_count"], "removed": e["removed_count"]}
+            for e in chrome_cl.get("changelog", [])
+        ],
     }
 
     # ═══════════════════════════════════════════════════════════════
@@ -469,11 +516,14 @@ def main():
             "statcounter": "StatCounter global browser market share — mapped to root programs for web coverage estimates. Updated daily.",
             "cabforum": "CA/Browser Forum ballot records — proposers, endorsers, vote results across Server Certificate, Code Signing, S/MIME, and Network Security working groups.",
             "keylength": "keylength.com — cryptographic key size recommendations from NIST, ECRYPT-CSA, BSI, ANSSI, and NSA CNSA.",
+            "cabforumMembers": "CA/B Forum membership roster — CA members, browser members, interested parties. Used for ecosystem participation baseline.",
+            "chromeRootStore": "Chrome Root Store git commit history — root additions and removals with timestamps.",
         },
         "browserCoverage": browser_coverage,
         "market": market,
         "concentration": concentration,
         "trustSurface": trust_surface,
+        "chromeRootStoreGrowth": chrome_growth,
         "geography": geo,
         "governmentRisk": government_risk,
         "jurisdictionRisk": jrs,
@@ -484,6 +534,7 @@ def main():
         "distrustEvents": distrust_events,
         "distrustStats": distrust_stats,
         "governance": governance,
+        "ecosystemParticipation": community_out,
     }
 
     # ── Write ──
