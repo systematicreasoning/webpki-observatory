@@ -443,7 +443,6 @@ def analyze_ballots(ballots_cache):
         "Josefowitz":               "Tobias Josefowitz",
         "Henriksveen":              "Mads Egil Henriksveen",
         "Santoni":                  "Adriano Santoni",
-        "Barreira":                 "Tim Callan",  # Sectigo - Barreira is a variant
         "Amringer":                 "Guillaume Amringer",
         "Purvis":                   "Jos Purvis",
         "Coclin":                   "Dean Coclin",
