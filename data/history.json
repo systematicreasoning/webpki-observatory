@@ -4555,22 +4555,22 @@
     },
     {
       "date": "2026-03-15",
-      "generated_at": "2026-03-15T07:31:24.021530+00:00",
+      "generated_at": "2026-03-15T07:58:21.621884+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287812289,
+      "total_unexpired": 1287795149,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.1499
+          "pct": 40.1481
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.3961
+          "pct": 16.3946
         },
         {
           "ca": "DigiCert",
-          "pct": 13.774
+          "pct": 13.7752
         },
         {
           "ca": "GoDaddy",
@@ -4578,15 +4578,15 @@
         },
         {
           "ca": "Sectigo",
-          "pct": 10.5163
+          "pct": 10.5184
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6342
+          "pct": 4.6341
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 1.0117
+          "pct": 1.0118
         },
         {
           "ca": "SSL.com",
@@ -4594,7 +4594,7 @@
         },
         {
           "ca": "GlobalSign nv-sa",
-          "pct": 0.122
+          "pct": 0.1219
         },
         {
           "ca": "Actalis",
@@ -4604,77 +4604,77 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 517054787,
+          "v": 517024869,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 211150841,
+          "v": 211129210,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 177383592,
+          "v": 177396490,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166858851,
+          "v": 166857250,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 135430696,
+          "v": 135455590,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59680098,
+          "v": 59677778,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 13028992,
+          "v": 13029811,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1693065,
+          "v": 1693052,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1570635,
+          "v": 1570186,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500536,
+          "v": 1500572,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668244,
+          "v": 668238,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 517151,
+          "v": 517165,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 288346,
+          "v": 288488,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 226746,
+          "v": 226773,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 96419,
+          "v": 96396,
           "at": 0
         },
         {
@@ -4684,7 +4684,7 @@
         },
         {
           "id": "d-trust",
-          "v": 50196,
+          "v": 50195,
           "at": 0
         },
         {
@@ -4694,7 +4694,7 @@
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43979,
+          "v": 43971,
           "at": 0
         },
         {
@@ -4749,7 +4749,7 @@
         },
         {
           "id": "certigna",
-          "v": 4140,
+          "v": 4137,
           "at": 0
         },
         {
@@ -4769,7 +4769,7 @@
         },
         {
           "id": "microsec-ltd.",
-          "v": 2780,
+          "v": 2779,
           "at": 0
         },
         {
@@ -4789,7 +4789,7 @@
         },
         {
           "id": "oiste",
-          "v": 2580,
+          "v": 2581,
           "at": 0
         },
         {
@@ -5088,7 +5088,7 @@
           "at": 0
         }
       ],
-      "hhi": 2372,
+      "hhi": 2371,
       "roots_all4": 90,
       "owners_all4": 38,
       "total_roots": 335,

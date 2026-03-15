@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T07:57:05.808306+00:00",
+    "generated_at": "2026-03-15T08:23:02.334548+00:00",
     "pipeline_version": "1.1",
     "total_orgs": 64,
     "total_cabf_ca_members": 56,
@@ -2168,18 +2168,18 @@
           "rob@sectigo.com",
           "tim.callan@sectigo.com"
         ],
-        "bugs_engaged": 116,
-        "comments": 231,
-        "technical_comments": 112,
-        "recent_bugs_engaged": 101,
-        "recent_technical_comments": 97,
+        "bugs_engaged": 117,
+        "comments": 233,
+        "technical_comments": 113,
+        "recent_bugs_engaged": 102,
+        "recent_technical_comments": 98,
         "by_year": {
           "2017": 3,
           "2018": 2,
           "2020": 14,
           "2021": 15,
           "2022": 8,
-          "2023": 8,
+          "2023": 10,
           "2024": 88,
           "2025": 86,
           "2026": 7
@@ -2198,12 +2198,12 @@
             13
           ],
           [
-            "Chunghwa Telecom",
-            9
+            "NETLOCK",
+            10
           ],
           [
-            "NETLOCK",
-            8
+            "Chunghwa Telecom",
+            9
           ],
           [
             "Telekom Security",
@@ -2992,11 +2992,11 @@
     "agwa-bugs@mm.beanwood.com": {
       "cabf_interested_party": "Andrew Ayer",
       "bugzilla": {
-        "bugs_engaged": 89,
-        "comments": 161,
-        "technical_comments": 111,
-        "recent_bugs_engaged": 70,
-        "recent_technical_comments": 94,
+        "bugs_engaged": 90,
+        "comments": 162,
+        "technical_comments": 112,
+        "recent_bugs_engaged": 71,
+        "recent_technical_comments": 95,
         "by_year": {
           "2017": 4,
           "2018": 6,
@@ -3004,7 +3004,7 @@
           "2020": 14,
           "2021": 47,
           "2022": 13,
-          "2023": 18,
+          "2023": 19,
           "2024": 36,
           "2025": 13,
           "2026": 5
