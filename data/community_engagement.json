@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:17:11.764845+00:00",
+    "generated_at": "2026-03-15T05:27:46.722107+00:00",
     "pipeline_version": "1.1",
-    "total_orgs": 74,
+    "total_orgs": 64,
     "total_cabf_ca_members": 56,
     "total_individuals": 118,
     "total_ballots": 174,
@@ -200,7 +200,7 @@
           "Ben Slaughter",
           "Dave Blunt",
           "Peter Bowen",
-          "White"
+          "Peter White"
         ],
         "working_groups": [
           "CSC",
@@ -395,42 +395,6 @@
         "top_cas_filed_about": []
       }
     },
-    "Carillon": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Amringer"
-        ],
-        "working_groups": [
-          "SMC"
-        ],
-        "by_year": {
-          "2025": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Certainly/Fastly": {
       "cabf_member": true,
       "bugzilla": {
@@ -477,7 +441,6 @@
         "recent_endorsed": 6,
         "individuals": [
           "Daniel Jeffery",
-          "Jeffery",
           "Wayne Thayer"
         ],
         "working_groups": [
@@ -687,8 +650,7 @@
         "recent_proposed": 1,
         "recent_endorsed": 1,
         "individuals": [
-          "Jos Purvis",
-          "Server Certificate Working Group Chair Jos Purvis"
+          "Jos Purvis"
         ],
         "working_groups": [
           "SC"
@@ -839,7 +801,6 @@
         "recent_endorsed": 22,
         "individuals": [
           "Ben Wilson",
-          "Code Signing Certificate Working Group Chair Dean Coclin",
           "Corey Bonnell",
           "Dean Coclin",
           "Jeremy Rowley",
@@ -1057,42 +1018,6 @@
         "top_cas_filed_about": []
       }
     },
-    "EnTrust": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Bruce Morton"
-        ],
-        "working_groups": [
-          "CSC"
-        ],
-        "by_year": {
-          "2021": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Entrust": {
       "cabf_member": true,
       "bugzilla": {
@@ -1106,13 +1031,12 @@
       },
       "ballots": {
         "proposed": 9,
-        "endorsed": 17,
+        "endorsed": 18,
         "recent_proposed": 5,
-        "recent_endorsed": 11,
+        "recent_endorsed": 12,
         "individuals": [
           "Bruce Morton",
           "Kirk Hall",
-          "Morton",
           "Paul van Brouwershaven"
         ],
         "working_groups": [
@@ -1142,7 +1066,7 @@
           },
           "2021": {
             "proposed": 1,
-            "endorsed": 1
+            "endorsed": 2
           },
           "2022": {
             "proposed": 0,
@@ -1155,42 +1079,6 @@
           "2024": {
             "proposed": 4,
             "endorsed": 3
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "Entrust Datacard that the Forum charter a working group to operate in accordance with the Scope": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Bruce Morton"
-        ],
-        "working_groups": [
-          "CSC"
-        ],
-        "by_year": {
-          "2019": {
-            "proposed": 0,
-            "endorsed": 1
           }
         }
       },
@@ -1291,8 +1179,8 @@
         "recent_proposed": 0,
         "recent_endorsed": 4,
         "individuals": [
+          "Ashish Dhiman",
           "Christophe Bonjean",
-          "Dhiman",
           "Doug Beattie",
           "Hugh Mercer",
           "Vermote"
@@ -1554,42 +1442,6 @@
         "top_cas_filed_about": []
       }
     },
-    "Internet Security Research Group": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Aaron Gable"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2025": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Izenpe": {
       "cabf_member": true,
       "bugzilla": {
@@ -1766,9 +1618,9 @@
       },
       "ballots": {
         "proposed": 2,
-        "endorsed": 1,
+        "endorsed": 2,
         "recent_proposed": 2,
-        "recent_endorsed": 1,
+        "recent_endorsed": 2,
         "individuals": [
           "Aaron Gable"
         ],
@@ -1778,6 +1630,10 @@
         "by_year": {
           "2024": {
             "proposed": 2,
+            "endorsed": 1
+          },
+          "2025": {
+            "proposed": 0,
             "endorsed": 1
           }
         }
@@ -1862,42 +1718,6 @@
         "individuals": [],
         "working_groups": [],
         "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "NCSSRs": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 2,
-        "recent_proposed": 0,
-        "recent_endorsed": 2,
-        "individuals": [
-          "Requirements"
-        ],
-        "working_groups": [
-          "NS"
-        ],
-        "by_year": {
-          "2024": {
-            "proposed": 0,
-            "endorsed": 2
-          }
-        }
       },
       "bug_filing": {
         "bugs_filed": 0,
@@ -2000,43 +1820,6 @@
         "top_cas_filed_about": []
       }
     },
-    "OPERA": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 2,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Tobias Josefowitz"
-        ],
-        "working_groups": [
-          "NS",
-          "SC"
-        ],
-        "by_year": {
-          "2020": {
-            "proposed": 0,
-            "endorsed": 2
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Opera": {
       "cabf_member": false,
       "bugzilla": {
@@ -2050,16 +1833,21 @@
       },
       "ballots": {
         "proposed": 0,
-        "endorsed": 3,
+        "endorsed": 5,
         "recent_proposed": 0,
         "recent_endorsed": 3,
         "individuals": [
           "Tobias Josefowitz"
         ],
         "working_groups": [
+          "NS",
           "SC"
         ],
         "by_year": {
+          "2020": {
+            "proposed": 0,
+            "endorsed": 2
+          },
           "2023": {
             "proposed": 0,
             "endorsed": 2
@@ -2346,8 +2134,7 @@
         "recent_proposed": 1,
         "recent_endorsed": 3,
         "individuals": [
-          "Thomas Zermeno",
-          "Zermeno"
+          "Thomas Zermeno"
         ],
         "working_groups": [
           "SC",
@@ -2446,7 +2233,6 @@
         "recent_proposed": 9,
         "recent_endorsed": 17,
         "individuals": [
-          "Barreira",
           "Callan",
           "France",
           "Martijn Katerbarg",
@@ -2627,42 +2413,6 @@
         "top_cas_filed_about": []
       }
     },
-    "Symantec": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Rick Andrews"
-        ],
-        "working_groups": [
-          "CSC"
-        ],
-        "by_year": {
-          "2016": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "TWCA": {
       "cabf_member": true,
       "bugzilla": {
@@ -2802,42 +2552,6 @@
         "top_cas_filed_about": []
       }
     },
-    "Trustwave": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Tim Shirley"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2018": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "VikingCloud": {
       "cabf_member": true,
       "bugzilla": {
@@ -2932,14 +2646,15 @@
       },
       "ballots": {
         "proposed": 0,
-        "endorsed": 2,
+        "endorsed": 3,
         "recent_proposed": 0,
-        "recent_endorsed": 2,
+        "recent_endorsed": 3,
         "individuals": [
           "Scott Rea"
         ],
         "working_groups": [
-          "CSC"
+          "CSC",
+          "SMC"
         ],
         "by_year": {
           "2024": {
@@ -2947,6 +2662,10 @@
             "endorsed": 1
           },
           "2025": {
+            "proposed": 0,
+            "endorsed": 1
+          },
+          "2026": {
             "proposed": 0,
             "endorsed": 1
           }
@@ -3029,78 +2748,6 @@
         "individuals": [],
         "working_groups": [],
         "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "note: for a \u201cred-line\u201d version, see email from Rich Smith on 12 July": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Morton"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2010": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "rundQuadrat": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 1,
-        "recent_proposed": 0,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Selbitschka"
-        ],
-        "working_groups": [
-          "SMC"
-        ],
-        "by_year": {
-          "2025": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
       },
       "bug_filing": {
         "bugs_filed": 0,
@@ -8443,11 +8090,9 @@
       "proposed": 6,
       "endorsed": 18,
       "recent_proposed": 3,
-      "recent_endorsed": 11,
+      "recent_endorsed": 12,
       "orgs": [
-        "EnTrust",
-        "Entrust",
-        "Entrust Datacard that the Forum charter a working group to operate in accordance with the Scope"
+        "Entrust"
       ],
       "working_groups": [
         "CSC",
@@ -8464,7 +8109,7 @@
         },
         "2019": {
           "proposed": 0,
-          "endorsed": 3
+          "endorsed": 2
         },
         "2020": {
           "proposed": 2,
@@ -8472,7 +8117,7 @@
         },
         "2021": {
           "proposed": 1,
-          "endorsed": 1
+          "endorsed": 2
         },
         "2022": {
           "proposed": 0,
@@ -8605,6 +8250,52 @@
         }
       }
     },
+    "Dean Coclin": {
+      "proposed": 3,
+      "endorsed": 3,
+      "recent_proposed": 0,
+      "recent_endorsed": 1,
+      "orgs": [
+        "DigiCert"
+      ],
+      "working_groups": [
+        "CSC",
+        "SC"
+      ],
+      "by_year": {
+        "2020": {
+          "proposed": 3,
+          "endorsed": 2
+        },
+        "2021": {
+          "proposed": 0,
+          "endorsed": 1
+        }
+      }
+    },
+    "Daniel Jeffery": {
+      "proposed": 3,
+      "endorsed": 2,
+      "recent_proposed": 3,
+      "recent_endorsed": 2,
+      "orgs": [
+        "Certainly/Fastly"
+      ],
+      "working_groups": [
+        "NS",
+        "SC"
+      ],
+      "by_year": {
+        "2024": {
+          "proposed": 2,
+          "endorsed": 1
+        },
+        "2025": {
+          "proposed": 1,
+          "endorsed": 1
+        }
+      }
+    },
     "Wayne Thayer": {
       "proposed": 2,
       "endorsed": 4,
@@ -8631,54 +8322,12 @@
         }
       }
     },
-    "Code Signing Certificate Working Group Chair Dean Coclin": {
-      "proposed": 3,
-      "endorsed": 0,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "DigiCert"
-      ],
-      "working_groups": [
-        "CSC",
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 3,
-          "endorsed": 0
-        }
-      }
-    },
-    "Daniel Jeffery": {
-      "proposed": 3,
-      "endorsed": 0,
-      "recent_proposed": 3,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Certainly/Fastly"
-      ],
-      "working_groups": [
-        "NS"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 2,
-          "endorsed": 0
-        },
-        "2025": {
-          "proposed": 1,
-          "endorsed": 0
-        }
-      }
-    },
     "Aaron Gable": {
       "proposed": 2,
       "endorsed": 2,
       "recent_proposed": 2,
       "recent_endorsed": 2,
       "orgs": [
-        "Internet Security Research Group",
         "Let's Encrypt"
       ],
       "working_groups": [
@@ -8717,6 +8366,28 @@
         }
       }
     },
+    "Jos Purvis": {
+      "proposed": 2,
+      "endorsed": 1,
+      "recent_proposed": 1,
+      "recent_endorsed": 1,
+      "orgs": [
+        "Cisco"
+      ],
+      "working_groups": [
+        "SC"
+      ],
+      "by_year": {
+        "2020": {
+          "proposed": 1,
+          "endorsed": 0
+        },
+        "2021": {
+          "proposed": 1,
+          "endorsed": 1
+        }
+      }
+    },
     "Paul van Brouwershaven": {
       "proposed": 2,
       "endorsed": 0,
@@ -8732,6 +8403,29 @@
         "2024": {
           "proposed": 2,
           "endorsed": 0
+        }
+      }
+    },
+    "Thomas Zermeno": {
+      "proposed": 1,
+      "endorsed": 3,
+      "recent_proposed": 1,
+      "recent_endorsed": 3,
+      "orgs": [
+        "SSL.com"
+      ],
+      "working_groups": [
+        "SC",
+        "SMC"
+      ],
+      "by_year": {
+        "2023": {
+          "proposed": 1,
+          "endorsed": 1
+        },
+        "2024": {
+          "proposed": 0,
+          "endorsed": 2
         }
       }
     },
@@ -8759,7 +8453,6 @@
       "recent_proposed": 0,
       "recent_endorsed": 3,
       "orgs": [
-        "OPERA",
         "Opera"
       ],
       "working_groups": [
@@ -8781,6 +8474,28 @@
         }
       }
     },
+    "Tim Callan": {
+      "proposed": 1,
+      "endorsed": 2,
+      "recent_proposed": 1,
+      "recent_endorsed": 2,
+      "orgs": [
+        "Sectigo"
+      ],
+      "working_groups": [
+        "SC"
+      ],
+      "by_year": {
+        "2023": {
+          "proposed": 0,
+          "endorsed": 1
+        },
+        "2024": {
+          "proposed": 1,
+          "endorsed": 1
+        }
+      }
+    },
     "Antonis Eleftheriadis": {
       "proposed": 1,
       "endorsed": 1,
@@ -8795,64 +8510,6 @@
       "by_year": {
         "2024": {
           "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
-    "Barreira": {
-      "proposed": 1,
-      "endorsed": 1,
-      "recent_proposed": 1,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Sectigo"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
-    "Thomas Zermeno": {
-      "proposed": 1,
-      "endorsed": 1,
-      "recent_proposed": 1,
-      "recent_endorsed": 1,
-      "orgs": [
-        "SSL.com"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2023": {
-          "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
-    "Jos Purvis": {
-      "proposed": 1,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Cisco"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 1,
-          "endorsed": 0
-        },
-        "2021": {
-          "proposed": 0,
           "endorsed": 1
         }
       }
@@ -8947,42 +8604,28 @@
         }
       }
     },
-    "Server Certificate Working Group Chair Jos Purvis": {
-      "proposed": 1,
-      "endorsed": 0,
-      "recent_proposed": 1,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Cisco"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2021": {
-          "proposed": 1,
-          "endorsed": 0
-        }
-      }
-    },
-    "Dean Coclin": {
+    "Scott Rea": {
       "proposed": 0,
       "endorsed": 3,
       "recent_proposed": 0,
-      "recent_endorsed": 1,
+      "recent_endorsed": 3,
       "orgs": [
-        "DigiCert"
+        "eMudhra"
       ],
       "working_groups": [
         "CSC",
-        "SC"
+        "SMC"
       ],
       "by_year": {
-        "2020": {
+        "2024": {
           "proposed": 0,
-          "endorsed": 2
+          "endorsed": 1
         },
-        "2021": {
+        "2025": {
+          "proposed": 0,
+          "endorsed": 1
+        },
+        "2026": {
           "proposed": 0,
           "endorsed": 1
         }
@@ -9015,48 +8658,6 @@
         "Bundesdruckerei/D-TRUST"
       ],
       "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 0,
-          "endorsed": 1
-        },
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Zermeno": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 2,
-      "orgs": [
-        "SSL.com"
-      ],
-      "working_groups": [
-        "SC",
-        "SMC"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 0,
-          "endorsed": 2
-        }
-      }
-    },
-    "Jeffery": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 2,
-      "orgs": [
-        "Certainly/Fastly"
-      ],
-      "working_groups": [
-        "NS",
         "SC"
       ],
       "by_year": {
@@ -9152,53 +8753,7 @@
         }
       }
     },
-    "Morton": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Entrust",
-        "note: for a \u201cred-line\u201d version, see email from Rich Smith on 12 July"
-      ],
-      "working_groups": [
-        "CSC",
-        "SC"
-      ],
-      "by_year": {
-        "2010": {
-          "proposed": 0,
-          "endorsed": 1
-        },
-        "2021": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Scott Rea": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 2,
-      "orgs": [
-        "eMudhra"
-      ],
-      "working_groups": [
-        "CSC"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 0,
-          "endorsed": 1
-        },
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Dhiman": {
+    "Ashish Dhiman": {
       "proposed": 0,
       "endorsed": 2,
       "recent_proposed": 0,
@@ -9217,24 +8772,6 @@
         "2025": {
           "proposed": 0,
           "endorsed": 1
-        }
-      }
-    },
-    "Requirements": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 2,
-      "orgs": [
-        "NCSSRs"
-      ],
-      "working_groups": [
-        "NS"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 0,
-          "endorsed": 2
         }
       }
     },
@@ -9292,7 +8829,7 @@
         }
       }
     },
-    "White": {
+    "Peter White": {
       "proposed": 0,
       "endorsed": 1,
       "recent_proposed": 0,
@@ -9323,24 +8860,6 @@
       ],
       "by_year": {
         "2024": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Tim Callan": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Sectigo"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2023": {
           "proposed": 0,
           "endorsed": 1
         }
@@ -9382,24 +8901,6 @@
         }
       }
     },
-    "Tim Shirley": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Trustwave"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2018": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
     "Hugh Mercer": {
       "proposed": 0,
       "endorsed": 1,
@@ -9418,24 +8919,6 @@
         }
       }
     },
-    "Rick Andrews": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Symantec"
-      ],
-      "working_groups": [
-        "CSC"
-      ],
-      "by_year": {
-        "2016": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
     "Andreas Henschel": {
       "proposed": 0,
       "endorsed": 1,
@@ -9443,42 +8926,6 @@
       "recent_endorsed": 1,
       "orgs": [
         "Bundesdruckerei/D-TRUST"
-      ],
-      "working_groups": [
-        "SMC"
-      ],
-      "by_year": {
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Selbitschka": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "rundQuadrat"
-      ],
-      "working_groups": [
-        "SMC"
-      ],
-      "by_year": {
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Amringer": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Carillon"
       ],
       "working_groups": [
         "SMC"

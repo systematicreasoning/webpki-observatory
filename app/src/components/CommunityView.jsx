@@ -423,9 +423,17 @@ const CommunityView = () => {
 
       {/* ── Standards Leadership ── */}
       <Card>
-        <CardTitle sub="Proposals = wrote the ballot language and drove it to vote. Endorsements = co-sponsored. Votes excluded — membership obligation, not voluntary contribution. Scraped from cabforum.org.">
-          Standards Leadership
-        </CardTitle>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 12 }}>
+          <CardTitle sub="Proposals = wrote the ballot language. Endorsements = co-sponsored. Votes excluded — membership obligation.">
+            Standards Leadership
+          </CardTitle>
+          <div style={toggleStyle}>
+            {[['recent', 'Recent (2021+)'], ['all', 'All Time']].map(([v, l]) => (
+              <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
+                onClick={() => setIsRecent(v === 'recent')}>{l}</button>
+            ))}
+          </div>
+        </div>
         <div style={{ display: 'flex', gap: 12, marginTop: 12, flexWrap: 'wrap' }}>
           {balOrgRows.map(({ org, p, e, people, wgs }) => (
             <div key={org} style={{
@@ -452,9 +460,17 @@ const CommunityView = () => {
 
       {/* ── Individuals ── */}
       <Card>
-        <CardTitle sub="Individuals participating without a CA or root program hat. Includes CA staff acting as individuals, independent researchers, and CABF Interested Parties (IP).">
-          Individual Participants
-        </CardTitle>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 10 }}>
+          <CardTitle sub="Individuals participating without a CA or root program hat. Includes CA staff acting as individuals, independent researchers, and CABF Interested Parties (IP).">
+            Individual Participants
+          </CardTitle>
+          <div style={toggleStyle}>
+            {[['recent', 'Recent (2021+)'], ['all', 'All Time']].map(([v, l]) => (
+              <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
+                onClick={() => setIsRecent(v === 'recent')}>{l}</button>
+            ))}
+          </div>
+        </div>
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 10 }}>
           <thead>
             <tr>

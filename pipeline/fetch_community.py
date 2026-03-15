@@ -145,25 +145,90 @@ ORG_CANONICAL = {
     "lets encrypt":         "Let's Encrypt",
     "let\u00b4s encrypt":   "Let's Encrypt",
     "isrg":                 "Let's Encrypt",
-    "entrust datacard": "Entrust",
+    "internet security research group": "Let's Encrypt",
+    "entrust":              "Entrust",
+    "entrust datacard":     "Entrust",
     "entrust datacard corporation": "Entrust",
-    "trustcor": "TrustCor Systems",
-    "trustcor systems": "TrustCor Systems",
-    "harica": "HARICA",
-    "ssl": "SSL.com",
-    "ssl corp": "SSL.com",
-    "d-trust": "Bundesdruckerei/D-TRUST",
-    "d trust": "Bundesdruckerei/D-TRUST",
-    "amazon": "Amazon Trust Services",
-    "cisco systems": "Cisco",
-    "opera software": "Opera",
-    "opera as": "Opera",
+    "entrust, inc":         "Entrust",
+    "entrust limited":      "Entrust",
+    "trustcor":             "TrustCor Systems",
+    "trustcor systems":     "TrustCor Systems",
+    "harica":               "HARICA",
+    "ssl":                  "SSL.com",
+    "ssl corp":             "SSL.com",
+    "ssl corporation":      "SSL.com",
+    "d-trust":              "Bundesdruckerei/D-TRUST",
+    "d trust":              "Bundesdruckerei/D-TRUST",
+    "amazon":               "Amazon Trust Services",
+    "cisco systems":        "Cisco",
+    "cisco":                "Cisco",
+    "opera software":       "Opera",
+    "opera as":             "Opera",
+    "opera software as":    "Opera",
+    "opera":                "Opera",
+    "globalsign nv":        "GlobalSign",
+    "asseco data systems sa (certum)": "Certum/Asseco",
+    "asseco":               "Certum/Asseco",
+    "certum":               "Certum/Asseco",
+    "swisssign ag":         "SwissSign",
+    "swisssign":            "SwissSign",
+    "izenpe s.a.":          "Izenpe",
+    "izenpe":               "Izenpe",
+    "trustwave":            None,   # defunct/absorbed
+    "symantec":             None,   # distrusted, defunct
+    "geotrust":             None,   # absorbed into DigiCert
+    "thawte":               None,   # absorbed into DigiCert
+    "verisign":             None,   # absorbed
+    "carillon information security": None,  # not publicly trusted CA member
+    "carillon":             None,
+    "rundquadrat":          None,   # certificate consumer, not CA
+    "qikfox":               None,   # certificate consumer
+    "zertificon":           None,   # certificate consumer
+    "netsolve":             None,
 }
 
+# Org names that are clearly parse artifacts (WG titles, boilerplate text, etc.)
+# Any org matching these patterns is discarded
+ORG_BLOCKLIST_PATTERNS = [
+    "working group",
+    "that the forum",
+    "in accordance with",
+    "red-line",
+    "red line",
+    "note:",
+    "ncss",
+    "requirements",
+    "scope",
+    "section ",
+]
+
 def canonical_org(org):
-    # Normalize curly apostrophes to straight before lookup
+    """Normalize org name. Returns None for defunct/irrelevant orgs."""
+    if not org or len(org) < 3:
+        return None
+    # Normalize curly apostrophes
     normalized = org.replace('\u2019', "'").replace('\u2018', "'").lower().strip()
-    return ORG_CANONICAL.get(normalized, org.replace('\u2019', "'").replace('\u2018', "'").strip())
+    # Check blocklist patterns first
+    for pat in ORG_BLOCKLIST_PATTERNS:
+        if pat in normalized:
+            return None
+    # Strip common WG chair prefixes
+    for prefix in [
+        "server certificate working group chair ",
+        "code signing certificate working group chair ",
+        "s/mime certificate working group chair ",
+        "network security working group chair ",
+        "working group chair ",
+    ]:
+        if normalized.startswith(prefix):
+            normalized = normalized[len(prefix):]
+    result = ORG_CANONICAL.get(normalized)
+    if result is None and normalized in ORG_CANONICAL:
+        return None  # explicitly set to None = discard
+    if result is not None:
+        return result
+    # Return cleaned original
+    return org.replace('\u2019', "'").replace('\u2018', "'").strip()
 
 
 def is_root_program(email, comment_time=""):
@@ -378,10 +443,49 @@ def analyze_ballots(ballots_cache):
         "Josefowitz":               "Tobias Josefowitz",
         "Henriksveen":              "Mads Egil Henriksveen",
         "Santoni":                  "Adriano Santoni",
+        "Barreira":                 "Tim Callan",  # Sectigo - Barreira is a variant
+        "Amringer":                 "Guillaume Amringer",
+        "Purvis":                   "Jos Purvis",
+        "Coclin":                   "Dean Coclin",
+        "Code Signing Certificate Working Group Chair Dean Coclin": "Dean Coclin",
+        "Morton":                   "Bruce Morton",
+        "Jeffery":                  "Daniel Jeffery",
+        "Dhiman":                   "Ashish Dhiman",
+        "Requirements":             None,  # parse artifact
+        "Bonjean":                  "Christophe Bonjean",
+        "Backman":                  "Antti Backman",
+        "Randall":                  "Brittany Randall",
+        "Shirley":                  "Tim Shirley",
+        "Rea":                      "Scott Rea",
+        "Carpenter":                "Niko Carpenter",
+        "Selbitschka":              "Stefan Selbitschka",
+        "Zermeno":                  "Thomas Zermeno",
+        "White":                    "Peter White",
+        "Blunt":                    "Dave Blunt",
+        "Bowen":                    "Peter Bowen",
     }
 
+    # WG chair prefixes to strip from names
+    WG_PREFIXES = [
+        "server certificate working group chair ",
+        "code signing certificate working group chair ",
+        "s/mime certificate working group chair ",
+        "network security working group chair ",
+        "working group chair ",
+    ]
+
     def canonical_ind(name):
-        return IND_NAME_CANONICAL.get(name.strip(), name.strip())
+        s = name.strip()
+        # Strip WG chair prefix
+        sl = s.lower()
+        for prefix in WG_PREFIXES:
+            if sl.startswith(prefix):
+                s = s[len(prefix):].strip()
+                break
+        result = IND_NAME_CANONICAL.get(s)
+        if result is None and s in IND_NAME_CANONICAL:
+            return None  # explicitly None = discard
+        return result if result is not None else s
 
     def parse_people(text):
         people = []
@@ -391,7 +495,7 @@ def analyze_ballots(ballots_cache):
         ):
             name = canonical_ind(m.group(1).strip())
             org = m.group(2).strip()
-            if len(name) > 3 and len(org) > 2:
+            if name and len(name) > 3 and len(org) > 2:
                 people.append((name, org))
         # 'Name of Org' pattern
         for m in re.finditer(
@@ -401,7 +505,7 @@ def analyze_ballots(ballots_cache):
         ):
             name = canonical_ind(m.group(1).strip())
             org = m.group(2).strip()
-            if len(name) > 3 and len(org) > 2:
+            if name and len(name) > 3 and len(org) > 2:
                 people.append((name, org))
         return people
 
@@ -437,6 +541,7 @@ def analyze_ballots(ballots_cache):
         for name, org in parse_people(prop_text):
             if is_rp_org(org): continue
             org = canonical_org(org)
+            if not org: continue
             org_ballots[org]["proposed"] += 1
             org_ballots[org]["individuals"].add(name)
             org_ballots[org]["wgs"].add(wg)
@@ -452,6 +557,7 @@ def analyze_ballots(ballots_cache):
         for name, org in parse_people(end_text):
             if is_rp_org(org): continue
             org = canonical_org(org)
+            if not org: continue
             org_ballots[org]["endorsed"] += 1
             org_ballots[org]["individuals"].add(name)
             org_ballots[org]["wgs"].add(wg)
