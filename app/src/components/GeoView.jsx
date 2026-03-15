@@ -111,8 +111,9 @@ const GeoView = () => {
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 180px), 1fr))',
                   gap: 8,
+                  textAlign: 'center',
                 }}
               >
                 <div style={{ textAlign: 'center' }}>

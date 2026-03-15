@@ -35,7 +35,7 @@ import {
 import CADetail from './CADetail';
 import { usePipeline } from '../PipelineContext';
 import {
-  cardHeaderStyle, compactTableStyle, controlRowStyle, expandedCellStyle, narrowStatGrid, scrollXStyle, searchInputNarrow,
+  cardHeaderStyle, compactTableStyle, controlRowStyle, expandedCellStyle, footnoteStyle, narrowStatGrid, scrollXStyle, searchInputNarrow,
 } from '../styles';
 
 /**
