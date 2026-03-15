@@ -116,6 +116,13 @@ jobs:
             git push origin main
           fi
 
+      - name: Save pipeline ops cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: pipeline/ops_cache
+          key: ops-cache-${{ runner.os }}-v2
+
   build:
     needs: update-data
     runs-on: ubuntu-latest
