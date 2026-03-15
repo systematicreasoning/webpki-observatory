@@ -70,11 +70,11 @@ def build_digest(snap: dict) -> dict:
     }
     pattern_count = sum(
         1 for e in dist_events
-        if "pattern_of_issues" in (e.get("reason_tags") or [])
+        if "pattern_of_issues" in (e.get("reasonTags") or e.get("reason_tags") or [])
     )
     ops_count = sum(
         1 for e in dist_events
-        if any(t in (e.get("reason_tags") or []) for t in OPS_TAGS)
+        if any(t in (e.get("reasonTags") or e.get("reason_tags") or []) for t in OPS_TAGS)
     )
 
     pms = snap["governance"]["programCommentSummary"]
@@ -124,6 +124,7 @@ def build_digest(snap: dict) -> dict:
                     "recentSubstantive": pms[prog]["recent_bugs_technical_oversight"],
                 }
                 for prog in ["chrome", "mozilla", "apple", "microsoft"]
+                if prog in pms
             },
             "bugCorpusTotal": snap["governance"]["meta"]["bugsTotal"],
         },
