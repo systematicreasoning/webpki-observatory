@@ -364,26 +364,29 @@ const CommunityView = () => {
       {/* ── Over-time chart ── */}
       <OverTimeChart orgs={orgs} />
 
+      {/* ── Tab-level Recent / All Time toggle ── */}
+      <div style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: 8 }}>
+        <span style={{ fontSize: 10, color: COLORS.t3 }}>Applies to all sections below:</span>
+        <div style={toggleStyle}>
+          {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
+            <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
+              onClick={() => setIsRecent(v === 'recent')}>{l}</button>
+          ))}
+        </div>
+      </div>
+
       {/* ── CA Organizations table ── */}
       <Card>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 10, gap: 12, flexWrap: 'wrap' }}>
           <CardTitle sub="All CABF CA members shown. Zero-engagement members collapsed below.">
             CA Organization Participation
           </CardTitle>
-          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ display: 'flex', gap: 4 }}>
-              <SortBtn id="score"  label="Score" />
-              <SortBtn id="name"   label="Name" />
-              <SortBtn id="bz"     label="Bugzilla" />
-              <SortBtn id="ballot" label="Ballots" />
-              <SortBtn id="filing" label="Filing" />
-            </div>
-            <div style={toggleStyle}>
-              {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
-                <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
-                  onClick={() => setIsRecent(v === 'recent')}>{l}</button>
-              ))}
-            </div>
+          <div style={{ display: 'flex', gap: 4 }}>
+            <SortBtn id="score"  label="Score" />
+            <SortBtn id="name"   label="Name" />
+            <SortBtn id="bz"     label="Bugzilla" />
+            <SortBtn id="ballot" label="Ballots" />
+            <SortBtn id="filing" label="Filing" />
           </div>
         </div>
 
@@ -459,17 +462,9 @@ const CommunityView = () => {
 
       {/* ── Standards Leadership ── */}
       <Card>
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 12 }}>
-          <CardTitle sub="Proposals = wrote the ballot language. Endorsements = co-sponsored. Votes excluded — membership obligation.">
-            Standards Leadership
-          </CardTitle>
-          <div style={toggleStyle}>
-            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
-              <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
-                onClick={() => setIsRecent(v === 'recent')}>{l}</button>
-            ))}
-          </div>
-        </div>
+        <CardTitle sub="Proposals = wrote the ballot language. Endorsements = co-sponsored. Votes excluded — membership obligation.">
+          Standards Leadership
+        </CardTitle>
         <div style={{ display: 'flex', gap: 12, marginTop: 12, flexWrap: 'wrap' }}>
           {balOrgRows.map(({ org, p, e, people, wgs }) => (
             <div key={org} style={{
@@ -507,12 +502,6 @@ const CommunityView = () => {
           <CardTitle sub="Individuals participating without a CA or root program hat. Includes CA staff acting as individuals, independent researchers, and CABF Observers (formal interested party status).">
             Individual Participants
           </CardTitle>
-          <div style={toggleStyle}>
-            {[['recent', 'Recent'], ['all', 'All Time']].map(([v, l]) => (
-              <button key={v} style={toggleBtn(isRecent ? v === 'recent' : v === 'all')}
-                onClick={() => setIsRecent(v === 'recent')}>{l}</button>
-            ))}
-          </div>
         </div>
         <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: 10 }}>
           <thead>
