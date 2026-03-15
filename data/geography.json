@@ -1,51 +1,51 @@
 {
-  "total": 1287867283,
+  "total": 1287883841,
   "regions": [
     {
       "region": "United States",
-      "issued": 1147356451,
-      "pct": 89.0896,
+      "issued": 1147368500,
+      "pct": 89.0894,
       "countries": [
         {
           "country": "United States",
-          "issued": 1147356451,
-          "pct": 89.0896,
+          "issued": 1147368500,
+          "pct": 89.0894,
           "ca_count": 29
         }
       ]
     },
     {
       "region": "Europe",
-      "issued": 139788390,
-      "pct": 10.8543,
+      "issued": 139792863,
+      "pct": 10.8545,
       "countries": [
         {
           "country": "United Kingdom",
-          "issued": 135331733,
-          "pct": 10.5082,
+          "issued": 135336232,
+          "pct": 10.5084,
           "ca_count": 3
         },
         {
           "country": "Belgium",
-          "issued": 1572648,
+          "issued": 1572625,
           "pct": 0.1221,
           "ca_count": 4
         },
         {
           "country": "Italy",
-          "issued": 1500574,
+          "issued": 1500575,
           "pct": 0.1165,
           "ca_count": 2
         },
         {
           "country": "Poland",
-          "issued": 668773,
+          "issued": 668767,
           "pct": 0.0519,
           "ca_count": 3
         },
         {
           "country": "Greece",
-          "issued": 517125,
+          "issued": 517126,
           "pct": 0.0402,
           "ca_count": 3
         },
@@ -63,7 +63,7 @@
         },
         {
           "country": "Sweden",
-          "issued": 35364,
+          "issued": 35365,
           "pct": 0.0027,
           "ca_count": 3
         },
@@ -197,18 +197,18 @@
     },
     {
       "region": "Asia-Pacific",
-      "issued": 537111,
+      "issued": 537147,
       "pct": 0.0417,
       "countries": [
         {
           "country": "China",
-          "issued": 328722,
+          "issued": 328763,
           "pct": 0.0255,
           "ca_count": 12
         },
         {
           "country": "Japan",
-          "issued": 199520,
+          "issued": 199515,
           "pct": 0.0155,
           "ca_count": 7
         },
