@@ -10,7 +10,7 @@ import {
 } from '../styles';
 
 /**
- * PolicyView — Policy Impact tab.
+ * PolicyView — BR Readiness tab.
  *
  * Projects the impact of upcoming Baseline Requirements validity
  * reductions (200d Mar 2026, 100d Mar 2027, 47d Mar 2029) on each

@@ -44,7 +44,7 @@ const TABS = [
   { id: 'crypto',      l: 'Cryptographic Posture' },
   { id: 'distrust',    l: 'Distrust History' },
   // Act 4 — Governance accountability
-  { id: 'policy',      l: 'Policy Impact' },
+  { id: 'policy',      l: 'BR Readiness' },
   { id: 'governance',  l: 'Governance Risk' },
   { id: 'community',   l: 'Ecosystem Participation' },
 ];
@@ -172,7 +172,7 @@ function AppContent() {
             </ErrorBoundary>
           )}
           {tab === 'policy' && (
-            <ErrorBoundary label="Policy Impact">
+            <ErrorBoundary label="BR Readiness">
               <PolicyView />
             </ErrorBoundary>
           )}

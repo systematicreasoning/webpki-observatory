@@ -42,7 +42,7 @@ TABS = [
     ("ops",         "Operational Risk",       "Incident rates, self-detection, policy/disclosure failures"),
     ("crypto",      "Cryptographic Posture",  "Root algorithms, key sizes, standards compliance"),
     ("distrust",    "Distrust History",       "All browser distrust events, posture, compliance patterns"),
-    ("policy",      "Policy Impact",          "CA/B Forum ballot activity, BR validity reduction readiness"),
+    ("policy",      "BR Readiness",          "CA/B Forum baseline requirements validity reduction readiness — which CAs are ready for 200d/100d/47d thresholds"),
     ("governance",  "Governance Risk",        "Root program oversight coverage, declining rates, Microsoft"),
     ("community",   "Ecosystem Participation","CABF member activity, ballot leadership, silent majority"),
 ]
