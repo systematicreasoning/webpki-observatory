@@ -376,9 +376,8 @@ const CommunityView = () => {
                 <td style={{ padding: '6px 8px' }}><MiniBar value={p}    max={maxBalP}   color={COLORS.gn} /></td>
                 <td style={{ padding: '6px 8px' }}><MiniBar value={e}    max={maxBallot} color={COLORS.tl} width={48} /></td>
                 <td style={{ padding: '6px 8px' }}><MiniBar value={f}    max={maxFiling} color={COLORS.pu} /></td>
-                <td style={{ padding: '6px 8px', fontSize: 9, color: COLORS.t3, maxWidth: 120 }}>
-                  {(o.ballots?.individuals || []).slice(0, 2).join(', ')}
-                  {(o.ballots?.individuals || []).length > 2 && ` +${o.ballots.individuals.length - 2}`}
+                <td style={{ padding: '6px 8px', fontSize: 9, color: COLORS.t3, maxWidth: 160, lineHeight: 1.4 }}>
+                  {(o.ballots?.individuals || []).join(', ')}
                 </td>
               </tr>
             ))}

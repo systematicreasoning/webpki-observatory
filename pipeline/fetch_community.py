@@ -459,6 +459,7 @@ def analyze_ballots(ballots_cache):
         "Carpenter":                "Niko Carpenter",
         "Selbitschka":              "Stefan Selbitschka",
         "Zermeno":                  "Thomas Zermeno",
+        "Tom Zermeno":              "Thomas Zermeno",
         "White":                    "Peter White",
         "Blunt":                    "Dave Blunt",
         "Bowen":                    "Peter Bowen",
@@ -475,6 +476,9 @@ def analyze_ballots(ballots_cache):
 
     def canonical_ind(name):
         s = name.strip()
+        # Strip leading "the " (e.g. "the Server Certificate Working Group Chair ...")
+        if s.lower().startswith("the "):
+            s = s[4:].strip()
         # Strip WG chair prefix
         sl = s.lower()
         for prefix in WG_PREFIXES:
