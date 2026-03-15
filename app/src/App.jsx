@@ -30,19 +30,23 @@ const GovernanceRiskView = lazy(() => import('./components/GovernanceRiskView'))
 const CommunityView = lazy(() => import('./components/CommunityView'));
 
 const TABS = [
-  { id: 'market', l: 'Market Share' },
-  { id: 'trust', l: 'Trust Surface' },
-  { id: 'conc', l: 'Concentration Risk' },
-  { id: 'tail', l: 'Long Tail Risk' },
-  { id: 'geo', l: 'Geographic Risk' },
-  { id: 'gov', l: 'Government Risk' },
-  { id: 'jurisdiction', l: 'Jurisdiction Risk' },
-  { id: 'ops', l: 'Operational Risk' },
-  { id: 'policy', l: 'Policy Impact' },
-  { id: 'crypto', l: 'Cryptographic Posture' },
-  { id: 'distrust', l: 'Distrust History' },
-  { id: 'governance', l: 'Governance Risk' },
-  { id: 'community', l: 'Community Governance' },
+  // Act 1 — The landscape
+  { id: 'market',      l: 'Market Share' },
+  { id: 'trust',       l: 'Trust Surface' },
+  { id: 'conc',        l: 'Concentration Risk' },
+  { id: 'tail',        l: 'Long Tail Risk' },
+  // Act 2 — Risk vectors
+  { id: 'geo',         l: 'Geographic Risk' },
+  { id: 'gov',         l: 'Government Risk' },
+  { id: 'jurisdiction',l: 'Jurisdiction Risk' },
+  // Act 3 — CA behavior
+  { id: 'ops',         l: 'Operational Risk' },
+  { id: 'crypto',      l: 'Cryptographic Posture' },
+  { id: 'distrust',    l: 'Distrust History' },
+  // Act 4 — Governance accountability
+  { id: 'policy',      l: 'Policy Impact' },
+  { id: 'governance',  l: 'Governance Risk' },
+  { id: 'community',   l: 'Ecosystem Participation' },
 ];
 
 const VALID_TAB_IDS = TABS.map((t) => t.id);
@@ -188,7 +192,7 @@ function AppContent() {
             </ErrorBoundary>
           )}
           {tab === 'community' && (
-            <ErrorBoundary label="Community Governance">
+            <ErrorBoundary label="Ecosystem Participation">
               <CommunityView />
             </ErrorBoundary>
           )}

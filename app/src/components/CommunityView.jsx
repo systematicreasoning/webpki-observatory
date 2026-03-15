@@ -77,7 +77,7 @@ const CommunityView = () => {
   if (!communityData) {
     return (
       <DataPending
-        tab="Community Governance"
+        tab="Ecosystem Participation"
         source="fetch_community.py → community_engagement.json"
         description="Run: python pipeline/fetch_community.py"
       />
