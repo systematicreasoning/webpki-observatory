@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:01:22.038521+00:00",
+    "generated_at": "2026-03-15T05:12:31.870600+00:00",
     "pipeline_version": "1.1",
     "total_orgs": 74,
     "total_cabf_ca_members": 56,
@@ -142,8 +142,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 2,
         "individuals": [
-          "Adriano Santoni",
-          "Santoni"
+          "Adriano Santoni"
         ],
         "working_groups": [
           "SC",
@@ -184,9 +183,9 @@
         "recent_proposed": 0,
         "recent_endorsed": 1,
         "individuals": [
+          "Ben Slaughter",
           "Dave Blunt",
           "Peter Bowen",
-          "Slaughter",
           "White"
         ],
         "working_groups": [
@@ -244,8 +243,8 @@
         "recent_proposed": 0,
         "recent_endorsed": 1,
         "individuals": [
-          "Entschew",
-          "Henschel"
+          "Andreas Henschel",
+          "Enrico Entschew"
         ],
         "working_groups": [
           "SC",
@@ -276,7 +275,6 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Henriksveen",
           "Mads Egil Henriksveen"
         ],
         "working_groups": [
@@ -419,7 +417,6 @@
         "individuals": [
           "Daniel Jeffery",
           "Jeffery",
-          "Thayer",
           "Wayne Thayer"
         ],
         "working_groups": [
@@ -513,7 +510,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Aleksieieva"
+          "Kateryna Aleksieieva"
         ],
         "working_groups": [
           "SC"
@@ -745,12 +742,9 @@
         "recent_endorsed": 7,
         "individuals": [
           "Ben Wilson",
-          "Bonnell",
           "Code Signing Certificate Working Group Chair Dean Coclin",
           "Corey Bonnell",
-          "Davidson",
           "Dean Coclin",
-          "Hollebeek",
           "Jeremy Rowley",
           "Stephen Davidson",
           "Tim Hollebeek"
@@ -946,10 +940,10 @@
         "recent_proposed": 3,
         "recent_endorsed": 0,
         "individuals": [
-          "Brouwershaven",
           "Bruce Morton",
           "Kirk Hall",
-          "Morton"
+          "Morton",
+          "Paul van Brouwershaven"
         ],
         "working_groups": [
           "CSC",
@@ -1220,11 +1214,8 @@
         "recent_proposed": 2,
         "recent_endorsed": 2,
         "individuals": [
-          "Dimitris Zacharopoulos",
-          "Dmitris Zacharopoulos",
-          "Eleftheriadis",
-          "Server Certificate Working Group Chair Dimitris Zacharopoulos",
-          "Zacharopoulos"
+          "Antonis Eleftheriadis",
+          "Dimitris Zacharopoulos"
         ],
         "working_groups": [
           "CSC",
@@ -1283,7 +1274,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Gable"
+          "Aaron Gable"
         ],
         "working_groups": [
           "SC"
@@ -1472,7 +1463,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Gable"
+          "Aaron Gable"
         ],
         "working_groups": [
           "SC"
@@ -1662,7 +1653,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Fuentes"
+          "Luis Fuentes"
         ],
         "working_groups": [
           "SC"
@@ -1723,7 +1714,6 @@
         "recent_proposed": 0,
         "recent_endorsed": 0,
         "individuals": [
-          "Josefowitz",
           "Tobias Josefowitz"
         ],
         "working_groups": [
@@ -2091,7 +2081,6 @@
           "Barreira",
           "Callan",
           "France",
-          "Katerbarg",
           "Martijn Katerbarg",
           "Rob Stradling",
           "Tim Callan"
@@ -2213,8 +2202,7 @@
         "recent_proposed": 0,
         "recent_endorsed": 2,
         "individuals": [
-          "Fischer",
-          "Mueller",
+          "Adrian Mueller",
           "Roman Fischer"
         ],
         "working_groups": [
@@ -7769,10 +7757,10 @@
     }
   },
   "ballot_individuals": {
-    "Davidson": {
-      "proposed": 34,
+    "Stephen Davidson": {
+      "proposed": 38,
       "endorsed": 1,
-      "recent_proposed": 19,
+      "recent_proposed": 23,
       "recent_endorsed": 1,
       "orgs": [
         "DigiCert"
@@ -7785,8 +7773,8 @@
       ]
     },
     "Dimitris Zacharopoulos": {
-      "proposed": 11,
-      "endorsed": 18,
+      "proposed": 15,
+      "endorsed": 27,
       "recent_proposed": 2,
       "recent_endorsed": 2,
       "orgs": [
@@ -7801,7 +7789,7 @@
     },
     "Tim Hollebeek": {
       "proposed": 9,
-      "endorsed": 17,
+      "endorsed": 18,
       "recent_proposed": 3,
       "recent_endorsed": 3,
       "orgs": [
@@ -7810,6 +7798,20 @@
       "working_groups": [
         "CSC",
         "NS",
+        "SC",
+        "SMC"
+      ]
+    },
+    "Martijn Katerbarg": {
+      "proposed": 8,
+      "endorsed": 13,
+      "recent_proposed": 1,
+      "recent_endorsed": 6,
+      "orgs": [
+        "Sectigo"
+      ],
+      "working_groups": [
+        "CSC",
         "SC",
         "SMC"
       ]
@@ -7830,8 +7832,8 @@
       ]
     },
     "Corey Bonnell": {
-      "proposed": 7,
-      "endorsed": 8,
+      "proposed": 8,
+      "endorsed": 10,
       "recent_proposed": 1,
       "recent_endorsed": 0,
       "orgs": [
@@ -7855,33 +7857,6 @@
         "SC"
       ]
     },
-    "Katerbarg": {
-      "proposed": 5,
-      "endorsed": 5,
-      "recent_proposed": 1,
-      "recent_endorsed": 3,
-      "orgs": [
-        "Sectigo"
-      ],
-      "working_groups": [
-        "SC",
-        "SMC"
-      ]
-    },
-    "Martijn Katerbarg": {
-      "proposed": 3,
-      "endorsed": 8,
-      "recent_proposed": 0,
-      "recent_endorsed": 3,
-      "orgs": [
-        "Sectigo"
-      ],
-      "working_groups": [
-        "CSC",
-        "SC",
-        "SMC"
-      ]
-    },
     "Neil Dunbar": {
       "proposed": 3,
       "endorsed": 7,
@@ -7892,19 +7867,6 @@
       ],
       "working_groups": [
         "NS",
-        "SC"
-      ]
-    },
-    "Zacharopoulos": {
-      "proposed": 2,
-      "endorsed": 8,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "HARICA"
-      ],
-      "working_groups": [
-        "CSC",
         "SC"
       ]
     },
@@ -7922,16 +7884,16 @@
         "SC"
       ]
     },
-    "Stephen Davidson": {
-      "proposed": 4,
-      "endorsed": 0,
-      "recent_proposed": 4,
+    "Wayne Thayer": {
+      "proposed": 2,
+      "endorsed": 4,
+      "recent_proposed": 0,
       "recent_endorsed": 0,
       "orgs": [
-        "DigiCert"
+        "Certainly/Fastly"
       ],
       "working_groups": [
-        "SMC"
+        "SC"
       ]
     },
     "Code Signing Certificate Working Group Chair Dean Coclin": {
@@ -7959,7 +7921,7 @@
         "NS"
       ]
     },
-    "Gable": {
+    "Aaron Gable": {
       "proposed": 2,
       "endorsed": 2,
       "recent_proposed": 0,
@@ -7972,19 +7934,7 @@
         "SC"
       ]
     },
-    "Thayer": {
-      "proposed": 1,
-      "endorsed": 4,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Certainly/Fastly"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Slaughter": {
+    "Ben Slaughter": {
       "proposed": 2,
       "endorsed": 1,
       "recent_proposed": 0,
@@ -7996,7 +7946,7 @@
         "SC"
       ]
     },
-    "Brouwershaven": {
+    "Paul van Brouwershaven": {
       "proposed": 2,
       "endorsed": 0,
       "recent_proposed": 0,
@@ -8020,31 +7970,21 @@
         "SC"
       ]
     },
-    "Server Certificate Working Group Chair Dimitris Zacharopoulos": {
-      "proposed": 2,
-      "endorsed": 0,
+    "Tobias Josefowitz": {
+      "proposed": 0,
+      "endorsed": 5,
       "recent_proposed": 0,
-      "recent_endorsed": 0,
+      "recent_endorsed": 1,
       "orgs": [
-        "HARICA"
+        "OPERA",
+        "Opera"
       ],
       "working_groups": [
+        "NS",
         "SC"
       ]
     },
-    "Bonnell": {
-      "proposed": 1,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "DigiCert"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Eleftheriadis": {
+    "Antonis Eleftheriadis": {
       "proposed": 1,
       "endorsed": 1,
       "recent_proposed": 0,
@@ -8080,20 +8020,6 @@
         "SC"
       ]
     },
-    "Tobias Josefowitz": {
-      "proposed": 0,
-      "endorsed": 4,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "OPERA",
-        "Opera"
-      ],
-      "working_groups": [
-        "NS",
-        "SC"
-      ]
-    },
     "Jos Purvis": {
       "proposed": 1,
       "endorsed": 1,
@@ -8106,7 +8032,7 @@
         "SC"
       ]
     },
-    "Aleksieieva": {
+    "Kateryna Aleksieieva": {
       "proposed": 1,
       "endorsed": 0,
       "recent_proposed": 0,
@@ -8118,25 +8044,39 @@
         "SC"
       ]
     },
-    "Fuentes": {
+    "Roman Fischer": {
+      "proposed": 0,
+      "endorsed": 3,
+      "recent_proposed": 0,
+      "recent_endorsed": 1,
+      "orgs": [
+        "SwissSign"
+      ],
+      "working_groups": [
+        "SC",
+        "SMC"
+      ]
+    },
+    "Adriano Santoni": {
+      "proposed": 0,
+      "endorsed": 3,
+      "recent_proposed": 0,
+      "recent_endorsed": 2,
+      "orgs": [
+        "Actalis"
+      ],
+      "working_groups": [
+        "SC",
+        "SMC"
+      ]
+    },
+    "Luis Fuentes": {
       "proposed": 0,
       "endorsed": 3,
       "recent_proposed": 0,
       "recent_endorsed": 0,
       "orgs": [
         "OISTE"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Wayne Thayer": {
-      "proposed": 1,
-      "endorsed": 0,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Certainly/Fastly"
       ],
       "working_groups": [
         "SC"
@@ -8179,32 +8119,7 @@
         "CSC"
       ]
     },
-    "Fischer": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "SwissSign"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Santoni": {
-      "proposed": 0,
-      "endorsed": 2,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Actalis"
-      ],
-      "working_groups": [
-        "SC",
-        "SMC"
-      ]
-    },
-    "Entschew": {
+    "Enrico Entschew": {
       "proposed": 0,
       "endorsed": 2,
       "recent_proposed": 0,
@@ -8239,6 +8154,18 @@
       ],
       "working_groups": [
         "NS",
+        "SC"
+      ]
+    },
+    "Mads Egil Henriksveen": {
+      "proposed": 0,
+      "endorsed": 2,
+      "recent_proposed": 0,
+      "recent_endorsed": 0,
+      "orgs": [
+        "Buypass"
+      ],
+      "working_groups": [
         "SC"
       ]
     },
@@ -8342,30 +8269,6 @@
         "SC"
       ]
     },
-    "Josefowitz": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Opera"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Hollebeek": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "DigiCert"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
     "France": {
       "proposed": 0,
       "endorsed": 1,
@@ -8414,18 +8317,6 @@
         "SC"
       ]
     },
-    "Henriksveen": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Buypass"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
     "Tim Callan": {
       "proposed": 0,
       "endorsed": 1,
@@ -8433,18 +8324,6 @@
       "recent_endorsed": 0,
       "orgs": [
         "Sectigo"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
-    "Dmitris Zacharopoulos": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "HARICA"
       ],
       "working_groups": [
         "SC"
@@ -8486,18 +8365,6 @@
         "SC"
       ]
     },
-    "Mads Egil Henriksveen": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 0,
-      "orgs": [
-        "Buypass"
-      ],
-      "working_groups": [
-        "SC"
-      ]
-    },
     "Hugh Mercer": {
       "proposed": 0,
       "endorsed": 1,
@@ -8522,7 +8389,7 @@
         "CSC"
       ]
     },
-    "Henschel": {
+    "Andreas Henschel": {
       "proposed": 0,
       "endorsed": 1,
       "recent_proposed": 0,
@@ -8558,19 +8425,7 @@
         "SMC"
       ]
     },
-    "Mueller": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "SwissSign"
-      ],
-      "working_groups": [
-        "SMC"
-      ]
-    },
-    "Roman Fischer": {
+    "Adrian Mueller": {
       "proposed": 0,
       "endorsed": 1,
       "recent_proposed": 0,
@@ -8589,18 +8444,6 @@
       "recent_endorsed": 1,
       "orgs": [
         "GlobalSign"
-      ],
-      "working_groups": [
-        "SMC"
-      ]
-    },
-    "Adriano Santoni": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Actalis"
       ],
       "working_groups": [
         "SMC"

@@ -354,13 +354,42 @@ def analyze_ballots(ballots_cache):
     def is_rp_org(org):
         return any(r in org.lower() for r in ROOT_PROGRAM_ORGS)
 
+    # Canonical individual name map — normalizes last-name-only and spelling variants
+    # to the full canonical name. Applied after parsing.
+    IND_NAME_CANONICAL = {
+        "Davidson":                 "Stephen Davidson",
+        "Katerbarg":                "Martijn Katerbarg",
+        "Zacharopoulos":            "Dimitris Zacharopoulos",
+        "Dmitris Zacharopoulos":    "Dimitris Zacharopoulos",
+        "Server Certificate Working Group Chair Dimitris Zacharopoulos": "Dimitris Zacharopoulos",
+        "Thayer":                   "Wayne Thayer",
+        "Bonnell":                  "Corey Bonnell",
+        "Hollebeek":                "Tim Hollebeek",
+        "Gable":                    "Aaron Gable",
+        "Slaughter":                "Ben Slaughter",
+        "Brouwershaven":            "Paul van Brouwershaven",
+        "Eleftheriadis":            "Antonis Eleftheriadis",
+        "Aleksieieva":              "Kateryna Aleksieieva",
+        "Henschel":                 "Andreas Henschel",
+        "Entschew":                 "Enrico Entschew",
+        "Fischer":                  "Roman Fischer",
+        "Mueller":                  "Adrian Mueller",
+        "Fuentes":                  "Luis Fuentes",
+        "Josefowitz":               "Tobias Josefowitz",
+        "Henriksveen":              "Mads Egil Henriksveen",
+        "Santoni":                  "Adriano Santoni",
+    }
+
+    def canonical_ind(name):
+        return IND_NAME_CANONICAL.get(name.strip(), name.strip())
+
     def parse_people(text):
         people = []
         # 'Name (Org)' pattern
         for m in re.finditer(
             r'([A-Z][a-záéíóúàèìòùäëïöüñ\s\-\.]+?)\s*\(([^)]+)\)', text
         ):
-            name = m.group(1).strip()
+            name = canonical_ind(m.group(1).strip())
             org = m.group(2).strip()
             if len(name) > 3 and len(org) > 2:
                 people.append((name, org))
@@ -370,7 +399,7 @@ def analyze_ballots(ballots_cache):
             r'([A-Za-z][A-Za-z\s\/\(\)]+?)(?:\s+and|\s*[,\.\—]|$)',
             text
         ):
-            name = m.group(1).strip()
+            name = canonical_ind(m.group(1).strip())
             org = m.group(2).strip()
             if len(name) > 3 and len(org) > 2:
                 people.append((name, org))

@@ -270,7 +270,7 @@ const GovernanceRiskView = () => {
       {/* ═══ OVERSIGHT TREND ═══ */}
       <Card>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 12 }}>
-          <CardTitle sub="Quarterly oversight comments per program. Each row scaled to its own peak so patterns are visible. Faded bars = single-person quarters (continuity risk).">
+          <CardTitle sub="Quarterly comment volume per program — shows trend and continuity risk. Uses raw substantive comment counts (pre-LLM filter) for historical consistency. Faded bars = single-person quarters (key-person dependency).">
             Oversight Trend and Concentration Risk
           </CardTitle>
           <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2, flexShrink: 0 }}>
@@ -341,6 +341,7 @@ const GovernanceRiskView = () => {
         <div style={{ display: 'flex', gap: 12, fontSize: 8, color: COLORS.t3, marginTop: 8 }}>
           <span><span style={{ display: 'inline-block', width: 12, height: 8, borderRadius: 2, background: COLORS.t2, opacity: 0.85, marginRight: 3, verticalAlign: 'middle' }} />Multi-contributor</span>
           <span><span style={{ display: 'inline-block', width: 12, height: 8, borderRadius: 2, background: COLORS.t2, opacity: 0.4, marginRight: 3, verticalAlign: 'middle', borderBottom: `2px solid ${COLORS.rd}` }} />Single contributor</span>
+          <span style={{ marginLeft: 'auto', color: COLORS.t3 }}>Note: counts here are unfiltered quarterly totals — higher than Report Card figures which exclude admin noise via LLM classification. Use this chart for trend direction, not absolute comparison.</span>
         </div>
       </Card>
 
@@ -739,6 +740,7 @@ const GovernanceRiskView = () => {
           } technical after pass 2.
           Comment authors attributed by email domain. Bot accounts excluded. Public Bugzilla only — private governance not captured.
           Microsoft operates Microsoft PKI Services (a publicly trusted CA); all their governance comments are self-incident responses. Their 0 coverage reflects genuine absence of public oversight engagement, not a data artifact.
+          Note: the Oversight Trend chart uses unfiltered quarterly comment totals for historical continuity — its values are higher than the LLM-filtered figures in the Report Card. Use the trend chart for directional analysis, not absolute comparison.
         </MethodologyItem>
         <MethodologyItem label="Enforcement">
           {totalEvents} distrust events curated from root program announcements, Bugzilla threads, CCADB status changes, and Apple support documents.
