@@ -807,16 +807,21 @@ def main():
             }),
         }
 
+    # Explicit map of known Bugzilla email -> CABF Interested Party name.
+    # Word-substring matching is too loose and creates false positives.
+    # Only include individuals whose email-to-name link is unambiguous.
+    KNOWN_IP_EMAILS = {
+        "ryan_hurst@hotmail.com":         "Ryan Hurst (Private Person)",
+        "agwa-bugs@mm.beanwood.com":       "Andrew Ayer",
+        "hanno@hboeck.de":                 "Hanno Böck",
+    }
+
     inds_out = {}
     for email in sorted(all_inds):
-        # Check if this individual is a named CABF interested party
-        name_match = None
-        email_lower = email.lower()
-        for ip in CABF_INTERESTED:
-            words = [w.lower() for w in ip.split() if len(w) > 3 and "(" not in w]
-            if any(w in email_lower for w in words):
-                name_match = ip
-                break
+        name_match = KNOWN_IP_EMAILS.get(email.lower())
+        # Verify the matched name is actually in the CABF interested parties list
+        if name_match and not any(name_match.lower() in ip.lower() for ip in CABF_INTERESTED):
+            name_match = None
         inds_out[email] = {
             "cabf_interested_party": name_match,
             "bugzilla": bz_inds.get(email, {

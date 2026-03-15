@@ -528,7 +528,6 @@ const CommunityView = () => {
               <tr key={email} style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
                 <td style={{ padding: '5px 8px' }}>
                   <div style={{ fontSize: 11, color: COLORS.tx, fontFamily: FONT_MONO }}>{maskEmail(email)}</div>
-                  {ip && <div style={{ fontSize: 9, color: COLORS.ac, marginTop: 1 }}>{ip}</div>}
                 </td>
                 <td style={{ padding: '5px 8px' }}>{ip && <IPBadge />}</td>
                 <td style={{ padding: '5px 8px' }}><MiniBar value={bz}   max={maxIndBz} color={COLORS.ac} /></td>
