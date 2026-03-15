@@ -782,7 +782,7 @@ const GovernanceRiskView = () => {
           Unit of analysis: CA Owner (organization level). Certificate counts: unexpired precertificates from CT logs via crt.sh, grouped by Root Owner.
           Incident rate (Ops‡): cumulative Bugzilla bugs / all-time certs × 1,000,000 (lifetime rate, not annual).
           Usage period (†): 365 / (all-time certs / unexpired certs) — measures actual certificate replacement behavior, not configured validity period.
-          Web coverage: trust store inclusion × StatCounter browser market share (Chrome ~77%, Apple ~18%, Mozilla ~2.5%, Microsoft {'<'}1%).
+          Web coverage: trust store inclusion × StatCounter browser market share (Chrome ~78%, Apple ~16%, Mozilla ~2%, Microsoft {'<'}1%). Values updated daily from StatCounter via pipeline.
           Pipeline runs daily at 06:00 UTC. Data freshness warnings: crt.sh/CCADB after 48h, critical after 7d.
           LLM comment classification uses claude-haiku. Classifications are cached and applied incrementally — new comments classified on each daily run. Unclassified comments default to governance=true.
         </MethodologyItem>

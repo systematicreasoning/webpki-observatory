@@ -733,7 +733,8 @@ export default function DistrustView() {
         <MethodologyItem label="Pipeline">
           CCADB detection → Bugzilla enrichment → LLM classification → merge.
           Caches Bugzilla profiles and classifications; only re-classifies when new bugs are filed or metadata is updated.
-          87% posture accuracy, 88% tag recall against 15-event ground truth.
+          16 events in corpus: 5 hand-curated (DigiNotar, ANSSI, India CCA, CNNIC, Symantec) with full Bugzilla evidence review; 11 LLM-classified from Bugzilla incident records and CCADB metadata with manual review of tags and posture assignments.
+          Accuracy figures are not formally tracked — all classifications are manually reviewed before publication.
         </MethodologyItem>
         <MethodologyItem label="Sources">
           Bugzilla CA Certificate Compliance, CCADB, mozilla.dev.security.policy, CCADB public list, root program blogs, security researcher reports.

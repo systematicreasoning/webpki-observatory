@@ -754,7 +754,7 @@ const GeoView = () => {
       </div>
 
       <MethodologyCard>
-        <MethodologyItem label="Jurisdiction">Derived from the CCADB CA Owner country field. Country-to-region mapping uses UN M49 standard geographic groupings.</MethodologyItem>
+        <MethodologyItem label="Jurisdiction">Derived from the CCADB CA Owner country field. Country-to-region mapping uses custom geographic groupings (United States separate, Europe, Asia-Pacific, Americas, Middle East / Africa) reflecting WebPKI concentration patterns rather than UN M49 standard groupings.</MethodologyItem>
         <MethodologyItem label="Government classification">Manually curated structural relationships identify CAs with government ownership or affiliation. "Government-affiliated" includes state-owned, military, and regulatory body CAs.</MethodologyItem>
         <MethodologyItem label="Limitation">Country reflects jurisdiction of incorporation per CCADB — not where infrastructure is operated, where subscribers are located, or where the CA may be subject to legal process. CAs with global operations face multi-jurisdictional exposure not captured here. A CA headquartered in one country may primarily serve another.</MethodologyItem>
       </MethodologyCard>

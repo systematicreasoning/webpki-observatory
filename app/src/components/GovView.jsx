@@ -383,6 +383,11 @@ const GovView = () => {
           "State-owned enterprise" = entity with direct state ownership or legislative mandate (e.g., Chunghwa Telecom is majority state-owned).
           Classifications are based on structural ownership and legislative relationships only — customer relationships with government agencies do not qualify.
         </MethodologyItem>
+        <MethodologyItem label="Share metric">
+          "Share of Trusted CAs" = government and state-owned CAs as a percentage of all currently trusted CA organizations by count.
+          Certificate issuance volume from gov/state CAs is substantially lower than their CA count share — most high-volume issuance comes from commercial CAs.
+          The risk is structural (trusted root presence), not volumetric.
+        </MethodologyItem>
         <MethodologyItem label="Source">
           Manually curated gov_classifications.json, cross-referenced with official corporate registries, legislation, and CCADB metadata.
         </MethodologyItem>
