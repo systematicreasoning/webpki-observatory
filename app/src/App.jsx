@@ -73,7 +73,12 @@ function AppContent() {
 
   // ── Theme ──
   const [theme, setTheme] = useState(() => {
-    try { return localStorage.getItem('theme') || 'dark'; } catch { return 'dark'; }
+    try {
+      const stored = localStorage.getItem('theme');
+      if (stored) return stored;
+    } catch {}
+    // Fall back to OS preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
