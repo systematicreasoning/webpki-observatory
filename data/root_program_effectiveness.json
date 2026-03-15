@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T07:29:58.512325+00:00",
+    "generated_at": "2026-03-15T08:23:02.141200+00:00",
     "bugs_total": 1690,
-    "bugs_with_comments": 1690,
-    "total_comments_raw": 22035,
-    "total_comments_analyzed": 6037,
+    "bugs_with_comments": 1689,
+    "total_comments_raw": 22032,
+    "total_comments_analyzed": 6035,
     "pipeline_version": "0.5",
     "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs."
   },
@@ -346,8 +346,8 @@
   },
   "discovery_methods": {
     "totals": {
-      "root_program": 882,
-      "unknown": 208,
+      "root_program": 881,
+      "unknown": 209,
       "community": 240,
       "audit": 95,
       "self_detected": 148,
@@ -428,10 +428,10 @@
         "y": 2021,
         "self_detected": 16,
         "external_researcher": 11,
-        "root_program": 100,
+        "root_program": 99,
         "community": 37,
         "audit": 6,
-        "unknown": 17,
+        "unknown": 18,
         "total": 187
       },
       {
@@ -688,10 +688,10 @@
   ],
   "program_comment_summary": {
     "chrome": {
-      "total_comments": 2113,
-      "substantive_comments": 2113,
+      "total_comments": 2112,
+      "substantive_comments": 2112,
       "workflow_events": 0,
-      "admin_comments": 399,
+      "admin_comments": 398,
       "oversight_comments": 1653,
       "recent_oversight_comments": 556,
       "technical_oversight_comments": 1336,
@@ -705,10 +705,10 @@
       "recent_bugs_technical_oversight": 239
     },
     "mozilla": {
-      "total_comments": 3243,
-      "substantive_comments": 3242,
+      "total_comments": 3242,
+      "substantive_comments": 3241,
       "workflow_events": 1,
-      "admin_comments": 2047,
+      "admin_comments": 2046,
       "oversight_comments": 1195,
       "recent_oversight_comments": 286,
       "technical_oversight_comments": 880,
@@ -1330,9 +1330,9 @@
       "microsoft_people": 0
     }
   ],
-  "bugs_analyzed": 1690,
-  "total_comments": 22035,
-  "substantive_comments": 6037,
+  "bugs_analyzed": 1689,
+  "total_comments": 22032,
+  "substantive_comments": 6035,
   "sample_pct": 100,
   "enforcement": {
     "chrome": {
@@ -2255,7 +2255,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 288228,
+        "certs": 288488,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2275,7 +2275,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 96310,
+        "certs": 96396,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2812,7 +2812,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517081129,
+        "certs_now": 517024869,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
