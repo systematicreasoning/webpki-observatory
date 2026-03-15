@@ -345,13 +345,34 @@ export const TabBar = ({ tabs, active, onSelect }) => {
           scrollbarWidth: 'none',
         }}
       >
-        {tabs.map((t) => (
+        {tabs.map((t) => {
+          const jsonPaths = {
+            market:       '$.market',
+            trust:        '$.trustSurface',
+            conc:         '$.concentration',
+            tail:         '$.market[?(@.share<0.01)]',
+            geo:          '$.geography',
+            gov:          '$.governmentRisk',
+            jurisdiction: '$.jurisdictionRisk',
+            ops:          '$.incidents',
+            crypto:       '$.cryptoSummary',
+            distrust:     '$.distrustEvents',
+            policy:       '$.brThresholds',
+            governance:   '$.governance',
+            community:    '$.ecosystemParticipation',
+          };
+          return (
           <button
             key={t.id}
             onClick={(e) => {
               onSelect(t.id);
               e.currentTarget.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             }}
+            data-tab-id={t.id}
+            data-json-path={jsonPaths[t.id] || `$.${t.id}`}
+            data-json-source="https://webpki.systematicreasoning.com/llm_snapshot.json"
+            aria-selected={active === t.id}
+            role="tab"
             style={{
               flex: '1 0 auto',
               minWidth: 0,
@@ -370,7 +391,8 @@ export const TabBar = ({ tabs, active, onSelect }) => {
           >
             {t.l}
           </button>
-        ))}
+          );
+        })}
       </div>
       {showRight && (
         <button onClick={() => scroll(1)} style={arrowStyle('right')} aria-label="Scroll tabs right">

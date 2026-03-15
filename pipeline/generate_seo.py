@@ -365,6 +365,59 @@ def generate_sitemap(dist_dir: str):
     print(f"  Generated sitemap.xml ({len(tabs)+2} URLs)")
 
 
+def generate_data_inventory(snap: dict, dist_dir: str):
+    """Generate /.well-known/data-inventory.json for agent discovery."""
+    gen = snap.get("generatedAt", "")[:10]
+    inventory = {
+        "name": "WebPKI Observatory",
+        "description": "Quantitative analysis of the Certificate Authority trust ecosystem. Updated daily.",
+        "url": SITE_URL,
+        "updatedAt": gen,
+        "datasets": [
+            {
+                "id": "llm_snapshot",
+                "title": "Full Observatory Snapshot",
+                "url": f"{SITE_URL}/llm_snapshot.json",
+                "schema": f"{SITE_URL}/schema.json",
+                "format": "application/json",
+                "sizeTokens": "~68000",
+                "updateFrequency": "daily",
+                "description": "Complete dataset: 96 trusted CAs, market share, concentration, trust surface, geographic/government/jurisdiction risk, compliance incidents, distrust events, cryptographic posture, root program governance, ecosystem participation.",
+                "topLevelKeys": list(snap.keys()),
+            },
+            {
+                "id": "tabs",
+                "title": "Per-Tab Static Pages",
+                "urlPattern": f"{SITE_URL}/tabs/{{tab_id}}.html",
+                "tabIds": ["market","trust","conc","tail","geo","gov","jurisdiction","ops","crypto","distrust","policy","governance","community"],
+                "description": "Static HTML page per Observatory tab with analyst summary text.",
+            },
+        ],
+        "jsonPaths": {
+            "market":       "$.market",
+            "trust":        "$.trustSurface",
+            "concentration":"$.concentration",
+            "geography":    "$.geography",
+            "government":   "$.governmentRisk",
+            "jurisdiction": "$.jurisdictionRisk",
+            "incidents":    "$.incidents",
+            "cryptography": "$.cryptoSummary",
+            "distrust":     "$.distrustEvents",
+            "governance":   "$.governance",
+            "ecosystem":    "$.ecosystemParticipation",
+            "chromeGrowth": "$.chromeRootStoreGrowth",
+            "tabIntros":    "$.tabIntros",
+        },
+        "contact": "https://systematicreasoning.com",
+    }
+
+    well_known = Path(dist_dir) / ".well-known"
+    well_known.mkdir(exist_ok=True)
+    out = well_known / "data-inventory.json"
+    out.write_text(json.dumps(inventory, indent=2))
+    print(f"  Generated .well-known/data-inventory.json")
+
+
 def main():
     print(f"generate_seo.py — {NOW.isoformat()[:19]}")
 
@@ -375,6 +428,7 @@ def main():
     generate_tab_pages(snap, DIST_DIR)
     update_llms_txt(snap, DIST_DIR)
     generate_sitemap(DIST_DIR)
+    generate_data_inventory(snap, DIST_DIR)
 
     print("  Done.")
 
