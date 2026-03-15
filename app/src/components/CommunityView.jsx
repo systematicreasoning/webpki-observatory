@@ -329,7 +329,7 @@ const CommunityView = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
 
-      <TabIntro quote="Visible participation records motivate broader engagement. What the ecosystem can observe is also what creates accountability.">
+      <TabIntro quote='"The strength of the wolf is the pack, and the strength of the pack is the wolf." — Rudyard Kipling, The Jungle Book'>
         Voluntary ecosystem contribution beyond compliance obligations. Three signals: Bugzilla
         engagement on other CAs' bugs, CA/B Forum ballot proposals and endorsements, and proactive
         bug filing. All 56 CABF CA members appear — including those with zero contribution.
