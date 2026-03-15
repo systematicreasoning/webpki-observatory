@@ -267,8 +267,6 @@ const GovernanceRiskView = () => {
                       return `${y}${y === currentYear ? ' (partial)' : ''} — ${row?.total_bugs || 0} bugs`;
                     }}
                   />
-                  <ReferenceLine x={2021} stroke={COLORS.ac} strokeDasharray="4 4"
-                    label={{ value: 'Chrome RP', position: 'insideTopLeft', fill: COLORS.ac, fontSize: 8 }} />
                   <Line dataKey="chrome"    stroke={STORE_COLORS.chrome}    strokeWidth={2} dot={false} name="chrome" />
                   <Line dataKey="mozilla"   stroke={STORE_COLORS.mozilla}   strokeWidth={2} dot={false} name="mozilla" />
                   <Line dataKey="apple"     stroke={STORE_COLORS.apple}     strokeWidth={1.5} dot={false} name="apple" strokeDasharray="3 3" />
@@ -283,7 +281,6 @@ const GovernanceRiskView = () => {
                   {p.charAt(0).toUpperCase() + p.slice(1)}
                 </span>
               ))}
-              <span style={{ marginLeft: 'auto' }}>Vertical line = 2021 Chrome Root Program launch</span>
             </div>
             <div style={{ ...footnoteStyle, marginTop: 6 }}>
               Both Chrome and Mozilla cover a declining share of an expanding bug corpus as the total number of CA compliance bugs has grown each year.
