@@ -137,8 +137,7 @@ const GovTable = () => {
  * GovView — Government Risk tab.
  *
  * Tracks government-operated and state-owned enterprise CAs.
- * 24 of 91 trusted CAs have structural government ties spanning
- * 13 jurisdictions. 10 are in all 4 trust stores.
+ * Counts and jurisdictions are computed from gov_risk.json at build time.
  */
 const GovView = () => {
   const { govRisk, intersections } = usePipeline();

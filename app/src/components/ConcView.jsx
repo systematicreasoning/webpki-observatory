@@ -116,7 +116,20 @@ const ConcView = () => {
   return (
     <div>
       <TabIntro quote="Concentration creates single points of catastrophic failure.">
-        Certificate issuance in the WebPKI is top-heavy: the top 3 CAs issued roughly 71% of all unexpired certificates, with Let's Encrypt alone accounting for about 40%. A single distrust event or operational failure at that scale would force millions of sites through emergency certificate replacement. CAs use this view to benchmark their position and the scrutiny that comes with it. Relying parties see why CA diversification and automated certificate lifecycle management are structural requirements for resilience.
+        {(() => {
+          const top3Pct = points[2]?.cumPct?.toFixed(0) || '—';
+          const leEntry = data.find(d => (d.ca || d.caOwner || '').toLowerCase().includes('let\'s encrypt') || (d.ca || d.caOwner || '').toLowerCase().includes('isrg'));
+          const lePct = leEntry ? ((leEntry.certs / totalCerts) * 100).toFixed(0) : null;
+          return (
+            <>
+              Certificate issuance in the WebPKI is top-heavy: the top 3 CAs account for {top3Pct}% of all unexpired certificates
+              {lePct ? `, with Let's Encrypt alone at ${lePct}%` : ''}.
+              {' '}A single distrust event or operational failure at that scale would force millions of sites through emergency certificate replacement.
+              CAs use this view to benchmark their position and the scrutiny that comes with it.
+              Relying parties see why CA diversification and automated certificate lifecycle management are structural requirements for resilience.
+            </>
+          );
+        })()}
       </TabIntro>
 
       {/* ── Summary stats ── */}

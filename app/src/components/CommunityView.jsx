@@ -102,7 +102,11 @@ const IPBadge = () => (
 
 /* ── Over-time chart ── */
 
-const CHART_YEARS = ['2017','2018','2019','2020','2021','2022','2023','2024','2025','2026'];
+const CHART_START = 2017;
+const CHART_YEARS = Array.from(
+  { length: new Date().getFullYear() - CHART_START + 1 },
+  (_, i) => String(CHART_START + i)
+);
 const ORG_COLORS = {
   Sectigo: '#f59e0b', HARICA: '#10b981', DigiCert: '#3b82f6',
   "Let's Encrypt": '#8b5cf6', Entrust: '#ef4444',
