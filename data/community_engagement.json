@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:28:39.995648+00:00",
+    "generated_at": "2026-03-15T05:30:02.677658+00:00",
     "pipeline_version": "1.1",
     "total_orgs": 64,
     "total_cabf_ca_members": 56,
@@ -2233,7 +2233,6 @@
         "recent_proposed": 9,
         "recent_endorsed": 17,
         "individuals": [
-          "Barreira",
           "Callan",
           "France",
           "Martijn Katerbarg",
@@ -8475,6 +8474,28 @@
         }
       }
     },
+    "Tim Callan": {
+      "proposed": 1,
+      "endorsed": 2,
+      "recent_proposed": 1,
+      "recent_endorsed": 2,
+      "orgs": [
+        "Sectigo"
+      ],
+      "working_groups": [
+        "SC"
+      ],
+      "by_year": {
+        "2023": {
+          "proposed": 0,
+          "endorsed": 1
+        },
+        "2024": {
+          "proposed": 1,
+          "endorsed": 1
+        }
+      }
+    },
     "Antonis Eleftheriadis": {
       "proposed": 1,
       "endorsed": 1,
@@ -8482,24 +8503,6 @@
       "recent_endorsed": 1,
       "orgs": [
         "HARICA"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2024": {
-          "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
-    "Barreira": {
-      "proposed": 1,
-      "endorsed": 1,
-      "recent_proposed": 1,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Sectigo"
       ],
       "working_groups": [
         "SC"
@@ -8857,24 +8860,6 @@
       ],
       "by_year": {
         "2024": {
-          "proposed": 0,
-          "endorsed": 1
-        }
-      }
-    },
-    "Tim Callan": {
-      "proposed": 0,
-      "endorsed": 1,
-      "recent_proposed": 0,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Sectigo"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2023": {
           "proposed": 0,
           "endorsed": 1
         }
