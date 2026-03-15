@@ -33,24 +33,21 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Save git-tracked meta before cache restore
-        run: cp pipeline/ops_cache/comment_count_meta.json /tmp/comment_count_meta.json 2>/dev/null || true
-
       - name: Restore pipeline ops cache
         uses: actions/cache@v4
         with:
-          path: pipeline/ops_cache
-          key: ops-cache-${{ runner.os }}-v2
+          path: |
+            pipeline/ops_cache/comments_cache.json
+            pipeline/ops_cache/comment_classifications.json
+            pipeline/ops_cache/classifications.json
+            pipeline/ops_cache/cabf_members.json
+            pipeline/ops_cache/cabforum_ballots.json
+            pipeline/ops_cache/chrome_root_store_cache.json
+            pipeline/ops_cache/microsoft_ctl_cache.json
+          key: ops-cache-${{ runner.os }}-v3
           restore-keys: |
-            ops-cache-${{ runner.os }}-v2
+            ops-cache-${{ runner.os }}-v3
             ops-cache-${{ runner.os }}-
-
-      - name: Restore git-tracked meta (overrides stale cached version)
-        run: |
-          if [ -f /tmp/comment_count_meta.json ]; then
-            cp /tmp/comment_count_meta.json pipeline/ops_cache/comment_count_meta.json
-            echo "  Restored comment_count_meta.json from git checkout"
-          fi
 
       - name: Install dependencies
         run: pip install -r pipeline/requirements.txt
@@ -130,8 +127,15 @@ jobs:
         uses: actions/cache/save@v4
         if: always()
         with:
-          path: pipeline/ops_cache
-          key: ops-cache-${{ runner.os }}-v2
+          path: |
+            pipeline/ops_cache/comments_cache.json
+            pipeline/ops_cache/comment_classifications.json
+            pipeline/ops_cache/classifications.json
+            pipeline/ops_cache/cabf_members.json
+            pipeline/ops_cache/cabforum_ballots.json
+            pipeline/ops_cache/chrome_root_store_cache.json
+            pipeline/ops_cache/microsoft_ctl_cache.json
+          key: ops-cache-${{ runner.os }}-v3
 
   build:
     needs: update-data
