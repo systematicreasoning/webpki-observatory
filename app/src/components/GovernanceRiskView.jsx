@@ -220,15 +220,20 @@ const GovernanceRiskView = () => {
           c={STORE_COLORS.mozilla}
         />
         <StatCard
-          l="Microsoft Other-CA Oversight"
-          v={msftOversight === 0 ? '0 bugs' : `${msftOversight} bugs`}
-          s="governance comments on other CAs — despite operating a CA"
+          l="Microsoft — Compliance Comments"
+          v={msftOversight === 0 ? '0' : msftOversight.toLocaleString()}
+          s="comments on other CAs' compliance incidents, ever — Microsoft operates a root program and a CA"
           c={msftOversight === 0 ? COLORS.am : COLORS.gn}
         />
         <StatCard
-          l="Corpus"
+          l="Compliance Incidents"
           v={(d.meta?.bugs_total || 0).toLocaleString()}
-          s={`bugs · ${(d.meta?.total_comments_raw || 0).toLocaleString()} comments classified`}
+          s="public CA compliance bugs in corpus (Bugzilla, 2014–present)"
+        />
+        <StatCard
+          l="Comments Classified"
+          v={(d.meta?.total_comments_raw || 0).toLocaleString()}
+          s="raw comments processed to identify oversight vs administrative activity"
         />
       </div>
 
