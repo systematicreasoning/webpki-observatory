@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:41:31.137668+00:00",
+    "generated_at": "2026-03-15T05:51:23.557849+00:00",
     "pipeline_version": "1.1",
-    "total_orgs": 64,
+    "total_orgs": 62,
     "total_cabf_ca_members": 56,
-    "total_individuals": 118,
+    "total_individuals": 83,
     "total_ballots": 174,
     "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Values may exceed bugs_engaged since multiple technical comments per bug are counted.",
     "note_baseline": "All CABF CA members included as org rows, even those with zero engagement. cabf_member=true indicates formal membership. Absence of engagement by a member is as meaningful as presence."
@@ -401,35 +401,17 @@
         "emails": [
           "wthayer@fastly.com"
         ],
-        "bugs_engaged": 5,
-        "comments": 6,
+        "bugs_engaged": 1,
+        "comments": 1,
         "technical_comments": 1,
-        "recent_bugs_engaged": 2,
+        "recent_bugs_engaged": 1,
         "recent_technical_comments": 1,
         "by_year": {
-          "2020": 4,
-          "2021": 1,
           "2026": 1
         },
         "top_cas_commented_on": [
           [
-            "DigiCert",
-            2
-          ],
-          [
             "D-Trust",
-            1
-          ],
-          [
-            "PKIoverheid",
-            1
-          ],
-          [
-            "Sectigo",
-            1
-          ],
-          [
-            "Ernst & Young New York",
             1
           ]
         ]
@@ -479,43 +461,6 @@
         "recent_technical_comments": 0,
         "by_year": {},
         "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 0,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [],
-        "working_groups": [],
-        "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "Certinomis": {
-      "cabf_member": false,
-      "bugzilla": {
-        "emails": [
-          "franck.leroy@certinomis.fr"
-        ],
-        "bugs_engaged": 1,
-        "comments": 2,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "StartCom",
-            2
-          ]
-        ]
       },
       "ballots": {
         "proposed": 0,
@@ -734,54 +679,28 @@
           "corey.bonnell@digicert.com",
           "dcbugzillaresponse@digicert.com",
           "jeremy.rowley@digicert.com",
-          "stephen.davidson@digicert.com",
           "tim.hollebeek@digicert.com"
         ],
-        "bugs_engaged": 28,
-        "comments": 39,
-        "technical_comments": 28,
-        "recent_bugs_engaged": 20,
-        "recent_technical_comments": 22,
+        "bugs_engaged": 10,
+        "comments": 16,
+        "technical_comments": 13,
+        "recent_bugs_engaged": 10,
+        "recent_technical_comments": 13,
         "by_year": {
-          "2017": 2,
-          "2019": 2,
-          "2020": 5,
-          "2021": 6,
-          "2022": 5,
-          "2024": 15,
+          "2024": 12,
           "2025": 4
         },
         "top_cas_commented_on": [
           [
-            "Microsoft PKI Services",
-            6
-          ],
-          [
             "Telia",
-            5
+            4
           ],
           [
             "CommScope",
             3
           ],
           [
-            "IdenTrust",
-            3
-          ],
-          [
-            "Amazon Trust Services",
-            3
-          ],
-          [
-            "Sectigo",
-            3
-          ],
-          [
-            "Entrust",
-            2
-          ],
-          [
-            "GoDaddy",
+            "Microsoft PKI Services",
             2
           ],
           [
@@ -790,6 +709,26 @@
           ],
           [
             "Telekom Security",
+            1
+          ],
+          [
+            "ICP-Brasil",
+            1
+          ],
+          [
+            "NETLOCK",
+            1
+          ],
+          [
+            "SECOM",
+            1
+          ],
+          [
+            "IdenTrust",
+            1
+          ],
+          [
+            "Entrust",
             1
           ]
         ]
@@ -1294,16 +1233,13 @@
           "dzacharo@harica.gr",
           "public-incident-reports@harica.gr"
         ],
-        "bugs_engaged": 48,
-        "comments": 83,
-        "technical_comments": 48,
-        "recent_bugs_engaged": 48,
-        "recent_technical_comments": 48,
+        "bugs_engaged": 35,
+        "comments": 60,
+        "technical_comments": 35,
+        "recent_bugs_engaged": 35,
+        "recent_technical_comments": 35,
         "by_year": {
-          "2021": 4,
-          "2022": 4,
-          "2023": 10,
-          "2024": 34,
+          "2024": 29,
           "2025": 20,
           "2026": 11
         },
@@ -1318,7 +1254,7 @@
           ],
           [
             "IdenTrust",
-            7
+            6
           ],
           [
             "certSIGN",
@@ -1329,24 +1265,24 @@
             4
           ],
           [
-            "Digicert",
-            4
-          ],
-          [
-            "Actalis",
+            "TWCA",
             3
           ],
           [
-            "SwissSign",
+            "Microsec",
             3
+          ],
+          [
+            "D-Trust",
+            2
           ],
           [
             "CFCA",
-            3
+            2
           ],
           [
-            "TWCA",
-            3
+            "SHECA",
+            2
           ]
         ]
       },
@@ -1557,19 +1493,15 @@
           "aaron@letsencrypt.org",
           "jsha@letsencrypt.org",
           "kchris@letsencrypt.org",
-          "mattm@letsencrypt.org",
-          "pporada@letsencrypt.org"
+          "mattm@letsencrypt.org"
         ],
-        "bugs_engaged": 55,
-        "comments": 77,
-        "technical_comments": 50,
-        "recent_bugs_engaged": 55,
-        "recent_technical_comments": 50,
+        "bugs_engaged": 35,
+        "comments": 46,
+        "technical_comments": 26,
+        "recent_bugs_engaged": 35,
+        "recent_technical_comments": 26,
         "by_year": {
-          "2021": 1,
-          "2022": 6,
-          "2023": 10,
-          "2024": 41,
+          "2024": 27,
           "2025": 17,
           "2026": 2
         },
@@ -1579,40 +1511,40 @@
             13
           ],
           [
-            "e-commerce monitoring GmbH",
-            7
-          ],
-          [
             "Microsoft PKI Services",
-            5
-          ],
-          [
-            "Entrust",
-            5
-          ],
-          [
-            "Asseco DS / Certum",
-            5
+            3
           ],
           [
             "SSL.com",
-            4
-          ],
-          [
-            "GoDaddy",
-            4
-          ],
-          [
-            "Certainly",
-            4
-          ],
-          [
-            "IdenTrust",
             3
           ],
           [
             "NETLOCK",
             3
+          ],
+          [
+            "CommScope",
+            3
+          ],
+          [
+            "Certainly",
+            3
+          ],
+          [
+            "IdenTrust",
+            2
+          ],
+          [
+            "eMudhra emSign PKI Services",
+            2
+          ],
+          [
+            "Chunghwa Telecom",
+            2
+          ],
+          [
+            "Actalis",
+            2
           ]
         ]
       },
@@ -1865,43 +1797,6 @@
         "top_cas_filed_about": []
       }
     },
-    "PKIoverheid": {
-      "cabf_member": false,
-      "bugzilla": {
-        "emails": [
-          "mark.janssen@logius.nl"
-        ],
-        "bugs_engaged": 1,
-        "comments": 3,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "Logius",
-            3
-          ]
-        ]
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 0,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [],
-        "working_groups": [],
-        "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Pos Digicert": {
       "cabf_member": true,
       "bugzilla": {
@@ -2094,39 +1989,13 @@
     "SSL.com": {
       "cabf_member": true,
       "bugzilla": {
-        "emails": [
-          "leo@ssl.com",
-          "rebeccak@ssl.com",
-          "secauditor@ssl.com"
-        ],
-        "bugs_engaged": 4,
-        "comments": 10,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 4,
-        "by_year": {
-          "2017": 1,
-          "2023": 8,
-          "2024": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Asseco DS / Certum",
-            7
-          ],
-          [
-            "Actalis",
-            1
-          ],
-          [
-            "E-Tugra",
-            1
-          ],
-          [
-            "Comodo",
-            1
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "ballots": {
         "proposed": 1,
@@ -2162,67 +2031,60 @@
       "cabf_member": true,
       "bugzilla": {
         "emails": [
-          "Robin.Alden@Sectigo.com",
           "inigo.barreira@sectigo.com",
           "martijn.katerbarg@sectigo.com",
           "rob@sectigo.com",
           "tim.callan@sectigo.com"
         ],
-        "bugs_engaged": 117,
-        "comments": 233,
-        "technical_comments": 113,
-        "recent_bugs_engaged": 102,
-        "recent_technical_comments": 98,
+        "bugs_engaged": 72,
+        "comments": 171,
+        "technical_comments": 72,
+        "recent_bugs_engaged": 72,
+        "recent_technical_comments": 72,
         "by_year": {
-          "2017": 3,
-          "2018": 2,
-          "2020": 14,
-          "2021": 15,
-          "2022": 8,
-          "2023": 10,
-          "2024": 88,
-          "2025": 86,
+          "2024": 80,
+          "2025": 84,
           "2026": 7
         },
         "top_cas_commented_on": [
           [
             "DigiCert",
-            75
+            62
           ],
           [
             "Entrust",
-            25
+            22
           ],
           [
             "Digicert",
             13
           ],
           [
-            "NETLOCK",
-            10
-          ],
-          [
             "Chunghwa Telecom",
             9
           ],
           [
-            "Telekom Security",
+            "NETLOCK",
             7
           ],
           [
             "Telia",
-            5
+            4
           ],
           [
             "IdenTrust",
-            5
-          ],
-          [
-            "GlobalSign",
             4
           ],
           [
             "certSIGN",
+            3
+          ],
+          [
+            "eMudhra",
+            3
+          ],
+          [
+            "Lawtrust",
             3
           ]
         ]
@@ -2682,27 +2544,13 @@
     "iSigma": {
       "cabf_member": false,
       "bugzilla": {
-        "emails": [
-          "chemalogo@isigma.es"
-        ],
-        "bugs_engaged": 17,
-        "comments": 94,
-        "technical_comments": 25,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 3,
-        "by_year": {
-          "2017": 9,
-          "2018": 11,
-          "2019": 21,
-          "2020": 42,
-          "2021": 11
-        },
-        "top_cas_commented_on": [
-          [
-            "Firmaprofesional",
-            94
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "ballots": {
         "proposed": 0,
@@ -2759,33 +2607,16 @@
     }
   },
   "individuals": {
-    "A************@telekom.de": {
+    "Arnold.Essing@telekom.de": {
       "cabf_interested_party": "Arno Fiedler",
       "bugzilla": {
-        "bugs_engaged": 21,
-        "comments": 106,
-        "technical_comments": 29,
-        "recent_bugs_engaged": 10,
-        "recent_technical_comments": 21,
-        "by_year": {
-          "2018": 3,
-          "2019": 26,
-          "2020": 22,
-          "2021": 18,
-          "2023": 10,
-          "2024": 23,
-          "2025": 4
-        },
-        "top_cas_commented_on": [
-          [
-            "Telekom Security",
-            72
-          ],
-          [
-            "T-Systems",
-            34
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 13,
@@ -2809,7 +2640,7 @@
         ]
       }
     },
-    "C******@trustasia.com": {
+    "Ca.mail@trustasia.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 3,
@@ -2843,32 +2674,7 @@
         ]
       }
     },
-    "G**************@staff.aruba.it": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 16,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2019": 16
-        },
-        "top_cas_commented_on": [
-          [
-            "Actalis",
-            16
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "Z******************@gmail.com": {
+    "Zacharias.bjorngren@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 20,
@@ -2877,9 +2683,9 @@
         "recent_bugs_engaged": 20,
         "recent_technical_comments": 9,
         "by_year": {
-          "2024": 11,
+          "2024": 10,
           "2025": 27,
-          "2026": 2
+          "2026": 3
         },
         "top_cas_commented_on": [
           [
@@ -2888,7 +2694,7 @@
           ],
           [
             "NETLOCK",
-            6
+            7
           ],
           [
             "Entrust",
@@ -2931,27 +2737,22 @@
         "top_cas_filed_about": []
       }
     },
-    "a**************@staff.aruba.it": {
+    "adriano.santoni@staff.aruba.it": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 19,
-        "comments": 90,
-        "technical_comments": 25,
-        "recent_bugs_engaged": 11,
-        "recent_technical_comments": 16,
+        "bugs_engaged": 6,
+        "comments": 7,
+        "technical_comments": 2,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 2,
         "by_year": {
-          "2017": 7,
-          "2019": 19,
-          "2020": 32,
-          "2021": 10,
-          "2023": 15,
           "2024": 1,
           "2025": 6
         },
         "top_cas_commented_on": [
           [
             "Actalis",
-            86
+            5
           ],
           [
             "Telekom Security",
@@ -2959,14 +2760,6 @@
           ],
           [
             "DigiCert",
-            1
-          ],
-          [
-            "Entrust",
-            1
-          ],
-          [
-            "SecureTrust",
             1
           ]
         ]
@@ -2989,66 +2782,59 @@
         ]
       }
     },
-    "a********@mm.beanwood.com": {
+    "agwa-bugs@mm.beanwood.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 90,
-        "comments": 162,
-        "technical_comments": 112,
-        "recent_bugs_engaged": 71,
-        "recent_technical_comments": 95,
+        "bugs_engaged": 26,
+        "comments": 46,
+        "technical_comments": 30,
+        "recent_bugs_engaged": 26,
+        "recent_technical_comments": 30,
         "by_year": {
-          "2017": 4,
-          "2018": 6,
-          "2019": 5,
-          "2020": 14,
-          "2021": 47,
-          "2022": 13,
-          "2023": 19,
-          "2024": 36,
+          "2024": 28,
           "2025": 13,
           "2026": 5
         },
         "top_cas_commented_on": [
           [
-            "Google Trust Services",
-            25
-          ],
-          [
-            "Microsoft PKI Services",
-            12
-          ],
-          [
             "DigiCert",
-            11
-          ],
-          [
-            "e-commerce monitoring GmbH",
             10
-          ],
-          [
-            "Amazon Trust Services",
-            9
-          ],
-          [
-            "IdenTrust",
-            8
           ],
           [
             "CommScope",
             8
           ],
           [
-            "Buypass",
-            8
+            "SSL.com",
+            6
+          ],
+          [
+            "e-commerce monitoring GmbH",
+            5
+          ],
+          [
+            "PostSignum",
+            3
           ],
           [
             "GoDaddy",
-            7
+            3
           ],
           [
-            "SSL.com",
-            6
+            "IdenTrust",
+            2
+          ],
+          [
+            "Disig",
+            1
+          ],
+          [
+            "SECOM",
+            1
+          ],
+          [
+            "Microsoft",
+            1
           ]
         ]
       },
@@ -3090,25 +2876,16 @@
         ]
       }
     },
-    "a****@fnmt.es": {
+    "alain@fnmt.es": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 26,
-        "technical_comments": 14,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 5,
-        "by_year": {
-          "2019": 11,
-          "2020": 4,
-          "2021": 11
-        },
-        "top_cas_commented_on": [
-          [
-            "FNMT",
-            26
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 3,
@@ -3124,24 +2901,23 @@
         ]
       }
     },
-    "a*************@fnmt.es": {
+    "amaya.espinosa@fnmt.es": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 52,
-        "technical_comments": 14,
-        "recent_bugs_engaged": 8,
-        "recent_technical_comments": 14,
+        "bugs_engaged": 6,
+        "comments": 39,
+        "technical_comments": 8,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 8,
         "by_year": {
-          "2023": 3,
-          "2024": 15,
+          "2024": 5,
           "2025": 25,
           "2026": 9
         },
         "top_cas_commented_on": [
           [
             "FNMT",
-            52
+            39
           ]
         ]
       },
@@ -3162,59 +2938,58 @@
         ]
       }
     },
-    "a***@aaomidi.com": {
+    "amir@aaomidi.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 81,
-        "comments": 212,
-        "technical_comments": 85,
-        "recent_bugs_engaged": 81,
-        "recent_technical_comments": 85,
+        "bugs_engaged": 57,
+        "comments": 137,
+        "technical_comments": 49,
+        "recent_bugs_engaged": 57,
+        "recent_technical_comments": 49,
         "by_year": {
-          "2023": 30,
-          "2024": 179,
+          "2024": 134,
           "2025": 3
         },
         "top_cas_commented_on": [
           [
             "Entrust",
-            61
+            46
           ],
           [
             "Chunghwa Telecom",
             19
           ],
           [
-            "Buypass",
-            11
-          ],
-          [
-            "NAVER Cloud Trust Services",
-            9
-          ],
-          [
-            "Asseco DS / Certum",
-            7
-          ],
-          [
             "Hongkong Post",
             7
-          ],
-          [
-            "Telekom Security",
-            7
-          ],
-          [
-            "Google Trust Services",
-            6
           ],
           [
             "DigiCert",
             6
           ],
           [
-            "VikingCloud",
-            6
+            "ACCV",
+            5
+          ],
+          [
+            "Disig",
+            5
+          ],
+          [
+            "e-commerce monitoring gmbh",
+            4
+          ],
+          [
+            "IdenTrust",
+            3
+          ],
+          [
+            "GoDaddy",
+            3
+          ],
+          [
+            "NETLOCK",
+            3
           ]
         ]
       },
@@ -3225,25 +3000,16 @@
         "top_cas_filed_about": []
       }
     },
-    "a********@camerfirma.com": {
+    "ana.lopes@camerfirma.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 24,
-        "comments": 73,
-        "technical_comments": 6,
-        "recent_bugs_engaged": 13,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2019": 6,
-          "2020": 28,
-          "2021": 39
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            73
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 10,
@@ -3261,121 +3027,16 @@
         ]
       }
     },
-    "b***********@gmail.com": {
+    "brauckmann@dfn-cert.de": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 20,
-        "comments": 60,
-        "technical_comments": 12,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2016": 1,
-          "2017": 27,
-          "2018": 30,
-          "2019": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "DigiCert",
-            40
-          ],
-          [
-            "DigiCert / Inteso San Paulo",
-            7
-          ],
-          [
-            "DigiCert / Justica",
-            5
-          ],
-          [
-            "DigiCert / Telecom Italia",
-            3
-          ],
-          [
-            "DigiCert / ADACOM",
-            2
-          ],
-          [
-            "DigiCert / Swiss Government",
-            1
-          ],
-          [
-            "DigiCert / Siemens",
-            1
-          ],
-          [
-            "DigiCert / InfoCert",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
         "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "b*************@t-systems.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 9,
-        "technical_comments": 7,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 5,
-          "2018": 4
-        },
-        "top_cas_commented_on": [
-          [
-            "T-Systems",
-            9
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "b*********@dfn-cert.de": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 36,
-        "technical_comments": 10,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 3,
-        "by_year": {
-          "2017": 3,
-          "2019": 7,
-          "2020": 9,
-          "2021": 9,
-          "2022": 8
-        },
-        "top_cas_commented_on": [
-          [
-            "T-Systems / DFN-PKI",
-            15
-          ],
-          [
-            "DFN-PKI",
-            11
-          ],
-          [
-            "Telekom Security",
-            9
-          ],
-          [
-            "T-Systems",
-            1
-          ]
-        ]
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 6,
@@ -3402,16 +3063,15 @@
         ]
       }
     },
-    "b*******@jesperkristensen.dk": {
+    "bugzilla@jesperkristensen.dk": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 5,
-        "technical_comments": 2,
-        "recent_bugs_engaged": 5,
-        "recent_technical_comments": 2,
+        "bugs_engaged": 4,
+        "comments": 4,
+        "technical_comments": 1,
+        "recent_bugs_engaged": 4,
+        "recent_technical_comments": 1,
         "by_year": {
-          "2021": 1,
           "2024": 1,
           "2025": 2,
           "2026": 1
@@ -3428,10 +3088,6 @@
           [
             "TWCA",
             1
-          ],
-          [
-            "KIR S.A.",
-            1
           ]
         ]
       },
@@ -3442,41 +3098,7 @@
         "top_cas_filed_about": []
       }
     },
-    "b*******@tds.xyz": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 3,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 2,
-          "2019": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Telia",
-            1
-          ],
-          [
-            "GlobalSign",
-            1
-          ],
-          [
-            "PROCERT",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "b*******@thelettereph.com": {
+    "bugzilla@thelettereph.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 3,
@@ -3510,59 +3132,25 @@
         "top_cas_filed_about": []
       }
     },
-    "c*******@multicert.com": {
-      "cabf_interested_party": "India PKI Forum",
-      "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 29,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 1,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2018": 1,
-          "2019": 17,
-          "2020": 6,
-          "2021": 5
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            25
-          ],
-          [
-            "Multicert",
-            4
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "c*@globaltrust.eu": {
+    "ca@globaltrust.eu": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 49,
-        "technical_comments": 13,
-        "recent_bugs_engaged": 9,
-        "recent_technical_comments": 13,
+        "bugs_engaged": 3,
+        "comments": 12,
+        "technical_comments": 2,
+        "recent_bugs_engaged": 3,
+        "recent_technical_comments": 2,
         "by_year": {
-          "2021": 14,
-          "2023": 7,
-          "2024": 28
+          "2024": 12
         },
         "top_cas_commented_on": [
           [
-            "e-commerce monitoring GmbH",
-            34
+            "e-commerce monitoring gmbh",
+            6
           ],
           [
-            "e-commerce monitoring gmbh",
-            15
+            "e-commerce monitoring GmbH",
+            6
           ]
         ]
       },
@@ -3581,18 +3169,15 @@
         ]
       }
     },
-    "c*****@ml.secom-sts.co.jp": {
+    "cainfo@ml.secom-sts.co.jp": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 13,
-        "comments": 84,
-        "technical_comments": 32,
-        "recent_bugs_engaged": 13,
-        "recent_technical_comments": 32,
+        "bugs_engaged": 10,
+        "comments": 77,
+        "technical_comments": 31,
+        "recent_bugs_engaged": 10,
+        "recent_technical_comments": 31,
         "by_year": {
-          "2021": 3,
-          "2022": 2,
-          "2023": 2,
           "2024": 24,
           "2025": 30,
           "2026": 23
@@ -3600,7 +3185,7 @@
         "top_cas_commented_on": [
           [
             "SECOM",
-            84
+            77
           ]
         ]
       },
@@ -3621,28 +3206,16 @@
         ]
       }
     },
-    "c****@gdca.com.cn": {
+    "capoc@gdca.com.cn": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 62,
-        "technical_comments": 18,
-        "recent_bugs_engaged": 4,
-        "recent_technical_comments": 15,
-        "by_year": {
-          "2018": 7,
-          "2019": 3,
-          "2020": 1,
-          "2021": 4,
-          "2024": 40,
-          "2025": 7
-        },
-        "top_cas_commented_on": [
-          [
-            "GDCA",
-            62
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 7,
@@ -3661,71 +3234,7 @@
         ]
       }
     },
-    "c*******@securetrust.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 13,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2019": 4,
-          "2020": 9
-        },
-        "top_cas_commented_on": [
-          [
-            "SecureTrust",
-            13
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "c**********@nekollc.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 6,
-        "technical_comments": 5,
-        "recent_bugs_engaged": 4,
-        "recent_technical_comments": 5,
-        "by_year": {
-          "2021": 3,
-          "2022": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "Let's Encrypt",
-            2
-          ],
-          [
-            "Sectigo",
-            2
-          ],
-          [
-            "Certainly",
-            1
-          ],
-          [
-            "Network Solutions",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "c********@gmail.com": {
+    "charter77@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 5,
@@ -3766,29 +3275,16 @@
         "top_cas_filed_about": []
       }
     },
-    "c***********@sheca.com": {
+    "chenxiaotong@sheca.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 10,
-        "comments": 25,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 10,
-        "recent_technical_comments": 4,
-        "by_year": {
-          "2021": 1,
-          "2022": 5,
-          "2023": 19
-        },
-        "top_cas_commented_on": [
-          [
-            "SHECA",
-            21
-          ],
-          [
-            "UniTrust",
-            4
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 5,
@@ -3805,7 +3301,7 @@
         ]
       }
     },
-    "c****@chenderson.org": {
+    "chris@chenderson.org": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 0,
@@ -3830,22 +3326,22 @@
         ]
       }
     },
-    "c*****@twca.com.tw": {
+    "chtsai@twca.com.tw": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 89,
-        "technical_comments": 28,
-        "recent_bugs_engaged": 6,
-        "recent_technical_comments": 28,
+        "bugs_engaged": 5,
+        "comments": 75,
+        "technical_comments": 22,
+        "recent_bugs_engaged": 5,
+        "recent_technical_comments": 22,
         "by_year": {
-          "2024": 73,
+          "2024": 59,
           "2025": 16
         },
         "top_cas_commented_on": [
           [
             "TWCA",
-            89
+            75
           ]
         ]
       },
@@ -3864,7 +3360,7 @@
         ]
       }
     },
-    "c************@gmail.com": {
+    "colinbawlings@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 5,
@@ -3901,89 +3397,26 @@
         "top_cas_filed_about": []
       }
     },
-    "c****@wilsonovi.com": {
+    "d-fernandez@izenpe.eus": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 3,
-        "technical_comments": 2,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 1,
+        "bugs_engaged": 7,
+        "comments": 69,
+        "technical_comments": 28,
+        "recent_bugs_engaged": 7,
+        "recent_technical_comments": 28,
         "by_year": {
-          "2020": 1,
-          "2021": 1,
-          "2023": 1
+          "2024": 14,
+          "2025": 55
         },
         "top_cas_commented_on": [
-          [
-            "Telekom Security",
-            1
-          ],
-          [
-            "Certigna",
-            1
-          ],
-          [
-            "GoDaddy",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "c***************@certsign.ro": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 18,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 14,
-          "2019": 4
-        },
-        "top_cas_commented_on": [
-          [
-            "certSIGN",
-            18
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "d**********@izenpe.eus": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 11,
-        "comments": 84,
-        "technical_comments": 32,
-        "recent_bugs_engaged": 10,
-        "recent_technical_comments": 32,
-        "by_year": {
-          "2020": 1,
-          "2021": 2,
-          "2024": 25,
-          "2025": 56
-        },
-        "top_cas_commented_on": [
-          [
-            "Izenpe",
-            44
-          ],
           [
             "IZENPE",
             40
+          ],
+          [
+            "Izenpe",
+            29
           ]
         ]
       },
@@ -4007,82 +3440,21 @@
         ]
       }
     },
-    "d*****@daknob.net": {
+    "daniel@binaryparadox.net": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 12,
-        "comments": 24,
-        "technical_comments": 14,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 14,
+        "bugs_engaged": 4,
+        "comments": 6,
+        "technical_comments": 1,
+        "recent_bugs_engaged": 4,
+        "recent_technical_comments": 1,
         "by_year": {
-          "2023": 13,
-          "2024": 10,
-          "2025": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Google Trust Services",
-            11
-          ],
-          [
-            "Buypass",
-            5
-          ],
-          [
-            "Entrust",
-            2
-          ],
-          [
-            "Telekom Security",
-            2
-          ],
-          [
-            "CommScope",
-            1
-          ],
-          [
-            "SHECA",
-            1
-          ],
-          [
-            "MICROSEC",
-            1
-          ],
-          [
-            "e-commerce monitoring GmbH",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "d*****@binaryparadox.net": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 10,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 5,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2020": 1,
-          "2023": 3,
           "2024": 2,
           "2025": 4
         },
         "top_cas_commented_on": [
           [
             "A-Trust",
-            3
-          ],
-          [
-            "KAMU SM",
             3
           ],
           [
@@ -4096,10 +3468,6 @@
           [
             "D-Trust",
             1
-          ],
-          [
-            "Entrust",
-            1
           ]
         ]
       },
@@ -4110,7 +3478,7 @@
         "top_cas_filed_about": []
       }
     },
-    "d**********@protonmail.com": {
+    "dean.f.reed@protonmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 10,
@@ -4161,7 +3529,7 @@
         "top_cas_filed_about": []
       }
     },
-    "d***************@gmail.com": {
+    "dexter.c.dopping@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 4,
@@ -4199,25 +3567,16 @@
         "top_cas_filed_about": []
       }
     },
-    "d**************@gmail.com": {
+    "douglas.beattie@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 13,
-        "comments": 75,
-        "technical_comments": 24,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 24,
-          "2019": 46,
-          "2020": 5
-        },
-        "top_cas_commented_on": [
-          [
-            "GlobalSign",
-            75
-          ]
-        ]
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 7,
@@ -4234,27 +3593,16 @@
         ]
       }
     },
-    "d******@e-tugra.com.tr": {
+    "dtokgoz@e-tugra.com.tr": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 13,
-        "comments": 62,
-        "technical_comments": 7,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 5,
-        "by_year": {
-          "2018": 8,
-          "2019": 9,
-          "2020": 3,
-          "2021": 39,
-          "2022": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "E-Tugra",
-            62
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 4,
@@ -4272,37 +3620,7 @@
         ]
       }
     },
-    "e*******@firmaprofesional.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 5,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2018": 2,
-          "2019": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "Firmaprofesional / SIGNE",
-            3
-          ],
-          [
-            "Firmaprofesional",
-            2
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "e*********@fastmail.com": {
+    "ekbugzilla@fastmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 5,
@@ -4343,53 +3661,16 @@
         "top_cas_filed_about": []
       }
     },
-    "e************@docusign.com": {
+    "eusebio.herrera@camerfirma.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 20,
-        "technical_comments": 1,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 10,
-          "2018": 10
-        },
-        "top_cas_commented_on": [
-          [
-            "DocuSign/Keynectis",
-            20
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
         "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "e**************@camerfirma.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 21,
-        "comments": 95,
-        "technical_comments": 9,
-        "recent_bugs_engaged": 9,
-        "recent_technical_comments": 5,
-        "by_year": {
-          "2018": 2,
-          "2019": 22,
-          "2020": 32,
-          "2021": 38,
-          "2022": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            95
-          ]
-        ]
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 5,
@@ -4407,7 +3688,7 @@
         ]
       }
     },
-    "e***************@logalty.com": {
+    "ext-antoni.camon@logalty.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 7,
@@ -4450,26 +3731,16 @@
         ]
       }
     },
-    "f*****@aoc.cat": {
+    "fferre@aoc.cat": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 60,
-        "technical_comments": 10,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 10,
-          "2018": 37,
-          "2019": 12,
-          "2020": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Consorci AOC",
-            60
-          ]
-        ]
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 4,
@@ -4487,50 +3758,15 @@
         ]
       }
     },
-    "f*******@gmail.com": {
+    "gabriel.petcu@certsign.ro": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 12,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
+        "bugs_engaged": 12,
+        "comments": 54,
+        "technical_comments": 19,
+        "recent_bugs_engaged": 12,
+        "recent_technical_comments": 19,
         "by_year": {
-          "2017": 2,
-          "2018": 9,
-          "2019": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Certinomis",
-            9
-          ],
-          [
-            "Certinomis / Docapost",
-            3
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "g************@certsign.ro": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 17,
-        "comments": 75,
-        "technical_comments": 23,
-        "recent_bugs_engaged": 17,
-        "recent_technical_comments": 23,
-        "by_year": {
-          "2020": 1,
-          "2021": 4,
-          "2022": 9,
-          "2023": 7,
           "2024": 25,
           "2025": 25,
           "2026": 4
@@ -4538,7 +3774,7 @@
         "top_cas_commented_on": [
           [
             "certSIGN",
-            75
+            54
           ]
         ]
       },
@@ -4561,60 +3797,16 @@
         ]
       }
     },
-    "g*****@fozzie.dev": {
+    "george@fozzie.dev": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 38,
-        "comments": 106,
-        "technical_comments": 62,
-        "recent_bugs_engaged": 14,
-        "recent_technical_comments": 14,
-        "by_year": {
-          "2020": 79,
-          "2021": 27
-        },
-        "top_cas_commented_on": [
-          [
-            "Sectigo",
-            28
-          ],
-          [
-            "Asseco DS / Certum",
-            11
-          ],
-          [
-            "Disig",
-            11
-          ],
-          [
-            "E-Tugra",
-            9
-          ],
-          [
-            "Camerfirma",
-            8
-          ],
-          [
-            "DigiCert",
-            7
-          ],
-          [
-            "SwissSign",
-            5
-          ],
-          [
-            "Izenpe",
-            5
-          ],
-          [
-            "GlobalSign",
-            3
-          ],
-          [
-            "SecureTrust",
-            3
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 25,
@@ -4647,34 +3839,7 @@
         ]
       }
     },
-    "g***@ndc.gov.tw": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 25,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 4,
-          "2019": 15,
-          "2020": 6
-        },
-        "top_cas_commented_on": [
-          [
-            "GRCA",
-            25
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "h*********@gmail.com": {
+    "hablutzel1@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 6,
@@ -4721,7 +3886,7 @@
         "top_cas_filed_about": []
       }
     },
-    "h****@hboeck.de": {
+    "hanno@hboeck.de": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 8,
@@ -4792,53 +3957,16 @@
         ]
       }
     },
-    "h***@zeger.at": {
+    "hanyong.park@navercorp.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 13,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 3,
-        "by_year": {
-          "2023": 13
-        },
-        "top_cas_commented_on": [
-          [
-            "e-commerce monitoring GmbH",
-            12
-          ],
-          [
-            "e-commerce monitoring gmbh",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
         "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "h***********@navercorp.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 25,
-        "technical_comments": 15,
-        "recent_bugs_engaged": 4,
-        "recent_technical_comments": 15,
-        "by_year": {
-          "2022": 4,
-          "2023": 21
-        },
-        "top_cas_commented_on": [
-          [
-            "NAVER Cloud Trust Services",
-            25
-          ]
-        ]
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 4,
@@ -4855,32 +3983,16 @@
         ]
       }
     },
-    "h***@twca.com.tw": {
+    "hcli@twca.com.tw": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 11,
-        "comments": 53,
-        "technical_comments": 15,
-        "recent_bugs_engaged": 9,
-        "recent_technical_comments": 11,
-        "by_year": {
-          "2019": 3,
-          "2020": 3,
-          "2021": 13,
-          "2022": 15,
-          "2023": 12,
-          "2024": 7
-        },
-        "top_cas_commented_on": [
-          [
-            "TWCA",
-            40
-          ],
-          [
-            "Taiwan-CA",
-            13
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 6,
@@ -4903,16 +4015,15 @@
         ]
       }
     },
-    "h*********@navercorp.com": {
+    "hogeun.yoo@navercorp.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 20,
+        "bugs_engaged": 5,
+        "comments": 18,
         "technical_comments": 9,
-        "recent_bugs_engaged": 6,
+        "recent_bugs_engaged": 5,
         "recent_technical_comments": 9,
         "by_year": {
-          "2022": 2,
           "2024": 9,
           "2025": 7,
           "2026": 2
@@ -4920,7 +4031,7 @@
         "top_cas_commented_on": [
           [
             "NAVER Cloud Trust Services",
-            20
+            18
           ]
         ]
       },
@@ -4939,96 +4050,16 @@
         ]
       }
     },
-    "i****@startcomca.com": {
+    "jaas@kflag.net": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 18,
-        "technical_comments": 3,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 17,
-          "2020": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            10
-          ],
-          [
-            "StartCom",
-            6
-          ],
-          [
-            "Sectigo",
-            1
-          ],
-          [
-            "Private keys for certificates exposed th",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
         "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "j******@izenpe.eus": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 4,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 1,
-        "recent_technical_comments": 1,
-        "by_year": {
-          "2020": 2,
-          "2025": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "IZENPE",
-            2
-          ],
-          [
-            "Izenpe",
-            2
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "j***@kflag.net": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 10,
-        "comments": 17,
-        "technical_comments": 12,
-        "recent_bugs_engaged": 1,
-        "recent_technical_comments": 3,
-        "by_year": {
-          "2016": 1,
-          "2017": 4,
-          "2018": 3,
-          "2019": 2,
-          "2020": 4,
-          "2021": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "Let's Encrypt",
-            17
-          ]
-        ]
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 4,
@@ -5046,23 +4077,21 @@
         ]
       }
     },
-    "j******@accv.es": {
+    "jamador@accv.es": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 45,
-        "technical_comments": 11,
+        "bugs_engaged": 4,
+        "comments": 38,
+        "technical_comments": 10,
         "recent_bugs_engaged": 4,
         "recent_technical_comments": 10,
         "by_year": {
-          "2018": 1,
-          "2019": 6,
           "2024": 38
         },
         "top_cas_commented_on": [
           [
             "ACCV",
-            45
+            38
           ]
         ]
       },
@@ -5081,57 +4110,16 @@
         ]
       }
     },
-    "j**********@telekom.de": {
+    "jc@insufficient.coffee": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 6,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2020": 3,
-          "2021": 1,
-          "2023": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "Telekom Security",
-            5
-          ],
-          [
-            "T-Systems",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
         "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "j*@insufficient.coffee": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 7,
-        "technical_comments": 2,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2017": 2,
-          "2021": 1,
-          "2022": 3,
-          "2024": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Let's Encrypt",
-            7
-          ]
-        ]
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 3,
@@ -5149,61 +4137,16 @@
         ]
       }
     },
-    "j*******@titanous.com": {
+    "jonathan@titanous.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 31,
-        "comments": 46,
-        "technical_comments": 9,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 27,
-          "2018": 2,
-          "2019": 17
-        },
-        "top_cas_commented_on": [
-          [
-            "Visa",
-            5
-          ],
-          [
-            "GlobalSign",
-            4
-          ],
-          [
-            "DigiCert",
-            3
-          ],
-          [
-            "Certinomis",
-            3
-          ],
-          [
-            "Kamu SM",
-            3
-          ],
-          [
-            "QuoVadis",
-            2
-          ],
-          [
-            "CFCA",
-            2
-          ],
-          [
-            "Telia",
-            2
-          ],
-          [
-            "WISeKey",
-            2
-          ],
-          [
-            "T-Systems",
-            2
-          ]
-        ]
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 16,
@@ -5236,32 +4179,7 @@
         ]
       }
     },
-    "j***********@gmail.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 10,
-        "technical_comments": 2,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2019": 10
-        },
-        "top_cas_commented_on": [
-          [
-            "CFCA",
-            10
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "j**********@disig.sk": {
+    "jozef.nigut@disig.sk": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 5,
@@ -5297,29 +4215,26 @@
         ]
       }
     },
-    "j*****@protonmail.com": {
+    "jrmoir@protonmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 20,
-        "comments": 36,
-        "technical_comments": 10,
-        "recent_bugs_engaged": 20,
-        "recent_technical_comments": 10,
+        "bugs_engaged": 14,
+        "comments": 25,
+        "technical_comments": 5,
+        "recent_bugs_engaged": 14,
+        "recent_technical_comments": 5,
         "by_year": {
-          "2021": 1,
-          "2022": 1,
-          "2023": 1,
-          "2024": 18,
+          "2024": 10,
           "2025": 15
         },
         "top_cas_commented_on": [
           [
-            "Entrust",
-            10
-          ],
-          [
             "DigiCert",
             9
+          ],
+          [
+            "Entrust",
+            4
           ],
           [
             "Telia",
@@ -5334,14 +4249,6 @@
             2
           ],
           [
-            "IdenTrust",
-            2
-          ],
-          [
-            "e-commerce monitoring GmbH",
-            2
-          ],
-          [
             "Google Trust Services",
             1
           ],
@@ -5350,41 +4257,15 @@
             1
           ],
           [
+            "IdenTrust",
+            1
+          ],
+          [
             "Digicert",
             1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "j******@protonmail.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 5,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2024": 1,
-          "2025": 4
-        },
-        "top_cas_commented_on": [
-          [
-            "eMudhra",
-            2
           ],
           [
-            "KIR",
-            2
-          ],
-          [
-            "Telekom Security",
+            "VikingCloud",
             1
           ]
         ]
@@ -5396,62 +4277,16 @@
         "top_cas_filed_about": []
       }
     },
-    "k****************@gmail.com": {
+    "kathleen.a.wilson@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 32,
-        "comments": 61,
-        "technical_comments": 34,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 17,
-        "by_year": {
-          "2020": 39,
-          "2021": 10,
-          "2022": 1,
-          "2023": 11
-        },
-        "top_cas_commented_on": [
-          [
-            "SK ID Solutions",
-            6
-          ],
-          [
-            "GRCA",
-            6
-          ],
-          [
-            "PKIoverheid",
-            5
-          ],
-          [
-            "Asseco DS / Certum",
-            5
-          ],
-          [
-            "Microsoft PKI Services",
-            4
-          ],
-          [
-            "SHECA",
-            3
-          ],
-          [
-            "Izenpe",
-            3
-          ],
-          [
-            "QSCert",
-            3
-          ],
-          [
-            "GlobalSign",
-            3
-          ],
-          [
-            "Atos",
-            3
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 18,
@@ -5486,59 +4321,57 @@
         ]
       }
     },
-    "k*************@endurance.com": {
+    "malcolm.doody@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 42,
-        "technical_comments": 9,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 9,
+        "bugs_engaged": 25,
+        "comments": 28,
+        "technical_comments": 2,
+        "recent_bugs_engaged": 25,
+        "recent_technical_comments": 2,
         "by_year": {
-          "2021": 41,
-          "2022": 1
+          "2025": 23,
+          "2026": 5
         },
         "top_cas_commented_on": [
           [
-            "Network Solutions",
-            29
+            "NETLOCK",
+            5
           ],
           [
-            "Web.com",
-            13
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "l************@yahoo.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 6,
-        "technical_comments": 6,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 6,
-        "by_year": {
-          "2021": 1,
-          "2023": 5
-        },
-        "top_cas_commented_on": [
+            "PKIoverheid",
+            4
+          ],
           [
-            "Hongkong Post",
+            "GoDaddy",
             3
           ],
           [
-            "SHECA",
+            "Certigna",
             2
           ],
           [
-            "Let's Encrypt",
+            "Financijska agencija (Fina)",
+            2
+          ],
+          [
+            "Microsoft PKI Services",
+            2
+          ],
+          [
+            "Firmaprofesional",
+            1
+          ],
+          [
+            "TrustAsia",
+            1
+          ],
+          [
+            "D-Trust",
+            1
+          ],
+          [
+            "CFCA",
             1
           ]
         ]
@@ -5550,96 +4383,22 @@
         "top_cas_filed_about": []
       }
     },
-    "m************@gmail.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 80,
-        "comments": 95,
-        "technical_comments": 54,
-        "recent_bugs_engaged": 74,
-        "recent_technical_comments": 51,
-        "by_year": {
-          "2020": 6,
-          "2021": 17,
-          "2022": 11,
-          "2023": 14,
-          "2024": 44,
-          "2025": 1,
-          "2026": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "SHECA",
-            8
-          ],
-          [
-            "Entrust",
-            8
-          ],
-          [
-            "Sectigo",
-            8
-          ],
-          [
-            "IdenTrust",
-            5
-          ],
-          [
-            "WISeKey",
-            4
-          ],
-          [
-            "SECOM",
-            4
-          ],
-          [
-            "DigiCert",
-            3
-          ],
-          [
-            "Telia",
-            3
-          ],
-          [
-            "Digicert",
-            3
-          ],
-          [
-            "SSL.com",
-            3
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "m****@certizen.com": {
+    "manho@certizen.com": {
       "cabf_interested_party": "Certizen Limited",
       "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 102,
-        "technical_comments": 41,
-        "recent_bugs_engaged": 7,
+        "bugs_engaged": 5,
+        "comments": 80,
+        "technical_comments": 39,
+        "recent_bugs_engaged": 5,
         "recent_technical_comments": 39,
         "by_year": {
-          "2019": 13,
-          "2022": 1,
-          "2023": 8,
           "2024": 76,
           "2025": 4
         },
         "top_cas_commented_on": [
           [
             "Hongkong Post",
-            89
-          ],
-          [
-            "Hongkong Post / Certizen",
-            13
+            80
           ]
         ]
       },
@@ -5658,48 +4417,23 @@
         ]
       }
     },
-    "m**********@docapost.fr": {
+    "marco.menonna@staff.aruba.it": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 5,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
+        "bugs_engaged": 6,
+        "comments": 35,
+        "technical_comments": 12,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 12,
         "by_year": {
-          "2019": 5
-        },
-        "top_cas_commented_on": [
-          [
-            "Certinomis",
-            5
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "m************@staff.aruba.it": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 46,
-        "technical_comments": 17,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 17,
-        "by_year": {
-          "2024": 27,
+          "2024": 16,
           "2025": 16,
           "2026": 3
         },
         "top_cas_commented_on": [
           [
             "Actalis",
-            46
+            35
           ]
         ]
       },
@@ -5718,27 +4452,16 @@
         ]
       }
     },
-    "m********@camerfirma.com": {
+    "martin_ja@camerfirma.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 27,
-        "comments": 102,
-        "technical_comments": 11,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 1,
-        "by_year": {
-          "2017": 3,
-          "2018": 36,
-          "2019": 36,
-          "2020": 18,
-          "2021": 9
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            102
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 4,
@@ -5756,27 +4479,25 @@
         ]
       }
     },
-    "m**************@cybertrust.co.jp": {
+    "masond@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 3,
-        "comments": 5,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 2,
+        "comments": 7,
+        "technical_comments": 1,
+        "recent_bugs_engaged": 3,
         "recent_technical_comments": 1,
         "by_year": {
-          "2017": 1,
-          "2019": 1,
-          "2021": 2,
-          "2023": 1
+          "2024": 5,
+          "2026": 2
         },
         "top_cas_commented_on": [
           [
-            "Cybertrust Japan",
-            3
+            "Entrust",
+            5
           ],
           [
-            "DigiCert / CTJ",
+            "Microsoft PKI Services",
             2
           ]
         ]
@@ -5788,110 +4509,79 @@
         "top_cas_filed_about": []
       }
     },
-    "m*****@gmail.com": {
+    "mathew.hodson@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 23,
-        "comments": 114,
+        "bugs_engaged": 33,
+        "comments": 39,
         "technical_comments": 26,
-        "recent_bugs_engaged": 19,
-        "recent_technical_comments": 17,
+        "recent_bugs_engaged": 33,
+        "recent_technical_comments": 26,
         "by_year": {
-          "2019": 9,
-          "2020": 39,
-          "2021": 14,
-          "2023": 37,
-          "2024": 15
+          "2024": 36,
+          "2025": 1,
+          "2026": 2
         },
         "top_cas_commented_on": [
           [
-            "DigiCert",
-            104
+            "Entrust",
+            5
+          ],
+          [
+            "SECOM",
+            4
+          ],
+          [
+            "IdenTrust",
+            3
           ],
           [
             "Digicert",
-            10
+            3
+          ],
+          [
+            "Telia",
+            2
+          ],
+          [
+            "D-Trust",
+            2
+          ],
+          [
+            "Microsec",
+            2
+          ],
+          [
+            "DigiCert",
+            1
+          ],
+          [
+            "Firmaprofesional",
+            1
+          ],
+          [
+            "eMudhra emSign PKI Services",
+            1
           ]
         ]
       },
       "bug_filing": {
-        "bugs_filed": 16,
-        "recent_bugs_filed": 14,
-        "by_year": {
-          "2020": 2,
-          "2023": 9,
-          "2024": 5
-        },
-        "top_cas_filed_about": [
-          [
-            "DigiCert",
-            14
-          ],
-          [
-            "Digicert",
-            2
-          ]
-        ]
+        "bugs_filed": 0,
+        "recent_bugs_filed": 0,
+        "by_year": {},
+        "top_cas_filed_about": []
       }
     },
-    "m*******@thisisntrocket.science": {
+    "matthias@thisisntrocket.science": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 64,
-        "comments": 135,
-        "technical_comments": 67,
-        "recent_bugs_engaged": 56,
-        "recent_technical_comments": 55,
-        "by_year": {
-          "2020": 24,
-          "2021": 75,
-          "2022": 19,
-          "2023": 13,
-          "2024": 3,
-          "2025": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Sectigo",
-            26
-          ],
-          [
-            "Google Trust Services",
-            22
-          ],
-          [
-            "Camerfirma",
-            12
-          ],
-          [
-            "Entrust",
-            9
-          ],
-          [
-            "SSL.com",
-            7
-          ],
-          [
-            "Firmaprofesional",
-            7
-          ],
-          [
-            "Network Solutions",
-            5
-          ],
-          [
-            "Web.com",
-            5
-          ],
-          [
-            "KIR S.A.",
-            5
-          ],
-          [
-            "IdenTrust",
-            4
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 9,
@@ -5926,62 +4616,58 @@
         ]
       }
     },
-    "m*****@lebihan.pl": {
+    "mfsull@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 21,
-        "comments": 42,
-        "technical_comments": 22,
-        "recent_bugs_engaged": 18,
-        "recent_technical_comments": 21,
+        "bugs_engaged": 5,
+        "comments": 8,
+        "technical_comments": 3,
+        "recent_bugs_engaged": 5,
+        "recent_technical_comments": 3,
         "by_year": {
-          "2019": 2,
-          "2020": 1,
-          "2021": 28,
-          "2022": 11
+          "2024": 8
         },
         "top_cas_commented_on": [
           [
-            "KIR S.A.",
-            20
-          ],
-          [
-            "CFCA",
-            5
-          ],
-          [
-            "Telekom Security",
-            5
-          ],
-          [
-            "Certigna",
-            2
-          ],
-          [
             "DigiCert",
-            2
+            5
           ],
           [
-            "Microsoft PKI Services",
-            2
-          ],
-          [
-            "UniTrust",
-            1
-          ],
-          [
-            "Certainly",
-            1
-          ],
-          [
-            "certSIGN",
-            1
-          ],
-          [
-            "PKIoverheid",
-            1
+            "Digicert",
+            3
           ]
         ]
+      },
+      "bug_filing": {
+        "bugs_filed": 16,
+        "recent_bugs_filed": 14,
+        "by_year": {
+          "2020": 2,
+          "2023": 9,
+          "2024": 5
+        },
+        "top_cas_filed_about": [
+          [
+            "DigiCert",
+            14
+          ],
+          [
+            "Digicert",
+            2
+          ]
+        ]
+      }
+    },
+    "michel@lebihan.pl": {
+      "cabf_interested_party": null,
+      "bugzilla": {
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 28,
@@ -6016,23 +4702,23 @@
         ]
       }
     },
-    "m**********@gmail.com": {
+    "mike.shaver@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 31,
-        "comments": 66,
-        "technical_comments": 17,
-        "recent_bugs_engaged": 31,
-        "recent_technical_comments": 17,
+        "bugs_engaged": 28,
+        "comments": 61,
+        "technical_comments": 16,
+        "recent_bugs_engaged": 28,
+        "recent_technical_comments": 16,
         "by_year": {
-          "2024": 53,
+          "2024": 48,
           "2025": 12,
           "2026": 1
         },
         "top_cas_commented_on": [
           [
             "Entrust",
-            24
+            22
           ],
           [
             "DigiCert",
@@ -6079,70 +4765,21 @@
         "top_cas_filed_about": []
       }
     },
-    "m********@gmail.com": {
+    "mpalmer@hezmatt.org": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 10,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2020": 1,
-          "2022": 2,
-          "2024": 3,
-          "2025": 4
-        },
-        "top_cas_commented_on": [
-          [
-            "Sectigo",
-            4
-          ],
-          [
-            "DigiCert",
-            3
-          ],
-          [
-            "Amazon Trust Services",
-            2
-          ],
-          [
-            "Let's Encrypt",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "m******@hezmatt.org": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 25,
-        "comments": 72,
-        "technical_comments": 22,
+        "bugs_engaged": 5,
+        "comments": 17,
+        "technical_comments": 1,
         "recent_bugs_engaged": 5,
         "recent_technical_comments": 1,
         "by_year": {
-          "2020": 55,
           "2024": 10,
           "2025": 7
         },
         "top_cas_commented_on": [
           [
             "DigiCert",
-            19
-          ],
-          [
-            "Sectigo",
-            19
-          ],
-          [
-            "Let's Encrypt",
             7
           ],
           [
@@ -6151,18 +4788,6 @@
           ],
           [
             "GlobalSign",
-            6
-          ],
-          [
-            "Asseco DS / Certum",
-            6
-          ],
-          [
-            "GoDaddy",
-            5
-          ],
-          [
-            "SwissSign",
             3
           ],
           [
@@ -6201,26 +4826,16 @@
         ]
       }
     },
-    "m******@firmaprofesional.com": {
+    "mprieto@firmaprofesional.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 16,
-        "comments": 50,
-        "technical_comments": 14,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 12,
-        "by_year": {
-          "2020": 10,
-          "2021": 9,
-          "2022": 22,
-          "2023": 9
-        },
-        "top_cas_commented_on": [
-          [
-            "Firmaprofesional",
-            50
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 14,
@@ -6239,49 +4854,22 @@
         ]
       }
     },
-    "n******@trustcorsystems.com": {
+    "nicol.so@commscope.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 11,
-        "technical_comments": 5,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
+        "bugs_engaged": 6,
+        "comments": 54,
+        "technical_comments": 21,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 21,
         "by_year": {
-          "2019": 9,
-          "2020": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "TrustCor",
-            11
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "n*******@commscope.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 70,
-        "technical_comments": 24,
-        "recent_bugs_engaged": 8,
-        "recent_technical_comments": 24,
-        "by_year": {
-          "2023": 6,
-          "2024": 49,
+          "2024": 39,
           "2025": 15
         },
         "top_cas_commented_on": [
           [
             "CommScope",
-            70
+            54
           ]
         ]
       },
@@ -6301,28 +4889,16 @@
         ]
       }
     },
-    "o*******@izenpe.eus": {
+    "o-garcia@izenpe.eus": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 13,
-        "comments": 78,
-        "technical_comments": 28,
-        "recent_bugs_engaged": 1,
-        "recent_technical_comments": 1,
-        "by_year": {
-          "2016": 1,
-          "2017": 13,
-          "2018": 1,
-          "2019": 23,
-          "2020": 38,
-          "2021": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "Izenpe",
-            78
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 5,
@@ -6339,16 +4915,15 @@
         ]
       }
     },
-    "p****@anf.es": {
+    "pablo@anf.es": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 6,
-        "comments": 15,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 6,
-        "recent_technical_comments": 4,
+        "bugs_engaged": 5,
+        "comments": 14,
+        "technical_comments": 3,
+        "recent_bugs_engaged": 5,
+        "recent_technical_comments": 3,
         "by_year": {
-          "2021": 1,
           "2025": 14
         },
         "top_cas_commented_on": [
@@ -6358,10 +4933,6 @@
           ],
           [
             "ANF",
-            1
-          ],
-          [
-            "FNMT",
             1
           ]
         ]
@@ -6384,101 +4955,21 @@
         ]
       }
     },
-    "p*****************@gmail.com": {
+    "paul@namepros.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 26,
-        "comments": 41,
-        "technical_comments": 33,
-        "recent_bugs_engaged": 11,
-        "recent_technical_comments": 17,
+        "bugs_engaged": 3,
+        "comments": 8,
+        "technical_comments": 4,
+        "recent_bugs_engaged": 3,
+        "recent_technical_comments": 4,
         "by_year": {
-          "2019": 1,
-          "2020": 20,
-          "2021": 20
-        },
-        "top_cas_commented_on": [
-          [
-            "Camerfirma",
-            10
-          ],
-          [
-            "SECOM",
-            7
-          ],
-          [
-            "Microsoft PKI Services",
-            4
-          ],
-          [
-            "QuoVadis",
-            4
-          ],
-          [
-            "GoDaddy",
-            3
-          ],
-          [
-            "KIR S.A.",
-            2
-          ],
-          [
-            "HARICA",
-            2
-          ],
-          [
-            "Sectigo",
-            2
-          ],
-          [
-            "E-Tugra",
-            1
-          ],
-          [
-            "Microsec",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "p***@namepros.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 15,
-        "technical_comments": 7,
-        "recent_bugs_engaged": 8,
-        "recent_technical_comments": 7,
-        "by_year": {
-          "2023": 3,
-          "2024": 12
+          "2024": 8
         },
         "top_cas_commented_on": [
           [
             "Entrust",
-            10
-          ],
-          [
-            "Google Trust Services",
-            2
-          ],
-          [
-            "Telekom Security",
-            1
-          ],
-          [
-            "Buypass",
-            1
-          ],
-          [
-            "Asseco DS / Certum",
-            1
+            8
           ]
         ]
       },
@@ -6489,29 +4980,16 @@
         "top_cas_filed_about": []
       }
     },
-    "p***************@teliasonera.com": {
+    "pekka.lahtiharju@teliasonera.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 22,
-        "comments": 114,
-        "technical_comments": 31,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 4,
-        "by_year": {
-          "2017": 1,
-          "2018": 19,
-          "2019": 41,
-          "2020": 36,
-          "2021": 13,
-          "2022": 3,
-          "2023": 1
-        },
-        "top_cas_commented_on": [
-          [
-            "Telia",
-            114
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 14,
@@ -6530,7 +5008,7 @@
         ]
       }
     },
-    "p***@cooperjr.name": {
+    "pete@cooperjr.name": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 5,
@@ -6573,20 +5051,15 @@
         "top_cas_filed_about": []
       }
     },
-    "p*************@disig.sk": {
+    "peter.miskovic@disig.sk": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 10,
-        "comments": 68,
-        "technical_comments": 24,
-        "recent_bugs_engaged": 6,
-        "recent_technical_comments": 19,
+        "bugs_engaged": 4,
+        "comments": 33,
+        "technical_comments": 18,
+        "recent_bugs_engaged": 4,
+        "recent_technical_comments": 18,
         "by_year": {
-          "2017": 11,
-          "2018": 1,
-          "2020": 17,
-          "2021": 5,
-          "2023": 1,
           "2024": 20,
           "2025": 3,
           "2026": 10
@@ -6594,11 +5067,7 @@
         "top_cas_commented_on": [
           [
             "Disig",
-            66
-          ],
-          [
-            "QSCert",
-            2
+            33
           ]
         ]
       },
@@ -6618,33 +5087,26 @@
         ]
       }
     },
-    "p*******@wisekey.com": {
+    "pfuentes@wisekey.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 21,
-        "comments": 79,
-        "technical_comments": 23,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 14,
+        "bugs_engaged": 5,
+        "comments": 19,
+        "technical_comments": 11,
+        "recent_bugs_engaged": 5,
+        "recent_technical_comments": 11,
         "by_year": {
-          "2017": 6,
-          "2018": 1,
-          "2019": 4,
-          "2020": 34,
-          "2021": 3,
-          "2022": 4,
-          "2023": 8,
           "2024": 10,
           "2025": 9
         },
         "top_cas_commented_on": [
           [
             "WISeKey",
-            73
+            16
           ],
           [
             "Telekom Security",
-            2
+            1
           ],
           [
             "GlobalSign",
@@ -6652,14 +5114,6 @@
           ],
           [
             "ICP-Brasil",
-            1
-          ],
-          [
-            "Sectigo",
-            1
-          ],
-          [
-            "FNMT",
             1
           ]
         ]
@@ -6683,30 +5137,16 @@
         ]
       }
     },
-    "p**@tuntrust.tn": {
+    "pki@tuntrust.tn": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 27,
+        "bugs_engaged": 0,
+        "comments": 0,
         "technical_comments": 0,
-        "recent_bugs_engaged": 4,
+        "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2020": 3,
-          "2021": 6,
-          "2023": 4,
-          "2025": 14
-        },
-        "top_cas_commented_on": [
-          [
-            "TunTrust",
-            23
-          ],
-          [
-            "Tuntrust",
-            4
-          ]
-        ]
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 3,
@@ -6723,44 +5163,16 @@
         ]
       }
     },
-    "q*****@scheitle.de": {
+    "quirin@scheitle.de": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 13,
-        "technical_comments": 9,
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
         "recent_bugs_engaged": 0,
         "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 11,
-          "2018": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "Comodo",
-            4
-          ],
-          [
-            "Asseco DS / Certum",
-            3
-          ],
-          [
-            "Camerfirma",
-            2
-          ],
-          [
-            "DigiCert / Thawte",
-            2
-          ],
-          [
-            "Comodo/cPanel",
-            1
-          ],
-          [
-            "Globalsign / AlphaSSL",
-            1
-          ]
-        ]
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 12,
@@ -6792,28 +5204,22 @@
         ]
       }
     },
-    "r*******@certigna.com": {
+    "r.delval@certigna.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 27,
-        "technical_comments": 8,
-        "recent_bugs_engaged": 9,
+        "bugs_engaged": 6,
+        "comments": 18,
+        "technical_comments": 6,
+        "recent_bugs_engaged": 6,
         "recent_technical_comments": 6,
         "by_year": {
-          "2020": 3,
-          "2021": 4,
-          "2024": 4,
+          "2024": 2,
           "2025": 16
         },
         "top_cas_commented_on": [
           [
             "Certigna",
-            20
-          ],
-          [
-            "Dhimyotis / Certigna",
-            7
+            18
           ]
         ]
       },
@@ -6824,7 +5230,7 @@
         "top_cas_filed_about": []
       }
     },
-    "r**************@icloud.com": {
+    "ragtime_knoll5n@icloud.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 4,
@@ -6857,25 +5263,59 @@
         "top_cas_filed_about": []
       }
     },
-    "r******@camerfirma.com": {
+    "rdaurne77@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 30,
-        "technical_comments": 8,
-        "recent_bugs_engaged": 1,
-        "recent_technical_comments": 0,
+        "bugs_engaged": 85,
+        "comments": 264,
+        "technical_comments": 83,
+        "recent_bugs_engaged": 85,
+        "recent_technical_comments": 83,
         "by_year": {
-          "2017": 17,
-          "2018": 1,
-          "2019": 4,
-          "2020": 7,
-          "2021": 1
+          "2024": 183,
+          "2025": 48,
+          "2026": 33
         },
         "top_cas_commented_on": [
           [
-            "Camerfirma",
-            30
+            "Entrust",
+            87
+          ],
+          [
+            "NETLOCK",
+            34
+          ],
+          [
+            "Microsoft PKI Services",
+            28
+          ],
+          [
+            "DigiCert",
+            17
+          ],
+          [
+            "Digicert",
+            13
+          ],
+          [
+            "Netlock",
+            9
+          ],
+          [
+            "GoDaddy",
+            9
+          ],
+          [
+            "Chunghwa Telecom",
+            8
+          ],
+          [
+            "CommScope",
+            7
+          ],
+          [
+            "D-Trust",
+            5
           ]
         ]
       },
@@ -6886,7 +5326,7 @@
         "top_cas_filed_about": []
       }
     },
-    "r********@gmail.com": {
+    "rowleylaw@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 26,
@@ -6947,127 +5387,7 @@
         "top_cas_filed_about": []
       }
     },
-    "r*************@siemens.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 15,
-        "technical_comments": 6,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 2,
-        "by_year": {
-          "2017": 7,
-          "2018": 1,
-          "2019": 5,
-          "2021": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "DigiCert / Siemens",
-            7
-          ],
-          [
-            "QuoVadis / Siemens",
-            5
-          ],
-          [
-            "Telekom Security",
-            1
-          ],
-          [
-            "Camerfirma",
-            1
-          ],
-          [
-            "QuoVadis",
-            1
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "r*********@hotmail.com": {
-      "cabf_interested_party": "Ryan Hurst (Private Person)",
-      "bugzilla": {
-        "bugs_engaged": 10,
-        "comments": 21,
-        "technical_comments": 6,
-        "recent_bugs_engaged": 8,
-        "recent_technical_comments": 5,
-        "by_year": {
-          "2019": 1,
-          "2020": 2,
-          "2021": 9,
-          "2023": 5,
-          "2024": 2,
-          "2026": 2
-        },
-        "top_cas_commented_on": [
-          [
-            "Google Trust Services",
-            12
-          ],
-          [
-            "E-Tugra",
-            3
-          ],
-          [
-            "Amazon Trust Services",
-            2
-          ],
-          [
-            "Entrust",
-            2
-          ],
-          [
-            "e-commerce monitoring GmbH",
-            2
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "s********@quovadis.bm": {
-      "cabf_interested_party": "David Croston (Private Person)",
-      "bugzilla": {
-        "bugs_engaged": 5,
-        "comments": 23,
-        "technical_comments": 6,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {
-          "2017": 12,
-          "2018": 11
-        },
-        "top_cas_commented_on": [
-          [
-            "QuoVadis",
-            20
-          ],
-          [
-            "QuoVadis / Freistaat Bayern",
-            3
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "s*********@gmail.com": {
+    "songxinlei@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 9,
@@ -7101,23 +5421,23 @@
         ]
       }
     },
-    "s**********@navercorp.com": {
+    "sooyoung.eo@navercorp.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 4,
-        "comments": 13,
-        "technical_comments": 4,
-        "recent_bugs_engaged": 4,
-        "recent_technical_comments": 4,
+        "bugs_engaged": 3,
+        "comments": 11,
+        "technical_comments": 3,
+        "recent_bugs_engaged": 3,
+        "recent_technical_comments": 3,
         "by_year": {
-          "2024": 4,
+          "2024": 2,
           "2025": 4,
           "2026": 5
         },
         "top_cas_commented_on": [
           [
             "NAVER Cloud Trust Services",
-            13
+            11
           ]
         ]
       },
@@ -7128,32 +5448,27 @@
         "top_cas_filed_about": []
       }
     },
-    "s***********@telekom.de": {
+    "stefan.kirch@telekom.de": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 10,
-        "comments": 52,
-        "technical_comments": 14,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 12,
+        "bugs_engaged": 5,
+        "comments": 25,
+        "technical_comments": 8,
+        "recent_bugs_engaged": 5,
+        "recent_technical_comments": 8,
         "by_year": {
-          "2020": 5,
-          "2024": 24,
-          "2025": 16,
+          "2024": 3,
+          "2025": 15,
           "2026": 7
         },
         "top_cas_commented_on": [
           [
             "Telekom Security",
-            45
+            19
           ],
           [
             "Telekom Security / DFN",
             6
-          ],
-          [
-            "T-Systems",
-            1
           ]
         ]
       },
@@ -7176,16 +5491,16 @@
         ]
       }
     },
-    "s******@verbuecheln.ch": {
+    "stephan@verbuecheln.ch": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 12,
-        "comments": 20,
-        "technical_comments": 11,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 11,
+        "bugs_engaged": 11,
+        "comments": 19,
+        "technical_comments": 10,
+        "recent_bugs_engaged": 11,
+        "recent_technical_comments": 10,
         "by_year": {
-          "2024": 9,
+          "2024": 8,
           "2025": 11
         },
         "top_cas_commented_on": [
@@ -7208,10 +5523,6 @@
           [
             "Digicert",
             2
-          ],
-          [
-            "Telekom Security",
-            1
           ]
         ]
       },
@@ -7222,60 +5533,23 @@
         "top_cas_filed_about": []
       }
     },
-    "s********@126.com": {
+    "szoke.sandor@microsec.hu": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 9,
-        "comments": 38,
-        "technical_comments": 1,
-        "recent_bugs_engaged": 2,
-        "recent_technical_comments": 0,
+        "bugs_engaged": 8,
+        "comments": 64,
+        "technical_comments": 22,
+        "recent_bugs_engaged": 8,
+        "recent_technical_comments": 22,
         "by_year": {
-          "2019": 16,
-          "2020": 13,
-          "2021": 3,
-          "2022": 6
-        },
-        "top_cas_commented_on": [
-          [
-            "CFCA",
-            38
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "s***********@microsec.hu": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 17,
-        "comments": 124,
-        "technical_comments": 52,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 40,
-        "by_year": {
-          "2017": 6,
-          "2020": 30,
-          "2021": 11,
-          "2022": 1,
-          "2023": 10,
-          "2024": 40,
+          "2024": 38,
           "2025": 14,
           "2026": 12
         },
         "top_cas_commented_on": [
           [
             "Microsec",
-            117
-          ],
-          [
-            "MICROSEC",
-            7
+            64
           ]
         ]
       },
@@ -7302,51 +5576,20 @@
         ]
       }
     },
-    "t*********@sheca.com": {
+    "tjtncks@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 11,
-        "comments": 31,
+        "bugs_engaged": 4,
+        "comments": 6,
         "technical_comments": 4,
-        "recent_bugs_engaged": 11,
+        "recent_bugs_engaged": 4,
         "recent_technical_comments": 4,
         "by_year": {
-          "2023": 23,
-          "2024": 8
-        },
-        "top_cas_commented_on": [
-          [
-            "SHECA",
-            31
-          ]
-        ]
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
-    "t******@gmail.com": {
-      "cabf_interested_party": null,
-      "bugzilla": {
-        "bugs_engaged": 7,
-        "comments": 11,
-        "technical_comments": 9,
-        "recent_bugs_engaged": 7,
-        "recent_technical_comments": 9,
-        "by_year": {
-          "2021": 1,
-          "2024": 5,
+          "2024": 1,
           "2025": 4,
           "2026": 1
         },
         "top_cas_commented_on": [
-          [
-            "Google Trust Services",
-            3
-          ],
           [
             "SSL.com",
             2
@@ -7362,14 +5605,6 @@
           [
             "GoDaddy",
             1
-          ],
-          [
-            "AGCE",
-            1
-          ],
-          [
-            "Actalis",
-            1
           ]
         ]
       },
@@ -7380,32 +5615,52 @@
         "top_cas_filed_about": []
       }
     },
-    "u******@disabled.tld": {
+    "u654666@disabled.tld": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 12,
-        "comments": 132,
-        "technical_comments": 31,
-        "recent_bugs_engaged": 12,
-        "recent_technical_comments": 29,
+        "bugs_engaged": 6,
+        "comments": 27,
+        "technical_comments": 8,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 8,
         "by_year": {
-          "2020": 14,
-          "2021": 25,
-          "2022": 32,
-          "2023": 9,
-          "2024": 49,
-          "2025": 3
+          "2024": 7,
+          "2025": 20
         },
         "top_cas_commented_on": [
           [
-            "SecureTrust",
-            74
-          ],
-          [
-            "VikingCloud",
-            58
+            "Microsoft PKI Services",
+            27
           ]
         ]
+      },
+      "bug_filing": {
+        "bugs_filed": 12,
+        "recent_bugs_filed": 10,
+        "by_year": {
+          "2020": 2,
+          "2023": 4,
+          "2024": 2,
+          "2025": 4
+        },
+        "top_cas_filed_about": [
+          [
+            "Microsoft PKI Services",
+            12
+          ]
+        ]
+      }
+    },
+    "u671069@disabled.tld": {
+      "cabf_interested_party": null,
+      "bugzilla": {
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 10,
@@ -7429,25 +5684,23 @@
         ]
       }
     },
-    "v************@itrus.cn": {
+    "vTrus_contact@itrus.cn": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 8,
-        "comments": 42,
-        "technical_comments": 18,
-        "recent_bugs_engaged": 8,
-        "recent_technical_comments": 18,
+        "bugs_engaged": 6,
+        "comments": 24,
+        "technical_comments": 11,
+        "recent_bugs_engaged": 6,
+        "recent_technical_comments": 11,
         "by_year": {
-          "2021": 17,
-          "2022": 2,
           "2024": 19,
           "2025": 1,
-          "2026": 3
+          "2026": 4
         },
         "top_cas_commented_on": [
           [
             "iTrusChina",
-            42
+            24
           ]
         ]
       },
@@ -7467,7 +5720,7 @@
         ]
       }
     },
-    "v**********************@vikingcloud.com": {
+    "vikingcloud_ca_bugzilla@vikingcloud.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 4,
@@ -7501,7 +5754,7 @@
         ]
       }
     },
-    "w*************@proton.me": {
+    "walter.j.marks@proton.me": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 6,
@@ -7539,7 +5792,7 @@
         "top_cas_filed_about": []
       }
     },
-    "w*********@sheca.com": {
+    "wangjiatai@sheca.com": {
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 13,
@@ -7575,24 +5828,16 @@
         ]
       }
     },
-    "y***********@anf.es": {
+    "yulier.nunez@anf.es": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 3,
-        "comments": 5,
-        "technical_comments": 3,
-        "recent_bugs_engaged": 3,
-        "recent_technical_comments": 3,
-        "by_year": {
-          "2023": 2,
-          "2025": 3
-        },
-        "top_cas_commented_on": [
-          [
-            "ANF AC",
-            5
-          ]
-        ]
+        "bugs_engaged": 0,
+        "comments": 0,
+        "technical_comments": 0,
+        "recent_bugs_engaged": 0,
+        "recent_technical_comments": 0,
+        "by_year": {},
+        "top_cas_commented_on": []
       },
       "bug_filing": {
         "bugs_filed": 3,
