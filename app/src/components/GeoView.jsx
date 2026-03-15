@@ -111,7 +111,7 @@ const GeoView = () => {
               <div
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
                   gap: 8,
                 }}
               >
@@ -339,7 +339,7 @@ const GeoView = () => {
               <CardTitle sub="CA organizations by country of jurisdiction. Click a segment to see CAs.">
                 CAs by Country
               </CardTitle>
-              <div style={{ display: 'grid', gridTemplateColumns: selCountry !== null ? 'repeat(auto-fit, minmax(260px, 1fr))' : '1fr', gap: 12 }}>
+              <div style={{ display: 'grid', gridTemplateColumns: selCountry !== null ? 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))' : '1fr', gap: 12 }}>
                 <div>
                   <ChartWrap height={180}>
                     <ResponsiveContainer width="100%" height="100%">
