@@ -233,7 +233,7 @@ const CommunityView = () => {
       totalProposed: totalP,
       totalFiled:    totalF,
       topOrg:  top?.[0] || String.fromCharCode(8212),
-      topInd:  topInd?.[0] ? maskEmail(topInd[0]) : String.fromCharCode(8212),
+      topInd:  topInd?.[0] ? maskEmail(topInd[0]).split('@')[0] : String.fromCharCode(8212),
     };
   }, [orgs, inds]);
 
