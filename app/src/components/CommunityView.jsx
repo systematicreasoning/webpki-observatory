@@ -286,8 +286,8 @@ const CommunityView = () => {
   const maxBalP   = Math.max(...orgRows.map(r => r.p), 1);
   const maxBallot = Math.max(...orgRows.map(r => r.p + r.e), 1);
   const maxFiling = Math.max(...orgRows.map(r => r.f), 1);
-  const activeOrgRows = orgRows.filter(r => r.s > 0);
-  const zeroOrgRows   = orgRows.filter(r => r.s === 0 && r.o.cabf_member);
+  const activeOrgRows = orgRows.filter(r => r.s > 0 && !r.o.distrusted);
+  const zeroOrgRows   = orgRows.filter(r => r.s === 0 && r.o.cabf_member && !r.o.distrusted);
 
   // ── Sorted individuals ──
   const indRows = useMemo(() => {

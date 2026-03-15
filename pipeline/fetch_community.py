@@ -185,6 +185,27 @@ ORG_CANONICAL = {
     "qikfox":               None,   # certificate consumer
     "zertificon":           None,   # certificate consumer
     "netsolve":             None,
+    "cisco systems":        None,   # certificate consumer member, not CA
+    "cisco":                None,
+    "opera software":       None,   # browser member, not CA
+    "opera as":             None,
+    "opera software as":    None,
+    "opera":                None,
+    "securetrust":          None,   # absorbed into VikingCloud
+    "secure trust":         None,
+    "certinomis":           None,   # distrusted 2019, defunct
+    "docaposte certinomis": None,
+    "diginotar":            None,   # distrusted 2011, defunct
+    "wosign":               None,   # distrusted 2016, defunct
+    "wosign ca":            None,
+    "startcom":             None,   # distrusted 2016, defunct
+    "start commercial":     None,
+    "cnnic":                None,   # distrusted 2015
+    "china internet network information center": None,
+    "procert":              None,   # distrusted 2020, defunct
+    "turktrust":            None,   # distrusted 2018
+    "türktrust":            None,
+    "certum by asseco":     "Certum/Asseco",  # deduplicate
 }
 
 # Org names that are clearly parse artifacts (WG titles, boilerplate text, etc.)
@@ -781,6 +802,15 @@ def main():
     # Build set of canonical CA member names
     cabf_ca_members = set(CABF_NAME_TO_CANONICAL.values())
 
+    # Build distrusted CA set from distrust events
+    distrusted_json = DATA_DIR / "distrust" if (DATA_DIR / "distrust").exists() else Path(__file__).parent / "distrust"
+    try:
+        dist_data = json.loads((distrusted_json / "distrusted.json").read_text())
+        distrusted_owners = {e.get("ca_owner", e["ca"]) for e in dist_data.get("events", [])}
+        distrusted_owners |= {e["ca"] for e in dist_data.get("events", [])}
+    except Exception:
+        distrusted_owners = set()
+
     # ── Merge all three signals into unified org and individual records ──
     # Include ALL CABF CA members, even those with zero engagement
     all_orgs = set(bz_orgs) | set(bal_orgs) | set(fil_orgs) | cabf_ca_members
@@ -788,8 +818,14 @@ def main():
 
     orgs_out = {}
     for org in sorted(all_orgs):
+        # Flag distrusted orgs — match by canonical name against distrust event CA names
+        is_distrusted = any(
+            org.lower() in d.lower() or d.lower() in org.lower()
+            for d in distrusted_owners
+        ) and org not in {"IdenTrust", "IdenTrust Services, LLC"}  # prevent substring false positive
         orgs_out[org] = {
             "cabf_member": org in cabf_ca_members,
+            "distrusted": is_distrusted,
             "bugzilla": bz_orgs.get(org, {
                 "bugs_engaged": 0, "comments": 0, "technical_comments": 0,
                 "recent_bugs_engaged": 0, "recent_technical_comments": 0,

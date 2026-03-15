@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T09:02:58.212987+00:00",
+    "generated_at": "2026-03-15T17:24:09.629795+00:00",
     "pipeline_version": "1.1",
-    "total_orgs": 64,
+    "total_orgs": 60,
     "total_cabf_ca_members": 56,
     "total_individuals": 118,
     "total_ballots": 174,
@@ -127,6 +127,7 @@
   "organizations": {
     "Actalis": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -172,6 +173,7 @@
     },
     "Amazon Trust Services": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "trevolip@amazon.com"
@@ -234,6 +236,7 @@
     },
     "BJCA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -261,6 +264,7 @@
     },
     "Bundesdruckerei/D-TRUST": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -303,6 +307,7 @@
     },
     "Buypass": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -343,6 +348,7 @@
     },
     "CFCA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -370,6 +376,7 @@
     },
     "Camerfirma": {
       "cabf_member": true,
+      "distrusted": true,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -397,6 +404,7 @@
     },
     "Certainly/Fastly": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "wthayer@fastly.com"
@@ -471,6 +479,7 @@
     },
     "Certigna": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -498,6 +507,7 @@
     },
     "Certinomis": {
       "cabf_member": false,
+      "distrusted": true,
       "bugzilla": {
         "emails": [
           "franck.leroy@certinomis.fr"
@@ -533,8 +543,9 @@
         "top_cas_filed_about": []
       }
     },
-    "Certum by Asseco": {
-      "cabf_member": false,
+    "Certum/Asseco": {
+      "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -569,35 +580,9 @@
         "top_cas_filed_about": []
       }
     },
-    "Certum/Asseco": {
-      "cabf_member": true,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 0,
-        "recent_proposed": 0,
-        "recent_endorsed": 0,
-        "individuals": [],
-        "working_groups": [],
-        "by_year": {}
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "Chunghwa Telecom": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "tmkuo@cht.com.tw"
@@ -633,48 +618,9 @@
         "top_cas_filed_about": []
       }
     },
-    "Cisco": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 2,
-        "endorsed": 1,
-        "recent_proposed": 1,
-        "recent_endorsed": 1,
-        "individuals": [
-          "Jos Purvis"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2020": {
-            "proposed": 1,
-            "endorsed": 0
-          },
-          "2021": {
-            "proposed": 1,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "CommScope": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -702,6 +648,7 @@
     },
     "Comsign": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -729,6 +676,7 @@
     },
     "DigiCert": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "corey.bonnell@digicert.com",
@@ -885,6 +833,7 @@
     },
     "Digidentity": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -912,6 +861,7 @@
     },
     "DigitalTrust": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -939,6 +889,7 @@
     },
     "Disig": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -966,6 +917,7 @@
     },
     "DocuSign": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -993,6 +945,7 @@
     },
     "E-Tugra": {
       "cabf_member": true,
+      "distrusted": true,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1020,6 +973,7 @@
     },
     "Entrust": {
       "cabf_member": true,
+      "distrusted": true,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1091,6 +1045,7 @@
     },
     "Firmaprofesional": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1127,6 +1082,7 @@
     },
     "GDCA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1154,6 +1110,7 @@
     },
     "GlobalSign": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "arvid.vermote@globalsign.com"
@@ -1226,6 +1183,7 @@
     },
     "GlobalTrust": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1253,6 +1211,7 @@
     },
     "GoDaddy": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1289,6 +1248,7 @@
     },
     "HARICA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "dzacharo@harica.gr",
@@ -1417,6 +1377,7 @@
     },
     "IdenTrust": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1444,6 +1405,7 @@
     },
     "Izenpe": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1471,6 +1433,7 @@
     },
     "JPRS": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1498,6 +1461,7 @@
     },
     "KPN": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1525,6 +1489,7 @@
     },
     "Kamu SM": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1552,6 +1517,7 @@
     },
     "Let's Encrypt": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "aaron@letsencrypt.org",
@@ -1647,6 +1613,7 @@
     },
     "MOIS Korea": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1674,6 +1641,7 @@
     },
     "MSC Trustgate": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1701,6 +1669,7 @@
     },
     "NAVER Cloud Trust Services": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1728,6 +1697,7 @@
     },
     "Network Solutions": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1755,6 +1725,7 @@
     },
     "OATI": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1782,6 +1753,7 @@
     },
     "OISTE": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1820,53 +1792,9 @@
         "top_cas_filed_about": []
       }
     },
-    "Opera": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 0,
-        "endorsed": 5,
-        "recent_proposed": 0,
-        "recent_endorsed": 3,
-        "individuals": [
-          "Tobias Josefowitz"
-        ],
-        "working_groups": [
-          "NS",
-          "SC"
-        ],
-        "by_year": {
-          "2020": {
-            "proposed": 0,
-            "endorsed": 2
-          },
-          "2023": {
-            "proposed": 0,
-            "endorsed": 2
-          },
-          "2025": {
-            "proposed": 0,
-            "endorsed": 1
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "PKIoverheid": {
       "cabf_member": false,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "mark.janssen@logius.nl"
@@ -1904,6 +1832,7 @@
     },
     "Pos Digicert": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1931,6 +1860,7 @@
     },
     "Prvn\u00ed CA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1958,6 +1888,7 @@
     },
     "SDAIA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -1985,6 +1916,7 @@
     },
     "SECOM": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2012,6 +1944,7 @@
     },
     "SHECA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2039,6 +1972,7 @@
     },
     "SK ID Solutions": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2066,6 +2000,7 @@
     },
     "SSC": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2093,6 +2028,7 @@
     },
     "SSL.com": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "leo@ssl.com",
@@ -2160,6 +2096,7 @@
     },
     "Sectigo": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "Robin.Alden@Sectigo.com",
@@ -2301,44 +2238,9 @@
         ]
       }
     },
-    "SecureTrust": {
-      "cabf_member": false,
-      "bugzilla": {
-        "bugs_engaged": 0,
-        "comments": 0,
-        "technical_comments": 0,
-        "recent_bugs_engaged": 0,
-        "recent_technical_comments": 0,
-        "by_year": {},
-        "top_cas_commented_on": []
-      },
-      "ballots": {
-        "proposed": 2,
-        "endorsed": 0,
-        "recent_proposed": 2,
-        "recent_endorsed": 0,
-        "individuals": [
-          "Niko Carpenter"
-        ],
-        "working_groups": [
-          "SC"
-        ],
-        "by_year": {
-          "2021": {
-            "proposed": 2,
-            "endorsed": 0
-          }
-        }
-      },
-      "bug_filing": {
-        "bugs_filed": 0,
-        "recent_bugs_filed": 0,
-        "by_year": {},
-        "top_cas_filed_about": []
-      }
-    },
     "SwissSign": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "roman.fischer@swisssign.com"
@@ -2416,6 +2318,7 @@
     },
     "TWCA": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2443,6 +2346,7 @@
     },
     "Telia": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2479,6 +2383,7 @@
     },
     "TrustAsia": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2506,6 +2411,7 @@
     },
     "TrustCor Systems": {
       "cabf_member": false,
+      "distrusted": true,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2555,6 +2461,7 @@
     },
     "VikingCloud": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2582,6 +2489,7 @@
     },
     "Visa": {
       "cabf_member": true,
+      "distrusted": true,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2609,6 +2517,7 @@
     },
     "certSIGN": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2636,6 +2545,7 @@
     },
     "eMudhra": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2681,6 +2591,7 @@
     },
     "iSigma": {
       "cabf_member": false,
+      "distrusted": false,
       "bugzilla": {
         "emails": [
           "chemalogo@isigma.es"
@@ -2732,6 +2643,7 @@
     },
     "iTrusChina": {
       "cabf_member": true,
+      "distrusted": false,
       "bugzilla": {
         "bugs_engaged": 0,
         "comments": 0,
@@ -2871,15 +2783,15 @@
     "Zacharias.bjorngren@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 21,
-        "comments": 41,
+        "bugs_engaged": 20,
+        "comments": 40,
         "technical_comments": 9,
-        "recent_bugs_engaged": 21,
+        "recent_bugs_engaged": 20,
         "recent_technical_comments": 9,
         "by_year": {
           "2024": 11,
           "2025": 27,
-          "2026": 3
+          "2026": 2
         },
         "top_cas_commented_on": [
           [
@@ -2888,7 +2800,7 @@
           ],
           [
             "NETLOCK",
-            7
+            6
           ],
           [
             "Entrust",
@@ -7021,15 +6933,15 @@
     "rdaurne77@gmail.com": {
       "cabf_interested_party": null,
       "bugzilla": {
-        "bugs_engaged": 91,
-        "comments": 278,
+        "bugs_engaged": 90,
+        "comments": 277,
         "technical_comments": 92,
-        "recent_bugs_engaged": 91,
+        "recent_bugs_engaged": 90,
         "recent_technical_comments": 92,
         "by_year": {
           "2024": 197,
           "2025": 48,
-          "2026": 33
+          "2026": 32
         },
         "top_cas_commented_on": [
           [
@@ -7038,7 +6950,7 @@
           ],
           [
             "NETLOCK",
-            34
+            33
           ],
           [
             "Microsoft PKI Services",
@@ -7702,7 +7614,7 @@
       "cabf_interested_party": null,
       "bugzilla": {
         "bugs_engaged": 8,
-        "comments": 43,
+        "comments": 42,
         "technical_comments": 18,
         "recent_bugs_engaged": 8,
         "recent_technical_comments": 18,
@@ -7711,12 +7623,12 @@
           "2022": 2,
           "2024": 19,
           "2025": 1,
-          "2026": 4
+          "2026": 3
         },
         "top_cas_commented_on": [
           [
             "iTrusChina",
-            43
+            42
           ]
         ]
       },
@@ -8367,28 +8279,6 @@
         }
       }
     },
-    "Jos Purvis": {
-      "proposed": 2,
-      "endorsed": 1,
-      "recent_proposed": 1,
-      "recent_endorsed": 1,
-      "orgs": [
-        "Cisco"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 1,
-          "endorsed": 0
-        },
-        "2021": {
-          "proposed": 1,
-          "endorsed": 1
-        }
-      }
-    },
     "Paul van Brouwershaven": {
       "proposed": 2,
       "endorsed": 0,
@@ -8427,51 +8317,6 @@
         "2024": {
           "proposed": 0,
           "endorsed": 2
-        }
-      }
-    },
-    "Niko Carpenter": {
-      "proposed": 2,
-      "endorsed": 0,
-      "recent_proposed": 2,
-      "recent_endorsed": 0,
-      "orgs": [
-        "SecureTrust"
-      ],
-      "working_groups": [
-        "SC"
-      ],
-      "by_year": {
-        "2021": {
-          "proposed": 2,
-          "endorsed": 0
-        }
-      }
-    },
-    "Tobias Josefowitz": {
-      "proposed": 0,
-      "endorsed": 5,
-      "recent_proposed": 0,
-      "recent_endorsed": 3,
-      "orgs": [
-        "Opera"
-      ],
-      "working_groups": [
-        "NS",
-        "SC"
-      ],
-      "by_year": {
-        "2020": {
-          "proposed": 0,
-          "endorsed": 2
-        },
-        "2023": {
-          "proposed": 0,
-          "endorsed": 2
-        },
-        "2025": {
-          "proposed": 0,
-          "endorsed": 1
         }
       }
     },
@@ -8517,7 +8362,7 @@
       "recent_proposed": 1,
       "recent_endorsed": 0,
       "orgs": [
-        "Certum by Asseco"
+        "Certum/Asseco"
       ],
       "working_groups": [
         "SC"
