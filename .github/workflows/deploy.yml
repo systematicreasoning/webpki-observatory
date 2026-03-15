@@ -70,13 +70,16 @@ jobs:
         continue-on-error: true
         run: python pipeline/fetch_community.py
 
-      - name: Export LLM snapshot
+      - name: Export LLM snapshot (initial)
         run: python pipeline/export_llm_snapshot.py
 
       - name: Generate tab intro text
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python pipeline/fetch_tab_intros.py
+
+      - name: Export LLM snapshot (final, includes tab intros)
+        run: python pipeline/export_llm_snapshot.py
 
       - name: Commit data if changed
         run: |
