@@ -554,6 +554,7 @@ def main():
     bugs_raw_list = load_json(CACHE_DIR / "bugs_raw.json", [])
     clf = load_json(CACHE_DIR / "comment_classifications.json", {})
     ballots_cache = load_json(CACHE_DIR / "cabforum_ballots.json", {})
+    cabf_members = load_json(CACHE_DIR / "cabf_members.json", {})
 
     bug_lookup = {str(b["id"]): b for b in bugs_raw_list}
 
@@ -565,13 +566,83 @@ def main():
     bal_orgs, bal_inds = analyze_ballots(ballots_cache)
     fil_orgs, fil_inds = analyze_bug_filing(bugs_raw_list)
 
+    # ── Build CABF member lookup ──
+    # Map CABF member names to our canonical org names
+    # so we can show zeroes for non-participating members
+    CABF_NAME_TO_CANONICAL = {
+        "AC Camerfirma SA": "Camerfirma",
+        "AC Firmaprofessional SA": "Firmaprofesional",
+        "Actalis S.p.A.": "Actalis",
+        "Amazon": "Amazon Trust Services",
+        "Asseco Data Systems SA (Certum)": "Certum/Asseco",
+        "Beijing Certificate Authority": "BJCA",
+        "Buypass AS": "Buypass",
+        "Certigna (DHIMYOTIS)": "Certigna",
+        "certSIGN": "certSIGN",
+        "CFCA": "CFCA",
+        "Chunghwa Telecom": "Chunghwa Telecom",
+        "CommScope": "CommScope",
+        "Comsign": "Comsign",
+        "DigiCert": "DigiCert",
+        "Digidentity": "Digidentity",
+        "DigitalTrust": "DigitalTrust",
+        "Disig": "Disig",
+        "DocuSign": "DocuSign",
+        "D-TRUST": "Bundesdruckerei/D-TRUST",
+        "eMudhra": "eMudhra",
+        "Entrust": "Entrust",
+        "E-tugra": "E-Tugra",
+        "Fastly": "Certainly/Fastly",
+        "GDCA": "GDCA",
+        "GlobalSign": "GlobalSign",
+        "GlobalTrust": "GlobalTrust",
+        "GoDaddy": "GoDaddy",
+        "HARICA": "HARICA",
+        "IdenTrust": "IdenTrust",
+        "iTrusChina": "iTrusChina",
+        "Izenpe": "Izenpe",
+        "Japan Registry Services": "JPRS",
+        "Kamu SM": "Kamu SM",
+        "KPN": "KPN",
+        "Let's Encrypt": "Let's Encrypt",
+        "MOIS (Ministry of Interior and Safety) of the republic of Korea": "MOIS Korea",
+        "MSC Trustgate Sdn Bhd": "MSC Trustgate",
+        "NAVER Cloud Trust Services": "NAVER Cloud Trust Services",
+        "Network Solutions": "Network Solutions",
+        "OATI": "OATI",
+        "OISTE Foundation": "OISTE",
+        "Pos Digicert Sdn. Bhd.": "Pos Digicert",
+        "První certifikační autorita": "První CA",
+        "Saudi Data and Artificial Intelligence Agency (SDAIA)": "SDAIA",
+        "SECOM Trust Systems": "SECOM",
+        "Sectigo": "Sectigo",
+        "SHECA": "SHECA",
+        "SK ID Solutions AS": "SK ID Solutions",
+        "SSC": "SSC",
+        "SSL.com": "SSL.com",
+        "SwissSign": "SwissSign",
+        "Telia Company": "Telia",
+        "TrustAsia": "TrustAsia",
+        "TWCA": "TWCA",
+        "VikingCloud": "VikingCloud",
+        "Visa": "Visa",
+    }
+
+    CABF_CONSUMERS = set(cabf_members.get("certificate_consumers", []))
+    CABF_INTERESTED = set(cabf_members.get("interested_parties", []))
+
+    # Build set of canonical CA member names
+    cabf_ca_members = set(CABF_NAME_TO_CANONICAL.values())
+
     # ── Merge all three signals into unified org and individual records ──
-    all_orgs = set(bz_orgs) | set(bal_orgs) | set(fil_orgs)
+    # Include ALL CABF CA members, even those with zero engagement
+    all_orgs = set(bz_orgs) | set(bal_orgs) | set(fil_orgs) | cabf_ca_members
     all_inds = set(bz_inds) | set(fil_inds)
 
     orgs_out = {}
     for org in sorted(all_orgs):
         orgs_out[org] = {
+            "cabf_member": org in cabf_ca_members,
             "bugzilla": bz_orgs.get(org, {
                 "bugs_engaged": 0, "comments": 0, "technical_comments": 0,
                 "recent_bugs_engaged": 0, "recent_technical_comments": 0,
@@ -590,7 +661,16 @@ def main():
 
     inds_out = {}
     for email in sorted(all_inds):
+        # Check if this individual is a named CABF interested party
+        name_match = None
+        email_lower = email.lower()
+        for ip in CABF_INTERESTED:
+            words = [w.lower() for w in ip.split() if len(w) > 3 and "(" not in w]
+            if any(w in email_lower for w in words):
+                name_match = ip
+                break
         inds_out[email] = {
+            "cabf_interested_party": name_match,
             "bugzilla": bz_inds.get(email, {
                 "bugs_engaged": 0, "comments": 0, "technical_comments": 0,
                 "recent_bugs_engaged": 0, "recent_technical_comments": 0,
@@ -605,11 +685,18 @@ def main():
     output = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "pipeline_version": "1.0",
+            "pipeline_version": "1.1",
             "total_orgs": len(orgs_out),
+            "total_cabf_ca_members": len(cabf_ca_members),
             "total_individuals": len(inds_out),
             "total_ballots": sum(len(v) for v in ballots_cache.values()),
-        "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Classified for both root program staff (pass-2) and community participants (single pass). Values may exceed bugs_engaged since multiple technical comments per bug are counted.",
+            "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Values may exceed bugs_engaged since multiple technical comments per bug are counted.",
+            "note_baseline": "All CABF CA members included as org rows, even those with zero engagement. cabf_member=true indicates formal membership. Absence of engagement by a member is as meaningful as presence.",
+        },
+        "cabf_members": {
+            "certification_authorities": cabf_members.get("certification_authorities", []),
+            "certificate_consumers": cabf_members.get("certificate_consumers", []),
+            "interested_parties": cabf_members.get("interested_parties", []),
         },
         "organizations": orgs_out,
         "individuals": inds_out,
