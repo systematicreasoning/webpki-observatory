@@ -147,6 +147,12 @@ jobs:
           cp -r ${{ github.workspace }}/data/ca dist/data/ca
           cp ${{ github.workspace }}/data/llm_snapshot.json dist/llm_snapshot.json
 
+      - name: Inject SEO content
+        env:
+          PIPELINE_DATA_DIR: ${{ github.workspace }}/data
+          DIST_DIR: ${{ github.workspace }}/app/dist
+        run: python pipeline/generate_seo.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
