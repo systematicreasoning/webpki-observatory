@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T07:04:31.570258+00:00",
+    "generated_at": "2026-03-15T07:29:58.512325+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
     "total_comments_raw": 22035,
@@ -578,6 +578,112 @@
       "mozilla": 4,
       "apple": 11,
       "microsoft": 0
+    }
+  ],
+  "coverage_rate_by_year": [
+    {
+      "y": 2014,
+      "total_bugs": 3,
+      "chrome": 33.3,
+      "mozilla": 66.7,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2015,
+      "total_bugs": 1,
+      "chrome": 0.0,
+      "mozilla": 100.0,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2016,
+      "total_bugs": 5,
+      "chrome": 40.0,
+      "mozilla": 60.0,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2017,
+      "total_bugs": 123,
+      "chrome": 50.4,
+      "mozilla": 78.9,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2018,
+      "total_bugs": 108,
+      "chrome": 30.6,
+      "mozilla": 75.9,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2019,
+      "total_bugs": 255,
+      "chrome": 66.3,
+      "mozilla": 61.6,
+      "apple": 0.4,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2020,
+      "total_bugs": 237,
+      "chrome": 68.4,
+      "mozilla": 37.6,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2021,
+      "total_bugs": 187,
+      "chrome": 54.5,
+      "mozilla": 26.7,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2022,
+      "total_bugs": 106,
+      "chrome": 24.5,
+      "mozilla": 33.0,
+      "apple": 0.0,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2023,
+      "total_bugs": 133,
+      "chrome": 13.5,
+      "mozilla": 16.5,
+      "apple": 1.5,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2024,
+      "total_bugs": 236,
+      "chrome": 21.6,
+      "mozilla": 23.3,
+      "apple": 5.9,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2025,
+      "total_bugs": 223,
+      "chrome": 18.4,
+      "mozilla": 7.6,
+      "apple": 7.6,
+      "microsoft": 0.0
+    },
+    {
+      "y": 2026,
+      "total_bugs": 73,
+      "chrome": 9.6,
+      "mozilla": 5.5,
+      "apple": 15.1,
+      "microsoft": 0.0
     }
   ],
   "program_comment_summary": {
@@ -2149,7 +2255,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 288139,
+        "certs": 288228,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2169,7 +2275,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 96300,
+        "certs": 96310,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2706,7 +2812,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517100525,
+        "certs_now": 517081129,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
