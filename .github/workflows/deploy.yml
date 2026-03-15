@@ -33,6 +33,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Save git-tracked meta before cache restore
+        run: cp pipeline/ops_cache/comment_count_meta.json /tmp/comment_count_meta.json 2>/dev/null || true
+
       - name: Restore pipeline ops cache
         uses: actions/cache@v4
         with:
@@ -42,11 +45,11 @@ jobs:
             ops-cache-${{ runner.os }}-v2
             ops-cache-${{ runner.os }}-
 
-      - name: Sync meta file from git (overrides stale cached version)
+      - name: Restore git-tracked meta (overrides stale cached version)
         run: |
-          if [ -f pipeline/ops_cache/comment_count_meta.json ]; then
-            git checkout HEAD -- pipeline/ops_cache/comment_count_meta.json 2>/dev/null || true
-            echo "  Synced comment_count_meta.json from git"
+          if [ -f /tmp/comment_count_meta.json ]; then
+            cp /tmp/comment_count_meta.json pipeline/ops_cache/comment_count_meta.json
+            echo "  Restored comment_count_meta.json from git checkout"
           fi
 
       - name: Install dependencies

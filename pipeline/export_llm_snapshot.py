@@ -455,10 +455,10 @@ def main():
     bal_inds = community.get("ballot_individuals", {})
     cabf_members = [o for o, d in orgs.items() if d.get("cabf_member")]
     active_members = [o for o in cabf_members
-                      if orgs[o]["bugzilla"]["bugs_engaged"] > 0
-                      or orgs[o]["ballots"]["proposed"] > 0
-                      or orgs[o]["ballots"]["endorsed"] > 0
-                      or orgs[o]["bug_filing"]["bugs_filed"] > 0]
+                      if (orgs[o].get("bugzilla") or {}).get("bugs_engaged", 0) > 0
+                      or (orgs[o].get("ballots") or {}).get("proposed", 0) > 0
+                      or (orgs[o].get("ballots") or {}).get("endorsed", 0) > 0
+                      or (orgs[o].get("bug_filing") or {}).get("bugs_filed", 0) > 0]
     community_out = {
         "meta": community.get("meta", {}),
         "cabfMemberCount": len(cabf_members),
@@ -472,7 +472,7 @@ def main():
               "ballotsEndorsed": d["ballots"]["endorsed"],
               "bugsFiled": d["bug_filing"]["bugs_filed"]}
              for o, d in orgs.items() if
-             d["bugzilla"]["bugs_engaged"] + d["ballots"]["proposed"] + d["bug_filing"]["bugs_filed"] > 0],
+             (d.get("bugzilla") or {}).get("bugs_engaged", 0) + (d.get("ballots") or {}).get("proposed", 0) + (d.get("bug_filing") or {}).get("bugs_filed", 0) > 0],
             key=lambda x: -(x["bugzillaEngaged"] * 2 + x["ballotsProposed"] * 3 + x["ballotsEndorsed"] + x["bugsFiled"] * 3)
         )[:20],
         "topBallotIndividuals": sorted(
