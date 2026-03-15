@@ -185,8 +185,8 @@ const GovernanceRiskView = () => {
   const maxBugYr = Math.max(...bugCreation.map(y => (y.chrome || 0) + (y.mozilla || 0) + (y.apple || 0) + (y.microsoft || 0)), 1);
 
   const bgMap = {
-    [COLORS.gn]: 'rgba(16,185,129,0.18)', [COLORS.am]: 'rgba(245,158,11,0.18)',
-    [COLORS.rd]: 'rgba(239,68,68,0.18)', [COLORS.t2]: 'rgba(148,163,184,0.06)',
+    [COLORS.gn]: 'color-mix(in srgb, var(--gn) 18%, transparent)', [COLORS.am]: 'rgba(245,158,11,0.18)',
+    [COLORS.rd]: 'color-mix(in srgb, var(--rd) 18%, transparent)', [COLORS.t2]: 'color-mix(in srgb, var(--t2) 6%, transparent)',
   };
 
   const pcs = d.program_comment_summary || {};

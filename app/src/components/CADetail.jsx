@@ -128,8 +128,8 @@ const CADetail = ({ d }) => {
       {d.issuanceCaveat && (
         <div
           style={{
-            background: 'rgba(245,158,11,0.08)',
-            border: `1px solid rgba(245,158,11,0.2)`,
+            background: 'color-mix(in srgb, var(--am) 8%, transparent)',
+            border: `1px solid color-mix(in srgb, var(--am) 20%, transparent)`,
             borderRadius: 6,
             padding: '8px 12px',
             marginBottom: 12,
@@ -240,7 +240,7 @@ const CADetail = ({ d }) => {
               key={key}
               style={{
                 flex: 1,
-                background: included ? 'rgba(59,130,246,0.06)' : 'transparent',
+                background: included ? 'color-mix(in srgb, var(--ac) 6%, transparent)' : 'transparent',
                 border: `1px solid ${included ? COLORS.bl : COLORS.bd}`,
                 borderRadius: 4,
                 padding: '6px 8px',
@@ -486,7 +486,7 @@ const CADetail = ({ d }) => {
               style={{
                 background: d[key] ? COLORS.ag : 'transparent',
                 border: `1px solid ${
-                  d[key] ? (d.inferred ? 'rgba(245,158,11,0.2)' : 'rgba(59,130,246,0.2)') : COLORS.bd
+                  d[key] ? (d.inferred ? 'color-mix(in srgb, var(--am) 20%, transparent)' : 'color-mix(in srgb, var(--ac) 20%, transparent)') : COLORS.bd
                 }`,
                 borderRadius: 4,
                 padding: '4px 8px',
@@ -687,9 +687,9 @@ function IntermediateSection({ intermediates }) {
                             marginLeft: 4,
                             padding: '1px 3px',
                             borderRadius: 2,
-                            background: 'rgba(6,182,212,0.1)',
+                            background: 'color-mix(in srgb, var(--cy) 10%, transparent)',
                             color: COLORS.cy,
-                            border: `1px solid rgba(6,182,212,0.2)`,
+                            border: `1px solid color-mix(in srgb, var(--cy) 20%, transparent)`,
                           }}
                         >
                           constrained

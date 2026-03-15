@@ -116,9 +116,9 @@ export const Badge = ({ on, l, inf }) => (
       padding: '1px 4px',
       borderRadius: 2,
       fontFamily: FONT_MONO,
-      background: on ? (inf ? 'rgba(245,158,11,0.08)' : COLORS.ag) : 'transparent',
+      background: on ? (inf ? 'color-mix(in srgb, var(--am) 8%, transparent)' : COLORS.ag) : 'transparent',
       color: on ? (inf ? COLORS.am : COLORS.ac) : COLORS.t3,
-      border: `1px solid ${on ? (inf ? 'rgba(245,158,11,0.2)' : 'rgba(59,130,246,0.2)') : COLORS.bd}`,
+      border: `1px solid ${on ? (inf ? 'color-mix(in srgb, var(--am) 20%, transparent)' : 'color-mix(in srgb, var(--ac) 20%, transparent)') : COLORS.bd}`,
     }}
   >
     {l}
@@ -222,7 +222,7 @@ export const DataMeta = ({ source, updated, tab }) => {
       {stale === 'critical' && (
         <span
           style={{
-            background: 'rgba(239,68,68,0.1)',
+            background: 'color-mix(in srgb, var(--rd) 10%, transparent)',
             border: `1px solid ${COLORS.rd}`,
             borderRadius: 4,
             padding: '3px 8px',
@@ -235,7 +235,7 @@ export const DataMeta = ({ source, updated, tab }) => {
       {stale === 'warning' && (
         <span
           style={{
-            background: 'rgba(245,158,11,0.1)',
+            background: 'color-mix(in srgb, var(--am) 10%, transparent)',
             border: `1px solid ${COLORS.am}`,
             borderRadius: 4,
             padding: '3px 8px',

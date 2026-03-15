@@ -303,14 +303,21 @@ const TimelineAxis = ({ events }) => {
           ))}
         </div>
         {/* Dots + labels */}
-        <div style={{ position: 'relative', height: 70, margin: '0 20px' }}>
+        <div style={{ position: 'relative', height: 90, margin: '0 20px' }}>
           <div style={{ position: 'absolute', top: 35, left: 0, right: 0, height: 1, background: COLORS.bd }} />
           {sorted.map((e, i) => {
             const y = e.year || 2024;
             const pct = ((y - minY) / range) * 100;
             const c = POSTURE_COLORS[e.compliance_posture] || COLORS.t3;
             const sz = Math.max(5, Math.min(12, 5 + Math.sqrt((e.bugzilla_bugs || 0) / 10) * 3));
-            const above = i % 2 === 0;
+            // Stagger labels: group by year proximity and alternate rows
+            // Events within 1 year of each other get extra vertical offset
+            const sameYearCount = sorted.filter(x => Math.abs((x.year||0) - y) < 1.5).length;
+            const sameYearIdx   = sorted.filter(x => Math.abs((x.year||0) - y) < 1.5).indexOf(e);
+            const row = sameYearIdx % 3; // 0 = above, 1 = below, 2 = further above
+            const labelTop = row === 0 ? (35 - sz - 14)
+                           : row === 1 ? (35 + sz + 3)
+                           :             (35 - sz - 26);
             return (
               <React.Fragment key={e.ca}>
                 <div
@@ -322,7 +329,7 @@ const TimelineAxis = ({ events }) => {
                   }}
                 />
                 <div style={{
-                  position: 'absolute', left: `${pct}%`, top: above ? (35 - sz - 14) : (35 + sz + 3),
+                  position: 'absolute', left: `${pct}%`, top: labelTop,
                   transform: 'translateX(-50%)', fontSize: 8, fontFamily: FONT_MONO,
                   color: COLORS.t2, whiteSpace: 'nowrap', textAlign: 'center',
                 }}>
@@ -406,9 +413,9 @@ const ExpandedDetail = ({ event: e, tagFilter, setTagFilter }) => {
                     <span key={s} style={{
                       display: 'inline-flex', alignItems: 'center', gap: 4, padding: '2px 8px',
                       borderRadius: 3, fontSize: 10, fontFamily: FONT_MONO,
-                      background: d ? `${c}22` : ALPHA.gn09,
+                      background: d ? `${c}33` : ALPHA.gn09,
                       color: d ? c : COLORS.gn,
-                      border: `1px solid ${d ? `${c}44` : ALPHA.gn20}`,
+                      border: `1px solid ${d ? `${c}88` : ALPHA.gn20}`,
                     }}>
                       {s}: {d || 'trusted'}
                     </span>

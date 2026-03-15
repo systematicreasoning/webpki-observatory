@@ -87,16 +87,16 @@ const MiniBar = ({ value, max, color, width = 60 }) => {
 const CABFBadge = () => (
   <span style={{
     fontSize: 8, fontFamily: FONT_MONO, fontWeight: 700, padding: '1px 5px',
-    borderRadius: 3, background: 'rgba(59,130,246,0.1)', color: COLORS.ac,
-    border: '1px solid rgba(59,130,246,0.2)', letterSpacing: '0.05em',
+    borderRadius: 3, background: 'color-mix(in srgb, var(--ac) 10%, transparent)', color: COLORS.ac,
+    border: '1px solid color-mix(in srgb, var(--ac) 20%, transparent)', letterSpacing: '0.05em',
   }}>CABF</span>
 );
 
 const IPBadge = () => (
   <span title="CABF Interested Party — formal observer status with signed IPR agreement" style={{
     fontSize: 8, fontFamily: FONT_MONO, fontWeight: 700, padding: '1px 5px',
-    borderRadius: 3, background: 'rgba(16,185,129,0.1)', color: COLORS.gn,
-    border: '1px solid rgba(16,185,129,0.2)', cursor: 'help',
+    borderRadius: 3, background: 'color-mix(in srgb, var(--gn) 10%, transparent)', color: COLORS.gn,
+    border: '1px solid color-mix(in srgb, var(--gn) 20%, transparent)', cursor: 'help',
   }}>Observer</span>
 );
 
@@ -136,9 +136,9 @@ const OverTimeChart = ({ orgs }) => {
   const MetBtn = ({ id, label }) => (
     <button onClick={() => setMetric(id)} style={{
       padding: '2px 8px', fontSize: 9, fontFamily: FONT_MONO, borderRadius: 3,
-      border: `1px solid ${metric === id ? COLORS.ac : COLORS.bd}`,
-      background: metric === id ? 'rgba(59,130,246,0.12)' : 'transparent',
-      color: metric === id ? COLORS.ac : COLORS.t3, cursor: 'pointer',
+      border: `1px solid ${metric === id ? COLORS.ac : COLORS.bl}`,
+      background: metric === id ? 'color-mix(in srgb, var(--ac) 12%, transparent)' : 'transparent',
+      color: metric === id ? COLORS.ac : COLORS.t2, cursor: 'pointer',
     }}>{label}</button>
   );
 
@@ -344,9 +344,9 @@ const CommunityView = () => {
   const SortBtn = ({ id, label }) => (
     <button onClick={() => setOrgSort(id)} style={{
       padding: '2px 8px', fontSize: 9, fontFamily: FONT_MONO, borderRadius: 3,
-      border: `1px solid ${orgSort === id ? COLORS.ac : COLORS.bd}`,
-      background: orgSort === id ? 'rgba(59,130,246,0.12)' : 'transparent',
-      color: orgSort === id ? COLORS.ac : COLORS.t3, cursor: 'pointer',
+      border: `1px solid ${orgSort === id ? COLORS.ac : COLORS.bl}`,
+      background: orgSort === id ? 'color-mix(in srgb, var(--ac) 12%, transparent)' : 'transparent',
+      color: orgSort === id ? COLORS.ac : COLORS.t2, cursor: 'pointer',
     }}>{label}</button>
   );
 

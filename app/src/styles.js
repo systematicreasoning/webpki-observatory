@@ -181,9 +181,9 @@ export const pageButtonStyle = (isActive) => ({
   fontSize: 10,
   borderRadius: 4,
   cursor: 'pointer',
-  border: `1px solid ${isActive ? COLORS.bl : COLORS.bd}`,
+  border: `1px solid ${isActive ? COLORS.ac : COLORS.bl}`,
   background: isActive ? COLORS.s2 : 'transparent',
-  color: isActive ? COLORS.t2 : COLORS.t3,
+  color: isActive ? COLORS.tx : COLORS.t2,
 });
 
 /** Small page button (9px, used in tight layouts) */
@@ -197,7 +197,7 @@ export const textButtonStyle = {
   fontSize: 9,
   color: COLORS.t3,
   background: 'transparent',
-  border: `1px solid ${COLORS.bd}`,
+  border: `1px solid ${COLORS.bl}`,
   borderRadius: 4,
   padding: '3px 8px',
   cursor: 'pointer',
@@ -324,15 +324,15 @@ export const infoTag = (color) => ({
   fontSize: 7,
   padding: '1px 3px',
   borderRadius: 2,
-  background: `${color}18`,
+  background: `color-mix(in srgb, ${color} 9%, transparent)`,
   color: color,
-  border: `1px solid ${color}33`,
+  border: `1px solid color-mix(in srgb, ${color} 20%, transparent)`,
 });
 
 /** Warning callout box */
 export const warningCallout = {
-  background: 'rgba(245,158,11,0.08)',
-  border: '1px solid rgba(245,158,11,0.2)',
+  background: 'color-mix(in srgb, var(--am) 8%, transparent)',
+  border: '1px solid color-mix(in srgb, var(--am) 20%, transparent)',
   borderRadius: 6,
   padding: '8px 12px',
   marginBottom: 12,

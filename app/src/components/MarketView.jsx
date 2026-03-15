@@ -318,7 +318,7 @@ const MarketView = () => {
                               fontSize: 7,
                               padding: '1px 3px',
                               borderRadius: 2,
-                              background: 'rgba(245,158,11,0.1)',
+                              background: 'color-mix(in srgb, var(--am) 10%, transparent)',
                               color: COLORS.am,
                             }}
                             title="CA owner name from crt.sh did not match any CCADB CA Owner record"
@@ -332,7 +332,7 @@ const MarketView = () => {
                               fontSize: 7,
                               padding: '1px 3px',
                               borderRadius: 2,
-                              background: 'rgba(6,182,212,0.1)',
+                              background: 'color-mix(in srgb, var(--cy) 10%, transparent)',
                               color: COLORS.cy,
                             }}
                             title={`Externally-operated subordinate CA under ${d.parent}`}
@@ -346,7 +346,7 @@ const MarketView = () => {
                               fontSize: 7,
                               padding: '1px 3px',
                               borderRadius: 2,
-                              background: 'rgba(245,158,11,0.1)',
+                              background: 'color-mix(in srgb, var(--am) 10%, transparent)',
                               color: COLORS.am,
                             }}
                             title={
