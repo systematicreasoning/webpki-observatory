@@ -288,7 +288,7 @@ const PostureDonut = ({ distribution }) => {
 
 /* ── Timeline axis ── */
 const TimelineAxis = ({ events }) => {
-  const minY = 2010.5, maxY = Math.max(new Date().getFullYear() + 0.5, allEvents.reduce((m, e) => Math.max(m, e.year || 0), 0) + 1.5), range = maxY - minY;
+  const minY = 2010.5, maxY = Math.max(new Date().getFullYear() + 0.5, events.reduce((m, e) => Math.max(m, e.year || 0), 0) + 1.5), range = maxY - minY;
   const sorted = [...events].sort((a, b) => (a.year || 0) - (b.year || 0));
   return (
     <Card>
