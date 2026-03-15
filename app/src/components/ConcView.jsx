@@ -137,12 +137,12 @@ const ConcView = () => {
         style={{ ...statGridStyle, marginBottom: 24 }}
       >
         <StatCard
-          l="Top 3 Control"
+          l="Top 3 Issuance Share"
           v={`${points[2]?.cumPct?.toFixed ? points[2].cumPct.toFixed(2) : points[2]?.cumPct || 0}%`}
           c={COLORS.ac}
         />
-        <StatCard l="Top 5 Control" v={`${points[4]?.cumPct || 0}%`} c={COLORS.cy} />
-        <StatCard l="Top 7 Control" v={`${points[6]?.cumPct || 0}%`} c={COLORS.pu} />
+        <StatCard l="Top 5 Issuance Share" v={`${points[4]?.cumPct || 0}%`} c={COLORS.cy} />
+        <StatCard l="Top 7 Issuance Share" v={`${points[6]?.cumPct || 0}%`} c={COLORS.pu} />
         <StatCard
           l="HHI Index"
           v={hhiValue.toLocaleString()}
