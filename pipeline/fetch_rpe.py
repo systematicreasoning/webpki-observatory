@@ -1831,7 +1831,7 @@ def main():
         reverse=True,
     )
     
-    max_fetch = int(os.environ.get("RPE_MAX_BUGS", "100"))
+    max_fetch = int(os.environ.get("RPE_MAX_BUGS", len(bugs_raw)))
     print(f"\n  Comment fetch limit: {max_fetch} bugs (set RPE_MAX_BUGS to change)")
     
     comment_cache = fetch_bug_comments(

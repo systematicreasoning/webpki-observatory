@@ -64,7 +64,7 @@ jobs:
 
       - name: Run governance risk pipeline
         continue-on-error: true
-        run: RPE_MAX_BUGS=1690 python pipeline/fetch_rpe.py
+        run: python pipeline/fetch_rpe.py
 
       - name: Run community engagement pipeline
         continue-on-error: true
