@@ -305,6 +305,7 @@ def main():
         "yearsByClass": years_by_class,
         "fingerprints": fingerprints,
         "categories": [{"category": c["cat"], "count": c["n"]} for c in incidents.get("categories", [])],
+        "whiteboardTags": incidents.get("whiteboardTags", {}),
     }
 
     # ═══════════════════════════════════════════════════════════════

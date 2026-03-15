@@ -302,15 +302,30 @@ const OpsView = () => {
           const grand = Object.values(dm).reduce((a, b) => a + b, 0);
           const selfPct = Math.round((dm.self_detected || 0) / grand * 100);
           const rpPct = Math.round((dm.root_program || 0) / grand * 100);
+          const autoPct = Math.round((dm.community || 0) / grand * 100);
           return (
             <>
               <StatCard
                 l="CA Self-Detection Rate"
                 v={`${selfPct}%`}
-                s={`of incidents found by CA's own monitoring — root programs find ${rpPct}%`}
+                s={`of incidents found by CA's own monitoring — root programs find ${rpPct}%, automated tools find ${autoPct}%`}
                 c={selfPct < 20 ? COLORS.am : COLORS.gn}
               />
             </>
+          );
+        })()}
+        {(() => {
+          const wb = d.whiteboardTags || {};
+          const pf = wb['policy-failure'] || 0;
+          const df = wb['disclosure-failure'] || 0;
+          if (!pf && !df) return null;
+          return (
+            <StatCard
+              l="Policy & Disclosure Failures"
+              v={(pf + df).toLocaleString()}
+              s={`incidents where CAs violated their own policies (${pf}) or failed timely disclosure (${df})`}
+              c={COLORS.rd}
+            />
           );
         })()}
         {(() => {
@@ -1182,8 +1197,8 @@ const OpsView = () => {
           { key: 'root_program',        label: 'Root Program',       color: COLORS.ac },
           { key: 'audit',               label: 'Audit',              color: COLORS.gn },
           { key: 'external_researcher', label: 'External Researcher',color: COLORS.pu },
-          { key: 'community',           label: 'Community',          color: COLORS.cy },
-          { key: 'self_detected',       label: 'Self-Detected',      color: COLORS.am },
+          { key: 'community',           label: 'Automated Tools (CT/Linting)', color: COLORS.cy },
+          { key: 'self_detected',       label: 'CA Self-Detected',    color: COLORS.am },
           { key: 'unknown',             label: 'Unknown',            color: COLORS.t3 },
         ];
         // Compute pct version for stacked area

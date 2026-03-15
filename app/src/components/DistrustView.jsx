@@ -544,7 +544,20 @@ export default function DistrustView() {
       <div style={statGridStyle}>
         <StatCard l="Distrust Events" v={stats.total_events || allEvents.length} s={`${stats.year_range?.[0]}–${stats.year_range?.[1]}`} />
         {(() => {
-          // Tags that indicate compliance operations failures (process, response, disclosure)
+          const patternCount = allEvents.filter(e =>
+            (e.reason_tags || []).includes('pattern_of_issues')
+          ).length;
+          const total = allEvents.length;
+          return (
+            <StatCard
+              l="Recurring Pattern of Issues"
+              v={`${patternCount} of ${total}`}
+              s="distrust events where compliance failures recurred across multiple years — not resolved after first incident"
+              c={COLORS.rd}
+            />
+          );
+        })()}
+        {(() => {
           const OPS_TAGS = new Set([
             'inadequate_incident_response','pattern_of_issues','lack_of_meaningful_improvement',
             'non_responsive_to_root_programs','minimized_severity','active_deception',
@@ -565,8 +578,7 @@ export default function DistrustView() {
             />
           );
         })()}
-        <StatCard l="Response-Quality Failures" v={`${stats.response_driven_pct || 73}%`} s="of events include minimizing, deceiving, or non-responsive behavior" c={COLORS.rd} />
-        <StatCard l="Median Time to Removal" v={fmtRunway(stats.median_runway_days)} s="from first incident to distrust" c={COLORS.t2} />
+        <StatCard l="Response-Quality Failures" v={`${stats.response_driven_pct || 73}%`} s="of events include minimizing, deceiving, or non-responsive behavior" c={COLORS.t2} />
       </div>
 
       {/* Timeline axis */}

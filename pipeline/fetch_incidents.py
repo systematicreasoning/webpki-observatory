@@ -340,6 +340,7 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
     distrusted_total = 0
     distrusted_by_ca = defaultdict(lambda: {"n": 0})
     distrusted_by_year = defaultdict(int)
+    wb_tag_counts = defaultdict(int)  # whiteboard tag frequency across all bugs
 
     for b in all_bugs:
         raw_ca = extract_ca(b["summary"])
@@ -378,6 +379,11 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
             by_ca[canonical][cat_key] += 1
             by_year_class[year][cat_key] += 1
             cat_totals[cat_key] += 1
+
+        # Count whiteboard tags for policy/disclosure failure analysis
+        wb = b.get("whiteboard", "")
+        for tag in re.findall(r'\[([^\]]+)\]', wb):
+            wb_tag_counts[tag] += 1
 
         by_year[year] += 1
 
@@ -454,6 +460,7 @@ def build_incidents_json(all_bugs, mappings, classifications, meta):
         "cas": cas_list,
         "distrusted_excluded": distrusted_cas,
         "distrusted_years": distrusted_years,
+        "whiteboardTags": dict(sorted(wb_tag_counts.items(), key=lambda x: -x[1])),
     }
 
     return output, unmapped
