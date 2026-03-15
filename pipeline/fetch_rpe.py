@@ -1872,7 +1872,7 @@ def main():
         bug_ids,
         comment_cache_path,
         max_bugs=max_fetch,
-        rate_limit_delay=0.5,
+        rate_limit_delay=0.3,
     )
 
     # Build a fast bug lookup for Phase 2c candidate collection
