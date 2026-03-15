@@ -257,7 +257,7 @@ const GovernanceRiskView = () => {
         </div>
         <div style={{ ...footnoteStyle, marginTop: 10 }}>
           {isRecentRC ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events since ${RECENT_YEAR_CUTOFF} (${totalEvents} of 15 total), Bugzilla oversight 2021+, ballots last 50 SC ballots. Trust surface is always current snapshot. `}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{` enforcement events in the last ~5 years (${totalEvents} of 15 total), Bugzilla oversight, ballots last 50 SC ballots. Trust surface is always current snapshot. `}</>
           ) : (
             `Enforcement: ${totalEvents} events since 2011. Bugzilla Coverage = unique CA compliance bugs engaged with genuine governance comments. Substantive Oversight = bugs with technically substantive comments (cert/CRL analysis, policy findings) — excludes process enforcement (survey notices, CCADB reminders, status requests). LLM-classified. Ballots: SC (${d.policy_leadership?.by_working_group?.server_certificate?.total_ballots || 0}) + NS (${d.policy_leadership?.by_working_group?.network_security?.total_ballots || 0}), all time. `
           )}
@@ -536,7 +536,7 @@ const GovernanceRiskView = () => {
         </div>
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
           {incidentOversightView === 'recent' ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' '}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{' '}</>
           ) : (
             'All time: 2014–present. '
           )}
@@ -673,7 +673,7 @@ const GovernanceRiskView = () => {
         })()}
         <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 8, lineHeight: 1.4, borderTop: `1px solid ${COLORS.bd}`, paddingTop: 6 }}>
           {incidentDetectionView === 'recent' ? (
-            <><strong style={{ color: COLORS.t2 }}>Recent: {RECENT_YEAR_CUTOFF}–present.</strong>{' Bug filing totals and discovery method proportions reflect this window only. '}</>
+            <><strong style={{ color: COLORS.t2 }}>Recent:</strong>{' Bug filing totals and discovery method proportions reflect this window only. '}</>
           ) : (
             'All time: 2014–present. '
           )}
