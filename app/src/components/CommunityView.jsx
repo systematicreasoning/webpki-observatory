@@ -359,7 +359,7 @@ const CommunityView = () => {
       {/* ── Stat cards ── */}
       <div style={{ ...statGridStyle, gridTemplateColumns: 'repeat(auto-fit, minmax(148px, 1fr))' }}>
         <StatCard
-          l="Silent CABF Members"
+          l="CABF Members — No Contribution"
           v={`${stats.zeroMembers} of ${stats.activeMembers + stats.zeroMembers}`}
           s="no recorded community contribution"
           c={COLORS.am}

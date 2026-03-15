@@ -467,7 +467,7 @@ const OpsView = () => {
             <>
               {ybc.length > 0 && (
                 <Card>
-                  <CardTitle sub="Governance incidents (audit failures, CPS violations, disclosure failures) were 60% of all incidents in 2025 — up from 21% in prior years. Driven by broad CCADB/CPS enforcement across ~30 CAs. 2026 marked as partial year.">
+                  <CardTitle sub="Incident types by year — misissuance, revocation, governance (audit/policy failures), and validation. 2026 partial year.">
                     Incidents by Class
                   </CardTitle>
                   <ChartWrap height={240}>
@@ -1215,7 +1215,7 @@ const OpsView = () => {
       })()}
 
       <div style={{ fontSize: 9, color: COLORS.t3, textAlign: 'center', marginTop: 8 }}>
-        Data: Bugzilla CA Certificate Compliance · {d.total} bugs · {d.ca_count} CAs · Pipeline snapshot March 2026
+        Data: Bugzilla CA Certificate Compliance · {d.total} bugs · {d.ca_count} CAs · Pipeline updated {rpeData?.meta?.generated_at?.slice(0, 10) || 'daily'}
       </div>
 
       <MethodologyCard>

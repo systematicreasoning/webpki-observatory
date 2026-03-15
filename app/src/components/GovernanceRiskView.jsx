@@ -205,25 +205,25 @@ const GovernanceRiskView = () => {
         in governance creates risk everyone else absorbs.
       </TabIntro>
 
-      {/* ═══ STRIKING FINDINGS ═══ */}
+      {/* ═══ KEY METRICS ═══ */}
       <div style={statGridStyle}>
         <StatCard
-          l="Chrome Now Leads Mozilla"
-          v={`${Math.round(chromeRecentSub / Math.max(mozillaRecentSub, 1) * 10) / 10}×`}
-          s={`more substantive oversight bugs since 2021 (${chromeRecentSub} vs ${mozillaRecentSub})`}
+          l="Chrome Substantive Oversight"
+          v={`${chromeRecentSub} bugs`}
+          s={`since 2021 — vs Mozilla ${mozillaRecentSub} in same period`}
           c={COLORS.ac}
         />
         <StatCard
-          l="The Reversal"
-          v="2021"
-          s={`Chrome overtook Mozilla — ${chromeAllSub} vs ${mozillaAllSub} all-time, driven by post-2021 surge`}
-          c={COLORS.or}
+          l="Mozilla Substantive Oversight"
+          v={`${mozillaAllSub} bugs`}
+          s={`all-time · ${mozillaRecentSub} since 2021`}
+          c={STORE_COLORS.mozilla}
         />
         <StatCard
-          l="Microsoft Oversight"
-          v="Zero"
+          l="Microsoft Other-CA Oversight"
+          v={msftOversight === 0 ? '0 bugs' : `${msftOversight} bugs`}
           s="governance comments on other CAs — despite operating a CA"
-          c={COLORS.am}
+          c={msftOversight === 0 ? COLORS.am : COLORS.gn}
         />
         <StatCard
           l="Corpus"
