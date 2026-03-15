@@ -59,7 +59,7 @@ def fetch_json(url, retries=3, backoff=2.0, timeout=30, headers=None):
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers=req_headers)
-            with urllib.request.urlopen(req, timeout=timeout, encoding="utf-8") as resp:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return json.loads(resp.read().decode('utf-8'))
         except urllib.error.HTTPError as e:
             if e.code == 429:

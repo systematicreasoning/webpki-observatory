@@ -14,9 +14,8 @@ Usage:
   python pipeline/export_llm_snapshot.py [--data-dir data/] [--pipeline-dir pipeline/]
 """
 import json
-from utils import load_json_dir as load_json, save_json, slugify
+from utils import load_json_dir as load_json, slugify
 import os
-import re
 import sys
 from collections import Counter
 from datetime import datetime, timezone

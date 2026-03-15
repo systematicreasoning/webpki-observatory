@@ -20,7 +20,7 @@ Attribution rules:
 
 import json, re
 from pathlib import Path
-from utils import load_json, save_json
+from utils import load_json
 from collections import defaultdict, Counter
 from datetime import datetime, timezone
 
@@ -537,11 +537,11 @@ def analyze_ballots(ballots_cache):
     })
 
     # Collect all ballots, extract year from URL
-    import re as _re
+
     all_ballots = []
     for wg, blist in ballots_cache.items():
         for b in blist:
-            m = _re.search(r'/(\d{4})/', b.get("url", ""))
+            m = re.search(r'/(\d{4})/', b.get("url", ""))
             year = m.group(1) if m else ""
             all_ballots.append((wg, b, year))
 
@@ -885,7 +885,7 @@ def main():
 
     # ── Summary ──
     print("\n── Summary ──")
-    print(f"\nTop CA orgs by Bugzilla engagement:")
+    print("\nTop CA orgs by Bugzilla engagement:")
     for org, d in list(orgs_out.items())[:12]:
         bz = d["bugzilla"]
         bal = d["ballots"]
@@ -896,7 +896,7 @@ def main():
               f"ballots={bal['proposed']}P/{bal['endorsed']}E  "
               f"filed={fil['bugs_filed']:3d}")
 
-    print(f"\nTop individuals by Bugzilla engagement:")
+    print("\nTop individuals by Bugzilla engagement:")
     ind_sorted = sorted(inds_out.items(),
                         key=lambda x: -x[1]["bugzilla"]["bugs_engaged"])
     for email, d in ind_sorted[:12]:
@@ -905,7 +905,7 @@ def main():
         print(f"  {email:42s}  bz={bz['bugs_engaged']:3d}bugs  "
               f"filed={fil['bugs_filed']:3d}")
 
-    print(f"\nTop ballot contributors (CA orgs):")
+    print("\nTop ballot contributors (CA orgs):")
     bal_sorted = sorted(bal_orgs.items(),
                         key=lambda x: -(x[1]["proposed"] * 3 + x[1]["endorsed"]))
     for org, d in bal_sorted[:10]:

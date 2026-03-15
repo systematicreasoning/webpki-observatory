@@ -24,7 +24,7 @@ FILE_PATH = "net/data/ssl/chrome_root_store/root_store.textproto"
 
 def fetch_json(url):
     req = urllib.request.Request(url)
-    with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
+    with urllib.request.urlopen(req, timeout=30) as resp:
         raw = resp.read().decode("utf-8")
     if raw.startswith(")]}'"):
         raw = raw[4:]
@@ -35,7 +35,7 @@ def fetch_file_at_commit(commit, filename):
     url = f"{GITILES_BASE}/+/{commit}/{filename}?format=TEXT"
     try:
         req = urllib.request.Request(url)
-        with urllib.request.urlopen(req, timeout=15, encoding="utf-8") as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             return base64.b64decode(resp.read()).decode("utf-8", errors="replace")
     except:
         return None

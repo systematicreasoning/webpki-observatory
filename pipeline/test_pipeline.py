@@ -94,6 +94,16 @@ def _make_mapping(ca_name, canonical):
     return {'ccadb_owner': canonical, 'status': 'trusted'}
 
 
+def _make_meta():
+    return {
+        "last_bug_id": 9999999,
+        "bug_count": 0,
+        "last_run": "2024-01-01T00:00:00Z",
+        "pipeline_error": None,
+        "pipeline_error_time": None,
+    }
+
+
 def test_build_incidents_json_basic():
     from fetch_incidents import build_incidents_json
 
@@ -108,7 +118,7 @@ def test_build_incidents_json_basic():
     }
     classifications = {}
 
-    result, unmapped = build_incidents_json(bugs, mappings, classifications)
+    result, unmapped = build_incidents_json(bugs, mappings, classifications, _make_meta())
 
     assert isinstance(result, dict)
     assert result['total'] == 3
@@ -120,7 +130,7 @@ def test_build_incidents_json_basic():
 
 def test_build_incidents_json_empty():
     from fetch_incidents import build_incidents_json
-    result, unmapped = build_incidents_json([], {}, {})
+    result, unmapped = build_incidents_json([], {}, {}, _make_meta())
     assert result['total'] == 0
     assert result['ca_count'] == 0
     assert result['cas'] == []
@@ -129,7 +139,7 @@ def test_build_incidents_json_empty():
 def test_build_incidents_json_unmapped():
     from fetch_incidents import build_incidents_json
     bugs = [_make_bug(1001, 'UnknownCA')]
-    result, unmapped = build_incidents_json(bugs, {}, {})
+    result, unmapped = build_incidents_json(bugs, {}, {}, _make_meta())
     assert result['total'] == 0
     assert 'UnknownCA' in unmapped
 
@@ -138,7 +148,7 @@ def test_build_incidents_json_distrusted_excluded():
     from fetch_incidents import build_incidents_json
     bugs = [_make_bug(1001, 'Entrust')]
     mappings = {'Entrust': {'ccadb_owner': 'Entrust', 'status': 'distrusted'}}
-    result, _ = build_incidents_json(bugs, mappings, {})
+    result, _ = build_incidents_json(bugs, mappings, {}, _make_meta())
     # Distrusted CAs go to distrusted_excluded, not total
     assert result['total'] == 0
     assert result.get('total_with_distrusted', 0) == 1
@@ -148,7 +158,7 @@ def test_build_incidents_whiteboard_tags():
     from fetch_incidents import build_incidents_json
     bugs = [_make_bug(1001, 'DigiCert')]
     mappings = {'DigiCert': _make_mapping('DigiCert', 'DigiCert')}
-    result, _ = build_incidents_json(bugs, mappings, {})
+    result, _ = build_incidents_json(bugs, mappings, {}, _make_meta())
     wb = result.get('whiteboardTags', {})
     assert 'policy-failure' in wb
     assert wb['policy-failure'] == 1
@@ -162,7 +172,7 @@ def test_build_incidents_year_grouping():
         _make_bug(1003, 'DigiCert', year='2024'),
     ]
     mappings = {'DigiCert': _make_mapping('DigiCert', 'DigiCert')}
-    result, _ = build_incidents_json(bugs, mappings, {})
+    result, _ = build_incidents_json(bugs, mappings, {}, _make_meta())
     years = {y['y']: y['n'] for y in result['years']}
     assert years[2022] == 2
     assert years[2024] == 1
@@ -308,7 +318,7 @@ def test_roundtrip_incidents_output():
 
     bugs = [_make_bug(i, 'DigiCert') for i in range(10)]
     mappings = {'DigiCert': _make_mapping('DigiCert', 'DigiCert')}
-    result, _ = build_incidents_json(bugs, mappings, {})
+    result, _ = build_incidents_json(bugs, mappings, {}, _make_meta())
 
     with tempfile.TemporaryDirectory() as tmpdir:
         path = Path(tmpdir) / 'incidents.json'

@@ -70,18 +70,8 @@ Return ONLY a valid JSON array, no other text.
 """
 
 
-def load_json(path, default=None):
-    try:
-        with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return default if default is not None else {}
 
 
-def save_json(path, data):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, default=str, ensure_ascii=False)
 
 
 def now_iso():
@@ -115,7 +105,7 @@ def fetch_bugzilla(meta, cached_bugs):
     print("  Checking Bugzilla bug count...")
     try:
         count_url = f"{BUGZILLA_URL}?component={urllib.parse.quote(BUGZILLA_COMPONENT)}&count_only=1"
-        with urllib.request.urlopen(count_url, timeout=30, encoding="utf-8") as resp:
+        with urllib.request.urlopen(count_url, timeout=30) as resp:
             current_count = json.loads(resp.read())["bug_count"]
     except Exception as e:
         print(f"  ERROR checking count: {e}")
@@ -141,7 +131,7 @@ def fetch_bugzilla(meta, cached_bugs):
             f"&order=bug_id%20asc&limit=500"
         )
         try:
-            with urllib.request.urlopen(fetch_url, timeout=60, encoding="utf-8") as resp:
+            with urllib.request.urlopen(fetch_url, timeout=60) as resp:
                 new_bugs = json.loads(resp.read()).get("bugs", [])
         except Exception as e:
             print(f"  ERROR fetching new bugs: {e}")
@@ -159,7 +149,7 @@ def fetch_bugzilla(meta, cached_bugs):
                 f"&limit=500&offset={offset}&order=creation_time%20asc"
             )
             try:
-                with urllib.request.urlopen(fetch_url, timeout=60, encoding="utf-8") as resp:
+                with urllib.request.urlopen(fetch_url, timeout=60) as resp:
                     batch = json.loads(resp.read()).get("bugs", [])
             except Exception as e:
                 print(f"  ERROR at offset {offset}: {e}")
@@ -239,7 +229,7 @@ def classify_bugs(bugs, existing_classifications, api_key):
                 },
             )
 
-            with urllib.request.urlopen(req, timeout=120, encoding="utf-8") as resp:
+            with urllib.request.urlopen(req, timeout=120) as resp:
                 result = json.loads(resp.read())
 
             text = ""

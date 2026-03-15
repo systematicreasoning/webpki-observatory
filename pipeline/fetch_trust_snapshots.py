@@ -39,7 +39,7 @@ def fetch_ccadb():
     print("  Fetching CCADB AllCertificateRecordsCSVFormatv4...")
     req = urllib.request.Request(CCADB_URL)
     req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-    with urllib.request.urlopen(req, timeout=60, encoding="utf-8") as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:
         text = resp.read().decode("utf-8", errors="replace")
     
     reader = csv.DictReader(io.StringIO(text))

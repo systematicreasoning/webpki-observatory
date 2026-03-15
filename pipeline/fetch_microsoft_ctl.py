@@ -30,7 +30,7 @@ def fetch_page(url):
     try:
         req = urllib.request.Request(url)
         req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-        with urllib.request.urlopen(req, timeout=15, encoding="utf-8") as resp:
+        with urllib.request.urlopen(req, timeout=15) as resp:
             return resp.read().decode("utf-8", errors="replace")
     except:
         return None

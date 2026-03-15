@@ -28,7 +28,7 @@ import urllib.parse
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from utils import load_json, save_json
+from utils import load_json
 
 # Force unbuffered stdout
 if not sys.stdout.isatty():
@@ -122,7 +122,7 @@ def classify_comments_llm(candidates, existing_classifications, api_key):
                 },
             )
 
-            with urllib.request.urlopen(req, timeout=60, encoding="utf-8") as resp:
+            with urllib.request.urlopen(req, timeout=60) as resp:
                 result = json.loads(resp.read())
 
             text = "".join(
@@ -366,7 +366,7 @@ DISCOVERY_PATTERNS = {
 }
 
 
-def classify_discovery_method(first_comment_text, bug_creator, bug_summary):
+def classify_discovery_method(first_comment_text, _bug_creator, bug_summary):
     """Classify how an incident was discovered from the first comment text.
     
     Only classifies when actual comment text is available — the creator email
@@ -461,7 +461,7 @@ def bulk_fetch_comment_counts(bug_ids, rate_limit_delay=0.3):
             req = urllib.request.Request(url)
             req.add_header("Accept", "application/json")
             req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-            with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
+            with urllib.request.urlopen(req, timeout=30) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
             for bug in data.get("bugs", []):
                 result[str(bug["id"])] = bug.get("comment_count", 0)
@@ -550,7 +550,7 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
                 req = urllib.request.Request(url)
                 req.add_header("Accept", "application/json")
                 req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-                with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
+                with urllib.request.urlopen(req, timeout=30) as resp:
                     data = json.loads(resp.read().decode("utf-8"))
 
                 comments = data.get("bugs", {}).get(str(bug_id), {}).get("comments", [])
@@ -1198,7 +1198,7 @@ def compute_policy_leadership():
 
     stores = ["chrome", "mozilla", "apple", "microsoft"]
 
-    def analyze_wg(ballots, wg_name):
+    def analyze_wg(ballots, _wg_name):
         """Analyze a single working group's ballots."""
         programs = {s: {"proposed": 0, "endorsed": 0, "voted": 0, "absent": 0, "ballots_with_votes": 0} for s in stores}
         recent_votes = []
@@ -1706,7 +1706,7 @@ def compute_gov_ca_counts():
                 gov_counts[s] += 1
                 gov_cas_by_store[s].append(owner[:50])
 
-    print(f"  Gov-affiliated CAs per store:")
+    print("  Gov-affiliated CAs per store:")
     for s in stores:
         print(f"    {s:12}: {gov_counts[s]}")
 
@@ -1738,7 +1738,7 @@ def compute_inclusion_velocity():
         url = f"{BUGZILLA_URL}?{params}"
         req = urllib.request.Request(url)
         req.add_header("Accept", "application/json")
-        with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read().decode("utf-8"))
         bugs = data.get("bugs", [])
         adds = [b for b in bugs if b.get("summary", "").startswith("Add ")]
@@ -1788,7 +1788,7 @@ def compute_inclusion_velocity():
         url = f"{BUGZILLA_URL}?{params2}"
         req = urllib.request.Request(url)
         req.add_header("Accept", "application/json")
-        with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read().decode("utf-8"))
         for b in data.get("bugs", []):
             if not b.get("summary", "").startswith("Add "):
@@ -1884,7 +1884,7 @@ def main():
     comment_classifications = load_json(comment_clf_path, {})
 
     if comment_classifications:
-        print(f"\n── Phase 2c: LLM Comment Classification ──")
+        print("\n── Phase 2c: LLM Comment Classification ──")
         print(f"  Loaded {len(comment_classifications)} cached classifications")
 
     if api_key:

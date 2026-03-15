@@ -10,9 +10,8 @@ Run: python pipeline/export_ui_bundle.py
 CI:  runs after all pipeline scripts, before `npm run build`
 """
 import json
-from utils import load_json_dir as load_json, save_json, slugify
+from utils import load_json_dir as load_json, slugify
 import os
-import re
 import sys
 
 # Shared config

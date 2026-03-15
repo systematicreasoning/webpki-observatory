@@ -49,7 +49,7 @@ def fetch_from_html():
     url = "https://gs.statcounter.com/browser-market-share"
     req = Request(url, headers={"User-Agent": "WebPKI-Observatory/1.0"})
     try:
-        with urlopen(req, timeout=30, encoding="utf-8") as resp:
+        with urlopen(req, timeout=30) as resp:
             html = resp.read().decode("utf-8")
     except URLError as e:
         print(f"  ERROR: Could not fetch StatCounter HTML: {e}")
