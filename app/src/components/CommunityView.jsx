@@ -23,14 +23,27 @@ import { statGridStyle, footnoteStyle } from '../styles';
 
 /* ── helpers ── */
 
-/** Mask email local part to reduce scraping surface.
- *  keeps first char + domain: ryan_hurst@hotmail.com → r*********@hotmail.com
+/** Mask email to reduce scraping surface.
+ *  Personal domains (gmail, hotmail, etc): show only masked local part — domain
+ *  gives no org-affiliation signal and leaks provider unnecessarily.
+ *  Org domains: keep domain for affiliation context, mask local part.
+ *    agwa-bugs@mm.beanwood.com -> a********@mm.beanwood.com
+ *    rdaurne77@gmail.com       -> r********
+ *    dzacharo@harica.gr        -> d*******@harica.gr
  */
+const PERSONAL_DOMAINS = new Set([
+  'gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'protonmail.com',
+  'icloud.com', 'me.com', 'mac.com', 'live.com', 'msn.com',
+  'thisisntrocket.science', 'mm.beanwood.com', 'hezmatt.org',
+  'fozzie.dev', 'hboeck.de', 'proton.me', 'scheitle.de',
+]);
+
 function maskEmail(email) {
   if (!email || !email.includes('@')) return email;
   const [local, domain] = email.split('@');
   if (local.length <= 1) return email;
-  return `${local[0]}${'*'.repeat(local.length - 1)}@${domain}`;
+  const masked = `${local[0]}${'*'.repeat(local.length - 1)}`;
+  return PERSONAL_DOMAINS.has(domain) ? masked : `${masked}@${domain}`;
 }
 
 function scoreOrg(o, recent) {
