@@ -30,7 +30,7 @@ def fetch_page(url):
     try:
         req = urllib.request.Request(url)
         req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=15, encoding="utf-8") as resp:
             return resp.read().decode("utf-8", errors="replace")
     except:
         return None
@@ -138,7 +138,7 @@ def main():
     CACHE_DIR.mkdir(exist_ok=True)
 
     cache_path = CACHE_DIR / "microsoft_ctl_cache.json"
-    cache = json.load(open(cache_path)) if cache_path.exists() else {}
+    cache = json.load(open(cache_path, encoding="utf-8")) if cache_path.exists() else {}
     print(f"  {len(cache)} cached notices")
 
     now = datetime.now()
@@ -178,7 +178,7 @@ def main():
                     print(f"  {key}: {notice.get('release_date') or '?':>12} — {len(notice['actions'])} actions")
             time.sleep(0.3)
 
-    with open(cache_path, "w") as f:
+    with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f, indent=2)
 
     changelog = []
@@ -206,7 +206,7 @@ def main():
     }
 
     out_path = OUTPUT_DIR / "microsoft_ctl_changelog.json"
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
     print(f"\n  {len(notices)} notices, {len(changelog)} actions")

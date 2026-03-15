@@ -22,11 +22,12 @@ import urllib.error
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from utils import load_json, save_json
 
 # Force unbuffered stdout so CI shows progress in real time
 if not sys.stdout.isatty():
-    sys.stdout = os.fdopen(sys.stdout.fileno(), "w", buffering=1)
-    sys.stderr = os.fdopen(sys.stderr.fileno(), "w", buffering=1)
+    sys.stdout = os.fdopen(sys.stdout.fileno(), "w", encoding="utf-8", buffering=1)
+    sys.stderr = os.fdopen(sys.stderr.fileno(), "w", encoding="utf-8", buffering=1)
 
 PIPELINE_DIR = Path(__file__).parent
 CACHE_DIR = PIPELINE_DIR / "ops_cache"
@@ -71,7 +72,7 @@ Return ONLY a valid JSON array, no other text.
 
 def load_json(path, default=None):
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return default if default is not None else {}
@@ -79,7 +80,7 @@ def load_json(path, default=None):
 
 def save_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, default=str, ensure_ascii=False)
 
 
@@ -114,7 +115,7 @@ def fetch_bugzilla(meta, cached_bugs):
     print("  Checking Bugzilla bug count...")
     try:
         count_url = f"{BUGZILLA_URL}?component={urllib.parse.quote(BUGZILLA_COMPONENT)}&count_only=1"
-        with urllib.request.urlopen(count_url, timeout=30) as resp:
+        with urllib.request.urlopen(count_url, timeout=30, encoding="utf-8") as resp:
             current_count = json.loads(resp.read())["bug_count"]
     except Exception as e:
         print(f"  ERROR checking count: {e}")
@@ -140,7 +141,7 @@ def fetch_bugzilla(meta, cached_bugs):
             f"&order=bug_id%20asc&limit=500"
         )
         try:
-            with urllib.request.urlopen(fetch_url, timeout=60) as resp:
+            with urllib.request.urlopen(fetch_url, timeout=60, encoding="utf-8") as resp:
                 new_bugs = json.loads(resp.read()).get("bugs", [])
         except Exception as e:
             print(f"  ERROR fetching new bugs: {e}")
@@ -158,7 +159,7 @@ def fetch_bugzilla(meta, cached_bugs):
                 f"&limit=500&offset={offset}&order=creation_time%20asc"
             )
             try:
-                with urllib.request.urlopen(fetch_url, timeout=60) as resp:
+                with urllib.request.urlopen(fetch_url, timeout=60, encoding="utf-8") as resp:
                     batch = json.loads(resp.read()).get("bugs", [])
             except Exception as e:
                 print(f"  ERROR at offset {offset}: {e}")
@@ -238,7 +239,7 @@ def classify_bugs(bugs, existing_classifications, api_key):
                 },
             )
 
-            with urllib.request.urlopen(req, timeout=120) as resp:
+            with urllib.request.urlopen(req, timeout=120, encoding="utf-8") as resp:
                 result = json.loads(resp.read())
 
             text = ""
@@ -508,7 +509,7 @@ def main():
     api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if has_new or any(str(b["id"]) not in classifications for b in cached_bugs[:10]):
         print("\n--- Classification ---")
-        classifications, n_classified = classify_bugs(
+        classifications, _ = classify_bugs(
             cached_bugs, classifications, api_key
         )
         save_json(CACHE_DIR / "classifications.json", classifications)

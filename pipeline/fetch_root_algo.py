@@ -58,14 +58,14 @@ OUTPUT_PATH = DATA_DIR / "root_algorithms.json"
 def load_cache():
     """Load cached cert metadata keyed by SHA-256 fingerprint."""
     if CACHE_PATH.exists():
-        with open(CACHE_PATH) as f:
+        with open(CACHE_PATH, encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
 def save_cache(cache):
     """Save cert metadata cache."""
-    with open(CACHE_PATH, "w") as f:
+    with open(CACHE_PATH, "w", encoding="utf-8") as f:
         json.dump(cache, f, indent=2)
 
 
@@ -210,7 +210,7 @@ def load_included_roots():
         print("  ERROR: No CA index found. Run fetch_and_join.py first.")
         return []
 
-    with open(index_path) as f:
+    with open(index_path, encoding="utf-8") as f:
         index = json.load(f)
 
     roots = []
@@ -220,7 +220,7 @@ def load_included_roots():
         if not ca_path.exists():
             continue
 
-        with open(ca_path) as f:
+        with open(ca_path, encoding="utf-8") as f:
             ca_data = json.load(f)
 
         for root in ca_data.get("roots", []):
@@ -375,7 +375,7 @@ def main():
     # Save PEM cache for fetch_and_join.py to embed in per-CA detail files.
     # This runs unconditionally so the cert viewer always has PEM data.
     pem_cache_path = PIPELINE_DIR / "pem_cache.json"
-    with open(pem_cache_path, "w") as f:
+    with open(pem_cache_path, "w", encoding="utf-8") as f:
         json.dump(bulk_pems, f)
     print(f"  Saved PEM cache: {len(bulk_pems)} certificates ({pem_cache_path.stat().st_size / 1024 / 1024:.1f} MB)")
 
@@ -386,7 +386,7 @@ def main():
     output = build_output(roots)
 
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_PATH, "w") as f:
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, default=str)
 
     size_kb = OUTPUT_PATH.stat().st_size / 1024

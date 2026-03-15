@@ -20,6 +20,7 @@ Attribution rules:
 
 import json, re
 from pathlib import Path
+from utils import load_json, save_json
 from collections import defaultdict, Counter
 from datetime import datetime, timezone
 
@@ -67,7 +68,6 @@ CA_EMAIL_TO_ORG = {
     "assecods.pl":          "Certum/Asseco",
     "godaddy.com":          "GoDaddy",
     "buypass.no":           "Buypass",
-    "dhimyotis.com":        "Certigna",
     "kir.pl":               "KIR",
     "secom.co.jp":          "SECOM",
     "cht.com.tw":           "Chunghwa Telecom",
@@ -254,7 +254,7 @@ def is_root_program(email, comment_time=""):
     if el in GTS_CA_STAFF:
         return False
     if el in ROOT_PROGRAM_INDIVIDUALS:
-        prog, cutoff = ROOT_PROGRAM_INDIVIDUALS[el]
+        _, cutoff = ROOT_PROGRAM_INDIVIDUALS[el]
         if cutoff is None:
             return True
         if comment_time and comment_time[:10] <= cutoff:
@@ -296,12 +296,6 @@ def is_own_filing(summary, org):
     return any(alias in summary_lower for alias in aliases)
 
 
-def load_json(path, default=None):
-    try:
-        with open(path) as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return default
 
 
 # ── Signal 1: Bugzilla engagement ────────────────────────────────────────────
@@ -790,7 +784,6 @@ def main():
         "Visa": "Visa",
     }
 
-    CABF_CONSUMERS = set(cabf_members.get("certificate_consumers", []))
     CABF_INTERESTED = set(cabf_members.get("interested_parties", []))
 
     # Build set of canonical CA member names

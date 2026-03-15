@@ -199,7 +199,7 @@ def call_api(prompt: str) -> dict:
         method="POST",
     )
 
-    with urllib.request.urlopen(req, timeout=60) as resp:
+    with urllib.request.urlopen(req, timeout=60, encoding="utf-8") as resp:
         body = json.loads(resp.read())
 
     text = body["content"][0]["text"].strip()

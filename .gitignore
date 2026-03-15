@@ -22,14 +22,13 @@ pipeline/pem_cache.json
 pipeline/ops_cache/comments_cache.json
 pipeline/ops_cache/bugs_raw.json
 
-# Pipeline operational cache — large files that grow daily.
-# These live in GitHub Actions cache between runs, not in git.
-# See .github/workflows/deploy.yml for cache restore/save steps.
-pipeline/ops_cache/comment_classifications.json
-pipeline/ops_cache/chrome_root_store_cache.json
-pipeline/ops_cache/microsoft_ctl_cache.json
-pipeline/ops_cache/cabforum_ballots.json
-pipeline/ops_cache/classifications.json
-pipeline/ops_cache/cabf_members.json
-pipeline/ops_cache/bugs_meta.json
-pipeline/algo_cache.json
+# Pipeline operational cache — temporarily committed to warm GH Actions cache
+# RESTORE GITIGNORE ENTRIES after next successful CI run
+#pipeline/ops_cache/comment_classifications.json
+#pipeline/ops_cache/chrome_root_store_cache.json
+#pipeline/ops_cache/microsoft_ctl_cache.json
+#pipeline/ops_cache/cabforum_ballots.json
+#pipeline/ops_cache/classifications.json
+#pipeline/ops_cache/cabf_members.json
+#pipeline/ops_cache/bugs_meta.json
+#pipeline/algo_cache.json

@@ -49,7 +49,7 @@ def fetch_from_html():
     url = "https://gs.statcounter.com/browser-market-share"
     req = Request(url, headers={"User-Agent": "WebPKI-Observatory/1.0"})
     try:
-        with urlopen(req, timeout=30) as resp:
+        with urlopen(req, timeout=30, encoding="utf-8") as resp:
             html = resp.read().decode("utf-8")
     except URLError as e:
         print(f"  ERROR: Could not fetch StatCounter HTML: {e}")
@@ -183,7 +183,7 @@ def main():
 
     os.makedirs(DATA_DIR, exist_ok=True)
     output_path = os.path.join(DATA_DIR, "browser_coverage.json")
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
     print(f"\n  Wrote {output_path}")
 

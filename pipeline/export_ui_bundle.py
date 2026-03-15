@@ -10,6 +10,7 @@ Run: python pipeline/export_ui_bundle.py
 CI:  runs after all pipeline scripts, before `npm run build`
 """
 import json
+from utils import load_json_dir as load_json, save_json, slugify
 import os
 import re
 import sys
@@ -28,17 +29,8 @@ for arg in sys.argv[1:]:
         PIPELINE_DIR = arg.split("=", 1)[1]
 
 
-def load_json(directory, filename):
-    path = os.path.join(directory, filename)
-    if not os.path.exists(path):
-        print(f"  WARNING: {path} not found")
-        return None
-    with open(path) as f:
-        return json.load(f)
 
 
-def slugify(name):
-    return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", (name or "").lower()))
 
 
 def norm_country(c):
@@ -360,7 +352,7 @@ def main():
     }
 
     out_path = os.path.join(DATA_DIR, "ui_bundle.json")
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, separators=(",", ":"))
 
     size = os.path.getsize(out_path)

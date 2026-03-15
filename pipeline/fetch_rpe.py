@@ -28,6 +28,7 @@ import urllib.parse
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from utils import load_json, save_json
 
 # Force unbuffered stdout
 if not sys.stdout.isatty():
@@ -121,7 +122,7 @@ def classify_comments_llm(candidates, existing_classifications, api_key):
                 },
             )
 
-            with urllib.request.urlopen(req, timeout=60) as resp:
+            with urllib.request.urlopen(req, timeout=60, encoding="utf-8") as resp:
                 result = json.loads(resp.read())
 
             text = "".join(
@@ -254,12 +255,6 @@ def classify_email(email, comment_time=""):
     return ROOT_PROGRAM_DOMAINS.get(domain, "other")
 
 
-def load_json(path, default=None):
-    try:
-        with open(path) as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return default
 
 
 def mask_email(email):
@@ -466,7 +461,7 @@ def bulk_fetch_comment_counts(bug_ids, rate_limit_delay=0.3):
             req = urllib.request.Request(url)
             req.add_header("Accept", "application/json")
             req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
                 data = json.loads(resp.read().decode("utf-8"))
             for bug in data.get("bugs", []):
                 result[str(bug["id"])] = bug.get("comment_count", 0)
@@ -538,7 +533,7 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
         print("  Nothing to fetch")
         # Update meta with live counts even when nothing fetched
         stored_counts.update(live_counts)
-        with open(meta_path, "w") as f:
+        with open(meta_path, "w", encoding="utf-8") as f:
             json.dump(stored_counts, f)
         return cache
 
@@ -555,7 +550,7 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
                 req = urllib.request.Request(url)
                 req.add_header("Accept", "application/json")
                 req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-                with urllib.request.urlopen(req, timeout=30) as resp:
+                with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
                     data = json.loads(resp.read().decode("utf-8"))
 
                 comments = data.get("bugs", {}).get(str(bug_id), {}).get("comments", [])
@@ -584,9 +579,9 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
 
             time.sleep(rate_limit_delay)
 
-        with open(cache_path, "w") as f:
+        with open(cache_path, "w", encoding="utf-8") as f:
             json.dump(cache, f)
-        with open(meta_path, "w") as f:
+        with open(meta_path, "w", encoding="utf-8") as f:
             json.dump(stored_counts, f)
 
         pct = min(100, ((i + len(batch)) / len(all_to_fetch)) * 100)
@@ -598,9 +593,9 @@ def fetch_bug_comments(bug_ids, cache_path, max_bugs=None, rate_limit_delay=1.0)
 
     # Update meta for all polled bugs
     stored_counts.update({k: v for k, v in live_counts.items() if k not in need_fetch})
-    with open(cache_path, "w") as f:
+    with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f)
-    with open(meta_path, "w") as f:
+    with open(meta_path, "w", encoding="utf-8") as f:
         json.dump(stored_counts, f)
 
     print(f"  Final: {len(cache)} bugs cached, {fetched} updated this run")
@@ -1743,7 +1738,7 @@ def compute_inclusion_velocity():
         url = f"{BUGZILLA_URL}?{params}"
         req = urllib.request.Request(url)
         req.add_header("Accept", "application/json")
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
             data = json.loads(resp.read().decode("utf-8"))
         bugs = data.get("bugs", [])
         adds = [b for b in bugs if b.get("summary", "").startswith("Add ")]
@@ -1793,7 +1788,7 @@ def compute_inclusion_velocity():
         url = f"{BUGZILLA_URL}?{params2}"
         req = urllib.request.Request(url)
         req.add_header("Accept", "application/json")
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
             data = json.loads(resp.read().decode("utf-8"))
         for b in data.get("bugs", []):
             if not b.get("summary", "").startswith("Add "):
@@ -1920,7 +1915,7 @@ def main():
             candidates, comment_classifications, api_key
         )
         if n_classified > 0:
-            with open(comment_clf_path, "w") as f:
+            with open(comment_clf_path, "w", encoding="utf-8") as f:
                 json.dump(comment_classifications, f, indent=2)
             print(f"  Saved {len(comment_classifications)} classifications to cache")
     else:
@@ -1986,7 +1981,7 @@ def main():
     
     # Write output
     out_path = OUTPUT_DIR / "root_program_effectiveness.json"
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, default=str)
     
     size_kb = out_path.stat().st_size / 1024

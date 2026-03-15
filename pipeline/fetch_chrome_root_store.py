@@ -24,7 +24,7 @@ FILE_PATH = "net/data/ssl/chrome_root_store/root_store.textproto"
 
 def fetch_json(url):
     req = urllib.request.Request(url)
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=30, encoding="utf-8") as resp:
         raw = resp.read().decode("utf-8")
     if raw.startswith(")]}'"):
         raw = raw[4:]
@@ -35,7 +35,7 @@ def fetch_file_at_commit(commit, filename):
     url = f"{GITILES_BASE}/+/{commit}/{filename}?format=TEXT"
     try:
         req = urllib.request.Request(url)
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        with urllib.request.urlopen(req, timeout=15, encoding="utf-8") as resp:
             return base64.b64decode(resp.read()).decode("utf-8", errors="replace")
     except:
         return None
@@ -61,7 +61,7 @@ def main():
     CACHE_DIR.mkdir(exist_ok=True)
 
     cache_path = CACHE_DIR / "chrome_root_store_cache.json"
-    cache = json.load(open(cache_path)) if cache_path.exists() else {"commits": {}}
+    cache = json.load(open(cache_path, encoding="utf-8")) if cache_path.exists() else {"commits": {}}
 
     # Fetch commit log
     print("  Fetching commit log...")
@@ -80,7 +80,7 @@ def main():
         else:
             print("  No cache available — writing empty changelog")
             out_path = OUTPUT_DIR / "chrome_root_store_changelog.json"
-            json.dump({"meta": {"generated_at": datetime.now(timezone.utc).isoformat(), "total_commits": 0, "changes_detected": 0, "error": str(e)}, "changelog": []}, open(out_path, "w"), indent=2)
+            json.dump({"meta": {"generated_at": datetime.now(timezone.utc).isoformat(), "total_commits": 0, "changes_detected": 0, "error": str(e)}, "changelog": []}, open(out_path, "w", encoding="utf-8"), indent=2)
             return
 
     # Process each commit (oldest first)
@@ -129,7 +129,7 @@ def main():
         prev_roots = roots
 
     # Save cache
-    with open(cache_path, "w") as f:
+    with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(cache, f)
 
     # Build output
@@ -150,7 +150,7 @@ def main():
     total_removed = sum(e["removed_count"] for e in changelog)
 
     out_path = OUTPUT_DIR / "chrome_root_store_changelog.json"
-    with open(out_path, "w") as f:
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2)
 
     print(f"\n{'=' * 60}")

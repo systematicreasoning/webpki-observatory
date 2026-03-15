@@ -34,7 +34,7 @@ def load_name_mappings():
     """Load crt.sh -> CCADB name mappings from JSON file."""
     path = PIPELINE_DIR / "name_mappings.json"
     if path.exists():
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
         mappings = {}
         for crtsh_name, info in data.get("mappings", {}).items():
@@ -47,7 +47,7 @@ def load_enrichments():
     """Load manual enrichments for CAs missing from CCADB."""
     path = PIPELINE_DIR / "enrichments.json"
     if path.exists():
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
         enrichments = data.get("enrichments", {})
         print(f"  Loaded {len(enrichments)} enrichments")
@@ -58,7 +58,7 @@ def load_gov_classifications():
     """Load government relationship classifications."""
     path = PIPELINE_DIR / "gov_classifications.json"
     if path.exists():
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
         classifications = data.get("classifications", {})
         print(f"  Loaded {len(classifications)} government classifications")
@@ -907,11 +907,11 @@ def split_ca_details(ca_details):
 
         ca_file = ca_dir / f"{slug}.json"
         detail["slug"] = slug
-        with open(ca_file, "w") as f:
+        with open(ca_file, "w", encoding="utf-8") as f:
             json.dump(detail, f, indent=2, default=str)
 
     index_file = ca_dir / "_index.json"
-    with open(index_file, "w") as f:
+    with open(index_file, "w", encoding="utf-8") as f:
         json.dump(index, f, indent=2, default=str)
 
     print(f"  Wrote {len(index)} CA detail files + index")
@@ -1168,7 +1168,7 @@ def load_previous_market_data():
     """Load previous market_share.json if it exists, for crt.sh fallback."""
     path = OUTPUT_DIR / "market_share.json"
     if path.exists():
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             data = json.load(f)
         print(f"  Loaded previous market data ({len(data)} records)")
         return data
@@ -1182,7 +1182,7 @@ def append_history(metadata, market_data, intersections, gov_risk):
 
     # Load existing history
     if history_path.exists():
-        with open(history_path) as f:
+        with open(history_path, encoding="utf-8") as f:
             history = json.load(f)
     else:
         history = {"snapshots": []}
@@ -1245,7 +1245,7 @@ def append_history(metadata, market_data, intersections, gov_risk):
 
     history["snapshots"].append(snapshot)
 
-    with open(history_path, "w") as f:
+    with open(history_path, "w", encoding="utf-8") as f:
         json.dump(history, f, indent=2, default=str)
 
     print(f"  Appended snapshot for {today} ({len(history['snapshots'])} total snapshots)")
@@ -1267,7 +1267,7 @@ def append_history(metadata, market_data, intersections, gov_risk):
 
     for filename, data in snapshot_files.items():
         path = snapshots_dir / filename
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, separators=(",", ":"), default=str)
 
     print(f"  Preserved full snapshot in snapshots/{today}/ ({len(snapshot_files)} files)")
@@ -1305,7 +1305,7 @@ def main():
     pem_data = {}
     if pem_cache_path.exists():
         try:
-            with open(pem_cache_path) as f:
+            with open(pem_cache_path, encoding="utf-8") as f:
                 pem_data = json.load(f)
             print(f"  Loaded PEM cache: {len(pem_data)} certificates")
         except Exception as e:
@@ -1348,7 +1348,7 @@ def main():
 
     for filename, data in outputs.items():
         path = OUTPUT_DIR / filename
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, default=str)
         size_kb = path.stat().st_size / 1024
         print(f"  Wrote {filename} ({size_kb:.1f} KB)")

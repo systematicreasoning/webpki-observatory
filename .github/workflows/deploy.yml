@@ -37,8 +37,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: pipeline/ops_cache
-          key: ops-cache-${{ runner.os }}-${{ hashFiles('pipeline/fetch_rpe.py', 'pipeline/fetch_incidents.py') }}
+          key: ops-cache-${{ runner.os }}-v2
           restore-keys: |
+            ops-cache-${{ runner.os }}-v2
             ops-cache-${{ runner.os }}-
 
       - name: Install dependencies

@@ -39,7 +39,7 @@ def fetch_ccadb():
     print("  Fetching CCADB AllCertificateRecordsCSVFormatv4...")
     req = urllib.request.Request(CCADB_URL)
     req.add_header("User-Agent", "WebPKI-Observatory/1.0")
-    with urllib.request.urlopen(req, timeout=60) as resp:
+    with urllib.request.urlopen(req, timeout=60, encoding="utf-8") as resp:
         text = resp.read().decode("utf-8", errors="replace")
     
     reader = csv.DictReader(io.StringIO(text))
@@ -98,7 +98,7 @@ def take_snapshot(roots, date_str):
     
     # Save snapshot
     snap_path = SNAPSHOT_DIR / f"{date_str}.json"
-    with open(snap_path, "w") as f:
+    with open(snap_path, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=2)
     
     print(f"  Snapshot saved: {snap_path}")
@@ -120,8 +120,8 @@ def compute_changelog():
     changes = []
     
     for i in range(1, len(snapshots)):
-        prev = json.load(open(snapshots[i - 1]))
-        curr = json.load(open(snapshots[i]))
+        prev = json.load(open(snapshots[i - 1], encoding="utf-8"))
+        curr = json.load(open(snapshots[i], encoding="utf-8"))
         prev_date = prev["date"]
         curr_date = curr["date"]
         
@@ -171,7 +171,7 @@ def compute_changelog():
     
     # Save changelog
     cl_path = OUTPUT_DIR / "trust_store_changelog.json"
-    with open(cl_path, "w") as f:
+    with open(cl_path, "w", encoding="utf-8") as f:
         json.dump(changelog, f, indent=2)
     
     if changes:

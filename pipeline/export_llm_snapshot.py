@@ -14,6 +14,7 @@ Usage:
   python pipeline/export_llm_snapshot.py [--data-dir data/] [--pipeline-dir pipeline/]
 """
 import json
+from utils import load_json_dir as load_json, save_json, slugify
 import os
 import re
 import sys
@@ -38,17 +39,8 @@ for arg in sys.argv[1:]:
         PIPELINE_DIR = arg.split("=", 1)[1]
 
 
-def load_json(directory, filename):
-    path = os.path.join(directory, filename)
-    if not os.path.exists(path):
-        print(f"  WARNING: {path} not found")
-        return None
-    with open(path) as f:
-        return json.load(f)
 
 
-def slugify(name):
-    return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", name.lower()))
 
 
 def norm_country(c):
@@ -553,13 +545,13 @@ def main():
     stable_path = os.path.join(DATA_DIR, "llm_snapshot.json")
     dated_path = os.path.join(DATA_DIR, f"llm_snapshot_{today}.json")
 
-    with open(stable_path, "w") as f:
+    with open(stable_path, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, separators=(",", ":"))
     size = os.path.getsize(stable_path)
     tokens = size // 4
     print(f"  Wrote {stable_path} ({size:,} bytes, ~{tokens:,} tokens)")
 
-    with open(dated_path, "w") as f:
+    with open(dated_path, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, separators=(",", ":"))
     print(f"  Wrote {dated_path}")
 
