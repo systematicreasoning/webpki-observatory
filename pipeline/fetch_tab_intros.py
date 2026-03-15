@@ -144,9 +144,9 @@ def build_digest(snap: dict) -> dict:
             "moderateRisk": [j["country"] for j in snap.get("jurisdictionRisk", []) if j.get("risk") == "moderate"],
         },
         "chromeGrowth": {
-            "from": snap["chromeRootStoreGrowth"]["entries"][0]["totalRoots"],
-            "to": snap["chromeRootStoreGrowth"]["entries"][-1]["totalRoots"],
-            "fromDate": snap["chromeRootStoreGrowth"]["entries"][0]["date"],
+            "from": snap["chromeRootStoreGrowth"]["entries"][0]["totalRoots"] if snap.get("chromeRootStoreGrowth", {}).get("entries") else None,
+            "to": snap["chromeRootStoreGrowth"]["entries"][-1]["totalRoots"] if snap.get("chromeRootStoreGrowth", {}).get("entries") else None,
+            "fromDate": snap["chromeRootStoreGrowth"]["entries"][0]["date"] if snap.get("chromeRootStoreGrowth", {}).get("entries") else None,
         },
         "browser": snap["browserCoverage"],
     }
@@ -220,7 +220,15 @@ def main():
         sys.exit(1)
 
     snap = json.loads(snap_path.read_text())
-    digest = build_digest(snap)
+
+    try:
+        digest = build_digest(snap)
+    except Exception as e:
+        print(f"  ERROR building digest: {e}")
+        out = {"generatedAt": NOW.isoformat(), "error": str(e), "intros": {}}
+        Path(DATA_DIR, "tab_intros.json").write_text(json.dumps(out, indent=2))
+        sys.exit(0)
+
     prompt = build_prompt(digest)
 
     print(f"  Prompt: ~{len(prompt)//4} tokens")
