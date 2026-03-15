@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:51:23.421778+00:00",
+    "generated_at": "2026-03-15T06:00:43.912899+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 500,
     "total_comments_raw": 7220,
@@ -586,32 +586,32 @@
       "unique_contributors": 5,
       "top_contributor_pct": 53,
       "top_3_contributors_pct": 98,
-      "top_contributor_email": "chrome-root-program@google.com",
+      "top_contributor_email": "c******************@google.com",
       "top_contributor_first_quarter": "2025-Q1",
       "top_contributor_last_quarter": "2026-Q1",
       "contributors": [
         {
-          "email": "chrome-root-program@google.com",
+          "email": "c******************@google.com",
           "comments": 85,
           "pct": 53
         },
         {
-          "email": "ryandickson@google.com",
+          "email": "r**********@google.com",
           "comments": 49,
           "pct": 31
         },
         {
-          "email": "cclements@google.com",
+          "email": "c********@google.com",
           "comments": 22,
           "pct": 14
         },
         {
-          "email": "mozilla@google.com",
+          "email": "m******@google.com",
           "comments": 3,
           "pct": 2
         },
         {
-          "email": "fhochstrasser@google.com",
+          "email": "f************@google.com",
           "comments": 1,
           "pct": 1
         }
@@ -622,12 +622,12 @@
       "unique_contributors": 1,
       "top_contributor_pct": 100,
       "top_3_contributors_pct": 100,
-      "top_contributor_email": "bwilson@mozilla.com",
+      "top_contributor_email": "b******@mozilla.com",
       "top_contributor_first_quarter": "2024-Q2",
       "top_contributor_last_quarter": "2026-Q1",
       "contributors": [
         {
-          "email": "bwilson@mozilla.com",
+          "email": "b******@mozilla.com",
           "comments": 114,
           "pct": 100
         }
@@ -638,17 +638,17 @@
       "unique_contributors": 2,
       "top_contributor_pct": 60,
       "top_3_contributors_pct": 100,
-      "top_contributor_email": "dhollenback@apple.com",
+      "top_contributor_email": "d**********@apple.com",
       "top_contributor_first_quarter": "2025-Q4",
       "top_contributor_last_quarter": "2026-Q1",
       "contributors": [
         {
-          "email": "dhollenback@apple.com",
+          "email": "d**********@apple.com",
           "comments": 30,
           "pct": 60
         },
         {
-          "email": "clintw@apple.com",
+          "email": "c*****@apple.com",
           "comments": 20,
           "pct": 40
         }
@@ -1691,7 +1691,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 287877,
+        "certs": 287923,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2248,7 +2248,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517150537,
+        "certs_now": 517146958,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
