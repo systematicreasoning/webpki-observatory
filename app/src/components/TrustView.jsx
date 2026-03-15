@@ -8,6 +8,10 @@ import { usePipeline } from '../PipelineContext';
 import {
   cardHeaderStyle, compactTableStyle, scrollXStyle, statGridStyle, tableStyle,
 } from '../styles';
+import {
+  ResponsiveContainer, LineChart, Line, XAxis, YAxis,
+  CartesianGrid, Tooltip, ReferenceLine,
+} from 'recharts';
 
 const now = new Date();
 
@@ -242,7 +246,7 @@ const TrustDisagreements = ({ caData, browserCoverage }) => {
  * and notable trust store disagreements between the four major programs.
  */
 const TrustView = () => {
-  const { browserCoverage, caData, incidentCounts, intersections, roots } = usePipeline();
+  const { browserCoverage, caData, incidentCounts, intersections, roots, chromeChangelog } = usePipeline();
   const [heatmapCount, setHeatmapCount] = useState(15);
   const so = ['Mozilla', 'Chrome', 'Apple', 'Microsoft'];
   return (
@@ -537,6 +541,67 @@ const TrustView = () => {
         />
       </Card>
 
+
+      {/* Chrome Root Store Growth */}
+      {chromeChangelog?.changelog?.length > 0 && (() => {
+        const entries = chromeChangelog.changelog.map(e => ({
+          date: e.date.slice(0, 7), // YYYY-MM
+          total: e.total_after,
+          added: e.added_count,
+          removed: e.removed_count,
+          label: e.date,
+        }));
+        const first = entries[0];
+        const last = entries[entries.length - 1];
+        const growth = last.total - first.total;
+        return (
+          <Card>
+            <CardTitle sub={`Chrome Root Store grew from ${first.total} to ${last.total} roots (${first.label} – ${last.label}). Each step represents a commit to the Chrome Root Store repository.`}>
+              Chrome Root Store Growth
+            </CardTitle>
+            <div style={{ height: 180, marginTop: 12 }}>
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={entries} margin={{ left: 8, right: 16, top: 8, bottom: 8 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke={COLORS.bd} />
+                  <XAxis
+                    dataKey="label"
+                    tick={{ fill: COLORS.t3, fontSize: 8 }}
+                    axisLine={{ stroke: COLORS.bd }}
+                    tickLine={false}
+                    interval="preserveStartEnd"
+                    tickFormatter={d => d.slice(0, 7)}
+                  />
+                  <YAxis
+                    tick={{ fill: COLORS.t3, fontSize: 9 }}
+                    axisLine={false}
+                    tickLine={false}
+                    domain={['auto', 'auto']}
+                  />
+                  <Tooltip
+                    contentStyle={{ background: COLORS.s2, border: `1px solid ${COLORS.bd}`, borderRadius: 6, fontSize: 11 }}
+                    labelStyle={{ color: COLORS.tx, fontWeight: 600, marginBottom: 4 }}
+                    formatter={(val, name) => [val, name === 'total' ? 'Total roots' : name]}
+                    labelFormatter={d => d}
+                  />
+                  <Line
+                    type="stepAfter"
+                    dataKey="total"
+                    stroke={STORE_COLORS.chrome}
+                    strokeWidth={2}
+                    dot={false}
+                    activeDot={{ r: 4, fill: STORE_COLORS.chrome }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+            <div style={{ fontSize: 9, color: COLORS.t3, marginTop: 6, lineHeight: 1.5 }}>
+              +{growth} roots in ~4 years. Chrome Root Program launched February 2022 with 117 roots inherited from the OS trust store.
+              Growth reflects both new CA inclusion decisions and cross-sign intermediate certificate additions.
+              Source: chromium/src/net/data/ssl/chrome_root_store commit history.
+            </div>
+          </Card>
+        );
+      })()}
 
       {/* Root Expiration Timeline */}
       <RootExpirationTimeline roots={roots} caData={caData} />

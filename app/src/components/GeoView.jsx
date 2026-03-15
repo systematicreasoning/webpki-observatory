@@ -103,9 +103,9 @@ const GeoView = () => {
           );
         };
         return (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16, marginBottom: 16 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: 16, marginBottom: 16 }}>
             <Card>
-              <CardTitle sub="Left: CA count by region. Right: certificate issuance share. Click a segment to see CAs.">
+              <CardTitle sub="CA count and certificate issuance share by region. Click a segment to see CAs.">
                 CAs by Region
               </CardTitle>
               <div

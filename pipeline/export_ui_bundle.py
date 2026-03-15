@@ -59,6 +59,7 @@ def main():
     browser_cov_json = load_json(DATA_DIR, "browser_coverage.json") or {}
     rpe_data = load_json(DATA_DIR, "root_program_effectiveness.json")
     community_data = load_json(DATA_DIR, "community_engagement.json")
+    chrome_changelog = load_json(DATA_DIR, "chrome_root_store_changelog.json")
 
     # Load per-CA detail files
     ca_details = {}
@@ -353,6 +354,7 @@ def main():
         "DISTRUST_DATA": distrust_data,
         "RPE_DATA": rpe_data,
         "COMMUNITY_DATA": community_data,
+        "CHROME_CHANGELOG": chrome_changelog,
     }
 
     out_path = os.path.join(DATA_DIR, "ui_bundle.json")

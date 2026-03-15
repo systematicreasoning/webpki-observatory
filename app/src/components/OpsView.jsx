@@ -175,7 +175,7 @@ const OpsMap = ({ incidents }) => {
  * and a detection capability scatter plot.
  */
 const OpsView = () => {
-  const { caData, incidentsData } = usePipeline();
+  const { caData, incidentsData, rpeData } = usePipeline();
 
   if (!incidentsData || !incidentsData.total || !incidentsData.years || incidentsData.years.length === 0)
     return (
@@ -187,7 +187,7 @@ const OpsView = () => {
         />
         <Card>
           <CardTitle>What This Tab Will Show</CardTitle>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 12 }}>
             {[
               [
                 'Annual Incident Volume',
@@ -401,7 +401,7 @@ const OpsView = () => {
               ))}
             </div>
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px 0' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: '1px 0' }}>
             {INCIDENT_MILESTONES.map((m) => {
               const on = milestones[m.id];
               return (
@@ -1130,6 +1130,85 @@ const OpsView = () => {
               Dot color: <span style={{ color: COLORS.gn }}>●</span> &gt;60% self-report{' '}
               <span style={{ color: COLORS.am }}>●</span> 30-60% <span style={{ color: COLORS.rd }}>●</span> &lt;30%.
               Dot size reflects issuance volume. All data from Bugzilla CA Certificate Compliance + crt.sh.
+            </div>
+          </Card>
+        );
+      })()}
+
+      {/* ── Discovery Method Trend ── */}
+      {rpeData?.discovery_methods?.by_year?.length > 0 && (() => {
+        const dm = rpeData.discovery_methods;
+        const byYear = dm.by_year.filter(y => y.y >= 2017 && y.total > 0);
+        const totals = dm.totals || {};
+        const grand = Object.values(totals).reduce((a, b) => a + b, 0);
+        const METHODS = [
+          { key: 'root_program',        label: 'Root Program',       color: COLORS.ac },
+          { key: 'audit',               label: 'Audit',              color: COLORS.gn },
+          { key: 'external_researcher', label: 'External Researcher',color: COLORS.pu },
+          { key: 'community',           label: 'Community',          color: COLORS.cy },
+          { key: 'self_detected',       label: 'Self-Detected',      color: COLORS.am },
+          { key: 'unknown',             label: 'Unknown',            color: COLORS.t3 },
+        ];
+        // Compute pct version for stacked area
+        const pctData = byYear.map(y => {
+          const row = { y: y.y };
+          METHODS.forEach(m => { row[m.key] = y.total > 0 ? Math.round(y[m.key] / y.total * 100) : 0; });
+          return row;
+        });
+        return (
+          <Card>
+            <CardTitle sub="Who discovers CA compliance problems? Root program share is declining as audit detection and external researchers grow. 2026 partial year.">
+              Incident Discovery Method Trends
+            </CardTitle>
+            <div style={{ display: 'flex', gap: 12, marginBottom: 8, flexWrap: 'wrap' }}>
+              {METHODS.filter(m => (totals[m.key] || 0) > 0).map(m => (
+                <span key={m.key} style={{ fontSize: 9, color: COLORS.t3, display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: m.color, opacity: 0.8 }} />
+                  {m.label} ({Math.round((totals[m.key] || 0) / grand * 100)}%)
+                </span>
+              ))}
+            </div>
+            <ChartWrap height={220}>
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart data={pctData} margin={{ left: 20, right: 10, top: 8, bottom: 20 }} stackOffset="expand">
+                  <CartesianGrid strokeDasharray="3 3" stroke={COLORS.bd} />
+                  <XAxis
+                    dataKey="y"
+                    tick={({ x, y, payload }) => (
+                      <text x={x} y={y + 12} fill={payload.value === 2026 ? COLORS.am : COLORS.t3}
+                        fontSize={9} textAnchor="middle">
+                        {payload.value}{payload.value === 2026 ? '*' : ''}
+                      </text>
+                    )}
+                    axisLine={{ stroke: COLORS.bd }} tickLine={false}
+                  />
+                  <YAxis
+                    tickFormatter={v => `${Math.round(v * 100)}%`}
+                    tick={{ fill: COLORS.t3, fontSize: 9 }}
+                    axisLine={false} tickLine={false}
+                  />
+                  <Tooltip
+                    contentStyle={{ background: COLORS.s2, border: `1px solid ${COLORS.bd}`, borderRadius: 6, fontSize: 11 }}
+                    labelStyle={{ color: COLORS.tx, fontWeight: 600, marginBottom: 4 }}
+                    formatter={(val, name) => {
+                      const m = METHODS.find(m => m.key === name);
+                      return [`${Math.round(val * 100)}%`, m?.label || name];
+                    }}
+                    labelFormatter={y => `${y}${y === 2026 ? ' (partial)' : ''}`}
+                  />
+                  {METHODS.map(m => (
+                    <Area key={m.key} type="monotone" dataKey={m.key}
+                      stackId="1" fill={m.color} stroke={m.color}
+                      fillOpacity={0.75} strokeWidth={0} />
+                  ))}
+                </AreaChart>
+              </ResponsiveContainer>
+            </ChartWrap>
+            <div style={{ ...footnoteStyle, marginTop: 6 }}>
+              Root program detection declining: 53% (2022) → 30% (2025).
+              Audit-detected jumped from 1% to 26% in 2025 — formal audit pipelines maturing.
+              External researchers rose to 26% in early 2026.
+              {' '}* 2026 partial year (Q1 only).
             </div>
           </Card>
         );
