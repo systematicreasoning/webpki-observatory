@@ -1,11 +1,11 @@
 {
   "meta": {
-    "last_updated": "2026-03-15T07:06:04.678603+00:00",
-    "last_checked": "2026-03-15T07:56:06.009034+00:00",
+    "last_updated": "2026-03-15T08:38:22.343016+00:00",
+    "last_checked": "2026-03-15T08:38:22.343035+00:00",
     "bug_count": 1690,
-    "active_incidents": 1425,
+    "active_incidents": 1426,
     "active_cas": 54,
-    "classified_count": 1425,
+    "classified_count": 1426,
     "unclassified_count": 0,
     "distrusted_excluded": 186,
     "unmapped_bugs": 68,
@@ -13,8 +13,8 @@
     "pipeline_error": null,
     "pipeline_error_time": null
   },
-  "total": 1425,
-  "total_with_distrusted": 1611,
+  "total": 1426,
+  "total_with_distrusted": 1612,
   "ca_count": 54,
   "ca_count_with_distrusted": 55,
   "years": [
@@ -68,7 +68,7 @@
     },
     {
       "y": 2026,
-      "n": 63
+      "n": 64
     }
   ],
   "categories": [
@@ -78,7 +78,7 @@
     },
     {
       "cat": "Governance",
-      "n": 417
+      "n": 418
     },
     {
       "cat": "Revocation",
@@ -178,7 +178,7 @@
       "y": 2026,
       "mi": 15,
       "rv": 12,
-      "gv": 30,
+      "gv": 31,
       "vl": 6
     }
   ],
@@ -257,7 +257,7 @@
       "ca": "Netlock",
       "mi": 9,
       "rv": 10,
-      "gv": 17,
+      "gv": 18,
       "vl": 1
     },
     {
@@ -635,8 +635,8 @@
     },
     {
       "ca": "Netlock",
-      "n": 37,
-      "self": 28,
+      "n": 38,
+      "self": 29,
       "ext": 9,
       "selfPct": 76
     },
@@ -991,21 +991,21 @@
     }
   ],
   "whiteboardTags": {
-    "ca-compliance": 1393,
+    "ca-compliance": 1396,
     "ov-misissuance": 317,
     "ev-misissuance": 175,
-    "policy-failure": 145,
+    "policy-failure": 147,
     "ocsp-failure": 118,
     "dv-misissuance": 117,
-    "disclosure-failure": 112,
-    "audit-finding": 102,
+    "disclosure-failure": 113,
+    "audit-finding": 103,
     "leaf-revocation-delay": 99,
     "crl-failure": 84,
-    "ca-misissuance": 55,
+    "ca-misissuance": 56,
     "audit-failure": 48,
     "uncategorized": 45,
-    "smime-misissuance": 38,
-    "ca-revocation-delay": 30,
+    "smime-misissuance": 39,
+    "ca-revocation-delay": 31,
     "external": 29,
     "audit-delay": 17,
     "covid-19": 7,
@@ -1013,8 +1013,8 @@
     "ca-onecrl": 4,
     "ca-investigation": 3,
     "remediation-accepted": 3,
+    "close on 2026-03-17": 3,
     "ca compliance": 2,
-    "close on 2026-03-06": 2,
     "iv-misissuance": 1,
     "ca-infosharing": 1,
     "ca-informational": 1,
@@ -1022,8 +1022,6 @@
     "close on 2025-12-10": 1,
     "close on 2025-12-11": 1,
     "close on 2025-12-08": 1,
-    "close on 2026-03-12": 1,
-    "close on 2026-03-10": 1,
-    "close on 2026-03-07": 1
+    "close on 2026-03-18": 1
   }
 }
