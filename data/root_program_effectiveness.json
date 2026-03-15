@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T06:39:39.831761+00:00",
+    "generated_at": "2026-03-15T07:04:31.570258+00:00",
     "bugs_total": 1690,
-    "bugs_with_comments": 1687,
-    "total_comments_raw": 22019,
-    "total_comments_analyzed": 6033,
+    "bugs_with_comments": 1690,
+    "total_comments_raw": 22035,
+    "total_comments_analyzed": 6037,
     "pipeline_version": "0.5",
     "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs."
   },
@@ -346,8 +346,8 @@
   },
   "discovery_methods": {
     "totals": {
-      "root_program": 879,
-      "unknown": 211,
+      "root_program": 882,
+      "unknown": 208,
       "community": 240,
       "audit": 95,
       "self_detected": 148,
@@ -418,10 +418,10 @@
         "y": 2020,
         "self_detected": 10,
         "external_researcher": 12,
-        "root_program": 165,
+        "root_program": 167,
         "community": 25,
         "audit": 5,
-        "unknown": 20,
+        "unknown": 18,
         "total": 237
       },
       {
@@ -458,10 +458,10 @@
         "y": 2024,
         "self_detected": 32,
         "external_researcher": 14,
-        "root_program": 84,
+        "root_program": 85,
         "community": 30,
         "audit": 8,
-        "unknown": 68,
+        "unknown": 67,
         "total": 236
       },
       {
@@ -532,7 +532,7 @@
     },
     {
       "y": 2020,
-      "chrome": 161,
+      "chrome": 162,
       "mozilla": 89,
       "apple": 0,
       "microsoft": 0
@@ -580,135 +580,29 @@
       "microsoft": 0
     }
   ],
-  "coverage_rate_by_year": [
-    {
-      "y": 2014,
-      "total_bugs": 3,
-      "chrome": 33.3,
-      "mozilla": 66.7,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2015,
-      "total_bugs": 1,
-      "chrome": 0.0,
-      "mozilla": 100.0,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2016,
-      "total_bugs": 5,
-      "chrome": 40.0,
-      "mozilla": 60.0,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2017,
-      "total_bugs": 123,
-      "chrome": 50.4,
-      "mozilla": 78.9,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2018,
-      "total_bugs": 108,
-      "chrome": 30.6,
-      "mozilla": 75.9,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2019,
-      "total_bugs": 255,
-      "chrome": 66.3,
-      "mozilla": 61.6,
-      "apple": 0.4,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2020,
-      "total_bugs": 237,
-      "chrome": 68.4,
-      "mozilla": 37.6,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2021,
-      "total_bugs": 187,
-      "chrome": 54.5,
-      "mozilla": 26.7,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2022,
-      "total_bugs": 106,
-      "chrome": 24.5,
-      "mozilla": 33.0,
-      "apple": 0.0,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2023,
-      "total_bugs": 133,
-      "chrome": 13.5,
-      "mozilla": 16.5,
-      "apple": 1.5,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2024,
-      "total_bugs": 236,
-      "chrome": 21.6,
-      "mozilla": 23.3,
-      "apple": 5.9,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2025,
-      "total_bugs": 223,
-      "chrome": 18.4,
-      "mozilla": 7.6,
-      "apple": 7.6,
-      "microsoft": 0.0
-    },
-    {
-      "y": 2026,
-      "total_bugs": 73,
-      "chrome": 9.6,
-      "mozilla": 5.5,
-      "apple": 15.1,
-      "microsoft": 0.0
-    }
-  ],
   "program_comment_summary": {
     "chrome": {
-      "total_comments": 2111,
-      "substantive_comments": 2111,
+      "total_comments": 2113,
+      "substantive_comments": 2113,
       "workflow_events": 0,
-      "admin_comments": 398,
-      "oversight_comments": 1652,
+      "admin_comments": 399,
+      "oversight_comments": 1653,
       "recent_oversight_comments": 556,
       "technical_oversight_comments": 1336,
       "recent_technical_oversight_comments": 469,
       "self_incident_comments": 61,
       "recent_self_incident_comments": 31,
-      "bugs_engaged": 690,
-      "bugs_oversight": 673,
+      "bugs_engaged": 691,
+      "bugs_oversight": 674,
       "recent_bugs_oversight": 256,
       "bugs_technical_oversight": 599,
       "recent_bugs_technical_oversight": 239
     },
     "mozilla": {
-      "total_comments": 3241,
-      "substantive_comments": 3240,
+      "total_comments": 3243,
+      "substantive_comments": 3242,
       "workflow_events": 1,
-      "admin_comments": 2045,
+      "admin_comments": 2047,
       "oversight_comments": 1195,
       "recent_oversight_comments": 286,
       "technical_oversight_comments": 880,
@@ -758,7 +652,7 @@
   },
   "oversight_concentration": {
     "chrome": {
-      "total_oversight_comments": 1652,
+      "total_oversight_comments": 1653,
       "unique_contributors": 7,
       "top_contributor_pct": 86,
       "top_3_contributors_pct": 96,
@@ -768,7 +662,7 @@
       "contributors": [
         {
           "email": "r**********@gmail.com",
-          "comments": 1418,
+          "comments": 1419,
           "pct": 86
         },
         {
@@ -1078,7 +972,7 @@
     },
     {
       "quarter": "2020-Q3",
-      "chrome_comments": 184,
+      "chrome_comments": 185,
       "chrome_people": 2,
       "mozilla_comments": 54,
       "mozilla_people": 1,
@@ -1330,9 +1224,9 @@
       "microsoft_people": 0
     }
   ],
-  "bugs_analyzed": 1687,
-  "total_comments": 22019,
-  "substantive_comments": 6033,
+  "bugs_analyzed": 1690,
+  "total_comments": 22035,
+  "substantive_comments": 6037,
   "sample_pct": 100,
   "enforcement": {
     "chrome": {
@@ -2255,7 +2149,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 288043,
+        "certs": 288139,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2275,7 +2169,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 96298,
+        "certs": 96300,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2812,7 +2706,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517123545,
+        "certs_now": 517100525,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",

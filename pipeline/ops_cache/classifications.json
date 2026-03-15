@@ -11813,7 +11813,7 @@
     "self": true,
     "severity": "medium",
     "summary": "NETLOCK: Unavailability of the document repository",
-    "classified_at": "2026-03-15T05:53:14.157975+00:00"
+    "classified_at": "2026-03-15T05:43:31.900068+00:00"
   },
   "2021685": {
     "cat": "validation",
