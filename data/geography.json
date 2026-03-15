@@ -1,45 +1,45 @@
 {
-  "total": 1287863209,
+  "total": 1287863032,
   "regions": [
     {
       "region": "United States",
-      "issued": 1147313258,
-      "pct": 89.0866,
+      "issued": 1147306593,
+      "pct": 89.0861,
       "countries": [
         {
           "country": "United States",
-          "issued": 1147313258,
-          "pct": 89.0866,
+          "issued": 1147306593,
+          "pct": 89.0861,
           "ca_count": 29
         }
       ]
     },
     {
       "region": "Europe",
-      "issued": 139827268,
-      "pct": 10.8573,
+      "issued": 139833709,
+      "pct": 10.8578,
       "countries": [
         {
           "country": "United Kingdom",
-          "issued": 135370948,
-          "pct": 10.5113,
+          "issued": 135377421,
+          "pct": 10.5118,
           "ca_count": 3
         },
         {
           "country": "Belgium",
-          "issued": 1572347,
+          "issued": 1572321,
           "pct": 0.1221,
           "ca_count": 4
         },
         {
           "country": "Italy",
-          "issued": 1500560,
+          "issued": 1500559,
           "pct": 0.1165,
           "ca_count": 2
         },
         {
           "country": "Poland",
-          "issued": 668738,
+          "issued": 668732,
           "pct": 0.0519,
           "ca_count": 3
         },
@@ -93,7 +93,7 @@
         },
         {
           "country": "Hungary",
-          "issued": 2924,
+          "issued": 2925,
           "pct": 0.0002,
           "ca_count": 3
         },
@@ -197,18 +197,18 @@
     },
     {
       "region": "Asia-Pacific",
-      "issued": 537341,
+      "issued": 537388,
       "pct": 0.0417,
       "countries": [
         {
           "country": "China",
-          "issued": 328987,
+          "issued": 329033,
           "pct": 0.0255,
           "ca_count": 12
         },
         {
           "country": "Japan",
-          "issued": 199487,
+          "issued": 199488,
           "pct": 0.0155,
           "ca_count": 7
         },
