@@ -22,7 +22,7 @@
       "type_label": "State-Owned Enterprise",
       "state_influence": "Swedish and Finnish state partial ownership (~37% Swedish state)",
       "jurisdiction": "Sweden",
-      "issued": 35365,
+      "issued": 35366,
       "pct": 0.0027,
       "trust_store_count": 4,
       "trusted_by": {
@@ -389,7 +389,7 @@
     "state_enterprise": {
       "label": "State-Owned Enterprise",
       "count": 7,
-      "issued": 619628,
+      "issued": 619629,
       "pct": 0.048
     },
     "government": {
@@ -419,7 +419,7 @@
     {
       "jurisdiction": "Sweden",
       "count": 2,
-      "issued": 35365,
+      "issued": 35366,
       "types": [
         "government",
         "state_enterprise"

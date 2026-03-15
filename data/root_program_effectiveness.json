@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T04:45:39.395724+00:00",
+    "generated_at": "2026-03-15T04:52:48.658230+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
     "total_comments_raw": 22029,
@@ -2153,7 +2153,7 @@
       {
         "ca": "TrustAsia Technologies, Inc.",
         "rank": 13,
-        "certs": 287678,
+        "certs": 287708,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2173,7 +2173,7 @@
       {
         "ca": "Certainly LLC",
         "rank": 16,
-        "certs": 96272,
+        "certs": 96271,
         "stores": {
           "chrome": "included",
           "mozilla": "included",
@@ -2193,7 +2193,7 @@
       {
         "ca": "Cybertrust Japan Co., Ltd.",
         "rank": 22,
-        "certs": 35602,
+        "certs": 35603,
         "stores": {
           "chrome": "not_included",
           "mozilla": "included",
@@ -2710,7 +2710,7 @@
         "ca": "Internet Security Research Group",
         "common_name": "Let's Encrypt",
         "rank": 1,
-        "certs_now": 517168023,
+        "certs_now": 517167663,
         "timeline": {
           "root_created": "2015-06",
           "mozilla_included": "2016-08",
