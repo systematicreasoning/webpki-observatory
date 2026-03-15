@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T04:31:19.380305+00:00",
+    "generated_at": "2026-03-15T04:38:38.374053+00:00",
     "pipeline_version": "1.0",
     "total_orgs": 37,
     "total_individuals": 118,
     "total_ballots": 174,
-    "note_technical": "technical_comments counts only root program staff comments (LLM pass-2 classified). Community participant comments not yet classified for technical vs process \u2014 requires separate pass."
+    "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Classified for both root program staff (pass-2) and community participants (single pass). Values may exceed bugs_engaged since multiple technical comments per bug are counted."
   },
   "organizations": {
     "Actalis": {

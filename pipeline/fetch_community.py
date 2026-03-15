@@ -609,7 +609,7 @@ def main():
             "total_orgs": len(orgs_out),
             "total_individuals": len(inds_out),
             "total_ballots": sum(len(v) for v in ballots_cache.values()),
-            "note_technical": "technical_comments counts only root program staff comments (LLM pass-2 classified). Community participant comments not yet classified for technical vs process — requires separate pass.",
+        "note_technical": "technical_comments counts LLM-classified substantive comments (cert/CRL analysis, specific BR citations, investigative questions). Classified for both root program staff (pass-2) and community participants (single pass). Values may exceed bugs_engaged since multiple technical comments per bug are counted.",
         },
         "organizations": orgs_out,
         "individuals": inds_out,
