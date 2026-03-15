@@ -36,7 +36,6 @@ const PolicyView = () => {
   const [selTier, setSelTier] = useState(null);
   const [policyPage, setPolicyPage] = useState(10);
   const [policyExp, setPolicyExp] = useState(null);
-  const [ballotView, setBallotView] = useState('recent');
   const tiers = [
     { label: 'Replaces < 47d', desc: '< 47d avg replacement', cas: casWithUsage.filter((c) => c.avgDays <= 47), color: COLORS.gn },
     {
@@ -57,7 +56,7 @@ const PolicyView = () => {
   const pagedCAs = filteredCAs.slice(0, policyPage);
   return (
     <div>
-      <TabIntro tabId="policy" quote="Policy shapes the Web PKI.">
+      <TabIntro tabId="policy" quote="Relying parties carry the operational cost of every CA certificate decision.">
         Minimum practices evolve with threats and technology: some CAs lead, others follow, some lag. The CA/Browser Forum's Baseline Requirements are tightening maximum certificate validity: 200 days (March 15 2026), 100 days (March 15 2027), and 47 days (March 15 2029). This tab measures each CA's actual certificate usage period — how frequently their subscribers replace certificates — against those thresholds. CAs operating well above the next deadline face the largest subscriber disruption. CAs already below the 47-day target have proven their automation story. Relying parties can assess which CAs are prepared for the upcoming reductions and which are likely to struggle.
       </TabIntro>
 
@@ -429,141 +428,6 @@ const PolicyView = () => {
         <MethodologyItem label="Limitation">Usage period is a population average. It does not capture subscriber heterogeneity — a CA may have some subscribers with 30-day automation and others doing manual annual renewal.</MethodologyItem>
       </MethodologyCard>
 
-      {/* ═══ BALLOT CONTRIBUTIONS ═══ */}
-      {rpeData?.ballot_classification && (() => {
-        const bcAll = rpeData.ballot_classification;
-        const bcRecent = bcAll.recent || bcAll;
-        const bc = ballotView === 'recent' && bcAll.recent ? bcRecent : bcAll;
-        const isRecent = ballotView === 'recent' && bcAll.recent;
-        const STORE_COLORS_L = { chrome: '#4285f4', mozilla: '#ff6611', apple: '#a3aaae', microsoft: '#22d3ee' };
-        const STORE_NAMES_L = { chrome: 'Chrome', mozilla: 'Mozilla', apple: 'Apple', microsoft: 'Microsoft' };
-        const STORE_ORDER_L = ['chrome', 'mozilla', 'apple', 'microsoft'];
-        const CAT_LABELS = {
-          security_modernization: 'Security Modernization', validation_improvement: 'Validation Improvement',
-          incident_response: 'Incident Response', infrastructure: 'Infrastructure',
-          transparency_profiles: 'Transparency & Profiles', audit_standards: 'Audit Standards',
-          cleanup: 'Cleanup', governance: 'Governance', uncategorized: 'Other',
-        };
-        const CAT_COLORS_L = {
-          security_modernization: COLORS.rd, validation_improvement: COLORS.am, incident_response: COLORS.gn,
-          infrastructure: COLORS.ac, transparency_profiles: COLORS.pu, audit_standards: COLORS.g5,
-          cleanup: '#374151', governance: '#1f2937', uncategorized: '#111827',
-        };
-        const SUB_CATS = ['security_modernization', 'validation_improvement', 'incident_response', 'infrastructure', 'transparency_profiles', 'audit_standards'];
-        const maxBar = Math.max(
-          ...STORE_ORDER_L.map(s => Math.max(bc.browser_summary?.[s]?.total || 0, bc.browser_summary?.[s]?.endorsed || 0)),
-          ...(bc.top_ca_contributors || []).map(c => Math.max(c.total, c.endorsed || 0)), 1
-        );
-        const tgl = (on) => ({ padding: '3px 10px', fontSize: 10, fontWeight: on ? 600 : 400, borderRadius: 4, cursor: 'pointer', border: 'none', background: on ? COLORS.ac : 'transparent', color: on ? COLORS.wh : COLORS.t3 });
-
-        return (
-          <>
-            <div style={{ borderTop: `1px solid ${COLORS.bd}`, margin: '28px 0 20px', paddingTop: 20, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <div>
-                <div style={{ fontSize: 18, fontWeight: 700, color: COLORS.tx, marginBottom: 4 }}>Who Shapes Policy</div>
-                <div style={{ fontSize: 10, color: COLORS.t3, lineHeight: 1.5 }}>
-                  {isRecent ? `Last ${bc.total_ballots}` : bc.total_ballots} ballots classified. {bc.substantive_ballots} ({Math.round((bc.substantive_ballots / Math.max(bc.total_ballots, 1)) * 100)}%) substantive.
-                </div>
-              </div>
-              {bcAll.recent && <div style={{ display: 'flex', gap: 2, background: COLORS.bg, borderRadius: 6, padding: 2 }}>
-                <button style={tgl(ballotView === 'recent')} onClick={() => setBallotView('recent')}>Recent</button>
-                <button style={tgl(ballotView === 'all')} onClick={() => setBallotView('all')}>All Time</button>
-              </div>}
-            </div>
-
-            <Card>
-              <CardTitle sub={`Ballots proposed and endorsed by each root program. ${isRecent ? 'Last 50 ballots.' : 'All time.'}`}>Browser Root Program Contributions</CardTitle>
-              {STORE_ORDER_L.map(s => {
-                const bs = bc.browser_summary?.[s] || {};
-                const cats = bs.by_category || {};
-                return (
-                  <div key={s} style={{ marginBottom: 12 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
-                      <div style={{ width: 70, display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: STORE_COLORS_L[s] }} />
-                        <span style={{ fontSize: 10, fontWeight: 600, color: STORE_COLORS_L[s] }}>{STORE_NAMES_L[s]}</span>
-                      </div>
-                      <span style={{ fontSize: 9, fontFamily: FONT_MONO, color: COLORS.t2 }}>{bs.total || 0} proposed · {bs.endorsed || 0} endorsed · {bs.substantive || 0} substantive</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70, marginBottom: 2 }}>
-                      <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
-                      <div style={{ flex: 1, display: 'flex', height: 18, borderRadius: 3, overflow: 'hidden' }}>
-                        {Object.keys(CAT_LABELS).map(cat => { const v = cats[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.wh, fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
-                      </div>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 70 }}>
-                      <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>endorsed</span>
-                      <div style={{ flex: 1, height: 12, borderRadius: 3, overflow: 'hidden', background: COLORS.bg }}>
-                        <div style={{ width: `${((bs.endorsed || 0) / maxBar) * 100}%`, height: '100%', background: STORE_COLORS_L[s], opacity: 0.4, borderRadius: 3 }} />
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 8, fontSize: 8, color: COLORS.t3 }}>
-                {SUB_CATS.map(cat => <span key={cat}><span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: 2, background: CAT_COLORS_L[cat], opacity: 0.85, marginRight: 3, verticalAlign: 'middle' }} />{CAT_LABELS[cat]}</span>)}
-                <span><span style={{ display: 'inline-block', width: 7, height: 7, borderRadius: 2, background: '#374151', opacity: 0.35, marginRight: 3, verticalAlign: 'middle' }} />Procedural</span>
-                <span style={{ marginLeft: 4, borderLeft: `1px solid ${COLORS.bd}`, paddingLeft: 8 }}>
-                  <span style={{ display: 'inline-block', width: 14, height: 7, borderRadius: 2, background: COLORS.t2, opacity: 0.4, marginRight: 3, verticalAlign: 'middle' }} />Endorsed
-                </span>
-              </div>
-            </Card>
-
-            <Card>
-              <CardTitle sub={`Top CA organizations by ballots proposed and endorsed. ${isRecent ? 'Last 50.' : 'All time.'}`}>CA Contributions</CardTitle>
-              {(bc.top_ca_contributors || []).slice(0, 8).map(ca => (
-                <div key={ca.name} style={{ marginBottom: 10 }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
-                    <div style={{ width: 90, fontSize: 10, fontWeight: 500, color: COLORS.tx, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{ca.name}</div>
-                    <span style={{ fontSize: 9, fontFamily: FONT_MONO, color: COLORS.t2 }}>{ca.total} proposed · {ca.endorsed || 0} endorsed · {ca.substantive} substantive</span>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90, marginBottom: 2 }}>
-                    <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>proposed</span>
-                    <div style={{ flex: 1, display: 'flex', height: 14, borderRadius: 3, overflow: 'hidden' }}>
-                      {Object.keys(CAT_LABELS).map(cat => { const v = (ca.by_category || {})[cat] || 0; return v === 0 ? null : <div key={cat} style={{ width: `${(v / maxBar) * 100}%`, background: CAT_COLORS_L[cat], opacity: SUB_CATS.includes(cat) ? 0.85 : 0.35, borderRight: '1px solid #080c14', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>{v >= 2 && <span style={{ fontSize: 7, fontFamily: FONT_MONO, color: COLORS.wh, fontWeight: 600, textShadow: '0 0 2px rgba(0,0,0,0.6)' }}>{v}</span>}</div>; })}
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 4, marginLeft: 90 }}>
-                    <span style={{ fontSize: 7, color: COLORS.t3, width: 42 }}>endorsed</span>
-                    <div style={{ flex: 1, height: 10, borderRadius: 3, overflow: 'hidden', background: COLORS.bg }}>
-                      <div style={{ width: `${((ca.endorsed || 0) / maxBar) * 100}%`, height: '100%', background: COLORS.t2, opacity: 0.4, borderRadius: 3 }} />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </Card>
-
-            <Card>
-              <CardTitle sub={`Ballots by category, browsers vs CAs. ${isRecent ? 'Last 50.' : 'All time.'}`}>Ballots by Category</CardTitle>
-              <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 10 }}>
-                <thead><tr style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
-                  <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'left' }}>Category</th>
-                  <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'center' }}>Browsers</th>
-                  <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'center' }}>CAs</th>
-                  <th style={{ padding: '5px', color: COLORS.t3, fontSize: 8, textAlign: 'center' }}>Total</th>
-                </tr></thead>
-                <tbody>
-                  {Object.entries(CAT_LABELS).map(([cat, label]) => { const ct = bc.category_totals?.[cat] || {}; if (!ct.total) return null; const isSub = SUB_CATS.includes(cat); return (
-                    <tr key={cat} style={{ borderBottom: `1px solid ${COLORS.bd}` }}>
-                      <td style={{ padding: '4px 5px', display: 'flex', alignItems: 'center', gap: 5 }}><span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: 2, background: CAT_COLORS_L[cat], opacity: isSub ? 0.85 : 0.35 }} /><span style={{ color: isSub ? COLORS.tx : COLORS.t3, fontWeight: isSub ? 500 : 400 }}>{label}</span></td>
-                      <td style={{ padding: '4px 5px', textAlign: 'center', fontFamily: FONT_MONO, fontSize: 9, color: COLORS.t2 }}>{ct.browsers || 0}</td>
-                      <td style={{ padding: '4px 5px', textAlign: 'center', fontFamily: FONT_MONO, fontSize: 9, color: COLORS.t2 }}>{ct.cas || 0}</td>
-                      <td style={{ padding: '4px 5px', textAlign: 'center', fontFamily: FONT_MONO, fontSize: 9, fontWeight: 600, color: isSub ? COLORS.tx : COLORS.t3 }}>{ct.total}</td>
-                    </tr>); })}
-                </tbody>
-              </table>
-              </div> {/* overflow wrapper */}
-            </Card>
-
-            <MethodologyCard>
-              <MethodologyItem label="Classification">Each ballot classified by title pattern matching into 9 categories. Substantive = improves security, validation, infrastructure, or transparency. Procedural = cleanup, governance, uncategorized.</MethodologyItem>
-              <MethodologyItem label="Attribution">Proposers attributed by name/org matching. Endorser text stripped before matching to avoid misattribution. Endorser counts tracked separately. CAs propose the majority of ballots.</MethodologyItem>
-              <MethodologyItem label="Limitations">Title-based classification may miscategorize ambiguous ballots. All ballots weighted equally regardless of impact. "Recent 50" reflects the most recent across all working groups.</MethodologyItem>
-            </MethodologyCard>
-          </>
-        );
-      })()}
     </div>
   );
 };
