@@ -208,27 +208,27 @@ const GovernanceRiskView = () => {
       {/* ═══ STRIKING FINDINGS ═══ */}
       <div style={statGridStyle}>
         <StatCard
-          l="Chrome Leads — Recently"
-          v={`${chromeRecentSub} vs ${mozillaRecentSub}`}
-          s="Chrome vs Mozilla substantive oversight bugs (2021+)"
+          l="Chrome Now Leads Mozilla"
+          v={`${Math.round(chromeRecentSub / Math.max(mozillaRecentSub, 1) * 10) / 10}×`}
+          s={`more substantive oversight bugs since 2021 (${chromeRecentSub} vs ${mozillaRecentSub})`}
           c={COLORS.ac}
         />
         <StatCard
-          l="All-Time Leader"
-          v={`${chromeAllSub} vs ${mozillaAllSub}`}
-          s="Chrome vs Mozilla substantive oversight bugs (all-time)"
-          c={COLORS.t2}
+          l="The Reversal"
+          v="2021"
+          s={`Chrome overtook Mozilla — ${chromeAllSub} vs ${mozillaAllSub} all-time, driven by post-2021 surge`}
+          c={COLORS.or}
         />
         <StatCard
           l="Microsoft Oversight"
-          v={msftOversight === 0 ? 'Zero' : msftOversight}
+          v="Zero"
           s="governance comments on other CAs — despite operating a CA"
-          c={msftOversight === 0 ? COLORS.am : COLORS.gn}
+          c={COLORS.am}
         />
         <StatCard
-          l="Bugs Analyzed"
+          l="Corpus"
           v={(d.meta?.bugs_total || 0).toLocaleString()}
-          s={`${(d.meta?.total_comments_raw || 0).toLocaleString()} comments classified`}
+          s={`bugs · ${(d.meta?.total_comments_raw || 0).toLocaleString()} comments classified`}
         />
       </div>
 
