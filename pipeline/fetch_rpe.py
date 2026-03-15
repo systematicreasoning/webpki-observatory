@@ -177,22 +177,80 @@ ROOT_PROGRAM_DOMAINS = {
     "microsoft.com": "microsoft",
 }
 
+# Bot accounts that should never be attributed to a root program
+BOT_DOMAINS = {"mozilla.bugs", "mozilla.tld"}
+
+# Google Trust Services (GTS) is Google's publicly-trusted CA — a separate entity
+# from the Chrome root program. GTS staff commenting on their own CA's bugs are
+# CA operators, not root program governance. Exclude them from Chrome attribution.
+# Identified by: comment only on Google/GTS bugs, never on other CAs' bugs.
+GTS_CA_STAFF = {
+    "gts-external@google.com",   # GTS team account
+    "cadecairns@google.com",     # GTS
+    "awarner@google.com",        # GTS
+    "fotisl@google.com",         # GTS
+    "offline@google.com",        # GTS
+    "rmh@google.com",            # GTS
+    "doughornyak@google.com",    # GTS
+    "nullsem@google.com",        # GTS
+    "bif@google.com",            # GTS
+    "jklo@google.com",           # GTS
+    "kluge@google.com",          # GTS
+    "jdkasten@google.com",       # GTS
+    "kuz@google.com",            # GTS
+}
+
 # Known root program personnel who use non-org emails on Bugzilla
-# Add entries here if you identify specific individuals
+# Curated manually from public record (MDSP posts, CA/B Forum, LinkedIn).
+# Format: "email": "program"  OR  "email": ("program", "YYYY-MM-DD cutoff")
+# Cutoff = last date this person acted in that root program role.
+# Only include individuals whose affiliation during the comment period is unambiguous.
 ROOT_PROGRAM_INDIVIDUALS = {
-    # "user@gmail.com": "chrome",  # Example: if a Chrome engineer uses personal email
+    # Chrome / Google
+    # Ryan Sleevi: Google root program lead, primary Bugzilla presence 2014-2022.
+    # Used gmail throughout; Chrome team switched to @google.com addresses ~2022.
+    "ryan.sleevi@gmail.com": "chrome",
+
+    # Mozilla
+    # Kathleen Wilson: Mozilla root program manager 2007-2019. All Bugzilla activity
+    # through 2019 is definitively Mozilla. Post-2019 she operated as community.
+    "kathleen.a.wilson@gmail.com": ("mozilla", "2019-12-31"),
+    # Wayne Thayer: Mozilla root program lead 2017-2020. Used wthayer@fastly.com
+    # throughout (set up Bugzilla account before joining Fastly). Post-2020 he
+    # joined Fastly which operates Certainly CA — those comments are self-incident
+    # or community, not root program governance.
+    "wthayer@fastly.com": ("mozilla", "2020-06-30"),
+    "waynezilla@gmail.com": ("mozilla", "2020-06-30"),
 }
 
 
-def classify_email(email):
-    """Map an email address to a root program or 'other'."""
+def classify_email(email, comment_time=""):
+    """Map an email address to a root program or 'other'.
+    
+    comment_time: ISO timestamp string (e.g. '2021-03-15T...') for time-bounded attribution.
+    """
     if not email or "@" not in email:
         return "other"
     email_lower = email.lower().strip()
+    # GTS CA staff excluded before domain check — they are a CA, not the root program
+    if email_lower in GTS_CA_STAFF:
+        return "other"
     # Check individual overrides first
     if email_lower in ROOT_PROGRAM_INDIVIDUALS:
-        return ROOT_PROGRAM_INDIVIDUALS[email_lower]
+        val = ROOT_PROGRAM_INDIVIDUALS[email_lower]
+        if isinstance(val, tuple):
+            program, cutoff = val
+            # Only attribute if comment is within the affiliation window
+            if comment_time and comment_time[:10] <= cutoff:
+                return program
+            elif not comment_time:
+                return program  # no timestamp, assume in range
+            else:
+                return "other"
+        return val
     domain = email_lower.split("@")[-1]
+    if domain in BOT_DOMAINS:
+        return "bot"
     return ROOT_PROGRAM_DOMAINS.get(domain, "other")
 
 
@@ -536,9 +594,6 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     """
     print("\n── Phase 2b: Comment Participation Analysis ──")
 
-    # Bot accounts that should never be attributed to a root program
-    BOT_DOMAINS = {"mozilla.bugs", "mozilla.tld"}
-
     def is_bot(email):
         if not email or "@" not in email:
             return False
@@ -585,7 +640,7 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             if is_bot(author):
                 continue
 
-            program = classify_email(author)
+            program = classify_email(author, comment.get("time", ""))
 
             # Empty-text comments are Bugzilla workflow events (status changes,
             # flag sets, NEEDINFO). They are not governance participation.
@@ -1760,7 +1815,6 @@ def main():
 
     if api_key:
         print("\n── Phase 2c: LLM Comment Classification ──")
-        BOT_DOMAINS_MAIN = {"mozilla.bugs", "mozilla.tld"}
         candidates = []
         for bug_id, comments in comment_cache.items():
             bug = bug_lookup_main.get(bug_id, {})
@@ -1769,8 +1823,8 @@ def main():
                 author = c.get("author", "")
                 if not author or "@" not in author: continue
                 domain = author.lower().split("@")[-1]
-                if domain in BOT_DOMAINS_MAIN: continue
-                prog = classify_email(author)
+                if domain in BOT_DOMAINS: continue
+                prog = classify_email(author, c.get("time", ""))
                 if prog == "other" or not prog: continue
                 text = c.get("text", "").strip()
                 if not text: continue
