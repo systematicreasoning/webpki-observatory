@@ -4555,38 +4555,38 @@
     },
     {
       "date": "2026-03-15",
-      "generated_at": "2026-03-15T01:18:23.678217+00:00",
+      "generated_at": "2026-03-15T02:21:20.575308+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287714561,
+      "total_unexpired": 1287773537,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.167
+          "pct": 40.1632
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.4115
+          "pct": 16.4088
         },
         {
           "ca": "DigiCert",
-          "pct": 13.759
+          "pct": 13.7613
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9577
+          "pct": 12.9569
         },
         {
           "ca": "Sectigo",
-          "pct": 10.4971
+          "pct": 10.5022
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6358
+          "pct": 4.6355
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 1.0109
+          "pct": 1.011
         },
         {
           "ca": "SSL.com",
@@ -4604,87 +4604,87 @@
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 517235682,
+          "v": 517210700,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 211333303,
+          "v": 211308678,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 177176922,
+          "v": 177214931,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166858156,
+          "v": 166855864,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 135172858,
+          "v": 135244157,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59695281,
+          "v": 59694875,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 13017027,
+          "v": 13019001,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1691883,
+          "v": 1692252,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1573757,
+          "v": 1573225,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1501058,
+          "v": 1501052,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668488,
+          "v": 668459,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 517088,
+          "v": 517097,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 287081,
+          "v": 287233,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 226360,
+          "v": 226432,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 96410,
+          "v": 96354,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62618,
+          "v": 62621,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 50164,
+          "v": 50174,
           "at": 0
         },
         {
@@ -4694,17 +4694,17 @@
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 44046,
+          "v": 44034,
           "at": 0
         },
         {
           "id": "cybertrust-japan-co.,-ltd.",
-          "v": 35601,
+          "v": 35602,
           "at": 0
         },
         {
           "id": "telia-company",
-          "v": 35350,
+          "v": 35352,
           "at": 0
         },
         {
@@ -4719,7 +4719,7 @@
         },
         {
           "id": "naver-cloud-trust-services",
-          "v": 18242,
+          "v": 18245,
           "at": 0
         },
         {
@@ -4774,7 +4774,7 @@
         },
         {
           "id": "wisekey",
-          "v": 2726,
+          "v": 2725,
           "at": 0
         },
         {
@@ -5088,7 +5088,7 @@
           "at": 0
         }
       ],
-      "hhi": 2373,
+      "hhi": 2372,
       "roots_all4": 90,
       "owners_all4": 38,
       "total_roots": 335,
