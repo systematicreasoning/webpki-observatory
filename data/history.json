@@ -4555,171 +4555,171 @@
     },
     {
       "date": "2026-03-15",
-      "generated_at": "2026-03-15T09:57:21.966766+00:00",
+      "generated_at": "2026-03-15T17:32:22.480551+00:00",
       "crtsh_available": true,
-      "total_unexpired": 1287740121,
+      "total_unexpired": 1287592859,
       "active_ca_count": 97,
       "top10": [
         {
           "ca": "Internet Security Research Group",
-          "pct": 40.1459
+          "pct": 40.1306
         },
         {
           "ca": "Google Trust Services LLC",
-          "pct": 16.3825
+          "pct": 16.3484
         },
         {
           "ca": "DigiCert",
-          "pct": 13.7802
+          "pct": 13.7987
         },
         {
           "ca": "GoDaddy",
-          "pct": 12.9575
+          "pct": 12.9596
         },
         {
           "ca": "Sectigo",
-          "pct": 10.5274
+          "pct": 10.5568
         },
         {
           "ca": "Microsoft Corporation",
-          "pct": 4.6335
+          "pct": 4.6321
         },
         {
           "ca": "IdenTrust Services, LLC",
-          "pct": 1.0121
+          "pct": 1.0132
         },
         {
           "ca": "SSL.com",
-          "pct": 0.1315
+          "pct": 0.1313
         },
         {
           "ca": "GlobalSign nv-sa",
-          "pct": 0.1218
+          "pct": 0.1216
         },
         {
           "ca": "Actalis",
-          "pct": 0.1165
+          "pct": 0.1166
         }
       ],
       "ca_certs": [
         {
           "id": "internet-security-research-gro",
-          "v": 516974262,
+          "v": 516718427,
           "at": 0
         },
         {
           "id": "google-trust-services-llc",
-          "v": 210963680,
+          "v": 210500762,
           "at": 0
         },
         {
           "id": "digicert",
-          "v": 177453404,
+          "v": 177671366,
           "at": 0
         },
         {
           "id": "godaddy",
-          "v": 166859569,
+          "v": 166867031,
           "at": 0
         },
         {
           "id": "sectigo",
-          "v": 135565888,
+          "v": 135928531,
           "at": 0
         },
         {
           "id": "microsoft-corporation",
-          "v": 59667167,
+          "v": 59643126,
           "at": 0
         },
         {
           "id": "identrust-services,-llc",
-          "v": 13033040,
+          "v": 13045373,
           "at": 0
         },
         {
           "id": "ssl.com",
-          "v": 1692942,
+          "v": 1690941,
           "at": 0
         },
         {
           "id": "globalsign-nv-sa",
-          "v": 1568567,
+          "v": 1565187,
           "at": 0
         },
         {
           "id": "actalis",
-          "v": 1500659,
+          "v": 1500914,
           "at": 0
         },
         {
           "id": "asseco-data-systems-s.a.",
-          "v": 668217,
+          "v": 668285,
           "at": 0
         },
         {
           "id": "harica",
-          "v": 517184,
+          "v": 517247,
           "at": 0
         },
         {
           "id": "trustasia-technologies,-inc.",
-          "v": 288954,
+          "v": 289615,
           "at": 0
         },
         {
           "id": "amazon-trust-services",
-          "v": 226895,
+          "v": 227352,
           "at": 0
         },
         {
           "id": "certainly-llc",
-          "v": 96415,
+          "v": 96339,
           "at": 0
         },
         {
           "id": "taiwan-ca-inc.-(twca)",
-          "v": 62617,
+          "v": 62451,
           "at": 0
         },
         {
           "id": "d-trust",
-          "v": 50208,
+          "v": 50171,
           "at": 0
         },
         {
           "id": "swisssign-ag",
-          "v": 45443,
+          "v": 45436,
           "at": 0
         },
         {
           "id": "secom-trust-systems-co.,-ltd.",
-          "v": 43957,
+          "v": 43916,
           "at": 0
         },
         {
           "id": "cybertrust-japan-co.,-ltd.",
-          "v": 35603,
+          "v": 35507,
           "at": 0
         },
         {
           "id": "telia-company",
-          "v": 35369,
+          "v": 35354,
           "at": 0
         },
         {
           "id": "shanghai-electronic-certificat",
-          "v": 31931,
+          "v": 31924,
           "at": 0
         },
         {
           "id": "deutsche-telekom-security-gmbh",
-          "v": 20845,
+          "v": 20846,
           "at": 0
         },
         {
           "id": "naver-cloud-trust-services",
-          "v": 18245,
+          "v": 18239,
           "at": 0
         },
         {
@@ -4729,12 +4729,12 @@
         },
         {
           "id": "emudhra-technologies-limited",
-          "v": 8695,
+          "v": 8690,
           "at": 0
         },
         {
           "id": "chunghwa-telecom",
-          "v": 8321,
+          "v": 8318,
           "at": 0
         },
         {
@@ -4744,12 +4744,12 @@
         },
         {
           "id": "certsign",
-          "v": 4188,
+          "v": 4186,
           "at": 0
         },
         {
           "id": "certigna",
-          "v": 4113,
+          "v": 3980,
           "at": 0
         },
         {
@@ -4769,12 +4769,12 @@
         },
         {
           "id": "microsec-ltd.",
-          "v": 2778,
+          "v": 2774,
           "at": 0
         },
         {
           "id": "wisekey",
-          "v": 2722,
+          "v": 2714,
           "at": 0
         },
         {
@@ -4789,12 +4789,12 @@
         },
         {
           "id": "oiste",
-          "v": 2583,
+          "v": 2587,
           "at": 0
         },
         {
           "id": "open-access-technology-interna",
-          "v": 2382,
+          "v": 2380,
           "at": 0
         },
         {
@@ -4804,7 +4804,7 @@
         },
         {
           "id": "izenpe-s.a.",
-          "v": 1576,
+          "v": 1575,
           "at": 0
         },
         {
@@ -4814,12 +4814,12 @@
         },
         {
           "id": "postsignum",
-          "v": 1003,
+          "v": 1000,
           "at": 0
         },
         {
           "id": "global-digital-cybersecurity-a",
-          "v": 497,
+          "v": 496,
           "at": 0
         },
         {
@@ -4834,7 +4834,7 @@
         },
         {
           "id": "disig,-a.s.",
-          "v": 375,
+          "v": 376,
           "at": 0
         },
         {
@@ -5088,7 +5088,7 @@
           "at": 0
         }
       ],
-      "hhi": 2371,
+      "hhi": 2370,
       "roots_all4": 90,
       "owners_all4": 38,
       "total_roots": 335,
