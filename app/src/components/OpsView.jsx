@@ -279,7 +279,10 @@ const OpsView = () => {
   return (
     <div>
       <TabIntro quote="By their incidents you shall know them.">
-        Public compliance failures from Mozilla's Bugzilla CA Certificate Compliance tracker, normalized per million certificates issued to enable fair comparison across CAs of vastly different scale. Raw incident counts reward small CAs and penalize large ones; normalization reveals actual operational maturity independent of volume. Self-reported versus externally-discovered incident ratios show which CAs have mature internal detection. CAs see where they stand relative to peers and where to invest in process improvement. Relying parties get an objective, data-driven reliability signal that marketing materials will never provide.
+        Public compliance failures from Mozilla's Bugzilla CA Certificate Compliance tracker, normalized per million certificates issued to enable fair comparison across CAs of vastly different scale.
+        Root programs discover more than half of all CA compliance incidents. CAs' own monitoring accounts for fewer than one in ten.
+        The fastest-growing incident category is governance — audit failures, CPS violations, and disclosure failures — not certificate misissuance.
+        Relying parties get an objective, data-driven reliability signal that marketing materials will never provide.
       </TabIntro>
 
       <div
@@ -294,7 +297,38 @@ const OpsView = () => {
           c={curPace > peakYear.n ? COLORS.rd : COLORS.t2}
         />
         <StatCard l="Top 20 Share" v={`${top20Share}%`} s="of all incidents" />
-        <StatCard l="Avg Self-Report" v={`${avgSelf}%`} s={`across ${d.cas.length} CAs`} c={COLORS.gn} />
+        {rpeData?.discovery_methods?.totals && (() => {
+          const dm = rpeData.discovery_methods.totals;
+          const grand = Object.values(dm).reduce((a, b) => a + b, 0);
+          const selfPct = Math.round((dm.self_detected || 0) / grand * 100);
+          const rpPct = Math.round((dm.root_program || 0) / grand * 100);
+          return (
+            <>
+              <StatCard
+                l="CA Self-Detection Rate"
+                v={`${selfPct}%`}
+                s={`of incidents found by CA's own monitoring — root programs find ${rpPct}%`}
+                c={selfPct < 20 ? COLORS.am : COLORS.gn}
+              />
+            </>
+          );
+        })()}
+        {(() => {
+          const ybc = d.yearsByClass || [];
+          const recent = ybc.filter(y => y.y >= 2019 && y.y < CUR_YEAR);
+          const latest = recent[recent.length - 1];
+          if (!latest) return null;
+          const total = latest.mi + latest.rv + latest.gv + latest.vl;
+          const govPct = total > 0 ? Math.round(latest.gv / total * 100) : 0;
+          return (
+            <StatCard
+              l={`Governance Incidents ${latest.y}`}
+              v={`${govPct}%`}
+              s={`of all incidents — audit failures, CPS violations, disclosure`}
+              c={govPct > 40 ? COLORS.rd : govPct > 25 ? COLORS.am : COLORS.t2}
+            />
+          );
+        })()}
       </div>
 
       <Card>

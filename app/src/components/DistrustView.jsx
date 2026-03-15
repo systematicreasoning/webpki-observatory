@@ -530,7 +530,10 @@ export default function DistrustView() {
   return (
     <div>
       <TabIntro quote={`"Those who cannot remember the past are condemned to repeat it." — George Santayana`}>
-        Every CA distrust event in browser history — the root cause, the compliance posture, the response timeline, and the final outcome. Distrust is the ultimate enforcement mechanism in the WebPKI, and these cases define the precedent that root programs, CAs, and relying parties all operate under. CAs can study the failure patterns that led to removal and the behavioral signals that escalated scrutiny. Relying parties see the real cost of sudden forced certificate replacements and how much runway — or how little — root programs provide before pulling trust. The data shows how fast root programs excise bad actors, and how cooperative versus adversarial behavior shapes the timeline.
+        Every CA distrust event in browser history — the root cause, the compliance posture, the response timeline, and the final outcome.
+        Fifteen of sixteen events involved compliance operations failures: inadequate incident response, patterns of unresolved issues, concealment, or non-engagement with root programs.
+        Only one event (ANSSI, 2013) was a purely technical failure with no behavioral component.
+        The data shows that distrust is rarely caused by a single certificate error — it is almost always preceded by a pattern of compliance process failures that root programs track over time.
       </TabIntro>
 
       <CardTitle sub="Every CA removed from browser trust stores. Classification from Bugzilla evidence and root program announcements.">
@@ -540,9 +543,30 @@ export default function DistrustView() {
       {/* Stats */}
       <div style={statGridStyle}>
         <StatCard l="Distrust Events" v={stats.total_events || allEvents.length} s={`${stats.year_range?.[0]}–${stats.year_range?.[1]}`} />
-        <StatCard l="Response-Quality Failures" v={`${stats.response_driven_pct || 73}%`} s="of events include minimizing, deceiving, or non-responsive behavior" c={COLORS.am} />
-        <StatCard l="Median Time to Removal" v={fmtRunway(stats.median_runway_days)} s="from first incident to distrust" c={COLORS.rd} />
-        <StatCard l="Avg Frequency" v={`~${Math.round((stats.avg_interval_years || 1) * 12)}mo`} s="between distrust events" />
+        {(() => {
+          // Tags that indicate compliance operations failures (process, response, disclosure)
+          const OPS_TAGS = new Set([
+            'inadequate_incident_response','pattern_of_issues','lack_of_meaningful_improvement',
+            'non_responsive_to_root_programs','minimized_severity','active_deception',
+            'hidden_corporate_changes','recharacterized_incidents','concealed_breach_or_incident',
+            'delayed_or_refused_revocation','demonstrated_lack_of_understanding',
+            'argued_rules_dont_apply','limited_ecosystem_value',
+          ]);
+          const opsCount = allEvents.filter(e =>
+            (e.reason_tags || []).some(t => OPS_TAGS.has(t))
+          ).length;
+          const total = allEvents.length;
+          return (
+            <StatCard
+              l="Compliance Operations Failures"
+              v={`${opsCount} of ${total}`}
+              s="distrust events involved inadequate response, concealment, or pattern of issues — not just technical errors"
+              c={COLORS.am}
+            />
+          );
+        })()}
+        <StatCard l="Response-Quality Failures" v={`${stats.response_driven_pct || 73}%`} s="of events include minimizing, deceiving, or non-responsive behavior" c={COLORS.rd} />
+        <StatCard l="Median Time to Removal" v={fmtRunway(stats.median_runway_days)} s="from first incident to distrust" c={COLORS.t2} />
       </div>
 
       {/* Timeline axis */}
