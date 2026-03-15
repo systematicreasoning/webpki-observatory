@@ -745,6 +745,8 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
         # oversight_pct denominator = oversight + self_incident (excludes admin, which is not governance)
         governance_total = t["oversight"] + t["self_incident"]
         substantive = governance_total + t.get("admin_comments", 0)
+        # oversight_pct removed — stale metric (comment ratio oc/oc+si).
+        # Report Card now uses bugs_oversight/bugs_technical_oversight (bug counts).
         program_summary[prog] = {
             "total_comments": t["all"],
             "substantive_comments": substantive,
@@ -756,7 +758,6 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
             "recent_technical_oversight_comments": t.get("recent_technical_oversight", 0),
             "self_incident_comments": t["self_incident"],
             "recent_self_incident_comments": t.get("recent_self_incident", 0),
-            "oversight_pct": round((t["oversight"] / governance_total) * 100) if governance_total else 0,
             "bugs_engaged": len(unique_bugs[prog]["all"]),
             "bugs_oversight": len(unique_bugs[prog]["oversight"]),
             "recent_bugs_oversight": len(unique_bugs[prog]["recent_oversight"]),
@@ -822,12 +823,12 @@ def analyze_comment_participation(comment_cache, bugs_raw, comment_classificatio
     if has_llm:
         total_admin = sum(program_summary[p]["admin_comments"] for p in ["chrome","mozilla","apple","microsoft"])
         print(f"  LLM-filtered admin comments: {total_admin}")
-    print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Admin':>6} {'Oversight':>10} {'Self-Inc':>10} {'Ovrsght%':>9} {'Bugs(O)':>8}")
+    print(f"  {'Program':12} {'Raw':>7} {'Workflow':>9} {'Subst.':>7} {'Admin':>6} {'Oversight':>10} {'Self-Inc':>10} {'Bugs(O)':>8} {'Bugs(T)':>8}")
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         s = program_summary[prog]
         print(f"  {prog:12} {s['total_comments']:>7} {s['workflow_events']:>9} {s['substantive_comments']:>7} "
               f"{s['admin_comments']:>6} {s['oversight_comments']:>10} "
-              f"{s['self_incident_comments']:>10} {s['oversight_pct']:>8}% {s['bugs_oversight']:>8}")
+              f"{s['self_incident_comments']:>10} {s['bugs_oversight']:>8} {s['bugs_technical_oversight']:>8}")
     
     return {
         "oversight_by_year": oversight_years,
@@ -1892,7 +1893,7 @@ def main():
             "total_comments_raw": comment_data["total_comments"],
             "total_comments_analyzed": comment_data["substantive_comments"],
             "pipeline_version": "0.5",
-            "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). oversight_pct denominator = oversight + self_incident (excludes admin).",
+            "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs.",
         },
         **creation_data,
         **discovery_data,
@@ -1925,7 +1926,7 @@ def main():
     print(f"  Oversight ({comment_data['bugs_analyzed']} bugs, {comment_data['sample_pct']}% sample):")
     for prog in ["chrome", "mozilla", "apple", "microsoft"]:
         s = cs[prog]
-        print(f"    {prog:12}: {s['oversight_comments']:4} oversight / {s['total_comments']:4} total ({s['oversight_pct']}%)")
+        print(f"    {prog:12}: {s['bugs_oversight']:4} cov / {s['bugs_technical_oversight']:4} substantive / {s['total_comments']:4} raw")
     enf = enforcement_data["enforcement"]
     total = enf["chrome"]["total"]
     print(f"  Enforcement ({total} events):")

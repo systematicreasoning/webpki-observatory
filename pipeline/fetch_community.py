@@ -405,29 +405,32 @@ def analyze_ballots(ballots_cache):
                 people.append((name, org))
         return people
 
-    RECENT_CUTOFF = 50  # last N ballots across all WGs
+    BALLOT_RECENT_YEAR = "2021"  # consistent with Bugzilla recent cutoff
 
     org_ballots = defaultdict(lambda: {
         "proposed": 0, "endorsed": 0,
         "recent_proposed": 0, "recent_endorsed": 0,
         "individuals": set(), "wgs": set(),
+        "by_year": defaultdict(lambda: {"proposed": 0, "endorsed": 0}),
     })
     ind_ballots = defaultdict(lambda: {
         "proposed": 0, "endorsed": 0,
         "recent_proposed": 0, "recent_endorsed": 0,
         "orgs": set(), "wgs": set(),
+        "by_year": defaultdict(lambda: {"proposed": 0, "endorsed": 0}),
     })
 
-    # Collect all ballots with sequence position for recent window
+    # Collect all ballots, extract year from URL
+    import re as _re
     all_ballots = []
     for wg, blist in ballots_cache.items():
         for b in blist:
-            all_ballots.append((wg, b))
+            m = _re.search(r'/(\d{4})/', b.get("url", ""))
+            year = m.group(1) if m else ""
+            all_ballots.append((wg, b, year))
 
-    recent_set = set(id(b) for _, b in all_ballots[-RECENT_CUTOFF:])
-
-    for wg, b in all_ballots:
-        is_recent = id(b) in recent_set
+    for wg, b, year in all_ballots:
+        is_recent = year >= BALLOT_RECENT_YEAR if year else False
         prop_text = b.get("proposer", "")
         end_text = b.get("endorsers_raw", "")
 
@@ -437,9 +440,11 @@ def analyze_ballots(ballots_cache):
             org_ballots[org]["proposed"] += 1
             org_ballots[org]["individuals"].add(name)
             org_ballots[org]["wgs"].add(wg)
+            if year: org_ballots[org]["by_year"][year]["proposed"] += 1
             ind_ballots[name]["proposed"] += 1
             ind_ballots[name]["orgs"].add(org)
             ind_ballots[name]["wgs"].add(wg)
+            if year: ind_ballots[name]["by_year"][year]["proposed"] += 1
             if is_recent:
                 org_ballots[org]["recent_proposed"] += 1
                 ind_ballots[name]["recent_proposed"] += 1
@@ -450,9 +455,11 @@ def analyze_ballots(ballots_cache):
             org_ballots[org]["endorsed"] += 1
             org_ballots[org]["individuals"].add(name)
             org_ballots[org]["wgs"].add(wg)
+            if year: org_ballots[org]["by_year"][year]["endorsed"] += 1
             ind_ballots[name]["endorsed"] += 1
             ind_ballots[name]["orgs"].add(org)
             ind_ballots[name]["wgs"].add(wg)
+            if year: ind_ballots[name]["by_year"][year]["endorsed"] += 1
             if is_recent:
                 org_ballots[org]["recent_endorsed"] += 1
                 ind_ballots[name]["recent_endorsed"] += 1
@@ -470,6 +477,7 @@ def analyze_ballots(ballots_cache):
             "recent_endorsed": d["recent_endorsed"],
             "individuals": sorted(d["individuals"]),
             "working_groups": sorted(d["wgs"]),
+            "by_year": {y: dict(v) for y, v in sorted(d["by_year"].items())},
         }
 
     ind_out = {}
@@ -484,6 +492,7 @@ def analyze_ballots(ballots_cache):
             "recent_endorsed": d["recent_endorsed"],
             "orgs": sorted(d["orgs"]),
             "working_groups": sorted(d["wgs"]),
+            "by_year": {y: dict(v) for y, v in sorted(d["by_year"].items())},
         }
 
     print(f"  CA orgs: {len(org_out)}, Individuals: {len(ind_out)}")
@@ -681,6 +690,7 @@ def main():
                 "proposed": 0, "endorsed": 0,
                 "recent_proposed": 0, "recent_endorsed": 0,
                 "individuals": [], "working_groups": [],
+                "by_year": {},
             }),
             "bug_filing": fil_orgs.get(org, {
                 "bugs_filed": 0, "recent_bugs_filed": 0,

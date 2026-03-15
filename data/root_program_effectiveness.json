@@ -1,12 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-03-15T05:06:34.092943+00:00",
+    "generated_at": "2026-03-15T05:17:11.438356+00:00",
     "bugs_total": 1690,
     "bugs_with_comments": 1690,
     "total_comments_raw": 22029,
     "total_comments_analyzed": 6037,
     "pipeline_version": "0.5",
-    "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). oversight_pct denominator = oversight + self_incident (excludes admin)."
+    "note": "total_comments_analyzed = non-empty, non-bot comments. admin_comments filtered by LLM classification (short acks, boilerplate notices, tracking bug openers). Coverage = bugs_oversight/total_bugs. Substantive = bugs_technical_oversight/total_bugs."
   },
   "bug_creation_by_year": [
     {
@@ -592,7 +592,6 @@
       "recent_technical_oversight_comments": 469,
       "self_incident_comments": 61,
       "recent_self_incident_comments": 31,
-      "oversight_pct": 96,
       "bugs_engaged": 691,
       "bugs_oversight": 674,
       "recent_bugs_oversight": 256,
@@ -610,7 +609,6 @@
       "recent_technical_oversight_comments": 207,
       "self_incident_comments": 0,
       "recent_self_incident_comments": 0,
-      "oversight_pct": 100,
       "bugs_engaged": 614,
       "bugs_oversight": 614,
       "recent_bugs_oversight": 193,
@@ -628,7 +626,6 @@
       "recent_technical_oversight_comments": 50,
       "self_incident_comments": 131,
       "recent_self_incident_comments": 74,
-      "oversight_pct": 29,
       "bugs_engaged": 62,
       "bugs_oversight": 45,
       "recent_bugs_oversight": 44,
@@ -646,7 +643,6 @@
       "recent_technical_oversight_comments": 0,
       "self_incident_comments": 493,
       "recent_self_incident_comments": 440,
-      "oversight_pct": 0,
       "bugs_engaged": 41,
       "bugs_oversight": 0,
       "recent_bugs_oversight": 0,
